@@ -1,8 +1,8 @@
 eastern_latin = {
-	graphical_culture = easterngfx
+	graphical_cultures = { easterngfx }
 
 	romanian = {
-		graphical_culture = westernslavicgfx
+		graphical_cultures = { westernslavicgfx }
 
 		color = { 0.6 0.4 0.4 }
 

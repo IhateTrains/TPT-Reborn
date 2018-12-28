@@ -1,5 +1,5 @@
 anglo_saxon = {
-	graphical_culture = westerngfx
+	graphical_cultures = { westerngfx }
 
 	english = {
 		graphical_cultures = { englishgfx }

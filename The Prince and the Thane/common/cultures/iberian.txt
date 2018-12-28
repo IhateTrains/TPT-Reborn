@@ -1,8 +1,8 @@
 iberian = {
-	graphical_culture = occitangfx
+	graphical_cultures = { occitangfx }
 	
 	basque = {
-		graphical_culture = occitangfx
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.4 0.7 0.6 }
 
@@ -32,8 +32,7 @@ iberian = {
 	}
 	
     aragonese = {
-		graphical_culture = southerngfx
-		second_graphical_culture = occitangfx # Fallback type
+		graphical_cultures = { southerngfx occitangfx }
 		
 		color = { 0.4 0.7 0.5 }
 
@@ -69,8 +68,7 @@ iberian = {
 	}
     
 	portuguese = {
-		graphical_culture = southerngfx
-		second_graphical_culture = occitangfx # Fallback type
+		graphical_cultures = { southerngfx occitangfx }
 		
 		color = { 0.4 0.7 0.3 }
 
@@ -101,7 +99,7 @@ iberian = {
 	}
 	
 	castillan = {
-		graphical_culture = occitangfx
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.4 0.7 0.5 }
 
@@ -138,7 +136,7 @@ iberian = {
 	}
 	
     galician = {
-		graphical_culture = norsegfx
+		graphical_cultures = { norsegfx }
 		
 		color = { 0.4 0.7 0.4 }
 
@@ -168,7 +166,7 @@ iberian = {
 		mother_name_chance = 15
 	}
     leonese = {
-		graphical_culture = occitangfx
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.4 0.7 0.5 }
 

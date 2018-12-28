@@ -1,8 +1,8 @@
 byzantine = {
-	graphical_culture = easterngfx
+	graphical_cultures = { easterngfx }
 
 	greek = {
-		graphical_culture = byzantinegfx
+		graphical_cultures = { byzantinegfx }
 		
 		color = { 0.8 0.3 0.8 }
 
@@ -61,7 +61,7 @@ byzantine = {
 		modifier = greek_culture_modifier
 	}
         sicilian_greek = {
-		graphical_culture = byzantinegfx
+		graphical_cultures = { byzantinegfx }
 		
 		color = { 0.9 0.3 0.9 }
 

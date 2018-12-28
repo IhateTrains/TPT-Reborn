@@ -196,6 +196,9 @@ muslim = {
 		priests_can_marry = yes
         psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 	yazidi = {
 		graphical_culture = muslimgfx
@@ -206,6 +209,9 @@ muslim = {
 		priests_can_marry = yes
         psc_marriage = no 
 		max_wives = 4
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 	ibadi = {
 		graphical_culture = muslimgfx
@@ -216,6 +222,9 @@ muslim = {
 		priests_can_marry = yes
         psc_marriage = no 
 		max_wives = 4
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 	shiite = {
 		graphical_culture = muslimgfx
@@ -234,6 +243,9 @@ muslim = {
 		priests_can_marry = yes
         psc_marriage = no 
 		max_wives = 4
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 	bektashi = {
 		graphical_culture = muslimgfx
@@ -242,6 +254,9 @@ muslim = {
 		color = { 0.3 0.8 0.3 }
 		parent = shiite
 		priests_can_marry = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 	hurufi = {
 		graphical_culture = muslimgfx
@@ -252,6 +267,9 @@ muslim = {
 		priests_can_marry = yes
         psc_marriage = no 
 		max_wives = 4
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 	druze = {
 		graphical_culture = muslimgfx
@@ -266,6 +284,9 @@ muslim = {
 		priests_can_marry = yes
         psc_marriage = no 
 		max_wives = 4
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
 	}
 }
 

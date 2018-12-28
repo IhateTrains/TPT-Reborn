@@ -1,8 +1,8 @@
 east_slavic = {
-	graphical_culture = easterngfx
+	graphical_cultures = { easterngfx }
 	
 	russian = {
-		graphical_culture = easternslavicgfx
+		graphical_cultures = { easternslavicgfx }
 		graphical_unit_culture = western
 		
 		color = { 0.2 0.4 0.1 }

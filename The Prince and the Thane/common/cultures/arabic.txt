@@ -1,8 +1,8 @@
 arabic = {
-	graphical_culture = muslimgfx
+	graphical_cultures = { muslimgfx }
 	
 	maghreb_arabic = { 
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.2 0.9 0.2 }
 
@@ -39,7 +39,7 @@ arabic = {
 	}
 	
 	andalusian_arabic = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.4 0.6 0.1 }
 
@@ -74,13 +74,13 @@ arabic = {
 	}
 	
     bedouin_arabic = { 
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.1 0.75 0.1 }
 
 		male_names = {
-			Aarif Abdul-Gafur Abdul-Jaleel Abdul-Qadir Abdul-Wahab Abdullah AbuBakr Aghlab Akin Ali Abdul-Wahab Muhammad Alim Aram Azam Bahir
-			Burhanaddin Fadil Fadl Faruk Ghalib Hafiz Halil Hasan Husam Hussayn Ibrahim Mukhtar Idris Is'mail Isa Jabir Jalil Jibril_Gabriel Khaireddin
+			Aarif Abdul-Gafur Abdul-Jaleel Abdul-Qadir Abdul-Wahab Abdullah AbuBakr Aghlab Akin Ali Muhammad Alim Aram Azam Bahir
+			Burhanaddin Fadil Fadl Faruk Ghalib Hafiz Halil Hasan Husam Hussayn Ibrahim Idris Is'mail Isa Jabir Jalil Jibril_Gabriel Khaireddin
 			Khalil Mahmud Mansur Mirza Mubarak Mahdi Mukhtar Murad Musa Muzaffaraddin Najib Sami Muslihiddin Nasr Nizam Qawurd Ramadan Sa'daddin
 			Sadiq Samir Shaiban Shamir Shujah Sulayman Talib Ubayd Uways Ya'qub Yusuf Zeyd
 		}
@@ -102,13 +102,13 @@ arabic = {
 	}
 	
 	levantine_arabic = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.3 0.95 0.3 }
 
 		male_names = {
 			Abdul-Azeem Abdul-Hamid Abdul-Lateef Abdul-Razzaq Abdullah Adhid Adil Akab Ala'i Ali Muhammad Amir Ashraf Aziz Bashar Da'ud Faisal
-			Fayiz Ghazi Hakam Hamdan Hashmaddin Hussayn Ibrahim Mukhtar Imamaddin Is'mail Ismat Jahan Jamil Kamran Khalid Khudayar Majid Mas'ud
+			Fayiz Ghazi Hakam Hamdan Hashmaddin Hussayn Ibrahim Imamaddin Is'mail Ismat Jahan Jamil Kamran Khalid Khudayar Majid Mas'ud
 			Muaddam Abdul-Wahad Muhsin Mukhtar Murad Musa Muzaffaraddin Nuri Ya'qub Muzaffar Nasraddin Nuraddin Radhi Rasul Sa'ud Salahaddin 
 			Seyfullah Sharaf Sirhan Taimur Tawfiq Umaya Wahid Yasar Zahir
 		}
@@ -130,7 +130,7 @@ arabic = {
 	}
 	
 	egyptian_arabic = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.1 0.6 0.1 }
 
@@ -157,13 +157,13 @@ arabic = {
 		modifier = arab_culture_modifier
 	}
     sicilian_arabic = { 
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.3 0.6 0.3 }
 
 		male_names = {
 			Abbas Abdul-Haleem Abdul-Kareem Abdul-Rahman Abdullah Adam_Adam Ahmad Al'a'addin Ali Muhammad Amin Asad Azim Barakat Buwayh Fahd Fath Ghani
-			Haidar Hamad Hashim Hussamaddin Ibrahim Mukhtar Ilyas Is'mail Ishaq Jaffar Jamal Kamal Khalid Khidr Mahtar Marwan Mu'izz Abdul-Azeem Malik
+			Haidar Hamad Hashim Hussamaddin Ibrahim Ilyas Is'mail Ishaq Jaffar Jamal Kamal Khalid Khidr Mahtar Marwan Mu'izz Abdul-Azeem Malik
 			Mukhtar Murad Musa Muzaffaraddin Nazar Tahir Mustafa Nasr Nizamaddin Qutaiba Rashid Sa'id Salah Sayyid Shamsaddin Sinbad Sultan Tariq
 			Umar Wahab Yahya Zafir Zubeyr Abelardo Achille Adalberto_Albert Adelmio Adelmo Adolfo Adriano Agostino Alamanno 
 			Alberico Alberto_Albert Alessio Alighiero Ambrogio Amedeo Anastasio Angelo_Angel Anselmo Antonin Arcibaldo Arderico Armando Arnolfo Arrigo Arsenio Artemio Ascanio Astorre
@@ -178,7 +178,7 @@ arabic = {
 			Sigismondo Silvano Silvestro Simone_Simon Simonetto Sinibaldo Tedaldo Teodoro Tibaldo_Theobald Tony Torgodorio Torquato Uberto Ugo_Hugh Vincenzo_Vincent Vitale Vito Vittore Zaccaria
 		}
 		female_names = {
-			Amira Bahiyya Bilqis Fahriya Hadiya Hawwa Jaida Kamila Lem'an Melek Najiba Ra'isa Rahima Sadiqa Salaama Siddiqa Tarifa Zahida Zubayda 
+			Amira Bilqis Fahriya Hadiya Hawwa Jaida Kamila Lem'an Melek Najiba Ra'isa Rahima Sadiqa Salaama Siddiqa Tarifa Zahida Zubayda 
 			Aisha Aaliyah Aamina Aamira Aaqila Aarifa Adelah_Adela Adiba Adilah Adilia Adiva Aeesha Aesha Badeea Badia Badra Bahiyya Bajila Baraah Barakah_Benedicta
 			Baria Bashira Basilie Basima Basimah Cala Cantara Daisha Dalal Dema Dimah Dinara Dua Durra Durriyya Eleonorka Adriana Agnese_Agnes Agostina Alessandra Alisia_Alice Aloisia	 Ambrosia Anastasia_Anastasia Angela Antonella Antonia Argentina Assunta Augusta Aurelia Ausonia
 			Bianca_Blanche Candida Caracosa Carla Carmela Caterina_Catherine Cecilia_Cecilia Claudia Cornelia Dora Edda Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Ermenegilda Eudossia Eugenia

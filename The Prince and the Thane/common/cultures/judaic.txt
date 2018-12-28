@@ -1,9 +1,8 @@
 judaic = {
-	graphical_culture = muslimgfx
+	graphical_cultures = { muslimgfx }
 
 	sephardic = {
-		graphical_culture = southerngfx
-		second_graphical_culture = muslimgfx # Fallback type
+		graphical_cultures = { southerngfx muslimgfx }
 		
 		used_for_random = no
 		
@@ -76,7 +75,7 @@ judaic = {
 	}
 	
 	mizrahi = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.5 0.5 0.3 }
 
@@ -122,7 +121,7 @@ judaic = {
 	}
 
     ashkenazi = {
-		graphical_culture = westerngfx
+		graphical_cultures = { westerngfx }
 		
 		color = { 0.1 0.3 0.1 }
 		

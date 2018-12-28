@@ -1,8 +1,8 @@
 iranian = {
-	graphical_culture = muslimgfx
+	graphical_cultures = { muslimgfx }
 
 	persian = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 
 		color = { 0.5 0.5 0.05 }
 
@@ -32,7 +32,7 @@ iranian = {
 		modifier = persian_culture_modifier
 	}
     kurdish = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 
 		color = { 0.45 0.45 0.1 }
 
@@ -73,7 +73,7 @@ iranian = {
 		modifier = persian_culture_modifier
 	}
 	alan = {
-		graphical_culture = muslimgfx
+		graphical_cultures = { muslimgfx }
 		
 		color = { 0.7 0.5 0.7 }
 

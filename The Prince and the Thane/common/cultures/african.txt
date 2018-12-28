@@ -1,6 +1,6 @@
 west_african = {
 
-		graphical_culture = muslimgfx
+	graphical_cultures = { muslimgfx }
 
 	manden = {
 		graphical_cultures = { africangfx muslimgfx }
@@ -137,7 +137,7 @@ west_african = {
 	}
 }
 east_african = {
-	graphical_culture = muslimgfx
+	graphical_cultures = { muslimgfx }
 
 	ethiopian = {
 		graphical_cultures = { africangfx muslimgfx }

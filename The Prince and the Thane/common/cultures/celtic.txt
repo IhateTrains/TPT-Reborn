@@ -1,8 +1,8 @@
 celtic = {
-	graphical_culture = westerngfx
+	graphical_cultures = { westerngfx }
 
 	irish = {
-		graphical_culture = celticgfx
+		graphical_cultures = { celticgfx }
 		
 		color = { 0.3 0.8 0.4 }
 
@@ -38,7 +38,7 @@ celtic = {
 		mother_name_chance = 10
 	}
     	welsh = {
-		graphical_culture = saxongfx
+		graphical_cultures = { saxongfx }
 		
 		color = { 0.3 0.8 0.6 }
 
@@ -79,7 +79,7 @@ celtic = {
 		mother_name_chance = 0
 	}
 	breton = {
-		graphical_culture = celticgfx
+		graphical_cultures = { celticgfx }
 		
 		color = { 0.3 0.5 0.4 }
 		
@@ -115,7 +115,7 @@ celtic = {
 		mother_name_chance = 0
         }
     cornish = {
-		graphical_culture = celticgfx
+		graphical_cultures = { celticgfx }
 		
 		color = { 0.3 0.8 0.6 }
 
@@ -154,7 +154,7 @@ celtic = {
 		mother_name_chance = 0
 	}
 	norsegaelic = {
-	        graphical_culture = norsegfx
+		graphical_cultures = { norsegfx }
 		
 		color = { 0.2 0.55 0.75 }
 

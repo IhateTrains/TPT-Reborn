@@ -13,7 +13,7 @@ narrative_event = {	# grail.1 - Holy Grail Research - Rumors about Palestine (10
 	desc = "EVTDESCgrail.1"
 	picture = "GFX_evt_grail2"
 	title = "The Holy Grail"
-	border = "GFX_event_narrative_frame_religious"
+	border = "GFX_event_narrative_frame_religion"
 
     min_age = 14
 	only_men = yes
@@ -126,7 +126,7 @@ narrative_event = {	# grail.3 - Holy Grail Research - Rumors about Champagne (12
 	id = grail.3
 	desc = "EVTDESCgrail.3"
 	picture = "GFX_evt_grail2"
-	border = "GFX_event_narrative_frame_religious"
+	border = "GFX_event_narrative_frame_religion"
 	title = "The Holy Grail"
 
     min_age = 14

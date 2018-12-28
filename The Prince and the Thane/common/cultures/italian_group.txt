@@ -1,8 +1,8 @@
 italian_group = {
-	graphical_culture = westerngfx
+	graphical_cultures = { westerngfx }
 
 	central_italian = {
-		graphical_culture = occitangfx
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.7 0.9 0.1 }
 
@@ -50,8 +50,7 @@ italian_group = {
         }
 	
 	southern_italian = {
-		graphical_culture = southerngfx
-		second_graphical_culture = occitangfx # Fallback type
+		graphical_cultures = { southerngfx occitangfx }
 		
 		color = { 0.8 0.1 0.1 }
 
@@ -96,7 +95,7 @@ italian_group = {
 	}
 	
 	tuscan = {
-		graphical_culture = occitangfx
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.6 0.1 0.1 }
 
@@ -143,7 +142,7 @@ italian_group = {
 	}
 	
 	ligurian = {
-		graphical_culture = occitangfx
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.6 0.9 0.5 }
 
@@ -190,7 +189,7 @@ italian_group = {
     }
 
 	italian = {
-		graphical_culture = germangfx
+		graphical_cultures = { germangfx }
 		
 		color = { 0.1 0.7 0.1 }
 
@@ -236,7 +235,7 @@ italian_group = {
         }
 		
 	venetian = {
-		graphical_culture = germangfx
+		graphical_cultures = { germangfx }
 		
 		color = { 0.1 0.5 0.9 }
 

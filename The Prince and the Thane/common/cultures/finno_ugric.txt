@@ -1,8 +1,8 @@
 finno_ugric = {
-	graphical_culture = easterngfx
+	graphical_cultures = { easterngfx }
 
 	finnish = {
-		graphical_culture = norsegfx
+		graphical_cultures = { norsegfx }
 		
 		color = { 0.1 0.6 0.6 }
 
@@ -26,7 +26,7 @@ finno_ugric = {
 		modifier = finnish_culture_modifier
 	}
 	lappish	 = {
-		graphical_culture = mongolgfx
+		graphical_cultures = { mongolgfx }
 		
 		color = { 0.2 0.65 0.65 }
 
@@ -44,7 +44,7 @@ finno_ugric = {
 		modifier = finnish_culture_modifier
 	}
     livonian = {
-		graphical_culture = norsegfx
+		graphical_cultures = { norsegfx }
 		color = { 0.35 0.85 0.85 }
 
 		male_names = {
@@ -60,7 +60,7 @@ finno_ugric = {
 		modifier = baltic_culture_modifier
 	}
     tsuudi = {
-		graphical_culture = norsegfx
+		graphical_cultures = { norsegfx }
 		color = { 0.3 0.8 0.8 }
 
 		male_names = {
