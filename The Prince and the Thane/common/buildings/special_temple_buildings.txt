@@ -6,7 +6,7 @@ tp_elite_barracks_1_mus = {
 		potential = {
 			FROM = { religion_group = muslim }
 		}
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		heavy_infantry = 45
 		ai_creation_factor = 95
@@ -23,7 +23,7 @@ tp_elite_barracks_1_mus = {
 		}
 		prerequisites = { tp_wall_1 }
 		upgrades_from = tp_elite_barracks_1_mus
-		build_cost = 120
+		gold_cost = 120
 		build_time = 730
 		heavy_infantry = 55
 		ai_creation_factor = 94
@@ -40,7 +40,7 @@ tp_elite_barracks_1_mus = {
 		}
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_elite_barracks_2_mus
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 65
 		ai_creation_factor = 93
@@ -57,7 +57,7 @@ tp_elite_barracks_1_mus = {
 		}
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		upgrades_from = tp_elite_barracks_3_mus
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 75
 		ai_creation_factor = 92
@@ -74,7 +74,7 @@ tp_elite_barracks_1_mus = {
 		}
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_elite_barracks_4_mus
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 85
 		ai_creation_factor = 91
@@ -91,7 +91,7 @@ tp_elite_barracks_1_mus = {
 		}
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
 		upgrades_from = tp_elite_barracks_5_mus
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		heavy_infantry = 95
 		ai_creation_factor = 90
@@ -109,7 +109,7 @@ tp_elite_barracks_1 = {
 				FROM = { religion_group = muslim }
 			}
 		}
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		heavy_infantry = 45
 		ai_creation_factor = 95
@@ -128,7 +128,7 @@ tp_elite_barracks_1 = {
 		}
 		prerequisites = { tp_wall_1 }
 		upgrades_from = tp_elite_barracks_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 730
 		heavy_infantry = 55
 		ai_creation_factor = 94
@@ -147,7 +147,7 @@ tp_elite_barracks_1 = {
 		}
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_elite_barracks_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 65
 		ai_creation_factor = 93
@@ -165,7 +165,7 @@ tp_elite_barracks_1 = {
 			is_capital = yes
 		}
 		prerequisites = { tp_wall_2 }
-		build_cost = 150
+		gold_cost = 150
 		build_time = 365
 		heavy_infantry = 100
 		light_infantry = 50
@@ -191,7 +191,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_wall_3 }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_barracks_pope_1
-		build_cost = 200
+		gold_cost = 200
 		build_time = 547
 		heavy_infantry = 100
 		light_infantry = 50
@@ -212,7 +212,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_wall_4 }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_barracks_pope_2
-		build_cost = 250
+		gold_cost = 250
 		build_time = 730
 		heavy_infantry = 100
 		light_infantry = 50
@@ -231,7 +231,7 @@ tp_elite_barracks_1 = {
 	        FROM = { religion_group = christian }
 		}
 		prerequisites = { tp_monastery_1 } # Priory
-		build_cost = 100
+		gold_cost = 100
 		build_time = 295
 		local_tax_modifier = 0.05
 		ai_creation_factor = 95
@@ -248,7 +248,7 @@ tp_elite_barracks_1 = {
 		}
 		prerequisites = { tp_monastery_2 } # Monastery
 		upgrades_from = tp_brewers_1
-	        build_cost = 120
+	        gold_cost = 120
 		build_time = 440
 		local_tax_modifier = 0.05
 		ai_creation_factor = 85
@@ -265,7 +265,7 @@ tp_elite_barracks_1 = {
 		}
 		prerequisites = { tp_monastery_3 } # Abbey
 		upgrades_from = tp_brewers_2
-	        build_cost = 150
+	        gold_cost = 150
 		build_time = 480
 		local_tax_modifier = 0.05
 		ai_creation_factor = 80
@@ -279,7 +279,7 @@ tp_elite_barracks_1 = {
 	tp_horse_1 = {
 	desc = ca_stable_1_desc
 	   potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = farmlands
                     terrain = steppe
@@ -288,7 +288,7 @@ tp_elite_barracks_1 = {
                          }                     
                 }
 		prerequisites = { tp_settlement_1 }
-	        build_cost = 75
+	        gold_cost = 75
 		build_time = 155
 		tax_income = 0.5
 		ai_creation_factor = 72
@@ -301,7 +301,7 @@ tp_elite_barracks_1 = {
 	tp_horse_2 = {
 	desc = ca_stable_1_desc
 		potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = farmlands
                     terrain = steppe
@@ -312,7 +312,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_2 }
 		trigger = { TECH_CASTLE_TAXES = 1 }
 		upgrades_from = tp_horse_1
-		build_cost = 100
+		gold_cost = 100
 		build_time = 290
 		tax_income = 0.5
 		ai_creation_factor = 71
@@ -325,7 +325,7 @@ tp_elite_barracks_1 = {
 	tp_horse_3 = {
 	desc = ca_stable_1_desc
 		potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = farmlands
                     terrain = steppe
@@ -336,7 +336,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_3 }
 		trigger = { TECH_CASTLE_TAXES = 2 }
 		upgrades_from = tp_horse_2
-		build_cost = 150
+		gold_cost = 150
 		build_time = 365
 		tax_income = 0.5
 		ai_creation_factor = 70
@@ -354,7 +354,7 @@ tp_elite_barracks_1 = {
 		}
 		prerequisites = { tp_settlement_1 }
 		trigger = { TECH_CASTLE_TAXES = 1 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 225
 		tax_income = 0.5
 		ai_creation_factor = 90
@@ -373,7 +373,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_2 }
 		trigger = { TECH_CASTLE_TAXES = 2 }
 		upgrades_from = tp_apiary_1
-		build_cost = 75
+		gold_cost = 75
 		build_time = 365
 		tax_income = 0.5
 		ai_creation_factor = 89
@@ -391,7 +391,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_3 }
 		trigger = { TECH_CASTLE_TAXES = 3 }
 		upgrades_from = tp_apiary_2
-		build_cost = 100
+		gold_cost = 100
 		build_time = 405
 		tax_income = 0.5
 		ai_creation_factor = 88
@@ -405,7 +405,7 @@ tp_elite_barracks_1 = {
 	tp_fruit_grove_1 = {
 	desc = tp_fruit_desc
 	    potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = farmlands
                     terrain = plains
@@ -413,7 +413,7 @@ tp_elite_barracks_1 = {
                          }                     
                 }
 		prerequisites = { tp_settlement_1 }
-	        build_cost = 50
+	        gold_cost = 50
 		build_time = 365
 		tax_income = 0.35
 		ai_creation_factor = 72
@@ -426,7 +426,7 @@ tp_elite_barracks_1 = {
 	tp_fruit_grove_2 = {
 	desc = tp_fruit_desc
 		potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = farmlands
                     terrain = plains
@@ -436,7 +436,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_2 }
 		upgrades_from = tp_fruit_grove_1
 		trigger = { TECH_CASTLE_TAXES = 1 }
-		build_cost = 75
+		gold_cost = 75
 		build_time = 365
 		tax_income = 0.35
 		ai_creation_factor = 71
@@ -449,7 +449,7 @@ tp_elite_barracks_1 = {
 	tp_fruit_grove_3 = {
 	desc = tp_fruit_desc
 		potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = farmlands
                     terrain = plains
@@ -459,7 +459,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_3 }
 		trigger = { TECH_CASTLE_TAXES = 2 }
 		upgrades_from = tp_fruit_grove_2
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		tax_income = 0.35
 		ai_creation_factor = 70
@@ -472,14 +472,14 @@ tp_elite_barracks_1 = {
 	tp_mines_chalk_1 = {
 	desc = tp_chalk_mines_desc
 	    potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = mountain
                     terrain = impassable_mountains
                          }                     
                 }	
 		prerequisites = { tp_settlement_1 }	
-		build_cost = 50 
+		gold_cost = 50 
 		build_time = 765
 		tax_income = 0.5
 		ai_creation_factor = 88
@@ -492,7 +492,7 @@ tp_elite_barracks_1 = {
 	tp_mines_chalk_2 = {
 	desc = tp_chalk_mines_desc
 	    potential = { 
-                Or = {
+                OR = {
                     terrain = hills
                     terrain = mountain
                     terrain = impassable_mountains
@@ -501,7 +501,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_3 }
 		trigger = { TECH_CONSTRUCTION = 1 }
 		upgrades_from = tp_mines_chalk_1
-	   	build_cost = 75
+	   	gold_cost = 75
 		build_time = 1395
 		tax_income = 0.75
 		ai_creation_factor = 87
@@ -514,13 +514,13 @@ tp_elite_barracks_1 = {
 	tp_mines_stone_1 = {
 	desc = tp_stone_mines_desc
 	    potential = { 
-                Or = {
+                OR = {
                     terrain = mountain
                     terrain = impassable_mountains
                          }                     
                 }	
 		prerequisites = { tp_settlement_1 }
-		build_cost = 50 
+		gold_cost = 50 
 		build_time = 730
 		tax_income = 0.5
 		ai_creation_factor = 88
@@ -533,7 +533,7 @@ tp_elite_barracks_1 = {
 	tp_mines_stone_2 = {
 	desc = tp_stone_mines_desc
 	    potential = { 
-                Or = {
+                OR = {
                     terrain = mountain
                     terrain = impassable_mountains
                          }                     
@@ -541,7 +541,7 @@ tp_elite_barracks_1 = {
 		prerequisites = { tp_settlement_3 }
 		trigger = { TECH_CONSTRUCTION = 1 }
 		upgrades_from = tp_mines_stone_1
-	   	build_cost = 100
+	   	gold_cost = 100
 		build_time = 1065
 		tax_income = 1
 
@@ -559,7 +559,7 @@ tp_third_temple = {
 			always = no
 		}
 		tax_income = 2.5
-		build_cost = 0
+		gold_cost = 0
 		build_time = 0
                 monthly_character_piety = 1.5
 		ai_creation_factor = 1

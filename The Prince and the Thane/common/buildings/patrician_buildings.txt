@@ -3,7 +3,7 @@ family_palace = {
 	# Mansion
 	fp_mansion_1 = {
 		desc = fp_mansion_1_desc
-		build_cost = 200
+		gold_cost = 200
 		build_time = 1095
 		ai_creation_factor = 110
 		
@@ -19,7 +19,7 @@ family_palace = {
 	fp_mansion_2 = {
 		desc = fp_mansion_2_desc
 		upgrades_from = fp_mansion_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1460
 		ai_creation_factor = 109
 		
@@ -36,7 +36,7 @@ family_palace = {
 	fp_mansion_3 = {
 		desc = fp_mansion_3_desc
 		upgrades_from = fp_mansion_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		ai_creation_factor = 108
 		
@@ -53,7 +53,7 @@ family_palace = {
 	fp_mansion_4 = {
 		desc = fp_mansion_4_desc
 		upgrades_from = fp_mansion_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		ai_creation_factor = 107
 		
@@ -69,7 +69,7 @@ family_palace = {
 	# Guard Barracks
 	fp_barracks_1 = {
 		desc = fp_barracks_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -86,7 +86,7 @@ family_palace = {
 		desc = fp_barracks_2_desc
 		upgrades_from = fp_barracks_1
 		prerequisites = { fp_mansion_2 }
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		ai_creation_factor = 104
 		
@@ -103,7 +103,7 @@ family_palace = {
 		desc = fp_barracks_3_desc
 		upgrades_from = fp_barracks_2
 		prerequisites = { fp_mansion_3 }
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		ai_creation_factor = 103
 		
@@ -118,7 +118,7 @@ family_palace = {
 	# Small Stable
 	fp_stable_1 = {
 		desc = fp_stable_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -132,7 +132,7 @@ family_palace = {
 	# Riding Grounds
 	fp_stable_2 = {
 		desc = fp_stable_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		upgrades_from = fp_stable_1
 		prerequisites = { fp_mansion_2 }
@@ -148,7 +148,7 @@ family_palace = {
 	# Horse Breeder
 	fp_stable_3 = {
 		desc = fp_stable_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		upgrades_from = fp_stable_2
 		prerequisites = { fp_mansion_3 }
@@ -165,7 +165,7 @@ family_palace = {
 	# Bowyer
 	fp_bowyer_1 = {
 		desc = fp_bowyer_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -180,7 +180,7 @@ family_palace = {
 	# Target Range
 	fp_bowyer_2 = {
 		desc = fp_bowyer_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		upgrades_from = fp_bowyer_1
 		prerequisites = { fp_mansion_2 }
@@ -197,7 +197,7 @@ family_palace = {
 	# Crossbow Workshop
 	fp_bowyer_3 = {
 		desc = fp_bowyer_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		upgrades_from = fp_bowyer_2
 		prerequisites = { fp_mansion_3 }
@@ -214,7 +214,7 @@ family_palace = {
 	# Map Room
 	fp_shipyard_1 = {
 		desc = fp_shipyard_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -228,7 +228,7 @@ family_palace = {
 	#  Private Shipyard
 	fp_shipyard_2 = {
 		desc = fp_shipyard_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		upgrades_from = fp_shipyard_1
 		prerequisites = { fp_mansion_2 }
@@ -244,7 +244,7 @@ family_palace = {
 	# Naval Arsenal
 	fp_shipyard_3 = {
 		desc = fp_shipyard_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		upgrades_from = fp_shipyard_2
 		prerequisites = { fp_mansion_3 }
@@ -260,7 +260,7 @@ family_palace = {
 	# Military Warehouse
 	fp_warehouse_1 = {
 		desc = fp_warehouse_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -276,7 +276,7 @@ family_palace = {
 	# Palace Archive
 	fp_warehouse_2 = {
 		desc = fp_warehouse_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		upgrades_from = fp_warehouse_1
 		prerequisites = { fp_mansion_2 }
@@ -295,7 +295,7 @@ family_palace = {
 	# Administrative Office
 	fp_warehouse_3 = {
 		desc = fp_warehouse_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		upgrades_from = fp_warehouse_2
 		prerequisites = { fp_mansion_3 }
@@ -314,7 +314,7 @@ family_palace = {
 	# Palace Garden
 	fp_garden_1 = {
 		desc = fp_garden_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -328,7 +328,7 @@ family_palace = {
 	# Scenic Pond
 	fp_garden_2 = {
 		desc = fp_garden_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		ai_creation_factor = 104
 
@@ -346,7 +346,7 @@ family_palace = {
 	# Hedge Maze
 	fp_garden_3 = {
 		desc = fp_garden_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		ai_creation_factor = 103
 
@@ -364,7 +364,7 @@ family_palace = {
 	# Wine Cellar
 	fp_cellar_1 = {
 		desc = fp_cellar_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -378,7 +378,7 @@ family_palace = {
 	# Catacombs
 	fp_cellar_2 = {
 		desc = fp_cellar_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		ai_creation_factor = 104
 
@@ -396,7 +396,7 @@ family_palace = {
 	# Dungeon Complex
 	fp_cellar_3 = {
 		desc = fp_cellar_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		ai_creation_factor = 103
 		
@@ -414,7 +414,7 @@ family_palace = {
 	# Secluded Shrine
 	fp_shrine_1 = {
 		desc = fp_shrine_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -429,7 +429,7 @@ family_palace = {
 	# Private Art Collection
 	fp_shrine_2 = {
 		desc = fp_shrine_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		upgrades_from = fp_shrine_1
 		prerequisites = { fp_mansion_2 }
@@ -446,7 +446,7 @@ family_palace = {
 	# Grand Library
 	fp_shrine_3 = {
 		desc = fp_shrine_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		upgrades_from = fp_shrine_2
 		prerequisites = { fp_mansion_3 }
@@ -463,7 +463,7 @@ family_palace = {
 	# Fortified Vault
 	fp_vault_1 = {
 		desc = fp_vault_1_desc
-		build_cost = 150
+		gold_cost = 150
 		build_time = 730
 		ai_creation_factor = 105
 		
@@ -477,7 +477,7 @@ family_palace = {
 	# Secret Passages
 	fp_vault_2 = {
 		desc = fp_vault_2_desc
-		build_cost = 250
+		gold_cost = 250
 		build_time = 1095
 		upgrades_from = fp_vault_1
 		prerequisites = { fp_mansion_2 }
@@ -494,7 +494,7 @@ family_palace = {
 	# Hidden Chamber
 	fp_vault_3 = {
 		desc = fp_vault_3_desc
-		build_cost = 350
+		gold_cost = 350
 		build_time = 1460
 		upgrades_from = fp_vault_2
 		prerequisites = { fp_mansion_3 }

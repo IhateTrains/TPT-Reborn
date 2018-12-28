@@ -11,7 +11,7 @@ city = {
 		trigger = {
 			always = no
 		}
-		build_cost = 0
+		gold_cost = 0
 		build_time = 0
 		tax_income = 2
 		ai_creation_factor = 1
@@ -32,7 +32,7 @@ city = {
 		trigger = {
 			always = no
 		}
-		build_cost = 0
+		gold_cost = 0
 		build_time = 0
 		tax_income = 2
 		ai_creation_factor = 1
@@ -53,7 +53,7 @@ city = {
 		trigger = {
 			always = no
 		}
-		build_cost = 0
+		gold_cost = 0
 		build_time = 0
 		tax_income = 2
 		ai_creation_factor = 1
@@ -69,7 +69,7 @@ city = {
 
 		prerequisites = { ct_jewish_community_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 2 }
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2340
 		tax_income = 1.50
                 monthly_character_piety = -0.05
@@ -87,7 +87,7 @@ city = {
 		desc = ct_jewish_jewelers_desc
 		prerequisites = { ct_jewish_community_1 }
 		trigger = { TECH_CONSTRUCTION = 1 TECH_CITY_CONSTRUCTION = 1 } # civic industy & city construction at lvl 1
-		build_cost = 75
+		gold_cost = 75
 		build_time = 365
 		local_tax_modifier = 0.075
                 monthly_character_piety = -0.025
@@ -103,7 +103,7 @@ city = {
 		prerequisites = { ct_marketplace_4 }
 		trigger = { TECH_CONSTRUCTION = 3 TECH_CITY_CONSTRUCTION = 2 }
 		upgrades_from = ct_jewellers_1
-	        build_cost = 400
+	        gold_cost = 400
 		build_time = 1095
 		local_tax_modifier = 0.075
         monthly_character_piety = -0.025
@@ -141,7 +141,7 @@ city = {
 			}	
 		}
 		trigger = { TECH_CONSTRUCTION = 1 TECH_CITY_CONSTRUCTION = 1 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 220
 		local_tax_modifier = 0.05
 		ai_creation_factor = 84 
@@ -178,7 +178,7 @@ city = {
 		}
 		upgrades_from = ct_carpet_workshops_1
 		trigger = { TECH_CONSTRUCTION = 2 TECH_CITY_CONSTRUCTION = 2 }
-	        build_cost = 100
+	        gold_cost = 100
 		build_time = 365
 		local_tax_modifier = 0.05
 		ai_creation_factor = 83
@@ -215,7 +215,7 @@ city = {
 		}
 		trigger = { TECH_CONSTRUCTION = 4 TECH_CITY_CONSTRUCTION = 3 }
 		upgrades_from = ct_carpet_workshops_2
-	        build_cost = 150
+	        gold_cost = 150
 		build_time = 730
 		local_tax_modifier = 0.05
 		ai_creation_factor = 82
@@ -233,7 +233,7 @@ city = {
 			
 		}	
 		prerequisites = { ct_port_1 }
-		build_cost = 55
+		gold_cost = 55
 		build_time = 365
 		tax_income = 0.28
 		ai_creation_factor = 88
@@ -252,7 +252,7 @@ city = {
                 prerequisites = { ct_port_2 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
 		upgrades_from = ct_fishing_1
-	   	build_cost = 105
+	   	gold_cost = 105
 		build_time = 730
 		tax_income = 0.28
 		ai_creation_factor = 87
@@ -271,7 +271,7 @@ city = {
                 prerequisites = { ct_port_4 }
 		trigger = { TECH_CITY_CONSTRUCTION = 3 }
 		upgrades_from = ct_fishing_2
-	   	build_cost = 160
+	   	gold_cost = 160
 		build_time = 850
 		tax_income = 0.28
 		ai_creation_factor = 86
@@ -293,7 +293,7 @@ city = {
 		}
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CONSTRUCTION = 1 TECH_CITY_CONSTRUCTION = 1 }
-		build_cost = 75
+		gold_cost = 75
 		build_time = 220
 		local_tax_modifier = 0.055
 		ai_creation_factor = 84 
@@ -311,7 +311,7 @@ city = {
 		prerequisites = { ct_marketplace_2 }
 		trigger = { TECH_CONSTRUCTION = 2 TECH_CITY_CONSTRUCTION = 2 }
 		upgrades_from = ct_winery_1
-	    build_cost = 175
+	    gold_cost = 175
 		build_time = 365
 		local_tax_modifier = 0.055
 		ai_creation_factor = 83
@@ -329,7 +329,7 @@ city = {
 		prerequisites = { ct_marketplace_3 }
 		trigger = { TECH_CONSTRUCTION = 4 TECH_CITY_CONSTRUCTION = 3 }
 		upgrades_from = ct_winery_2
-	    build_cost = 225
+	    gold_cost = 225
 		build_time = 730
 		local_tax_modifier = 0.055
 		ai_creation_factor = 82
@@ -355,7 +355,7 @@ ct_spice_1 = {
 					}   
 		}
 		prerequisites = { ct_wall_2 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 297
 		tax_income = 1.5
 		ai_creation_factor = 100
@@ -380,7 +380,7 @@ ct_spice_2 = {
 					}   
 		}
 		upgrades_from = ct_spice_1
-		build_cost = 250
+		gold_cost = 250
 		build_time = 397
 		tax_income = 2.0
 		ai_creation_factor = 99
@@ -406,7 +406,7 @@ ct_spice_3 = {
 		}
 		upgrades_from = ct_spice_2
 		prerequisites = { ct_wall_3 }
-		build_cost = 350
+		gold_cost = 350
 		build_time = 497
 		tax_income = 2.5
 		ai_creation_factor = 99
@@ -462,7 +462,7 @@ ct_cloth_1 = {
 			          province_id = 781 # Darum   
 					}   
 		}
-		build_cost = 140
+		gold_cost = 140
 		build_time = 200
 		tax_income = 1.0
 		ai_creation_factor = 99
@@ -519,7 +519,7 @@ ct_cloth_2 = {
 		}
 		upgrades_from = ct_cloth_1
 		prerequisites = { ct_wall_2 }
-		build_cost = 250
+		gold_cost = 250
 		build_time = 200
 		tax_income = 1.5
 		ai_creation_factor = 84

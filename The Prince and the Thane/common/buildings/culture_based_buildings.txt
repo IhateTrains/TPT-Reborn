@@ -19,7 +19,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		archers_offensive = 0.1
 		archers = 40
@@ -53,7 +53,7 @@ castle = {
 			}		
 		}		
 		upgrades_from = ca_culture_saxon_english_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		archers_offensive = 0.1
 		archers = 60
@@ -87,7 +87,7 @@ castle = {
 			}			
 		}
 		upgrades_from = ca_culture_saxon_english_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		archers_offensive = 0.1
 		archers = 80
@@ -121,7 +121,7 @@ castle = {
 			}			
 		}
 		upgrades_from = ca_culture_saxon_english_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		archers_offensive = 0.1
 		archers = 100
@@ -148,7 +148,7 @@ castle = {
 			}		
 		}		
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		pikemen = 30
 		pikemen_defensive = 0.1
@@ -174,7 +174,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_scottish_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		pikemen = 40
 		pikemen_defensive = 0.1
@@ -200,7 +200,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_scottish_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		pikemen = 50
 		pikemen_defensive = 0.1
@@ -226,7 +226,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_scottish_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		pikemen = 60
 		pikemen_defensive = 0.1
@@ -263,7 +263,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 30
 		heavy_infantry_offensive = 0.1
@@ -296,7 +296,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_group_baltic_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 40
 		heavy_infantry_offensive = 0.1
@@ -329,7 +329,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_group_baltic_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 50
 		heavy_infantry_offensive = 0.1
@@ -362,7 +362,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_group_baltic_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		heavy_infantry = 60
 		heavy_infantry_offensive = 0.1
@@ -394,7 +394,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		horse_archers = 20
 		horse_archers_offensive = 0.1
@@ -425,7 +425,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_group_altaic_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		horse_archers = 20
 		horse_archers_offensive = 0.1
@@ -456,7 +456,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_group_altaic_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		horse_archers = 30
 		horse_archers_offensive = 0.1
@@ -487,7 +487,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_group_altaic_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		horse_archers = 40
 		horse_archers_offensive = 0.1
@@ -527,7 +527,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		knights = 15
 		knights_offensive = 0.05
@@ -567,7 +567,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_frank_norman_german_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		knights = 20
 		knights_offensive = 0.05
@@ -607,7 +607,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_frank_norman_german_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		knights = 25
 		knights_offensive = 0.05
@@ -647,7 +647,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_frank_norman_german_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		knights = 30
 		knights_offensive = 0.05
@@ -674,7 +674,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 30
 		light_cavalry_offensive = 0.05
@@ -698,7 +698,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_group_maghreb_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 40
 		light_cavalry_offensive = 0.05
@@ -722,7 +722,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_group_maghreb_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 50
 		light_cavalry_offensive = 0.05
@@ -746,7 +746,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_group_maghreb_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
 		light_cavalry_offensive = 0.05
@@ -777,7 +777,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_wall_2 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 30
 		light_cavalry_defensive = 0.15
@@ -809,7 +809,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 1
 		}
 		upgrades_from = ca_culture_group_arabic_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 40
 		light_cavalry_defensive = 0.15
@@ -841,7 +841,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_group_arabic_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 50
 		light_cavalry_defensive = 0.15
@@ -873,7 +873,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_group_arabic_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
 		light_cavalry_defensive = 0.15
@@ -900,7 +900,7 @@ castle = {
 			}		
 		}		
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 30
 		light_cavalry_offensive = 0.1
@@ -926,7 +926,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_group_iberian_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 40
 		light_cavalry_offensive = 0.1
@@ -952,7 +952,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_group_iberian_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 50
 		light_cavalry_offensive = 0.1
@@ -978,7 +978,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_group_iberian_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
 		light_cavalry_offensive = 0.1
@@ -1005,7 +1005,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		pikemen = 30
 		pikemen_offensive = 0.1
@@ -1031,7 +1031,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_italian_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		pikemen = 40
 		pikemen_offensive = 0.1
@@ -1057,7 +1057,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_italian_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		pikemen = 50
 		pikemen_offensive = 0.1
@@ -1083,7 +1083,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_italian_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		pikemen = 60
 		pikemen_offensive = 0.1
@@ -1110,7 +1110,7 @@ castle = {
 			}		
 		}		
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 30
 		heavy_infantry_defensive = 0.1
@@ -1136,7 +1136,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_russian_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 40
 		heavy_infantry_defensive = 0.1
@@ -1162,7 +1162,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_russian_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 50
 		heavy_infantry_defensive = 0.1
@@ -1188,7 +1188,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_russian_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		heavy_infantry = 60
 		heavy_infantry_defensive = 0.1
@@ -1214,7 +1214,7 @@ castle = {
 			}		
 		}		
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 30
 		light_cavalry_defensive = 0.1
@@ -1237,7 +1237,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = irish_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 40
 		light_cavalry_defensive = 0.1
@@ -1260,7 +1260,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}		
 		upgrades_from = irish_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 50
 		light_cavalry_defensive = 0.1
@@ -1283,7 +1283,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = irish_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
 		light_cavalry_defensive = 0.1
@@ -1302,7 +1302,7 @@ castle = {
 			FROM = { culture_group = byzantine }
 		}
 		prerequisites = { ca_wall_2 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		knights = 10
 		horse_archers = 10
@@ -1325,7 +1325,7 @@ castle = {
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_group_byzantine_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		knights = 15
 		horse_archers = 10
@@ -1348,7 +1348,7 @@ castle = {
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
 		upgrades_from = ca_culture_group_byzantine_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		knights = 15
 		horse_archers = 20
@@ -1371,7 +1371,7 @@ castle = {
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
 		upgrades_from = ca_culture_group_byzantine_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		knights = 20
 		horse_archers = 20
@@ -1407,7 +1407,7 @@ castle = {
 			}		
 		}		
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 30
 		light_cavalry_offensive = 0.05
@@ -1442,7 +1442,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = serbian_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 40
 		light_cavalry_offensive = 0.05
@@ -1476,7 +1476,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}		
 		upgrades_from = serbian_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 50
 		light_cavalry_offensive = 0.05
@@ -1510,7 +1510,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = serbian_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
 		light_cavalry_offensive = 0.05
@@ -1538,7 +1538,7 @@ castle = {
 			}
 		}		
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		horse_archers = 20
 		horse_archers_defensive = 0.1
@@ -1563,7 +1563,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_hungarian_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		horse_archers = 20
 		horse_archers_defensive = 0.1
@@ -1588,7 +1588,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_hungarian_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		horse_archers = 30
 		horse_archers_defensive = 0.1
@@ -1613,7 +1613,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_hungarian_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		horse_archers = 40
 		horse_archers_defensive = 0.1
@@ -1634,7 +1634,7 @@ castle = {
 			FROM = { culture = dutch }
 		}
 		prerequisites = { ca_wall_2 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		pikemen = 15
 		light_infantry = 30
@@ -1656,7 +1656,7 @@ castle = {
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_dutch_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		pikemen = 20
 		light_infantry = 40
@@ -1678,7 +1678,7 @@ castle = {
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
 		upgrades_from = ca_culture_dutch_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		pikemen = 25
 		light_infantry = 50
@@ -1700,7 +1700,7 @@ castle = {
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
 		upgrades_from = ca_culture_dutch_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		pikemen = 30
 		light_infantry = 60
@@ -1734,7 +1734,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 30
 		light_cavalry_offensive = 0.1
@@ -1766,7 +1766,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = bulgarian_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 40
 		light_cavalry_offensive = 0.1
@@ -1798,7 +1798,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = bulgarian_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 50
 		light_cavalry_offensive = 0.1
@@ -1830,7 +1830,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = bulgarian_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
 		light_cavalry_offensive = 0.1
@@ -1857,7 +1857,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		knights = 15
 		knights_offensive = 0.05
@@ -1883,7 +1883,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = polish_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		knights = 20
 		knights_offensive = 0.05
@@ -1909,7 +1909,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = polish_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		knights = 25
 		knights_offensive = 0.05
@@ -1935,7 +1935,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = polish_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		knights = 30
 		knights_offensive = 0.05
@@ -1970,7 +1970,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		archers_defensive = 0.1
 		archers = 40
@@ -2004,7 +2004,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = sicilian_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		archers_defensive = 0.1
 		archers = 60
@@ -2038,7 +2038,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = sicilian_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		archers_defensive = 0.1
 		archers = 80
@@ -2072,7 +2072,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = sicilian_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		archers_defensive = 0.1
 		archers = 100
@@ -2107,7 +2107,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 30
 		heavy_infantry_defensive = 0.10
@@ -2141,7 +2141,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = caucasus_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 40
 		heavy_infantry_defensive = 0.10
@@ -2175,7 +2175,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = caucasus_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 50
 		heavy_infantry_defensive = 0.10
@@ -2209,7 +2209,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = caucasus_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		heavy_infantry = 60
 		heavy_infantry_defensive = 0.10
@@ -2242,7 +2242,7 @@ castle = {
 			}		
 		}
 		prerequisites = { ca_keep_1 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 30
 		heavy_infantry_defensive = 0.05
@@ -2275,7 +2275,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = north_german_building_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 40
 		heavy_infantry_defensive = 0.05
@@ -2308,7 +2308,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = north_german_building_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 50
 		heavy_infantry_defensive = 0.05
@@ -2341,7 +2341,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = north_german_building_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		heavy_infantry = 60
 		heavy_infantry_defensive = 0.05
@@ -2375,7 +2375,7 @@ castle = {
 			}
 		}		
 		prerequisites = { ca_wall_2 }
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_infantry = 55
 		archers = 30
@@ -2406,7 +2406,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 2
 		}
 		upgrades_from = ca_culture_west_african_1
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_infantry = 75
 		archers = 50
@@ -2437,7 +2437,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 3
 		}
 		upgrades_from = ca_culture_west_african_2
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_infantry = 95
 		archers = 70
@@ -2468,7 +2468,7 @@ castle = {
 			TECH_CASTLE_CONSTRUCTION = 4
 		}
 		upgrades_from = ca_culture_west_african_3
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_infantry = 115
 		archers = 90
