@@ -2,7 +2,7 @@ anglo_saxon = {
 	graphical_culture = westerngfx
 
 	english = {
-		graphical_culture = englishgfx
+		graphical_cultures = { englishgfx }
 		
 		color = { 0.8 0.2 0.2 }
 		
@@ -44,7 +44,7 @@ anglo_saxon = {
 	}
     
 	saxon = {
-		graphical_culture = saxongfx
+		graphical_cultures = { saxongfx }
 		
 		color = { 0.8 0.3 0.3 }
 		
@@ -63,7 +63,7 @@ anglo_saxon = {
             Wilfrith Wilheard Wilmær Wine Winefrith Wulf_Ulf Wulfhere Wulfnoth Wulfric Wulfstan 
 		}
 		female_names = {
-			Ælfgifu Ælflæd Ælfthryth Ælfwyn Æthelflæd Æthelhild Æthelswyth Æthelthryth Agatha_Agatha Eadflæd Eadgifu Eadgyth Eadhburh Eadhild 
+			Ælfgifu Ælflæd Ælfthryth Æthelflæd Æthelhild Æthelswyth Æthelthryth Agatha_Agatha Eadflæd Eadgifu Eadgyth Eadhburh 
 			Eadwyn Ealdgyth Ecgfrida Ecgwyn Eadhild Eadgyth_Edith Ælfleda Ælfrida Ælfwyn Godgifu Gunhilda_Gunhild Gytha Sigrid_Sigrid Wulfhild 
 			Wulfthryth
 		}
@@ -85,7 +85,7 @@ anglo_saxon = {
 		mother_name_chance = 5
         }
 	scottish = {
-		graphical_culture = englishgfx
+		graphical_cultures = { englishgfx }
 		
 		color = { 0.8 0.35 0.45 }
 
@@ -118,7 +118,7 @@ anglo_saxon = {
 		mother_name_chance = 10
 	}
     anglonorse = {
-		graphical_culture = englishgfx
+		graphical_cultures = { englishgfx }
 		
 		used_for_random = no
 		
@@ -139,7 +139,7 @@ anglo_saxon = {
 		female_names = {
 			Ælfgifu Ælflæd Ælfthryth Ælfwyn Æthelflæd Æthelhild Æthelswyth Agatha_Agatha Eadflæd Eadgifu Eadgyth Eadhburh Eadhild 
 			Eadwine Ealdgyth Ecgfrida Ecgwynn Edhilda Edith_Edith Elfleda Elfrida Elfwynn Elgiva Godgifu Gunhilda_Gunhild Gytha
-			Margaret_Margaret Sigrid_Sigrid Wulfthryth Åshild Åsta_Asta Astrid_Astrid Brigida_Brigid Cecilia_Cecilia Eldrid Gjertrud_Gertrude 
+			Margaret_Margaret Wulfthryth Åshild Åsta_Asta Astrid_Astrid Brigida_Brigid Cecilia_Cecilia Eldrid Gjertrud_Gertrude 
 			Gudrid Gudrun_Gudrun Gyda Gyrid Haldora Homlaug Ingebjørg Ingjerd Ingrid_Ingrid Jorunn
 			Karin_Catherine Kristina_Christina Margrete_Margaret Maria_Maria Ragna Ragnhild Rannveig Sigrid_Sigrid Snøfrid Sunniva Svanhild Thora_Thora Thorborg
 		}
