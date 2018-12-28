@@ -1,0 +1,139 @@
+######################################
+#New ligurian dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035291-1000035340
+######################################
+
+1000035291 = {
+name="Cybo"
+ culture = ligurian 
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 1
+          emblem = 0
+          color = 1
+          color = 4
+          color = 2
+      }
+  } 
+}
+1000035294 = {
+name="de Fornari"
+ culture = ligurian
+   coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 149
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  }
+}
+1000035295 = {
+name="Ceva"
+ culture = ligurian
+   coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 151
+          emblem = 0
+          color = 0
+          color = 3
+          color = 0
+      }
+  }
+}
+1000035296 = {
+name="delle Piane"
+ culture = ligurian
+   coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 13
+          color = 0
+          color = 4
+          color = 0
+      }
+  }
+}
+1000035297 = {
+name="di Negro"
+ culture = ligurian
+}
+1000035298 = {
+name="Tartaro"
+ culture = ligurian
+}
+1000035299 = {
+name="Staglieno"
+ culture = ligurian
+   coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  }
+}
+1000035300 = {
+name="Cattaneo"
+ culture = ligurian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 150
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035301 = {
+name="Embriaci"
+ culture = ligurian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 12
+          emblem = 0
+          color = 3
+          color = 0
+          color = 0
+      }
+  }	 
+}
+
+
+
+
+
+
+
+
+######################################
+#Generic dynasites
+#Range 1000035341-1000035360
+######################################
+
+
+
+

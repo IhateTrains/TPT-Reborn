@@ -1,0 +1,30 @@
+800.1.1={
+	liege="c_nerola"
+}
+980.1.1={
+	holder=1191252 #Ottaviano I Ottaviani
+}
+1024.1.1={
+	holder=1191253 #Giovanni Ottaviani
+}
+1060.1.1={
+	holder=1191254 #Ottone I Ottaviani
+}
+1109.1.1={
+	holder=1191255 #Gregorio Ottaviani
+}
+1128.1.1={
+	holder=1191256 #Ottaviano II Ottaviani
+}
+1148.1.1={
+	holder=1191257 #Ottone II Ottaviani
+}
+1176.1.1={
+	holder=1191258 #Ottone III Ottaviani
+}
+1207.1.1={
+	holder=1191259 #Giovanni II Ottaviani
+}
+1249.1.1={
+	holder=1191260 #Ottone IV Ottaviani
+}

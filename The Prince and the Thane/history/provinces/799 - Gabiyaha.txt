@@ -1,0 +1,22 @@
+# 799 - Gabiyaha      # Nastarawa
+
+# County Title
+title = c_gabiyaha
+
+# Settlements
+max_settlements = 4
+b_nastarawa = castle
+b_burullus = city
+b_fuwa = temple
+
+#b_tida = castle
+
+#b_hermopolis = castle
+#b_rosetta = castle
+#b_sais = city
+
+# Misc
+culture = egyptian_arabic
+religion = sunni
+
+# History

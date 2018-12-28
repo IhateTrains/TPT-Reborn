@@ -1,0 +1,65 @@
+# 333 - Roma
+
+# County Title
+title = c_roma
+
+# Settlements
+max_settlements = 7
+
+b_roma = temple
+b_tivoli = city
+b_castelsantangelo = castle
+b_palo = temple
+b_ostia = temple
+b_mentana = temple
+b_trevignanoromano = temple
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History
+
+800.1.1 = { 
+    b_castelsantangelo = ca_keep_1
+	b_castelsantangelo = ca_keep_2
+	b_castelsantangelo = ca_stable_1
+	b_castelsantangelo = ca_heavy_barracks_1
+	b_castelsantangelo = ca_light_barracks_1
+	b_castelsantangelo = ca_wall_1
+	b_castelsantangelo = ca_wall_2
+	b_castelsantangelo = ca_wall_3
+	b_castelsantangelo = ca_wall_q_1
+	b_castelsantangelo = ca_town_1
+	b_roma = tp_christian_church_1
+	b_roma = tp_christian_church_2
+	b_roma = tp_christian_church_3
+	b_roma = tp_christian_church_4
+	b_roma = tp_christian_church_5
+	b_roma = tp_barracks_1
+	b_roma = tp_wall_1
+	b_roma = tp_wall_2
+	b_roma = tp_settlement_1
+	b_roma = tp_settlement_2
+	b_roma = tp_monastery_1
+	b_ostia = tp_christian_church_1
+	b_ostia = tp_christian_church_2
+	b_ostia = tp_barracks_1
+	b_ostia = tp_wall_1
+	b_ostia = tp_settlement_1
+	b_ostia = tp_monastery_1
+	b_tivoli = ct_jewish_community_1
+	b_tivoli = ct_jewish_community_2
+	b_trevignanoromano = tp_christian_church_1
+	b_trevignanoromano = tp_christian_church_2
+	b_trevignanoromano = tp_barracks_1
+	b_trevignanoromano = tp_wall_1
+	b_trevignanoromano = tp_settlement_1
+	b_trevignanoromano = tp_monastery_1
+	b_palo = tp_christian_church_1
+	b_palo = tp_christian_church_2
+	b_palo = tp_barracks_1
+	b_palo = tp_wall_1
+	b_palo = tp_settlement_1
+	b_palo = tp_monastery_1
+}

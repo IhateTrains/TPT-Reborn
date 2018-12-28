@@ -1,0 +1,16 @@
+# 1395 - Wallen
+
+# County Title
+title = c_wallen
+
+# Settlements
+max_settlements = 1
+b_wallen = city
+
+# Misc
+culture = tuareg
+religion = sunni
+
+# History
+
+

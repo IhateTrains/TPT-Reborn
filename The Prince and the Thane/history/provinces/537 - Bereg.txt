@@ -1,0 +1,25 @@
+# 537 - Bereg
+
+# County Title
+title = c_bereg
+
+# Settlements
+max_settlements = 3
+
+b_somogyvar = castle
+b_zselicszentjakab = city
+
+#b_csurgo = temple
+#b_babocsa = castle
+#b_csakany = castle
+#b_kaposvar = castle
+#b_szigetvar = castle
+#b_fonyod = castle
+
+# Misc
+culture = hungarian
+religion = catholic
+
+# History
+
+

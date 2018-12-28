@@ -1,0 +1,25 @@
+1010.1.1={
+	liege="d_toscana"
+	holder=1191007 #Frogerio Montecuccoli
+}
+1070.1.1={
+	holder=1191008 #Gherardo Montecuccoli
+}
+1110.7.24={
+	holder=1191009 #Matteo Montecuccoli
+}
+1155.1.1={
+	holder=1191010 #Gherardino Montecuccoli
+}
+1190.1.1={
+	holder=1191011 #Alberto Montecuccoli
+}
+1240.1.1={
+	holder=1191012 #Guidinello Montecuccoli
+}
+1288.1.1={
+	liege="d_ferrara"
+}
+1300.1.1={
+	holder=1191013 #Guidinello II Montecuccoli
+}

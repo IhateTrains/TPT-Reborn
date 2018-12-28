@@ -1,0 +1,36 @@
+# 1131 - Bassano
+
+# County Title
+title = c_bassano
+
+# Settlements
+max_settlements = 5
+
+b_castellodegliezzelini = castle
+b_vicenza = city
+b_bassano = city
+b_schio = temple
+
+#b_malovicenza = temple
+#b_thienebassano = city
+#b_castelfranco = castle
+#b_arzignano = castle
+#b_castellodischio = castle
+#b_valdagno = temple
+
+
+
+# Misc
+culture = venetian
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_vicenza = ct_wall_1
+	b_vicenza = ct_wall_q_1
+	b_vicenza = ct_marketplace_1
+	b_vicenza = ct_militia_barracks_1
+}
+
+1259.1.1 = { capital = b_vicenza }

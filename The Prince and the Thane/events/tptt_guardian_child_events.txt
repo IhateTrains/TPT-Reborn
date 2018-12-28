@@ -1,0 +1,1799 @@
+################################################################################
+#
+# The Prince and the Thane new traits guardian/child events - written by idib816
+#
+################################################################################
+
+namespace = tptt_traits
+
+##################
+##################
+##
+##  CLERICAL ENVOY
+##
+##################
+##################
+
+character_event = {
+	id = tptt_traits.1
+	desc = "EVTDESCtptt_traits.1"
+	picture = "GFX_evt_coronation"
+	
+	is_triggered_only = yes
+
+		
+	option = {
+		name = "EVTOPTAtptt_traits.1" # My friend the Pope
+		piety = 25
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = humble
+			}
+			modifier = {
+				factor = 10
+				trait = zealous
+			}
+		}
+		
+		random = {
+			chance = 50
+			add_trait = honest
+			hidden_tooltip = {
+				character_event = {
+					id = 38262 #Notify honest
+				}
+			}
+		}
+
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.35
+				}
+			}
+		}
+	}	
+
+	option = {
+		name = "EVTOPTBtptt_traits.1" # I will pay cardinal
+		scaled_wealth = -0.5
+		piety = -50
+		prestige = 50
+        random = { 
+		    chance = 25
+		    create_random_priest = {
+		        random_traits = yes
+		        trait = clerical_envoy
+		        dynasty = random
+		        female = no
+		    } 
+		}		
+
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 5
+				trait = clerical_envoy
+			}
+		}
+		
+		random_list = {
+			50 = {
+				FROM = { 
+					add_trait = clerical_envoy
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.52
+							}
+						}
+						character_event = {
+							id = tptt_traits.53
+						}
+					}
+				}
+			}
+			10 = {
+				FROM = { 
+					add_trait = uneducated
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							    id = tptt_traits.54
+							}
+						}
+						character_event = {
+							id = tptt_traits.55
+						}
+					}
+				}
+			}
+			40 = {
+				FROM = { 
+                    hidden_tooltip = {
+						character_event = { id = tptt_traits.34 }
+                    }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCtptt_traits.1" # stick with indulgence
+		wealth = -50
+		piety = 25
+		add_trait = cynical		
+
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 4
+				trait = weak
+			}
+			modifier = {
+				factor = 4
+				trait = arbitrary
+			}
+		}
+
+		FROM = { 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.35 }
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  PHILOSOPHER
+##
+##################
+##################
+character_event = {
+	id = tptt_traits.2
+	desc = "EVTDESCtptt_traits.2"
+	picture = "GFX_evt_philosopher"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.2" # wolf in sheep
+		
+		prestige = -25
+		add_trait = cynical
+		
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 4
+				trait = weak
+			}
+			modifier = {
+				factor = 4
+				trait = arbitrary
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.38 }
+			}				
+		}
+	}
+
+	option = {
+		name = "EVTOPTBtptt_traits.2" # I will pay philosopher
+		
+		scaled_wealth = -0.5
+        random = {
+    		chance = 25
+		    create_random_priest = {
+		        random_traits = yes
+		        trait = philosopher
+		        dynasty = random
+		        female = no 
+	     	} 
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 5
+				trait = philosopher
+			}
+			modifier = {
+				factor = 5
+				trait = scholar
+			}
+		}
+		
+		random_list = {
+			50 = {
+				FROM =  {
+					add_trait = philosopher
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.56
+							}
+						}
+						character_event = {
+							id = tptt_traits.57
+						}
+					}
+				}
+			}
+			25 = {
+				FROM =  {
+					add_trait = uneducated
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.58
+							}
+						}
+						character_event = {
+							id = tptt_traits.59
+						}
+					}
+				}
+			}
+			25 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.37	
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTCtptt_traits.2" # exploit work
+
+		wealth = 100
+		change_learning = 1
+		prestige = -25
+
+		ai_chance =  {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 10
+				trait = cynical
+			}
+		}
+		
+		random = {
+			chance = 30
+			add_trait = arbitrary
+			hidden_tooltip = {
+				character_event = {
+					id = 38266 #Notify arbitrary
+			    }
+	    	}
+	    }
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.38
+				}
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  REFORMER
+##
+##################
+##################
+
+character_event = {
+	id = tptt_traits.3
+	desc = "EVTDESCtptt_traits.3"
+	picture = "GFX_evt_avicenna"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.3" # behead him
+		
+		prestige = 15
+		piety = 50
+		add_trait = zealous
+		
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = cruel
+			}
+			modifier = {
+				factor = 4
+				trait = conservative
+			}
+			modifier = {
+				factor = 4
+				trait = arbitrary
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.40 }			
+		    }
+		}
+	}
+
+	option = {
+		name = "EVTOPTBtptt_traits.3" # I will pay muslim
+		
+		scaled_wealth = -0.5
+        random = { 
+		    chance = 35
+		    create_random_steward = {
+		        random_traits = yes
+		        trait = reformer
+		        dynasty = random
+		        religion = sunni
+		        culture = turkish
+		        female = no 
+		    }
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = tolerant
+			}
+			modifier = {
+				factor = 5
+				trait = scholar
+			}
+			modifier = {
+				factor = 5
+				trait = reformer
+			}
+		}
+		
+
+		random_list = {
+			50 = {
+				FROM =  {
+					add_trait = reformer
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.66
+							}
+						}
+						character_event = {
+							id = tptt_traits.67
+						
+						}
+					}
+				}
+			}
+			20 = {
+				FROM =  {
+					add_trait = conservative
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.68
+							}
+						}
+						character_event = {
+							id = tptt_traits.69
+						}
+					}
+				}
+			}
+			10 = {
+				FROM =  {
+					add_trait = tolerant
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.70
+							}
+						}
+						character_event = {
+							id = tptt_traits.71
+						}
+					}
+				}
+			}
+			20 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.41
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTCtptt_traits.3" # steal ideas
+
+		prestige = -80
+		piety = -20
+		wealth = 200
+
+		ai_chance =  {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 10
+				trait = cynical
+			}
+		}
+		
+		random = {
+			chance = 50
+			add_trait = greedy
+			hidden_tooltip = {
+				character_event = {
+					id = 38252 #Notify greedy
+			    }
+			}
+		}
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.40
+				}
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  TALES OF THE GRAIL
+##
+##################
+##################
+
+character_event = {
+	id = tptt_traits.4
+	desc = "EVTDESCtptt_traits.4"
+	picture = "GFX_evt_crusader_battle"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.0" # didn't see ya in J
+		
+		piety = -15
+		add_trait = cynical
+		
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 4
+				trait = deceitful
+			}
+			modifier = {
+				factor = 4
+				trait = arbitrary
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.43 }				
+		    }
+		}
+	}
+
+	option = {
+		name = "EVTOPTBtptt_traits.4" # I will pay Knight
+		
+		scaled_wealth = -0.5
+        random = {
+    		chance = 25
+		    create_random_soldier = {
+		        random_traits = yes
+		        trait = pious_man
+		        trait = knight
+		        dynasty = random
+		        female = no 
+		    } 
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = brave
+			}
+			modifier = {
+				factor = 5
+				trait = strong
+			}
+			modifier = {
+				factor = 5
+				trait = pious_man
+			}
+		}
+		
+
+		random_list = {
+			45 = {
+				FROM =  {
+					add_trait = pious_man
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.78
+							}
+						}
+						character_event = {
+							id = tptt_traits.79
+						
+						}
+					}
+				}
+			}
+			30 = {
+				FROM =  {
+					add_trait = relic_hunter
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.80
+							}
+						}
+						character_event = {
+							id = tptt_traits.81
+						}
+					}
+				}
+			}
+			25 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.44
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCtptt_traits.4" # saved life once
+
+		wealth = -75
+		prestige = 25
+		piety = 25
+
+		ai_chance =  {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = humble
+			}
+			modifier = {
+				factor = 10
+				trait = just
+			}
+		}
+		
+		random = {
+			chance = 50
+			add_trait = charitable
+			hidden_tooltip = {
+				character_event = {
+					id = 38273 #Notify charitable
+				}	
+			}
+		}
+	
+		FROM = {
+			prestige = 15
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.43
+				}
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  BANK SPONSOR
+##
+##################
+##################
+
+character_event = {
+	id = tptt_traits.5
+	desc = "EVTDESCtptt_traits.5"
+	picture = "GFX_evt_jewish_banker"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.5" # don't care for hann
+		
+		prestige = 15
+		piety = 50
+		add_trait = antisemite
+		
+		ai_chance = { 
+			factor = 2
+			modifier = {
+				factor = 5
+				trait = cruel
+			}
+			modifier = {
+				factor = 4
+				trait = conservative
+			}
+			modifier = {
+				factor = 4
+				trait = arbitrary
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+			    character_event = { id = tptt_traits.93 }
+		    }
+		}
+	}
+
+	option = {
+		name = "EVTOPTBtptt_traits.5" # I will pay jew
+		
+		scaled_wealth = -0.5
+        random = { 
+		    chance = 25
+		    create_random_steward = {
+		        random_traits = yes
+		        religion = jewish
+		        culture = sephardic
+		        trait = bank_sponsor
+		        dynasty = random
+		        female = no 
+    		}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = tolerant
+			}
+			modifier = {
+				factor = 5
+				trait = just
+			}
+			modifier = {
+				factor = 5
+				trait = bank_sponsor
+			}
+		}
+		
+		random_list = {
+			70 = {
+				FROM =  {
+					add_trait = bank_sponsor
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.60
+							}
+						}
+						character_event = {
+							id = tptt_traits.61
+						
+						}
+					}
+				}
+			}
+			10 = {
+				FROM =  {
+					add_trait = charlatan
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.62
+							}
+						}
+						character_event = {
+							id = tptt_traits.63
+						}
+					}
+				}
+			}
+			5 = {
+				FROM =  {
+					add_trait = antisemite
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.64
+							}
+						}
+						character_event = {
+							id = tptt_traits.65
+						}
+					}
+				}
+			}
+			15 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.47
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTCtptt_traits.5" # cut alt deal
+
+		prestige = -50
+		piety = -100
+		wealth = 300
+
+		ai_chance =  {
+			factor = 1
+			modifier = {
+				factor = 5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 10
+				trait = cynical
+			}
+		}
+		
+		random = {
+				chance = 75
+				
+				add_trait = greedy
+				hidden_tooltip = {
+					character_event = {
+						id = 38252 #Notify greedy
+					
+			}
+		}
+	}
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.93
+				}
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  PRAGMATIST
+##
+##################
+##################
+
+
+character_event = {
+	id = tptt_traits.88
+	desc = "EVTDESCtptt_traits.88"
+	picture = "GFX_evt_medieval_court"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.88" # man is dangerous
+		
+		prestige = 15
+		
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 4
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = zealous
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.91 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTBtptt_traits.88" # I will pay statesman
+		
+		scaled_wealth = -0.5
+        random = {
+    		chance = 15
+		    create_random_diplomat = {
+		        random_traits = yes
+		        trait = machiavellian
+		        dynasty = random
+	        	female = no 
+		    } 
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = brave
+			}
+			modifier = {
+				factor = 5
+				trait = just
+			}
+			modifier = {
+				factor = 5
+				trait = machiavellian
+			}
+		}
+		
+		random_list = {
+			50 = {
+				FROM =  {
+					add_trait = machiavellian
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.72
+							}
+						}
+						character_event = {
+							id = tptt_traits.73
+						
+						}
+					}
+				}
+			}
+			20 = {
+				FROM =  {
+					add_trait = lady_macbeth
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.74
+							}
+						}
+						character_event = {
+							id = tptt_traits.75
+						}
+					}
+				}
+			}
+			10 = {
+				FROM =  {
+					add_trait = uneducated
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.76
+							}
+						}
+						character_event = {
+							id = tptt_traits.77
+						}
+					}
+				}
+			}
+			20 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.46
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTCtptt_traits.88" # get him for me
+
+		prestige = 25
+		scaled_wealth = -0.5
+        random = { 
+		    chance = 75
+		    create_random_diplomat = {
+		        random_traits = yes
+		        trait = machiavellian
+		        dynasty = random
+		        female = no 
+		    } 
+		}
+
+		ai_chance =  {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 10
+				trait = ambitious
+			}
+		}
+		
+		random = {
+				chance = 20
+				
+				add_trait = machiavellian
+				hidden_tooltip = {
+					character_event = {
+						id = tptt_traits.73 #Notify pragmatist
+					
+			}
+		}
+	}
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.93
+				}
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  ALCHEMIST
+##
+##################
+##################
+
+
+character_event = {
+	id = tptt_traits.105
+	desc = "EVTDESCtptt_traits.105"
+	picture = "GFX_evt_alchemist"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.105" # dead stones
+		
+		prestige = -25
+		piety = 10
+		
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 4
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = zealous
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+			    character_event = { id = tptt_traits.102 }
+		    }
+		}
+	}
+	option = {
+		name = "EVTOPTBtptt_traits.105" # I will pay alchemist
+		
+		scaled_wealth = -0.5
+        random = {
+    		chance = 15
+		    create_random_priest = {
+		        random_traits = yes
+		        trait = alchemist
+		        dynasty = random
+	        	female = no 
+		    } 
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = brave
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 5
+				trait = alchemist
+			}
+		}
+		
+		random_list = {
+			55 = {
+				FROM =  {
+					add_trait = alchemist
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.97
+							}
+						}
+						character_event = {
+							id = tptt_traits.106
+						
+						}
+					}
+				}
+			}
+			15 = {
+				FROM =  {
+					add_trait = uneducated
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.98
+							}
+						}
+						character_event = {
+							id = tptt_traits.77
+						}
+					}
+				}
+			}
+			30 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.103
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTCtptt_traits.105" # get him for me
+
+		prestige = 20
+
+		ai_chance =  {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 10
+				trait = ambitious
+			}
+		}
+		
+		random = {
+			chance = 20
+			add_trait = philosopher
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.57 #Notify philosopher
+				}					
+			}
+		}
+	
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.102
+				}
+			}
+		}
+	}
+}
+
+##################
+##################
+##
+##  MUSICIAN
+##
+##################
+##################
+
+
+character_event = {
+	id = tptt_traits.100
+	desc = "EVTDESCtptt_traits.100"
+	picture = "GFX_evt_musician"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTBtptt_traits.100" # I will pay musician
+		
+		scaled_wealth = -0.5
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = lustful
+			}
+			modifier = {
+				factor = 5
+				trait = just
+			}
+			modifier = {
+				factor = 5
+				trait = musician
+			}
+		}
+		
+
+		random_list = {
+			60 = {
+				FROM =  {
+					add_trait = musician
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.96
+							}
+						}
+						character_event = {
+							id = tptt_traits.95
+						
+						}
+					}
+				}
+			}
+			10 = {
+				FROM =  {
+					add_trait = uneducated
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+							id = tptt_traits.98
+							}
+						}
+						character_event = {
+							id = tptt_traits.77
+						}
+					}
+				}
+			}
+			30 = {
+				FROM =  {
+					hidden_tooltip = {
+						character_event = {
+							id = tptt_traits.103
+					    }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAtptt_traits.100" # don't like this music
+
+		prestige = -25
+
+
+		ai_chance =  {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 10
+				trait = content
+			}
+		}
+		
+		random = {
+			chance = 25
+			add_trait = cynical
+			hidden_tooltip = {
+				character_event = {
+					id = 38258 #Notify cynical
+				}	
+			}
+		}
+	
+		FROM = {
+			hidden_tooltip = {
+				character_event = {
+					id = tptt_traits.102
+				}
+			}
+		}
+	}
+}
+
+################
+#WARRIOR TRAITS#
+################
+
+namespace = warrior_traits
+
+# Learning the sword from your guardian
+character_event = {
+	id = warrior_traits.0
+	desc = "EVTDESCwarrior_traits.0"
+	picture = GFX_evt_child_sword
+	
+	min_age = 6
+	max_age = 14
+
+	trigger = {
+		guardian = {
+			OR = {
+				trait = misguided_warrior
+				trait = tough_soldier
+				trait = skilled_tactician
+				trait = brilliant_strategist
+				
+				trait = poor_warrior
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+		}
+		
+		NOT = { trait = poor_warrior }
+		NOT = { trait = trained_warrior }
+		NOT = { trait = skilled_warrior }
+		NOT = { trait = master_warrior }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+
+		# Mentor Effects
+		modifier = {
+			factor = 0.85
+			OR = {
+				guardian = { trait = poor_warrior }
+				guardian = { trait = trained_warrior }
+				guardian = { trait = skilled_warrior }
+				guardian = { trait = master_warrior }
+			}
+		}
+
+		# Personality Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			OR = {
+				trait = diligent
+				trait = brave
+			}
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}		
+		
+		# Intelligence Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = genius
+		}
+		modifier = {
+			factor = 0.9
+			trait = quick
+		}
+		#Bad
+		modifier = {
+			factor = 1.2
+			trait = slow
+		}
+		modifier = {
+			factor = 1.35
+			trait = imbecile
+		}
+		
+		# Physical Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = strong
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			trait = weak
+		}
+		
+		#Sexism
+		modifier = {
+			factor = 1.4
+			is_female = yes
+		}
+		
+	}
+
+	option = {
+		name = "EVTOPTAwarrior_traits.0" # Stick 'em with the pointy end!
+		hidden_tooltip = { guardian = { character_event = {id = warrior_traits.5} } } #Guardian Notification.
+		add_trait = poor_warrior 
+	}
+}
+
+#Learning the sword from your guardian. (lvl-2)
+character_event = {
+	id = warrior_traits.1
+	desc = "EVTDESCwarrior_traits.1" # You show a promising talent for swordplay.
+	picture = GFX_evt_child_sword
+	
+	min_age = 6
+	max_age = 14
+
+	trigger = {
+		guardian = {
+			OR = {
+				trait = misguided_warrior
+				trait = tough_soldier
+				trait = skilled_tactician
+				trait = brilliant_strategist
+				
+				trait = poor_warrior
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+		}
+
+		trait = poor_warrior
+
+		NOT = { trait = trained_warrior }
+		NOT = { trait = skilled_warrior }
+		NOT = { trait = master_warrior }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		# Mentor Effects
+		modifier = {
+			factor = 0.85
+			OR = {
+				guardian = { trait = trained_warrior }
+				guardian = { trait = skilled_warrior }
+				guardian = { trait = master_warrior }
+			}
+		}
+
+		# Personality Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			OR = {
+				trait = diligent
+				trait = brave
+			}
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}		
+		
+		# Intelligence Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = genius
+		}
+		modifier = {
+			factor = 0.9
+			trait = quick
+		}
+		#Bad
+		modifier = {
+			factor = 1.2
+			trait = slow
+		}
+		modifier = {
+			factor = 1.35
+			trait = imbecile
+		}
+		
+		# Physical Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = strong
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			trait = weak
+		}
+		#Sexism
+		modifier = {
+			factor = 1.4
+			is_female = yes
+		}
+	}
+
+	option = {
+		name = "Argh..."
+		hidden_tooltip = { guardian = { character_event = {id = warrior_traits.5} } } #Guardian Notification.
+		remove_trait = poor_warrior 
+		add_trait = trained_warrior
+	}
+	
+}
+
+#warrior_traits.2 - Learning the sword from your guardian. (lvl-3)
+character_event = {
+	id = warrior_traits.2
+	desc = "EVTDESCwarrior_traits.1"
+	picture = GFX_evt_child_sword
+	
+	min_age = 6
+	max_age = 14
+
+	trigger = {
+		guardian = {
+			OR = {
+				trait = misguided_warrior
+				trait = tough_soldier
+				trait = skilled_tactician
+				trait = brilliant_strategist
+				
+				trait = poor_warrior
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+		}
+		trait = trained_warrior
+
+		NOT = { trait = skilled_warrior }
+		NOT = { trait = master_warrior }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+
+		# Mentor Effects
+		modifier = {
+			factor = 0.85
+			OR = {
+				guardian = { trait = skilled_warrior }
+				guardian = { trait = master_warrior }
+			}
+		}
+
+		# Personality Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			OR = {
+				trait = diligent
+				trait = brave
+			}
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}		
+		
+		# Intelligence Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = genius
+		}
+		modifier = {
+			factor = 0.9
+			trait = quick
+		}
+		#Bad
+		modifier = {
+			factor = 1.2
+			trait = slow
+		}
+		modifier = {
+			factor = 1.35
+			trait = imbecile
+		}
+		
+		# Physical Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = strong
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			trait = weak
+		}
+		
+		#Sexism
+		modifier = {
+			factor = 1.4
+			is_female = yes
+		}
+	}
+
+	option = {
+		name = "Argh..."
+		hidden_tooltip = { guardian = { character_event = {id = warrior_traits.5} } } #Guardian Notification.
+		remove_trait = trained_warrior 
+		add_trait = skilled_warrior
+	}
+}
+
+#warrior_traits.3 - Learning the sword from your guardian. (lvl-3)
+character_event = {
+	id = warrior_traits.3
+	desc = "EVTDESCwarrior_traits.1" # You have truly mastered the art of combat.
+	picture = GFX_evt_child_sword
+	
+	min_age = 6
+	max_age = 14
+
+	trigger = {
+		guardian = {
+			OR = {
+				trait = misguided_warrior
+				trait = tough_soldier
+				trait = skilled_tactician
+				trait = brilliant_strategist
+				
+				trait = poor_warrior
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+		}
+		trait = skilled_warrior
+
+		NOT = { trait = master_warrior }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		# Mentor Effects
+		modifier = {
+			factor = 0.85
+			guardian = { trait = master_warrior }
+		}
+
+		# Personality Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			OR = {
+				trait = diligent
+				trait = brave
+			}
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}		
+		
+		# Intelligence Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = genius
+		}
+		modifier = {
+			factor = 0.9
+			trait = quick
+		}
+		#Bad
+		modifier = {
+			factor = 1.2
+			trait = slow
+		}
+		modifier = {
+			factor = 1.35
+			trait = imbecile
+		}
+		
+		# Physical Effects
+		#Good
+		modifier = {
+			factor = 0.85
+			trait = strong
+		}
+		#Bad
+		modifier = {
+			factor = 1.35
+			trait = weak
+		}
+		
+		#Sexism
+		modifier = {
+			factor = 1.4
+			is_female = yes
+		}
+	}
+
+	option = {
+		name = "Argh..."
+		hidden_tooltip = { guardian = { character_event = {id = warrior_traits.5} } } #Guardian Notification.
+		remove_trait = skilled_warrior
+		add_trait = master_warrior
+	}
+	
+}
+
+#warrior_traits.5 - Guardian Notification. (For all lvls)
+character_event = {
+	id = warrior_traits.5
+	desc = "EVTDESCwarrior_traits.5" #I have increased my wards fighting skills.
+	picture = "GFX_knight"
+	
+	is_triggered_only = yes
+	
+	option = { name = "Ok" }
+}
+
+###Demotions###
+#Getting old.
+character_event = {
+	id = warrior_traits.6
+	desc = "EVTDESCwarrior_traits.6"
+	picture = GFX_knight1
+	
+	min_age = 50
+
+	trigger = {
+		OR= {
+			trait = trained_warrior
+			trait = skilled_warrior
+			trait = master_warrior
+		}
+		NOT = { has_character_flag = demoted }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+
+		# Personality Effects
+		#Good
+		modifier = {
+			factor = 1.25
+			OR = {
+				trait = diligent
+				trait = brave
+			}
+		}
+		#Bad
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		
+		# Physical Effects
+		#Good
+		modifier = {
+			factor = 1.5
+			trait = strong
+		}
+		#Bad
+		modifier = {
+			factor = 0.2
+			trait = weak
+		}
+		
+	}
+
+	option = {
+		name = "Argh..."
+		
+		if = {
+			limit = { trait = trained_warrior }
+			remove_trait = trained_warrior
+			add_trait = poor_warrior
+		}
+		if = {
+			limit = { trait = skilled_warrior }
+			remove_trait = skilled_warrior
+			add_trait = trained_warrior
+			set_character_flag = demoted
+		}
+		if = {
+			limit = { trait = master_warrior }
+			remove_trait = master_warrior
+			add_trait = skilled_warrior
+			set_character_flag = demoted
+		}
+		
+	}
+	
+}

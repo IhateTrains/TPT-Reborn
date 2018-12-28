@@ -1,0 +1,25 @@
+# 1171 - Alencon
+
+# County Title
+title = c_alencon
+
+# Settlements
+max_settlements = 4
+
+b_alencon = castle
+b_sees = temple
+b_argentan = castle
+#b_saintgeorgesdannebecq = temple
+#b_carrouges = castle
+#b_briouze = city
+
+
+
+# Misc
+culture = norman
+religion = catholic
+
+# History
+
+1100.11.11 = { culture = frankish }
+

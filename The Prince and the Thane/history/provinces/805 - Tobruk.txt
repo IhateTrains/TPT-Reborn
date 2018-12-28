@@ -1,0 +1,24 @@
+# 805 - Tobruk
+
+# County Title
+title = c_tobruk
+
+# Settlements
+max_settlements = 2
+
+b_tobruk = castle
+
+#b_bardia = city
+#b_alqardabah = temple
+
+#b_acroma = castle
+#b_zanzur = castle
+#b_kambut = castle
+#b_rukbah = castle
+
+# Misc
+culture = maghreb_arabic
+religion = sunni
+
+# History
+

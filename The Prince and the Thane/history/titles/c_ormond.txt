@@ -1,0 +1,76 @@
+970.1.1=
+{
+holder=83365 #Ivar of Waterford
+	law = agnatic_succession
+	law = succ_gavelkind
+	succession=gavelkind
+}
+978.7.1=
+{
+liege="d_munster"
+}
+1000.7.1=
+{
+holder=83366 #Sigtrygg of Waterford
+}
+1022.7.1=
+{
+holder=83367 #Ragnall of Waterford
+}
+1035.7.1=
+{
+holder=83368 #Cú-Muman
+	succession=tanistry
+	law = succ_tanistry
+}
+1038.7.1=
+{
+holder=83370
+}
+1090.7.1=
+{
+holder=83371
+}
+1130.7.1=
+{
+holder=83372
+}
+1155.7.1=
+{
+holder=83373 #last known king of Waterford
+}
+1172.1.1={
+	liege="k_england"
+}
+1185.1.1=
+{
+liege="d_meath"
+}
+1185.1.1=
+{
+holder=204038
+}
+1205.5.1=
+{
+holder=204041
+}
+1230.7.1=
+{
+holder=83376
+}
+1248.7.1=
+{
+holder=83377
+}
+1285.7.1=
+{
+holder=83378
+}
+1299.7.1=
+{
+holder=454111
+}
+1321.7.1=
+{
+holder=454110
+}

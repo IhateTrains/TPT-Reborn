@@ -1,0 +1,29 @@
+# 697 - Mosul
+
+# County Title
+title = c_mosul
+
+# Settlements
+max_settlements = 6
+b_mosul = castle
+b_bakhdida = city
+b_karamlish = temple
+
+#b_shekhan = castle
+#b_aqrah = castle
+b_bartella = city
+b_baqofah = castle
+#b_arbil = temple
+
+#Misc
+culture = kurdish
+religion = yazidi
+
+#Jewish Community
+800.1.1 = { 
+	b_bartella = ct_jewish_community_1
+	b_bartella = ct_jewish_community_2
+}
+
+# History
+1187.1.1 = { remove_settlement = b_bartella }

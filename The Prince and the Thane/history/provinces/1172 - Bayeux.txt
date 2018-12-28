@@ -1,0 +1,32 @@
+# 1172 - Bayeux
+
+# County Title
+title = c_bayeux
+
+# Settlements
+max_settlements = 6
+
+b_bayeux = castle
+b_caen = city
+b_creully = castle
+b_saintmartindemondaye = temple
+#b_falaise = castle
+#b_vire = castle
+#b_clecy = city
+#b_courcy = castle
+#b_asnelles = city
+#b_cahagnes = castle
+#b_cairon = city
+#b_rots = city
+#b_beaumontlerichard = castle
+#b_abbayeauxhommes = temple
+#b_abbayeauxdames = temple
+
+# Misc
+culture = norman
+religion = catholic
+
+# History
+
+1100.11.11 = { culture = frankish }
+

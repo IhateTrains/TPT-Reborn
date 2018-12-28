@@ -1,0 +1,20 @@
+# 934 - Celje
+
+# County Title
+title = c_celje
+
+# Settlements
+max_settlements = 4
+
+b_sanneck = castle
+b_celje = city
+b_heunberg = castle
+#b_marburg = castle
+#b_soune = temple
+
+
+# Misc
+culture = karantanci
+religion = catholic
+
+# History

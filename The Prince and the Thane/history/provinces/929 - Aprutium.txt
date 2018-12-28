@@ -1,0 +1,23 @@
+# 929 - Aprutium
+
+# County Title
+title = c_aprutium
+
+# Settlements
+max_settlements = 3
+
+b_teramo = city
+b_scurcolamarsicana = castle
+b_paganica = city
+#b_aquila = city
+#b_aprutium_penne = temple
+#b_capestrano = castle
+#b_popoliabruzzo = castle
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History
+
+1254.1.1 = { b_aquila = city }

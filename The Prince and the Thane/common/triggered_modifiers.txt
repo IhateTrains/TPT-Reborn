@@ -1,0 +1,1046 @@
+##################################################
+#
+# STRATEGIC EFFECTS - A.K.A. "TRIGGERED MODIFIERS"
+#
+##################################################
+
+# Bankruptcy
+negative_money = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		NOT = { wealth = 0 }
+	}
+	
+	icon = 24
+	
+	land_morale = -1
+	monthly_character_prestige = -1
+	general_opinion = -20
+}
+
+
+#Bad religion group in capital
+
+wrong_religion_group_capital = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		ai = no
+		capital_scope = {
+			NOT = { religion_group = ROOT }
+		}
+	}
+	
+	icon = 24
+	
+	global_tax_modifier = -0.2
+	global_revolt_risk = 0.025
+}
+
+#Bad religion in capital
+
+wrong_religion_capital = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		ai = no
+		capital_scope = {
+			religion_group = ROOT
+			NOT = { religion = ROOT }
+		}
+	}
+	
+	icon = 24
+	
+	global_tax_modifier = -0.1
+	global_revolt_risk = 0.015
+}
+
+# Prestige decadence 1
+
+prestige_decadence1 = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		NOT = { prestige = 750 }
+                prestige = 250
+	}
+	
+	icon = 28
+
+        monthly_character_prestige = -0.5
+}
+
+# Prestige decadence 2
+
+prestige_decadence2 = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		NOT = { prestige = 1500 }
+                prestige = 750
+	}
+	
+	icon = 28
+	
+        monthly_character_prestige = -1.25
+}
+
+# Prestige decadence 3
+
+prestige_decadence3 = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		prestige = 1500
+	}
+	
+	icon = 28
+	
+        monthly_character_prestige = -2.5
+}
+
+# Emperors - Less money
+
+emperor_title = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		tier = emperor
+	}
+	
+        
+	church_opinion = -15
+	global_tax_modifier = -0.35
+        monthly_character_piety = -0.5
+	
+	icon = 28
+}
+
+# Kings - Less money
+
+king_title = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                demesne_size = 5
+                Not = { has_landed_title = k_papal_state }
+		tier = king
+	}
+	
+	global_tax_modifier = -0.15
+	
+	icon = 28
+}
+
+# Big Dukes - Less money
+
+duke_title = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		tier = duke
+                demesne_size = 5
+	}
+	
+	global_tax_modifier = -0.2
+	
+	icon = 28
+}
+
+# Pope - Less money, more piety and more loyal vassals
+
+pope_title = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		has_landed_title = k_papal_state
+	}
+	
+        assassinate_chance_modifier = -0.125
+	global_tax_modifier = -0.05
+        monthly_character_piety = 3.5
+        castle_vassal_max_levy = 0.45
+	city_vassal_max_levy = 0.45
+	temple_vassal_max_levy = 0.45
+        land_morale = 0.25	
+  
+	
+	icon = 8
+}
+
+# Exchequer of Pleas
+
+exchequer_of_pleas_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_england
+	}
+	
+	trigger = {
+		has_global_flag = exchequer_of_pleas
+                has_landed_title = k_england }
+	
+        monthly_character_piety = 0.05
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	global_tax_modifier = 0.05
+	
+	icon = 7
+}
+
+# Court of common Pleas
+
+court_of_common_pleas_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_england
+	}
+	
+	trigger = {
+		has_global_flag = court_of_common_pleas 
+                has_landed_title = k_england
+	}
+	
+        monthly_character_piety = 0.05
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	global_tax_modifier = 0.05
+	
+	icon = 7
+}
+
+# Magna Carta
+
+magna_carta_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_england
+	}
+	
+	trigger = {
+		has_global_flag = magna_carta
+                has_landed_title = k_england
+	}
+	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = -0.25
+	vassal_opinion = 15
+	global_tax_modifier = -0.05
+	
+	icon = 7
+}
+
+# Exchequer of the Jews
+
+exchequer_of_the_jews_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_england
+	}
+	
+	trigger = {
+		has_global_flag = exchequer_of_the_jews 
+                has_landed_title = k_england
+	}
+	
+        monthly_character_piety = -0.25
+	monthly_character_prestige = 0.15
+	church_opinion = -15
+	global_tax_modifier = 0.05
+	
+	icon = 7
+}
+
+# Imperial Diet
+
+imperial_diet_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = e_hre
+	}
+	
+	trigger = {
+		has_global_flag = imperial_diet 
+                has_landed_title = e_hre
+	}
+	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = -0.05
+	
+	icon = 7
+}
+
+# Estates General (France)
+
+estates_general_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_france
+	}
+	
+	trigger = {
+		has_global_flag = estates_general 
+                has_landed_title = k_france
+	}
+	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = -0.05
+	
+	icon = 7
+}
+
+# Estates of Parliament (Scotland)
+
+estates_of_parliament_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_scotland
+	}
+	
+	trigger = {
+		has_global_flag = estates_of_parliament 
+                has_landed_title = k_scotland
+	}
+	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = 0.05
+	
+	icon = 7
+}
+
+# Sabor Parliament (Croatia)
+
+sabor_parliament_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_croatia
+	}
+	
+	trigger = {
+		has_global_flag = sabor_parliament 
+                has_landed_title = k_croatia
+	}
+	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = 0.05
+	
+	icon = 7
+}
+
+# Estates Generales (Spain)
+
+estates_generales_1 = {
+	potential = {
+		is_ruler = yes
+                Or = { has_landed_title = k_castille
+                       has_landed_title = k_navarra
+                       has_landed_title = k_aragon
+                       has_landed_title = k_leon
+                       has_landed_title = k_spanish_galicia
+	} 
+}
+	
+	trigger = {
+		has_global_flag = estates_generales 
+                 Or = { has_landed_title = k_castille
+                       has_landed_title = k_navarra
+                       has_landed_title = k_aragon
+                       has_landed_title = k_leon
+                       has_landed_title = k_spanish_galicia
+	} 
+	}
+	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = -0.05
+	
+	icon = 7
+}
+
+# The Decline of Byzantium (Until 1150)
+
+byzantium_decline = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		tier = emperor
+                has_landed_title = e_byzantium
+                Not = { year = 1150 }
+	}
+	
+	church_opinion = -10
+	vassal_opinion = -15
+	global_tax_modifier = -0.1
+        monthly_character_prestige = -2.5
+        land_morale = -0.05
+        castle_levy_size = -0.05
+        castle_vassal_max_levy = -0.05
+	city_vassal_max_levy = -0.05
+	temple_vassal_max_levy = -0.05
+	
+	icon = 28
+}
+
+# The Great Famine
+
+great_famine = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                religion_group = christian
+                Not = { religion = orthodox }
+                Not = { religion = monophysite }
+		year = 1315
+                Not = { year = 1325 }
+	}
+	
+	church_opinion = -10
+	vassal_opinion = -15
+	global_tax_modifier = -0.5
+        land_morale = -0.25
+        castle_levy_size = -0.25
+        city_levy_size = -0.75
+        temple_levy_size = -0.75
+        castle_garrison_size = -0.25
+        city_garrison_size = -0.75
+        temple_garrison_size = -0.75
+        global_revolt_risk = 0.1
+	
+	icon = 28
+}
+
+# Antipope
+
+controls_antipope = {
+	trigger = {
+		religion = catholic
+		NOT = { has_landed_title = k_papal_state }
+		rightful_religious_head_scope = {
+			vassal_of = ROOT
+			NOT = { has_landed_title = k_papal_state }
+		}
+	}
+	
+	monthly_character_piety = -2
+	icon = 35
+}
+
+# Important family cardinal
+
+influence_holy_see = {
+	potential = {
+		is_ruler = yes
+                higher_tier_than = COUNT
+	}
+	
+	trigger = {
+		any_dynasty_member = { Or = { 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano } } 
+        }
+	
+        monthly_character_piety = 0.5
+	monthly_character_prestige = 0.25
+	general_opinion = 10
+	
+	icon = 8
+}
+
+# Influences Pope
+
+influence_pope = {
+	potential = {
+		is_ruler = yes
+                higher_tier_than = COUNT
+	}
+	
+	trigger = {
+		rightful_religious_head_scope = { 
+                has_opinion_modifier = { who = ROOT modifier = backed_papacy } } 
+        }
+	
+        monthly_character_piety = 0.75
+	monthly_character_prestige = 1
+	general_opinion = 20
+	
+	icon = 8
+}
+
+# Siete Partidas (Castille)
+
+siete_partidas_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_castille       	 
+}	
+	trigger = {
+		has_global_flag = siete_partidas
+                 has_landed_title = k_castille                       	 
+	}	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = -0.05	
+	icon = 7
+}
+
+# Statute of Merton
+
+statute_of_merton_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_england  
+                 	 
+}	
+	trigger = {
+		has_global_flag = statute_of_merton
+                 has_landed_title = k_england                      	 
+	}	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = 0.05	
+	icon = 7
+}
+
+# Quia Emptores (England)
+
+quia_emptores_1 = {
+	potential = {
+		is_ruler = yes
+                has_landed_title = k_england  
+                year = 1250     	 
+}	
+	trigger = {
+		has_global_flag = quia_emptores
+                 has_landed_title = k_england                      	 
+	}	
+        monthly_character_piety = 0.25
+	monthly_character_prestige = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = 0.05	
+	icon = 7
+}
+
+# Weak King or Emperor
+
+weak_ruler = {
+	potential = {
+		is_ruler = yes
+                     	 
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = DUKE }
+		AND = { NOT = { martial = 8 }
+				NOT = { diplomacy = 8}
+				NOT = { prestige = 500 }
+			}
+		}
+	global_revolt_risk = 0.01	
+        general_opinion = -10
+        vassal_opinion = -15
+	global_tax_modifier = -0.16
+	castle_vassal_max_levy = -0.15
+	monthly_character_prestige = -0.5
+        assassinate_chance_modifier = -0.15
+	
+	icon = 31
+}
+
+# Strong King or Emperor
+
+strong_ruler = {
+	potential = {
+		is_ruler = yes                    	 
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = DUKE }
+		OR = {  martial = 15
+		        diplomacy = 15
+				prestige = 750
+		}
+	}
+		
+        general_opinion = 5
+        vassal_opinion = 15
+	global_tax_modifier = 0.15
+	castle_vassal_max_levy = 0.15
+	monthly_character_prestige = 0.15       
+        assassinate_chance_modifier = 0.05
+	
+	icon = 13
+}
+
+# Master of Intrigues
+
+master_of_intrigues = {
+	potential = {
+		is_ruler = yes            	 
+	}	
+	trigger = {
+                age = 14
+		realm_intrigue = 25
+			}
+	assassinate_chance_modifier = 0.1
+	arrest_chance_modifier = 0.25
+	general_opinion = 5
+	
+	icon = 5
+}
+
+# At war
+
+war_torn = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                NOT = { martial = 15 }
+		OR = {
+                        liege = { war = yes }
+			war = yes
+		} 
+	}
+	
+	icon = 31
+	
+        assassinate_chance_modifier = -0.15
+	global_tax_modifier = -0.10
+        castle_vassal_max_levy = -0.25
+        city_vassal_max_levy = -0.25
+        temple_vassal_max_levy = -0.25
+}
+
+# Corruption
+
+corrupted_court = {
+	potential = {
+		is_ruler = yes                 	 
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = BARON }
+		NOT = { realm_stewardship = 15 }
+        demesne_size = 5
+		}
+	general_opinion = -10
+	build_cost_modifier = 0.33
+	build_time_modifier = 0.33
+	global_tax_modifier = -0.2        
+        assassinate_chance_modifier = -0.075
+	
+	icon = 22
+}
+
+# Efficiency
+
+bureaucratic_court = {
+	potential = {
+		is_ruler = yes       	 
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = COUNT }
+		realm_stewardship = 25
+        NOT = { demesne_size = 8 }
+		}
+	general_opinion = 5
+	build_cost_modifier = -0.25
+	build_time_modifier = -0.25
+	global_tax_modifier = 0.1
+	
+	icon = 22
+}
+
+# Cynical Ruler
+
+refuge_for_heretics = {
+	potential = {
+		is_ruler = yes
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = BARON }
+		OR = { trait = excommunicated
+		NOT = {piety = -50}
+		}
+	}
+	church_opinion = -20
+	monthly_character_prestige = 0.05
+	monthly_character_piety = -0.25
+	tech_growth_modifier = 0.1
+	
+	icon = 26
+}
+
+# Zealous Ruler
+
+bastion_of_the_zealous = {
+	potential = {
+		is_ruler = yes
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = BARON }
+		piety = 500
+		}
+	church_opinion = 10
+	monthly_character_prestige = 0.025
+	monthly_character_piety = 0.5
+	tech_growth_modifier = -0.15
+	
+	icon = 28
+}
+
+# Erudite Ruler
+
+patron_of_the_learned = {
+	potential = {
+		is_ruler = yes
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = BARON }
+		realm_learning = 25
+		}
+	church_opinion = -10
+	monthly_character_prestige = 0.15
+	general_opinion = 5
+	tech_growth_modifier = 0.35
+	
+	icon = 2
+}
+
+# Ignorant Ruler
+
+court_of_ignogrance = {
+	potential = {
+		is_ruler = yes
+}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = BARON }
+		NOT = { learning = 6 }
+		}
+	church_opinion = 5
+	monthly_character_prestige = -0.25
+	general_opinion = -15
+	tech_growth_modifier = -0.2	
+        assassinate_chance_modifier = -0.075
+	icon = 20
+}
+
+# Wealthy Ruler
+
+wealthy_and_affluent = {
+	potential = {
+		is_ruler = yes         	 
+	}	
+	trigger = {
+                age = 14
+		primary_title = { higher_tier_than = BARON }
+		yearly_income = 150
+		wealth = 100
+		}
+	general_opinion = 10
+        vassal_opinion = 5			
+	icon = 18
+}
+
+# Martial1
+
+martial_very_low = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                age = 14
+		is_ruler = yes
+		primary_title = { higher_tier_than = BARON }
+				NOT = {martial = 4}
+	}
+	
+	icon = 13
+	
+	castle_vassal_max_levy = -0.25
+	city_vassal_max_levy = -0.25
+	temple_vassal_max_levy = -0.25
+	castle_vassal_min_levy = -0.10
+	city_vassal_min_levy = -0.10
+	temple_vassal_min_levy = -0.10
+	levy_reinforce_rate = -1
+}
+
+# Martial2
+
+martial_low = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                age = 14
+		is_ruler = yes
+		primary_title = { higher_tier_than = BARON }
+                martial = 4
+		NOT = {martial = 6}
+	}
+	
+	icon = 13
+	
+	castle_vassal_max_levy = -0.15
+	city_vassal_max_levy = -0.15
+	temple_vassal_max_levy = -0.15
+	castle_vassal_min_levy = -0.06
+	city_vassal_min_levy = -0.06
+	temple_vassal_min_levy = -0.06
+	levy_reinforce_rate = -0.5
+}
+
+# Martial3
+
+martial_low_medium = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                age = 14
+		is_ruler = yes
+		primary_title = { higher_tier_than = BARON }
+		AND = {
+				martial = 6
+				NOT = {martial = 9}
+		}
+	}
+	
+	icon = 13
+	
+	castle_vassal_max_levy = -0.07
+	city_vassal_max_levy = -0.07
+	temple_vassal_max_levy = -0.07
+	castle_vassal_min_levy = -0.03
+	city_vassal_min_levy = -0.03
+	temple_vassal_min_levy = -0.03
+	levy_reinforce_rate = -0.25
+}
+
+# Martial5
+
+martial_medium_high = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                age = 14
+		is_ruler = yes
+		primary_title = { higher_tier_than = BARON }
+		AND = {
+				martial = 12
+				NOT = {martial = 15}
+		}
+	}
+	
+	icon = 13
+	
+	castle_vassal_max_levy = 0.07
+	city_vassal_max_levy = 0.07
+	temple_vassal_max_levy = 0.07
+	castle_vassal_min_levy = 0.03
+	city_vassal_min_levy = 0.03
+	temple_vassal_min_levy = 0.03
+	levy_reinforce_rate = 0.25
+}
+
+# Martial6
+
+martial_high = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                age = 14
+		is_ruler = yes
+		primary_title = { higher_tier_than = BARON }
+		AND = {
+			martial = 15
+			NOT = {martial = 19}
+		}
+	}
+	
+	icon = 13
+	
+	castle_vassal_max_levy = 0.15
+	city_vassal_max_levy = 0.15
+	temple_vassal_max_levy = 0.15
+	castle_vassal_min_levy = 0.06
+	city_vassal_min_levy = 0.06
+	temple_vassal_min_levy = 0.06
+	levy_reinforce_rate = 0.5
+}
+
+# Martial7
+
+martial_very_high = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+                age = 14
+		is_ruler = yes
+		primary_title = { higher_tier_than = BARON }
+		martial = 19
+		}
+	
+	icon = 13
+	
+	castle_vassal_max_levy = 0.25
+	city_vassal_max_levy = 0.25
+	temple_vassal_max_levy = 0.25
+	castle_vassal_min_levy = 0.10
+	city_vassal_min_levy = 0.10
+	temple_vassal_min_levy = 0.10
+	levy_reinforce_rate = 1
+}
+
+# Decadence
+
+decadent1 = {
+	potential = {
+		is_ruler = yes	
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		religion_group = muslim
+		decadence = 50
+		NOT = { decadence = 60 }
+		higher_tier_than = count
+	}
+	
+	icon = 26
+	general_opinion = -10
+}
+
+# Decadence
+
+decadent2 = {
+	potential = {
+		is_ruler = yes	
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		religion_group = muslim
+		decadence = 60
+		NOT = { decadence = 70 }
+		higher_tier_than = count
+	}
+	
+	icon = 26
+	general_opinion = -20
+}
+
+# Decadence
+
+decadent3 = {
+	potential = {
+		is_ruler = yes	
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		religion_group = muslim
+		decadence = 70
+		NOT = { decadence = 80 }
+		higher_tier_than = count
+	}
+	
+	icon = 26
+	general_opinion = -30
+}
+
+# Decadence
+
+decadent4 = {
+	potential = {
+		is_ruler = yes	
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		religion_group = muslim
+		decadence = 80
+		NOT = { decadence = 90 }
+		higher_tier_than = count
+	}
+	
+	icon = 26
+	general_opinion = -40
+}
+
+# Decadence
+
+decadent5 = {
+	potential = {
+		is_ruler = yes	
+	}
+	
+	trigger = {
+		is_ruler = yes	
+		religion_group = muslim
+		decadence = 90
+		higher_tier_than = count
+	}
+	
+	icon = 26
+	general_opinion = -50
+}

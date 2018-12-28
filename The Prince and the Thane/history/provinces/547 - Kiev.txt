@@ -1,0 +1,29 @@
+# 547 - Kiev
+
+# County Title
+title = c_kiev
+
+# Settlements
+max_settlements = 7
+
+b_bilohorodka = castle
+b_vyshhorod= castle
+b_kiev = city
+b_chruchofthethies = temple
+b_kanevkievskij = city
+b_trypillya = castle
+b_vasylkiv = castle
+
+#b_gorodeckievskij = city
+#b_svjatopolc = city
+#b_zarub = city
+#b_berestovocchurchquarter = temple
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+1169.1.1 = { remove_settlement = b_vasylkiv } #sacked by Andrey Bogolyubsky
+1240.1.1 = { remove_settlement = b_vyshhorod } #sacked by Mongols
+

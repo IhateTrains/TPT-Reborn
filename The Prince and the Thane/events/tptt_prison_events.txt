@@ -1,0 +1,877 @@
+#############################################################
+#
+# The Prince and the Thane prison events - written by idib816
+#
+#############################################################
+
+namespace = prisoner
+
+#Escape from prison: Corrupting a guard
+character_event = {
+	id = prisoner.1
+	desc = "EVTDESCprisoner.1"
+	picture = "GFX_evt_into_the_dungeon"
+	border = "GFX_event_normal_frame_intrigue"
+
+    is_triggered_only = yes
+	
+	min_age = 14
+	capable_only = yes
+	
+	trigger = {
+		NOT = { trait = craven }
+		prisoner = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+		modifier = {
+			factor = 3.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 2.75
+			trait = machiavellian
+		}
+        modifier = {
+			factor = 2.5
+			wealth = 100
+		}
+		modifier = {
+			factor = 2.75
+			intrigue = 10
+		}
+		modifier = {
+			factor = 2.5
+			intrigue = 15
+		}
+		modifier = {
+			factor = 2.5
+			intrigue = 18
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { intrigue = 10 }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { intrigue = 7 }
+		}
+		modifier = {
+			factor = 0.2
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.2
+			trait = content
+		}
+	}
+	
+	option = {
+		name = "Life's a hard matter"
+		add_trait = craven
+		hidden_tooltip = {
+			character_event = { id = 38257 }
+		}
+	}
+	
+	option = {
+		name = "How much was it? 100 gold?" 
+        wealth = -100
+		hidden_tooltip = {
+			random_list = {
+				40 = {
+					host = {
+						character_event = {
+							id = 50040
+						}
+					}
+					character_event = {
+						id = prisoner.2
+					}
+                                        random = { chance = 75
+                                        change_intrigue = -1 }
+                                        random = { chance = 25
+                                        add_trait = wounded }
+				}
+				60 = {
+					host = {
+						character_event = {
+							id = 50002
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#I'm free!
+character_event = {
+	id = prisoner.2
+	desc = "The guard accepted my bribe!"
+	picture = "GFX_evt_into_the_dungeon"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Freedom!"
+		prestige = 30
+        piety = -15
+        random = { chance = 40 change_intrigue = 1 }
+        random = { 
+		    chance = 55
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+        random = { 
+		    chance = 35
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+		prisoner = no
+	}
+}
+
+#I'm free! (clear war prisoners flags)
+character_event = {
+	id = prisoner.3
+	desc = "I'm finally out of the dungeons!"
+	picture = "GFX_evt_into_the_dungeon"
+	border = "GFX_event_normal_frame_intrigue"
+
+    min_age = 14
+
+	trigger = { 
+	    prisoner = no
+        has_character_flag = war_prisoner 
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "Freedom!"
+        clr_character_flag = war_prisoner
+	}
+}
+
+namespace = judicium_dei
+
+#Judicium Dei (JD)
+character_event = {
+	id = judicium_dei.0
+	desc = "EVTDESCjudicium_dei.0"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	min_age = 14
+	capable_only = yes
+	
+	trigger = {
+		prisoner = yes
+        host = { war = no }
+        NOT = { health_traits = 1 }
+        NOT = { has_character_flag = war_prisoner }
+        NOT = { 
+		    OR = { 
+                has_character_flag = refused_jd
+                has_character_flag = requested_jd 
+			} 
+		}
+    }
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.75
+			trait = cynical
+		}
+        modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.5
+			trait = slothful
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBjudicium_dei.0"
+        trigger = { NOT = { trait = zealous } }
+		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        set_character_flag = refused_jd
+	}
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.0" 
+		hidden_tooltip = { host = { character_event = { id = judicium_dei.1 days = 2 } } }
+        set_character_flag = requested_jd
+	}
+}
+
+#Host is asked about JD
+character_event = {
+	id = judicium_dei.1
+	desc = "EVTDESCjudicium_dei.1"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.1"
+		prestige = -10
+        piety = 25
+        random = { chance = 20 change_learning = 1 }
+        random = { 
+		    chance = 55
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+        random = { 
+		    chance = 35
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+		    } 
+		}
+		hidden_tooltip = { 
+            character_event = { id = judicium_dei.6 days = 22 }
+            FROM = { character_event = { id = judicium_dei.2 days = 2 } }
+            random_courtier = { 
+			    limit = { age = 14 is_female = no }
+                character_event = { id = judicium_dei.4 days = 2 } 
+                set_character_flag = jd_judge 
+			}
+		}
+        ai_chance = {
+			factor = 0.65
+            modifier = {
+				factor = 1.5
+				trait = uneducated
+			}
+            modifier = {
+				factor = 0.5
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 2.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.25
+				trait = tolerant
+			}
+            modifier = {
+				factor = 2.5
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "EVTOPTBjudicium_dei.1"
+		prestige = 25
+        piety = -20
+        random = { chance = 20 change_learning = -1 }
+        random = { 
+		    chance = 75
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+    		}
+		}
+        random = { 
+	        chance = 35
+            add_trait = machiavellian
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+        hidden_tooltip = { FROM = { character_event = { id = judicium_dei.3 days = 2 } } }
+		
+        ai_chance = {
+			factor = 0.35
+            modifier = {
+				factor = 0.5
+				trait = uneducated
+			}
+            modifier = {
+				factor = 2.5
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 2.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 2.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 1.25
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+		}
+	}
+}
+
+#Host accepts JD, prisoner notification
+character_event = {
+	id = judicium_dei.2
+	desc = "EVTDESCjudicium_dei.2"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.2"
+		hidden_tooltip = {
+            character_event = { id = judicium_dei.7 days = 20 }
+	    }
+	}
+}
+
+#Host refuses JD, prisoner notification
+character_event = {
+	id = judicium_dei.3
+	desc = "EVTDESCjudicium_dei.3"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.3"
+        prestige = -25
+        clr_character_flag = requested_jd
+        set_character_flag = refused_jd
+	}
+}
+
+#Judge notified about his job
+character_event = {
+	id = judicium_dei.4
+	desc = "EVTDESCjudicium_dei.4"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.4"
+		set_character_flag = jd_judge
+        prestige = 20
+		hidden_tooltip = {
+            FROM = { character_event = { id = judicium_dei.5 days = 1 } }
+            any_courtier = {
+			    limit = { prisoner = yes has_character_flag = requested_jd }
+                character_event = { id = judicium_dei.5 days = 1 } 
+			}
+		}
+	}
+}
+
+#Prisoner/warden notified about judge
+character_event = {
+	id = judicium_dei.5
+	desc = "EVTDESCjudicium_dei.5"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.5"
+	}
+}
+
+#JD warden trial rigging opportunity
+character_event = {
+	id = judicium_dei.6
+	desc = "EVTDESCjudicium_dei.6"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.6"
+        trigger = { NOT = { trait = zealous } }
+        piety = -10
+        hidden_tooltip = { 
+		    random = { chance = 20 change_intrigue = 1 }
+            random = {
+    	    	chance = 45
+                add_trait = deceitful 
+	    		hidden_tooltip = {
+	    			character_event = { id = 38255 }
+	    	    } 
+	    	}
+            random_courtier = { 
+		        limit = { has_character_flag = jd_judge }
+                random_list = {
+    	    		35 = { character_event = { id = judicium_dei.8 days = 2 } }
+                    65 = { character_event = { id = judicium_dei.10 days = 12 } } 
+		    	} 
+		    } 
+		}
+	}
+
+    option = {
+		name = "EVTOPTBjudicium_dei.6"
+		prestige = 10
+        piety = 10
+        random = { 
+		    chance = 50
+            add_trait = honest 
+			hidden_tooltip = {
+				character_event = { id = 38262 }
+		    } 
+		}
+        hidden_tooltip = { character_event = { id = judicium_dei.10 days = 12 } }
+	}
+}
+
+#JD prisoner trial rigging opportunity
+character_event = {
+	id = judicium_dei.7
+	desc = "EVTDESCjudicium_dei.7"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.7"
+        trigger = { NOT = { trait = zealous } }
+        piety = -10
+        hidden_tooltip = {
+            random = { chance = 20 change_intrigue = 1 }
+            random = { 
+			    chance = 45
+                add_trait = deceitful 
+				hidden_tooltip = {
+				    character_event = { id = 38255 }
+		        } 
+		    }
+            random_list = { 
+			    45 = { 
+                    random_realm_character = { 
+					    limit = { has_character_flag = jd_judge }
+				        character_event = { id = judicium_dei.8 days = 2 } 
+					} 
+				}
+                55 = { } 
+			}
+		character_event = { id = judicium_dei.9 days = 12 } 
+		}
+	}
+
+    option = {
+		name = "EVTOPTBjudicium_dei.7"
+		prestige = 10
+        piety = 10
+        random = { 
+		    chance = 50
+            add_trait = honest
+			hidden_tooltip = {
+				character_event = { id = 38262 }
+		    } 
+		}
+        character_event = { id = judicium_dei.9 days = 12 }
+	}
+}
+
+#JD judge discovers cheating
+character_event = {
+	id = judicium_dei.8
+	desc = "EVTDESCjudicium_dei.8"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.8"
+        prestige = 10
+        FROM = { piety = -75 }
+	}
+
+    option = {
+		name = "EVTOPTBjudicium_dei.8"
+        trigger = { NOT = { trait = zealous } }
+		piety = -25
+		prestige = -10
+	}
+}
+
+#JD commences: prisoner
+character_event = {
+	id = judicium_dei.9
+	desc = "EVTDESCjudicium_dei.9"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.9"
+        random_list = {
+            33 = { character_event = { id = judicium_dei.12 days = 2 } }
+            34 = { character_event = { id = judicium_dei.15 days = 2 } }
+            33 = { character_event = { id = judicium_dei.18 days = 2 } } 
+		}
+	}
+}
+
+#JD commences: warden
+character_event = {
+	id = judicium_dei.10
+	desc = "EVTDESCjudicium_dei.10"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.10"
+        random_courtier = { 
+		    limit = { has_character_flag = jd_judge }
+            character_event = { id = judicium_dei.11 } 
+		}
+	}
+}
+
+#JD commences: judge
+character_event = {
+	id = judicium_dei.11
+	desc = "EVTDESCjudicium_dei.11"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.11"
+	}
+}
+
+#JD death: prisoner
+character_event = {
+	id = judicium_dei.12
+	desc = "EVTDESCjudicium_dei.12"
+	picture = "GFX_evt_witch"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.12"
+        clr_character_flag = requested_jd
+        death = { death_reason = death_battle }
+		hidden_tooltip = { host = { character_event = { id = judicium_dei.13 days = 0 } } }
+	}
+}
+
+#JD death: warden
+character_event = {
+	id = judicium_dei.13
+	desc = "EVTDESCjudicium_dei.13"
+	picture = "GFX_evt_witch"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.13"
+        prestige = 20
+		hidden_tooltip = {
+            random_courtier = { 
+			    limit = { has_character_flag = jd_judge }
+                character_event = { id = judicium_dei.14 days = 0 } 
+			}
+		}
+	}
+}
+
+#JD death: judge
+character_event = {
+	id = judicium_dei.14
+	desc = "EVTDESCjudicium_dei.14"
+	picture = "GFX_evt_witch"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.14"
+        prestige = 15
+        clr_character_flag = jd_judge
+	}
+}
+
+#JD success: prisoner
+character_event = {
+	id = judicium_dei.15
+	desc = "EVTDESCjudicium_dei.15"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.15"
+        clr_character_flag = requested_jd
+        prisoner = no
+        hidden_tooltip = { host = { character_event = { id = judicium_dei.16 } } }
+	}
+}
+
+#JD success: warden
+character_event = {
+	id = judicium_dei.16
+	desc = "EVTDESCjudicium_dei.16"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.16"
+        prestige = -50
+        piety = 10
+		hidden_tooltip = {
+            random_courtier = { 
+			    limit = { has_character_flag = jd_judge }
+                character_event = { id = judicium_dei.17 } 
+			}
+		}
+	}
+}
+
+#JD success: judge
+character_event = {
+	id = judicium_dei.17
+	desc = "EVTDESCjudicium_dei.17"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.17"
+        prestige = 15
+        clr_character_flag = jd_judge
+	}
+}
+
+#JD inconclusive: prisoner
+character_event = {
+	id = judicium_dei.18
+	desc = "EVTDESCjudicium_dei.18"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.18"
+        random_list = {  
+		    70 = { add_trait = maimed hidden_tooltip = { character_event = { id = 38281 } } }
+            30 = { add_trait = wounded hidden_tooltip = { character_event = { id = 38280 } } } 
+		}
+        hidden_tooltip = { host = { character_event = { id = judicium_dei.19 } } }
+	}
+}
+
+#JD inconclusive: warden
+character_event = {
+	id = judicium_dei.19
+	desc = "EVTDESCjudicium_dei.19"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.19"
+        piety = 10
+		hidden_tooltip = {
+            random_courtier = { 
+			    limit = { has_character_flag = jd_judge }
+                character_event = { id = judicium_dei.20 } 
+			} 
+		}
+	}
+}
+
+#JD inconclusive: judge
+character_event = {
+	id = judicium_dei.20
+	desc = "EVTDESCjudicium_dei.20"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.20"
+        piety = 20
+        clr_character_flag = jd_judge
+        hidden_tooltip = { FROM = { character_event = { id = judicium_dei.22 } } }
+	}
+    option = {
+		name = "EVTOPTBjudicium_dei.20"
+        prestige = 10
+        clr_character_flag = jd_judge
+        hidden_tooltip = { FROM = { character_event = { id = judicium_dei.24 } } }
+	}
+}
+
+#JD inconclusive, judge sets prisoner free: warden
+character_event = {
+	id = judicium_dei.22
+	desc = "EVTDESCjudicium_dei.22"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.22"
+        piety = 10
+		hidden_tooltip = {
+            random_courtier = { 
+		    	limit = { has_character_flag = requested_jd }
+                character_event = { id = judicium_dei.21 } 
+			}
+		}
+	}
+}
+
+#JD inconclusive, judge sets prisoner free: prisoner
+character_event = {
+	id = judicium_dei.21
+	desc = "EVTDESCjudicium_dei.21"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.21"
+        piety = 10
+        prestige = -25
+        prisoner = no
+        clr_character_flag = requested_jd
+	}
+}
+
+#JD inconclusive, judge decides to keep prisoner locked up: warden
+character_event = {
+	id = judicium_dei.24
+	desc = "EVTDESCjudicium_dei.24"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.24"
+        prestige = 25
+		hidden_tooltip = {
+            random_courtier = { 
+			    limit = { has_character_flag = requested_jd }
+                character_event = { id = judicium_dei.23 } 
+			}
+		}
+	}
+}
+
+#JD inconclusive, judge decides to keep prisoner locked up: prisoner
+character_event = {
+	id = judicium_dei.23
+	desc = "EVTDESCjudicium_dei.23"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjudicium_dei.21"
+        piety = 10
+        prestige = -50
+	}
+}
+
+
+#JD manteinance
+character_event = {
+	id = judicium_dei.25
+	desc = "I'm not a prisoner anymore"
+	picture = "GFX_evt_judicium_dei"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	trigger = { 
+	    OR = { 
+		    has_character_flag = requested_jd
+            has_character_flag = refused_jd 
+		}
+        prisoner = no 
+	}
+
+    mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "No need for a Judicium Dei!"
+        clr_character_flag = requested_jd
+        clr_character_flag = refused_jd
+	}
+}

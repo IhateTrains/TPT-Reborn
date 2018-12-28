@@ -1,0 +1,77 @@
+#Karling
+751.1.1={
+	liege = "k_burgundy"
+}
+751.1.1={
+	holder = 131722
+}
+768.9.24={
+	holder = 144999
+}
+771.12.4={
+	holder = 6392
+}
+#Bosonids
+801.1.1={
+	holder = 7976
+}
+855.1.1=
+{
+	liege="d_provence"
+}
+855.1.1={
+	holder = 7561
+}
+874.1.1={
+	holder = 7981
+}
+879.1.1={
+	holder = 7921
+}
+895.1.1={
+	holder = 7923
+}
+923.1.1={
+	holder = 7980
+}
+934.1.1={
+	holder = 400
+}
+961.1.1={
+	holder = 402
+}
+993.1.1={
+	holder = 40801
+}
+1008.1.2={
+	holder = 40803
+}
+1014.1.2={
+	holder = 404
+}
+1020.1.1={
+	holder = 40804
+}
+1025.1.1={
+	holder = 40805
+}
+1030.1.1={
+	holder = 406
+}
+1040.1.1={
+	holder = 40472 #Hugues des Baux
+}
+1070.1.1={
+	holder = 20283 #Guillaume Hugues des Baux
+}
+1105.1.1={
+	holder = 32515 #Raymond des Baux
+}
+1150.1.1={
+	holder = 25990007 #Hugues des Baux
+	liege=0
+}
+1162.1.1={
+	liege=d_provence
+	holder=0
+}

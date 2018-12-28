@@ -1,0 +1,23 @@
+# 241 - Neuchatel
+
+# County Title
+title = c_neuchatel
+
+# Settlements
+max_settlements = 3
+b_neuchatel = castle
+
+#b_vaumarcus
+#b_fenis 
+#b_nidau
+#b_cerlier 
+#b_valangin
+#b_aarbert 
+#b_hasenburg 
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
+

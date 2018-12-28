@@ -1,0 +1,48 @@
+# 330 - Siena
+
+# County Title
+title = c_siena
+
+# Settlements
+max_settlements = 6
+
+
+b_castellodibrolio = castle
+b_siena = city
+b_montalcino = city
+#b_monteriggioni = castle
+#b_castelnuovoberardenga = castle
+#b_montepulciano = city
+#b_colledievaldelsa = city
+#b_radicofani = castle
+#b_labbaziamonteolivetomaggiore = temple
+#b_greveinchianti = temple
+#b_asciano = city
+#b_acquapendente = city
+#b_castellodibelcaro = castle
+#b_castellodellequattrotorri = castle
+#b_pienza = city
+
+
+# Misc
+culture = tuscan
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_siena = ct_wall_1
+	b_siena = ct_wall_q_1
+	b_siena = ct_marketplace_1
+	b_siena = ct_militia_barracks_1
+	b_siena = ct_civics_1
+	b_siena = ct_university_1
+	b_siena = ct_university_2
+	b_siena = ct_jewish_community_1
+}
+
+1186.1.1 = { capital = b_siena }
+1213.1.1 = { b_monteriggioni = castle }
+1230.1.1 = { b_castelnuovoberardenga = castle }
+1326.1.1 = { capital = b_castellodibrolio }
+1328.1.11 = { capital = b_siena }

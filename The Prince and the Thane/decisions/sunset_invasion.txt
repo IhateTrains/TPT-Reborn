@@ -1,0 +1,35 @@
+vassal_decisions = {
+
+	vassal_sacrifice_decision = {
+	
+		from_potential = {
+			culture_group = mesoamerican
+		}
+	
+		potential = {
+			prisoner = yes
+			age = 14
+			host = { character = FROM }
+		}
+		allow = {
+			prisoner = yes
+		}
+		effect = {
+			any_liege = {
+				limit = { ai = no }
+				character_event = { id = SSI.60 }
+			}
+			death = {
+				death_reason = death_sacrificed
+				killer = FROM
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

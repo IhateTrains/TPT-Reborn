@@ -1,0 +1,89 @@
+864.1.1=
+{
+liege="k_papal_state"
+holder=791700 #Theophylact I
+}
+910.1.1=
+{
+holder=7918 #Alberic I
+}
+924.1.1=
+{
+holder=7919 #Alberic II
+}
+954.1.1=
+{
+holder=7932 #Gregory I
+}
+1011.1.1=
+{
+holder=7934
+}
+1024.1.1=
+{
+holder=7937
+}
+1032.1.1=
+{
+holder=7935
+}
+1044.1.1=
+{
+holder=7936
+}
+1058.1.1=
+{
+holder=7938
+}
+1108.1.1=
+{
+holder=1191043 #Tolomeo I of Tusculum
+}
+1126.1.1=
+{
+holder=1191044 #Tolomeo II of Tusculum
+}
+1153.1.1=
+{
+holder=1191045 #Jonathan of Tusculum
+}
+1167.1.1=
+{
+holder=1191046 #Raino of Tusculum
+}
+1179.1.1=
+{
+holder=1191066 #Giovanni of Tusculum
+}
+1191.1.1=
+{
+holder=1191102 #Giordano Colonna
+}
+1200.1.1=
+{
+holder=1191103 #Giordano II Colonna
+}
+1254.1.1=
+{
+holder=1191104 #Oddone II Colonna
+}
+1285.1.1=
+{
+holder=1191105 #Oddone III Colonna
+}
+1290.1.1=
+{
+holder=1191106 #Giovanni Colonna
+}
+1293.1.1=
+{
+holder=1191063 #Agapito Colonna
+}
+1300.1.1=
+{
+holder=1191064 #Giordano III Colonna
+}
+1315.1.1=
+{
+holder=1191065 #Pietro Colonna
+}

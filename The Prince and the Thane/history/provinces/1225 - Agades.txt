@@ -1,0 +1,15 @@
+# 1225 - Agades
+
+# County Title
+title = c_agades
+
+# Settlements
+max_settlements = 1
+
+b_agades = city
+
+# Misc
+culture = tuareg
+religion = ibadi
+
+# History

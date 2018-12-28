@@ -1,0 +1,33 @@
+1000.1.1={
+	holder=2220076 #Karlo Crijevic
+	holding_dynasty = 8001006 # Crijevic
+	liege="d_ragusa"
+}
+
+1045.1.1={
+	holder=2220077 #Dragan Crijevic
+}
+
+1105.1.1={
+	holder=2220078 #Zvonimir Crijevic
+}
+
+1145.1.1={
+	holder=2220079 #Dragan Crijevic
+}
+
+1185.1.1={
+	holder=2220080 #Ladislav Crijevic
+}
+
+1225.1.1={
+	holder=2220081 #Zvonimir Crijevic
+}
+
+1265.1.1={
+	holder=2220082 #Stanislav Crijevic
+}
+
+1305.1.1={
+	holder=2220083 #Petar Crijevic
+}

@@ -1,0 +1,796 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+long_rain;Long Rain;;;;;;;;;;;;;x
+cold_weather;Cold Weather;;;;;;;;;;;;;x
+bad_crops;Bad Crops;;;;;;;;;;;;;x
+serious_famine;Famine;;;;;;;;;;;;;x
+good_crops;Good Crops;;;;;;;;;;;;;x
+opinion_job_security_concerns;Concerned about job security.;;;;;;;;;;;;;x
+coronation_rejected;Rejected Coronation;;;;;;;;;;;;;x
+opinion_attended_ceremony;Attended Coronation;;;;;;;;;;;;;x
+found_a_piece_of_the_holy_cross;The character has found a piece of the Holy cross.;;;;;;;;;;;;;x
+found_a_piece_of_the_holy_cross_desc;The character has found a piece of the Holy cross during his efforts to conquer the Holy Land from infidel hands, apparently a piece one of the three originals from the crucifixion of our Lord and Saviour.;;;;;;;;;;;;;x
+found_saint_relic;The character has found an original relic of one of the Apostles.;;;;;;;;;;;;;x
+found_saint_relic_desc;The character has found an original relic of one of the Apostles during his last fight to reconquer the Holy Land.;;;;;;;;;;;;;x
+clergy_tax;Excessive Clergy taxation;;;;;;;;;;;;;x
+burger_tax;Excessive Peasant taxation;;;;;;;;;;;;;x
+tax_levied;Recently asked for extra tax;;;;;;;;;;;;;x
+brm_revolt;Revolt;;;;;;;;;;;;;x
+brm_revolt_suppressed;Revolt suppressed;;;;;;;;;;;;;x
+brm_reduced_tax;Reduced tax;;;;;;;;;;;;;x
+brm_rebel_offer_rejected;Rebels offer rejected;;;;;;;;;;;;;x
+brm_isolated_province;Isolated province;;;;;;;;;;;;;x
+united_the_land;United the Lands;;;;;;;;;;;;;x
+assassination_cooldown;Assassination Cooldown;;;;;;;;;;;;;x
+on_his_guard;On Guard;;;;;;;;;;;;;x
+extensive_vetting;Vetting All Visitors;;;;;;;;;;;;;x
+safe_room;Never Leaves Home;;;;;;;;;;;;;x
+king_title;King;;;;;;;;;;;;;x
+king_title_desc;Managing a Kingdom is hard indeed, and the needed bureaucracy will never be as effective as the one of small realms.;;;;;;;;;;;;;x
+emperor_title;Emperor;;;;;;;;;;;;;x
+emperor_title_desc;Managing an empire is very hard indeed, and the needed bureaucracy will never be as effective as the one of small realms or even smaller kingdoms.;;;;;;;;;;;;;x
+jewish_community;Jewish Community;;;;;;;;;;;;;x
+jewish_community_desc;A jewish community is present in this province.;;;;;;;;;;;;;x
+charter_of_the_forest;The Charter of the Forest;;;;;;;;;;;;;x
+charter_of_the_forest_desc;This province is affected by the Charter of the Forest.;;;;;;;;;;;;;x
+exchequer_of_pleas_1;The Exchequer of Pleas;;;;;;;;;;;;;x
+exchequer_of_pleas_1_desc;The Exchequer of Pleas is estabilished in the Kingdom of England;;;;;;;;;;;;;x
+court_of_common_pleas_1;The Court of Common Pleas;;;;;;;;;;;;;x
+court_of_common_pleas_1_desc;The Court of Common Pleas is estabilished in the Kingdom of England;;;;;;;;;;;;;x
+magna_carta_1;The Magna Carta Libertatum;;;;;;;;;;;;;x
+magna_carta_1_desc;The Magna Carta Libertatum was issued in the Kingdom of England;;;;;;;;;;;;;x
+sicut_judaeis;Sicut Judaeis;;;;;;;;;;;;;x
+sicut_judaeis_desc;"This character is respecting and benefiting from the ""Sicut Judaeis"" papal bull.";;;;;;;;;;;;;x
+synagogue_1;Synagogue;;;;;;;;;;;;;x
+synagogue_1_desc;A Synagogue able to welcome all the realm's Jews was built in this province.;;;;;;;;;;;;;x
+exchequer_of_the_jews_1;The Exchequer of the Jews;;;;;;;;;;;;;x
+exchequer_of_the_jews_1_desc;The Exchequer of the Jews is estabilished in the Kingdom of England;;;;;;;;;;;;;x
+royal_entry;Royal Entry;;;;;;;;;;;;;x
+royal_entry_desc;This character has recently made a Royal Entry in its realm's capital, and is now regarded with the greatest respect and honour.;;;;;;;;;;;;;x
+fibonacci_1;Leonardo Fibonacci;;;;;;;;;;;;;x
+fibonacci_1_desc;This ruler has benefitted from Leonardo Fibonacci.;;;;;;;;;;;;;x
+william_moerbeke;William of Moerbeke;;;;;;;;;;;;;x
+william_moerbeke_desc;This ruler has benefitted from William of Moerbeke .;;;;;;;;;;;;;x
+imperial_diet_1;The Imperial Diet;;;;;;;;;;;;;x
+imperial_diet_1_desc;The Imperial Diet is estabilished in the Holy Roman Empire.;;;;;;;;;;;;;x
+looted_1;Looted;;;;;;;;;;;;;x
+looted_1_desc;This province has been recently looted.;;;;;;;;;;;;;x
+estates_generales_1;The Cortes Generales;;;;;;;;;;;;;x
+estates_generales_1_desc;The Cortes Generales is estabilished in this Spanish Kingdom.;;;;;;;;;;;;;x
+estates_of_parliament_1;The Estates of Parliament;;;;;;;;;;;;;x
+estates_of_parliament_1_desc;The Estates of Parliament is estabilished in the Kingdom of Alba.;;;;;;;;;;;;;x
+libertas_ecclesiae;Libertas Ecclesiae;;;;;;;;;;;;;x
+libertas_ecclesiae_desc;"This character is respecting the ""Libertas Ecclesiae"" papal bull.";;;;;;;;;;;;;x
+refused_libertas_ecclesiae;Libertas Ecclesiae;;;;;;;;;;;;;x
+refused_libertas_ecclesiae_desc;"This ruler rejected the fundamental notions of the ""Libertas Ecclesiae"" papal bull.";;;;;;;;;;;;;x
+estates_general_1;The Estates General;;;;;;;;;;;;;x
+estates_general_1_desc;The Estates General is estabilished in the Kingdom of France.;;;;;;;;;;;;;x
+ad_extirpanda;Ad Extirpanda;;;;;;;;;;;;;x
+ad_extirpanda_desc;"This character is respecting the ""Ad Extirpanda"" papal bull.";;;;;;;;;;;;;x
+refused_ad_extirpanda;Ad Extirpanda;;;;;;;;;;;;;x
+refused_ad_extirpanda_desc;"This ruler rejected the fundamental notions of the ""Ad Extirpanda"" papal bull.";;;;;;;;;;;;;x
+ad_abolendam;Ad Abolendam;;;;;;;;;;;;;x
+ad_abolendam_desc;"This character is respecting the ""Ad Abolendam"" papal bull.";;;;;;;;;;;;;x
+refused_ad_abolendam;Ad Abolendam;;;;;;;;;;;;;x
+refused_ad_abolendam_desc;"This ruler rejected the fundamental notions of the ""Ad Abolendam"" papal bull.";;;;;;;;;;;;;x
+sabor_parliament_1;The Sabor;;;;;;;;;;;;;x
+sabor_parliament_1_desc;The Sabor is estabilished in the Kingdom of Croatia.;;;;;;;;;;;;;x
+unam_sanctam;Unam Sanctam;;;;;;;;;;;;;x
+unam_sanctam_desc;"This character is respecting the ""Unam Sanctam"" papal bull.";;;;;;;;;;;;;x
+refused_unam_sanctam;Unam Sanctam;;;;;;;;;;;;;x
+refused_unam_sanctam_desc;"This ruler rejected the fundamental notions of the ""Unam Sanctam"" papal bull.";;;;;;;;;;;;;x
+civil_war;Civil War;;;;;;;;;;;;;x
+wrong_religion_group_capital;Heathen Capital;;;;;;;;;;;;;x
+wrong_religion_group_capital_desc;Reigning in a province that does not follow the true faith makes adminstration of your territories difficult.;;;;;;;;;;;;;x
+wrong_religion_capital;Heretic Capital;;;;;;;;;;;;;x
+wrong_religion_capital_desc;Reigning in a province that does not follow the true faith makes adminstration of your territories difficult.;;;;;;;;;;;;;x
+crusade_war;Crusade;;;;;;;;;;;;;x
+crusade_war_desc;Being on a Crusade allows us to call on more troops from our vassals.;;;;;;;;;;;;;x
+defensive_war;Defensive War;;;;;;;;;;;;;x
+defensive_war_desc;As we are fighting a defensive war, our vassals are obligated to provide us with more troops than they otherwise would.;;;;;;;;;;;;;x
+opinion_outraged;Outraged;;;;;;;;;;;;;x
+controls_antipope_desc;This character presumes to decide over the affairs of the church despite being a temporal ruler. This attitude could be seen as borderline heretical.;;;;;;;;;;;;;x
+controls_antipope;Controls the Antipope;;;;;;;;;;;;;x
+byzantium_decline;The Decline of Byzantium;;;;;;;;;;;;;x
+byzantium_decline_desc;The Eastern Roman Empire is not as strong as it used to be, and with the Muslim pressure on the east it is more and more likely to collapse sometimes soon.;;;;;;;;;;;;;x
+seljuk_rise;The Rise of the Seljuks;;;;;;;;;;;;;x
+seljuk_rise_desc;The Seljuks are stronger than ever, pressuring Byzantium while consolidating their rule over their recently conquered lands in the Middle East.;;;;;;;;;;;;;x
+great_famine;The Great Famine of 1315-1317;;;;;;;;;;;;;x
+great_famine_desc;This character's realm is struggling with the consequences of the Great Famine of 1315-1317;;;;;;;;;;;;;x
+famine_1;Famine;;;;;;;;;;;;;x
+famine_1_desc;This province has been struck by a famine, people are dying out and even the soldiers cannot be properly fed.;;;;;;;;;;;;;x
+defensive_independence_war;Defending the Status Quo;;;;;;;;;;;;;x
+defensive_independence_war_desc;This ruler is currently defending the Status Quo of his realm against treasonous vassals.;;;;;;;;;;;;;x
+wandering_dragon;Wandering Dragon;;;;;;;;;;;;;x
+wandering_dragon_desc;It is said that there is a wandering Dragon in some northern province of this character's realm.;;;;;;;;;;;;;x
+attacking_dragon;Raging Dragon;;;;;;;;;;;;;x
+attacking_dragon_desc;A mighty Dragon is allegedly reported to be raging in some northern province of this character's realm.;;;;;;;;;;;;;x
+holy_men_dragon;Defeated a Dragon;;;;;;;;;;;;;x
+holy_men_dragon_desc;It is said that this character defeated a mighty Dragon with the help of an army of Holy men! No one knows for sure whether it's true, or it's just royal propaganda.;;;;;;;;;;;;;x
+cattle_dragon;Defeated a Dragon;;;;;;;;;;;;;x
+cattle_dragon_desc;It is said that this character defeated a mighty Dragon poisoning it with the smartest of tricks! No one knows for sure whether it's true, or it's just royal propaganda.;;;;;;;;;;;;;x
+hero_dragon;Defeated a Dragon;;;;;;;;;;;;;x
+hero_dragon_desc;It is said that this character defeated a mighty Dragon during an epic fight! No one knows for sure whether it's true, or it's just royal propaganda.;;;;;;;;;;;;;x
+impotent;Impotent;;;;;;;;;;;;;x
+suffers_gout;Suffers from gout;;;;;;;;;;;;;x
+jewish_tax_break;Jewish Tax Break;;;;;;;;;;;;;x
+jewish_tax_break_desc;The local Jewish community is enjoying a tax break granted by this province's liege.;;;;;;;;;;;;;x
+siete_partidas_1;The Siete Partidas;;;;;;;;;;;;;x
+siete_partidas_1_desc;The Siete Partidas is estabilished in the kingdom of Castille.;;;;;;;;;;;;;x
+statute_of_merton_1;The Statute of Merton.;;;;;;;;;;;;;x
+statute_of_merton_1_desc;The Statute of Merton is estabilished in the kingdom of England.;;;;;;;;;;;;;x
+loan_timer;Loan Taken;;;;;;;;;;;;;x
+loan_timer_desc;A loan will be due for repayment at the expiration date of this modifier.;;;;;;;;;;;;;x
+employment_timer;Recently employed a character;;;;;;;;;;;;;x
+indulgence_timer;Recently bought an indulgence;;;;;;;;;;;;;x
+victory_timer;Recently victorious in a war;;;;;;;;;;;;;x
+convert_province_timer;Recently converted a province;;;;;;;;;;;;;x
+ius_primae_noctis;Ius Primae Noctis;;;;;;;;;;;;;x
+ius_primae_noctis_desc;This character has estabilished the Ius Primae Noctis in the realm.;;;;;;;;;;;;;x
+lady_godiva;Lady Godiva;;;;;;;;;;;;;x
+lady_godiva_desc;"This character's wife recently sided with my fellow vassals asking me to lower what the call an ""oppressive taxation"". Rumors are that she rode naked all the way from the castle to the city well in order to persuade him.";;;;;;;;;;;;;x
+wild_hunt;Wild Hunt;;;;;;;;;;;;;x
+wild_hunt_desc;A Wild Hunt has been recently sighted in many provinces of this character's realm. The peasants live in fear, and some churchmen claim the end of the world is approaching...;;;;;;;;;;;;;x
+pogrom_1;Pogrom;;;;;;;;;;;;;x
+pogrom_1_desc;A Pogrom against the local Jewish Community is currently taking place in this province!;;;;;;;;;;;;;x
+quia_emptores_1;Quia Emptores;;;;;;;;;;;;;x
+quia_emptores_1_desc;Quia Emptores is estabilished in the kingdom of England.;;;;;;;;;;;;;x
+wandering_jew;The Wandering Jew;;;;;;;;;;;;;x
+wandering_jew_desc;The Wandering Jew has been recently sighted in the outskirts of this character's dominion. The peasants are afraid, and some Holy men claim this is a bad omen for the realm.;;;;;;;;;;;;;x
+attending_jubilee;Attending Jubilee;;;;;;;;;;;;;x
+attending_jubilee_desc;This character is currently sponsoring and attending the Jubilee that his Holyness the Pope called for this year.;;;;;;;;;;;;;x
+not_attending_jubilee;Not attending Jubilee;;;;;;;;;;;;;x
+not_attending_jubilee_desc;This character decided not to sponsor nor to attend the Jubilee that his Holyness the Pope called for this year.;;;;;;;;;;;;;x
+financing_crusade;Financing the Crusade;;;;;;;;;;;;;x
+financing_crusade_desc;This character is currently sponsoring the Crusade that his Holyness the Pope recently called.;;;;;;;;;;;;;x
+not_financing_crusade;Not Financing the Crusade;;;;;;;;;;;;;x
+not_financing_crusade_desc;This character decided not to sponsor the Crusade that his Holyness the Pope recently called.;;;;;;;;;;;;;x
+financing_jihad;Financing the Jihad;;;;;;;;;;;;;x
+financing_jihad_desc;This character is currently sponsoring the Jihad recently called by the Caliph.;;;;;;;;;;;;;x
+not_financing_jihad;Not Financing the Jihad;;;;;;;;;;;;;x
+not_financing_jihad_desc;This character decided not to sponsor the Jihad recently called by the Caliph.;;;;;;;;;;;;;x
+duke_title;Large Duchy;;;;;;;;;;;;;x
+duke_title_desc;Managing a large Duchy is hard indeed, and the needed bureaucracy will never be as effective as the one of small realms.;;;;;;;;;;;;;x
+pope_title;Pope;;;;;;;;;;;;;x
+pope_title_desc;Being a Pope brings lots of benefits, but the money owed from the various bishops around the Catholic world is hard to collect..;;;;;;;;;;;;;x
+important_battle_won;Won an Important Battle;;;;;;;;;;;;;x
+important_battle_won_desc;This character's army recently won a battle who could reveal itself to be fundamental for the outcome of the whole war.;;;;;;;;;;;;;x
+important_battle_lost;Lost an Important Battle;;;;;;;;;;;;;x
+important_battle_lost_desc;This character's army recently lost a battle who could reveal itself to be fundamental for the outcome of the whole war.;;;;;;;;;;;;;x
+holding_ball;Holding a Ball;;;;;;;;;;;;;x
+holding_ball_desc;This character is currently holding a Great Ball at court.;;;;;;;;;;;;;x
+weak_ruler;Weak Ruler;;;;;;;;;;;;;x
+weak_ruler_desc;This ruler is seen by others as weak and ineffective.;;;;;;;;;;;;;x
+strong_ruler;Strong Ruler;;;;;;;;;;;;;x
+strong_ruler_desc;This ruler is seen by others as strong and competent.;;;;;;;;;;;;;x
+land_magnate;Big Landholder;;;;;;;;;;;;;x
+land_magnate_desc;This ruler holds all the lands derived from his titles, and doesn't like to delegate.;;;;;;;;;;;;;x
+master_of_intrigues;Master of Intrigues;;;;;;;;;;;;;x
+master_of_intrigues_desc;This ruler is a master in intriguing and plotting.;;;;;;;;;;;;;x
+war_torn;At War;;;;;;;;;;;;;x
+war_torn_desc;This character's realm is being torn by the current war.;;;;;;;;;;;;;x
+political_ineptitude;Political Inept;;;;;;;;;;;;;x
+political_ineptitude_desc;This ruler is an inept in the fine art of politics.;;;;;;;;;;;;;x
+corrupted_court;Corruption;;;;;;;;;;;;;x
+corrupted_court;This ruler's stewardship's skills are so laughable he can't even start to fight corruption.;;;;;;;;;;;;;x
+bureaucratic_court;Efficiency;;;;;;;;;;;;;x
+bureaucratic_court_desc;This ruler is a master in administrating his realm, and everything runs as smoothly as ever.;;;;;;;;;;;;;x
+refuge_for_heretics;Cynical Ruler;;;;;;;;;;;;;x
+refuge_for_heretics_desc;This ruler isn't pious at all, preferring science and progress to the sure answers religion could offer him.;;;;;;;;;;;;;x
+bastion_of_the_zealous;Pious Ruler;;;;;;;;;;;;;x
+bastion_of_the_zealous_desc;This ruler is a pious character who despises science and progress and prefers to find the answers to life's greatest dilemmas in the Holy Scriptures.;;;;;;;;;;;;;x
+patron_of_the_learned;Erudite Ruler;;;;;;;;;;;;;x
+patron_of_the_learned_desc;This ruler is one of it's time's greatest cultural and intellectual minds.;;;;;;;;;;;;;x
+court_of_ignogrance;Ignorant Ruler;;;;;;;;;;;;;x
+court_of_ignogrance_desc;This ruler is uneducated and ignorant about most of the things that happen even just outside the castle's great hall.;;;;;;;;;;;;;x
+renowned_and_admired;Admired Ruler;;;;;;;;;;;;;x
+renowned_and_admired_desc;This ruler's virtues and great deeds are renowned and admired throughout all the known world.;;;;;;;;;;;;;x
+disdained_and_despised;Despised;;;;;;;;;;;;;x
+disdained_and_despised_desc;This ruler's lack of virtues or great deeds is disdained and despised throughout all the known world.;;;;;;;;;;;;;x
+wealthy_and_affluent;Wealthy Ruler;;;;;;;;;;;;;x
+wealthy_and_affluent_desc;This ruler is wealthy and has no problems paying or paying back any gold spent.;;;;;;;;;;;;;x
+opinion_father;My Father;;;;;;;;;;;;;x
+opinion_mother;My Mother;;;;;;;;;;;;;x
+opinion_sibling;My Sibling;;;;;;;;;;;;;x
+opinion_grandfather;My Grandfather;;;;;;;;;;;;;x
+opinion_grandmother;My Grandmother;;;;;;;;;;;;;x
+opinion_child;My Child;;;;;;;;;;;;;x
+opinion_grandchild;My Grandchild;;;;;;;;;;;;;x
+opinion_uncle;My Uncle;;;;;;;;;;;;;x
+opinion_aunt;My Aunt;;;;;;;;;;;;;x
+opinion_nephew;My Nephew;;;;;;;;;;;;;x
+opinion_niece;My Niece;;;;;;;;;;;;;x
+opinion_cousin;My Cousin;;;;;;;;;;;;;x
+martial_very_low;Incompetent Military Ruler;;;;;;;;;;;;;x
+martial_low;Very Poor Military Ruler;;;;;;;;;;;;;x
+martial_low_medium;Poor Military Ruler;;;;;;;;;;;;;x
+martial_medium;Average Military Ruler;;;;;;;;;;;;;x
+martial_medium_high;Good Military Ruler;;;;;;;;;;;;;x
+martial_high;Very Good Military Ruler;;;;;;;;;;;;;x
+martial_very_high;Exceptional Military Ruler;;;;;;;;;;;;;x
+opinion_beaten;Beaten;;;;;;;;;;;;;x
+squiering_refused;Squiering Refused;;;;;;;;;;;;;x
+squiering_refused_desc;A knight has refused to let this character squire for him;;;;;;;;;;;;;x
+employed_cityguard;Personal Guard;;;;;;;;;;;;;x
+employed_cityguard_desc;Hire a loyal personal guard;;;;;;;;;;;;;x
+cityguard_busy;Your Personal Guard is performing a task;;;;;;;;;;;;;x
+cityguard_drilling;Your Personal Guard is drilling its soldiers;;;;;;;;;;;;;x
+forced_training;Forced Training;;;;;;;;;;;;;x
+Household_defense;Improved Defenses;;;;;;;;;;;;;x
+burned_land;Scorched Earth;;;;;;;;;;;;;x
+province_poverty_2;Struggling;;;;;;;;;;;;;x
+province_poverty_2_desc;The province is experiencing decreased agricultural production, the abandonment of land, and the degeneration of cities. People are very pessimistic about their future and the average wage is falling rapidly.;;;;;;;;;;;;;x
+province_poverty_1;Poor;;;;;;;;;;;;;x
+province_poverty_1_desc;The province is experiencing decreased agricultural production and the abandonment of land. People are generally pessimistic about their future and the average wage is falling.;;;;;;;;;;;;;x
+province_prosperity_1;Prosperous;;;;;;;;;;;;;x
+province_prosperity_1_desc;The province is experiencing increased agricultural production and the clearing of land. People are generally optimistic about their future and the average wage is rising.;;;;;;;;;;;;;x
+province_prosperity_2;Rich;;;;;;;;;;;;;x
+province_prosperity_2_desc;The province is experiencing increased agricultural production, the clearing of land, and major investments in production of goods. People are very optimistic about their future and the average wage is rising rapidly.;;;;;;;;;;;;;x
+placeholder;Placeholder;;;;;;;;;;;;;x
+placeholder_desc;This blank slot is here to fix a crash bug. Ignore it and it will go away.;;;;;;;;;;;;;x
+other_claim_desc;This Casus Belli can be used by §Y$PRESSER$§! to press §Y$CLAIMANT$'s§! claim on the §Y$TITLE$§!.\n\n§Y$CLAIMANT$§! will become your vassal if one of the following conditions are true:\n- §Y$PRESSER$§! and §Y$CLAIMANT$§! are of the same dynasty.\n- The current holder of §Y$TITLE$§! is in the same realm as §Y$PRESSER$§!.\n- §Y$TITLE$§! is a lower rank than §Y$CLAIMANT$§!'s primary title.\n- §Y$PRESSER$§! is de jure liege of §Y$TITLE$§!.;;;;;;;;;;;;;x
+peasant_obstructionism;Peasant Obstructionism;;;;;;;;;;;;;x
+one_celibate;Ascetic;;;;;;;;;;;;;x
+arbitrary_neg;Despises Ruthlessness;;;;;;;;;;;;;x
+arbitrary_pos;Approves of Ruthlessness;;;;;;;;;;;;;x
+prestige_decadence1_desc;Prestige is a faint fire which needs constant care and fueling to keep shining bright..;;;;;;;;;;;;;x
+prestige_decadence2_desc;Prestige is a faint fire which needs constant care and fueling to keep shining bright..;;;;;;;;;;;;;x
+prestige_decadence3_desc;Prestige is a faint fire which needs constant care and fueling to keep shining bright..;;;;;;;;;;;;;x
+demotivated_troops;Demotivated Troops;;;;;;;;;;;;;x
+prestige_decadence1;Prestige Decadence;;;;;;;;;;;;;x
+prestige_decadence2;Prestige Decadence;;;;;;;;;;;;;x
+prestige_decadence3;Prestige Decadence;;;;;;;;;;;;;x
+vulnerable_to_attempts;Vulnerable;;;;;;;;;;;;;x
+rioting_merchants;Rioting Merchants;;;;;;;;;;;;;x
+rioting_merchants_desc;The merchants in the province are struggling between their various allegiances to any of the merchant republics, making trade a tiresome and dangerous practice around here.;;;;;;;;;;;;;x
+opinion_illegitimacy_suspicions;Suspicious;Suspect;;;;;;;;;;;;x
+opinion_illegitimacy_evidence_1;Evidence of Illegitimacy;Evidence d'illégitimité;;;;;;;;;;;;x
+opinion_illegitimacy_evidence_2;Evidence of Illegitimacy;Evidence d'illégitimité;;;;;;;;;;;;x
+opinion_illegitimacy_evidence_3;Evidence of Illegitimacy;Evidence d'illégitimité;;;;;;;;;;;;x
+opinion_ignored_accusation;Ignored My Accusations;A ignoré mes accusations;;;;;;;;;;;;x
+opinion_pressed_accusation;Accepted My Accusations;A accepté mes accusations;;;;;;;;;;;;x
+opinion_disinherited_me;Disinherited Me;M'a déshérité;;;;;;;;;;;;x
+opinion_ignored_false_accusation;Dismissed False Accusations;A écarté de fausses accusations;;;;;;;;;;;;x
+opinion_conspired_against_me;Accused Me of Illegitimacy;M'a accusé d'illégitimité;;;;;;;;;;;;x
+opinion_ignored_my_judgement;Ignored My Judgement;A ignoré mon jugement;;;;;;;;;;;;x
+opinion_conspired_against_my_child;Accused My Child of Illegitimacy;A accusé mon enfant d'illégitimité;;;;;;;;;;;;x
+opinion_dangerous;Potentially Dangerous;Potentiellement dangereux;;;;;;;;;;;;x
+opinion_squire_honoured;Honoured Squire;Ecuyer honoré;;;;;;;;;;;;x
+opinion_squire_humiliated;Humiliated Squire;Ecuyer Humilié;;;;;;;;;;;;x
+opinion_tournament_spectator;Attended Tourney;A assisé au Tournoi;;;;;;;;;;;;x
+drunken_tournament;Drunken Fool;Imbécile ivre;;;;;;;;;;;;x
+drunken_tournament_desc;You once showed up drunk to a tournament and made such a shameful spectacle of yourself that you had to be thrown out.;Vous vous êtes une fois montré ivre à un tournoi, ce fut un spectacle si honteux que vous en avez été mis à la porte. ;;;;;;;;;;;;x
+opinion_spectating_tournament;Spectating Tournament;Spectateur du Tournoi;;;;;;;;;;;;x
+opinion_vengeance;Demands Vengeance;;;;;;;;;;;;;x
+recently_killed;Recent Assassination;;;;;;;;;;;;;x
+recently_killed_desc;This character recently has successfully assassinated another character through a plot.;;;;;;;;;;;;;x
+court_education;Court Education;;;;;;;;;;;;;x
+court_education_desc;This character is receiving a court education.;;;;;;;;;;;;;x
+martial_education;Martial Education;;;;;;;;;;;;;x
+martial_education_desc;This character is groomed for command.;;;;;;;;;;;;;x
+steward_education;Steward Education;;;;;;;;;;;;;x
+steward_education_desc;This character is learning about sums and numbers;;;;;;;;;;;;;x
+ecclesiastical_education;Religious Education;;;;;;;;;;;;;x
+ecclesiastical_education_desc;This character is studying theology and the Holy scriptures.;;;;;;;;;;;;;x
+no_education;No formal education.;;;;;;;;;;;;;x
+no_education_desc;This character doesn’t receive any formal education;;;;;;;;;;;;;x
+opinion_grew_up_together;Grew up together;;;;;;;;;;;;;x
+plagued_by_wolfs;Plagued by Wolves;Tourmentée par les loups;;;;;;;;;;;;x
+plagued_by_wolfs_desc;This province is plagued by a very large pack of wolves;Cette province est tourmentée par de très nombreuses meutes de loups.;;;;;;;;;;;;x
+opinion_father;My Father;Mon pÐ¸re;Mein Vater;;My Father;;;;;;;;;x
+opinion_mother;My Mother;Ma mÐ¸re;Meine Mutter;;My Mother;;;;;;;;;x
+opinion_sibling;My Sibling;Mon frÐ¸re/Ma soeur;Meine Geschwister;;My Sibling;;;;;;;;;x
+opinion_brother;My Brother;Mon frÃ¨re;My Brother;;My Brother;;;;;;;;;x
+opinion_sister;My Sister;Ma sÅ“ur;My Sister;;My Sister;;;;;;;;;x
+opinion_grandfather;My Grandfather;Mon grand-pÐ¸re;Mein Grossvater;;My Grandfather;;;;;;;;;x
+opinion_grandmother;My Grandmother;Ma grand-mÐ¸re;Meine Grossmutter;;My Grandmother;;;;;;;;;x
+opinion_child;My Child;Mon enfant;Mein Kind;;My Child;;;;;;;;;x
+opinion_grandchild;My Grandchild;Mon petit-enfant;Mein Enkelkind;;My Grandchild;;;;;;;;;x
+opinion_uncle;My Uncle;Mon oncle;Mein Onkel;;My Uncle;;;;;;;;;x
+opinion_aunt;My Aunt;Ma tante;Meine Tante;;My Aunt;;;;;;;;;x
+opinion_nephew;My Nephew;Mon neveu;Mein Neffe;;My Nephew;;;;;;;;;x
+opinion_niece;My Niece;Ma niÐ¸ce;Meine Nichte;;My Niece;;;;;;;;;x
+opinion_cousin;My Cousin;Mon cousin;Mein Vetter;;My Cousin;;;;;;;;;x
+opinion_husband;My Husband;My Husband;My Husband;;My Husband;;;;;;;;;x
+opinion_wife;My Wife;My Wife;My Wife;;My Wife;;;;;;;;;x
+opinion_father_in_law;My Father-in-Law;My Father-in-Law;My Father-in-Law;;My Father-in-Law;;;;;;;;;x
+opinion_mother_in_law;My Mother-in-Law;My Mother-in-Law;My Mother-in-Law;;My Mother-in-Law;;;;;;;;;x
+opinion_son_in_law;My Son-in-Law;My Son-in-Law;My Son-in-Law;;My Son-in-Law;;;;;;;;;x
+opinion_daughter_in_law;My Daughter-in-Law;My Daughter-in-Law;My Daughter-in-Law;;My Daughter-in-Law;;;;;;;;;x
+opinion_brother_in_law;My Brother-in-Law;My Brother-in-Law;My Brother-in-Law;;My Brother-in-Law;;;;;;;;;x
+opinion_sister_in_law;My Sister-in-Law;My Sister-in-Law;My Sister-in-Law;;My Sister-in-Law;;;;;;;;;x
+crusade_war;Crusade;Croisade;Kreuzzug;;;;;;;;;;;x
+vassal_ruler;Local Levies;Levées locales;Lokale Aushebungen;;;;;;;;;;;x
+vassal_ruler_desc;Our relatively low rank gives us better control over our local vassals, who will supply us with more troops.;Notre rang relativement modeste nous octroie un meilleur contrôle sur nos vassaux locaux, qui vont nous fournir plus de troupes. ;Unser relativ niedriger Stand gibt uns eine bessere Kontrolle über unsere lokalen Vasallen, die uns mit mehr Truppen versorgen werden.;;;;;;;;;;;x
+defensive_war;Defensive War;Guerre défensive;Verteidigungskrieg ;;;;;;;;;;;x
+defensive_war_desc;As we are fighting a defensive war, our vassals are obligated to provide us with more troops than they otherwise would.;Comme nous nous battons dans une guerre défensive, nos vassaux sont obligés de nous fournir plus de troupes qu'à l'accoutumé. ;Da wir mit einem Verteidigungskrieg kämpfen, werden unsere Vasallen verpflichtet, uns mit mehr Truppen zu versorgen, als sie sonst würden.;;;;;;;;;;;x
+wrong_religion_group_capital;Heathen Capital;Capitale païenne;Heiden Hochburg;;;;;;;;;;;x
+wrong_religion_group_capital_desc;Reigning in a province that does not follow the true faith makes adminstration of your territories difficult.;Régner dans une province qui ne suit pas la vraie foi rend difficile l'administration de vos territoires.;Das Regieren in einer Provinz, die dem wahren Glauben nicht folgt, macht adminstration Ihrer Territorien schwierig.;;;;;;;;;;;x
+wrong_religion_capital;Heretic Capital;Capitale hérétique;Ketzer Hauptstadt;;;;;;;;;;;x
+wrong_religion_capital_desc;Reigning in a province that does not follow the true faith makes adminstration of your territories difficult.;Régner dans une province qui ne suit pas la vraie foi rend difficile l'administration de vos territoires.;Das Regieren in einer Provinz, die dem wahren Glauben nicht folgt, macht adminstration Ihrer Territorien schwierig.;;;;;;;;;;;x
+decadent1;Legitimacy Questioned;;;;;;;;;;;;;x
+decadent1_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;;;;;;;;;;;;;x
+decadent2;Legitimacy Questioned;;;;;;;;;;;;;x
+decadent2_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;;;;;;;;;;;;;x
+decadent3;Legitimacy Questioned;;;;;;;;;;;;;x
+decadent3_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;;;;;;;;;;;;;x
+decadent4;Legitimacy Questioned;;;;;;;;;;;;;x
+decadent4_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;;;;;;;;;;;;;x
+decadent5;Legitimacy Questioned;;;;;;;;;;;;;x
+decadent5_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;;;;;;;;;;;;;x
+escaped_siege;Escaped from a siege;;;;;;;;;;;;;x
+left_at_siege;Kept in the Castle;;;;;;;;;;;;;x
+left_to_rot;Left to rot in prison;;;;;;;;;;;;;x
+death_escape;Died attempting a daring escape;;;;;;;;;;;;;x
+left_behind;Left behind at siege;;;;;;;;;;;;;x
+stalwart_defender;Stalwart Defender;;;;;;;;;;;;;x
+modifier_hidden;Hidden in countryside;;;;;;;;;;;;;x
+joined_war_against_me;Joined War Against Me;;;;;;;;;;;;;x
+stolen_banner;Captured Banner;;;;;;;;;;;;;x
+liberated;Liberated from occupation;;;;;;;;;;;;;x
+nm_holding_blot;Holding Blot;;;;;;;;;;;;;x
+nm_holding_blot_desc;The character is holding a Blot in honour of the gods!;;;;;;;;;;;;;x
+nm_peasant_resistance;Peasant Resistance;;;;;;;;;;;;;x
+nm_peasant_resistance_desc;Due to high taxes or some other slight on the small-holders, the peasantry are up in arms against your rule.;;;;;;;;;;;;;x
+nm_possessed_odin;Son of Odin;;;;;;;;;;;;;x
+nm_possessed_odin_desc;This character believes he is the son of Odin!;;;;;;;;;;;;;x
+nm_possessed_odin_recognised;Son of Odin;;;;;;;;;;;;;x
+nm_possessed_odin_recognised_desc;This character believes he is the son of Odin! And so does others!;;;;;;;;;;;;;x
+nm_possessed_loke;Son of Loke;;;;;;;;;;;;;x
+nm_possessed_loke_desc;This character believes he is the son of Loke! ;;;;;;;;;;;;;x
+nm_possessed_loke_recognised;Son of Loke;;;;;;;;;;;;;x
+nm_possessed_loke_recognised_desc;This character believes he is the son of Loke!  And so do others!;;;;;;;;;;;;;x
+nm_possessed_freya;Daughter of Freya;;;;;;;;;;;;;x
+nm_possessed_freya_desc;This character believes she is the daughter of Freya! ;;;;;;;;;;;;;x
+nm_possessed_freya_recognised;Daughter of Freya;;;;;;;;;;;;;x
+nm_possessed_freya_recognised_desc;This character believes she is the daughter of Freya!  And so do others!;;;;;;;;;;;;;x
+nm_one_eyed;One-Eyed;;;;;;;;;;;;;x
+nm_one_eyed_desc;This character tore of his own eye.;;;;;;;;;;;;;x
+nm_norse_homosexuality;Homosexuality: Norse;;;;;;;;;;;;;x
+nm_norse_homosexuality_desc;As long as you're tough enough to be on top, why should your vassals care?;;;;;;;;;;;;;x
+nm_norse_celibate;Celibate: Norse;;;;;;;;;;;;;x
+nm_norse_celibate_desc;People still wonder if something is wrong with you…;;;;;;;;;;;;;x
+nm_norse_hedonist;Hedonist: Norse;;;;;;;;;;;;;x
+nm_norse_hedonist_desc;Drink, love and be merry, for Ragnarok awaits!;;;;;;;;;;;;;x
+nm_norse_lustful;Lustful: Norse;;;;;;;;;;;;;x
+nm_norse_lustful_desc;Who could think there's anything wrong with lust?;;;;;;;;;;;;;x
+nm_norse_chaste;Chaste: Norse;;;;;;;;;;;;;x
+nm_norse_chaste_desc;Don't expect to be considered holy just because you dislike sex;;;;;;;;;;;;;x
+nm_norse_gluttonous;Gluttonous: Norse;;;;;;;;;;;;;x
+nm_norse_gluttonous_desc;Drink and be merry, for Ragnarok awaits!;;;;;;;;;;;;;x
+nm_norse_content;Content: Norse;;;;;;;;;;;;;x
+nm_norse_content_desc;It is fine to be fine at your lot in life. But don't expect anyone to think Odin likes you more for it;;;;;;;;;;;;;x
+nm_norse_brave;Brave: Norse;;;;;;;;;;;;;x
+nm_norse_brave_desc;Courage and bravery in battle is the road to Valhalla!;;;;;;;;;;;;;x
+nm_norse_craven;Craven: Norse;;;;;;;;;;;;;x
+nm_norse_craven_desc;Cowards are better than nidings and traitors. Barely.;;;;;;;;;;;;;x
+nm_norse_strong;Strong: Norse;;;;;;;;;;;;;x
+nm_norse_strong_desc;Everyone respects strength!;;;;;;;;;;;;;x
+nm_norse_weak;Weak: Norse;;;;;;;;;;;;;x
+nm_norse_weak_desc;Even the monks can best you in a fight! Pathetic!;;;;;;;;;;;;;x
+nm_jarl_approved_by_ting;Jarl: Approved By Ting;;;;;;;;;;;;;x
+nm_jarl_approved_by_ting_desc;The Tings have approved this character's claim to Jarlhood;;;;;;;;;;;;;x
+nm_jarl_not_approved_by_ting;Jarl: Not Approved By Ting;;;;;;;;;;;;;x
+nm_jarl_not_approved_by_ting_desc;The Tings have not approved this character's claim to Jarlhood;;;;;;;;;;;;;x
+nm_king_approved_by_ting;King: Approved By Ting;;;;;;;;;;;;;x
+nm_king_approved_by_ting_desc;The Tings have approved this character's claim to the Kingdom;;;;;;;;;;;;;x
+nm_king_not_approved_by_ting;King: Not Approved By Ting;;;;;;;;;;;;;x
+nm_king_not_approved_by_ting_desc;The Tings have not approved this character's claim to the Kingdom;;;;;;;;;;;;;x
+nm_emperor_approved_by_ting;Emperor: Approved By Ting;;;;;;;;;;;;;x
+nm_emperor_approved_by_ting_desc;The Tings have approved this character's claim to the Empire;;;;;;;;;;;;;x
+nm_emperor_not_approved_by_ting;Emperor: Not Approved By Ting;;;;;;;;;;;;;x
+nm_emperor_not_approved_by_ting_desc;The Tings have not approved this character's claim to the Empire;;;;;;;;;;;;;x
+attempted_murder_of_close_kin;Attempted to murder a close family member;;;;;;;;;;;;;x
+killed_vassal;Killed your vassal;;;;;;;;;;;;;x
+holding_epic_tournament;Held Tournament;;;;;;;;;;;;;x
+holding_epic_tournament_desc;This character recently held an epic tournament.;;;;;;;;;;;;;x
+opinion_refused_convert;Refused to Convert;;Bekehrung verweigert;;;;;;;;;;;x
+opinion_converted;Convert;;Bekehrt;;;;;;;;;;;x
+opinion_approved_succession_law;Approved Succession Law Change;;Genehmigt Erbrechtveränderung;;;;;;;;;;;x
+opinion_ignored_succession_law;Rejected Succession Law Change;;Abschlagte Erbrechtveränderung;;;;;;;;;;;x
+opinion_approved_law;Approved proposed law;;Stimmte Gesetz zu;;;;;;;;;;;x
+opinion_ignored_law;Rejected proposed law;;Lehnte Gesetz ab;;;;;;;;;;;x
+offered_sacrifices;Offered sacrifices to the Third Temple;;;;;;;;;;;;;x
+swore_fealty;Swore Fealty;;;;;;;;;;;;;x
+refused_to_swear_fealty;Refused to Swear Fealty;;;;;;;;;;;;;x
+oathbreaker;Broke an Oath of fealty;;;;;;;;;;;;;x
+backed_papacy;Backed Papacy Campaign;;;;;;;;;;;;;x
+backed_other_papacy;Backed Another Cardinal's Papacy Campaign;;;;;;;;;;;;;x
+host_of_prisoner;In Trial by Combat;;;;;;;;;;;;;x
+champion_of_liege;Trial Champion;;;;;;;;;;;;;x
+denied_trial_by_combat;Denied trial by combat;;;;;;;;;;;;;x
+influence_holy_see;Conclave Influence;;;;;;;;;;;;;x
+influence_holy_see_desc;This character has strong ties with the cardinals of the Holy Roman Church, and is thus able to influence the Conclave and its outcomes, and many other important Papal matters.;;;;;;;;;;;;;x
+influence_pope;Papal Influence;;;;;;;;;;;;;x
+influence_pope;This character has strong ties with his Holyness the Pope himself, and is thus able to influence the most important if not any Papal matter.;;;;;;;;;;;;;x
+opinion_war_rival;War Rival;;;;;;;;;;;;;x
+offered_small_dowry;Paid a small dowry;;;;;;;;;;;;;x
+offered_average_dowry;Paid an average dowry;;;;;;;;;;;;;x
+offered_large_dowry;Paid a large dowry;;;;;;;;;;;;;x
+offered_landed_dowry;Paid a landed dowry;;;;;;;;;;;;;x
+opinion_loyalty_bought;Loyalty Bought;;;;;;;;;;;;;x
+opinion_bribe_rejected;Bribe Rejected;;;;;;;;;;;;;x
+opinion_loyal;Loyal;;;;;;;;;;;;;x
+opinion_rejected_approach;Rejected approach;;;;;;;;;;;;;x
+opinion_betrayed_loyalty;Betrayed;;;;;;;;;;;;;x
+opinion_promised_title;Promised a Title;;;;;;;;;;;;;x
+opinion_civil_war_loser;Loser in the Civil War;;;;;;;;;;;;;x
+opinion_pleased;Pleased;;;;;;;;;;;;;x
+opinion_recent_civil_war;Recent Civil War;;;;;;;;;;;;;x
+tax_reduction;Tax Reduction;;;;;;;;;;;;;x
+tax_privileges;Tax Privileges;;;;;;;;;;;;;x
+opinion_civil_war_support;Civil War Supporter;;;;;;;;;;;;;x
+attempted_murder_of_close_kin;Attempted Murder of Close Kin;;Sippenmörder;;;;;;;;;;;x
+killed_vassal;Murdered Vassal;;Ermordeter Vasall;;;;;;;;;;;x
+brm_recent_revolt;Recent Revolt;;;;;;;;;;;;;x
+brm_recent_revolt_desc;There was a recent revolt in this province.;;;;;;;;;;;;;x
+nm_has_been_on_viking;Been on a Viking Raid;;;;;;;;;;;;;x
+nm_has_been_on_viking_desc;This character has recently been on a viking's raid to loot and pillage neighbouring lands.;;;;;;;;;;;;;x
+recent_assassination_attempt;Recent Assassination Attempt;;;;;;;;;;;;;x
+capital_defense;Capital Defense;;;;;;;;;;;;;x
+took_part_in_conflict;Took part in a Conflict;;;;;;;;;;;;;x
+suspected_bastard;Suspected Bastard;;;;;;;;;;;;;x
+caliph_tribute;Caliph Tribute;;;;;;;;;;;;;x
+caliph_tribute_desc;Paid tribute to the Caliph.;;;;;;;;;;;;;x
+secretly_inbred;Secretly Inbred;;;;;;;;;;;;;x
+sanctioned_holy_war;Sanctioned a Holy War;;;;;;;;;;;;;x
+opinion_former_lover;Former Lover;;;;;;;;;;;;;x
+opinion_murderer;Murderer;;;;;;;;;;;;;x
+opinion_resentful;Resentful;;;;;;;;;;;;;x
+opinion_intimidated;Intimidated;;;;;;;;;;;;;x
+opinion_conspired_against_child;Conspired Against Child;;;;;;;;;;;;;x
+opinion_attending_tournament;Attending Tournament;;;;;;;;;;;;;x
+opinion_bribed_loyalty;Bribed Loyalty;;;;;;;;;;;;;x
+opinion_subsidies_accepted;Subsidies Accepted;;;;;;;;;;;;;x
+opinion_rejected_help_offer;Rejected Help Offer;;;;;;;;;;;;;x
+opinion_killed_former;Killed the former Ruler;;;;;;;;;;;;;x
+opinion_forgiveness;Forgiveness;;;;;;;;;;;;;x
+opinion_lost_vassal;Lost Vassal;;;;;;;;;;;;;x
+opinion_independent_liege;Independent Liege;;;;;;;;;;;;;x
+holy_truce_timer;Truce;;Waffenruhe;;;;;;;;;;;x
+holy_truce_timer_desc;This character cannot initiate or be the target of a war until this modifier wears off.;;Diese Person kann weder das Ziel eines Krieges sein, noch einen Krieg starten, bis dieser Modifikator ausläuft.;;;;;;;;;;;x
+sanctioned_holy_war;Sanctioned Holy War;A autorisé une Guerre Sainte;Sanktionierter Heiliger Krieg;;;;;;;;;;;x
+sanction_timer;Recently requested sanction;A récemment demandé une autorisation;Kürzlich erbetene Sanktion;;;;;;;;;;;x
+opinion_reaver_no_attack;Did not attack;;;;;;;;;;;;;x
+opinion_rewarded_reaving;Rewarded;;;;;;;;;;;;;x
+opinion_denied_rewarded_reaving;Denied reward;;;;;;;;;;;;;x
+opinion_sucessful_raid;Successful raid;;;;;;;;;;;;;x
+opinion_on_reaving;On a raid;;;;;;;;;;;;;x
+opinion_went_reaving;Went on a raid;;;;;;;;;;;;;x
+opinion_failed_raid;Failed raid;;;;;;;;;;;;;x
+opposing_reform;Opposing the Reform;;;;;;;;;;;;;x
+favoring_reform;Favoring the Reform;;;;;;;;;;;;;x
+base_levies;Vassal Levies;;Vassal Abgaben;;;;;;;;;;;x
+base_levies_desc;The base number of troops we can raise from our vassals depends on the §Ynumber of holdings§! in the realm. A larger realm can raise fewer troops per vassal.;;Die Anzahl der Truppen, die wir aus unserer Vasallen erheben können, hängt von der §yNumber von Bestände§! im Reich ab. Ein größeres Reich können weniger Truppen erheben pro Vasall.;;;;;;;;;;;x
+extra_levies;Extra Levies;;Zusätzliche Abgaben;;;;;;;;;;;x
+extra_levies_desc;The current war allows us to call on additional troops from our vassals.;;Der aktuelle Krieg ermöglicht uns die Erhebung zusätzliche Truppen aus unserer Vasallen.;;;;;;;;;;;x
+plot_investigate_legitimacy_title;Investigate [This.GetBestName]'s Legitimacy;Enquêter sur la légitimité de [This.GetBestName];;;;;;;;;;;;x
+plot_investigate_legitimacy_desc;[From.GetBestName] suspects that [This.Father.GetBestName] may not be [This.GetBestName]'s real father, and intends to prove it.;[From.GetBestName] suspecte que [This.Father.GetBestName] pourrait ne pas être le père de  [This.GetBestName] et il a l'intentiond de le prouver. ;;;;;;;;;;;;x
+ramadan_timer;Recently observed Ramadan;A récemment fait le Ramadan;Vor kurzem beachtet Ramadan.;;;;;;;;;;;x
+opinion_settled_jews;Settled Jews;Juifs installés;Niedergelassene Juden;;;;;;;;;;;x
+decadent1;Legitimacy Questioned;Légitimité remise en cause;Hinterfragte Legitimität;;;;;;;;;;;x
+decadent1_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;La décadence de notre dynastie a eu comme conséquence la remise en cause de notre droit à régner par nos vassaux.;Unsere Dekandenz läßt unsere Vasallen unseren Herrschaftsanspruch in Frage stellen.;;;;;;;;;;;x
+decadent2;Legitimacy Questioned;Légitimité remise en cause;Hinterfragte Legitimität;;;;;;;;;;;x
+decadent2_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;La décadence de notre dynastie a eu comme conséquence la remise en cause de notre droit à régner par nos vassaux.;Unsere Dekandenz läßt unsere Vasallen unseren Herrschaftsanspruch in Frage stellen.;;;;;;;;;;;x
+decadent3;Legitimacy Questioned;Légitimité remise en cause;Hinterfragte Legitimität;;;;;;;;;;;x
+decadent3_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;La décadence de notre dynastie a eu comme conséquence la remise en cause de notre droit à régner par nos vassaux.;Unsere Dekandenz läßt unsere Vasallen unseren Herrschaftsanspruch in Frage stellen.;;;;;;;;;;;x
+decadent4;Legitimacy Questioned;Légitimité remise en cause;Hinterfragte Legitimität;;;;;;;;;;;x
+decadent4_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;La décadence de notre dynastie a eu comme conséquence la remise en cause de notre droit à régner par nos vassaux.;Unsere Dekandenz läßt unsere Vasallen unseren Herrschaftsanspruch in Frage stellen.;;;;;;;;;;;x
+decadent5;Legitimacy Questioned;Légitimité remise en cause;Hinterfragte Legitimität;;;;;;;;;;;x
+decadent5_desc;Our dynasty's decadence has resulted in our right to rule being questioned by our vassals.;La décadence de notre dynastie a eu comme conséquence la remise en cause de notre droit à régner par nos vassaux.;Unsere Dekandenz läßt unsere Vasallen unseren Herrschaftsanspruch in Frage stellen.;;;;;;;;;;;x
+province_poverty_2;Struggling;Déclin;Elend;;;;;;;;;;;x
+province_poverty_2_desc;The province is experiencing decreased agricultural production, the abandonment of land, and the degeneration of cities. People are very pessimistic about their future and the average wage is falling rapidly.;La province connaît une diminution de la production agricole, provoqué par l'abandon des terres et la dégénérescence des villes. Les gens sont très pessimistes quant à leur avenir et le salaire moyen est en baisse rapide.;Der Provinz erfährt verringerte Agrarproduktion, die Landflucht, und die Degeneration der Städte. Die Leute sind sehr pessimistisch über ihre Zukunft und der Durchschnittslohn fält rasch;;;;;;;;;;;x
+province_poverty_1;Poor;Pauvreté;Arm;;;;;;;;;;;x
+province_poverty_1_desc;The province is experiencing decreased agricultural production and the abandonment of land. People are generally pessimistic about their future and the average wage is falling.;La province connaît une diminution de la production agricole et l'abandon des terres. Les gens sont généralement pessimistes sur leur avenir et le salaire moyen est en baisse.;Der Provinz erfährt verringerte Agrarproduktion und die Landflucht. Die Menschen sind in der Regel pessimistisch über ihre Zukunft und der Durchschnittslohn sinkt.;;;;;;;;;;;x
+province_prosperity_1;Prosperous;Prospérité;Entwickelt;;;;;;;;;;;x
+province_prosperity_1_desc;The province is experiencing increased agricultural production and the clearing of land. People are generally optimistic about their future and the average wage is rising.;La province connaît une production agricole accrue et un défrichage de ses terres. Les gens sont généralement optimistes quant à leur avenir et le salaire moyen est en hausse.;Der Provinz erfährt erhöhte Agrarproduktion und die Rodung des Landes. Die Menschen sind insgesamt optimistisch über ihre Zukunft und der Durchschnittslohn steigt.;;;;;;;;;;;x
+province_prosperity_2;Rich;Richesse;Reich;;;;;;;;;;;x
+province_prosperity_2_desc;The province is experiencing increased agricultural production, the clearing of land, and major investments in production of goods. People are very optimistic about their future and the average wage is rising rapidly.;La province connaît une production agricole accrue, le défrichage de ses terres, et d'importants investissements dans la production de biens. Les gens sont très optimistes quant à leur avenir et le salaire moyen augmente rapidement.;Der Provinz erfährt erhöhte Agrarproduktion, die Rodung von Land und große Investitionen in die Produktion von Gütern. Die Leute sind sehr optimistisch um ihre Zukunft und der Durchschnittslohn steigt rasant.;;;;;;;;;;;x
+victory_timer;Recently victorious in a war;A récemment été victorieux lors d'un guerre;Kürzlich siegreich in einem Krieg;;;;;;;;;;;x
+opinion_backed_papal_bid;Backed my papal bid;;;;;;;;;;;;;x
+holding_grand_hunt;Hosting a Grand Hunt;;;;;;;;;;;;;x
+holding_large_feast;Holding a Large Feast;;;;;;;;;;;;;x
+mad_heretic;Converted to Heresy;Converti à l'hérésie;Zur Häresie konvertiert;;;;;;;;;;;x
+kidnapped_me;Kidnapped Me;M'a kidnappé;Entführte Mich;;;;;;;;;;;x
+attempted_kidnapping;Attempted Kidnapping;A essayé de kidnapper;Entführung versucht;;;;;;;;;;;x
+attempted_kidnapping_of_kin;Attempted Kidnapping of Kin;A essayé de kidnapper un proche;Versuchte Entführung eines Verwandten;;;;;;;;;;;x
+attempted_kidnapping_of_vassal;Attempted Kidnapping of Vassal;A essayé de kidnapper un vassal;Versuchte Entführung eines Vasallen;;;;;;;;;;;x
+executed_kin;Executed Relative;Parent exécuté;Hingerichteter Verwandter;;;;;;;;;;;x
+devious_plotter;Devious Schemer;Intrigant sournois;Hinterhältiger Verschwörer;;;;;;;;;;;x
+CUSTOMTOOLTIP18;§Y[Root.GetTitledFirstName]§! will support the cause of §Y[Root.Liege.GetTitledFirstName]§! in the civil war\n;§Y[Root.GetTitledFirstName]§! soutiendra la cause de §Y[Root.Liege.GetTitledFirstName]§! dans la guerre civile\n;§Y[Root.GetTitledFirstName]§! will support the cause of §Y[Root.Liege.GetTitledFirstName]§! in the civil war\n;;;;;;;;;;;x
+CUSTOMTOOLTIP19;§Y[Root.GetTitledFirstName]§! will support the cause of §Y[From.GetTitledFirstName]§! in the civil war\n;§Y[Root.GetTitledFirstName]§! soutiendra la cause de §Y[From.GetTitledFirstName]§! dans la guerre civile\n;§Y[Root.GetTitledFirstName]§! will support the cause of §Y[From.GetTitledFirstName]§! in the civil war\n;;;;;;;;;;;x
+CUSTOMTOOLTIP20;§Y[This.PrimaryTitle.GetName]§! will support the cause of §Y[Root.GetTitledFirstName]§! in the civil war\n;§Y[This.PrimaryTitle.GetName]§! soutiendra la cause de §Y[Root.GetTitledFirstName]§! dans la guerre civile\n;§Y[This.PrimaryTitle.GetName]§! will support the cause of §Y[Root.GetTitledFirstName]§! in the civil war\n;;;;;;;;;;;x
+CUSTOMTOOLTIP21;§Y[Root.GetTitledFirstName]§! will remain neutral for now\n;§Y[Root.GetTitledFirstName]§! va rester neutre pour l'instant\n;§Y[Root.GetTitledFirstName]§! will remain neutral for now\n;;;;;;;;;;;x
+CUSTOMTOOLTIP22;The support of the vassals of §Y[This.PrimaryTitle.GetName]§! will be sought\n;Le soutien des vassaux de §Y[This.PrimaryTitle.GetName]§! sera recherché\n;The support of the vassals of §Y[This.PrimaryTitle.GetName]§! will be sought\n;;;;;;;;;;;x
+CUSTOMTOOLTIP23;§Y[Root.GetTitledFirstName]§! and §Yall other rebels§! are imprisoned\n;§Y[Root.GetTitledFirstName]§! et §Ytous les autres rebelles§! sont emprisonnés\n;§Y[Root.GetTitledFirstName]§! and §Yall other rebels§! are imprisoned\n;;;;;;;;;;;x
+CUSTOMTOOLTIP24;§Y[From.GetTitledFirstName]§! and §Yall other loyalists§! are imprisoned\n;§Y[From.GetTitledFirstName]§! et §Ytous les autres loyalistes§! sont emprisonnés\n;§Y[From.GetTitledFirstName]§! and §Yall other loyalists§! are imprisoned\n;;;;;;;;;;;x
+CUSTOMTOOLTIP25;§Y[Root.GetTitledFirstName]§! seizes the throne of [From.PrimaryTitle.GetName]\n;§Y[Root.GetTitledFirstName]§! prend le trone de [From.PrimaryTitle.GetName]\n;§Y[Root.GetTitledFirstName]§! seizes the throne of [From.PrimaryTitle.GetName]\n;;;;;;;;;;;x
+CUSTOMTOOLTIP27;§Y[Root.GetTitledFirstName]§!'s vassals will be upset\n;Les vassaux de §Y[Root.GetTitledFirstName]§! seront bouleversés\n;§Y[Root.GetTitledFirstName]§!'s vassals will be upset\n;;;;;;;;;;;x
+CUSTOMTOOLTIP28;becomes a friend of §Y[Root.GetTitledFirstName]§!\n;Devient un ami de §Y[Root.GetTitledFirstName]§!\n;becomes a friend of §Y[Root.GetTitledFirstName]§!\n;;;;;;;;;;;x
+CUSTOMTOOLTIP29;[This.GetTitledName] is discredited in front of the court\n;[This.GetTitledName] est discrédité aux yeux de la cour\n;[This.GetTitledName] is discredited in front of the court\n;;;;;;;;;;;x
+CUSTOMTOOLTIP30;[From.GetTitledFirstName] successfully embezzles money from [This.GetTitledName]\n;[From.GetTitledFirstName] détourne avec succès l'argent de [This.GetTitledName]\n;[From.GetTitledFirstName] successfully embezzles money from [This.GetTitledName]\n;;;;;;;;;;;x
+CUSTOMTOOLTIP31;[This.GetTitledFirstName] is accused of treason by [From.GetTitledName]\n;[This.GetTitledFirstName] est accusé de trahison par [From.GetTitledName]\n;[This.GetTitledFirstName] is accused of treason by [From.GetTitledName]\n;;;;;;;;;;;x
+CUSTOMTOOLTIP32;[From.GetTitledFirstName] provokes [This.GetTitledName] to rebel against [This.Liege.GetTitledFirstName]\n;[From.GetTitledFirstName] incite [This.GetTitledName] à se rebeller contre [This.Liege.GetTitledFirstName]\n;[From.GetTitledFirstName] provokes [This.GetTitledName] to rebel against [This.Liege.GetTitledFirstName]\n;;;;;;;;;;;x
+CUSTOMTOOLTIP33;The plot succeeds;Le complot a réussi;The plot succeeds;;;;;;;;;;;x
+CUSTOMTOOLTIP34;The plot fails, but is not discovered;Le complot a échoué, mais n'a pas été découvert;The plot fails, but is not discovered;;;;;;;;;;;x
+CUSTOMTOOLTIP35;The plot fails and is discovered;Le complot a échoué et a été découvert;The plot fails and is discovered;;;;;;;;;;;x
+obj_win_a_war_title;Win a War;Gagner une guerre;Einen Krieg gewinnen;;;;;;;;;;;x
+obj_win_a_war_desc;[This.GetTitledFirstName] desires the glory and fame of a successful war.;[This.GetTitledFirstName] désire connaître la gloire dans une guerre victorieuse.  ;[This.GetTitledFirstName] wünscht den Ruhm und die Berühmtheit eines erfolgreichen Krieges.;;;;;;;;;;;x
+traitor;Betrayed me;;;;;;;;;;;;;x
+civil_war_supporter;Civil war supporter;;;;;;;;;;;;;x
+not_compensated;Loyalty not compensated;;;;;;;;;;;;;x
+modestly_compensated;Loyalty modestly compensated;;;;;;;;;;;;;x
+generously_compensated;Loyalty justly compensated;;;;;;;;;;;;;x
+drunken_tournament;Drunken Fool;Imbécile ivre;Drunken Fool;;Drunken Fool;;;;;;;;;x
+drunken_tournament_desc;You once showed up drunk to a tournament and made such a shameful spectacle of yourself that you had to be thrown out.;Vous vous êtes une fois montré ivre à un tournoi, ce fut un spectacle si honteux que vous en avez été mis à la porte. ;You once showed up drunk to a tournament and made such a shameful spectacle of yourself that you had to be thrown out.;;You once showed up drunk to a tournament and made such a shameful spectacle of yourself that you had to be thrown out.;;;;;;;;;x
+grand_tourny_1st_1;Grand tourney wins: 1;Victoires Grand Tournoi: 1;Grand tourney wins: 1;;Grand tourney wins: 1;;;;;;;;;x
+grand_tourny_1st_2;Grand tourney wins: 2;Victoires Grand Tournoi: 2;Grand tourney wins: 2;;Grand tourney wins: 2;;;;;;;;;x
+grand_tourny_1st_3;Grand tourney wins: 3;Victoires Grand Tournoi: 3;Grand tourney wins: 3;;Grand tourney wins: 3;;;;;;;;;x
+grand_tourny_1st_4;Grand tourney wins: 4;Victoires Grand Tournoi: 4;Grand tourney wins: 4;;Grand tourney wins: 4;;;;;;;;;x
+grand_tourny_1st_5;Grand tourney wins: 5+;Victoires Grand Tournoi: 5+;Grand tourney wins: 5+;;Grand tourney wins: 5+;;;;;;;;;x
+grand_tourny_2nd_1;Grand tourney second places: 1;Secondes places Grand Tournoi: 1;Grand tourney second places: 1;;Grand tourney second places: 1;;;;;;;;;x
+grand_tourny_2nd_2;Grand tourney second places: 2;Secondes places Grand Tournoi: 2;Grand tourney second places: 2;;Grand tourney second places: 2;;;;;;;;;x
+grand_tourny_2nd_3;Grand tourney second places: 3;Secondes places Grand Tournoi: 3;Grand tourney second places: 3;;Grand tourney second places: 3;;;;;;;;;x
+grand_tourny_2nd_4;Grand tourney second places: 4;Secondes places Grand Tournoi: 4;Grand tourney second places: 4;;Grand tourney second places: 4;;;;;;;;;x
+grand_tourny_2nd_5;Grand tourney second places: 5+;Secondes places Grand Tournoi: 5+;Grand tourney second places: 5+;;Grand tourney second places: 5+;;;;;;;;;x
+grand_tourny_3rd_1;Grand tourney third places: 1;Troisièmes places Grand Tournoi: 1;Grand tourney third places: 1;;Grand tourney third places: 1;;;;;;;;;x
+grand_tourny_3rd_2;Grand tourney third places: 2;Troisièmes places Grand Tournoi: 2;Grand tourney third places: 2;;Grand tourney third places: 2;;;;;;;;;x
+grand_tourny_3rd_3;Grand tourney third places: 3;Troisièmes places Grand Tournoi: 3;Grand tourney third places: 3;;Grand tourney third places: 3;;;;;;;;;x
+grand_tourny_3rd_4;Grand tourney third places: 4;Troisièmes places Grand Tournoi: 4;Grand tourney third places: 4;;Grand tourney third places: 4;;;;;;;;;x
+grand_tourny_3rd_5;Grand tourney third places: 5+;Troisièmes places Grand Tournoi: 5+;Grand tourney third places: 5+;;Grand tourney third places: 5+;;;;;;;;;x
+normal_tourny_1st_1;Regional tourney wins: 1;Victoires Tournoi Régional: 1;Regional tourney wins: 1;;Regional tourney wins: 1;;;;;;;;;x
+normal_tourny_1st_2;Regional tourney wins: 2;Victoires Tournoi Régional: 2;Regional tourney wins: 2;;Regional tourney wins: 2;;;;;;;;;x
+normal_tourny_1st_3;Regional tourney wins: 3;Victoires Tournoi Régional: 3;Regional tourney wins: 3;;Regional tourney wins: 3;;;;;;;;;x
+normal_tourny_1st_4;Regional tourney wins: 4;Victoires Tournoi Régional: 4;Regional tourney wins: 4;;Regional tourney wins: 4;;;;;;;;;x
+normal_tourny_1st_5;Regional tourney wins: 5+;Victoires Tournoi Régional: 5+;Regional tourney wins: 5+;;Regional tourney wins: 5+;;;;;;;;;x
+normal_tourny_2nd_1;Regional tourney second places: 1;Secondes places Tournoi Régional: 1;Regional tourney second places: 1;;Regional tourney second places: 1;;;;;;;;;x
+normal_tourny_2nd_2;Regional tourney second places: 2;Secondes places Tournoi Régional: 2;Regional tourney second places: 2;;Regional tourney second places: 2;;;;;;;;;x
+normal_tourny_2nd_3;Regional tourney second places: 3;Secondes places Tournoi Régional: 3;Regional tourney second places: 3;;Regional tourney second places: 3;;;;;;;;;x
+normal_tourny_2nd_4;Regional tourney second places: 4;Secondes places Tournoi Régional: 4;Regional tourney second places: 4;;Regional tourney second places: 4;;;;;;;;;x
+normal_tourny_2nd_5;Regional tourney second places: 5+;Secondes places Tournoi Régional: 5+;Regional tourney second places: 5+;;Regional tourney second places: 5+;;;;;;;;;x
+normal_tourny_3rd_1;Regional tourney third places: 1;Troisèmes places Tournoi Régional: 1;Regional tourney third places: 1;;Regional tourney third places: 1;;;;;;;;;x
+normal_tourny_3rd_2;Regional tourney third places: 2;Troisèmes places Tournoi Régional: 2;Regional tourney third places: 2;;Regional tourney third places: 2;;;;;;;;;x
+normal_tourny_3rd_3;Regional tourney third places: 3;Troisèmes places Tournoi Régional: 3;Regional tourney third places: 3;;Regional tourney third places: 3;;;;;;;;;x
+normal_tourny_3rd_4;Regional tourney third places: 4;Troisèmes places Tournoi Régional: 4;Regional tourney third places: 4;;Regional tourney third places: 4;;;;;;;;;x
+normal_tourny_3rd_5;Regional tourney third places: 5+;Troisèmes places Tournoi Régional: 5+;Regional tourney third places: 5+;;Regional tourney third places: 5+;;;;;;;;;x
+opinion_attending_tournament;Attending tournament;Attending tournament;Attending tournament;;Attending tournament;;;;;;;;;x
+opinion_potential_tourny_rival;Potential Tourney Rival;Potentiel rival en tournoi;Potential Tourney Rival;;Potential Tourney Rival;;;;;;;;;x
+opinion_queen_love_beauty;Queen of love and beauty;Reine d'amour et de beauté;Queen of love and beauty;;Queen of love and beauty;;;;;;;;;x
+opinion_queen_love_beauty_chosen;Chosen queen of love and beauty;Choisir la reine d'amour et de beauté;Chosen queen of love and beauty;;Chosen queen of love and beauty;;;;;;;;;x
+opinion_spectating_tournament;Spectating Tournament;Spectateur du Tournoi;Spectating Tournament;;Spectating Tournament;;;;;;;;;x
+opinion_squire_honoured;Honoured Squire;Ecuyer honoré;Honoured Squire;;Honoured Squire;;;;;;;;;x
+opinion_squire_humiliated;Humiliated Squire;Ecuyer Humilié;Humiliated Squire;;Humiliated Squire;;;;;;;;;x
+opinion_tournament_spectator;Attended Tourney;A assisé au Tournoi;Attended Tourney;;Attended Tourney;;;;;;;;;x
+OUTCOME_1;Great;Great;Great;;Great;;;;;;;;;x
+OUTCOME_2;Modest;Modest;Modest;;Modest;;;;;;;;;x
+OUTCOME_3;Bad;Bad;Bad;;Bad;;;;;;;;;x
+OUTCOME_4;Horrible;Horrible;Horrible;;Horrible;;;;;;;;;x
+show_me_the_medal_winners;Show tourney medal winners;Voir les vainqueurs de médailles dans des tournois.;Show tourney medal winners;;Show tourney medal winners;;;;;;;;;x
+show_me_the_medal_winners_desc;Show tourney medal winners;Voir les vainqueurs de médailles dans des tournois.;Show tourney medal winners;;Show tourney medal winners;;;;;;;;;x
+small_tourny_1st_1;Small tourney wins: 1;Victoires Petit Tournoi: 1;Small tourney wins: 1;;Small tourney wins: 1;;;;;;;;;x
+small_tourny_1st_2;Small tourney wins: 2;Victoires Petit Tournoi: 2;Small tourney wins: 2;;Small tourney wins: 2;;;;;;;;;x
+small_tourny_1st_3;Small tourney wins: 3;Victoires Petit Tournoi: 3;Small tourney wins: 3;;Small tourney wins: 3;;;;;;;;;x
+small_tourny_1st_4;Small tourney wins: 4;Victoires Petit Tournoi: 4;Small tourney wins: 4;;Small tourney wins: 4;;;;;;;;;x
+small_tourny_1st_5;Small tourney wins: 5+;Victoires Petit Tournoi: 5+;Small tourney wins: 5+;;Small tourney wins: 5+;;;;;;;;;x
+small_tourny_2nd_1;Small tourney second places: 1;Secondes places Petit Tournoi: 1;Small tourney second places: 1;;Small tourney second places: 1;;;;;;;;;x
+small_tourny_2nd_2;Small tourney second places: 2;Secondes places Petit Tournoi: 2;Small tourney second places: 2;;Small tourney second places: 2;;;;;;;;;x
+small_tourny_2nd_3;Small tourney second places: 3;Secondes places Petit Tournoi: 3;Small tourney second places: 3;;Small tourney second places: 3;;;;;;;;;x
+small_tourny_2nd_4;Small tourney second places: 4;Secondes places Petit Tournoi: 4;Small tourney second places: 4;;Small tourney second places: 4;;;;;;;;;x
+small_tourny_2nd_5;Small tourney second places: 5+;Secondes places Petit Tournoi: 5+;Small tourney second places: 5+;;Small tourney second places: 5+;;;;;;;;;x
+small_tourny_3rd_1;Small tourney third places: 1;Troisièmes places Petit Tournoi: 1;Small tourney third places: 1;;Small tourney third places: 1;;;;;;;;;x
+small_tourny_3rd_2;Small tourney third places: 2;Troisièmes places Petit Tournoi: 2;Small tourney third places: 2;;Small tourney third places: 2;;;;;;;;;x
+small_tourny_3rd_3;Small tourney third places: 3;Troisièmes places Petit Tournoi: 3;Small tourney third places: 3;;Small tourney third places: 3;;;;;;;;;x
+small_tourny_3rd_4;Small tourney third places: 4;Troisièmes places Petit Tournoi: 4;Small tourney third places: 4;;Small tourney third places: 4;;;;;;;;;x
+small_tourny_3rd_5;Small tourney third places: 5+;Troisièmes places Petit Tournoi: 5+;Small tourney third places: 5+;;Small tourney third places: 5+;;;;;;;;;x
+TOURNAMENTTITLE2;Tourney of [From.Capital.GetName];Tournoi de [From.Capital.GetName];Tourney of [From.Capital.GetName];;Tourney of [From.Capital.GetName];;;;;;;;;x
+TOURNAMENTTITLE3;Tourney of [Root.Capital.GetName];Tournoi de [Root.Capital.GetName];Tourney of [Root.Capital.GetName];;Tourney of [Root.Capital.GetName];;;;;;;;;x
+TOURNAMENTTITLE4;Tourney of [FromFrom.Capital.GetName];Tournoi de [FromFrom.Capital.GetName];Tourney of [FromFrom.Capital.GetName];;Tourney of [FromFrom.Capital.GetName];;;;;;;;;x
+TOURNAMENTTITLE;Jousting Tournament;Joute;Jousting Tournament;;Jousting Tournament;;;;;;;;;x
+tournament_invite;Let all Knights and Lords of the realm be invited;Inviter tous les chevaliers et les seigneurs du Royaume;;;;;;;;;;;;x
+tournament_invite_1;Let all Knights and Lords of the region be invited;Permettez à tous les Chevaliers et Seigneurs de la région d'être invités.;Let all Knights and Lords of the region be invited;;Let all Knights and Lords of the region be invited;;;;;;;;;x
+tournament_invite_2;Let all local Knights and Lords be invited;Permettez à tous les Chevaliers et Seigneurs des environs d'être invités.;Let all local Knights and Lords be invited;;Let all local Knights and Lords be invited;;;;;;;;;x
+tournament_in_progress;No tournament of equal or higher rank is currently being held in the realm\n;No tournament of equal or higher rank is currently being held in the realm\n;No tournament of equal or higher rank is currently being held in the realm\n;;No tournament of equal or higher rank is currently being held in the realm\n;;;;;;;;;x
+swedish_culture_modifier;Swedish Culture;Swedish Culture;Swedish Culture;;Swedish Culture;;;;;;;;;x
+norwegian_culture_modifier;Norse Culture;Norse Culture;Norse Culture;;Norse Culture;;;;;;;;;x
+gothic_culture_modifier;Gothic Culture;Gothic Culture;Gothic Culture;;Gothic Culture;;;;;;;;;x
+danish_culture_modifier;Danish Culture;Danish Culture;Danish Culture;;Danish Culture;;;;;;;;;x
+frisian_culture_modifier;Frisian Culture;Frisian Culture;Frisian Culture;;Frisian Culture;;;;;;;;;x
+german_culture_modifier;German Culture;German Culture;German Culture;;German Culture;;;;;;;;;x
+dutch_culture_modifier;Dutch Culture;Dutch Culture;Dutch Culture;;Dutch Culture;;;;;;;;;x
+norman_culture_modifier;Norman Culture;Norman Culture;Norman Culture;;Norman Culture;;;;;;;;;x
+english_culture_modifier;English Culture;English Culture;English Culture;;English Culture;;;;;;;;;x
+saxon_culture_modifier;Saxon Culture;Saxon Culture;Saxon Culture;;Saxon Culture;;;;;;;;;x
+french_culture_modifier;French Culture;French Culture;French Culture;;French Culture;;;;;;;;;x
+italian_culture_modifier;Italian Culture;Italian Culture;Italian Culture;;Italian Culture;;;;;;;;;x
+spanish_culture_modifier;Iberian Culture;Iberian Culture;Iberian Culture;;Iberian Culture;;;;;;;;;x
+greek_culture_modifier;Byzantine Culture;Byzantine Culture;Byzantine Culture;;Byzantine Culture;;;;;;;;;x
+eastern_culture_modifier;Eastern Byzantine Culture;Eastern Byzantine Culture;Eastern Byzantine Culture;;Eastern Byzantine Culture;;;;;;;;;x
+celtic_culture_modifier;Celtic Culture;Celtic Culture;Celtic Culture;;Celtic Culture;;;;;;;;;x
+finnish_culture_modifier;Finnish Culture;Finnish Culture;Finnish Culture;;Finnish Culture;;;;;;;;;x
+baltic_culture_modifier;Baltic Culture;Baltic Culture;Baltic Culture;;Baltic Culture;;;;;;;;;x
+nomad_culture_modifier;Nomadic Culture;Nomadic Culture;Nomadic Culture;;Nomadic Culture;;;;;;;;;x
+tuareg_culture_modifier;Desertic Culture;Desertic Culture;Desertic Culture;;Desertic Culture;;;;;;;;;x
+arab_culture_modifier;Arabic Culture;Arabic Culture;Arabic Culture;;Arabic Culture;;;;;;;;;x
+russian_culture_modifier;Russian Culture;Russian Culture;Russian Culture;;Russian Culture;;;;;;;;;x
+slavic_culture_modifier;Slavic Culture;Slavic Culture;Slavic Culture;;Slavic Culture;;;;;;;;;x
+balkan_culture_modifier;Balkanic Culture;Balkanic Culture;Balkanic Culture;;Balkanic Culture;;;;;;;;;x
+persian_culture_modifier;Persian Culture;Persian Culture;Persian Culture;;Persian Culture;;;;;;;;;x
+african_culture_modifier;African Culture;African Culture;African Culture;;African Culture;;;;;;;;;x
+sephardic_culture_modifier;Eastern Jewish Culture;Eastern Jewish Culture;Eastern Jewish Culture;;Eastern Jewish Culture;;;;;;;;;x
+ashkenazi_culture_modifier;Western Jewish Culture;Western Jewish Culture;Western Jewish Culture;;Western Jewish Culture;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

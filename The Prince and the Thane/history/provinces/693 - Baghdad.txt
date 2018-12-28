@@ -1,0 +1,72 @@
+# 693 - Baghdad
+
+# County Title
+title = c_baghdad
+
+# Settlements
+max_settlements = 7
+b_baqubah = castle
+b_bagdad = city
+b_hillah = temple
+b_iskandariya = castle
+b_taji = city
+b_latifiya = castle
+
+#b_madain = castle
+#b_babel = city
+
+#Misc
+culture = levantine_arabic
+religion = sunni
+
+# History
+
+800.1.1 = { 
+	b_baqubah = ca_keep_1
+	b_baqubah = ca_heavy_barracks_1
+	b_baqubah = ca_keep_2
+	b_baqubah = ca_keep_3
+	b_baqubah = ca_stable_1
+	b_baqubah = ca_stable_2
+	b_baqubah = ca_light_barracks_1
+	b_baqubah = ca_light_barracks_2
+	b_baqubah = ca_wall_1
+	b_baqubah = ca_wall_2
+	b_baqubah = ca_wall_3
+	b_hillah = tp_wall_1
+	b_hillah = tp_wall_2
+	b_hillah = tp_barracks_1
+	b_hillah = tp_barracks_2
+	b_hillah= tp_settlement_1
+	b_hillah = tp_settlement_2
+	b_iskandariya = ca_keep_1
+	b_iskandariya = ca_heavy_barracks_1
+	b_iskandariya = ca_stable_1
+	b_iskandariya = ca_light_barracks_1
+	b_iskandariya = ca_light_barracks_2
+	b_iskandariya = ca_wall_1
+	b_iskandariya = ca_wall_2
+	b_bagdad = ct_wall_1
+	b_bagdad = ct_wall_2
+	b_bagdad = ct_wall_q_1
+	b_bagdad = ct_jewish_community_1
+	b_bagdad = ct_jewish_community_2
+	b_bagdad = ct_jewish_community_3
+	b_bagdad = ct_marketplace_1
+	b_bagdad = ct_marketplace_2
+	b_bagdad = ct_militia_barracks_1
+	b_bagdad = ct_militia_barracks_2
+	b_bagdad = ct_militia_barracks_3
+	b_bagdad = ct_militia_barracks_4
+	b_bagdad = ct_civics_1
+	b_bagdad = ct_civics_2
+	b_bagdad = ct_administration_1
+	b_bagdad = ct_administration_2
+}
+
+1258.2.20= { remove_settlement = b_taji }
+1258.2.20= { remove_settlement = b_latifiya }
+
+
+
+1278.1.1 = { b_taji = city } 

@@ -1,0 +1,20 @@
+# 407 - Kostroma
+
+# County Title
+title = c_kostroma
+
+# Settlements
+max_settlements = 3
+
+b_kostroma = castle
+b_sudislavl = castle
+
+#b_soligalich = city
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+1250.1.1 = { b_soligalich = city }

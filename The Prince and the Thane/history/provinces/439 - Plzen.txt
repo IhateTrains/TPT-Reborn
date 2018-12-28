@@ -1,0 +1,23 @@
+# 439 - Plzen
+
+# County Title
+title = c_plzen
+
+# Settlements
+max_settlements = 5
+b_plzen = castle
+b_stribo = city
+b_kladruby = temple
+#b_tachov = castle
+#b_primda = castle
+#b_velhartice = castle
+#b_klatovy = city
+#b_rokycany = city
+#b_plasy = temple
+#b_tepla = temple
+
+# History
+culture = bohemian
+religion = catholic
+
+1126.1.6 = { b_primda = castle }

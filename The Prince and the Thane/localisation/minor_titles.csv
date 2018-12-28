@@ -1,0 +1,108 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+title_grand_butler_frankish;Grand Bouteiller;Grand Bouteiller;Grand Bouteiller;;Grand Bouteiller;;;;;;;;;x
+title_high_almoner_frankish;Grand Aumonier;Grand Aumonier;Grand Aumonier;;Grand Aumonier;;;;;;;;;x
+title_cupbearer_frankish;Chansonnier;Chansonnier;Chansonnier;;Chansonnier;;;;;;;;;x
+title_master_of_the_hunt_frankish;Grand Hunter;Grand Veneur;Grand Veneur;;Grand Veneur;;;;;;;;;x
+title_seneschal_frankish;Grand Chambellan;Grand Chambellan;Grand Chambellan;;Grand Chambellan;;;;;;;;;x
+title_grand_butler_occitan;Grand Butler;Grand Bouteiller;Grand Bouteiller;;Grand Bouteiller;;;;;;;;;x
+title_high_almoner_occitan;Grand Almoner;Grand Aumonier;Grand Aumonier;;Grand Aumonier;;;;;;;;;x
+title_cupbearer_occitan;Chansonnier;Échanson;Échanson;;Échanson;;;;;;;;;x
+title_master_of_the_hunt_occitan;Grand Hunter;Grand Hunter;Grand Hunter;;Grand Hunter;;;;;;;;;x
+title_seneschal_occitan;Grand Chambellan;Grand Chambellan;Grand Chambellan;;Grand Chambellan;;;;;;;;;x
+title_standard_-_bearer;Standard Bearer;;;;;;;;;;;;;x
+title_standard_-_bearer_desc;The Standard Bearer holds the Personal Standard of his Lord during state ceremonies.;;;;;;;;;;;;;x
+title_steward;Steward;;;;;;;;;;;;;x
+title_steward_desc;The Steward is a personal servant of his Lord. The title is in most of cases purely honorary.;;;;;;;;;;;;;x
+title_keeper_of_the_great_seal;Keeper of the Great Seal;;;;;;;;;;;;;x
+title_keeper_of_the_great_seal_desc;The Keeper of the Great Seal is one of the most honourable offices. His duty is to keep the Great Seal, which allows his Lord to sign official documents.;;;;;;;;;;;;;x
+title_armour_bearer;Armour Bearer;;;;;;;;;;;;;x
+title_armour_bearer_desc;The Armour Bearer is in charge of his Lord's armour. ;;;;;;;;;;;;;x
+title_master_falconer;Master Falconer;;;;;;;;;;;;;x
+title_master_falconer_desc;The Master Falconer is in charge of the falcon hunt and hunting lodges of the realm.;;;;;;;;;;;;;x
+title_monsignor;Monsignor;;;;;;;;;;;;;x
+title_monsignor_desc;This bishop was appointed as Monsignor by his liege.;;;;;;;;;;;;;x
+title_camail_order;Knight of the Order of the Camail;;;;;;;;;;;;;x
+title_camail_order_desc;This character has been appointed as a Knight of the Order of the Camail by his liege.;;;;;;;;;;;;;x
+title_dove_order;Knight of the Order of the Dove;;;;;;;;;;;;;x
+title_dove_order_desc;This character has been appointed as a Knight of the Order of the Dove by his liege.;;;;;;;;;;;;;x
+title_knight_bachelor;Knight Bachelor (Kt.);;;;;;;;;;;;;x
+title_knight_bachelor_desc;This character has been appointed as Knight Bachelor by his liege the Monarch of England;;;;;;;;;;;;;x
+title_ritter;Ritter;;;;;;;;;;;;;x
+title_ritter_desc;This character has been appointed as Ritter (a form of knighthood) by his liege the Holy Roman Emperor.;;;;;;;;;;;;;x
+title_kerry_knight;Knight of Kerry;;;;;;;;;;;;;x
+title_kerry_knight_desc;This character has been given the knighthood of Kerry by his liege.;;;;;;;;;;;;;x
+title_white_knight;White Knight;;;;;;;;;;;;;x
+title_white_knight_desc;This character has been given the White knighthood by his liege.;;;;;;;;;;;;;x
+title_garter_order;Knight of the Garter;;;;;;;;;;;;;x
+title_garter_order_desc;This character has been given the knighthood of the Garter by his liege.;;;;;;;;;;;;;x
+title_academician;Academician;;;;;;;;;;;;;x
+title_academician_desc;This character was appointed as an Academician by his liege.;;;;;;;;;;;;;x
+title_chamberlain;Chamberlain;;;;;;;;;;;;;x
+title_chamberlain_desc;This character was appointed by his liege as the official Chamberlain of the realm.;;;;;;;;;;;;;x
+title_edler;Edler;;;;;;;;;;;;;x
+title_edler_desc;This character has been appointed as Edler by his liege.;;;;;;;;;;;;;x
+title_junker;Junker;;;;;;;;;;;;;x
+title_junker_desc;This character has been appointed as Junker (a form of knighthood) by his liege.;;;;;;;;;;;;;x
+title_ridder;Ridder;;;;;;;;;;;;;x
+title_ridder_desc;This character has been appointed as Ridder (a form of knighthood) by his liege.;;;;;;;;;;;;;x
+title_jonkheer;Jonkheer;;;;;;;;;;;;;x
+title_jonkheer_desc;This character has been appointed as Jonkheer (a form of knighthood) by his liege.;;;;;;;;;;;;;x
+title_hidalgo;Hidalgo;;;;;;;;;;;;;x
+title_hidalgo_desc;This character has been appointed as Hidalgo (a form of knighthood) by his liege.;;;;;;;;;;;;;x
+title_patrician;Patrician;;;;;;;;;;;;;x
+title_patrician_desc;This character has been appointed as Patrician by his liege. ;;;;;;;;;;;;;x
+title_ser;Sir;;;;;;;;;;;;;x
+title_ser_desc;This character has been knighted by a Lord of noble birth. He can now be called 'Sir' and is entitled his arms, squires and a monthly appannage.;;;;;;;;;;;;;x
+title_revoke_minor_title;Revoke Honorary Title;Révoquer le Titre Honorifique.;Ehrentitel aberkennen;;;;;;;;;;;x
+title_revoke_minor_title_desc;Revoke this character's honorary title and the prestige and income that goes along with it. This will anger them.;Révoquer le tire honorifique de cette personne,,,,,;;;;;;;;;;;;x
+title_revoke_court_jester;Revoke Honorary Title;Révoquer le Titre Honorifique.;Ehrentitel aberkennen;;;;;;;;;;;x
+title_revoke_court_jester_desc;Revoke this character's honorary title.;Révoquer le titre honorifique de cette personne.;Ehrentitel aberkannt;;;;;;;;;;;x
+title_grant_independence;Grant Independence;Octroyer l'indépendance.;Unabhängigkeit gewähren;;;;;;;;;;;x
+title_grant_independence_desc;Break our vassal contract with this character. This will cost us some prestige and greatly damage our mutual relations.;Briser le serment vassalique avec cette personne. Cela vous coûtera du prestige et déteriorera grandement vos relations mutuelles. ;Breche unseren Vasall-Vertrag mit diesem Charakter. Das wird uns etwas Prestige kosten und außerordentlich unsere gegenseitigen Beziehungen beschädigen.;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_TITLE;Decisions;Décisions.;Entschlüsse;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_DESC;Take a decision regarding this character.;Prendre une décision concernant ce personnage.;Treffen Sie einen Entschluss bezüglich dieses Charakters.;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_LONG_DESC;This opens the character decision submenu;;;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_0;Select a decision to take for §Y[Recipient.GetTitledFirstName]§W.;Sélectionner une décision pour §Y[Recipient.GetTitledFirstName]§W.;Wählen Sie einen Entschluss für §Y[Recipient.GetTitledFirstName]§W aus.;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_1;This will change §Y[Recipient.GetTitledFirstName]§W's opinion of you by $OPINION$.;Cela changera l'opinion que §Y[Recipient.GetTitledFirstName]§W a de vous de $OPINION$.;Dies wird die Meinung von §Y[Recipient.GetTitledFirstName]§W um $OPINION$ ändern.;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_ACCEPT_SETUP;Character Decision;Décision du personnage.;Charakter-Entschlüsse;;;;;;;;;;;x
+AWARD_HONORARY_TITLE_INTERACTION_ACCEPT_LOG;§Y[Actor.GetBestName]§W took the decision §Y[ThirdPartyTitle.GetFullName]§W for §Y[Recipient.GetBestName]§W;§Y[Actor.GetBestName]§W prend la décision de §Y[ThirdPartyTitle.GetFullName]§W pour §Y[Recipient.GetBestName]§W;§Y[Actor.GetBestName]§W traf den Entschluss §Y[ThirdPartyTitle.GetFullName]§W bezüglich §Y[Recipient.GetBestName]§W.;;.;;;;;;;;;x
+INTERACTION_REQUIRES_VALID_MINOR_TITLES;We have any decisions to take for [Recipient.GetBestName].;nous avons n'importe quelles décisions à prendre pour [Recipient.GetBestName].;Wir können einen Entschluss für [Recipient.GetBestName] treffen.;;;;;;;;;;;x
+title_cardinal_albano;Cardinal Bishop of Albano;;;;;;;;;;;;;x
+title_cardinal_albano_desc;This character has been appointed as Cardinal Bishop of the Suburbicarian Diocese of Albano by his Holyness the Pope. He is thus one of the Cardinal Electors of the Conclave.;;;;;;;;;;;;;x
+title_cardinal_tusculum;Cardinal Bishop of Tusculum;;;;;;;;;;;;;x
+title_cardinal_tusculum_desc;This character has been appointed as Cardinal Bishop of the Suburbicarian Diocese of Tusculum by his Holyness the Pope. He is thus one of the Cardinal Electors of the Conclave.;;;;;;;;;;;;;x
+title_cardinal_ostia;Cardinal Bishop of Ostia;;;;;;;;;;;;;x
+title_cardinal_ostia_desc;This character has been appointed as Cardinal Bishop of the Suburbicarian Diocese of Ostia by his Holyness the Pope. He is thus one of the Cardinal Electors of the Conclave.;;;;;;;;;;;;;x
+title_cardinal_porto;Cardinal Bishop of Porto;;;;;;;;;;;;;x
+title_cardinal_porto_desc;This character has been appointed as Cardinal Bishop of the Suburbicarian Diocese of Porto by his Holyness the Pope. He is thus one of the Cardinal Electors of the Conclave.;;;;;;;;;;;;;x
+title_cardinal_palestrina;Cardinal Bishop of Palestrina;;;;;;;;;;;;;x
+title_cardinal_palestrina_desc;This character has been appointed as Cardinal Bishop of the Suburbicarian Diocese of Palestrina by his Holyness the Pope. He is thus one of the Cardinal Electors of the Conclave.;;;;;;;;;;;;;x
+title_cardinal_velletri;Cardinal Bishop of Velletri;;;;;;;;;;;;;x
+title_cardinal_velletri_desc;This character has been appointed as Cardinal Bishop of the Suburbicarian Diocese of Velletri by his Holyness the Pope. He is thus one of the Cardinal Electors of the Conclave.;;;;;;;;;;;;;x
+title_cardinal_deacon;Cardinal Deacon;;;;;;;;;;;;;x
+title_cardinal_deacon_desc;This character has been appointed as one of the Seven Cardinal Deacons of the Roman Curia by his Holyness the Pope.;;;;;;;;;;;;;x
+title_cardinal_protodeacon;Cardinal Protodeacon;;;;;;;;;;;;;x
+title_cardinal_protodeacon_desc;This senior Cardinal Deacon has been appointed as Cardinal Protodeacon of the Roman Curia by his Holyness the Pope. He is going to be the one to announce the new Pope's name to the world after the end of a Conclave.;;;;;;;;;;;;;x
+title_constable_tower_london;Constable of the Tower;;;;;;;;;;;;;x
+title_constable_tower_london_desc;This character has been appointed as constable of the Tower of London by his liege the Monarch of England. The constable is in charge of the Tower when the King or Queen is away.;;;;;;;;;;;;;x
+title_justiciar;Justiciar;;;;;;;;;;;;;x
+title_justiciar_desk;This character has been appointed as justiciar by his liege. The justiciar is the highest judicial position in the realm.;;;;;;;;;;;;;x
+title_dean_chapel_royal;Dean of the Chapel Royal;;;;;;;;;;;;;x
+title_dean_chapel_royal_desc;This character has been appointed as Dean of the Chapel Royal by his liege. The Dean is in charge of the oversight and the smooth running of the kingdom's Chapel Royal.;;;;;;;;;;;;;x
+title_rector_of_burgundy;Rector of Burgundy;Rector of Burgundy;Rector of Burgundy;;Rector of Burgundy;;;;;;;;;x
+title_rector_of_burgundy_FOA;your serene highness;your serene highness;your serene highness;;your serene highness;;;;;;;;;x
+title_rector_of_burgundy_desc;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;;;;;;;;;x
+title_king_of_romans;King of the Romans;King of the Romans;King of the Romans;;King of the Romans;;;;;;;;;x
+title_king_of_romans_FOA;your imperial highness;your imperial highness;your imperial highness;;your imperial highness;;;;;;;;;x
+title_king_of_romans_desc;The King of the Romans is the heir apparent to the Holy Roman Empire.;The King of the Romans is the heir apparent to the Holy Roman Empire.;The King of the Romans is the heir apparent to the Holy Roman Empire.;;The King of the Romans is the heir apparent to the Holy Roman Empire.;;;;;;;;;x
+justiciar;Justiciar;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

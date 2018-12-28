@@ -1,0 +1,72 @@
+877.6.10={
+	liege = "k_burgundy"
+	holder = 90123
+}
+879.1.11={
+	holder = 7981
+}
+887.2.19={
+	holder = 1164
+}
+928.1.2={
+	holder = 7923
+}
+933.1.1={
+	holder = 1144
+}
+
+937.7.11={
+	holder = 402
+}
+993.1.1={
+	holder = 40801
+}
+1008.1.2={
+	holder = 40803
+}
+1014.1.2={
+	holder = 404
+}
+1020.1.1={
+	holder = 40804
+}
+1025.1.1={
+	holder = 40805
+}
+1030.1.1={
+	holder = 406
+}
+1032.9.5={
+	liege="e_hre"
+}
+1040.1.1={
+	holder = 410
+}
+1050.1.1={
+	holder = 40802
+}
+1063.1.1={
+	holder=420
+}
+1097.1.2 = {
+	holder = 409
+}
+1112.1.1={
+	holder=210508
+}
+1125.1.1 = {
+	holder = 223673 #Alphonse Jourdain de Toulouse
+	liege = k_france
+}
+1148.4.16 = {
+	holder = 205530 #Raymond V de Toulouse
+}
+1194.12.1 = {
+	holder = 205532 #Raymond VI de Toulouse
+}
+1222.8.2 = {
+	holder = 127002 #Raymond VII de Toulouse
+}
+1249.9.27 = {
+	holder = 0 
+}

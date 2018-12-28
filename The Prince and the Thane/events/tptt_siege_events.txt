@@ -1,0 +1,1395 @@
+############################################################
+#
+# The Prince and the Thane siege events - written by idib816
+#
+############################################################
+
+namespace = siege
+
+#Siege Won - Looting the Shroud
+character_event = {
+	id = siege.1
+	desc = "EVTDESCsiege.1"
+	picture = "GFX_evt_icon"
+	border = GFX_event_normal_frame_war
+
+    is_triggered_only = yes
+
+	trigger = { 
+        FROM = { has_building = ca_shroud_temple } 
+    }
+
+	option = {
+		name = "Bring me the Shroud!"
+        FROM = { 
+		    remove_building = ca_shroud_temple 
+			hidden_tooltip = {
+			    holder_scope = { 
+			        character_event = { 
+				        id = siege.12 #Shroud looted notification
+				    }
+				}
+			}
+		}
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    religion_group = christian
+				}
+			    character_event = { 
+				    id = mandylion.23 #Mandylion Temple
+				}
+                random = { 
+		            chance = 50
+                    add_trait = relic_hunter
+		            hidden_tooltip = {
+			            character_event = { id = tptt_traits.81 }
+		            }
+				}
+		    }
+		    if = {
+			    limit = {
+				    NOT = { religion_group = christian }
+				}
+			    wealth = 250
+				prestige = 200
+                clr_global_flag = acquired_shroud
+		    }
+		}
+        prestige = -150
+        piety = -250
+        wealth = 250
+        random = { 
+		    chance = 10
+            add_trait = machiavellian 
+		    hidden_tooltip = {
+			    character_event = { id = tptt_traits.73 }
+		    }
+		}
+        random = { 
+		    chance = 25
+            add_trait = arbitrary 
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+			}
+		}
+        random = { 
+		    chance = 35
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}
+		
+        ai_chance = {
+			factor = 0.7
+            modifier = {
+				factor = 2.0
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+            modifier = {
+				factor = 2
+				trait = relic_hunter
+			}
+            modifier = {
+				factor = 0.25
+				trait = pious_man
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+            modifier = {
+				factor = 2
+				trait = greedy
+			}
+            modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+		}
+    }
+	 
+    option = {
+		name = "Sacrilegious!"
+        piety = 25
+		prestige = 50
+        random = { 
+		    chance = 30
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}
+        random = { 
+		    chance = 55
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+			}
+		}
+		
+        ai_chance = {
+			factor = 0.3
+            modifier = {
+				factor = 1.25
+				religion_group = christian
+			}
+            modifier = {
+				factor = 2
+				religion = catholic
+			}
+            modifier = {
+				factor = 1.25
+				trait = kind
+			}
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				religion_group = pagan_group
+			}
+            modifier = {
+				factor = 0.25
+				religion_group = muslim
+			}
+		}
+    }     
+}
+
+#Siege Won - Looting the Grail
+character_event = {
+	id = siege.13
+	desc = "EVTDESCsiege.13"
+	picture = "GFX_evt_icon"
+	border = GFX_event_normal_frame_war
+
+    is_triggered_only = yes
+
+	trigger = { 
+        FROM = { has_building = ca_grail_temple } 
+    }
+
+	option = {
+		name = "Bring me that cup!"
+        FROM = { 
+		    remove_building = ca_grail_temple 
+			hidden_tooltip = {
+			    holder_scope = { 
+			        character_event = { 
+				        id = siege.14 #Grail looted notification
+				    }
+				}
+			}
+		}
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    religion_group = christian
+				}
+			    character_event = { 
+				    id = grail.12 #Grail Temple
+				}
+                random = { 
+		            chance = 50
+                    add_trait = relic_hunter
+		            hidden_tooltip = {
+			            character_event = { id = tptt_traits.81 }
+		            }
+				}
+		    }
+		    if = {
+			    limit = {
+				    NOT = { religion_group = christian }
+				}
+                clr_global_flag = holy_grail_found
+			    wealth = 250
+				prestige = 200
+		    }
+		}
+		
+        prestige = -150
+        piety = -250
+        wealth = 250
+		
+        random = { 
+		    chance = 10
+            add_trait = machiavellian 
+		    hidden_tooltip = {
+			    character_event = { id = tptt_traits.73 }
+		    }
+		}
+		
+        random = { 
+		    chance = 25
+            add_trait = arbitrary 
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+			}
+		}
+		
+        random = { 
+		    chance = 35
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}
+		
+        random = { 
+		    chance = 35
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}
+		
+        ai_chance = {
+			factor = 0.7
+            modifier = {
+				factor = 2.0
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+            modifier = {
+				factor = 2
+				trait = relic_hunter
+			}
+            modifier = {
+				factor = 0.25
+				trait = pious_man
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+            modifier = {
+				factor = 2
+				trait = greedy
+			}
+            modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+		}
+    }
+	 
+    option = {
+		name = "Sacrilegious!"
+        piety = 25
+		prestige = 50
+        random = { 
+		    chance = 30
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}
+        random = { 
+		    chance = 55
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+			}
+		}
+		
+        ai_chance = {
+			factor = 0.3
+            modifier = {
+				factor = 1.25
+				religion_group = christian
+			}
+            modifier = {
+				factor = 2
+				religion = catholic
+			}
+            modifier = {
+				factor = 1.25
+				trait = kind
+			}
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				religion_group = pagan_group
+			}
+            modifier = {
+				factor = 0.25
+				religion_group = muslim
+			}
+		}
+    }     
+}
+
+#Good siege event
+character_event = {
+
+	id = siege.2
+	desc = "EVTDESCsiege.2"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege3"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+			troops = {
+				who = troops
+				value = 0.1
+				enemy = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 0.5
+			trait = craven
+		}
+        modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 0.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+            trait = machiavellian
+		}
+        modifier = {
+			factor = 1.25
+            trait = proud
+		}
+        modifier = {
+			factor = 0.75
+            trait = kind
+		}
+        modifier = {
+			factor = 1.25
+			martial = 13
+		}
+        modifier = {
+			factor = 1.25
+			martial = 15
+		}
+        modifier = {
+			factor = 1.25
+			martial = 17
+		}
+        modifier = {
+			factor = 1.25
+			martial = 19
+		}
+        modifier = {
+			factor = 1.25
+			martial = 21
+		}
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 1.35
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 1.35
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 1.5
+			trait = inspiring_leader
+		}
+		modifier = {
+			factor = 1.5
+			trait = experimenter
+		}
+	}
+	
+	immediate = {
+		siege = {
+			troops = -0.025
+		}
+		siege = {
+			enemy = {
+				morale = -0.2
+				troops = -0.15
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.2"
+                random = { chance = 25
+                change_martial = 1 }
+                prestige = 10
+		tooltip = {
+			siege = {
+				troops = -0.025
+			}
+				
+			siege = {
+				enemy = {
+					morale = -0.2
+					troops = -0.15
+				}
+			}
+		}
+	}
+}	
+
+#Good siege event
+character_event = {
+
+	id = siege.3
+	desc = "EVTDESCsiege.3"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege2"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 0.5
+			trait = craven
+		}
+        modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 0.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+            trait = machiavellian
+		}
+        modifier = {
+			factor = 1.25
+            trait = proud
+		}
+        modifier = {
+			factor = 0.75
+            trait = kind
+		}
+        modifier = {
+			factor = 1.25
+			martial = 13
+		}
+        modifier = {
+			factor = 1.25
+			martial = 15
+		}
+        modifier = {
+			factor = 1.25
+			martial = 17
+		}
+        modifier = {
+			factor = 1.25
+			martial = 19
+		}
+        modifier = {
+			factor = 1.25
+			martial = 21
+		}
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 1.35
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 1.35
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 1.5
+			trait = inspiring_leader
+		}
+		modifier = {
+			factor = 1.5
+			trait = experimenter
+		}
+	}
+	
+	immediate = {
+		siege = {
+			enemy = {
+				morale = -0.1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.3"
+        prestige = 10
+        random = { chance = 25
+        change_martial = 1 }
+		tooltip = {
+			siege = {
+				enemy = {
+					morale = -0.1
+				}
+			}
+		}
+	}
+}
+
+#Bad siege event
+character_event = {
+
+	id = siege.4
+	desc = "EVTDESCsiege.4"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege3"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 0.5
+			trait = craven
+		}
+        modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 0.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+            trait = machiavellian
+		}
+        modifier = {
+			factor = 1.25
+            trait = proud
+		}
+        modifier = {
+			factor = 0.75
+            trait = kind
+		}
+        modifier = {
+			factor = 1.25
+			martial = 13
+		}
+        modifier = {
+			factor = 1.25
+			martial = 15
+		}
+        modifier = {
+			factor = 1.25
+			martial = 17
+		}
+        modifier = {
+			factor = 1.25
+			martial = 19
+		}
+        modifier = {
+			factor = 1.25
+			martial = 21
+		}
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 1.35
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 1.35
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 1.5
+			trait = inspiring_leader
+		}
+		modifier = {
+			factor = 1.5
+			trait = experimenter
+		}
+	}
+	
+	immediate = {
+		siege = {
+			enemy = {
+				morale = -0.1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.4"
+        prestige = -15
+        random = { chance = 20
+        change_martial = -1 }
+		tooltip = {
+			siege = {
+                enemy = {
+		        	morale = 0.1
+                    troops = 0.2 
+				}
+			}
+		}
+	}
+}
+
+#Siege event good for attacker 1
+character_event = {
+
+	id = siege.5
+	desc = "EVTDESCsiege.2"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege3"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+			troops = {
+				who = troops
+				value = 0.1
+				enemy = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 0.5
+			trait = craven
+		}
+        modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 0.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+            trait = machiavellian
+		}
+        modifier = {
+			factor = 1.25
+            trait = proud
+		}
+        modifier = {
+			factor = 0.75
+            trait = kind
+		}
+        modifier = {
+			factor = 1.25
+			martial = 13
+		}
+        modifier = {
+			factor = 1.25
+			martial = 15
+		}
+        modifier = {
+			factor = 1.25
+			martial = 17
+		}
+        modifier = {
+			factor = 1.25
+			martial = 19
+		}
+        modifier = {
+			factor = 1.25
+			martial = 21
+		}
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 1.35
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 1.35
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 1.5
+			trait = inspiring_leader
+		}
+		modifier = {
+			factor = 1.5
+			trait = experimenter
+		}
+	}
+	
+	immediate = {
+		siege = {
+			enemy = {
+				morale = -0.2
+				troops = -0.15
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.2"
+        random = { chance = 15
+        change_martial = 1 }
+        prestige = 10
+		tooltip = {
+			siege = {
+				enemy = {
+					morale = -0.2
+					troops = -0.15
+				}
+			}
+		}
+	}
+}	
+
+
+#Siege event good for attacker 2
+character_event = {
+
+	id = siege.6
+	desc = "EVTDESCsiege.3"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege2"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 0.5
+			trait = craven
+		}
+        modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 0.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+            trait = machiavellian
+		}
+        modifier = {
+			factor = 1.25
+            trait = proud
+		}
+        modifier = {
+			factor = 0.75
+            trait = kind
+		}
+        modifier = {
+			factor = 1.25
+			martial = 13
+		}
+        modifier = {
+			factor = 1.25
+			martial = 15
+		}
+        modifier = {
+			factor = 1.25
+			martial = 17
+		}
+        modifier = {
+			factor = 1.25
+			martial = 19
+		}
+        modifier = {
+			factor = 1.25
+			martial = 21
+		}
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 1.35
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 1.15
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 1.35
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 1.5
+			trait = inspiring_leader
+		}
+		modifier = {
+			factor = 1.5
+			trait = experimenter
+		}
+	}
+	
+	immediate = {
+		siege = {
+			enemy = {
+				morale = -0.2
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.3"
+        prestige = 10
+        random = { chance = 5
+        change_martial = 1 }
+		tooltip = {
+			siege = {
+				enemy = {
+					morale = -0.1
+                    troops = -0.2
+				}
+			}
+		}
+	}
+}
+
+#Siege event good for defender 1
+character_event = {
+
+	id = siege.7
+	desc = "EVTDESCsiege.4"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege3"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 2.5
+			trait = craven
+		}
+        modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 2.5
+			NOT = { martial = 6 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 10 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 14 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 18 }
+		}
+        modifier = {
+			factor = 1.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+			trait = kind
+		}
+        modifier = {
+			factor = 0.5
+			age = 40
+		}
+        modifier = {
+			factor = 0.5
+			age = 60
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 0.5
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 0.5
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.5
+			trait = master_warrior
+		}
+	}
+	
+	immediate = {
+		siege = {
+            enemy = { morale = 0.1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.4"
+        prestige = -15
+        random = { chance = 10
+        change_martial = -1 }
+		tooltip = {
+			siege = {
+                enemy = {
+			        morale = 0.1
+                    troops = 0.1 
+				}
+			}
+		}
+	}
+}
+
+#Siege event good for defender 2
+character_event = {
+
+	id = siege.8
+	desc = "EVTDESCsiege.4"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege3"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 2.5
+			trait = craven
+		}
+        modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 2.5
+			NOT = { martial = 6 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 10 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 14 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 18 }
+		}
+        modifier = {
+			factor = 1.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+			trait = kind
+		}
+        modifier = {
+			factor = 0.5
+			age = 40
+		}
+        modifier = {
+			factor = 0.5
+			age = 60
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 0.5
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 0.5
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.5
+			trait = master_warrior
+		}
+	}
+	
+	immediate = {
+		siege = {
+            enemy = { morale = 0.1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.4"
+        prestige = -15
+        random = { chance = 20
+        change_martial = -1 }
+		tooltip = {
+			siege = {
+                enemy = {
+				    morale = 0.1
+                    troops = 0.2 
+				}
+			}
+		}
+	}
+}
+
+#Siege event good for defender 3
+character_event = {
+
+	id = siege.9
+	desc = "EVTDESCsiege.4"
+
+	is_triggered_only = yes
+	picture = "GFX_evt_siege3"
+	border = "GFX_event_normal_frame_war"
+
+	trigger = {
+		siege = {
+			is_attacker = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+        modifier = {
+			factor = 2.5
+			trait = craven
+		}
+        modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 2.5
+			NOT = { martial = 6 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 10 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 14 }
+		}
+        modifier = {
+			factor = 1.5
+			NOT = { martial = 18 }
+		}
+        modifier = {
+			factor = 1.5
+			trait = poor_warrior
+		}
+        modifier = {
+			factor = 1.5
+			trait = kind
+		}
+        modifier = {
+			factor = 0.5
+			age = 40
+		}
+        modifier = {
+			factor = 0.5
+			age = 60
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 0.5
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 0.5
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.5
+			trait = master_warrior
+		}
+	}
+	
+	immediate = {
+		siege = {
+            enemy = { morale = 0.1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsiege.4"
+        prestige = -15
+        random = { chance = 15
+        change_martial = -1 }
+		tooltip = {
+			siege = {
+                enemy = { troops = 0.2 }
+			}
+		}
+	}
+}
+
+#Killed by enemy during siege
+character_event = {
+	id = siege.10
+	is_triggered_only = yes
+	desc = "EVTDESCsiege.10"	
+	
+	picture = "GFX_evt_death"
+	
+	trigger = {
+		is_alive = yes
+	}
+		
+	mean_time_to_happen = {
+		days = 1
+	
+		modifier = {
+			factor = 10.0
+			is_ruler = yes
+		}	
+		modifier = {
+			factor = 2.0
+			OR = { higher_tier_than = baron is_patrician = yes }
+		}		
+		modifier = {
+			factor = 3
+			trait = brave
+		}
+		modifier = {
+			factor = 0.25
+			trait = craven
+		}
+		modifier = {
+			factor = 0.25
+			trait = paranoid
+		}
+		modifier = {
+			factor = 2
+			trait = ill
+		}
+		modifier = {
+			factor = 2
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 2
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 3.0
+			trait = leper
+		}
+		modifier = {
+			factor = 2
+			trait = wounded
+		}
+		modifier = {
+			factor = 2
+			trait = maimed
+		}
+		modifier = {
+			factor = 3
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 2
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 1.5
+			trait = has_typhus
+		}
+	}
+	
+	option = {
+		name = "Argh.."
+		new_character = {
+			ROOT = { 
+                death = { 
+				    death_reason = death_battle
+                    killer = PREV 
+				}  
+			}
+			hidden_tooltip = { character_event = { id = siege.11 } }
+		}
+	}
+}
+
+#Death notification
+character_event = {
+	id = siege.11
+	is_triggered_only = yes
+	desc = "EVTDESCsiege.11"
+	
+	picture = "GFX_evt_death"
+
+	option = {
+		name = "Oh well.."
+	}
+}
+
+#Shroud looted notification
+character_event = {
+	id = siege.12
+	desc = "The Shroud temple has been looted! The Mandylion is not in our hands anymore!"
+	
+	picture = "GFX_evt_icon"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Sacrilegious!"
+		prestige = -100
+		piety = -50
+	}
+}
+
+#Grail looted notification
+character_event = {
+	id = siege.14
+	desc = "The Grail temple has been looted! The Holy Grail is not in our hands anymore!"
+	
+	picture = "GFX_evt_grail2"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Sacrilegious!"
+		prestige = -100
+		piety = -50
+	}
+}

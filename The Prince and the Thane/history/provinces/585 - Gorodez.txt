@@ -1,0 +1,23 @@
+# 585 - Gorodez
+
+# County Title
+title = c_gorodez
+
+# Settlements
+max_settlements = 4
+
+
+b_gorodez = castle
+b_chalovsk = city
+b_yurevets = temple
+#b_puchishche = city
+#b_kovemino = castle
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+
+1152.1.1 = { b_yurevets = temple }
+1239.1.1 = { remove_settlement = b_yurevets } #Mongol invasion

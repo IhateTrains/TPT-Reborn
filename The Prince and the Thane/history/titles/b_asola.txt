@@ -1,0 +1,21 @@
+850.1.1={
+	liege="c_mantua"
+}
+1130.1.1={
+	holder=1191032 #Rotario Casalodi
+}
+1180.1.1={
+	holder=1191028 #Alberto Casalodi
+}
+1220.1.1={
+	holder=1191029 #Antonio Casalodi
+}
+1250.1.1={
+	holder=1191030 #Bernardo Casalodi
+}
+1262.1.1={
+	holder=1191033 #Alberto II Casalodi
+}
+1288.1.1={
+	holder=1191034 #Roberto Casalodi
+}

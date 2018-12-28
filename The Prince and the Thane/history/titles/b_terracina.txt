@@ -1,0 +1,30 @@
+800.1.1={
+	liege="c_tusculum"
+}
+950.1.1={
+	holder=1191198 #Pietro Frangipane
+}
+990.1.1={
+	holder=1191199 #Cencio Frangipane
+}
+1065.1.1={
+	holder=1191200 #Giovanni Frangipane
+}
+1123.1.1={
+	holder=1191202 #Leo Frangipane
+}
+1145.1.1={
+	holder=1191204 #Oddone Frangipane
+}
+1179.1.1={
+	holder=1191205 #Leo Frangipane
+}
+1203.1.1={
+	holder=1191206 #Emanuele Frangipane
+}
+1241.1.1={
+	holder=1191208 #Giovanni Frangipane
+}
+1271.1.1={
+	holder=1191209 #Michele Frangipane
+}

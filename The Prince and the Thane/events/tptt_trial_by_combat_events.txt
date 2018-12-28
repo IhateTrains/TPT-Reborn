@@ -1,0 +1,312 @@
+#######################################################################################
+#
+# The Prince and the Thane trial by combat events - written by idib816 and the GOT team
+#
+#######################################################################################
+
+namespace = trial_by_combat
+
+
+#Asking for trial by combat
+character_event = { 
+	id = trial_by_combat.4
+	desc = "EVTDESCtrial_by_combat.4"
+	picture = "GFX_evt_melee3"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			host = { 
+				character = ROOT 
+				NOT = { has_character_flag = trial_by_combat }
+			}
+			prisoner = yes	
+		}
+	}
+	
+	immediate = {
+		FROM = {
+            opinion = { who = ROOT modifier = host_of_prisoner years = 100 }
+			set_character_flag = demmanded_trial_by_combat
+		}
+		set_character_flag = trial_by_combat
+	}
+	
+	option = { # marshal
+		name = "EVTOPTAtrial_by_combat.4" 
+		ai_chance = {
+			factor = 45
+		}
+		trigger = { 
+			any_courtier = {
+				has_job_title = job_marshal
+				martial = 12
+			}
+		}	
+                              
+		random_courtier = { 
+		    limit = {
+			    has_job_title = job_marshal
+			    martial = 12 
+			}
+            character_event = { id = trial_by_combat.7 } 
+		}  	
+	}
+	
+	option = {
+		name = "EVTOPTDtrial_by_combat.4"  #I will fight!
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 2
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 2
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 1.5
+				trait = brave
+			}
+			modifier = {
+				factor = 1.5
+				trait = strong
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 0.5
+				trait = weak
+			}
+			modifier = {
+				factor = 0.5
+				tier = EMPEROR
+			}
+			modifier = {
+				factor = 0.75
+				tier = KING
+			}
+		}
+		trigger = { martial = 10 }
+		prestige = 100
+		set_character_flag = elected_champion 
+		set_character_flag = self_elected_champion 
+		set_character_flag = flag_duel_to_the_death
+		any_courtier = { 
+			limit = { 
+				has_opinion_modifier = { who = ROOT modifier = host_of_prisoner }
+			}
+			hidden_tooltip = {
+				character_event = { 
+					id = trial_by_combat.9 days = 1
+				}	
+			}	
+		}
+	}
+		
+	option = {
+		name = "EVTOPTEtrial_by_combat.4" # Denied
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.75
+				trait = kind
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = honest
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+		}
+		any_courtier = { 
+			limit = { has_opinion_modifier = { who = ROOT modifier = host_of_prisoner } }
+			hidden_tooltip = {
+				remove_opinion = {
+					who = ROOT modifier = host_of_prisoner 
+				}
+			}	
+			opinion = {
+				who = ROOT 
+				modifier = denied_trial_by_combat  
+				years = 5
+			}
+			character_event = { id = trial_by_combat.5 tooltip = "TOOLTIPtrial_by_combat.5" } 
+		}
+		clr_character_flag = trial_by_combat
+		prestige = -75
+	}	
+}
+
+character_event = { # inform reject
+	id = trial_by_combat.5
+	desc = "EVTDESCtrial_by_combat.5"
+	is_triggered_only = yes
+	picture = "GFX_evt_melee3"
+
+	option = { # 
+		name = "EVTOPTAtrial_by_combat.5" 
+		prestige = -50
+	}
+}
+
+character_event = { 
+	id = trial_by_combat.7
+	desc = "EVTDESCtrial_by_combat.7"
+	picture = "GFX_evt_melee3"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtrial_by_combat.7" 
+		set_character_flag = elected_champion
+		FROM = { 
+			opinion = { who = ROOT modifier = champion_of_liege years = 5 } 
+			hidden_tooltip = { character_event = { id = trial_by_combat.8 days = 1 } } ##tooltip
+		}
+	}
+}
+
+character_event = { # Host selection / Prisoner fights
+	id = trial_by_combat.8
+	desc = "EVTDESCtrial_by_combat.8"
+	picture = "GFX_evt_melee3"
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		clr_character_flag = elected_champion
+		clr_character_flag = has_champion
+	}
+		
+	option = { 
+		name = "EVTOPTAtrial_by_combat.8" 
+		prestige = 25
+		any_courtier = { 
+			limit = { has_opinion_modifier = { who = ROOT modifier = host_of_prisoner } }
+			custom_tooltip = TOOLTIPFIGHTTHISPERSON_HOST_CHAMP
+			hidden_tooltip = {
+				character_event = { 
+					id = trial_by_combat.9 
+				} 
+			}	
+		}
+	}
+}
+
+
+character_event = { # fight takes place / prisoner fights
+	id = trial_by_combat.9
+	desc = "EVTDESCtrial_by_combat.9"
+	picture = "GFX_evt_melee3"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAtrial_by_combat.9" 
+		set_character_flag = flag_duel_to_the_death
+		if = {
+			limit = { host = { has_character_flag = self_elected_champion } }
+			host = { custom_tooltip = TOOLTIPFIGHTTHISPERSON_HOST }
+			hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.1 } } } }
+		}
+		if = {
+			limit = { NOT = { host = { has_character_flag = self_elected_champion } } }
+			host = {
+				random_courtier = {
+					limit = { 
+						has_character_flag = elected_champion 
+						reverse_has_opinion_modifier = { who = PREV modifier = champion_of_liege }
+					}
+					custom_tooltip = TOOLTIPFIGHTTHISPERSON
+					hidden_tooltip = { character_event = { id = trial_by_combat.10 } }
+				}
+			}
+		}
+	}
+}
+character_event = { # fight takes place / champion fights
+	id = trial_by_combat.10
+	desc = "EVTDESCtrial_by_combat.10"
+	picture = "GFX_evt_melee3"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAtrial_by_combat.10" 
+		set_character_flag = flag_duel_to_the_death
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.1 } } } }
+	}
+}
+
+
+character_event = {
+	id = trial_by_combat.11
+	desc = "EVTDESCtrial_by_combat.11"
+	picture = "GFX_evt_melee3"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtrial_by_combat.11" 
+		clr_character_flag = trial_by_combat
+	}
+}
+
+
+character_event = {
+	id = trial_by_combat.12
+	desc = "EVTDESCtrial_by_combat.12"
+	picture = "GFX_evt_melee3"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtrial_by_combat.12" 
+		FROM = { prisoner = no }
+		clr_character_flag = trial_by_combat
+		hidden_tooltip = {
+			reverse_remove_opinion = {
+				who = FROM modifier = host_of_prisoner 
+			}
+		}
+	}
+}

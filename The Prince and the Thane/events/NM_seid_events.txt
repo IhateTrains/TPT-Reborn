@@ -1,0 +1,1542 @@
+character_event = {
+	id = 330000
+	desc = "EVTDESC330000"
+	picture = GFX_evt_valhalla
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	only_men = yes
+	age = 14
+	prisoner = no
+
+	trigger = {
+		trait = nm_volva
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+
+	}
+	
+	option = {
+		name = "EVTOPTA330000"
+		remove_trait = nm_volva
+		add_trait = nm_seidmann
+	}
+}
+
+character_event = {
+	id = 330001
+	desc = "EVTDESC330001"
+	picture = GFX_evt_freya
+	border = GFX_event_normal_frame_religion
+
+	only_women = yes
+	age = 14
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = nm_seidmann
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "EVTOPTA330001"
+		add_trait = nm_volva
+		remove_trait = nm_seidmann
+	}
+}
+
+character_event = {
+	id = 330002
+	desc = "EVTDESC330002"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+
+	age = 14
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		OR = {
+			trait = ill
+			trait = pneumonic
+			trait = syphilitic 
+			trait = leper
+			trait = has_tuberculosis
+			trait = has_typhoid_fever
+			trait = has_typhus
+			trait = has_bubonic_plague
+			trait = has_measles
+			trait = has_small_pox
+		}
+		NOT = { trait = cynical }
+		NOT = { trait = nm_volva }
+		NOT = { trait = nm_seidmann }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330002"
+		prestige = -10
+		scaled_wealth = 0.1
+		if = {
+			limit = {
+				trait = ill
+			}
+			random = {
+				chance = 75
+				remove_trait = ill
+			}
+		}
+		if = {
+			limit = {
+				trait = pneumonic
+			}
+			random = {
+				chance = 35
+				remove_trait = pneumonic
+			}
+		}
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			random = {
+				chance = 10
+				remove_trait = syphilitic
+			}
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			random = {
+				chance = 1
+				remove_trait = leper
+			}
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			random = {
+				chance = 20
+				remove_trait = has_tuberculosis
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			random = {
+				chance = 10
+				remove_trait = has_typhoid_fever
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			random = {
+				chance = 1
+				remove_trait = has_typhus
+			}
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			random = {
+				chance = 1
+				remove_trait = has_bubonic_plague
+			}
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			random = {
+				chance = 20
+				remove_trait = has_measles
+			}
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			random = {
+				chance = 5
+				remove_trait = has_small_pox
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB330002"
+	}
+	option = {
+		name = "EVTOPTC330002"
+		trigger = {
+			OR = {
+				spouse = { trait = nm_volva }
+				spouse = { trait = nm_seidmann }
+			}
+		}
+		if = {
+			limit = {
+				trait = ill
+			}
+			random = {
+				chance = 75
+				remove_trait = ill
+			}
+		}
+		if = {
+			limit = {
+				trait = pneumonic
+			}
+			random = {
+				chance = 35
+				remove_trait = pneumonic
+			}
+		}
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			random = {
+				chance = 10
+				remove_trait = syphilitic
+			}
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			random = {
+				chance = 1
+				remove_trait = leper
+			}
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			random = {
+				chance = 20
+				remove_trait = has_tuberculosis
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			random = {
+				chance = 10
+				remove_trait = has_typhoid_fever
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			random = {
+				chance = 1
+				remove_trait = has_typhus
+			}
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			random = {
+				chance = 1
+				remove_trait = has_bubonic_plague
+			}
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			random = {
+				chance = 20
+				remove_trait = has_measles
+			}
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			random = {
+				chance = 5
+				remove_trait = has_small_pox
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 330003
+	desc = "EVTDESC330003"
+	picture = GFX_evt_odin
+	border = GFX_event_normal_frame_religion
+
+	age = 14
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		OR = {
+			trait = ill
+			trait = pneumonic
+			trait = syphilitic 
+			trait = leper
+			trait = has_tuberculosis
+			trait = has_typhoid_fever
+			trait = has_typhus
+			trait = has_bubonic_plague
+			trait = has_measles
+			trait = has_small_pox
+		}
+		OR = {
+			trait = nm_volva
+			trait = nm_seidmann
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330003"
+		trigger = {
+			NOT = { learning = 8 }
+		}
+		if = {
+			limit = {
+				trait = ill
+			}
+			random = {
+				chance = 35
+				remove_trait = ill
+			}
+		}
+		if = {
+			limit = {
+				trait = pneumonic
+			}
+			random = {
+				chance = 15
+				remove_trait = pneumonic
+			}
+		}
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			random = {
+				chance = 5
+				remove_trait = syphilitic
+			}
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			random = {
+				chance = 1
+				remove_trait = leper
+			}
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			random = {
+				chance = 10
+				remove_trait = has_tuberculosis
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			random = {
+				chance = 5
+				remove_trait = has_typhoid_fever
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			random = {
+				chance = 1
+				remove_trait = has_typhus
+			}
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			random = {
+				chance = 1
+				remove_trait = has_bubonic_plague
+			}
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			random = {
+				chance = 10
+				remove_trait = has_measles
+			}
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			random = {
+				chance = 1
+				remove_trait = has_small_pox
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330003"
+		trigger = {
+			learning = 8
+			NOT = { learning = 14 }
+		}
+		if = {
+			limit = {
+				trait = ill
+			}
+			random = {
+				chance = 75
+				remove_trait = ill
+			}
+		}
+		if = {
+			limit = {
+				trait = pneumonic
+			}
+			random = {
+				chance = 35
+				remove_trait = pneumonic
+			}
+		}
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			random = {
+				chance = 10
+				remove_trait = syphilitic
+			}
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			random = {
+				chance = 1
+				remove_trait = leper
+			}
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			random = {
+				chance = 20
+				remove_trait = has_tuberculosis
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			random = {
+				chance = 10
+				remove_trait = has_typhoid_fever
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			random = {
+				chance = 1
+				remove_trait = has_typhus
+			}
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			random = {
+				chance = 1
+				remove_trait = has_bubonic_plague
+			}
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			random = {
+				chance = 20
+				remove_trait = has_measles
+			}
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			random = {
+				chance = 5
+				remove_trait = has_small_pox
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330003"
+		trigger = {
+			learning = 14
+			NOT = { learning = 22 }
+		}
+		if = {
+			limit = {
+				trait = ill
+			}
+			random = {
+				chance = 85
+				remove_trait = ill
+			}
+		}
+		if = {
+			limit = {
+				trait = pneumonic
+			}
+			random = {
+				chance = 45
+				remove_trait = pneumonic
+			}
+		}
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			random = {
+				chance = 15
+				remove_trait = syphilitic
+			}
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			random = {
+				chance = 1
+				remove_trait = leper
+			}
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			random = {
+				chance = 35
+				remove_trait = has_tuberculosis
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			random = {
+				chance = 15
+				remove_trait = has_typhoid_fever
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			random = {
+				chance = 1
+				remove_trait = has_typhus
+			}
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			random = {
+				chance = 1
+				remove_trait = has_bubonic_plague
+			}
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			random = {
+				chance = 25
+				remove_trait = has_measles
+			}
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			random = {
+				chance = 10
+				remove_trait = has_small_pox
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330003"
+		trigger = {
+			learning = 22
+		}
+		if = {
+			limit = {
+				trait = ill
+			}
+			remove_trait = ill
+		}
+		if = {
+			limit = {
+				trait = pneumonic
+			}
+			random = {
+				chance = 65
+				remove_trait = pneumonic
+			}
+		}
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			random = {
+				chance = 25
+				remove_trait = syphilitic
+			}
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			random = {
+				chance = 2
+				remove_trait = leper
+			}
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			random = {
+				chance = 50
+				remove_trait = has_tuberculosis
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			random = {
+				chance = 25
+				remove_trait = has_typhoid_fever
+			}
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			random = {
+				chance = 2
+				remove_trait = has_typhus
+			}
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			random = {
+				chance = 2
+				remove_trait = has_bubonic_plague
+			}
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			random = {
+				chance = 40
+				remove_trait = has_measles
+			}
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			random = {
+				chance = 25
+				remove_trait = has_small_pox
+			}
+		}
+	}
+}
+
+#Becoming seidmann/volva
+
+character_event = {
+	id = 330007
+	desc = "EVTDESC330007"
+	picture = GFX_evt_freya
+	border = GFX_event_normal_frame_religion
+
+	age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		learning = 10
+		NOT = { trait = nm_seidmann }
+		NOT = { trait = cynical }
+		NOT = { trait = imbecile }
+		NOT = { has_character_flag = nm_no_seid_want }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330007"
+		prestige = -100
+		add_trait = nm_seidmann
+	}
+	option = {
+		name = "EVTOPTB330007"
+		set_character_flag = nm_no_seid_want
+	}
+}
+
+
+character_event = {
+	id = 330008
+	desc = "EVTDESC330008"
+	picture = GFX_evt_odin
+	border = GFX_event_normal_frame_religion
+
+	age = 14
+	only_women = yes
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		learning = 10
+		NOT = { trait = nm_volva }
+		NOT = { trait = cynical }
+		NOT = { trait = imbecile }
+		NOT = { has_character_flag = nm_no_seid_want }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330008"
+		add_trait = nm_volva
+	}
+	option = {
+		name = "EVTOPTB330008"
+		set_character_flag = nm_no_seid_want
+	}
+}
+
+character_event = {
+	id = 330009
+	desc = "EVTDESC330009"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+
+	age = 20
+	only_rulers = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		OR = {
+			trait = nm_volva
+			trait = nm_seidmann
+		}
+		any_vassal = {
+			age = 14
+			prisoner = no
+			NOT = {
+				character = ROOT
+			}
+			trait = ambitious
+			NOT = {
+				has_opinion_modifier = { who = ROOT modifier = opinion_friend }
+			}
+			NOT = {
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_friend }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			NOT = { learning = 6 }
+		}
+		random_vassal = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				trait = ambitious
+			}
+			random_list = {
+				65 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				30 = {
+				}
+				4 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				1 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			learning = 6
+			NOT = { learning = 12 }
+		}
+		any_vassal = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				trait = ambitious
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				40 = {
+				}
+				8 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				2 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			learning = 12
+			NOT = { learning = 18 }
+		}
+		any_vassal = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				trait = ambitious
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				50 = {
+				}
+				15 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				5 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			learning = 18
+		}
+		any_vassal = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				trait = ambitious
+			}
+			random_list = {
+				20 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				40 = {
+				}
+				30 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				10 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB330009"
+	}
+}
+
+character_event = {
+	id = 330010
+	desc = "EVTDESC330010"
+	picture = GFX_evt_valhalla
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA330010"
+		random_courtier = {
+			limit = {
+				character = FROM
+			}
+			character_event = {
+				id = 330014
+				days = 10
+				tooltip = "EVTTOOLTIP330014"
+			}
+		}
+		opinion = {
+			modifier = opinion_rival
+			who = FROM
+			years = 100
+		}
+	}
+}
+
+character_event = {
+	id = 330011
+	desc = "EVTDESC330011"
+	picture = GFX_evt_comet
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA330011"
+		random_courtier = {
+			limit = {
+				character = FROM
+			}
+			hidden_tooltip = {
+				character_event = { id = 330015 }
+			}
+		}
+		random_list = {
+			75 = {
+				add_trait = ill
+			}
+			25 = {
+				add_trait = maimed
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 330012
+	desc = "EVTDESC330012"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA330012"
+		random_courtier = {
+			limit = {
+				character = FROM
+			}
+			hidden_tooltip = {
+				character_event = { id = 330016 }
+			}
+		}
+		death = {
+			death_reason = death_murder_unknown
+			killer = ROOT
+		}
+	}
+}
+
+character_event = {
+	id = 330013
+	desc = "EVTDESC330013"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+
+	age = 20
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		OR = {
+			trait = nm_volva
+			trait = nm_seidmann
+		}
+		any_courtier = {
+			age = 14
+			prisoner = no
+			NOT = {
+				character = ROOT
+			}
+			has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+			reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			NOT = { learning = 6 }
+		}
+		random_courtier = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+			}
+			random_list = {
+				65 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				30 = {
+				}
+				4 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				1 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			learning = 6
+			NOT = { learning = 12 }
+		}
+		random_courtier = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				40 = {
+				}
+				8 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				2 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			learning = 12
+			NOT = { learning = 18 }
+		}
+		random_courtier = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				50 = {
+				}
+				15 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				5 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA330009"
+		trigger = {
+			learning = 18
+		}
+		random_courtier = {
+			limit = {
+				age = 14
+				prisoner = no
+				NOT = {
+					character = ROOT
+				}
+				has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rival }
+			}
+			random_list = {
+				20 = {
+					character_event = {
+						id = 330010
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330010"
+					}
+					reverse_opinion = {
+						modifier = opinion_rival
+						who = ROOT
+						years = 100
+					}
+				}
+				40 = {
+				}
+				30 = {
+					character_event = {
+						id = 330011
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330011"
+					}
+				}
+				10 = {
+					character_event = {
+						id = 330012
+						days = 2
+						random = 3
+						tooltip = "EVTTOOLTIP330012"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB330009"
+	}
+}
+
+character_event = {
+	id = 330014
+	desc = "EVTDESC330014"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA330014"
+		prestige = -100
+		random = {
+			chance = 33
+			add_trait = stressed
+		}
+	}
+}
+
+character_event = {
+	id = 330015
+	desc = "EVTDESC330015"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA330015"
+	}
+}
+
+character_event = {
+	id = 330016
+	desc = "EVTDESC330016"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA330016"
+	}
+}
+
+character_event = {
+	id = 330017
+	desc = "EVTDESC330017"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+
+	only_men = yes
+	age = 14
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			trait = nm_volva
+			trait = nm_seidmann
+		}
+		NOT = { religion = norse_pagan }
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "EVTOPTA330017"
+		remove_trait = nm_volva
+		remove_trait = nm_seidmann
+	}
+}
+
+character_event = {
+	id = 330018
+	desc = "EVTDESC330018"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+
+	age = 14
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+
+	trigger = {
+		religion = norse_pagan
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330018"
+		create_random_priest = {
+			random_traits = yes
+			trait = nm_volva
+			dynasty = random
+			female = yes
+		}
+	}
+	option = {
+		name = "EVTOPTB330018"
+		scaled_wealth = -0.1
+		piety = 20
+	}
+	option = {
+		name = "EVTOPTC330018"
+		prestige = 20
+		random = {
+			chance = 5
+			add_trait = stressed
+		}
+	}
+}
+
+character_event = {
+	id = 330019
+	desc = "EVTDESC330019"
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_religion
+
+	age = 14
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = norse_pagan
+		OR = {
+			trait = wounded
+			trait = maimed
+		}
+		NOT = { trait = cynical }
+		NOT = { trait = nm_volva }
+		NOT = { trait = nm_seidmann }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA330019"
+		prestige = -10
+		scaled_wealth = 0.1
+		if = {
+			limit = {
+				trait = wounded
+			}
+			random = {
+				chance = 70
+				remove_trait = wounded
+			}
+		}
+		if = {
+			limit = {
+				trait = maimed
+			}
+			random = {
+				chance = 20
+				remove_trait = maimed
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB330019"
+	}
+	option = {
+		name = "EVTOPTC330019"
+		trigger = {
+			OR = {
+				spouse = { trait = nm_volva }
+				spouse = { trait = nm_seidmann }
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+			}
+			random = {
+				chance = 70
+				remove_trait = wounded
+			}
+		}
+		if = {
+			limit = {
+				trait = maimed
+			}
+			random = {
+				chance = 20
+				remove_trait = maimed
+			}
+		}
+	}
+}

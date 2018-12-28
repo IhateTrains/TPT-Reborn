@@ -1,0 +1,29 @@
+name = "Scottish War of Independence"
+
+casus_belli = {
+	actor = 454520
+	recipient = 453501
+	casus_belli=invasion
+	landed_title=k_scotland
+	date=1296.8.1
+}
+
+1296.8.1 = {
+	add_attacker = 454520
+	add_defender = 453501
+}
+
+1307.7.8 = {
+	rem_attacker = 454520
+	add_attacker = 454510
+}
+
+1327.2.1 = {
+	rem_attacker = 454510
+	add_attacker = 454500
+}
+
+1328.6.1 = {
+	rem_attacker = 454500
+	rem_defender = 453501
+}

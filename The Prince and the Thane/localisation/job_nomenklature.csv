@@ -1,0 +1,45 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+job_chancellor_greek;Logothetes;Logothetes;Logothetes;;Logothetes;;;;;;;;;x
+job_marshal_greek;Megas Domestikos;Megas Domestikos;Megas Domestikos;;Megas Domestikos;;;;;;;;;x
+job_treasurer_greek;Megas Logothetes;Megas Logothetes;Megas Logothetes;;Megas Logothetes;;;;;;;;;x
+job_chancellor_scottish;Great Chamberlain;Great Chamberlain;Great Chamberlain;;Great Chamberlain;;;;;;;;;x
+job_marshal_scottish;Marischal;Marischal;Marischal;;Marischal;;;;;;;;;x
+job_treasurer_scottish;Great Steward;Great Steward;Great Steward;;Great Steward;;;;;;;;;x
+job_chancellor_english;Lord Chancellor;Lord Chancellor;Lord Chancellor;;Lord Chancellor;;;;;;;;;x
+job_marshal_english;Lord Marshal;Lord Marshal;Lord Marshal;;Lord Marshal;;;;;;;;;x
+job_treasurer_english;Lord Steward;Lord Steward;Lord Steward;;Lord Steward;;;;;;;;;x
+job_spiritual_saxon;Capellan;Capellan;Capellan;;Capellan;;;;;;;;;x
+job_chancellor_frankish;Chancelier;Chancelier;Chancelier;;Chancelier;;;;;;;;;x
+job_marshal_frankish;Constable;Connétable;Constable;;Constable;;;;;;;;;x
+job_treasurer_frankish;Seneschal;Sénéchal;Sénéchal;;Sénéchal;;;;;;;;;x
+job_chancellor_occitan;Chancelier;Chancelier;Chancelier;;Chancelier;;;;;;;;;x
+job_marshal_occitan;Constable;Connétable;Connétable;;Connétable;;;;;;;;;x
+job_treasurer_occitan;Seneschal;Sénéchal;Sénéchal;;Sénéchal;;;;;;;;;x
+job_treasurer_norman;Bailiff;Bailli;Bailli;;Bailli;;;;;;;;;x
+########################################;;;;;;;;;;;;;;x
+#TITLES;;;;;;;;;;;;;;x
+########################################;;;;;;;;;;;;;;
+title_grand_butler_frankish;Grand Butler;Grand Bouteiller;Grand Bouteiller;;Grand Bouteiller;;;;;;;;;x
+title_high_almoner_frankish;Grand Almoner;Grand Aumonier;Grand Aumonier;;Grand Aumonier;;;;;;;;;x
+title_cupbearer_frankish;Cupbearer;Échanson;Échanson;;Échanson;;;;;;;;;x
+title_master_of_the_horse_frankish;Grand Stabler;Grand Écuyer;Grand Écuyer;;Grand Écuyer;;;;;;;;;x
+title_master_of_the_hunt_frankish;Grand Hunter;Grand Veneur;Grand Veneur;;Grand Veneur;;;;;;;;;x
+title_seneschal_frankish;Grand Chambellan;Grand Chambellan;Grand Chambellan;;Grand Chambellan;;;;;;;;;x
+title_grand_butler_occitan;Grand Butler;Grand Bouteiller;Grand Bouteiller;;Grand Bouteiller;;;;;;;;;x
+title_high_almoner_occitan;Grand Almoner;Grand Aumonier;Grand Aumonier;;Grand Aumonier;;;;;;;;;x
+title_cupbearer_occitan;Grand Stabler;Échanson;Échanson;;Échanson;;;;;;;;;x
+title_master_of_the_horse_occitan;Grand Écuyer;Grand Écuyer;Grand Écuyer;;Grand Écuyer;;;;;;;;;x
+title_master_of_the_hunt_occitan;Grand Hunter;Grand Veneur;Grand Veneur;;Grand Veneur;;;;;;;;;x
+title_seneschal_occitan;Grand Chambellan;Grand Chambellan;Grand Chambellan;;Grand Chambellan;;;;;;;;;x
+job_spiritual_pagan_group;Court Volva;;;;;;;;;;;;;x
+action_do_seid_nm;Do Seid;;;;;;;;;;;;;x
+action_do_seid_nm_desc;Send your [GetLordSpiritualName] to commit Seid in a province.;;;;;;;;;;;;;x
+desc_action_do_seid_nm;Send your [GetLordSpiritualName] to commit Seid in a province.;;;;;;;;;;;;;x
+job_spiritual_other_pagan_group;Court Diviner;;;;;;;;;;;;;x
+job_spiritual_baltic_pagan_group;Court Diviner;;;;;;;;;;;;;x
+action_divine;Divine;;;;;;;;;;;;;x
+action_divine_desc;Send your [GetLordSpiritualName] to divine and interpret omens in a province.;;;;;;;;;;;;;x
+desc_action_divine;Send your [GetLordSpiritualName] to divine and interpret omens in a province.;;;;;;;;;;;;;x
+action_sow_dissent_desc;Have your [GetChancellorName] sow dissent between local nobles and their peers.;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

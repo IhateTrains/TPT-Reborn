@@ -1,0 +1,12 @@
+1066.1.1={
+	liege="d_provence" 
+}
+1066.1.1={
+	holder=32534 # Bertrand Raimbaud de Nice-Orange
+}
+1073.1.1={
+	holder = 32535 # Raimbaud II de Nice-Orange
+}
+1121.1.1={
+	holder = 0 # bishops of Nice
+}

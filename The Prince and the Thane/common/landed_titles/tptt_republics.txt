@@ -1,0 +1,162 @@
+#################### 
+#
+# REPUBLICS
+#
+####################
+
+d_gaeta = {
+	color={ 0 132 250 }
+	color2={ 255 255 255 }
+	capital = 1105 # Gaeta
+
+	dignity = 200
+	
+	allow = {
+        is_republic = yes
+	}
+}
+	
+d_ragusa = {
+	color={ 226 120 0 }
+	color2={ 255 255 255 }
+	capital = 468 # Ragusa
+
+	dignity = 200
+	
+	allow = {
+	    culture = croatian
+        is_republic = yes
+	}
+}
+
+
+##Amalfi
+
+b_damalfi = {
+	culture = langobardisch
+	religion = catholic
+}
+
+b_correale = {
+	culture = southern_italian
+	religion = catholic
+}
+
+b_darco = {
+	culture = southern_italian
+	religion = catholic
+}
+
+b_delgiudice = {
+	culture = southern_italian
+	religion = catholic
+}
+
+b_falangola = {
+	culture = southern_italian
+	religion = catholic
+}
+
+##Gaeta
+
+b_digaeta = {
+	culture = greek
+	religion = catholic
+}
+
+b_ridel = {
+	culture = norman
+	religion = catholic
+}
+
+b_diaquino = {
+	culture = langobardisch
+	religion = catholic
+}
+
+b_disorrento = {
+	culture = langobardisch
+	religion = catholic
+}
+
+b_dauferio = {
+	culture = langobardisch
+	religion = catholic
+}
+
+##Ragusa
+
+b_gundulic = {
+	culture = croatian
+	religion = catholic
+}
+
+b_gucetic = {
+	culture = croatian
+	religion = catholic
+}
+
+b_crijevic = {
+	culture = croatian
+	religion = catholic
+}
+
+b_bobaljevic = {
+	culture = croatian
+	religion = catholic
+}
+
+b_giorgi = {
+	culture = central_italian
+	religion = catholic
+}
+
+##Novgorod
+
+b_mikulinich = {
+	culture = russian
+	religion = orthodox
+}
+b_miroslavich = {
+	culture = russian
+	religion = orthodox
+}
+b_ivankovich = {
+	culture = russian
+	religion = orthodox
+}
+b_tverdiatich = {
+	culture = russian
+	religion = orthodox
+}
+b_zakharyinich = {
+	culture = russian
+	religion = orthodox
+}
+
+##Ancona
+
+b_vanvitelli = {
+	culture = central_italian
+	religion = catholic
+}
+
+b_caloiri = {
+	culture = central_italian
+	religion = catholic
+}
+
+b_benincasa = {
+	culture = central_italian
+	religion = catholic
+}
+
+b_stracca = {
+	culture = central_italian
+	religion = catholic
+}
+
+b_lilli = {
+	culture = central_italian
+	religion = catholic
+}

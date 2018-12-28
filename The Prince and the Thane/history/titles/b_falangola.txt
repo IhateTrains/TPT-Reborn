@@ -1,0 +1,21 @@
+954.1.1={
+	holder=2220027 #Lucio Falangola
+	holding_dynasty = 8001003 # Falangola
+	liege="d_amalfi"
+}
+
+980.1.1={
+	holder=2220028 #Roberto Falangola
+}
+
+1025.1.1={
+	holder=2220029 #Domizio Falangola
+}
+
+1069.1.1={
+	holder=2220030 #Francesco Falangola
+}
+
+1073.1.1={
+	holder=0
+}

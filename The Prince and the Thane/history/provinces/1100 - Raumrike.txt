@@ -1,0 +1,20 @@
+# 1100 - Raumrike
+
+# County Title
+title = c_raumrike
+
+# Settlements
+max_settlements = 3
+
+b_kongsvinger = castle
+b_eidsvoll = city
+#b_eidaskogr = temple
+#b_ullinshof = city
+#b_heinhof = city
+
+# Misc
+culture = norwegian
+religion = catholic
+
+# History
+

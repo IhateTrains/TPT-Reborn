@@ -1,0 +1,427 @@
+spriteTypes = 
+{
+#The Prince and the Thane
+	
+spriteType = {
+		name = "GFX_evt_alchemist"
+		texturefile = "gfx\\event_pictures\alchemist.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_avicenna"
+		texturefile = "gfx\\event_pictures\avicenna.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_battle4"
+		texturefile = "gfx\\event_pictures\battle4.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_coronation"
+		texturefile = "gfx\\event_pictures\coronation.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_coronation_two"
+		texturefile = "gfx\\event_pictures\coronation_two.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_crusade_siege"
+		texturefile = "gfx\\event_pictures\crusade_siege.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_crusader_battle"
+		texturefile = "gfx\\event_pictures\crusader_battle.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_hastings"
+		texturefile = "gfx\\event_pictures\hastings.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_holy_grail"
+		texturefile = "gfx\\event_pictures\holy_grail.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_jewish_banker"
+		texturefile = "gfx\\event_pictures\jewish_banker.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_knight"
+		texturefile = "gfx\\event_pictures\knight.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_livonian_knights"
+		texturefile = "gfx\\event_pictures\livonian_knights.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_medieval_court"
+		texturefile = "gfx\\event_pictures\medieval_court.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_norman_knight"
+		texturefile = "gfx\\event_pictures\norman_knight.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_philosopher"
+		texturefile = "gfx\\event_pictures\philosopher.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_spymaster"
+		texturefile = "gfx\\event_pictures\spymaster.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_alchemist2"
+		texturefile = "gfx\\event_pictures\alchemist2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_charlatan2"
+		texturefile = "gfx\\event_pictures\charlatan2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_clerical_envoy2"
+		texturefile = "gfx\\event_pictures\clerical_envoy2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_conservative2"
+		texturefile = "gfx\\event_pictures\conservative2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_grail2"
+		texturefile = "gfx\\event_pictures\grail2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_lady_macbeth"
+		texturefile = "gfx\\event_pictures\lady_macbeth.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_musician"
+		texturefile = "gfx\\event_pictures\musician.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_pragmatist2"
+		texturefile = "gfx\\event_pictures\pragmatist2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_reformer2"
+		texturefile = "gfx\\event_pictures\reformer2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_relic_hunter2"
+		texturefile = "gfx\\event_pictures\relic_hunter2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_tolerant2"
+		texturefile = "gfx\\event_pictures\tolerant2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uneducated2"
+		texturefile = "gfx\\event_pictures\uneducated2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_helen"
+		texturefile = "gfx\\event_pictures\helen.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_horseknight"
+		texturefile = "gfx\\event_pictures\horseknight.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_knight_and_king"
+		texturefile = "gfx\\event_pictures\knight_and_king.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_knights_banner"
+		texturefile = "gfx\\event_pictures\knights_banner.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_orlando"
+		texturefile = "gfx\\event_pictures\orlando.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_palio"
+		texturefile = "gfx\\event_pictures\palio.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_prioress"
+		texturefile = "gfx\\event_pictures\prioress.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_wench"
+		texturefile = "gfx\\event_pictures\wench.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_witch"
+		texturefile = "gfx\\event_pictures\witch.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_gaylovers2"
+		texturefile = "gfx\\event_pictures\gaylovers2.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_armory"
+		texturefile = "gfx\\event_pictures\armory.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_gaycouple"
+		texturefile = "gfx\\event_pictures\gaycouple.tga"
+		allwaystransparent = yes
+	}
+     spriteType = {
+		name = "GFX_evt_apothecary"
+		texturefile = "gfx\\event_pictures\apothecary.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_dragon"
+		texturefile = "gfx\\event_pictures\dragon.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_smith"
+		texturefile = "gfx\\event_pictures\smith.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_battle_promotion"
+		texturefile = "gfx\\event_pictures\battle_promotion.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_knight1"
+		texturefile = "gfx\\event_pictures\knight1.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_squire"
+		texturefile = "gfx\\event_pictures\squire.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_fashion"
+		texturefile = "gfx\\event_pictures\fashion.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_judicium_dei"
+		texturefile = "gfx\\event_pictures\judicium_dei.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_bloodbath"
+		texturefile = "gfx\\event_pictures\bloodbath.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_siege2"
+		texturefile = "gfx\\event_pictures\siege2.tga"
+		allwaystransparent = yes
+	} 
+spriteType = {
+		name = "GFX_evt_siege3"
+		texturefile = "gfx\\event_pictures\siege3.tga"
+		allwaystransparent = yes
+	} 
+spriteType = {
+		name = "GFX_evt_battle2"
+		texturefile = "gfx\\event_pictures\battle2.tga"
+		allwaystransparent = yes
+	} 
+spriteType = {
+		name = "GFX_evt_battle3"
+		texturefile = "gfx\\event_pictures\battle3.tga"
+		allwaystransparent = yes
+	}
+
+spriteType = {
+		name = "GFX_evt_city_fire"
+		texturefile = "gfx\\event_pictures\city_fire.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_viking"
+		texturefile = "gfx\\event_pictures\viking.tga"
+		allwaystransparent = yes
+	}
+
+spriteType = {
+		name = "GFX_evt_viking2"
+		texturefile = "gfx\\event_pictures\viking2.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_viking_raid"
+		texturefile = "gfx\\event_pictures\viking_raid.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_battle_death"
+		texturefile = "gfx\\event_pictures\battle_death.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_melee3"
+		texturefile = "gfx\\event_pictures\melee3.tga"
+		allwaystransparent = yes
+	}
+
+spriteType = {
+		name = "GFX_evt_medieval_ship"
+		texturefile = "gfx\\event_pictures\medieval_ship.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_templar_knight"
+		texturefile = "gfx\\event_pictures\templar_knight.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_templars_assassins"
+		texturefile = "gfx\\event_pictures\templars_assassins.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_odin"
+		texturefile = "gfx\\event_pictures\odin.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_freya"
+		texturefile = "gfx\\event_pictures\freya.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_loki"
+		texturefile = "gfx\\event_pictures\loki.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_valhalla"
+		texturefile = "gfx\\event_pictures\valhalla.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_mongol"
+		texturefile = "gfx\\event_pictures\mongol.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_mongol2"
+		texturefile = "gfx\\event_pictures\mongol2.tga"
+		allwaystransparent = yes
+	}
+
+spriteType = {
+		name = "GFX_evt_mongol_soldier"
+		texturefile = "gfx\\event_pictures\mongol_soldier.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_gaelic_warrior"
+		texturefile = "gfx\\event_pictures\gaelic_warrior.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_viking_tavern"
+		texturefile = "gfx\\event_pictures\viking_tavern.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_ting"
+		texturefile = "gfx\\event_pictures\ting.tga"
+		allwaystransparent = yes
+	} 
+spriteType = {
+		name = "GFX_evt_jerusalem"
+		texturefile = "gfx\\event_pictures\jerusalem.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_rome"
+		texturefile = "gfx\\event_pictures\rome.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_venice"
+		texturefile = "gfx\\event_pictures\venice.tga"
+		allwaystransparent = yes
+	}
+}
+
+
+
+
+

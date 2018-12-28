@@ -1,0 +1,23 @@
+933.1.1={
+	holder=2220055 #Ado Dauferio
+	holding_dynasty = 20060 # Dauferio
+	liege="d_gaeta"
+}
+965.1.1={
+	holder=2220056 #Alboin Dauferio
+}
+1027.1.1={
+	holder=2220057 #Landulf Dauferio
+}
+1039.1.1={
+	holder=0
+}
+1045.1.1={
+	holder=2220058 #Orso Dauferio
+}
+1068.1.1={
+	holder=2220059 #Ibor Dauferio
+}
+1091.1.1={
+	holder=0
+}

@@ -1,0 +1,1133 @@
+################################################################
+#
+# The Prince and the Thane new traits events - written by idib816
+#
+################################################################
+
+namespace = tptt_traits
+
+##################
+##################
+##
+##  CLERICAL ENVOY
+##
+##################
+##################
+
+# Gain clerical_envoy
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.33
+	desc = "EVTDESCtptt_traits.33"
+	picture = "GFX_evt_coronation"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = clerical_envoy }
+		NOT = { trait = philosopher }
+		NOT = { trait = bank_sponsor }
+		NOT = { trait = cynical }
+		NOT = { trait = reformer }
+		NOT = { trait = relic_hunter }
+		NOT = { trait = lady_macbeth }
+		NOT = { trait = poor_warrior }
+		NOT = { trait = tolerant }
+		NOT = { trait = musician }
+		NOT = { trait = charlatan }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.33"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.1
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of the cardinal had no effect
+
+character_event = {
+	id = tptt_traits.34
+	desc = "EVTDESCtptt_traits.34"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.34"
+	}
+}
+
+# guardian didn't wanna pay - cardinal
+
+character_event = {
+	id = tptt_traits.35
+	desc = "EVTDESCtptt_traits.35"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.35"
+	}
+}
+
+##################
+##################
+##
+##  PHILOSOPHER
+##
+##################
+##################
+
+
+# Gain philosopher
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.36
+	desc = "EVTDESCtptt_traits.36"
+	picture = "GFX_evt_philosopher"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = clerical_envoy }
+		NOT = { trait = philosopher }
+		NOT = { trait = machiavellian }
+		NOT = { trait = uneducated }
+		NOT = { trait = pious_man }
+		NOT = { trait = relic_hunter }
+		NOT = { trait = lady_macbeth }
+		NOT = { trait = poor_warrior }
+		NOT = { trait = uneducated }
+		NOT = { trait = charlatan }
+		NOT = { trait = conservative }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.36"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.2
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of the philosopher had no effect
+
+character_event = {
+	id = tptt_traits.37
+	desc = "EVTDESCtptt_traits.37"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.37"
+	}
+}
+
+
+# guardian didn't wanna pay - philosopher
+
+character_event = {
+	id = tptt_traits.38
+	desc = "EVTDESCtptt_traits.38"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.38"
+	}
+}
+
+
+##################
+##################
+##
+##  REFORMER
+##
+##################
+##################
+
+
+# Gain reformer
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.39
+	desc = "EVTDESCtptt_traits.39"
+	picture = "GFX_evt_avicenna"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = reformer }
+		NOT = { trait = clerical_envoy }
+		NOT = { trait = machiavellian }
+		NOT = { trait = antisemite }
+		NOT = { trait = uneducated }
+		NOT = { trait = pious_man }
+		NOT = { trait = relic_hunter }
+		NOT = { trait = charlatan }
+		NOT = { trait = lady_macbeth }
+		NOT = { trait = poor_warrior }
+		NOT = { trait = conservative }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.39"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.3
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of the Muslim exile had no effect
+
+character_event = {
+	id = tptt_traits.41
+	desc = "EVTDESCtptt_traits.41"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.41"
+	}
+}
+
+
+# guardian didn't wanna pay - reformer
+
+character_event = {
+	id = tptt_traits.40
+	desc = "EVTDESCtptt_traits.40"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.40"
+	}
+}
+
+##################
+##################
+##
+##  TALES OF THE GRAIL
+##
+##################
+##################
+
+
+# Gain pious_man
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.42
+	desc = "EVTDESCtptt_traits.42"
+	picture = "GFX_evt_crusader_battle"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = machiavellian }
+		NOT = { trait = bank_sponsor }
+		NOT = { trait = philosopher }
+		NOT = { trait = cynical }
+		NOT = { trait = uneducated }
+		NOT = { trait = reformer }
+		NOT = { trait = relic_hunter }
+		NOT = { trait = charlatan }
+		NOT = { trait = lady_macbeth }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.42"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.4
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of the Holy Knight had no effect
+
+character_event = {
+	id = tptt_traits.44
+	desc = "EVTDESCtptt_traits.44"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.44"
+	}
+}
+
+
+# guardian didn't wanna pay - holy knight
+
+character_event = {
+	id = tptt_traits.43
+	desc = "EVTDESCtptt_traits.43"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.43"
+	}
+}
+
+
+
+##################
+##################
+##
+##  BANK SPONSOR
+##
+##################
+##################
+
+
+# Gain Bank Sponsor
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.45
+	desc = "EVTDESCtptt_traits.45"
+	picture = "GFX_evt_jewish_banker"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = clerical_envoy }
+		NOT = { trait = antisemite }
+		NOT = { trait = uneducated }
+		NOT = { trait = pious_man }
+		NOT = { trait = lady_macbeth }
+		NOT = { trait = poor_warrior }
+		NOT = { trait = conservative }
+		NOT = { trait = bank_sponsor }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.45"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.5
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of the Jewish Banker had no effect
+
+character_event = {
+	id = tptt_traits.47
+	desc = "EVTDESCtptt_traits.47"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.47"
+	}
+}
+
+# guardian didn't wanna pay - banker
+
+character_event = {
+	id = tptt_traits.93
+	desc = "EVTDESCtptt_traits.93"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.93"
+	}
+}
+##################
+##################
+##
+##  PRAGMATIST
+##
+##################
+##################
+
+
+# Gain Pragmatist
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.89
+	desc = "EVTDESCtptt_traits.89"
+	picture = "GFX_evt_medieval_court"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = machiavellian }
+		NOT = { trait = philosopher }
+		NOT = { trait = clerical_envoy }
+		NOT = { trait = uneducated }
+		NOT = { trait = poor_warrior }
+		NOT = { trait = pious_man }
+		NOT = { trait = relic_hunter }
+		NOT = { trait = charlatan }
+		NOT = { trait = lady_macbeth }
+		NOT = { trait = war_hero }
+		NOT = { trait = conservative }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.89"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.88
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of the statesman had no effect
+
+character_event = {
+	id = tptt_traits.46
+	desc = "EVTDESCtptt_traits.46"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.46"
+	}
+}
+
+
+# guardian didn't wanna pay - pragmatists
+
+character_event = {
+	id = tptt_traits.91
+	desc = "EVTDESCtptt_traits.91"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.91"
+	}
+}
+
+##################
+##################
+##
+##  MUSICIAN
+##
+##################
+##################
+
+
+# Gain Musician
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.99
+	desc = "EVTDESCtptt_traits.99"
+	picture = "GFX_evt_musician"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = uneducated }
+		NOT = { trait = conservative }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.99"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.100
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# efforts of new teacher had no effect
+
+character_event = {
+	id = tptt_traits.103
+	desc = "EVTDESCtptt_traits.103"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.46"
+	}
+}
+
+
+# guardian didn't wanna pay
+
+character_event = {
+	id = tptt_traits.102
+	desc = "EVTDESCtptt_traits.102"
+	picture = "GFX_evt_garden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtptt_traits.102"
+	}
+}
+
+##################
+##################
+##
+##  ALCHEMIST
+##
+##################
+##################
+
+
+# Gain alchemist
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = tptt_traits.104
+	desc = "EVTDESCtptt_traits.104"
+	picture = "GFX_evt_alchemist"
+	
+	is_triggered_only = yes
+	
+	min_age = 8
+	max_age = 14
+
+	trigger = {
+		NOT = { personality_traits = 7 }
+		NOT = { trait = uneducated }
+		NOT = { trait = lady_macbeth }
+		NOT = { trait = conservative }
+		NOT = { trait = antisemite }
+		NOT = { trait = clerical_envoy }
+		has_guardian = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.55
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAtptt_traits.104"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = tptt_traits.105
+					days = 3
+				}
+			}
+		}
+	}
+}

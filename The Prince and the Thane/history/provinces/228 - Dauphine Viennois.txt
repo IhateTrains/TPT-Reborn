@@ -1,0 +1,24 @@
+# 228 - Dauphine Viennois
+
+# County Title
+title = c_dauphine_viennois
+
+# Settlements
+max_settlements = 4
+b_albon = castle
+b_vienne = city
+b_saint_antoine = temple
+#b_latourdupin = castle
+#b_bressieux = castle
+#b_virieu = castle
+#b_vinay = castle
+#b_roussillon = castle
+
+
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
+

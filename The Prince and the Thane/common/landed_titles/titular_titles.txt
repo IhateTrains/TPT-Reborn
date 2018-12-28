@@ -1,0 +1,682 @@
+#List of extra Titular Titles
+
+# TITULAR SWMH
+
+d_lauenburg = {
+               capital = 1098 #Lauenburg
+			color={ 77 127 196 }
+			color2={ 255 255 255 }
+
+                    	allow = {
+ OR = {has_landed_title = c_lauenburg
+       any_vassal = { has_landed_title = c_lauenburg }}
+ NOT = { any_demesne_title = {tier = emperor}
+       }
+ }		                       
+			
+}
+
+d_sangermano = {
+                capital = 935 #Sangermano
+			color={ 77 127 196 }
+			color2={ 255 255 255 }
+                    
+                        short_name = yes			                       
+			allow = {
+            AND = { 
+				religion_group = christian
+				is_theocracy = yes
+				piety = 500	
+				}				
+			}
+		}
+d_amalfi = {
+			color={ 77 42 130 }
+
+			culture = langobardisch
+			capital = 936 # Amalfi
+            allow = { 
+			    religion_group = christian
+				is_republic = yes
+			}
+}	
+d_austrialombardic = { 
+			color={ 4 33 122 }
+culture = langobardisch
+capital = 319 #Verona
+
+allow = {
+		culture = langobardisch
+
+		religion_group = christian 
+			AND = {
+				has_landed_title = d_verona
+				has_landed_title = d_aquileia
+				}
+	}
+}	
+
+
+d_neustria
+ = { 
+			color={ 4 33 11 }
+                        culture = langobardisch
+                        capital = 234 #Pavia
+
+dignity = 15 # Counted as having 15 more counties than it does
+
+allow = {
+		culture = langobardisch
+
+		religion_group = christian 
+			AND = {
+				has_landed_title = d_parma
+				has_landed_title = d_modena
+                                has_landed_title = d_piemonte
+				has_landed_title = d_monferrato
+				}
+	}
+}	
+
+d_tuscia = { 
+			color={ 250 241 220 }
+                        culture = langobardisch
+                        capital = 323 #Lucca
+
+allow = {
+		culture = langobardisch
+
+		religion_group = christian 
+			AND = {
+				has_landed_title = c_lucca
+				has_landed_title = d_toscana
+				}
+	}
+}	
+
+
+k_austria = { 
+			color={ 188 0 7 }
+                        culture = german
+                        capital = 449 #Österreich
+
+                        title = "ADA"
+                        foa = "ADA_FOA"
+	                title_prefix = "ADA_OF" 
+
+allow = {
+		culture = german
+
+		religion_group = christian 
+			AND = {
+				has_landed_title = d_osterreich
+				has_landed_title = d_carinthia
+				}
+	}
+}
+
+d_devenders = {
+	color = { 74 150 169 }
+	culture = danish
+        capital = 366 # Stettin
+        name_tier = king
+
+
+allow = {
+		OR = {
+		culture = danish
+                culture = swedish
+                culture = norwegian
+                culture = gothic
+}
+		prestige = 1000
+                religion_group = christian 
+		OR = {
+			AND = {
+				has_landed_title = k_norway
+				OR = {
+					has_landed_title = d_pommerania
+					any_vassal = { has_landed_title = d_pommerania }} 
+				}
+			AND = {
+				has_landed_title = k_denmark
+                                OR = {
+					has_landed_title = d_pommerania
+					any_vassal = { has_landed_title = d_pommerania }}
+				}
+			AND = {
+				has_landed_title = k_sweden
+				OR = {
+					has_landed_title = d_pommerania
+					any_vassal = { has_landed_title = d_pommerania }} 
+				}
+			}
+	}
+}	
+
+	
+d_degothers = {
+	color = { 211 249 188 }
+        capital = 293 # Ostgötaland
+        name_tier = king
+
+allow = {
+		OR = {
+		culture = danish
+                culture = swedish
+                culture = norwegian
+                culture = gothic
+}
+		prestige = 1000
+                religion_group = christian 
+		OR = {
+			AND = {
+				has_landed_title = k_norway
+                                OR = {
+					has_landed_title = d_ostergotland
+					any_vassal = { has_landed_title = d_ostergotland }}
+				}
+			AND = {
+				has_landed_title = k_denmark
+                                OR = {
+					has_landed_title = d_ostergotland
+					any_vassal = { has_landed_title = d_ostergotland }}
+				}
+			AND = {
+				has_landed_title = k_sweden
+				OR = {
+					has_landed_title = d_ostergotland
+					any_vassal = { has_landed_title = d_ostergotland }} 
+				}
+			}
+	}
+}
+
+k_gardariki = {
+	color = { 59 106 84 }
+capital = 547 # Kiev
+
+
+dignity = 15 # Counted as having 15 more counties than it does
+
+allow = {
+		OR = {
+		culture = danish
+                culture = swedish
+                culture = norwegian
+                culture = gothic
+                culture = norsegaelic
+                culture = anglonorse
+}
+			AND = {
+                                OR = {
+					has_landed_title = d_novgorod
+					any_vassal = { has_landed_title = d_novgorod }}
+                                OR = {
+					has_landed_title = d_kiev
+					any_vassal = { has_landed_title = d_kiev }}        
+				}
+	}
+}
+
+# Titular Darrigan
+
+#Kingdom of Toulouse (~Visigothic kingdom of Tolosa or an eventual Sultanate of Toulouse)
+ k_toulouse = {
+ color = { 200 0 50 }
+ color2 = { 255 255 255 }
+ capital = 214 # Toulouse
+ 
+allow = {
+ has_landed_title = d_toulouse
+ has_landed_title = c_toulouse
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+ 
+# The county of Flanders had more autonomy than other regions under the French crown. They did lose the independence wars # in the 13th and 14th century. But what if they had won?
+ k_flanders = {
+ color={ 255 120 0 }
+ color2={ 255 255 255 }
+ capital = 78 # Brugge
+ 
+allow = {
+ has_landed_title = d_flanders
+ OR = {
+ has_landed_title = c_brugge
+ has_landed_title = c_gent
+ has_landed_title = c_yperen
+ has_landed_title = c_lille
+ has_landed_title = c_tournai
+ }
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+ 
+ 
+# Maybe not entirely needed, since Burgundy is already in the game. But this adds just a little more flavour.
+ # No religious restrictions. A sultanate of Provence doesn't seem that impossible to me.
+ k_provence = {
+ color = { 75 80 30 }
+ color2 = { 255 255 255 }
+ capital = 221 # Provence
+
+ allow = {
+ has_landed_title = d_provence
+ has_landed_title = c_provence
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+
+# TITULAR SWMH Spain
+
+d_alba_de_tormes = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 192 # Salamanca
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_castille 
+				has_landed_title = k_leon }
+			}
+                OR = {
+				has_landed_title = c_salamanca 
+				any_vassal = {has_landed_title = c_salamanca }
+			}
+
+}
+}
+
+
+
+d_medina_sidonia = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 165 # Cadiz
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+    allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_castille 
+				has_landed_title = k_leon }
+			}
+                OR = {
+				has_landed_title = c_cadiz 
+				any_vassal = {has_landed_title = c_cadiz }
+			}
+
+}
+
+}
+
+d_alburquerque = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 193 # Alacantra
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_castille 
+				has_landed_title = k_leon }
+			}
+                OR = {
+				has_landed_title = c_alcantara 
+				any_vassal = {has_landed_title = c_alcantara }
+			}
+
+}
+
+}
+
+d_medinaceli = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 200 # Soria
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_castille 
+				has_landed_title = k_leon }
+			}
+                OR = {
+				has_landed_title = c_soria 
+				any_vassal = {has_landed_title = c_soria }
+			}
+
+}
+}
+
+d_infantado = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 1196 # Palencia
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_castille 
+				has_landed_title = k_leon }
+			}
+                OR = {
+				has_landed_title = c_palencia 
+				any_vassal = {has_landed_title = c_palencia }
+			}
+
+}
+}
+
+
+d_gandia = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 170 # Denia
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_aragon  }
+			}
+                OR = {
+				has_landed_title = c_denia 
+				any_vassal = {has_landed_title = c_denia }
+			}
+
+}
+}
+
+
+d_cardona = {
+ color = { 255 224 94 }
+ color2 = { 255 255 255 }
+ capital = 204 # Barcelona
+
+dignity = 15 # Counted as having 15 more counties than it does
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+AND = {
+                OR = {
+				has_landed_title = e_iberia
+                                has_landed_title = k_aragon  }
+			}
+                OR = {
+				has_landed_title = c_barcelona
+				any_vassal = {has_landed_title = c_barcelona }
+			}
+
+}
+}
+
+
+#Kingdom level:
+#reino de Galicia
+ k_spanish_galicia = {
+ color={ 100 160 210 }
+ color2 = { 255 255 255 }
+ capital = 157 # Santiago
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+  
+ AND = {
+                 
+                OR = {
+				has_landed_title = c_coruna 
+				any_vassal = {has_landed_title = c_coruna }
+			}
+                OR = {
+				has_landed_title = c_lugo 
+				any_vassal = {has_landed_title = c_lugo }
+			}
+                OR = {
+				has_landed_title = c_lemos 
+				any_vassal = {has_landed_title = c_lemos }
+			}
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+ }
+
+#Principado de Cataluña
+ k_catalunya = {
+ color = { 157 29 20 }
+ color2 = { 255 255 255 }
+ capital = 204 # Barcelona
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+  
+ AND = {
+                     
+                OR = {
+				has_landed_title = c_urgell 
+				any_vassal = {has_landed_title = c_urgell }
+			}
+                OR = {
+				has_landed_title = c_rosello 
+				any_vassal = {has_landed_title = c_rosello }
+			}
+                OR = {
+				has_landed_title = c_empuries 
+				any_vassal = {has_landed_title = c_empuries }
+			}
+                OR = {
+				has_landed_title = c_lleida 
+				any_vassal = {has_landed_title = c_lleida }
+			}
+                OR = {
+				has_landed_title = c_tarragona 
+				any_vassal = {has_landed_title = c_tarragona }
+			}
+                OR = {
+				has_landed_title = c_girona 
+				any_vassal = {has_landed_title = c_girona }
+			}
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+ }
+ 
+#Reino de Valencia
+ k_valencia = {
+ color = { 200 0 50 }
+ color2 = { 255 255 255 }
+ capital = 171 # Valencia
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+  
+ AND = {
+                         
+                OR = {
+				has_landed_title = c_denia 
+				any_vassal = {has_landed_title = c_denia }
+			}
+                OR = {
+				has_landed_title = c_castellon 
+				any_vassal = {has_landed_title = c_castellon }
+			}
+                OR = {
+				has_landed_title = c_murcia 
+				any_vassal = {has_landed_title = c_murcia }
+			}
+                OR = {
+				has_landed_title = c_almansa 
+				any_vassal = {has_landed_title = c_almansa }
+			}
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+ }
+ 
+#Reino de Granada
+ k_granada = {
+ color = { 200 0 50 }
+ color2 = { 255 255 255 }
+ capital = 180 # Granada
+ 
+allow = {
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+ religion_group = christian
+
+  
+ AND = {
+               
+                OR = {
+				has_landed_title = c_malaga 
+				any_vassal = {has_landed_title = c_malaga }
+			}
+                OR = {
+				has_landed_title = c_almeria 
+				any_vassal = {has_landed_title = c_almeria }
+			}
+                OR = {
+				has_landed_title = c_jaen 
+				any_vassal = {has_landed_title = c_jaen }
+			}
+                OR = {
+				has_landed_title = c_cordoba 
+				any_vassal = {has_landed_title = c_cordoba }
+			}
+ independent = yes
+ NOT = { 
+any_demesne_title = {
+ OR = {
+ tier = king
+ tier = emperor
+ }
+ }
+ }
+ }
+ }
+ }
+

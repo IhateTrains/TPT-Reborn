@@ -1,0 +1,21 @@
+# 1074 - Magdeburg
+
+# County Title
+title = c_magdeburg
+
+# Settlements
+max_settlements = 3
+
+
+b_magdeburg = temple
+b_belzig = castle
+#b_havelberg = temple
+
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+
+1187.1.1 = { b_havelberg = temple } 

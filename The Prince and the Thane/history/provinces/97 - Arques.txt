@@ -1,0 +1,31 @@
+# 97 - Arques
+
+# County Title
+title = c_arques
+
+# Settlements
+max_settlements = 6
+b_arques = castle
+b_rouen = city
+b_jumieges = temple
+b_dieppe = city
+#b_fecamp = castle
+#b_harcourt = castle
+#b_lillebonne = castle
+#b_moulineaux = castle
+#b_tancarvilla = castle
+#b_longueville = castle
+#b_mortemer = city
+#b_gournay = temple
+
+
+
+# Misc
+culture = norman
+religion = catholic
+
+# History
+
+1100.11.11 = { culture = frankish }
+
+1100.1.1  = { b_fecamp = castle }

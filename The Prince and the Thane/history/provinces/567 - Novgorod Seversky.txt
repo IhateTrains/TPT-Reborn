@@ -1,0 +1,22 @@
+# 567 - Novgorod-Seversky
+
+# County Title
+title = c_novgorod_seversky
+
+# Settlements
+max_settlements = 5
+
+b_novgorodseversky = castle
+#b_sosnytsia = city
+b_glukhov = city
+b_putyvl = castle
+b_sevsk = city
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+1187.1.1 = { b_sosnytsia = city }
+1239.1.1 = { remove_settlement = b_sosnytsia } #Mongol invasion

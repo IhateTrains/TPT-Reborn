@@ -1,0 +1,14 @@
+# 1369 - Tagant
+
+# County Title
+title = c_tagant
+
+# Settlements
+max_settlements = 1
+b_tichitt = castle
+
+# Misc
+culture = masmuda
+religion = sunni
+
+# History

@@ -1,0 +1,21 @@
+# 932- Lodz
+
+# County Title
+title = c_lodz
+
+# Settlements
+max_settlements = 4
+
+b_leczyca = castle
+b_tum = temple
+#b_inowlodz = castle
+#b_piatek = city
+#b_zgierz = city
+#b_uniejow = temple
+
+# Misc
+culture = polish
+religion = catholic
+
+# History
+

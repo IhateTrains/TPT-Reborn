@@ -1,0 +1,33 @@
+# 22 - Oxford
+
+# County Title
+title = c_oxford
+
+# Settlements
+max_settlements = 5
+b_reading  = castle
+b_oxford = city
+b_thame = temple
+
+#b_banbury = castle
+#b_witney = castle
+#b_kidlington = castle
+#b_watlington = castle
+
+# Misc
+culture = saxon
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_oxford = ct_wall_1
+	b_oxford = ct_wall_q_1
+	b_oxford = ct_marketplace_1
+	b_oxford = ct_militia_barracks_1
+	b_oxford = ct_university_1
+	b_oxford = ct_university_2
+	b_oxford = ct_jewish_community_1
+}
+
+1100.11.11 = { culture = english } 

@@ -1,0 +1,33 @@
+933.1.1={
+	holder=2220035 #Marino II di Gaeta
+	holding_dynasty = 12244 # di Gaeta
+	liege="d_gaeta"
+}
+
+960.1.1={
+	holder=2220036 #Giovanni II di Gaeta
+}
+
+990.1.1={
+	holder=2220037 #Giovanni III di Gaeta
+}
+
+1000.1.1={
+	holder=2220038 #Giovanni IV di Gaeta
+}
+
+1012.1.1={
+	holder=2220039 #Giovanni V di Gaeta
+}
+
+1039.1.1={
+	holder=0
+}
+
+1045.1.1={
+	holder=2220040 #Costantino III di Gaeta
+}
+
+1091.1.1={
+	holder=0
+}

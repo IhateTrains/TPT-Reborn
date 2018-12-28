@@ -1,0 +1,19 @@
+# 931 - Brodno
+
+# County Title
+title = c_brodno
+
+# Settlements
+max_settlements = 4
+
+b_rawa = castle
+#b_sochaczew = castle
+#b_bialapoland = temple
+#b_ostroleska = city
+b_jezow = city
+
+# Misc
+culture = polish
+religion = catholic
+
+# History

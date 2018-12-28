@@ -1,0 +1,474 @@
+decisions = {
+	
+    reform_succession = { 
+	    is_high_prio = yes
+	    potential = {
+	        age = 14
+		    OR = {
+		        religion_group = pagan_group
+	        	religion_group = baltic_pagan_group
+	          	religion_group = other_pagan_group
+		        culture_group = celtic 
+			}
+		    NOT = { 
+		        OR = { 
+			        AND = { 
+			            has_global_flag = celtic_reformation 
+				        culture_group = celtic
+				    }
+			        AND = { 
+			            has_global_flag = tengri_reformation 
+				        religion_group = other_pagan_group
+			    	}
+			        AND = { 
+			            has_global_flag = baltic_pagan_reformation 
+			        	religion_group = baltic_pagan_group
+			    	}
+			        AND = { 
+			            has_global_flag = pagan_reformation
+			        	religion_group = pagan_group
+			    	}
+			    }
+		    }
+	    }
+	    allow = {
+	        independent = yes
+            higher_tier_than = COUNT
+			prestige = 1500
+			stewardship = 10
+	    }
+		
+	    effect = { 
+		    character_event	= { id = pagan_reformation.1 }
+	    }
+			
+        ai_will_do = {
+		    factor = 0.25
+            modifier = {
+	    	    factor = 1.5
+	    	    year = 1100
+	    	}
+            modifier = {
+	        	factor = 1.5
+	         	year = 1200
+	    	}
+            modifier = {
+	           	factor = 1.5
+	         	year = 1300
+	    	}
+            modifier = {
+	          	factor = 1.5
+        		year = 1400
+    		}
+            modifier = {
+		        factor = 0.25
+		        trait = slothful
+	    	}
+            modifier = {
+	        	factor = 0.25
+	        	trait = zealous
+	    	}
+             modifier = {
+	        	factor = 0.1
+	        	trait = conservative
+	    	}
+            modifier = {
+	        	factor = 2
+	        	trait = reformer
+	    	}
+	    }
+    }
+          
+	abdicate = {
+		potential = {
+			any_dynasty_member = {
+				is_primary_heir = ROOT
+			}
+		}
+		allow = {
+			ai = no
+			NOT = { has_character_flag = wants_to_abdicate }
+			primary_title = { 
+				NOT = { has_law = succ_feudal_elective }
+			}
+		}
+		effect = {
+			set_character_flag = wants_to_abdicate
+			any_dynasty_member = {
+				limit = { is_primary_heir = ROOT }
+				character_event = { id = abdication.1 tooltip = "is the designated heir" }
+			}
+		}
+	}
+        
+    estabilish_exchequer_of_pleas = {
+	    is_high_prio = yes
+		potential = {
+            has_landed_title = k_england
+	    	NOT = { has_global_flag = exchequer_of_pleas }
+            year = 1200
+            culture = english
+		}
+		allow = {
+            scaled_wealth = 2.5	
+            piety = 150
+            prestige = 650	
+            age = 14
+		    prisoner = no	
+		}
+		effect = { 
+			   character_event = { id = edicts.1 }
+		}
+        ai_will_do = {
+			factor = 0.25
+            modifier = {
+				factor = 1.25
+				trait = philosopher
+			}
+            modifier = {
+				factor = 1.25
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 1.25
+				trait = just
+			}
+            modifier = {
+				factor = 0.25
+				trait = slothful
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 2.5
+				trait = reformer
+			}
+		}
+	}
+
+    estabilish_court_of_common_pleas = {
+	    is_high_prio = yes
+		potential = {
+            has_landed_title = k_england
+		    NOT = { has_global_flag = court_of_common_pleas } 
+            year = 1200
+            culture = english
+		}
+		allow = {
+            scaled_wealth = 3.0	
+            piety = 150
+            prestige = 750	
+            age = 14	
+		    prisoner = no
+		}
+		effect = { 
+			   character_event = { id = edicts.2 }
+		}
+        ai_will_do = { factor = 1 }
+	}
+
+    estabilish_exchequer_of_the_jews = {
+	    is_high_prio = yes
+		potential = {
+            has_landed_title = k_england
+	    	NOT = { has_global_flag = exchequer_of_the_jews }
+            has_global_flag = exchequer_of_pleas 
+            year = 1150
+            NOT = { culture = norman }
+		}
+		allow = {
+            piety = 150
+            prestige = 550	
+            age = 14	
+		    prisoner = no
+		}
+		effect = { 
+		    character_event = { id = edicts.5 }
+		}
+        ai_will_do = {
+			factor = 0.25
+            modifier = {
+				factor = 1.25
+				trait = philosopher
+			}
+            modifier = {
+				factor = 1.25
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 1.25
+				trait = just
+			}
+            modifier = {
+				factor = 0.25
+				trait = slothful
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 2.5
+				trait = reformer
+			}
+		}
+	}
+
+    estabilish_charter_of_the_forest = {
+	    is_high_prio = yes
+		potential = {
+            has_landed_title = k_england
+	    	any_realm_province = { NOT = { has_province_modifier = charter_of_the_forest } }
+            year = 1130
+            culture = english 
+            NOT = { trait = conservative }
+            NOT = { has_character_flag = forest_charter_enacted }
+		}
+		allow = {
+            scaled_wealth = 2.0	
+            piety = 150
+            prestige = 300
+            age = 14
+		    prisoner = no		
+		}
+		effect = { 
+		    character_event = { id = edicts.3 days = 0 }
+		}
+        ai_will_do = {
+			factor = 0.6
+            modifier = {
+				factor = 1.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 1.25
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = conservative
+			}
+		}
+	}
+
+    estabilish_magna_carta = {
+	    is_high_prio = yes
+		potential = {
+            has_landed_title = k_england
+		    NOT = { has_global_flag = magna_carta }
+            NOT = { trait = conservative }
+            NOT = { trait = ambitious }
+            year = 1200
+		}
+		allow = {
+            scaled_wealth = 1.0	
+            piety = 150
+            prestige = 500
+ 		    age = 14
+		    prisoner = no
+		}
+		effect = { 
+		character_event = { id = edicts.4 days = 0 }
+		}
+        ai_will_do = {
+		    	factor = 0.45
+                modifier = {
+				factor = 1.25
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = humble
+			}
+            modifier = {
+				factor = 0.15
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.15
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.15
+				trait = proud
+			}
+            modifier = {
+				factor = 0.15
+				trait = machiavellian
+			}
+		}
+	}
+
+    estabilish_statute_of_merton = {
+	    is_high_prio = yes
+			
+		potential = {
+            has_landed_title = k_england
+		    NOT = { has_global_flag = statute_of_merton }
+            year = 1150
+		}
+		allow = {
+            scaled_wealth = 3.5	
+            piety = 150
+            prestige = 650	
+            age = 14
+		    prisoner = no	
+		}
+		effect = { 
+		    character_event = { id = edicts.6 days = 0 }
+		}
+        ai_will_do = {
+			factor = 0.25
+            modifier = {
+				factor = 1.25
+				trait = philosopher
+			}
+            modifier = {
+				factor = 1.25
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 1.25
+				trait = just
+			}
+            modifier = {
+				factor = 0.25
+				trait = slothful
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 2.5
+				trait = reformer
+			}
+		}
+	}
+
+    estabilish_quia_emptores = {
+	    is_high_prio = yes
+		potential = {
+            has_landed_title = k_england
+		    NOT = { has_global_flag = quia_emptores }
+            year = 1280
+		}
+		allow = {
+            scaled_wealth = 3.5	
+            piety = 150
+            prestige = 650	
+            age = 14
+		    prisoner = no	
+		}
+		effect = { 
+			character_event = { id = edicts.7 days = 0 }
+		
+		}
+        ai_will_do = {
+			factor = 0.25
+            modifier = {
+				factor = 1.25
+				trait = philosopher
+			}
+            modifier = {
+				factor = 1.25
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 1.25
+				trait = just
+			}
+            modifier = {
+				factor = 0.25
+				trait = slothful
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 2.5
+				trait = reformer
+			}
+		}
+	}
+
+    coronation  = {
+		is_high_prio = yes
+		potential = {
+			is_feudal = yes
+			NOT = { has_character_flag = wants_coronation }
+			NOT = { trait = excommunicated }
+			independent = yes
+			religion = catholic
+			NOT = { is_heretic = yes }
+			NOT = { trait = incapable }
+			NOT = { trait = crowned_by_pope }
+			tier = EMPEROR
+		}
+		allow = {
+			prisoner = no
+			age = 14
+			prestige = 500
+			wealth = 1000
+			piety = 150
+			rightful_religious_head_scope = {
+				opinion = {
+					who = ROOT
+					value = 0
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = coronation_rejected
+					}
+				}
+			}
+							
+		}
+		effect = {
+			set_character_flag = wants_coronation
+			wealth = -1000
+            prestige = 150
+            piety = 100
+			character_event = { id = coronation.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

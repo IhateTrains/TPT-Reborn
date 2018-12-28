@@ -1,0 +1,20 @@
+# 980 - Goslar
+
+# County Title
+title = c_goslar
+
+# Settlements
+max_settlements = 3
+
+b_goslar = castle
+b_corvey = temple
+b_gottingen = city
+#b_northeim = castle
+
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+

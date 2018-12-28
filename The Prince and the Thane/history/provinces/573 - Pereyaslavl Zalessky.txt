@@ -1,0 +1,25 @@
+# 573 - Pereyaslavl Zalessky
+
+# County Title
+title = c_pereyaslavl_zalessky
+
+# Settlements
+max_settlements = 5
+
+b_pereyaslavlzalessky = castle
+b_nosivka = city
+b_baryshivska = temple
+b_pryluky = castle
+#b_yaroslavka = city
+#b_pyryatyn = city
+
+
+
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+

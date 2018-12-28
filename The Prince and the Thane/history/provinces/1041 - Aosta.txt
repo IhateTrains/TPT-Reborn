@@ -1,0 +1,25 @@
+# 1041 - Aosta
+
+# County Title
+title = c_aosta
+
+# Settlements
+max_settlements = 4
+
+b_fenisaosta = castle
+b_aosta = temple
+b_verresaosta = city
+
+#b_usselaosta = castle
+#b_saintvincentaosta = temple
+#b_saintpierreaosta = castle
+#b_chatillionaosta = city
+#b_challantaosta = city
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
+
+

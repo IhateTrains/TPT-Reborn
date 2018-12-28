@@ -1,0 +1,24 @@
+# 965 - Travunija
+
+# County Title
+title = c_travunija
+
+# Settlements
+max_settlements = 3
+
+b_travunija = castle
+#b_risan = castle
+#b_vrm = castle
+#b_lukavec = castle
+b_bileca = city
+#b_zasad = city
+#b_ledenica = city
+#b_granovo = temple
+#b_tvrdos = temple
+
+# Misc
+culture = serbian
+religion = catholic
+
+# History
+

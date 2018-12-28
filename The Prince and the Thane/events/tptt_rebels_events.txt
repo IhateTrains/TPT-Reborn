@@ -1,0 +1,1970 @@
+#############################################################
+#
+# The Prince and the Thane rebels events - written by idib816
+#
+#############################################################
+
+namespace = rebels
+
+province_event = {
+	id = rebels.0
+	desc = "EVTDESCrebels.0"
+	picture = "GFX_evt_peasants"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_province_modifier = brm_revolt }
+	}
+
+	option = {
+		name = "EVTOPTArebels.0"
+		hidden_tooltip = {
+			clr_province_flag = rebel_stack_spawned
+			clr_province_flag = brm_rebel_offer_rejected
+		}
+		add_province_modifier = {
+			name = brm_revolt
+			duration = 1095
+		}
+	}
+}
+
+###########################################
+# Buildings Destroyed
+###########################################
+
+# Rebels Destroy Random Building for Count
+province_event = {
+	id = rebels.2
+	desc = "EVTDESCrebels.2"
+	picture = "GFX_evt_burning_house"
+
+	trigger = {
+		# Revolting province
+		has_province_modifier = brm_revolt
+		
+		any_province_lord = {
+			any_demesne_title = {
+				location = {
+					province_id = ROOT
+				}
+				tier = baron
+				num_of_buildings = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 25
+		modifier = {
+			factor = 0.25
+			NOT = {
+				any_province_lord = {
+					any_demesne_title = {
+						location = {
+							province_id = ROOT
+						}
+						tier = baron
+						NOT = { controlled_by = e_rebels }
+					}
+				}
+			}			
+		}
+		modifier = {
+			factor = 0.5
+			owner = { trait = cruel }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 2
+			owner = { trait = deceitful }
+		}
+		modifier = {
+			factor = 0.15
+			owner = { NOT = { realm_martial = 15 } }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { NOT = { realm_martial = 20 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { realm_martial = 25 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { realm_martial = 30 } }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { trait = impaler }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { trait = kind }
+		}
+		modifier = {
+			factor = 2
+			owner = { trait = charitable }
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			random_province_lord = {
+				limit = {
+					any_demesne_title = {
+						location = {
+							province_id = ROOT
+						}
+						tier = baron
+						num_of_buildings = 1
+					}
+				}
+				set_character_flag = building_is_destroyed
+			}		
+		}
+	}
+	
+	option = {
+		name = "EVTOPTArebels.2"
+		trigger = { owner = { has_character_flag = building_is_destroyed } }
+		owner = {
+			random_demesne_title = {
+				limit = {
+					location = {
+						province_id = ROOT
+					}
+					tier = baron
+					num_of_buildings = 1
+				}
+				destroy_random_building = yes
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBrebels.2"
+		trigger = { NOT = { owner = { has_character_flag = building_is_destroyed } } }
+		random_province_lord = {
+			limit = {
+				any_demesne_title = {
+					location = {
+						province_id = ROOT
+					}
+					tier = baron
+					num_of_buildings = 1
+				}
+				has_character_flag = building_is_destroyed
+			}
+			character_event = { id = rebels.3 tooltip = EVTTOOLTIPrebels.3 days = 1 }
+		}
+	}
+}
+
+# Rebels Destroy Random Building for Baron
+character_event = {
+	id = rebels.3
+	desc = "EVTDESCrebels.3"
+	picture = "GFX_evt_burning_house"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTArebels.2"
+		random_demesne_title = {
+			limit = {
+				location = {
+					province_id = FROM
+				}
+				tier = baron
+				num_of_buildings = 1
+			}
+			destroy_random_building = yes
+		}
+	}
+}
+
+
+###########################################
+# Characters Killed / Maimed / Wounded
+###########################################
+# rebels.4-rebels.10
+
+# Rebels Kill Random Province Lord - Duke or above
+character_event = {
+	id = rebels.4
+	desc = "EVTDESCrebels.4"
+	picture = "GFX_evt_peasants"
+
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		primary_title = { higher_tier_than = COUNT }
+		in_command = no
+		# Revolting province
+		location = {
+			has_province_modifier = brm_revolt
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 25
+		modifier = {
+			factor = 5.0
+			NOT = { age = 14 }
+		}		
+		modifier = {
+			factor = 0.25
+			NOT = {
+				location = {
+					any_province_lord = {
+						any_demesne_title = {
+							location = {
+								province_id = PREVPREVPREV
+							}
+							tier = baron
+							NOT = { controlled_by = e_rebels }
+						}
+					}
+				}
+			}			
+		}
+		modifier = {
+			factor = 0.25
+			trait = cruel 
+		}
+		modifier = {
+			factor = 0.25
+			trait = arbitrary 
+		}
+		modifier = {
+			factor = 2.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = craven
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.25
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.5
+			trait = just
+		}
+		modifier = {
+			factor = 2.5
+			trait = kind 
+		}
+		modifier = {
+			factor = 2
+			trait = charitable 
+		}	
+		modifier = {
+			factor = 5
+			is_female = yes
+		}		
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			random_list = {
+				50 = { set_character_flag = character_killed_by_rebels }
+				25 = { set_character_flag = character_maimed_by_rebels }
+				25 = { set_character_flag = character_wounded_by_rebels }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTArebels.4"
+		trigger = { has_character_flag = character_killed_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { character_event = { id = rebels.8 days = 3 } }
+			}
+		}
+		death = { death_reason = death_rabble }
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTBrebels.4"
+		trigger = { has_character_flag = character_maimed_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { letter_event = { id = rebels.9 days = 3 } }
+			}
+		}
+		add_trait = maimed
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTCrebels.4"
+		trigger = { has_character_flag = character_wounded_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { letter_event = { id = rebels.10 days = 3 } }
+			}
+		}
+		add_trait = wounded
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+}
+
+# Rebels Kill Random Province Lord - Count
+character_event = {
+	id = rebels.5
+	desc = "EVTDESCrebels.4"
+	picture = "GFX_evt_peasants"
+
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		primary_title = { tier = COUNT }
+		in_command = no
+		# Revolting province
+		location = {
+			has_province_modifier = brm_revolt
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 30
+		modifier = {
+			factor = 5.0
+			NOT = { age = 14 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = {
+				location = {
+					any_province_lord = {
+						any_demesne_title = {
+							location = {
+								province_id = PREVPREVPREV
+							}
+							tier = baron
+							NOT = { controlled_by = e_rebels }
+						}
+					}
+				}
+			}			
+		}
+		modifier = {
+			factor = 0.25
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.25
+			trait = arbitrary 
+		}
+		modifier = {
+			factor = 2.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = craven
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.25
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.5
+			trait = just
+		}
+		modifier = {
+			factor = 2.5
+			trait = kind 
+		}
+		modifier = {
+			factor = 2
+			trait = charitable 
+		}	
+		modifier = {
+			factor = 5
+			is_female = yes
+		}			
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			random_list = {
+				50 = { set_character_flag = character_killed_by_rebels	}
+				25 = { set_character_flag = character_maimed_by_rebels }
+				25 = { set_character_flag = character_wounded_by_rebels }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTArebels.4"
+		trigger = { has_character_flag = character_killed_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { character_event = { id = rebels.8 days = 3 } }
+			}
+		}
+		death = { death_reason = death_rabble }
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTBrebels.4"
+		trigger = { has_character_flag = character_maimed_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { letter_event = { id = rebels.9 days = 3 } }
+			}
+		}
+		add_trait = maimed
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTCrebels.4"
+		trigger = { has_character_flag = character_wounded_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { letter_event = { id = rebels.10 days = 3 } }
+			}
+		}
+		add_trait = wounded
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+}
+
+# Rebels Kill Random Province Lord - Baron
+character_event = {
+	id = rebels.6
+	desc = "EVTDESCrebels.4"
+	picture = "GFX_evt_peasants"
+
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		# Revolting province
+		location = {
+			has_province_modifier = brm_revolt
+		}
+		primary_title = { tier = BARON }
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		years = 30
+		modifier = {
+			factor = 5.0
+			NOT = { age = 14 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = {
+				location = {
+					any_province_lord = {
+						any_demesne_title = {
+							location = {
+								province_id = PREVPREVPREV
+							}
+							tier = baron
+							NOT = { controlled_by = e_rebels }
+						}
+					}
+				}
+			}			
+		}		
+		modifier = {
+			factor = 0.25
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.25
+			trait = arbitrary 
+		}
+		modifier = {
+			factor = 2.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = craven
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.25
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.5
+			trait = just
+		}
+		modifier = {
+			factor = 2.5
+			trait = kind 
+		}
+		modifier = {
+			factor = 2
+			trait = charitable 
+		}	
+		modifier = {
+			factor = 5
+			is_female = yes
+		}	
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			random_list = {
+				50 = { set_character_flag = character_killed_by_rebels }
+				25 = { set_character_flag = character_maimed_by_rebels }
+				25 = { set_character_flag = character_wounded_by_rebels }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTArebels.4"
+		trigger = { has_character_flag = character_killed_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { character_event = { id = rebels.8 days = 3 } }
+			}
+		}
+		death = { death_reason = death_rabble }
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTBrebels.4"
+		trigger = { has_character_flag = character_maimed_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { letter_event = { id = rebels.9 days = 3 } }
+			}
+		}
+		add_trait = maimed
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTCrebels.4"
+		trigger = { has_character_flag = character_wounded_by_rebels }
+		hidden_tooltip = {
+			if = {
+				limit = { independent = no }
+				liege = { letter_event = { id = rebels.10 days = 3 } }
+			}
+		}
+		add_trait = wounded
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+}
+
+# Rebels Kill Random Province Character
+character_event = {
+	id = rebels.7
+	desc = "EVTDESCrebels.4"
+	picture = "GFX_evt_peasants"
+
+	trigger = {
+		is_ruler = no
+		in_command = no
+		prisoner = no
+		# Revolting province
+		location = {
+			has_province_modifier = brm_revolt
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 50
+		modifier = {
+			factor = 5.0
+			NOT = { age = 14 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				location = {
+					any_province_lord = {
+						any_demesne_title = {
+							location = {
+								province_id = PREVPREVPREV
+							}
+							tier = baron
+							NOT = { controlled_by = e_rebels }
+						}
+					}
+				}
+			}			
+		}		
+		modifier = {
+			factor = 0.25
+			trait = cruel 
+		}
+		modifier = {
+			factor = 0.25
+			trait = arbitrary 
+		}
+		modifier = {
+			factor = 2.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = craven
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.25
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.5
+			trait = just
+		}
+		modifier = {
+			factor = 2.5
+			trait = kind 
+		}
+		modifier = {
+			factor = 2
+			trait = charitable 
+		}	
+		modifier = {
+			factor = 5
+			is_female = yes
+		}	
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			random_list = {
+				50 = { set_character_flag = character_killed_by_rebels }
+				25 = { set_character_flag = character_maimed_by_rebels }
+				25 = { set_character_flag = character_wounded_by_rebels }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTArebels.4"
+		trigger = { has_character_flag = character_killed_by_rebels }
+		liege = { character_event = { id = rebels.8 days = 3 } }
+		death = { death_reason = death_rabble }
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTArebels.4"
+		trigger = { has_character_flag = character_maimed_by_rebels }
+		liege = { letter_event = { id = rebels.9 days = 3 } }
+		add_trait = maimed
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+	option = {
+		name = "EVTOPTArebels.4"
+		trigger = { has_character_flag = character_wounded_by_rebels }
+		liege = { letter_event = { id = rebels.10 days = 3 } }
+		add_trait = wounded
+		# Clear flags
+		clr_character_flag = character_killed_by_rebels
+		clr_character_flag = character_maimed_by_rebels
+		clr_character_flag = character_wounded_by_rebels
+	}
+}
+
+# Character killed
+character_event = {
+	id = rebels.8
+	desc = "EVTDESCrebels.8"
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTArebels.8"
+	}
+}
+
+# Character maimed
+letter_event = {
+	id = rebels.9
+	desc = "EVTDESCrebels.9"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTArebels.9"
+	}
+}
+
+# Character wounded
+letter_event = {
+	id = rebels.10
+	desc = "EVTDESCrebels.10"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTArebels.10"
+	}
+}
+
+
+###########################################
+# Rebel stack events
+###########################################
+
+province_event = {
+	id = rebels.11
+	desc = "EVTDESCrebels.11"
+	picture = GFX_evt_peasants
+	
+	trigger = {
+		has_province_modifier = brm_revolt
+		NOT = { has_province_flag = rebel_stack_spawned }
+	}
+
+	mean_time_to_happen = {
+		months = 480
+
+		modifier = {
+			factor = 2.5
+			owner = {
+				religion = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				culture = ROOT
+			}
+		}	
+		modifier = {
+			factor = 0.65
+			owner = {
+				NOT = { religion = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.85
+			owner = {
+				NOT = { culture = ROOT }
+			}
+		}	
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { religion_group = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				NOT = { culture_group = ROOT }
+			}
+		}	
+		modifier = {
+			factor = 0.75
+			has_province_flag = brm_rebel_offer_rejected
+		}
+		
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_intrigue = 35
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_intrigue = 30
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_intrigue = 25
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_intrigue = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_intrigue = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_intrigue = 10
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_stewardship = 35
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_stewardship = 30
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_stewardship = 25
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_stewardship = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_stewardship = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_stewardship = 10
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_martial = 35
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_martial = 30
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				realm_martial = 25
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_martial = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_martial = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				owner = {
+					realm_martial = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = { trait = cruel }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 2
+			owner = { trait = deceitful }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { trait = impaler }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { trait = kind }
+		}
+		modifier = {
+			factor = 2
+			owner = { trait = charitable }
+		}
+	}
+
+	immediate = {
+		if = { limit = { owner = { higher_tier_than = DUKE } }
+			random_list = {
+				45 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 1.5
+							troops = {
+								archers = { 10 10 }
+								light_infantry = { 20 20 }							
+							}
+						}
+					}
+				}
+				25 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 2.5
+							troops = {
+								archers = { 10 10 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 20 20 }
+							}
+						}
+					}
+				}
+				15 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 3.5
+							troops = {
+								archers = { 10 10 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 20 20 }
+							}
+						}
+					}
+				}				
+				10 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 4.5
+							troops = {
+								archers = { 15 15 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 25 25 }
+							}
+						}
+					}
+				}
+				5 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 5.5
+							troops = {
+								archers = { 15 15 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 25 25 }
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		if = { limit = { owner = { tier = DUKE } }
+			random_list = {
+				40 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 1.5
+							troops = {
+								archers = { 10 10 }
+								light_infantry = { 20 20 }							
+							}
+						}
+					}
+				}
+				35 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 2.5
+							troops = {
+								archers = { 10 10 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 20 20 }
+							}
+						}
+					}
+				}
+				25 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 3.5
+							troops = {
+								archers = { 10 10 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 20 20 }
+							}
+						}
+					}
+				}		
+			}
+		}
+		
+		if = { limit = { owner = { tier = COUNT } }
+			random_list = {
+				40 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 0.55
+							troops = {
+								archers = { 10 10 }
+								light_infantry = { 20 20 }							
+							}
+						}
+					}
+				}
+				35 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 0.85
+							troops = {
+								archers = { 10 10 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 20 20 }
+							}
+						}
+					}
+				}
+				25 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = prev
+						culture = prev
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							scaled_by_biggest_garrison = 1.25
+							troops = {
+								archers = { 10 10 }
+								light_cavalry = { 5 5 }
+								light_infantry = { 20 20 }
+							}
+						}
+					}
+				}		
+			}
+		}
+		# Flag so it doesn't happen in the same revolt
+		set_province_flag = rebel_stack_spawned
+		# Inform barons about the rebels
+		owner = {
+			set_character_flag = informed_about_rebels
+		}
+		any_province_lord = {
+			limit = {
+				NOT = { has_character_flag = informed_about_rebels }
+				ai = no
+			}
+			character_event = { id = rebels.13 days = 1 }
+		}
+		owner = {
+			clr_character_flag = informed_about_rebels
+		}
+	}
+	
+	
+	option = {
+		name = "Argh!"
+	}
+}
+
+# Liege notified
+character_event = {
+	id = rebels.13
+	desc = "EVTDESCrebels.13"
+	picture = GFX_evt_peasants
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+	}
+}
+
+# Revolters negotiation
+province_event = {
+	id = rebels.30
+	desc = "EVTDESCrebels.30"
+	picture = "GFX_evt_emissary"
+	
+	trigger = {
+		has_province_modifier = brm_revolt
+		NOT = { has_province_flag = rebel_stack_spawned }
+		OR = {
+			NOT = { has_province_flag = brm_rebel_offer_rejected }
+			had_province_flag = {
+				flag = brm_rebel_offer_rejected
+				days = 18250
+			}
+		}
+		NOT = {
+			any_province_lord = {
+				any_demesne_title = {
+					location = {
+						province_id = ROOT
+					}
+					tier = baron
+					controlled_by = e_rebels
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.75
+			owner = {
+				realm_diplomacy = 35
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				realm_diplomacy = 30
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				realm_diplomacy = 25
+			}
+		}
+		modifier = {
+			factor = 3
+			NOT = {
+				owner = {
+					realm_diplomacy = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			NOT = {
+				owner = {
+					realm_diplomacy = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			NOT = {
+				owner = {
+					realm_diplomacy = 5
+				}
+			}
+		}
+	}	
+	option = {
+		name = "EVTOPTArebels.30"
+		ai_chance = {
+			factor = 20
+			
+			modifier = {
+				factor = 2
+				owner = {
+					trait = kind
+				}
+			}
+			modifier = {
+				factor = 5
+				owner = {
+					trait = craven
+				}
+			}
+			modifier = {
+				factor = 0.75
+				owner = {
+					trait = cruel
+				}
+			}
+			modifier = {
+				factor = 0.5
+				owner = {
+					trait = greedy
+				}
+			}
+		}
+		
+		owner = {
+			wealth = -10
+			prestige = -10
+		}
+
+		remove_province_modifier = brm_revolt
+		add_province_modifier = {
+			name = brm_reduced_tax
+			duration = 3650 # 10 years
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBrebels.30"
+		ai_chance = {
+			factor = 10
+		}
+		
+		set_province_flag = brm_rebel_offer_rejected
+	}
+}
+
+# Marshal suppresses revolt
+character_event = {
+	id = rebels.31
+	title = "EVTNAMErebels.31"
+	desc = "EVTDESCrebels.31"
+	picture = "GFX_evt_large_army"
+	
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_assist_arrest
+		location = {
+			has_province_modifier = brm_revolt
+			owner = {
+				job_marshal = {
+					character = ROOT
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 32
+		
+		modifier = {
+			factor = 1.1
+			liege = { ai = no }
+			NOT = { difficulty = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			liege = { ai = no }
+			NOT = { difficulty = 2 }
+		}	
+		modifier = {
+			factor = 0.9
+			liege = { ai = no }
+			difficulty = 3
+		}
+		modifier = {
+			factor = 0.9
+			liege = { ai = no }
+			difficulty = 4
+		}
+		modifier = {
+			factor = 3.0
+			liege = { ai = yes }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 100 }
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 1 }
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 5 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 7 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.85
+			martial = 11
+		}		
+		modifier = {
+			factor = 0.85
+			martial = 12
+		}	
+		modifier = {
+			factor = 0.85
+			martial = 13
+		}	
+		modifier = {
+			factor = 0.85
+			martial = 14
+		}	
+		modifier = {
+			factor = 0.85
+			martial = 15
+		}
+		modifier = {
+			factor = 0.85
+			martial = 16
+		}
+		modifier = {
+			factor = 0.85
+			martial = 17
+		}	
+		modifier = {
+			factor = 0.85
+			martial = 18
+		}
+		modifier = {
+			factor = 0.85
+			martial = 19
+		}
+		modifier = {
+			factor = 0.85
+			martial = 20
+		}
+		modifier = {
+			factor = 0.85
+			martial = 21
+		}
+		modifier = {
+			factor = 0.85
+			martial = 22
+		}
+		modifier = {
+			factor = 0.85
+			martial = 23
+		}
+		modifier = {
+			factor = 0.85
+			martial = 24
+		}
+		modifier = {
+			factor = 0.85
+			martial = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTArebels.31"
+		
+		prestige = 15
+		liege = { letter_event = { id = rebels.32 days = 7 tooltip = "EVTTOOLTIPrebels.32" } }
+		location = {
+			remove_province_modifier = brm_revolt
+		}
+	}
+}
+
+# Liege gets a letter about revolt being suppressed
+letter_event = {
+	id = rebels.32
+	desc = "EVTDESCrebels.32"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTArebels.32"
+		tooltip = {
+			FROM = {
+				location = {
+					remove_province_modifier = brm_revolt
+				}			
+			}
+		}
+	}
+}
+
+# Rebels Drive Out Jews
+character_event = {
+	id = rebels.33
+	desc = "EVTDESCrebels.33"
+	picture = "GFX_evt_peasants"
+
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		# Revolting province
+		any_demesne_title = {
+			has_building = ct_jewish_community_1
+			location = {
+				has_province_modifier = brm_revolt
+			}
+		}
+		primary_title = { tier = BARON }
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		years = 30		
+		modifier = {
+			factor = 0.5
+			any_demesne_title = {
+				has_building = ct_jewish_community_1
+				location = {
+					has_province_modifier = brm_revolt
+				}
+				controlled_by = e_rebels
+			}		
+		}		
+	}
+	
+	option = {
+		name = "EVTOPTArebels.33"
+		random_demesne_title = {
+			limit = {
+				has_building = ct_jewish_community_1
+				location = {
+					has_province_modifier = brm_revolt
+				}
+			}
+			if = {
+				limit = { 
+					has_building = ct_jewish_community_1 
+					NOT = { has_building = ct_jewish_community_2 }
+					NOT = { has_building = ct_jewish_community_3 }
+				}
+				remove_building = ct_jewish_community_1
+			}			
+			if = {
+				limit = { 
+					has_building = ct_jewish_community_2 
+					NOT = { has_building = ct_jewish_community_3 }
+				}
+				remove_building = ct_jewish_community_2
+			}			
+			if = {
+				limit = { 
+					has_building = ct_jewish_community_3 
+				}
+				remove_building = ct_jewish_community_3
+			}
+		}	
+		if = {
+			limit = { independent = no }
+			liege = {
+				character_event = { id = rebels.34 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = rebels.34
+	desc = "EVTDESCrebels.34"
+	picture = "GFX_evt_peasants"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTArebels.34"
+		piety = -50
+		prestige = -25
+	}
+}
+
+# Rebels completely got the hold of the province, and installed a new ruler
+character_event = {
+	id = rebels.35
+	desc = "EVTDESCrebels.35"
+	picture = "GFX_evt_peasants"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    FROM = {
+		    county = {
+			    holder_scope = {
+				    character = ROOT
+				}
+			}
+			any_province_lord = {
+				any_demesne_title = {
+					location = FROM
+					tier = baron
+					controlled_by = e_rebels
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "DAMN!"
+		create_random_soldier = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = FROM
+			culture = FROM
+		}	
+		hidden_tooltip = {
+		    liege = {
+			    character_event = {
+				    id = rebels.36
+				}
+			}
+		}
+		new_character = {
+			add_character_modifier = { name = "crusade_timer" duration = 3650 }
+			FROM = {
+				county = {				
+					usurp_title_plus_barony_if_unlanded = PREVPREV
+					hidden_tooltip = {
+						any_de_jure_vassal_title = {
+							usurp_title_plus_barony_if_unlanded = PREVPREVPREV
+						}
+					}					
+				}
+			}
+			set_defacto_liege = ROOT
+		}		
+	}
+}
+
+# Liege notified
+character_event = {
+	id = rebels.36
+	desc = "EVTDESCrebels.36"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They better swear fealty to their righteous liege.."
+		prestige = -10
+	}
+}
+
+###########################################
+# Province Defection Events
+###########################################
+
+# Province defects
+# Isolated province
+province_event = {
+	id = 80062
+	desc = "EVTDESC80062"
+	picture = GFX_evt_peasants
+	
+	trigger = {
+		NOT = { has_global_flag = possible_province_defection }
+		# Rebel occupied
+		NOT = {
+			any_province_lord = {
+				any_demesne_title = {
+					location = {
+						province_id = ROOT
+					}
+					tier = baron
+					NOT = { controlled_by = e_rebels }
+				}
+			}
+		}
+		# Not for those in an independence war
+		owner = {
+			top_liege = {
+				independent = yes
+			}
+		}
+		# Not a player's last province
+		owner = {
+			OR = {
+				ai = yes
+				AND = {
+					ai = no
+					any_demesne_province = {
+						NOT = { province_id = ROOT }
+					}
+				}
+			}
+
+		}
+		# No neighbor province from same realm
+		NOT = {
+			any_neighbor_province = {
+				owner = {
+					top_liege = {
+						ROOT = {
+							owner = {
+								top_liege = {
+									character = PREVPREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		# Not the only province in the realm
+		owner = {
+			top_liege = {
+				any_realm_province = {
+					NOT = { province_id = ROOT }
+				}
+			}
+		}
+		# Not a single-province island
+		any_neighbor_province = {
+			is_land = yes
+		}
+		# Not a coastal province
+		port = no		
+		# Not if part of de jure duchy held by someone in same top realm
+		NOT = {
+			duchy = {
+				holder_scope = {
+					top_liege = {
+						ROOT = {
+							owner = {
+								top_liege = {
+									character = PREVPREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_tooltip = {
+			set_global_flag = possible_province_defection
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA20172"
+		hidden_tooltip = {
+			owner = {
+				set_character_flag = defected_from
+			}
+		}
+		county = {
+			rebel_defection = yes
+		}
+		hidden_tooltip = {
+			province_event = { id = 80058 days = 3 }
+			clear_revolt = yes
+		}
+	}
+}
+
+# Province defects to new ruler
+province_event = {
+	id = 80058
+	desc = "EVTDESC80058"
+	picture = GFX_evt_peasants
+	
+	show_from_from = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA80058"
+		hidden_tooltip = {
+			owner = {
+				any_independent_ruler = {
+					any_realm_character = {
+						limit = { has_character_flag = defected_from }
+						# Liege is topliege
+						if = {
+							limit = {
+								liege = { character = PREVPREV }
+							}
+							liege = { character_event = { id = 80057 days = 3 } }
+						}
+						# Liege is not topliege
+						if = {
+							limit = {
+								liege = { NOT = { character = PREVPREV } }
+							}
+							liege = { character_event = { id = 80057 days = 3 } }
+							top_liege = { character_event = { id = 80057 days = 3 } }
+						}
+						clr_character_flag = defected_from
+					}
+				}
+			}
+			clr_global_flag = possible_province_defection
+		}
+	}
+}
+
+# Liege notified
+character_event = {
+	id = 80057
+	desc = "EVTDESC80057"
+	picture = GFX_evt_peasants
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA80054"
+	}
+}

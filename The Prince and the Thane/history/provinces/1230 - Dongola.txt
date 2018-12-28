@@ -1,0 +1,15 @@
+# 1230 - Dongola
+
+# County Title
+title = c_dongola
+
+# Settlements
+max_settlements = 1
+
+b_oasis973 = city
+
+# Misc
+culture = ethiopian
+religion = monophysite
+
+# History

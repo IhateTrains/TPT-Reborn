@@ -1,0 +1,284 @@
+italian_group = {
+	graphical_culture = westerngfx
+
+	central_italian = {
+		graphical_culture = occitangfx
+		
+		color = { 0.7 0.9 0.1 }
+
+		male_names = {
+		    Adriano_Adrian Agostino_Agustin Alamanno 
+			Albano_Alban Alessandro_Alexander Anastasio Andrea_Andrew
+	        Antonino_Antoninus Antonio_Antoninus Augusto_Augustin Aurelio_Aurelius Ausilio 
+		    Bartolomeo_Bartolomeus Basilio_Basil Benedetto_Benedict Bernardo_Bernard Bonifacio_Bonifacius Bruno Bruto Cencio
+			Camillo_Camillus Carlo_Charles Cassio Catone Cesare_Ceasar Claudio_Claudius Clemente_Clement
+			Comita Cornelio_Cornelius Corrado_Konrad Cosma Costantino Cristoforo_Christopher 
+			Damiano_Damian Edoardo_Edward Enrico_Henry Eugenio_Eugene Federico_Frederick
+			Felice_Felix Filippo_Philip Flavio Folco_Folke Francesco_Francis Gabriele_Gabriel
+		    Giacomo_James Giano_John Gilberto_Gilbert Giorgio_George Giovanni_John Giulio_Jules Giuseppe_Joseph Goffredo_Godfrey 
+			Gregorio_Gregory Iacopo_Jacob Innocenzo_Innocent Lamberto_Lambert 
+		    Leonardo_Leonard Leone_Leo Leo_Leo Livio Lodovico Lorenzo_Lawrence Luca_Luke Lucio_Lucius Luigi_Louis
+			Marco_Marcus Mariano_Marius Mario_Marius Martino_Martin Massimo_Maximilian Matteo_Matthew Michele_Michael Nicola_Nicholas
+		    Onorio Pancrazio Paolo_Paul Patrizio_Patrick Pietro_Peter Raimondo_Raymond 
+			Riccardo_Richard Rinaldo_Reinhold Roberto_Robert Salinguerra Sciarra Sebastiano_Sebastian Sergio_Sergius 
+			Settimio Silvestro_Sylvester Simone_Simon Stefano_Stephen Tommaso_Thomas Torquato Urbano Vittorio 
+		}
+		
+		female_names = {
+		    Agnese_Agnes Alfonsina_Alphonsine Aloisia_Alice
+		    Anastasia_Anastasia Anna_Anna Ausilia Beatrice_Beatrice Benedetta_Benedicta
+		    Bianca_Blanche Camilla Carla Caterina_Catherine Cecilia_Cecilia Clara_Clara Chiara_Clara Claudia 
+		    Constanza_Constance Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Elisabetta_Elisabeth
+			Eva_Eve Flavia Flora_Flora Fortunata Francesca_Francesca Ginevra Giulia_Juliana 
+		    Ippolita Isabella_Elisabeth Laura_Laura Lavinia Livia Lodovica Lucia_Lucia Lucrezia 
+			Margherita_Margaret Maria_Maria Matilda_Matilda Paola_Paula Paolina_Paula Patrizia_Patricia Ricciarda_Ricarda
+			Sofia_Sophia Stefania_Stephania Teodora
+		}
+		
+		from_dynasty_prefix = "di "
+
+		modifier = italian_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+        }
+	
+	southern_italian = {
+		graphical_culture = southerngfx
+		second_graphical_culture = occitangfx # Fallback type
+		
+		color = { 0.8 0.1 0.1 }
+
+		male_names = { 
+		    Alessandro_Alexander Alessio Alvise Anastasio Andrea_Andrew Angelo_Angel 
+	        Antonino_Antoninus Antonio_Antoninus Augusto Aurelio_Aurelius  
+		    Baldovino_Baldwin Barnaba Bartolomeo_Bartolomeus Basilio_Basil Benedetto_Benedict Bernardo_Bernard Bonifacio_Bonifacius Bruno
+			Buoso Camillo_Camillus Carlo_Charles Clemente_Clement Cornelio_Cornelius Corrado_Konrad 
+			Damiano_Damian Davide_David Demetrio_Demetrius Dioniso_Dionysus Edoardo_Edward Emanuele_Manuel Enrico_Henry Eugenio_Eugene Federigo_Frederick
+			Felice_Felix Ferdinando_Ferdinand Filippo_Philip Folco_Folke Francesco_Francis
+		    Gastone_Gaston Gelasio Geraldo_Gerald Gerardo_Gerard Giacomo_James Gilberto_Gilbert Giordano Giorgio_George Giovanni_John Giulio_Jules Giuseppe_Joseph Goffredo_Godfrey 
+			Gregorio_Gregory Gualtiero_Walter Guglielmo_William Guido_Guy Guidone_Guy Lamberto_Lambert 
+		    Leonardo_Leonard Leopoldo Lorenzo_Lawrence Luca_Luke Luigi_Louis Manfredi_Manfred Manfredo_Manfred
+			Marco_Marcus Mario_Marius Martino_Martin Michele_Michael Nicola_Nicholas
+		    Paolo_Paul Pasquale_Pascal Patrizio_Patrick Pietro_Peter Raimondo_Raymond  
+			Riccardo_Richard Rinaldo_Reinhold Roberto_Robert Rolando_Roland Ruggiero_Roger Salvatore Sante_Sancho Sebastiano_Sebastian Silvestro_Sylvester Simone_Simon 
+	        Stefano_Stephen Stentore Tommaso_Thomas Tommasi_Thomas Ugo_Hugh Umberto_Humbert Valentino_Valentin Vincenzo_Vincent 
+		}
+		
+		female_names = {
+		    Adelaida_Adelaide Adelia_Adela Agnese_Agnes Alfonsina_Alphonsine Alisia_Alice
+			Amalia_Amelia Anastasia_Anastasia Angela Anna_Anna Beatrice_Beatrice Benedetta_Benedicta
+		    Bianca_Blanche Bona_Bonne Camilla Caterina_Catherine Cecilia_Cecilia Clara_Clara Chiara_Clara Claudia 
+		    Constanza_Constance Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Elisabetta_Elisabeth
+			Eva_Eve Filippa_Philippa Flavia Flora_Flora Fortunata Francesca_Francesca Ginevra Giulia_Juliana 
+		    Ippolita Isabella_Elisabeth Laura_Laura Lavinia Livia Lodovica Lucia_Lucia Lucrezia Maddalena_Magdalena 
+			Margherita_Margaret Maria_Maria Martina Matilda_Matilda Paola_Paula Paolina_Paula Patrizia_Patricia Ricciarda_Ricarda
+			Sofia_Sophia Stefania_Stephania Violante_Yolanda
+		}
+		from_dynasty_prefix = "di "
+
+		modifier = italian_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	
+	tuscan = {
+		graphical_culture = occitangfx
+		
+		color = { 0.6 0.1 0.1 }
+
+		male_names = {
+			Abbondanzio Abelino Adelmo Aimone 
+		    Aldobrandino Alessandro_Alexander Alighiero Alvise Andrea_Andrew 
+	        Anselmo_Anselm Antonino_Antoninus Antonio_Antoninus Arcibaldo_Archibald Ascanio Astorre Aurelio_Aurelius Ausilio Ausonio Baldassarre 
+		    Baldovino_Baldwin Barnaba Bartolomeo_Bartolomeus Basilio_Basil Bassiano Beltrano Benedetto_Benedict Benvenuto Berardo Bernabò_Bernard Bernardo_Bernard Bertoldo Bonaventura Bonifacio_Bonifacius Buonconte
+			Buoso Callisto Camillo_Camillus Candido Cangrande Carlo_Charles Cecco_Francis Cesare Chiaffredo Chiano Claudio Clemente_Clement
+			Comita Conone Cornelio_Cornelius Corradino_Konrad Corrado_Konrad Costante Costantino Costanzo Cristoforo_Christopher 
+			Damiano_Damian Davide_David Domenico_Dominic Durante_Durante Edoardo_Edward Emanuele_Manuel Enrico_Henry Eugenio_Eugene Ezzelino Federigo_Frederick
+			Felice_Felix Ferdinando_Ferdinand Filippo_Philip Fiorello Flavio Folco_Folke Fosco Francesco_Francis Gabriele_Gabriel Gaetano Galeazzo
+		    Geraldo_Gerald Gerardo_Gerard Giacomo_James Gianleone Giano_John Gilberto_Gilbert Giorgio_George Giovanni_John Giulio_Jules Giuseppe_Joseph 
+			Gregorio_Gregory Guigliadore Igino Ildeprando_Hildebrand Innocenzo Ippolito Jacopo_Jacob Lamberto_Lambert Landone
+		    Leonardo_Leonard Leone_Leo Livio Lodovico Lorenzo_Lawrence Luca_Luke Lucio_Lucius Luigi_Louis Manfredo Manuele_Manuel
+			Marco_Marcus Mariano_Marius Marino Mario_Marius Martino_Martin Matteo_Matthew Merigo Michelangelo Michele_Michael Nazareno Nestore Niccolò_Nicholas Nicola_Nicholas
+		    Ottone_Otto Paolo_Paul Patrizio_Patrick Pietro_Peter Raimondo_Raymond 
+			Riccardo_Richard Rinaldo_Reinhold Roberto_Robert Salinguerra Sciarra Sebastiano_Sebastian Severino Silvestro_Sylvester Simone_Simon 
+	        Stefano_Stephen Stentore Tibaldo_Theobald Tommaso_Thomas Ugo_Hugh Ugoccione_Hugh Ugolino_Hugh Urbano Valentino_Valentin Vittorio 
+		}
+		
+		female_names = {
+		    Adelaida_Adelaide Adelia_Adela Agnese_Agnes Aloisia_Alice
+		    Anastasia_Anastasia Anna_Anna Ausilia Ausonia Beatrice_Beatrice Benedetta_Benedicta
+		    Bianca_Blanche Bona_Bonne Camilla Carla Caterina_Catherine Cecilia_Cecilia Chiara_Clara Claudia 
+		    Constanza_Constance Cornelia Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Elisabetta_Elisabeth
+		    Francesca_Francesca Ginevra Giulia_Juliana 
+		    Isabella_Elisabeth Laura_Laura Lodovica Lucia_Lucia Lucrezia Maddalena_Magdalena 
+			Margherita_Margaret Maria_Maria Martina Matilda_Matilda Paola_Paula Paolina_Paula Patrizia_Patricia Ricciarda_Ricarda
+			Sofia_Sophia Stefania_Stephania
+		}
+		from_dynasty_prefix = "di "
+
+		modifier = italian_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	
+	ligurian = {
+		graphical_culture = occitangfx
+		
+		color = { 0.6 0.9 0.5 }
+
+		male_names = {
+		    Alberto_Albert Alessandro_Alexander Alessio Andrea_Andrew Angelo_Angel 
+	        Annibale Anselmo_Anselm Antonino_Antoninus Antonio_Antoninus Aurelio_Aurelius 
+		    Bartolomeo_Bartolomeus Basilio_Basil Benedetto_Benedict Bernabò_Bernard Bernardo_Bernard Bonifacio_Bonifacius
+		    Camillo_Camillus Carlo_Charles Claudio Clemente_Clement
+		    Cornelio_Cornelius Corrado_Konrad Costantino Cristoforo_Christopher 
+			Damiano_Damian Davide_David Domenico_Dominic Edoardo_Edward Enrico_Henry Ettore Eugenio_Eugene Ezzelino Federigo_Frederick
+			Felice_Felix Ferdinando_Ferdinand Filippo_Philip Folco_Folke Francesco_Francis Gabriele_Gabriel Gaetano
+		    Gastone_Gaston Geraldo_Gerald Gerardo_Gerard Giacomo_James Giano_John Gilberto_Gilbert Giordano_Jordan Giorgio_George 
+			Giovanni_John Giulio_Jules Giuseppe_Joseph 
+			Gregorio_Gregory Guigliadore Iacopo_Jacob Lamberto_Lambert Lanfranco
+		    Leonardo_Leonard Leone_Leo Leopoldo Lodovico Lorenzo_Lawrence Luca_Luke Lucio_Lucius Luigi_Louis Manfredo
+			Marco_Marcus Mariano_Marius Mario_Marius Martino_Martin Massimo Matteo_Matthew Michele_Michael Niccolò_Nicholas
+		    Orlando Paolo_Paul Patrizio_Patrick Pietro_Peter Raimondo_Raymond 
+			Riccardo_Richard Rinaldo_Reinhold Roberto_Robert Rolando_Roland Ruggiero_Roger Sebastiano_Sebastian Sergio Silvestro_Sylvester Simone_Simon 
+	        Stefano_Stephen Tommaso_Thomas Ugo_Hugh Umberto_Humbert Valentino_Valentin Vittorio_Victor
+		}
+		
+		female_names = {
+		    Agnese_Agnes Alfonsina_Alphonsine Alisia_Alice Aloisia_Alice
+		    Anastasia_Anastasia Angela Anna_Anna Ausilia Ausonia Beatrice_Beatrice Benedetta_Benedicta
+		    Bianca_Blanche Camilla Carla Caterina_Catherine Cecilia_Cecilia Clara_Clara Chiara_Clara Claudia 
+		    Constanza_Constance Cornelia Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Elisabetta_Elisabeth
+			Eva_Eve Filippa_Philippa Flavia Fortunata Francesca_Francesca Ginevra Giulia_Juliana 
+		    Ippolita Isabella_Elisabeth Laura_Laura Lavinia Livia Lodovica Lucia_Lucia Lucrezia Maddalena_Magdalena 
+			Margherita_Margaret Maria_Maria Martina Matilda_Matilda Paola_Paula Paolina_Paula Patrizia_Patricia Ricciarda_Ricarda
+			Sofia_Sophia Stefania_Stephania
+		}
+		from_dynasty_prefix = "di "
+
+		modifier = italian_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+    }
+
+	italian = {
+		graphical_culture = germangfx
+		
+		color = { 0.1 0.7 0.1 }
+
+		male_names = {
+		    Abelardo Adalberto_Albert 
+		    Alberico_Alberic Alberto_Albert Alboino_Alwin Aleardo Alessandro_Alexander Ambrogio Andrea_Andrew
+	        Anselmo_Anselm Antonino_Antoninus Antonio_Antoninus Arderico_Alberic Azzo_Atto Azzone_Atto 
+		    Baldovino_Baldwin Bartolomeo_Bartolomeus Benedetto_Benedict Bernabò_Bernard Bernardo_Bernard Bertoldo_Berthold 
+			Bonaventura Bonifacio_Bonifacius Buoso Camillo_Camillus Cangrande Carlo_Charles Castore Chiaffredo
+		    Cornelio_Cornelius Corradino_Konrad Corrado_Konrad Edoardo_Edward Enrico_Henry Eugenio_Eugene Federigo_Frederick
+			Felice_Felix Ferdinando_Ferdinand Filippo_Philip Folco_Folke Francesco_Francis Gabriele_Gabriel
+		    Geraldo_Gerald Gherardo_Gerard Gherardino_Gerard Giacomo_James Giorgio_George Giovanni_John Giulio_Jules Giuseppe_Joseph Goffredo_Godfrey 
+			Gregorio_Gregory Gualtiero_Walter Guido_Guy Guidone_Guy Guigliadore Ildeprando_Hildebrand Iacopo_Jacob Lamberto_Lambert Landolfo_Landolf Lattanzio
+		    Leonardo_Leonard Leone_Leo Lodovico_Ludovic Ludovigo_Ludovic Lorenzo_Lawrence Luca_Luke Lucio_Lucius Luigi_Louis Manfredo_Manfred Manuele_Manuel
+			Marco_Marcus Mario_Marius Martino_Martin Matteo_Matthew Michele_Michael Niccolò_Nicholas
+		    Oberto Obizzo Oddone Ottone_Otto Paolo_Paul Patrizio_Patrick Pericle Pietro_Peter Raimondo_Raymond 
+			Riccardo_Richard Rinaldo_Reinhold Roberto_Robert Rolando_Roland Salinguerra Sebastiano_Sebastian Serafino Silvestro_Sylvester Simone_Simon 
+	        Sigfrido_Sigfried Stefano_Stephen Teodoro Tibaldo_Theobald Tommaso_Thomas Ugo_Hugh Umberto_Humbert Valentino_Valentin Vincenzo_Vincent 
+		}
+		
+		female_names = {
+		    Adelaida_Adelaide Adelia_Adela Agnese_Agnes Alfonsina_Alphonsine Alisia_Alice Aloisia_Alice
+		    Anastasia_Anastasia Angela Anna_Anna Augusta Ausilia Ausonia Beatrice_Beatrice Benedetta_Benedicta
+		    Bianca_Blanche Bona_Bonne Camilla Carla Caterina_Catherine Cecilia_Cecilia Clara_Clara Chiara_Clara Claudia 
+		    Constanza_Constance Cornelia Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Elisabetta_Elisabeth
+			Eva_Eve Filippa_Philippa Flavia Flora_Flora Fortunata Francesca_Francesca Ginevra Giulia_Juliana 
+		    Ippolita Isabella_Elisabeth Laura_Laura Lavinia Livia Lodovica Lucia_Lucia Lucrezia Maddalena_Magdalena 
+			Margherita_Margaret Maria_Maria Mariana Martina Matilda_Matilda Paola_Paula Paolina_Paula Patrizia_Patricia Ricciarda_Ricarda
+			Sofia_Sophia Stefania_Stephania Violante_Yolanda
+		}
+		from_dynasty_prefix = "di "
+
+		modifier = italian_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+        }
+		
+	venetian = {
+		graphical_culture = germangfx
+		
+		color = { 0.1 0.5 0.9 }
+
+		male_names = {
+		    Alberto_Albert Alessandro_Alexander Alessio Andrea_Andrew Angelo_Angel 
+	        Anselmo_Anselm Antonino_Antoninus Antonio_Antoninus Aurelio_Aurelius 
+		    Bartolomeo_Bartolomeus Basilio_Basil Benedetto_Benedict Benvenuto Bernabò_Bernard Bernardo_Bernard Bonifacio_Bonifacius Buonconte
+		    Camillo_Camillus Cangrande Carlo_Charles Claudio Clemente_Clement
+		    Cornelio_Cornelius Corrado_Konrad Costantino Cristoforo_Christopher 
+			Damiano_Damian Davide_David Domenico_Dominic Durante_Durante Edoardo_Edward Enrico_Henry Ettore Eugenio_Eugene Ezzelino Federigo_Frederick
+			Felice_Felix Ferdinando_Ferdinand Filippo_Philip Flavio Folco_Folke Francesco_Francis Gabriele_Gabriel Gaetano
+		    Gastone_Gaston Geraldo_Gerald Gerardo_Gerard Giacomo_James Giano_John Gilberto_Gilbert Giordano_Jordan Giorgio_George 
+			Giovanni_John Giulio_Jules Giuseppe_Joseph Goffredo_Godfrey 
+			Gregorio_Gregory Guigliadore Iacopo_Jacob Jacopo_Jacob Lamberto_Lambert Lanfranco Lazzaro
+		    Leonardo_Leonard Leone_Leo Leopoldo Livio Lodovico Lorenzo_Lawrence Luca_Luke Lucio_Lucius Luigi_Louis Manfredo
+			Marco_Marcus Mariano_Marius Mario_Marius Martino_Martin Massimo Matteo_Matthew Merigo Michelangelo Michele_Michael Niccolò_Nicholas
+		    Orlando Paolo_Paul Patrizio_Patrick Pietro_Peter Raimondo_Raymond Raniero 
+			Riccardo_Richard Rinaldo_Reinhold Roberto_Robert Rodolfo_Rudolph Rolando_Roland Ruggiero_Roger Sebastiano_Sebastian Sergio Silvestro_Sylvester Simone_Simon 
+	        Stefano_Stephen Tommaso_Thomas Ugo_Hugh Umberto_Humbert Valentino_Valentin Vittorio_Victor
+		}
+		
+		female_names = {
+		    Agnese_Agnes Alfonsina_Alphonsine Alisia_Alice Aloisia_Alice
+		    Anastasia_Anastasia Angela Anna_Anna Ausilia Ausonia Beatrice_Beatrice Benedetta_Benedicta
+		    Bianca_Blanche Camilla Carla Caterina_Catherine Cecilia_Cecilia Clara_Clara Chiara_Clara Claudia 
+		    Constanza_Constance Cornelia Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Elisabetta_Elisabeth
+			Eva_Eve Filippa_Philippa Flavia Fortunata Francesca_Francesca Ginevra Giulia_Juliana 
+		    Ippolita Isabella_Elisabeth Laura_Laura Lavinia Livia Lodovica Lucia_Lucia Lucrezia Maddalena_Magdalena 
+			Margherita_Margaret Maria_Maria Martina Matilda_Matilda Paola_Paula Paolina_Paula Patrizia_Patricia Ricciarda_Ricarda
+			Sofia_Sophia Stefania_Stephania
+		}
+		from_dynasty_prefix = "di "
+
+		modifier = italian_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+    }
+}

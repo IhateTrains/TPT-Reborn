@@ -1,0 +1,1664 @@
+############################################################################
+#
+# The Prince and the Thane relationship events - written by idib816 and avee
+#
+############################################################################
+
+character_event = {
+	id = family_relations.0
+	desc = "AI_EVENT"
+	picture = "GFX_evt_family"
+	
+	trigger = {
+		ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "OK"
+		hidden_tooltip = {
+			any_child = {
+				if = {
+					limit = { ROOT = { is_female = no } }
+					remove_opinion = {
+						modifier = opinion_father
+						who = ROOT
+					}
+					opinion = {
+						modifier = opinion_father
+						who = ROOT
+						years = 100
+					}					
+				}	
+				any_child = {
+					if = {
+						limit = { ROOT = { is_female = no } }
+						remove_opinion = {
+							modifier = opinion_grandfather
+							who = ROOT
+						}
+						opinion = {
+							modifier = opinion_grandfather
+							who = ROOT
+							years = 100
+						}					
+					}	
+					if = {
+						limit = { ROOT = { is_female = yes } }
+						remove_opinion = {
+							modifier = opinion_grandmother
+							who = ROOT
+						}
+						opinion = {
+							modifier = opinion_grandmother
+							who = ROOT
+							years = 100
+						}					
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+					}
+					reverse_opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+						years = 100
+					}					
+				}
+			}
+			any_sibling = {	#siblings
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								ROOT = { NOT = { religion_group = muslim } }
+								NOT = { religion_group = muslim }
+							}
+							is_female = yes
+							ROOT = { is_female = yes }
+						}
+					}
+					remove_opinion = {
+						modifier = opinion_sibling
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_sibling
+						who = ROOT
+					}
+					opinion = {
+						modifier = opinion_sibling
+						who = ROOT
+						years = 100
+					}
+					reverse_opinion = {
+						modifier = opinion_sibling
+						who = ROOT
+						years = 100
+					}
+				}
+				any_child = {		#nephews/nieces
+					remove_opinion = {
+						modifier = opinion_uncle
+						who = ROOT
+					}
+					remove_opinion = {
+						modifier = opinion_aunt
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_nephew
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_niece
+						who = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = {
+								is_female = no
+							}
+						}
+						opinion = {
+							modifier = opinion_uncle
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							ROOT = {
+								is_female = yes
+							}
+						}
+						opinion = {
+							modifier = opinion_aunt
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						reverse_opinion = {
+							modifier = opinion_nephew
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						reverse_opinion = {
+							modifier = opinion_niece
+							who = ROOT
+							years = 100
+						}
+					}
+				}		#END nephews/nieces
+			}		#END siblings
+			father_even_if_dead = {		#father
+				reverse_remove_opinion = {
+					modifier = opinion_father
+					who = ROOT
+				}			
+				reverse_opinion = {
+					modifier = opinion_father
+					who = ROOT
+					years = 100
+				}
+				father = {		#grandfather
+					remove_opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+					}				
+					opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+						years = 100
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_grandfather
+						who = ROOT
+					}					
+					reverse_opinion = {
+						modifier = opinion_grandfather
+						who = ROOT
+						years = 100
+					}
+				}		#END grandfather
+				mother = {		#grandmother
+					remove_opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+					}				
+					opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+						years = 100
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_grandmother
+						who = ROOT
+					}					
+					reverse_opinion = {
+						modifier = opinion_grandmother
+						who = ROOT
+						years = 100
+					}
+				}		#END grandmother
+				any_sibling = {		#uncles/aunts
+					remove_opinion = {
+						modifier = opinion_nephew
+						who = ROOT
+					}
+					remove_opinion = {
+						modifier = opinion_niece
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_uncle
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_aunt
+						who = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = {
+								is_female = no
+							}
+						}
+						opinion = {
+							modifier = opinion_nephew
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							ROOT = {
+								is_female = yes
+							}
+						}
+						opinion = {
+							modifier = opinion_niece
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						reverse_opinion = {
+							modifier = opinion_uncle
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						reverse_opinion = {
+							modifier = opinion_aunt
+							who = ROOT
+							years = 100
+						}
+					}
+					any_child = {		#cousins
+						remove_opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+						}
+						reverse_remove_opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+						}
+						opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+							years = 100
+						}
+						reverse_opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+							years = 100
+						}
+					}		#END cousins
+				}		#END uncles/aunts
+			}		#END father
+			mother = {		#mother
+				father = {		#grandfather
+					remove_opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+					}				
+					opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+						years = 100
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_grandfather
+						who = ROOT
+					}					
+					reverse_opinion = {
+						modifier = opinion_grandfather
+						who = ROOT
+						years = 100
+					}
+				}		#END grandfather
+				mother = {		#grandmother
+					remove_opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+					}				
+					opinion = {
+						modifier = opinion_grandchild
+						who = ROOT
+						years = 100
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_grandmother
+						who = ROOT
+					}					
+					reverse_opinion = {
+						modifier = opinion_grandmother
+						who = ROOT
+						years = 100
+					}
+				}		#END grandmother
+				any_sibling = {		#uncles/aunts
+					remove_opinion = {
+						modifier = opinion_nephew
+						who = ROOT
+					}
+					remove_opinion = {
+						modifier = opinion_niece
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_uncle
+						who = ROOT
+					}
+					reverse_remove_opinion = {
+						modifier = opinion_aunt
+						who = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = {
+								is_female = no
+							}
+						}
+						opinion = {
+							modifier = opinion_nephew
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							ROOT = {
+								is_female = yes
+							}
+						}
+						opinion = {
+							modifier = opinion_niece
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						reverse_opinion = {
+							modifier = opinion_uncle
+							who = ROOT
+							years = 100
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						reverse_opinion = {
+							modifier = opinion_aunt
+							who = ROOT
+							years = 100
+						}
+					}
+					any_child = {		#cousins
+						remove_opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+						}
+						reverse_remove_opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+						}
+						opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+							years = 100
+						}
+						reverse_opinion = {
+							modifier = opinion_cousin
+							who = ROOT
+							years = 100
+						}
+					}		#END cousins
+				}		#END uncles/aunts
+			}		#END mother
+		}
+	}
+}
+
+namespace = family_relations
+
+character_event = {
+	id = family_relations.1		#family_relations.1
+	desc = "EVTDESCfamily_relations.1"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired on marriage
+	
+	trigger = {
+		FROM = { 
+		    NOT = { character = ROOT }
+		    NOT = { spouse = { character = ROOT } }
+		}
+	}
+	
+	immediate = {
+                FROM = {
+			if = {
+				limit = {
+					is_female = yes
+				}
+				character_event = {
+					id = dowry.0
+					days = 4 random = 3
+				}
+			}
+                }
+		FROM = {
+			if = {
+				limit = {
+					is_ruler = no
+				}
+				character_event = {
+					id = family_relations.3
+				}
+			}
+			spouse = {
+				if = {
+					limit = {
+						is_ruler = no
+					}
+					character_event = {
+						id = family_relations.3
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAfamily_relations.1"
+	}
+}
+
+character_event = {
+	id = family_relations.2		#family_relations.2
+	desc = "EVTDESCfamily_relations.2"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired on marriage
+	
+	trigger = {
+		FROM = { character = ROOT }
+	}
+	
+	immediate = {
+		spouse = {		#spouse
+			if = {
+				limit = {
+					is_ruler = no
+				}
+				character_event = {
+					id = family_relations.3
+				}
+			}
+			
+			reverse_remove_opinion = {
+				modifier = opinion_husband
+				who = ROOT
+			}
+			reverse_remove_opinion = {
+				modifier = opinion_wife
+				who = ROOT
+			}
+			if = {
+				limit = {
+					is_female = no
+				}
+				reverse_opinion = {
+					modifier = opinion_husband
+					who = ROOT
+					years = 100
+				}
+			}
+			if = {
+				limit = {
+					is_female = yes
+				}
+				reverse_opinion = {
+					modifier = opinion_wife
+					who = ROOT
+					years = 100
+				}
+			}
+			father = {		#father-in-law
+				remove_opinion = {
+					modifier = opinion_son_in_law
+					who = ROOT
+				}
+				remove_opinion = {
+					modifier = opinion_daughter_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_father_in_law
+					who = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = no
+						}
+					}
+					opinion = {
+						modifier = opinion_son_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					opinion = {
+						modifier = opinion_daughter_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				reverse_opinion = {
+					modifier = opinion_father_in_law
+					who = ROOT
+					years = 100
+				}
+			}		#END father-in-law
+			mother = {		#mother-in-law
+				remove_opinion = {
+					modifier = opinion_son_in_law
+					who = ROOT
+				}
+				remove_opinion = {
+					modifier = opinion_daughter_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_mother_in_law
+					who = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = no
+						}
+					}
+					opinion = {
+						modifier = opinion_son_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					opinion = {
+						modifier = opinion_daughter_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				reverse_opinion = {
+					modifier = opinion_mother_in_law
+					who = ROOT
+					years = 100
+				}
+			}		#END mother-in-law
+			any_sibling = {		#brothers/sisters-in-law
+				remove_opinion = {
+					modifier = opinion_brother_in_law
+					who = ROOT
+				}
+				remove_opinion = {
+					modifier = opinion_sister_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_brother_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_sister_in_law
+					who = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = no
+						}
+					}
+					opinion = {
+						modifier = opinion_brother_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					opinion = {
+						modifier = opinion_sister_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					reverse_opinion = {
+						modifier = opinion_brother_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					reverse_opinion = {
+						modifier = opinion_sister_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+			}		#END brothers/sisters-in-law
+		}		#END spouse
+	}
+	
+	option = {
+		name = "EVTOPTAfamily_relations.2"
+		
+		trigger = {
+			is_female = no
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBfamily_relations.2"
+		
+		trigger = {
+			is_female = yes
+		}
+        hidden_tooltip = {
+            father = { limit = { is_alive = yes is_patrician = no }
+				set_character_flag = dowry_event
+				character_event = {
+					id = dowry.1
+					days = 15 random = 3
+				}
+            }
+        }
+	}
+}
+
+# Same as previous except event call for spouse
+character_event = {
+	id = family_relations.3
+	desc = "EVTDESCfamily_relations.3"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		spouse = {		#spouse
+			reverse_remove_opinion = {
+				modifier = opinion_husband
+				who = ROOT
+			}
+			reverse_remove_opinion = {
+				modifier = opinion_wife
+				who = ROOT
+			}
+			if = {
+				limit = {
+					is_female = no
+				}
+				reverse_opinion = {
+					modifier = opinion_husband
+					who = ROOT
+					years = 100
+				}
+			}
+			if = {
+				limit = {
+					is_female = yes
+				}
+				reverse_opinion = {
+					modifier = opinion_wife
+					who = ROOT
+					years = 100
+				}
+			}
+			father = {		#father-in-law
+				remove_opinion = {
+					modifier = opinion_son_in_law
+					who = ROOT
+				}
+				remove_opinion = {
+					modifier = opinion_daughter_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_father_in_law
+					who = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = no
+						}
+					}
+					opinion = {
+						modifier = opinion_son_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					opinion = {
+						modifier = opinion_daughter_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				reverse_opinion = {
+					modifier = opinion_father_in_law
+					who = ROOT
+					years = 100
+				}
+			}		#END father-in-law
+			mother = {		#mother-in-law
+				remove_opinion = {
+					modifier = opinion_son_in_law
+					who = ROOT
+				}
+				remove_opinion = {
+					modifier = opinion_daughter_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_mother_in_law
+					who = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = no
+						}
+					}
+					opinion = {
+						modifier = opinion_son_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					opinion = {
+						modifier = opinion_daughter_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				reverse_opinion = {
+					modifier = opinion_mother_in_law
+					who = ROOT
+					years = 100
+				}
+			}		#END mother-in-law
+			any_sibling = {		#brothers/sisters-in-law
+				remove_opinion = {
+					modifier = opinion_brother_in_law
+					who = ROOT
+				}
+				remove_opinion = {
+					modifier = opinion_sister_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_brother_in_law
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_sister_in_law
+					who = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = no
+						}
+					}
+					opinion = {
+						modifier = opinion_brother_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					opinion = {
+						modifier = opinion_sister_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					reverse_opinion = {
+						modifier = opinion_brother_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					reverse_opinion = {
+						modifier = opinion_sister_in_law
+						who = ROOT
+						years = 100
+					}
+				}
+			}		#END brothers/sisters-in-law
+		}		#END spouse
+	}
+	
+	option = {
+		name = "EVTOPTAfamily_relations.3"
+		
+		trigger = {
+			is_female = no
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBfamily_relations.3"
+		
+		trigger = {
+			is_female = yes
+		}
+	}
+}
+
+namespace = dowry
+
+# Spouse is notified that her father has to pay a dowry
+
+character_event = {
+	id = dowry.0		
+	desc = "EVTDESCdowry.0"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from family relations
+	
+	trigger = {
+	    ai = yes
+		NOT = { 
+		    OR = { 
+			    religion_group = muslim 
+				religion_group = jewish_group
+                religion_group = other_pagan_group 
+				culture_group = altaic 
+			} 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAdowry.0"
+        father = { 
+            limit = { 
+			    NOT = { has_character_flag = dowry_event }
+                is_alive = yes 
+			    is_patrician = no
+            }
+		    set_character_flag = dowry_event
+		    character_event = {
+				id = dowry.1 days = 5 
+		    }
+        }
+	}
+}
+
+# Father decides entity of dowry
+
+character_event = {
+	id = dowry.1		
+	desc = "My daughter, [From.GetTitledFirstName], just got married to [From.Spouse.GetTitledFirstName]. It is now my duty as a father to provide him with an adequate dowry."
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from family relations
+	
+	trigger = {
+		NOT = { 
+		    OR = { 
+			    religion_group = muslim 
+				religion_group = jewish_group
+                religion_group = other_pagan_group 
+				culture_group = altaic 
+			} 
+		}
+	}
+	
+	option = {
+		name =  "He will have an adequate dowry" #Small dowry because not a ruler
+        trigger = { is_ruler = no }
+		set_character_flag = deciding_dowry
+	    clr_character_flag = dowry_event
+        wealth = -50
+        prestige = 50
+        FROM = { 
+            spouse = { 
+				character_event = {
+					id = dowry.2
+				}
+           }
+       }
+	}
+    option = {
+		name = "He will have a small dowry" #Small dowry because is cheap
+        trigger = { is_ruler = yes }
+        prestige = -75
+        random = { chance = 35
+        add_trait = greedy 
+		hidden_tooltip = {
+			character_event = { id = 38252 }
+			}
+		}
+        FROM = { 
+            spouse = { 
+				character_event = {
+				    id = dowry.3
+				}
+            }
+        }
+        ai_chance = {
+			factor = 0.25
+            modifier = {
+				factor = 5
+				trait = greedy
+			}
+            modifier = {
+				factor = 0.5
+				trait = just
+			}
+            modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+            modifier = {
+				factor = 0.25
+				trait = kind
+			}
+            modifier = {
+				factor = 0.5
+				prestige = 500
+			}
+            modifier = {
+				factor = 0.5
+				tier = KING
+			}
+            modifier = {
+				factor = 0.25
+				tier = EMPEROR
+			}
+            modifier = {
+				factor = 0.5
+				wealth = 150
+			}
+            modifier = {
+				factor = 3
+				trait = temperate
+			}
+            modifier = {
+				factor = 3
+				NOT = { scaled_wealth = 0.5 }
+			}
+		}
+	}
+    option = {
+		name = "He will have an adequate dowry" #Average dowry 
+        trigger = { is_ruler = yes }
+	    clr_character_flag = dowry_event
+        prestige = 25
+        random = { chance = 25
+        add_trait = temperate 
+			hidden_tooltip = {
+				character_event = { id = 38276 }
+			}
+		}
+        FROM = { 
+            spouse = { 
+				character_event = {
+					id = dowry.4
+				}
+            }
+        }
+        ai_chance = {
+			factor = 0.35
+            modifier = {
+				factor = 0.25
+				trait = greedy
+			}
+            modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+            modifier = {
+				factor = 0.5
+				trait = kind
+			}
+            modifier = {
+				factor = 0.5
+				prestige = 750
+			}
+            modifier = {
+				factor = 0.75
+				tier = king
+			}
+            modifier = {
+				factor = 0.5
+				tier = emperor
+			}
+            modifier = {
+				factor = 1.5
+				trait = temperate
+			}
+            modifier = {
+				factor = 3
+				NOT = { scaled_wealth = 0.7 }
+			}
+		}
+	}
+    option = {
+		name = "He will have a rich dowry" #Large dowry 
+        trigger = { is_ruler = yes }
+	    clr_character_flag = dowry_event
+        prestige = 75
+        random = { chance = 25
+        add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+			}
+		}
+        random = { chance = 35
+        add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+			}
+		}
+        FROM = { 
+            spouse = { 
+				character_event = {
+					id = dowry.5
+				}
+            }
+        }
+        ai_chance = {
+			factor = 0.25
+            modifier = {
+				factor = 0.25
+				trait = greedy
+			}
+            modifier = {
+				factor = 2.5
+				trait = charitable
+			}
+            modifier = {
+				factor = 2.5
+				trait = kind
+			}
+            modifier = {
+				factor = 2.5
+				prestige = 750
+			}
+            modifier = {
+				factor = 1.25
+				tier = KING
+			}
+            modifier = {
+				factor = 0.5
+				tier = DUKE
+			}
+            modifier = {
+				factor = 1.5
+				tier = EMPEROR
+			}
+            modifier = {
+				factor = 0.5
+				trait = temperate
+			}
+            modifier = {
+				factor = 0.5
+				NOT = { scaled_wealth = 1 }
+			}
+		}
+	}
+    option = {
+		name = "He will have a landed dowry" #Landed dowry 
+        trigger = { 
+		    is_ruler = yes
+            higher_tier_than = COUNT
+            any_demesne_title = { 
+		        is_titular = no
+		        can_be_given_away = yes
+                is_feudal = yes
+                NOT = { 
+			        AND = { 
+			    	    tier = COUNT
+		                location = { is_capital = yes } 
+			    	} 
+			    } 
+			} 
+		}
+        scaled_wealth = -0.5
+        prestige = 150
+        random = { chance = 35
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+			}
+		}
+        random = { chance = 55
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+			}
+		}
+        FROM = { 
+            spouse = { 
+				character_event = {
+					id = dowry.6
+				}
+            }
+        }
+	    clr_character_flag = dowry_event
+        ai_chance = {
+			factor = 0.25
+                modifier = {
+				factor = 0.05
+				trait = greedy
+			}
+                modifier = {
+				factor = 2
+				trait = charitable
+			}
+            modifier = {
+				factor = 2
+				trait = kind
+			}
+            modifier = {
+				factor = 2.5
+				prestige = 1500
+			}
+            modifier = {
+				factor = 1.5
+				tier = KING
+			}
+            modifier = {
+				factor = 0.5
+				tier = DUKE
+			}
+            modifier = {
+				factor = 1.5
+				tier = EMPEROR
+			}
+            modifier = {
+				factor = 0.5
+				trait = temperate
+			}
+            modifier = {
+				factor = 0
+				NOT = { demesne_size = 3 }
+			}
+            modifier = {
+				factor = 2
+				demesne_size = 5
+			}
+            modifier = {
+				factor = 5
+				demesne_size = 10
+			}
+		}
+	}
+}
+
+# Small dowry because is landless
+
+character_event = {
+	id = dowry.2		
+	desc = "My father in law, [From.GetTitledFirstName], has provided me with an adequate dowry for marrying [Root.Spouse.GetTitledFirstName]."
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from #dowry.1
+	
+	option = {
+		name = "EVTOPTAdowry.2"
+        wealth = 50
+        prestige = 10
+        opinion = {
+			modifier = offered_average_dowry
+			who = FROM
+			years = 10
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_average_dowry
+		    	who = FROM
+			    years = 5
+		    }
+		}
+	}
+}
+
+# Small dowry because is cheap
+
+character_event = {
+	id = dowry.3		
+	desc = "EVTDESCdowry.3"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from #dowry.1
+	
+	option = {
+		name = "EVTOPTAdowry.3"
+        FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.35
+			}
+		}
+        prestige = -25
+        opinion = {
+			modifier = offered_small_dowry
+			who = FROM
+			years = 15
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_small_dowry
+		    	who = FROM
+			    years = 10
+		    }
+		}
+	}
+}
+
+# Average dowry
+
+character_event = {
+	id = dowry.4		
+	desc = "My father in law, [From.GetTitledFirstName], has provided me with an adequate dowry for marrying [Root.Spouse.GetTitledFirstName]."
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from #dowry.1
+	
+	option = {
+		name = "EVTOPTAdowry.4"
+         FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.75
+			}
+		}
+        prestige = 10
+        opinion = {
+			modifier = offered_average_dowry
+			who = FROM
+			years = 10
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_average_dowry
+		    	who = FROM
+			    years = 5
+		    }
+		}
+	}
+}
+
+# Large dowry
+
+character_event = {
+	id = dowry.5		
+	desc = "EVTDESCdowry.5"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from #dowry.1
+	
+	option = {
+		name = "EVTOPTAdowry.5"
+         FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 1
+			}
+		}
+        prestige = 25
+        opinion = {
+			modifier = offered_large_dowry
+			who = FROM
+			years = 15
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_large_dowry
+		    	who = FROM
+			    years = 10
+		    }
+		}
+	}
+}
+
+# Landed dowry
+
+character_event = {
+	id = dowry.6	
+	desc = "EVTDESCdowry.6"
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes # event fired from #dowry.1
+	
+	option = {
+		name = "EVTOPTAdowry.6"
+        trigger = { 
+		    FROM = { 
+			    tier = DUKE NOT = { same_realm = ROOT } 
+			} 
+		}
+        wealth = 75
+        prestige = 50
+        FROM = { 
+		    random_demesne_title = { 
+			    limit = { 
+				    OR = { tier = BARON tier = COUNT }
+                    NOT = { 
+					    tier = COUNT 
+						location = { is_capital = yes } 
+					}
+		            is_titular = no
+		            can_be_given_away = yes
+                    is_feudal = yes
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                        AND = { 
+                            NOT = { claimed_by = ROOT }
+		                    NOT = { has_de_jure_pretension = ROOT }
+                            NOT = { location = { any_neighbor_province = { owner = { character = ROOT } } } }
+                        } 
+                    } 
+                }
+                gain_title = ROOT 
+			} 
+		}
+        opinion = {
+			modifier = offered_landed_dowry
+			who = FROM
+			years = 25
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_landed_dowry
+		    	who = FROM
+			    years = 15
+		    }
+		}
+	}
+
+    option = {
+		name = "EVTOPTAdowry.6"
+        trigger = { 
+		    FROM = { 
+			    tier = KING 
+				NOT = { same_realm = ROOT } 
+			} 
+		}
+        wealth = 100
+        prestige = 75
+        FROM = { 
+		    random_demesne_title = { 
+			    limit = { 
+				    tier = COUNT
+                    NOT = { 
+						tier = COUNT 
+						location = { is_capital = yes } 
+					}
+		            is_titular = no
+		            can_be_given_away = yes
+                    is_feudal = yes
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                        AND = { 
+                            NOT = { claimed_by = ROOT }
+		                    NOT = { has_de_jure_pretension = ROOT }
+                            NOT = { location = { any_neighbor_province = { owner = { character = ROOT } } } }
+                        } 
+                    } 
+                }
+                gain_title = ROOT 
+			} 
+		}
+        opinion = {
+			modifier = offered_landed_dowry
+			who = FROM
+			years = 25
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_landed_dowry
+		    	who = FROM
+			    years = 15
+		    }
+		}
+	}
+
+    option = {
+		name = "EVTOPTAdowry.6"
+        trigger = { 
+		    FROM = { 
+			    tier = EMPEROR 
+				NOT = { same_realm = ROOT } 
+			} 
+		}
+        wealth = 200
+        prestige = 100
+        FROM = { 
+            random_demesne_title = { 
+				limit = { 
+					OR = { 
+					    tier = COUNT 
+						tier = DUKE 
+					}
+                    NOT = { 
+					    tier = COUNT 
+						location = { is_capital = yes } 
+					} 
+		            is_titular = no
+		            can_be_given_away = yes
+                    is_feudal = yes
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                        AND = { 
+                            NOT = { claimed_by = ROOT }
+		                    NOT = { has_de_jure_pretension = ROOT }
+                            NOT = { location = { any_neighbor_province = { owner = { character = ROOT } } } }
+                        } 
+                    } 
+                }
+                gain_title = ROOT 
+			} 
+		}
+        opinion = {
+			modifier = offered_landed_dowry
+			who = FROM
+			years = 25
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_landed_dowry
+		    	who = FROM
+			    years = 15
+		    }
+		}
+	}
+
+    option = {
+		name = "EVTOPTAdowry.6"
+        trigger = { FROM = { tier = DUKE same_realm = ROOT } }
+        wealth = 75
+        prestige = 50
+        FROM = { 
+		    random_demesne_title = { 
+			    limit = { 
+				    OR = { tier = BARON tier = COUNT }
+                    NOT = { AND = { tier = COUNT location = { is_capital = yes } } }
+		            is_titular = no
+		            can_be_given_away = yes
+                    is_feudal = yes
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                        AND = { 
+                            NOT = { claimed_by = ROOT }
+		                    NOT = { has_de_jure_pretension = ROOT }
+                            NOT = { location = { any_neighbor_province = { owner = { character = ROOT } } } }
+                        } 
+                    } 
+                }
+                gain_title = ROOT 
+			} 
+		}
+        opinion = {
+			modifier = offered_landed_dowry
+			who = FROM
+			years = 25
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_landed_dowry
+		    	who = FROM
+			    years = 15
+		    }
+		}
+	}
+
+    option = {
+		name = "EVTOPTAdowry.6"
+        trigger = { FROM = { tier = KING same_realm = ROOT } }
+        wealth = 100
+        prestige = 75
+        FROM = { 
+		    random_demesne_title = { 
+			    limit = { 
+				    tier = COUNT
+                    NOT = { AND = { tier = COUNT location = { is_capital = yes } } }
+		            is_titular = no
+		            can_be_given_away = yes
+                    is_feudal = yes
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                        AND = { 
+                            NOT = { claimed_by = ROOT }
+		                    NOT = { has_de_jure_pretension = ROOT }
+                            NOT = { location = { any_neighbor_province = { owner = { character = ROOT } } } }
+                        } 
+                    } 
+                }
+                gain_title = ROOT 
+			} 
+		}
+        opinion = {
+			modifier = offered_landed_dowry
+			who = FROM
+			years = 25
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_landed_dowry
+		    	who = FROM
+			    years = 15
+		    }
+		}
+	}
+
+    option = {
+		name = "EVTOPTAdowry.6"
+        trigger = { FROM = { tier = EMPEROR same_realm = ROOT } }
+        wealth = 200
+        prestige = 100
+        FROM = { 
+		    random_demesne_title = { 
+			    limit = { 
+				    OR = { tier = COUNT tier = DUKE }
+                    NOT = { AND = { tier = COUNT location = { is_capital = yes } } }
+		            is_titular = no
+		            can_be_given_away = yes
+                    is_feudal = yes
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                        AND = { 
+                            NOT = { claimed_by = ROOT }
+		                    NOT = { has_de_jure_pretension = ROOT }
+                            NOT = { location = { any_neighbor_province = { owner = { character = ROOT } } } }
+                        } 
+                    } 
+                }
+                gain_title = ROOT 
+			} 
+		}
+        opinion = {
+			modifier = offered_landed_dowry
+			who = FROM
+			years = 25
+		}
+		father = {
+            opinion = {
+		     	modifier = offered_landed_dowry
+		    	who = FROM
+			    years = 15
+		    }
+		}
+	}
+}

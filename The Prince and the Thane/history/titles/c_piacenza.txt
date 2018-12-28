@@ -1,0 +1,31 @@
+1058.1.1={
+	holder=70635 #Oberto Pallavicini
+	liege =e_hre
+}
+1126.1.1= { 
+    liege=0 
+}
+1148.1.1={
+	holder=70635 #Guido Pallavicini
+}
+1180.1.1={
+	holder=70717 #Adalberto Pallavicini
+}
+1202.1.1={
+	holder=70717 #Oberto Pallavicini
+}
+1225.1.1={
+	holder=70720 #Guido Pallavicini
+}
+1235.1.1={
+	holder=70744 #Oberto Pallavicini
+}
+1269.1.1={
+	holder=70746 #Manfredo Pallavicini
+}
+1301.1.1={
+	holder=70746 #Manfredo Pallavicini
+}
+1315.1.1={
+	liege="d_lombardia"
+}

@@ -1,0 +1,22 @@
+# 1077 - Brehna
+
+# County Title
+
+title = c_brehna
+
+# Settlements
+max_settlements = 3
+
+
+b_wettin = castle
+b_brehna = city
+#b_torgau = city
+
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+
+1150.1.1= { b_torgau = city } 

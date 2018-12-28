@@ -1,0 +1,21 @@
+# 1004 - Virovitica # Baranja
+
+# County Title
+title = c_virovitica
+
+# Settlements
+max_settlements = 4
+
+b_virovitica = castle
+b_osijek = city
+#b_ruzica = castle
+#b_orahovica = temple
+#b_zalathnok = castle
+
+#
+
+# Misc
+culture = croatian
+religion = catholic
+
+# History

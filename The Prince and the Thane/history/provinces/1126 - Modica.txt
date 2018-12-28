@@ -1,0 +1,34 @@
+# 1126 - Modica
+
+# County Title
+title = c_modica
+
+# Settlements
+max_settlements = 4
+
+b_caltagirone = castle
+b_modica = city
+b_noto = temple
+
+#b_ucannni = castle
+#b_chiramontesicily = castle
+#b_mazzarina = city
+#b_licata = city
+#b_scicli = temple
+#b_commisu= temple
+#b_occiala = city
+#b_oliveri = castle
+#b_gela = city
+
+
+
+
+
+# Misc
+culture = greek
+religion = sunni
+terrain = hills
+
+# History
+1116.1.1={ culture = sicilian }
+1116.1.1={ religion = catholic }

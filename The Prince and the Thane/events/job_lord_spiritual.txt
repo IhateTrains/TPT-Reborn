@@ -1,0 +1,2547 @@
+##############################
+# LORD SPIRITUAL
+#
+# Job: action_inquisition
+# 	900: County Religion Converted
+# 	901: Subject Religion Converted
+# 	902: Heathens Attack the Lord Spiritual
+# 	903: Heretic Noble
+#
+# Job: action_improve_rel_relations
+# 	906: The Lord Spiritual attempts to improve relations with a priest
+# 	907: The Lord Spiritual attempts to sabotage the relations of a priest towards the official head of the religion
+#
+# Job: action_advance_cul_tech
+# 	926: A Great Inventor offers his help: Random Culture Tech increases
+# 	927: Lord Spiritual = heretic
+#
+##############################
+
+## Modified for The Prince and the Thane by idib816
+
+##############################
+# LORD SPIRITUAL
+# JOB: action_inquisition
+##############################
+
+# 900: The Lord Spiritual converts a province!
+character_event = {
+	id = 900
+	title = "EVTNAME900"
+	desc = "EVTDESC900"
+	picture = GFX_evt_heretic
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_inquisition
+		NOT = { location = { religion = ROOT } }
+		location = {
+			owner = { same_realm = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1600
+		modifier = {
+			factor = 0.75
+			location = { is_capital = yes }
+		}		
+		modifier = {
+			factor = 0.75
+			location = { culture_group = ROOT }
+		}
+		modifier = {
+			factor = 0.75
+			location = { culture = ROOT }
+		}
+		modifier = {
+			factor = 2
+			location = { NOT = { culture_group = ROOT } }
+		}
+		modifier = {
+			factor = 1.5
+			location = { NOT = { culture = ROOT } }
+		}
+		modifier = {
+			factor = 1.5
+			location = { NOT = { religion_group = ROOT } }
+		}
+		modifier = {
+			factor = 0.75
+			location = { religion_group = ROOT }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.85
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.85
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.85
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.85
+			opinion = { who = liege value = 100 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { liege = { learning = 1 } }
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = { liege = { learning = 2 } }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { liege = { learning = 3 } }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { liege = { learning = 4 } }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { liege = { learning = 5 } }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { liege = { learning = 6 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 7 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 8 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 9 } }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 11 }
+		}		
+		modifier = {
+			factor = 0.85
+			liege = { learning = 12 }
+		}	
+		modifier = {
+			factor = 0.85
+			liege = { learning = 13 }
+		}	
+		modifier = {
+			factor = 0.85
+			liege = { learning = 14 }
+		}	
+		modifier = {
+			factor = 0.95
+			liege = { learning = 15 }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 16 }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 17 }
+		}	
+		modifier = {
+			factor = 0.85
+			liege = { learning = 18 }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 19 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 20 }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 21 }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 22 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 23 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 24 }
+		}
+		modifier = {
+			factor = 0.85
+			liege = { learning = 25 }
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.15
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.15
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.15
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.15
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.85
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.85
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.85
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.85
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.85
+			learning = 15
+		}
+		modifier = {
+			factor = 0.85
+			learning = 16
+		}
+		modifier = {
+			factor = 0.85
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.85
+			learning = 18
+		}
+		modifier = {
+			factor = 0.85
+			learning = 19
+		}
+		modifier = {
+			factor = 0.85
+			learning = 20
+		}
+		modifier = {
+			factor = 0.85
+			learning = 21
+		}
+		modifier = {
+			factor = 0.85
+			learning = 22
+		}
+		modifier = {
+			factor = 0.85
+			learning = 23
+		}
+		modifier = {
+			factor = 0.85
+			learning = 24
+		}
+		modifier = {
+			factor = 0.85
+			learning = 25
+		}
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 4 }
+		}	
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 5 }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 6 }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 7 }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { demesne_size = 8 }
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 4.0
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 2.0
+			has_province_modifier = heretic_stronghold
+		}		
+		modifier = {
+			factor = 0.5
+			has_province_modifier = force_converting
+		}
+		modifier = {
+			factor = 3.0
+			has_province_modifier = brm_revolt
+		}		
+	}
+
+	option = {
+		name = "EVTOPTA900"
+		piety = 10
+		location = { 
+			religion = ROOT 
+			hidden_tooltip = {
+				if = {
+					limit = { has_province_modifier = heretic_stronghold }
+					remove_province_modifier = heretic_stronghold
+				}
+			}		
+		}
+		liege = {
+			letter_event = { id = 20000 tooltip = EVTTOOLTIP20000 }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						top_liege = {
+							NOT = { character = PREV }
+							religion = ROOT
+						}
+					}
+					top_liege = { letter_event = { id = 20001 } }
+				}
+			}
+		}
+	}
+}
+
+# 20000: The Lord Spiritual informs his liege of the conversion
+letter_event = {
+	id = 20000
+	desc = "EVTDESC20000"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA20000"
+		piety = 25
+		add_character_modifier = { name = convert_province_timer duration = 3 hidden = yes }
+		if = {
+			limit = {
+				is_heretic = no
+				rightful_religious_head_scope = {
+					ROOT = {
+						NOT = { excommunicated_for = PREV }
+					}
+				}
+			}
+			religion_head = {
+				opinion = {
+					modifier = opinion_converted_province
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+	}
+}
+
+# 20001: Informs top liege
+letter_event = {
+	id = 20001
+	desc = "EVTDESC20001"
+	
+	is_triggered_only = yes
+
+	option = {
+		piety = 10
+		name = "EXCELLENT"
+	}
+}
+
+# 901: The Lord Spiritual converts a subject character
+character_event = {
+	id = 901
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	picture = GFX_evt_heretic
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_inquisition
+		location = {
+			any_province_character = {
+				NOT = { character = ROOT }
+				NOT = { is_liege_of = ROOT }
+				NOT = { religion = ROOT }
+				same_realm = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 100 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 1 } }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 2 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 3 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 4 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 5 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 6 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 7 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 8 } }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { liege = { learning = 9 } }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 11 }
+		}		
+		modifier = {
+			factor = 0.95
+			liege = { learning = 12 }
+		}	
+		modifier = {
+			factor = 0.95
+			liege = { learning = 13 }
+		}	
+		modifier = {
+			factor = 0.95
+			liege = { learning = 14 }
+		}	
+		modifier = {
+			factor = 0.95
+			liege = { learning = 15 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 16 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 17 }
+		}	
+		modifier = {
+			factor = 0.95
+			liege = { learning = 18 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 19 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 20 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 21 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 22 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 23 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 24 }
+		}
+		modifier = {
+			factor = 0.95
+			liege = { learning = 25 }
+		}			
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.95
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.95
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 15
+		}
+		modifier = {
+			factor = 0.95
+			learning = 16
+		}
+		modifier = {
+			factor = 0.95
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 18
+		}
+		modifier = {
+			factor = 0.95
+			learning = 19
+		}
+		modifier = {
+			factor = 0.95
+			learning = 20
+		}
+		modifier = {
+			factor = 0.95
+			learning = 21
+		}
+		modifier = {
+			factor = 0.95
+			learning = 22
+		}
+		modifier = {
+			factor = 0.95
+			learning = 23
+		}
+		modifier = {
+			factor = 0.95
+			learning = 24
+		}
+		modifier = {
+			factor = 0.95
+			learning = 25
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.8
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA901"
+		piety = 5
+		location = {
+			random_province_character = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = ROOT }
+					NOT = { religion = ROOT }
+					same_realm = ROOT
+				}
+				letter_event = { id = 20010 tooltip = "EVTTOOLTIP20010" }
+			}
+		}
+	}
+}
+
+# 20010: Inform the target character about this
+letter_event = {
+	id = 20010
+	desc = "EVTDESC20010"
+	picture = GFX_evt_heretic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20010"
+		religion = FROM
+		hidden_tooltip = {
+			FROM = {
+				liege = { letter_event = { id = 20011 days = 7 } }
+			}
+			if = {
+				limit = {
+					liege = {
+						job_spiritual = {
+							NOT = { character = FROM }
+						}
+					}
+				}
+				liege = { letter_event = { id = 20012 } }
+			}
+		}
+	}
+}
+
+# 20011: Inform Lord Spiritual's Liege about this
+letter_event = {
+	id = 20011
+	desc = "EVTDESC20011"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20011"
+	}
+}
+
+# 20012: Inform character's Liege about this
+letter_event = {
+	id = 20012
+	desc = "EVTDESC20012"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20012"
+		trigger = { FROM = { religion = ROOT } }
+	}
+	option = {
+		name = "EVTOPTB20012"
+		trigger = { FROM = { NOT = { religion = ROOT } } }
+	}
+}
+
+
+# 902: The Lord Spiritual is attacked by heathens (Gets away, Is wounded, Is killed)
+character_event = {
+	id = 902
+	title = "EVTNAME902"
+	desc = "EVTDESC902"
+	picture = GFX_evt_peasants
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_inquisition
+		location = {
+			NOT = { religion = ROOT }
+			owner = { same_realm = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 100 }
+		}	
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 1.05
+			learning = 11
+		}		
+		modifier = {
+			factor = 1.05
+			learning = 12
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 13
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 14
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 15
+		}
+		modifier = {
+			factor = 1.05
+			learning = 16
+		}
+		modifier = {
+			factor = 1.05
+			learning = 17
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 18
+		}
+		modifier = {
+			factor = 1.05
+			learning = 19
+		}
+		modifier = {
+			factor = 1.05
+			learning = 20
+		}
+		modifier = {
+			factor = 1.05
+			learning = 21
+		}
+		modifier = {
+			factor = 1.05
+			learning = 22
+		}
+		modifier = {
+			factor = 1.05
+			learning = 23
+		}
+		modifier = {
+			factor = 1.05
+			learning = 24
+		}
+		modifier = {
+			factor = 1.05
+			learning = 25
+		}
+		modifier = {
+			factor = 1.1
+			religion_authority = 0.6
+		}		
+		modifier = {
+			factor = 1.1
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 1.1
+			religion_authority = 0.8
+		}	
+		modifier = {
+			factor = 1.1
+			religion_authority = 1.1
+		}
+		modifier = {
+			factor = 1.1
+			religion_authority = 1.0
+		}		
+		modifier = {
+			factor = 0.9
+			NOT = { religion_authority = 0.5 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { religion_authority = 0.3 }
+		}	
+		modifier = {
+			factor = 0.9
+			NOT = { religion_authority = 0.2 }
+		}	
+		modifier = {
+			factor = 0.9
+			NOT = { religion_authority = 0.1 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA902"
+		trigger = {
+			martial = 10
+		}
+		random_list = {
+			50 = { character_event = { id = 20020 tooltip = "EVTTOOLTIP20020" } }
+			40 = { character_event = { id = 20021 tooltip = "EVTTOOLTIP20021" } }
+			10 = {
+				hidden_tooltip = {
+					liege = { character_event = { id = 20023 } }
+				}
+				death = { death_reason = death_rabble }
+			}
+		}
+	}
+}
+
+# 20020: Lord Spiritual gets away
+character_event = {
+	id = 20020
+	desc = "EVTDESC20020"
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20020"
+		prestige = -10
+	}
+}
+
+# 20021: Lord Spiritual gets wounded
+character_event = {
+	id = 20021
+	desc = "EVTDESC20021"
+	picture = GFX_evt_illness
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20021"
+		trigger = {
+			NOT = {
+				AND = {
+					trait = wroth
+					NOT = { trait = humble }
+				}
+			}
+		}
+		add_trait = wounded
+		liege = { letter_event = { id = 20022 days = 7 tooltip = "EVTTOOLTIP20022" } }
+	}
+	option = {
+		name = "EVTOPTB20021"
+		trigger = {
+			trait = wroth
+			NOT = { trait = humble}
+		}
+		add_trait = wounded
+		add_trait = zealous
+		liege = { letter_event = { id = 20022 days = 7 tooltip = "EVTTOOLTIP20022" } }
+	}
+}
+
+# 20022: Inform the Liege about wounding
+letter_event = {
+	id = 20022
+	desc = "EVTDESC20022"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20022"
+		prestige = -10
+	}
+}
+
+# 20023: Inform the Liege about death
+character_event = {
+	id = 20023
+	desc = "EVTDESC20023"
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20023"
+		prestige = -15
+	}
+}
+
+
+# 903: The Lord Spiritual suspects a subject character of heresy
+character_event = {
+	id = 903
+	title = "EVTNAME903"
+	desc = "EVTDESC903"
+	picture = GFX_evt_heretic
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_inquisition
+		location = {
+			any_province_lord = {
+				NOT = { is_liege_of = ROOT }
+				NOT = { has_character_flag = no_heretic }
+				NOT = { character = ROOT }
+				age = 20
+				same_realm = ROOT
+				religion = ROOT
+				can_change_religion = yes
+				NOT = { piety = 100 }
+				OR = {
+					is_ruler = no
+					primary_title = { tier = BARON }
+					AND = {
+						primary_title = { tier = COUNT }
+						ROOT = { liege = { primary_title = { higher_tier_than = COUNT } } }
+					}
+					AND = {
+						primary_title = { tier = DUKE }
+						ROOT = { liege = { primary_title = { higher_tier_than = DUKE } } }
+					}
+					AND = {
+						primary_title = { tier = KING }
+						ROOT = { liege = { primary_title = { higher_tier_than = KING } } }
+					}					
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 480
+
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 100 }
+		}	
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.95
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.95
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 15
+		}
+		modifier = {
+			factor = 0.95
+			learning = 16
+		}
+		modifier = {
+			factor = 0.95
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 18
+		}
+		modifier = {
+			factor = 0.95
+			learning = 19
+		}
+		modifier = {
+			factor = 0.95
+			learning = 20
+		}
+		modifier = {
+			factor = 0.95
+			learning = 21
+		}
+		modifier = {
+			factor = 0.95
+			learning = 22
+		}
+		modifier = {
+			factor = 0.95
+			learning = 23
+		}
+		modifier = {
+			factor = 0.95
+			learning = 24
+		}
+		modifier = {
+			factor = 0.95
+			learning = 25
+		}
+		modifier = {
+			factor = 0.9
+			religion_authority = 0.6
+		}		
+		modifier = {
+			factor = 0.9
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 0.9
+			religion_authority = 0.8
+		}	
+		modifier = {
+			factor = 0.9
+			religion_authority = 0.9
+		}
+		modifier = {
+			factor = 0.9
+			religion_authority = 1.0
+		}		
+		modifier = {
+			factor = 1.1
+			NOT = { religion_authority = 0.5 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { religion_authority = 0.3 }
+		}	
+		modifier = {
+			factor = 1.1
+			NOT = { religion_authority = 0.2 }
+		}	
+		modifier = {
+			factor = 1.1
+			NOT = { religion_authority = 0.1 }
+		}
+	}
+	
+	immediate = {
+		location = {
+			random_province_lord = {
+				limit = {
+					NOT = { is_liege_of = ROOT }
+					NOT = { has_character_flag = no_heretic }
+					NOT = { character = ROOT }
+					age = 20
+					same_realm = ROOT
+					religion = ROOT
+					can_change_religion = yes
+					NOT = { piety = 100 }
+					OR = {
+						is_ruler = no
+						primary_title = { tier = BARON }
+						AND = {
+							primary_title = { tier = COUNT }
+							ROOT = { liege = { primary_title = { higher_tier_than = COUNT } } }
+						}
+						AND = {
+							primary_title = { tier = DUKE }
+							ROOT = { liege = { primary_title = { higher_tier_than = DUKE } } }
+						}
+						AND = {
+							primary_title = { tier = KING }
+							ROOT = { liege = { primary_title = { higher_tier_than = KING } } }
+						}					
+					}					
+				}
+				set_character_flag = suspected_heretic
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA903"
+		ai_chance = { factor = 75 }
+		location = {
+			random_province_lord = {
+				limit = {
+					has_character_flag = suspected_heretic
+				}
+				clr_character_flag = suspected_heretic
+				character_event = { id = 20030 days = 7 tooltip = "EVTTOOLTIP20030" }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB903"
+		ai_chance = { factor = 25 }
+		trigger = { NOT = { trait = zealous } }
+		location = {
+			random_province_lord = {
+				limit = {
+					has_character_flag = suspected_heretic
+				}
+				clr_character_flag = suspected_heretic
+			}
+		}
+	}
+}
+
+# 20030: Noble reacts to the accusations
+character_event = {
+	id = 20030
+	desc = "EVTDESC20030"
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20030"
+		FROM = {
+			liege = { letter_event = { id = 20032 days = 7 tooltip = "EVTTOOLTIP20032" } }
+		}
+	}
+}
+
+# 20032: Liege: The noble complains
+letter_event = {
+	id = 20032
+	desc = "EVTDESC20032"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20032" #Noble = no heretic
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2.0
+				opinion = { who = FROM value = 50 }
+			}
+			modifier = {
+				factor = 2.0
+				opinion = { who = FROM value = 75 }
+			}
+		}
+		FROM = {
+			letter_event = { id = 20033 days = 7 tooltip = "EVTTOOLTIP20033" }
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}
+			set_character_flag = no_heretic
+		}
+		job_spiritual = {
+			letter_event = { id = 20034 days = 7 tooltip = "EVTTOOLTIP20034" }
+			opinion = {
+				modifier = opinion_chastised_by_liege
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB20032" #Noble = heretic
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2.0
+				NOT = { opinion = { who = FROM value = -25 } }
+			}
+			modifier = {
+				factor = 2.0
+				NOT = { opinion = { who = FROM value = -50 } }
+			}
+		}
+		FROM = {
+			letter_event = { id = 20035 days = 7 tooltip = "EVTTOOLTIP20035" }
+			opinion = {
+				modifier = opinion_branded_heretic
+				who = ROOT
+				years = 10
+			}
+		}
+		job_spiritual = {
+			letter_event = { id = 20036 days = 7 tooltip = "EVTTOOLTIP20036" }
+		}
+	}
+}
+
+# 20033: Noble: Noble isn't heretic
+letter_event = {
+	id = 20033
+	desc = "EVTDESC20033"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20033"
+		clr_character_flag = suspected_heretic
+	}
+}
+
+# 20034: Lord Spiritual: Noble isn't heretic
+letter_event = {
+	id = 20034
+	desc = "EVTDESC20034"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20034"
+		liege = {	
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+# 20035: Noble: Noble is heretic
+letter_event = {
+	id = 20035
+	desc = "EVTDESC20035"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20035"
+		become_heretic = yes
+		clr_character_flag = suspected_heretic
+	}
+}
+
+# 20036: Lord Spiritual: Noble is heretic
+letter_event = {
+	id = 20036
+	desc = "EVTDESC20036"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20036"
+		piety = 10
+	}
+}
+
+# 20037: Increased revolt risk
+character_event = {
+	id = 20037
+	desc = "EVTDESC20037"
+	picture = GFX_evt_peasants
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_inquisition
+		location = {
+			NOT = { religion = ROOT }
+			NOT = { has_province_modifier = religious_tension }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 1.05
+			opinion = { who = liege value = 100 }
+		}	
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 1.05
+			learning = 11
+		}		
+		modifier = {
+			factor = 1.05
+			learning = 12
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 13
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 14
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 15
+		}
+		modifier = {
+			factor = 1.05
+			learning = 16
+		}
+		modifier = {
+			factor = 1.05
+			learning = 17
+		}	
+		modifier = {
+			factor = 1.05
+			learning = 18
+		}
+		modifier = {
+			factor = 1.05
+			learning = 19
+		}
+		modifier = {
+			factor = 1.05
+			learning = 20
+		}
+		modifier = {
+			factor = 1.05
+			learning = 21
+		}
+		modifier = {
+			factor = 1.05
+			learning = 22
+		}
+		modifier = {
+			factor = 1.05
+			learning = 23
+		}
+		modifier = {
+			factor = 1.05
+			learning = 24
+		}
+		modifier = {
+			factor = 1.05
+			learning = 25
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor =0.75
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.8
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20037"
+		hidden_tooltip = {
+			location = {
+				# Inform barons about the rebels
+				owner = {
+					if = {
+						limit = {
+							is_liege_of = ROOT
+						}
+						set_character_flag = liege_informed
+					}
+				}
+				any_province_lord = {
+					limit = {
+						NOT = { has_character_flag = liege_informed }
+						ai = no
+					}
+					character_event = { id = 20038 days = 1 }
+				}
+				# Inform liege
+				ROOT = {
+					liege = { letter_event = { id = 20039 days = 1 } }
+					clr_character_flag = liege_informed
+				}
+			}
+		}
+	}
+}
+
+# 20038: Inform province lords
+character_event = {
+	id = 20038
+	desc = "EVTDESC20038"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20038"
+	}
+}
+
+# 20039: Inform liege
+letter_event = {
+	id = 20039
+	desc = "EVTDESC20039"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20039"
+		FROM = {
+			location = {
+				# Increase revolt risk
+				add_province_modifier = {
+					name = religious_tension
+					duration = 365
+				}
+				# Province barons
+				any_province_lord = {
+					limit = {
+						NOT = { character = ROOT }
+						NOT = { character = FROM }
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_irritated
+						years = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+
+##############################
+# LORD SPIRITUAL
+# JOB: action_improve_rel_relations
+##############################
+
+# 906: The Lord Spiritual improves relations between the liege and a bishop
+character_event = {
+	id = 906
+	title = "EVTNAME906"
+	desc = "EVTDESC906"
+	picture = GFX_evt_bishop
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_improve_rel_relations
+		location = { 
+			any_province_lord = {
+				is_priest = yes
+				religion = ROOT
+				NOT = { is_liege_of = ROOT }
+			}
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 180
+
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 100 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.95
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.95
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 15
+		}
+		modifier = {
+			factor = 0.95
+			learning = 16
+		}
+		modifier = {
+			factor = 0.95
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 18
+		}
+		modifier = {
+			factor = 0.95
+			learning = 19
+		}
+		modifier = {
+			factor = 0.95
+			learning = 20
+		}
+		modifier = {
+			factor = 0.95
+			learning = 21
+		}
+		modifier = {
+			factor = 0.95
+			learning = 22
+		}
+		modifier = {
+			factor = 0.95
+			learning = 23
+		}
+		modifier = {
+			factor = 0.95
+			learning = 24
+		}
+		modifier = {
+			factor = 0.95
+			learning = 25
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.8
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA906"
+		hidden_tooltip = {
+			location = {
+				random_province_lord = {
+					limit = {
+						is_priest = yes
+						religion = ROOT
+						NOT = { is_liege_of = ROOT }
+					}
+					character_event = { id = 20060 days = 7 }
+				}
+			}
+		}
+	}
+}
+
+# 20060: Inform the bishop
+character_event = {
+	id = 20060
+	desc = "EVTDESC20060"
+	picture = GFX_evt_bishop
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20060"
+		hidden_tooltip = {
+			FROM = {
+				liege = { letter_event = { id = 20061 days = 7 } }
+			}
+		}
+	}
+}
+
+# 20061: The liege is informed of the success
+letter_event = {
+	id = 20061
+	desc = "EVTDESC20061"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20061"
+		FROM = {
+			opinion = {
+				modifier = opinion_improved_relations
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+
+# 907: The Lord Spiritual attempts to sabotage the relations of a subject priest towards the official head of the religion
+character_event = {
+	id = 907
+	title = "EVTNAME907"
+	desc = "EVTDESC907"
+	picture = GFX_evt_spymaster
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_improve_rel_relations
+		location = { 
+			any_province_lord = {
+				is_priest = yes
+				NOT = { is_liege_of = ROOT }
+				same_realm = ROOT
+				religion = ROOT
+				religion_head = {
+					NOT = { character = PREV }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 100 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.95
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.95
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 15
+		}
+		modifier = {
+			factor = 0.95
+			learning = 16
+		}
+		modifier = {
+			factor = 0.95
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 18
+		}
+		modifier = {
+			factor = 0.95
+			learning = 19
+		}
+		modifier = {
+			factor = 0.95
+			learning = 20
+		}
+		modifier = {
+			factor = 0.95
+			learning = 21
+		}
+		modifier = {
+			factor = 0.95
+			learning = 22
+		}
+		modifier = {
+			factor = 0.95
+			learning = 23
+		}
+		modifier = {
+			factor = 0.95
+			learning = 24
+		}
+		modifier = {
+			factor = 0.95
+			learning = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA907"
+		hidden_tooltip = {
+			location = {
+				random_province_lord = {
+					limit = {
+						is_priest = yes
+						NOT = { is_liege_of = ROOT }
+						same_realm = ROOT
+						religion = ROOT
+						religion_head = {
+							NOT = { character = PREV }
+						}
+					}
+					character_event = { id = 20070 days = 7 }
+				}
+			}
+		}
+	}
+}
+
+# 20070: Inform the bishop
+character_event = {
+	id = 20070
+	desc = "EVTDESC20070"
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20070"
+		hidden_tooltip = {
+			FROM = {
+				liege = { letter_event = { id = 20071 days = 7 } }
+			}
+		}
+	}
+}
+
+# 20071: The liege is informed of the success
+letter_event = {
+	id = 20071
+	desc = "EVTDESC20071"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA20071"
+		FROM = {
+			religion_head = {
+				reverse_opinion = {
+					modifier = opinion_head_of_religion_negative
+					who = PREV
+					years = 5
+				}
+			}
+		}
+	}
+}
+
+
+##############################
+# LORD SPIRITUAL
+# JOB: action_advance_cul_tech
+##############################
+
+# 926: A Great Inventor offers his help: Random Culture Tech increases
+character_event = {
+	id = 926
+	title = "EVTNAME926"
+	desc = "EVTDESC926"
+	picture = GFX_evt_emissary
+	
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_advance_cul_tech
+	}
+	
+	mean_time_to_happen = {
+		months = 1000
+
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 100 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.95
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.95
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 15
+		}
+		modifier = {
+			factor = 0.95
+			learning = 16
+		}
+		modifier = {
+			factor = 0.95
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 18
+		}
+		modifier = {
+			factor = 0.95
+			learning = 19
+		}
+		modifier = {
+			factor = 0.95
+			learning = 20
+		}
+		modifier = {
+			factor = 0.95
+			learning = 21
+		}
+		modifier = {
+			factor = 0.95
+			learning = 22
+		}
+		modifier = {
+			factor = 0.95
+			learning = 23
+		}
+		modifier = {
+			factor = 0.95
+			learning = 24
+		}
+		modifier = {
+			factor = 0.95
+			learning = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA926"
+		liege = { letter_event = { id = 20260 days = 7 tooltip = "EVTTOOLTIP20260" } }
+	}
+}
+
+# 20260: The liege is informed of the success
+letter_event = {
+	id = 20260
+	desc = "EVTDESC20260"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20260"
+		scaled_wealth = -0.5
+		FROM = {
+			location = { change_random_civ_tech = 1 }
+		}
+	}
+	option = {
+		name = "EVTOPTB20260"
+	}
+}
+
+
+# 927: Lord Spiritual = heretic
+character_event = {
+	id = 927
+	title = "EVTNAME927"
+	desc = "EVTDESC927"
+	picture = GFX_evt_heretic
+	
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_job_action = action_advance_cul_tech
+	}
+	
+	mean_time_to_happen = {
+		months = 1000
+
+		modifier = {
+			factor = 0.95
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 1.1
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 1.1
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 1.1
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 1.1
+			opinion = { who = liege value = 100 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.95
+			learning = 11
+		}		
+		modifier = {
+			factor = 0.95
+			learning = 12
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 13
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 14
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 15
+		}
+		modifier = {
+			factor = 0.95
+			learning = 16
+		}
+		modifier = {
+			factor = 0.95
+			learning = 17
+		}	
+		modifier = {
+			factor = 0.95
+			learning = 18
+		}
+		modifier = {
+			factor = 0.95
+			learning = 19
+		}
+		modifier = {
+			factor = 0.95
+			learning = 20
+		}
+		modifier = {
+			factor = 0.95
+			learning = 21
+		}
+		modifier = {
+			factor = 0.95
+			learning = 22
+		}
+		modifier = {
+			factor = 0.95
+			learning = 23
+		}
+		modifier = {
+			factor = 0.95
+			learning = 24
+		}
+		modifier = {
+			factor = 0.95
+			learning = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA927"
+		ai_chance = { factor = 80 }
+		become_heretic = yes
+		hidden_tooltip = {
+			liege = { letter_event = { id = 20270 days = 2 } }
+		}
+	}
+	option = {
+		name = "EVTOPTB927"
+		ai_chance = { factor = 20 }		
+	}
+}
+
+# 20270: Liege get a letter
+letter_event = {
+	id = 20270
+	desc = "EVTDESC20270"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA20270"
+		ai_chance = { factor = 99 }
+		FROM = { imprison = yes }
+		reverse_opinion = {
+			modifier = opinion_hate
+			who = FROM
+			years = 10
+		}		
+	}
+	option = {
+		name = "EVTOPTB20270"
+		ai_chance = { factor = 1 }
+		become_heretic = yes
+		reverse_opinion = {
+			modifier = opinion_happy
+			who = FROM
+			years = 10
+		}		
+	}
+}

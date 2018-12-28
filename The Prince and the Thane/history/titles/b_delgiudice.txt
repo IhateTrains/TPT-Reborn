@@ -1,0 +1,21 @@
+954.1.1={
+	holder=2220023 #Giovanni Del Giudice
+	holding_dynasty = 8001002 # Del Giudice
+	liege="d_amalfi"
+}
+
+970.1.1={
+	holder=2220024 #Bartolomeo Del Giudice
+}
+
+1020.1.1={
+	holder=2220025 #Antonio Del Giudice
+}
+
+1062.1.1={
+	holder=2220026 #Filippo Del Giudice
+}
+
+1073.1.1={
+	holder=0
+}

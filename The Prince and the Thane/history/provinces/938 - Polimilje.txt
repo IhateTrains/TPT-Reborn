@@ -1,0 +1,29 @@
+# 938 - Polimilje
+
+# County Title
+title = c_polimilje
+
+# Settlements
+max_settlements = 3
+
+b_prijepolje = castle
+#b_kukanj = castle
+#b_koznik = castle
+#b_klek = castle
+#b_milesevac = castle
+
+#b_pljevlja = city
+#b_rudo = city
+#b_maoca = city
+#b_bukovica = city
+ 
+b_mileseva = temple 
+
+
+# Misc
+culture = serbian
+religion = catholic
+
+# History
+
+

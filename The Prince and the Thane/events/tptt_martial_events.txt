@@ -1,0 +1,692 @@
+##############################################################
+#
+# The Prince and the Thane martial events - written by idib816
+#
+##############################################################
+
+namespace = martial
+
+#Commander deals with soldiers accused of rape
+character_event = {
+	id = martial.0
+	picture = "GFX_evt_brothel"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCmartial.0"
+
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "They will be punished, I assure you.."
+        trigger = { intrigue = 12 }
+        prestige = 10
+		random = { 
+		    chance = 10
+            add_trait = arbitrary 
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+		   }   
+	   }
+       ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.75
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}
+
+    option = {
+		name = "It wasn't them, I know!"
+        trigger = { diplomacy = 10 }
+        piety = -10
+        add_character_modifier = { name = troops_likes_marshal duration = 730 }
+        random = { 
+		    chance = 25
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+                modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll have their manhood on a plate"
+         piety = 25
+         add_character_modifier = { name = demotivated_troops duration = 365 }
+         random = { 
+		     chance = 25
+             add_trait = wroth 
+			 hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Commander deals with an homosexual sergeant
+character_event = {
+	id = martial.1
+	picture = "GFX_evt_gaylovers2"
+	desc = "EVTDESCmartial.1"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		in_command = yes
+        in_battle = no
+        NOT = { trait = homosexual }
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "I won't allow queerness in my ranks"
+        prestige = 10
+		random = { 
+		    chance = 10
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38262 }
+		    } 
+		}
+		
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}
+
+    option = {
+		name = "He's a good sergeant, that's it"
+        trigger = { diplomacy = 12 }
+        piety = -10
+        add_character_modifier = { name = troops_likes_marshal duration = 730 }
+        random = { 
+		    chance = 15
+            add_trait = tolerant 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.71 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.6
+				trait = honest
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "For God's sake, behead this abomination!"
+        piety = 25
+        add_character_modifier = { name = demotivated_troops duration = 730 }
+        random = { 
+		    chance = 25
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}
+}
+
+#Commander deals with old mounts for knights
+character_event = {
+	id = martial.2
+	picture = "GFX_evt_horseknight"
+	desc = "EVTDESCmartial.2"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "The best knights deserve the best mounts"
+        trigger = { stewardship = 12 }
+        prestige = 10
+        scaled_wealth = -0.35
+		random = { 
+		    chance = 20
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "Only those who can afford it will have a new mount"
+        piety = -5
+        add_character_modifier = { name = demotivated_troops duration = 365 }
+        random = { 
+		    chance = 15
+            add_trait = proud  
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 3
+				trait = greedy
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}	
+
+    option = {
+		name = "They are just as lame as their riders"
+        prestige = -10
+        piety = -5
+        add_character_modifier = { name = demotivated_troops duration = 730 }
+        random = { 
+		    chance = 15
+            add_trait = honest 
+			hidden_tooltip = {
+				character_event = { id = 38262 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = brilliant_strategist
+			}
+		}
+	}
+}
+
+#Commander deals with deserters
+character_event = {
+	id = martial.3
+	picture = "GFX_evt_beheading"
+	desc = "EVTDESCmartial.3"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+    mean_time_to_happen = {
+		days = 10
+	}	
+	
+	option = {
+		name = "The lash will suffice"
+        prestige = 10
+        add_character_modifier = { name = troops_likes_marshal duration = 730 }
+		random = { 
+		    chance = 20
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = cruel
+			}
+		}
+	}
+
+    option = {
+		name = "Who am I to judge them instead of God?"
+        piety = 10
+        prestige = -15
+        random = { 
+		    chance = 15
+            add_trait = zealous
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.2
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.6
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}	
+
+    option = {
+		name = "Their heads will show the others what happens to deserters"
+        prestige = 10
+        piety = -15
+        add_character_modifier = { name = demotivated_troops duration = 730 }
+        random = { chance = 10
+        add_trait = impaler }
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = impaler
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+# Ambushed by the enemy
+character_event = {
+	id = martial.4
+	desc = "EVTDESCmartial.4"
+	picture = GFX_evt_orlando
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+        war = yes
+        NOT = { 
+		    OR = {
+                siege = { is_attacker = no }
+                siege = { is_attacker = yes }
+            }
+        }
+    }
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "EVTOPTAmartial.4"
+        random = { chance = 25 death = { death_reason = death_battle } }
+		character_event = { id = martial.5 tooltip = EVTTOOLTIPmartial.5 }
+	}
+}
+
+#The battle hardens
+character_event = {
+	id = martial.5
+	desc = "EVTDESCmartial.5"
+	picture = GFX_evt_orlando
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAmartial.5"
+		prestige = 50
+        random_list = { 
+		    65 = { death = { death_reason = death_battle } }
+            35 = { 
+			    add_trait = war_hero 
+				hidden_tooltip = {
+				    character_event = { id = tptt_traits.94 }
+		        } 
+		        prestige = 100 
+				random = { 
+				    chance = 35 
+					add_trait = wounded 
+					hidden_tooltip = {
+				        character_event = { id = 38280 }
+		            } 
+		        } 
+		    }       
+		}
+	}
+}
+
+#Camp struck by disease
+character_event = {
+	id = martial.6
+	desc = "EVTDESCmartial.6"
+	picture = "GFX_evt_battle_death"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "Alas!"
+		random = { chance = 10 death = { death_reason = death_rabble } }
+        hidden_tooltip = { troops = -0.25 }
+	}
+}
+
+#Provisions gone bad cause death in the camp
+character_event = {
+	id = martial.7
+	desc = "EVTDESCmartial.7"
+	picture = "GFX_evt_battle_death"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "Alas!"
+		random = { chance = 5 death = { death_reason = death_rabble } }
+        hidden_tooltip = { troops = -0.2 }
+	}
+}
+
+#Camp riot
+character_event = {
+	id = martial.8
+	desc = "EVTDESCmartial.8"
+	picture = "GFX_evt_city_fire"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "GUARDS!"
+		random = { chance = 10 death = { death_reason = death_battle } }
+        hidden_tooltip = { troops = -0.25 }
+	}
+}
+
+#Fire in the camp
+character_event = {
+	id = martial.9
+	desc = "EVTDESCmartial.9"
+	picture = "GFX_evt_city_fire"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "To the buckets!"
+		random = { chance = 5 death = { death_reason = death_battle } }
+        hidden_tooltip = { troops = -0.075 }
+	}
+}
+
+#Reinforcements 1
+
+character_event = {
+	id = martial.10
+	desc = "EVTDESCmartial.10"
+	picture = "GFX_evt_knights_banner"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "God is with us!"
+        hidden_tooltip = { troops = 0.5 }
+	}
+}
+
+#Reinforcements 2
+
+character_event = {
+	id = martial.11
+	desc = "EVTDESCmartial.10"
+	picture = "GFX_evt_knights_banner"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+        in_battle = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "God is with us!"
+        hidden_tooltip = { troops = 0.35 }
+	}
+}

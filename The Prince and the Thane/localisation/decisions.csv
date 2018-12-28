@@ -1,0 +1,239 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+coronation;Request Papal Coronation;;;;;;;;;;;;;x
+coronation_desc;Enacting this decision will result in a request to the Pope for a coronation ceremony to be held at Rome in honour of [Root.GetTitledFirstName]. This will allow [Root.GetTitledFirstName] to become crowned and blessed by the Pope and extend your authority as the Most Pious [Root.GetTitledFirstName], which further legitimises your rule.;;;;;;;;;;;;;x
+abdicate;Abdicate the Throne;;;;;;;;;;;;;x
+Pope_coronation;Papal coronation;;;;;;;;;;;;;x
+Pope_coronation_desc;Enacting this decision will result in a request to the Pope for a coronation ceremony to be held at Rome in honour of [Root.GetTitledFirstName]. This will allow [Root.GetTitledFirstName] to become crowned and blessed by the Pope and extend your authority as the ruler of your own kingdom, which further legitimises your rule.;;;;;;;;;;;;;x
+employ_steward;Invite Steward to Court;;;;;;;;;;;;;x
+employ_steward_desc;Invite a promising nobleman to court, to aid with matters of administration.;;;;;;;;;;;;;x
+employ_chancellor;Invite Chancellor to Court;;;;;;;;;;;;;x
+employ_chancellor_desc;Invite a promising nobleman to court, to aid with diplomatic affairs.;;;;;;;;;;;;;x
+employ_marshal;Invite Marshal to Court;;;;;;;;;;;;;x
+employ_marshal_desc;Invite a promising nobleman to court, to help train your armies.;;;;;;;;;;;;;x
+employ_spymaster;Invite Spymaster to Court;;;;;;;;;;;;;x
+employ_spymaster_desc;Invite a promising nobleman to court, to help run your spy network.;;;;;;;;;;;;;x
+extra_tax_levy;Request Contribution;;;;;;;;;;;;;x
+extra_tax_levy_desc;We can try to levy an additional one time tax from all the vassals in the realm, at the expense of some prestige and relationship with our vassals;;;;;;;;;;;;;x
+TAXCONTRIBUTIONTITLE;Extra Tax Contribution;;;;;;;;;;;;;x
+king_coronation;Monarch Coronation;;;;;;;;;;;;;x
+king_coronation_desc;This monarch wants to be crowned in front of his fellow vassals.;;;;;;;;;;;;;x
+get_concubine;Get a Concubine;;;;;;;;;;;;;x
+get_concubine_desc;Take a beautiful and young daughter of your realm as your concubine, inviting her at court.;;;;;;;;;;;;;x
+get_toyboy;Get a Lover;;;;;;;;;;;;;x
+get_toyboy_desc;Take an handsome and young son of your realm as your lover, inviting him at court.;;;;;;;;;;;;;x
+switch_allegiance;Switch Allegiance;;;;;;;;;;;;;x
+switch_allegiance_desc;Switch allegiance in the Investiture Contest between the Pope and the Holy Roman Emperor.;;;;;;;;;;;;;x
+switch_allegiance2;Switch Allegiance;;;;;;;;;;;;;x
+switch_allegiance2_desc;Switch allegiance in the Investiture Contest between the Pope and the Holy Roman Emperor.;;;;;;;;;;;;;x
+tribute_to_caliphate;Pay Tribute to the Caliphate;;;;;;;;;;;;;x
+tribute_to_caliphate_desc;However galling to admit, we are threatened by the heathens on our borders.  If we acknowledge their strength and pay them tribute, it may forestall outright invasion.;;;;;;;;;;;;;x
+cease_tribute_to_caliphate;End Tribute;;;;;;;;;;;;;x
+cease_tribute_to_caliphate_desc;Enough of this insulting tribute!  We will pay it no longer!;;;;;;;;;;;;;x
+estabilish_exchequer_of_pleas;Estabilish the Exchequer of Pleas;;;;;;;;;;;;;x
+estabilish_exchequer_of_pleas_desc;The Exchequer of Pleas or Court of Exchequer is a court that deals with matters of equity, a set of legal principles based on natural law and common law in England and Wales.;;;;;;;;;;;;;x
+estabilish_court_of_common_pleas;Estabilish the Court of Common Pleas;;;;;;;;;;;;;x
+estabilish_court_of_common_pleas_desc;"The Court of Common Pleas is a common law court in the English legal system that covers ""common pleas"": actions between subject and subject, which do not concern the king.";;;;;;;;;;;;;x
+estabilish_charter_of_the_forest;Issue the Charter of the Forest;;;;;;;;;;;;;x
+estabilish_charter_of_the_forest_desc;The Charter of the Forest is a charter that re-establishes rights of access to the royal forest for free men.;;;;;;;;;;;;;x
+estabilish_magna_carta;Issue the Magna Carta Libertatum;;;;;;;;;;;;;x
+estabilish_magna_carta_desc;"The Magna Carta Libertatum is an English charter issued by the monarch who proclaims certain liberties, for example by explicitly accepting that no ""freeman"" can be punished except through the law of the land, and through some other concessions to the monarch's fellow subjects aimed at preserving and sometimes increasing their privileges. It is one of the first examples of a national statue or constitution.";;;;;;;;;;;;;x
+expel_jews;Expel the Jews;;;;;;;;;;;;;x
+expel_jews_desc;Issue an edict promoting the expulsion of all the Jews of the realm.;;;;;;;;;;;;;x
+take_loan;Take a Loan;;;;;;;;;;;;;x
+take_loan_desc;Go to the local Jewish community's moneylenders to ask for a loan with favorable terms.;;;;;;;;;;;;;x
+estabilish_exchequer_of_the_jews;Estabilish the Exchequer of the Jews;;;;;;;;;;;;;x
+estabilish_exchequer_of_the_jews_desc;The Exchequer of the Jews (Latin: Scaccarium Judaeorum) was a division of the Court of Exchequer at Westminster, which recorded and regulated the taxes and the law-cases of the Jews in England.;;;;;;;;;;;;;x
+make_royal_entry;Make a Royal Entry;;;;;;;;;;;;;x
+make_royal_entry_desc;The Royal Entry, also known by various other names, including Triumphal Entry and Joyous Entry, embraced the ceremonial and festivities accompanying a formal entry by a ruler or his representative into an important city (often the capital) in the Middle Ages and Early Modern Period in Europe. The entry centred on a procession carrying the entering prince into the city, where he was greeted and paid appropriate homage by the civic authorities. A feast and other celebrations would follow.;;;;;;;;;;;;;x
+estabilish_imperial_diet;Estabilish the Imperial Diet;;;;;;;;;;;;;x
+estabilish_imperial_diet_desc;The Imperial Diet was the Diet, or general assembly, of the Imperial Estates of the Holy Roman Empire.;;;;;;;;;;;;;x
+estabilish_estates_general;Estabilish the Estates General;;;;;;;;;;;;;x
+estabilish_estates_general_desc;The Estates General was a legislative assembly of the different classes of French subjects. It had a separate assembly for each of the three estates, which were called and dismissed by the king. It had no true power in its own right—unlike the English parliament it was not required to approve royal taxation or legislation instead it functioned as an advisory body to the king, primarily by presenting petitions from the various estates and consulting on fiscal policy.;;;;;;;;;;;;;x
+estabilish_estates_of_parliament;Estabilish the Estates of Parliament;;;;;;;;;;;;;x
+estabilish_estates_of_parliament_desc;The Estates of Parliament was the legislature of the Kingdom of Alba or Scotland. The parliament, which is also referred to as the Estates of Scotland, the Community of the Realm, the Three Estates (Scots: Thrie Estaitis), the Scots Parliament or the auld Scots Parliament (English: old), met until prorogued sine die at the time of the Acts of Union in 1707. Thereafter the Parliament of Great Britain operated for both England and Scotland.;;;;;;;;;;;;;x
+estabilish_estates_generales;Estabilish the Cortes Generales;;;;;;;;;;;;;x
+estabilish_estates_generales_desc;"The Cortes Generales is the legislature of Spain. The system of Cortes arose in the Middle Ages as part of feudalism. A ""Corte"" was an advisory council made up of the most powerful feudal lords closest to the king. ";;;;;;;;;;;;;x
+estabilish_sabor_parliament;Estabilish the Sabor;;;;;;;;;;;;;x
+estabilish_sabor_parliament_desc;The Sabor was the legislature of Croatia.;;;;;;;;;;;;;x
+arrest_the_templars_france;Arrest the Templars;;;;;;;;;;;;;x
+arrest_the_templars_france_desc;Arrest the Templars as heretics and seize their wealth and holdings.;;;;;;;;;;;;;x
+arrest_templars;Begin the plot;;;;;;;;;;;;;x
+donation_to_the_patriarch;Make a Donation to the Patriarch.;;;;;;;;;;;;;x
+donation_to_the_patriarch_desc;Make a monetary donation to the Orthodox Patriarch, he will surely appreciate it and reward us with respect and sanctity.;;;;;;;;;;;;;x
+estabilish_siete_partidas;Estabilish the Siete Partidas;;;;;;;;;;;;;x
+estabilish_siete_partidas_desc;The Siete Partidas was a Castilian statutory code with the intent of establishing a uniform body of normative rules for the kingdom. The codified and compiled text was originally called the Libro de las Leyes. It was not until the 14th century that it was given its present name, referring to the number of sections into which it is divided.;;;;;;;;;;;;;x
+estabilish_statute_of_merton;Estabilish the Statute of Merton;;;;;;;;;;;;;x
+estabilish_statute_of_merton_desc;The Statute of Merton is considered to be the first English statute, and is printed as the first statute in The Statutes of the Realm. Amongst its provisions, the statute allowed a Lord of the Manor to enclose common land (provided that sufficient pasture remained for his tenants), and set out when and how manorial lords could assert rights over waste land, woods, and pastures against their tenants.;;;;;;;;;;;;;x
+estabilish_quia_emptores;Estabilish the Quia Emptores;;;;;;;;;;;;;x
+estabilish_quia_emptores_desc;Quia Emptores was a statute that prevented tenants from alienating their lands to others by subinfeudation, instead requiring all tenants wishing to alienate their land to do so by substitution. Quia Emptores, along with its companion statute of Quo Warranto, was intended to remedy land ownership disputes and consequent financial difficulties that had resulted from the decline of the traditional feudal system during the High Middle Ages.;;;;;;;;;;;;;x
+estabilish_ius_primae_noctis_1;Enact the Ius Primae Noctis;;;;;;;;;;;;;x
+estabilish_ius_primae_noctis_1_desc;The Ius Primae Noctis was a feudal right said to have existed in medieval Europe giving the lord to whom it belonged the right to sleep the first night with the bride of any one of his subjects.;;;;;;;;;;;;;x
+abdicate_desc;Abdicate the Throne to your Heir;;;;;;;;;;;;;x
+ball_0;Host a Great Ball;;;;;;;;;;;;;x
+ball_0_desc;Host a Great Ball at court, inviting all of your vassals and courtiers to the event.;;;;;;;;;;;;;x
+knight_son_bribe_septon;Buy Knighthood for [This.GetBestName];;;;;;;;;;;;;x
+knight_son_bribe_septon_desc;Bribe a lord to knight [This.GetBestName].;;;;;;;;;;;;;x
+knight_son;Knight [This.GetBestName];;;;;;;;;;;;;x
+knight_son_desc;[This.GetBestName] has proven himself to be a fine warrior. Perhaps we should officially recognize his skill.;;;;;;;;;;;;;x
+knight_daughter;Knight [This.GetBestName];;;;;;;;;;;;;x
+buy_knighthood;Buy Knighthood;;;;;;;;;;;;;x
+buy_knighthood_desc;Bribe a lord to knight [Root.GetBestName];;;;;;;;;;;;;x
+employ_cityguard;Establish a Personal Guard;;;;;;;;;;;;;x
+employ_cityguard_desc;Hire a group of loyal soldiers to create a personal household guard;;;;;;;;;;;;;x
+disband_cityguard;Disband your Personal Guard;;;;;;;;;;;;;x
+disband_cityguard_desc;Disband your Personal Guard.;;;;;;;;;;;;;x
+cityguard_menu;Command your Personal Guard;;;;;;;;;;;;;x
+cityguard_menu_desc;Give orders to your men;;;;;;;;;;;;;x
+hold_a_epic_tournament;Host the Grand Tourney of [Root.Capital.GetName];;;;;;;;;;;;;x
+hold_a_epic_tournament_desc;Let us hold a tournament the like of which is only rumoured. All Knights and Lords of the realm will gather at [Root.Capital.GetName];;;;;;;;;;;;;x
+hold_a_epic_tournament_LP;Host the Grand Tourney of [Root.Capital.GetName];;;;;;;;;;;;;x
+hold_a_epic_tournament_LP_desc;Let us hold a tournament the like of which is only rumoured. All Knights and Lords of the realm will gather at [Root.Capital.GetName];;;;;;;;;;;;;x
+hold_a_epic_tournament_high_lord;Hold a Regional Tourney;;;;;;;;;;;;;x
+hold_a_epic_tournament_high_lord_desc;Let us hold a jousting tournament for the Knights and Lords of our region in [Root.Capital.GetName];;;;;;;;;;;;;x
+hold_a_epic_tournament_lord;Hold a Local Tourney;;;;;;;;;;;;;x
+hold_a_epic_tournament_lord_desc;Let us hold a small tournament for local Knights and Lords in [Root.Capital.GetName];;;;;;;;;;;;;x
+show_me_the_medal_winners;Show Tourney Medal winners;;;;;;;;;;;;;x
+show_me_the_medal_winners_desc;Show the medal winners of the latest Tourneys;;;;;;;;;;;;;x
+banish_ius_primae_noctis;Banish the Ius Primae Noctis;;;;;;;;;;;;;x
+banish_ius_primae_noctis_desc;Banish the Ius Primae Noctis from your realm's lands.;;;;;;;;;;;;;x
+arrange_prisoner_swap;Arrange an exchange of hostages;;;;;;;;;;;;;x
+arrange_prisoner_swap_desc;Arrange an exchange of hostages;;;;;;;;;;;;;x
+bring_out_of_hiding;Call Family out of Hiding;;;;;;;;;;;;;x
+bring_out_of_hiding_desc;"Removes ""Hidden in countryside"" from any of your dynasty or spouses at your location.";;;;;;;;;;;;;x
+request_important_prisoners;Demand Important Prisoners from Vassals;;;;;;;;;;;;;x
+request_important_prisoners_desc;Any prisoners ranked above Baron are transferred to your dungeons.;;;;;;;;;;;;;x
+ransom_all;Ransom All Prisoners;Ransom All Prisoners;Ransom All Prisoners;;Ransom All Prisoners;;;;;;;;;x
+ransom_all_desc;Make a ransom offer to all prisoners.;Make a ransom offer to all prisoners.;Make a ransom offer to all prisoners.;;Make a ransom offer to all prisoners.;;;;;;;;;x
+ransom_all_tooltip;Character is asked to pay ransom.;Character is asked to pay ransom.;Character is asked to pay ransom.;;Character is asked to pay ransom.;;;;;;;;;x
+nm_employ_volva;Seek out a Volva;;;;;;;;;;;;;x
+nm_employ_volva_desc;Seek out a female practicer of Seid.;;;;;;;;;;;;;x
+nm_blot_decision;Hold a Blot;;;;;;;;;;;;;x
+nm_blot_decision_desc;It is time to honour the Gods with food, drink and entertainment!;;;;;;;;;;;;;x
+nm_go_viking;Go on a Raid!;;;;;;;;;;;;;x
+nm_go_viking_desc;It is time. Rally the men, get the longboats! It is time to do like our fathers and plunder our way to riches and glory!;;;;;;;;;;;;;x
+nm_return_home;Return Home;;;;;;;;;;;;;x
+nm_return_home_desc;The harvest waits and our longboats are already full of gains.;;;;;;;;;;;;;x
+rebuild_the_temple;Build the Third Temple;;;;;;;;;;;;;x
+rebuild_the_temple_desc;Build the Third Jewish Temple of Jerusalem.;;;;;;;;;;;;;x
+offer_temple_sacrifice;Offer a sacrifice to the Cohen;;;;;;;;;;;;;x
+offer_temple_sacrifice_desc;Offer a sacrifice to the Cohen haGadol at the altar of the Third Temple.;;;;;;;;;;;;;x
+demand_trial_by_combat;Demand a Trial by Combat;;;;;;;;;;;;;x
+demand_trial_by_combat_desc;Challenge [Root.Host.GetBestName] to a trial by combat in order to prove false his slanderous accusations!;;;;;;;;;;;;;x
+return_home;Return Home from the Templar Service;;;;;;;;;;;;;x
+return_home_desc;Although your duty with the Templars is not finished yet, they will allow you to return home because of the importance you hold for your realm, if you were to request it.;;;;;;;;;;;;;x
+reform_succession;Reform the Succession Laws;;;;;;;;;;;;;x
+reform_succession_desc;Reform your realm to allow the institution of the seniority and primogeniture succession laws.;;;;;;;;;;;;;x
+found_order_santiago;Found the Order of Santiago;;;;;;;;;;;;;x
+found_order_santiago_desc;Estabilish the Order of Santiago, granting it the county of Santiago and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_alcantara;Found the Order of Alcantara;;;;;;;;;;;;;x
+found_order_alcantara_desc;Estabilish the Order of Alcantara, granting it the county of Alcantara and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_calatrava;Found the Order of Calatrava;;;;;;;;;;;;;x
+found_order_calatrava_desc;Estabilish the Order of Calatrava, granting it the county of Calatrava and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_saint_james;Found the Order of Saint James;;;;;;;;;;;;;x
+found_order_saint_james_desc;Estabilish the Order of Saint James of Altopascio, granting it the barony of Altopascio and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_aviz;Found the Order of Aviz;;;;;;;;;;;;;x
+found_order_aviz_desc;Estabilish the Order of Aviz, granting it the county of Castelo Branco and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_livonian;Found the Livonian Brothers of the Sword;;;;;;;;;;;;;x
+found_order_livonian_desc;Estabilish the Livonian Brothers of the Sword, granting them the castle of Jelgava and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_dobrzyn;Found the Order of Dobrzyn;;;;;;;;;;;;;x
+found_order_dobrzyn_desc;Estabilish the Order of Dobrzyn, granting it the castle of Dobrzyn and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_redstar;Found the Knights of the Cross with the Red Star;;;;;;;;;;;;;x
+found_order_redstar_desc;Estabilish the Knights of the Cross with the Red Star, granting them the castle of Slany and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_montesa;Found the Order of Montesa;;;;;;;;;;;;;x
+found_order_montesa_desc;Estabilish the Order of Montesa, granting it the castle of Alacuas and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_sepulchre;Found the Order of the Holy Sepulchre;;;;;;;;;;;;;x
+found_order_sepulchre_desc;Estabilish the Order of the Holy Sepulchre, granting it the castle of Tivoli and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_virgin;Found the Order of the Blessed Virgin Mary of Mercy;;;;;;;;;;;;;x
+found_order_virgin_desc;Estabilish the Order of the Blessed Virgin Mary of Mercy, granting it the castle of Osona and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_thomas;Found the Knights of St. Thomas;;;;;;;;;;;;;x
+found_order_thomas_desc;Estabilish the Knights of St. Thomas, granting them the castle of Manawat and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_jordi;Found the Knights of St. George;;;;;;;;;;;;;x
+found_order_jordi_desc;Estabilish the Knights of St. George, granting them the castle of Cerdana and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_jesus;Found the Order of the Faith of Jesus Christ;;;;;;;;;;;;;x
+found_order_jesus_desc;Estabilish the Order of the Faith of Jesus Christ, granting it the castle of Muret and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_mountjoy;Found the Order of Mountjoy;;;;;;;;;;;;;x
+found_order_mountjoy_desc;Estabilish the Order of Mountjoy, granting it the castle of La Forbie and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+found_order_lazarus;Found the Knights of St. Lazarus;;;;;;;;;;;;;x
+found_order_lazarus_desc;Estabilish the Knights of St. Lazarus, granting them the castle of Saint Samuel and a place under the light of your rule. Be careful, the Pope may not approve of a new Order, so you will have to seek his approval beforehand.;;;;;;;;;;;;;x
+pil_fabricate_conception_decision_1;Fabricate Evidence of Illegitimacy;Fabriquer des preuves d'illégitimité;;;;;;;;;;;;x
+pil_fabricate_conception_decision_1_desc;Your investigation is not proceeding as quickly as you'd hoped. Perhaps a little bit of forgery might speed things up. Of course, anyone who sees through the fake is never going to believe anything else you might have to say.;Votre enquête ne va pas aussi vite que vous l'espériez. Peut-être que quelques faux accélèrerait les choses. Bien sûr, si quelqu'un venait à découvrir la véritable nature de ces documents, il ne vous croirait plus un mot venant de vous. ;;;;;;;;;;;;x
+pil_fabricate_conception_decision_2;Fabricate Evidence of Illegitimacy;Fabriquer des preuves d'illégitimité;;;;;;;;;;;;x
+pil_fabricate_conception_decision_2_desc;Your investigation is not proceeding as quickly as you'd hoped. Perhaps a little bit of forgery might speed things up. Of course, anyone who sees through the fake is never going to believe anything else you might have to say.;Votre enquête ne va pas aussi vite que vous l'espériez. Peut-être que quelques faux accélèrerait les choses. Bien sûr, si quelqu'un venait à découvrir la véritable nature de ces documents, il ne vous croirait plus un mot venant de vous. ;;;;;;;;;;;;x
+pil_fabricate_conception_decision_3;Fabricate Evidence of Illegitimacy;Fabriquer des preuves d'illégitimité;;;;;;;;;;;;x
+pil_fabricate_conception_decision_3_desc;Your investigation is not proceeding as quickly as you'd hoped. Perhaps a little bit of forgery might speed things up. Of course, anyone who sees through the fake is never going to believe anything else you might have to say.;Votre enquête ne va pas aussi vite que vous l'espériez. Peut-être que quelques faux accélèrerait les choses. Bien sûr, si quelqu'un venait à découvrir la véritable nature de ces documents, il ne vous croirait plus un mot venant de vous. ;;;;;;;;;;;;x
+pil_fabricate_conception_decision_4;Fabricate Evidence of Illegitimacy;Fabriquer des preuves d'illégitimité;;;;;;;;;;;;x
+pil_fabricate_conception_decision_4_desc;Your investigation is not proceeding as quickly as you'd hoped. Perhaps a little bit of forgery might speed things up. Of course, anyone who sees through the fake is never going to believe anything else you might have to say.;Votre enquête ne va pas aussi vite que vous l'espériez. Peut-être que quelques faux accélèrerait les choses. Bien sûr, si quelqu'un venait à découvrir la véritable nature de ces documents, il ne vous croirait plus un mot venant de vous. ;;;;;;;;;;;;x
+pil_fabricate_conception_decision_5;Fabricate Evidence of Illegitimacy;Fabriquer des preuves d'illégitimité;;;;;;;;;;;;x
+pil_fabricate_conception_decision_5_desc;Your investigation is not proceeding as quickly as you'd hoped. Perhaps a little bit of forgery might speed things up. Of course, anyone who sees through the fake is never going to believe anything else you might have to say.;Votre enquête ne va pas aussi vite que vous l'espériez. Peut-être que quelques faux accélèrerait les choses. Bien sûr, si quelqu'un venait à découvrir la véritable nature de ces documents, il ne vous croirait plus un mot venant de vous. ;;;;;;;;;;;;x
+pogrom;Pogrom;Pogrom;Pogrom;;;;;;;;;;;x
+pogrom_desc;Expel the Jews living in our lands and seize their wealth for the crown.;Expulser les juifs vivant dans notre royaume et saisir leurs biens au profit de la couronne;Vertreibt die Juden aus unseren Besitztümern und konfisziert ihren Besitz für die Krone.;;;;;;;;;;;x
+repay_loan_50;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_50_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+repay_loan_100;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_100_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+repay_loan_200;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_200_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+repay_loan_400;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_400_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+repay_loan_600;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_600_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+repay_loan_800;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_800_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+repay_loan_1000;Repay Loan;Remboursement du prêt;Darlehen zurückzahlen;;;;;;;;;;;x
+repay_loan_1000_desc;Repay the full amount of the loan you have taken.;Rembourser le montant intégral de l'emprunt.;Rückzahlung des gesamten Darlehens das Sie eingenommen haben.;;;;;;;;;;;x
+DIPLO_OF_POPE;Base;Base;Basis;;;;;;;;;;;x
+take_loan;Take a Loan;Emprunter;Kredit nehmen;;;;;;;;;;;x
+APPOINT_REGENTS_ON;You can now wage De Jure wars without a Ducal claim.\n;Vous pouvez maintenant mener des guerres De Jure sans revendication ducale.\n;De Jure-Krieg können ohne Gebietsanspruch erklärt werden\n;;;;;;;;;;;x
+APPOINT_REGENTS_OFF;You can no longer wage De Jure wars without a Ducal claim.\n;Vous ne pouvez plus mener des guerres De Jure sans revendication ducale.\n;De Jure-Krieg können nicht ohne Gebietsanspruch erklärt werden\n;;;;;;;;;;;x
+summer_fair_0;Plan a Summer Fair;Organiser un festival d'été;Jahrmarkt planen;;;;;;;;;;;x
+summer_fair_0_desc;The Summer Fair brings merchants, peddlers and all sorts of entertainment to your province.;Le Festival d’été est l’occasion d’attirer marchands, colporteurs et autres divertissements dans votre province.;Im Sommer bringt ein Jahrmarkt Händler, Hausierer und alle Arten von Unterhaltung in unsere Provinz.;;;;;;;;;;;x
+feast_0;Plan a Feast;Organiser un banquet;Großes Fest planen;;;;;;;;;;;x
+feast_0_desc;In winter we shall hold the biggest feast ever seen in the realm!;En hiver nous allons organiser le plus grand banquet du royaume !;Im Winter sollten wir das größte Fest unseres Reiches veranstalten!;;;;;;;;;;;x
+hold_grand_hunt_0;Plan a Grand Hunt;Participer à une grande partie de chasse;Auf eine Hofjagd gehen;;Únete a una gran cacería;;;;;;;;;x
+hold_grand_hunt_0_desc;In autumn we shall go on a Grand Hunt with the best hunters in our domains!;Participez à une grande partie de chasse avec les meilleurs chasseurs de nos domaines !;Mit den besten Jägern unserer Domänen auf eine Hofjagd gehen!;;¡Ve a una gran cacería con los mejores cazadores de nuestros dominios!;;;;;;;;;x
+summer_fair_1;Plan a Summer Fair;Organiser un Festival d’été;Sommerfest abhalten;;Celebrar una feria de verano;;;;;;;;;x
+summer_fair_1_desc;The Summer Fair brings merchants, peddlers and all sorts of entertainment to your province.;Le Festival d’été est l’occasion d’attirer marchands, colporteurs et autres divertissements dans votre province.;Das Sommerfest bringt Kaufleute, fahrende Händler und allerlei Unterhalter in Eure Provinz.;;La feria de verano atrae a mercaderes, vendedores ambulantes y todo tipo de entretenimiento a tu provincia.;;;;;;;;;x
+feast_1;Plan a Feast;Organiser un banquet;Gelage abhalten;;Celebrar un banquete;;;;;;;;;x
+feast_1_desc;In winter we shall hold the biggest feast ever seen in the Kingdom!;Organisez le plus grand banquet du royaume !;Veranstaltet das größte Gelage, das das Königreich je gesehen hat!;;¡Celebra el banquete más grande jamás visto en el reino!;;;;;;;;;x
+hold_grand_hunt_1;Plan a Grand Hunt;Participer à une grande partie de chasse;Auf eine Hofjagd gehen;;Únete a una gran cacería;;;;;;;;;x
+hold_grand_hunt_1_desc;In autumn we shall go on a Grand Hunt with the best hunters in our domains!;Participez à une grande partie de chasse avec les meilleurs chasseurs de nos domaines !;Mit den besten Jägern unserer Domänen auf eine Hofjagd gehen!;;¡Ve a una gran cacería con los mejores cazadores de nuestros dominios!;;;;;;;;;x
+summer_fair_2;Plan a Summer Fair;Organiser un Festival d’été;Sommerfest abhalten;;Celebrar una feria de verano;;;;;;;;;x
+summer_fair_2_desc;The Summer Fair brings merchants, peddlers and all sorts of entertainment to your province.;Le Festival d’été est l’occasion d’attirer marchands, colporteurs et autres divertissements dans votre province.;Das Sommerfest bringt Kaufleute, fahrende Händler und allerlei Unterhalter in Eure Provinz.;;La feria de verano atrae a mercaderes, vendedores ambulantes y todo tipo de entretenimiento a tu provincia.;;;;;;;;;x
+feast_2;Plan a Feast;Organiser un banquet;Gelage abhalten;;Celebrar un banquete;;;;;;;;;x
+feast_2_desc;In winter we shall hold the biggest feast ever seen in the Kingdom!;Organisez le plus grand banquet du royaume !;Veranstaltet das größte Gelage, das das Königreich je gesehen hat!;;¡Celebra el banquete más grande jamás visto en el reino!;;;;;;;;;x
+hold_grand_hunt_2;Plan a Grand Hunt;Participer à une grande partie de chasse;Auf eine Hofjagd gehen;;Únete a una gran cacería;;;;;;;;;x
+hold_grand_hunt_2_desc;In autumn we shall go on a Grand Hunt with the best hunters in our domains!;Participez à une grande partie de chasse avec les meilleurs chasseurs de nos domaines !;Mit den besten Jägern unserer Domänen auf eine Hofjagd gehen!;;¡Ve a una gran cacería con los mejores cazadores de nuestros dominios!;;;;;;;;;x
+go_on_hajj_1;Go on Hajj to Mecca;Partir en pèlerinage à La Mecque;Geht auf Hadsch nach Mekka ;;Ir al Hajj a La Meca;;;;;;;;;x
+go_on_hajj_1_desc;Going on a pilgrimage to Mecca is one of the pillars of Islam, and this is something every able-bodied Muslim is expected to do once in his life.;Réaliser un pèlerinage à La Mecque fait partie des cinq piliers de l'Islam. C'est une chose que tout musulman valide se doit de faire au moins une fois dans sa vie.;Auf Wallfahrt nach Mekka zu gehen, ist eine der Säulen des Islam und es ist etwas,was von jedem nicht beeinträchtigten Moslem einmal in seinem Leben erwartet wird. ;;Ir de peregrinación hacia La Meca es uno de los pilares del islam,  y es algo que todo musulmán que esté en condiciones físicas de hacerlo debe hacer una vez en su vida.;;;;;;;;;x
+go_on_hajj_2;Go on Hajj to Mecca;Partir en pèlerinage à La Mecque;Geht auf Hadsch nach Mekka ;;Ir al Hajj a La Meca;;;;;;;;;x
+go_on_hajj_2_desc;Going on a pilgrimage to Mecca is one of the pillars of Islam, and this is something every able-bodied Muslim is expected to do once in his life.;Réaliser un pèlerinage à La Mecque fait partie des cinq piliers de l'Islam. C'est une chose que tout musulman valide se doit de faire au moins une fois dans sa vie.;Auf Wallfahrt nach Mekka zu gehen, ist eine der Säulen des Islam und es ist etwas,was von jedem nicht beeinträchtigten Moslem einmal in seinem Leben erwartet wird. ;;Ir de peregrinación hacia La Meca es uno de los pilares del islam,  y es algo que todo musulmán que esté en condiciones físicas de hacerlo debe hacer una vez en su vida.;;;;;;;;;x
+hold_a_epic_tournament;Hold a Grand tourney of [Root.Capital.GetName];Organiser un grand tournoi à [Root.Capital.GetName];;;;;;;;;;;;x
+hold_a_epic_tournament_desc;Let us hold a tournament the like of which is only rumoured. All Knights and Lords of the realm will gather at [Root.Capital.GetName];Allons, organisons un tournoi comme nul autre pareil. Tous les chevaliers et les seigneurs du Royaume se rassembleront à [Root.Capital.GetName];;;;;;;;;;;;x
+hold_a_epic_tournament_high_lord;Hold a regional Tourney;Organiser un Tournoi Régional;Hold a regional Tourney;;Hold a regional Tourney;;;;;;;;;x
+hold_a_epic_tournament_high_lord_desc;Let us hold a jousting tournament for the Knights and Lords of our region in [Root.Capital.GetName];Permettez-nous d'organiser une joute pour les Chevaliers et Seigneurs de notre région à [Root.Capital.GetName].;Let us hold a jousting tournament for the Knights and Lords of our region in [Root.Capital.GetName];;Let us hold a jousting tournament for the Knights and Lords of our region in [Root.Capital.GetName];;;;;;;;;x
+hold_a_epic_tournament_lord;Hold a local Tourney;Organiser un Tournoi Local;Hold a local Tourney;;Hold a local Tourney;;;;;;;;;x
+hold_a_epic_tournament_lord_desc;Let us hold a small tournament for local Knights and Lords in [Root.Capital.GetName];Permettez-nous d'organiser un tournoi pour les Chevaliers et les Lords des environs à [Root.Capital.GetName].;Let us hold a small tournament for local Knights and Lords in [Root.Capital.GetName];;Let us hold a small tournament for local Knights and Lords in [Root.Capital.GetName];;;;;;;;;x
+hold_a_epic_tournament_LP;Hold a Grand Tourney of [Root.Capital.GetName];Organiser un Grand Tournoi à [Root.Capital.GetName];Hold a Grand Tourney of [Root.Capital.GetName];;Hold a Grand Tourney of [Root.Capital.GetName];;;;;;;;;x
+hold_a_epic_tournament_LP_desc;Let us hold a tournament the like of which is only rumoured. All Knights and Lords of the realm will gather at [Root.Capital.GetName];Permettez-nous d'organiser un tournoi comme nul pareil. Tous les Chevaliers et les Seigneurs du Royaume se rassembleront à [Root.Capital.GetName].;Let us hold a tournament the like of which is only rumoured. All Knights and Lords of the realm will gather at [Root.Capital.GetName];;Let us hold a tournament the like of which is only rumoured. All Knights and Lords of the realm will gather at [Root.Capital.GetName];;;;;;;;;x
+faction_guelphs_ultimatum;Guelph Ultimatum;;;;;;;;;;;;;x
+faction_guelphs_ultimatum_desc;Send the Emperor an ultimatum: either he restores Papal investiture, or someone else put on his place by our faction will!;;;;;;;;;;;;;x
+faction_ghibellines_ultimatum;Ghibelline Ultimatum;;;;;;;;;;;;;x
+faction_ghibellines_ultimatum_desc;Send the Emperor an ultimatum: either he restores free investiture, or someone else put on his place by our faction will!;;;;;;;;;;;;;x
+estabilish_heretic_pope;Estabilish [Root.Religion.GetName] Papacy;;;;;;;;;;;;;x
+estabilish_heretic_pope_desc;Estabilish a Papacy for the [Root.Religion.GetName] faith!;;;;;;;;;;;;;x
+create_commonwealth_poland;Create the Commonwealth of Poland-Lithuania;;;;;;;;;;;;;x
+create_commonwealth_poland_desc;Unite the kingdoms of Poland and Lithuania into a single commonwealth!;;;;;;;;;;;;;x
+create_commonwealth_hungary;Create the Commonwealth of Hungary-Croatia;;;;;;;;;;;;;x
+create_commonwealth_hungary_desc;Unite the kingdoms of Hungary and Croatia into a single commonwealth!;;;;;;;;;;;;;x
+create_viking_empire;Create the Norsemen Empire;;;;;;;;;;;;;x
+create_viking_empire_desc;Unite the Scandinavian Kingdoms into a single Empire of the Norsemen!;;;;;;;;;;;;;x
+create_russian_empire;Create the Russian Empire;;;;;;;;;;;;;
+create_russian_empire_desc;Unite the Russian tribes into a single Russian Empire!;;;;;;;;;;;;;
+create_italian_kingdom;Create the Kingdom of Italy;;;;;;;;;;;;;
+create_italian_kingdom_desc;Unite the crowns of Lombardy and Sicily under the Kingdom of Italy!;;;;;;;;;;;;;
+create_french_kingdom;Create the United Kingdom of France;;;;;;;;;;;;;
+create_french_kingdom_desc;Unite the Franks and the Occitans under a United French Kingdom!;;;;;;;;;;;;;
+create_spanish_kingdom;Create the Kingdom of Spain;;;;;;;;;;;;;
+create_spanish_kingdom_desc;Unite the crowns of Castille and Aragon under the Kingdom of Spain!;;;;;;;;;;;;;
+create_united_kingdom;Create the United Kingdom of Great Britain;;;;;;;;;;;;;
+create_united_kingdom_desc;Unite the people of Albion under the United Kingdom of Great Britain!;;;;;;;;;;;;;

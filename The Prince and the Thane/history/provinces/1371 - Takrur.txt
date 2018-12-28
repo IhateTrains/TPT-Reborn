@@ -1,0 +1,18 @@
+# 1371 - Takrur
+
+# County Title
+title = c_takrur
+
+# Settlements
+max_settlements = 4
+b_takrur = castle
+b_guede = city
+
+#b_dagana = temple
+#b_thilogne = castle
+
+# Misc
+culture = wolof
+religion = sunni
+
+# History

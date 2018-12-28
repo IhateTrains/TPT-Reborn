@@ -1,0 +1,19 @@
+# 1099 - Gudbrandzdalar
+
+# County Title
+title = c_gudbrandzdalar
+
+# Settlements
+max_settlements = 3
+b_hundtorp = castle
+b_lidstadir = temple
+#b_breidin = castle
+#b_einbu = city
+
+# Misc
+culture = norwegian
+religion = norse_pagan
+
+# History
+
+1130.1.1 = { religion = catholic }

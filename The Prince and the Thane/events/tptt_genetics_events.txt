@@ -1,0 +1,91 @@
+####################################################################################
+#
+# The Prince and the Thane genetics and children events - written by idib816 and Wiz
+#
+####################################################################################
+
+namespace = genetics
+
+# Assign birth order
+character_event = {
+	id = genetics.8
+	picture = "GFX_evt_pregnancy"
+	desc = "EVTDESCgenetics.8"
+	is_triggered_only = yes
+	
+	hide_window = yes
+	
+	immediate = {
+		set_variable = { which = "birth_order" value = 0 }
+		if = {
+			limit = { 
+	            is_female = no
+			    any_sibling = { check_variable = { which = "birth_order" value = 0 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no
+				any_sibling = { check_variable = { which = "birth_order" value = 1 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no
+				any_sibling = { check_variable = { which = "birth_order" value = 2 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no 
+				any_sibling = { check_variable = { which = "birth_order" value = 3 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no 
+				any_sibling = { check_variable = { which = "birth_order" value = 4 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no 
+				any_sibling = { check_variable = { which = "birth_order" value = 5 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no 
+				any_sibling = { check_variable = { which = "birth_order" value = 6 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no
+				any_sibling = { check_variable = { which = "birth_order" value = 7 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { 
+	            is_female = no
+				any_sibling = { check_variable = { which = "birth_order" value = 8 } } 
+			}
+			change_variable = { which = "birth_order" value = 1 }
+		}
+		if = {
+			limit = { mother = { has_character_flag = flag_mysterious_conception_mother } }
+			mother = { clr_character_flag = flag_mysterious_conception_mother }
+	    	set_character_flag = flag_mysterious_conception
+		}
+	}
+	
+	option = { name = "OK" }
+}

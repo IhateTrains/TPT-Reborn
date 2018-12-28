@@ -1,0 +1,209 @@
+arabic = {
+	graphical_culture = muslimgfx
+	
+	maghreb_arabic = { 
+		graphical_culture = muslimgfx
+		
+		color = { 0.2 0.9 0.2 }
+
+		male_names = {
+			Abbas Abdul-Haleem Abdul-Kareem Abdul-Rahman Abdullah Adam_Adam Ahmad Al'a'addin Ali_Ali Muhammad_Muhammad Amin Asad Azim
+			Barakat Buwayh Fahd Fath Ghani Haidar Hamad Hashim Hussamaddin Ibrahim_Abraham Mukhtar
+			Ilyas_Elias Is'mail_Ishmael Ishaq_Isaac Jaffar Jamal Kamal Khalid Khidr Mahtar Marwan Mu'izz
+			Abdul-Azeem Malik Murad Musa Muzaffaraddin Nazar Tahir Mustafa Nasr Nizamaddin
+			Qutaiba Rashid Sa'id Salah Sayyid Shamsaddin Sinbad Sultan Tariq Umar Wahab Yahya Zafir Zubeyr
+		}
+		female_names = {
+			Amira Bilqis Fahriya Hadiya Hawwa Jaida Kamila Lem'an Melek Najiba Ra'isa Rahima Sadiqa Salaama Siddiqa Tarifa Zahida Zubayda 
+			Aisha Aaliyah Aamina Aamira Aaqila Aarifa Adelah_Adela Adiba Adilah Adilia Adiva Aeesha Aesha Badeea Badia Badra Bahiyya Bajila Baraah Barakah
+			Baria Bashira Basilie Basima Basimah Cala Cantara Daisha Dalal Dema Dimah Dinara Dua Durra Durriyya Eleonorka
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+
+                dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = tuareg_culture_modifier
+
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 20
+		mother_name_chance = 30
+	}
+	
+	andalusian_arabic = {
+		graphical_culture = muslimgfx
+		
+		color = { 0.4 0.6 0.1 }
+
+		male_names = {
+			Abbad Abbas Abdallah Abdul-Aziz Abdul-Hakam Abdul-Hasan Abdul-Hazm Abdul-Rahman Abdul-Razzaq Abu Abu-al-Malik Abu-Bakr Adfuns_Alphonse Ahmad Ali Amr Ayyub Bilal Fadl Fath
+			Garsiya_Garcia Hakam Hilal Ibrahim Isma'il Jyad Lubb_Lupo Ma'n Mubashir Muhammad Mundir Musa Muyahid Raf Rashid Rasiq Sa'd Siddray Suleyman Tariq Tifilwit
+			Umar Utman Ya'far Yahaff Yahya_John Yusuf_Joseph			
+		}
+		female_names = {
+			Abda Ahu Aiza Aliyah Butayna Daniyah Dima Fahra Fahriya Fatima Gamila Ghada Habiba Huda Ibtisam Isra Karima Kera Khadija Layla 
+			Maha Malika Mariam_Maria Munya_Munia Nadia Naila Nur Rafiqa Rahat Raisa Randa Safiya Salma Shakira Suraya Tahira Tarifa Thashim Umm Wahida
+			Yasmin Zahida Zahra
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+
+                dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = arab_culture_modifier
+
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 20
+		mother_name_chance = 30
+	}
+	
+    bedouin_arabic = { 
+		graphical_culture = muslimgfx
+		
+		color = { 0.1 0.75 0.1 }
+
+		male_names = {
+			Aarif Abdul-Gafur Abdul-Jaleel Abdul-Qadir Abdul-Wahab Abdullah AbuBakr Aghlab Akin Ali Abdul-Wahab Muhammad Alim Aram Azam Bahir
+			Burhanaddin Fadil Fadl Faruk Ghalib Hafiz Halil Hasan Husam Hussayn Ibrahim Mukhtar Idris Is'mail Isa Jabir Jalil Jibril_Gabriel Khaireddin
+			Khalil Mahmud Mansur Mirza Mubarak Mahdi Mukhtar Murad Musa Muzaffaraddin Najib Sami Muslihiddin Nasr Nizam Qawurd Ramadan Sa'daddin
+			Sadiq Samir Shaiban Shamir Shujah Sulayman Talib Ubayd Uways Ya'qub Yusuf Zeyd
+		}
+		female_names = {
+			Adila Asiya Amsha Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Qamara Rafiqa Sabba Sajida Semeah Taliba Yasmin Zaynab
+			Nyawela Parand Parween Paymaneh Paywand Rasa Rashida Reshawna Saaman Saghar Sahba Samira Setara Shahrbano Shahzadah Shameem Shararah
+			Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan Tanaz Taneen Yagana Yakta
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+
+                dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = tuareg_culture_modifier
+	}
+	
+	levantine_arabic = {
+		graphical_culture = muslimgfx
+		
+		color = { 0.3 0.95 0.3 }
+
+		male_names = {
+			Abdul-Azeem Abdul-Hamid Abdul-Lateef Abdul-Razzaq Abdullah Adhid Adil Akab Ala'i Ali Muhammad Amir Ashraf Aziz Bashar Da'ud Faisal
+			Fayiz Ghazi Hakam Hamdan Hashmaddin Hussayn Ibrahim Mukhtar Imamaddin Is'mail Ismat Jahan Jamil Kamran Khalid Khudayar Majid Mas'ud
+			Muaddam Abdul-Wahad Muhsin Mukhtar Murad Musa Muzaffaraddin Nuri Ya'qub Muzaffar Nasraddin Nuraddin Radhi Rasul Sa'ud Salahaddin 
+			Seyfullah Sharaf Sirhan Taimur Tawfiq Umaya Wahid Yasar Zahir
+		}
+		female_names = {
+			Aisha Aziza Duha Farida Hafsa Ibtisam Jalila Karima Kamala Madiha Munawwar Nasiba Rabiya Rajiya Sadiya Salma Sitara Thana Zahra Zuhayra
+			Golbahar Gulnar Gulnaz Gulpari Hasti Huma Khandan Khaterah Khatira Kinah Lala Mahdokht Mahsa Mahwash Marwa Mastana Mehri Mina Minoo
+			Muzhdah Nahal Najela Nastaran Nazaneen Nazy Neelab Negar Niki Nikoo Noushin
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+
+                dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = arab_culture_modifier
+	}
+	
+	egyptian_arabic = {
+		graphical_culture = muslimgfx
+		
+		color = { 0.1 0.6 0.1 }
+
+		male_names = {
+			Abdul-Aziz Abdul-Haq Abdul-Madjid Abdul-Salaam Abdullah Adnan Ahmad Akbar Alam Ali_Ali Muhammad_Muhammad Amr Asim Badr Bashir Dawlat AbuBakr_Abu-Bakr Mukhtar
+			Murad Musa Muzaffaraddin Ra'uf Murshid Nabil Nasir Nassib Nuraddin Qadir Rafiq Ridwan Sabah Salim Sha'ban Sharif Suhail Tajaddin Tayyib
+			Usama Walid Yassir Zakariyah_Zacharias Farhan Firuz Ghiyasaddin Hakam Hammud Hisham Hussayn Iskender_Alexander Ibrahim_Abraham Is'mail_Ishmael Izzaddin
+			Jalaaladdin Jawdat Kemaladdin Khalil Latif Malik Mehtar Muammar
+		}
+		female_names = {
+			Alia Andali Badiat Fatima Halima Inas Jamila Khadija Majida Nabila Nura Radiya Rana Safiya Samira Suhaila Thuriya Zara
+			Acenith Amunet Asanet Asenath Asenet Azenet Bast Bastet Beset Cena Hathor Hatshepsut Isis Nefertiti Nephthys Sacmis 
+			Sakhmet Sekhet Sekhmet Tadinanefer Tawaret Taweret
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+
+        dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = arab_culture_modifier
+	}
+    sicilian_arabic = { 
+		graphical_culture = muslimgfx
+		
+		color = { 0.3 0.6 0.3 }
+
+		male_names = {
+			Abbas Abdul-Haleem Abdul-Kareem Abdul-Rahman Abdullah Adam_Adam Ahmad Al'a'addin Ali Muhammad Amin Asad Azim Barakat Buwayh Fahd Fath Ghani
+			Haidar Hamad Hashim Hussamaddin Ibrahim Mukhtar Ilyas Is'mail Ishaq Jaffar Jamal Kamal Khalid Khidr Mahtar Marwan Mu'izz Abdul-Azeem Malik
+			Mukhtar Murad Musa Muzaffaraddin Nazar Tahir Mustafa Nasr Nizamaddin Qutaiba Rashid Sa'id Salah Sayyid Shamsaddin Sinbad Sultan Tariq
+			Umar Wahab Yahya Zafir Zubeyr Abelardo Achille Adalberto_Albert Adelmio Adelmo Adolfo Adriano Agostino Alamanno 
+			Alberico Alberto_Albert Alessio Alighiero Ambrogio Amedeo Anastasio Angelo_Angel Anselmo Antonin Arcibaldo Arderico Armando Arnolfo Arrigo Arsenio Artemio Ascanio Astorre
+			Atenolfo Attilio Augusto Aurelio_Aurelius Ausilio Ausonio Azzo Azzone Baldovino_Baldwin Bartolomeo_Bartolomeus Basilio_Basil Bassiano 
+			Bernardo_Bernard Berto Bertoldo Bonifacio_Bonifacius Borso Bruno Bruto Calogero Carlo Cassio Castore Cecco Cesare Chiaffredo Chiano Ciro Claudio 
+			Cornelio_Cornelius Corradino Corrado_Konrad Cosimo Cristoforo_Christopher Damiano_Damian Demetrio_Demetrius Dion Dioniso_Dionysus Doménico_Dominic
+			Durante Enzio Enzo Ettore Eugenio_Eugene Ezio Ezzelino Fabio Fabrizio Fausto Ferdinando_Ferdinand Ferruccio Filippo_PhilipFrancesco_Francis Fresco 
+			Galeotto Gaspare Gastone_Gaston Gelasio Gennaro Gentile Geraldo_Gerald Gerardo_Gerard Germano Gerolamo Gherardo Giacinto Giacomo Gian Gianfranco Gianleone Giano
+			Giolio Giordano Giorgio_George Georgios Giovanni Giuseppe Guido_Guy Iacopo Igino Innocenzo Jacopo_Jacob Leopoldo Lodovico Lorenzo Luca Luchino Lucio_Lucius Luigi Maio Malacresta
+			Marco_Marcus Mariano_Marius Mario_Marius Marsiglio Martino_Martin Massimo Matteo_Matthew Napoleone Nazareno Nestore Niccolò Oreste Orlando Ottavio Paolo Pasquale_Pascal
+			Patrizio_Patrick Pericle Piersanti Pietro_Peter Prospero Rafaello Riccardo_Richard Rolando Rosso Salvatore Salvestro Sciarra Sebastiano_Sebastian Serafino Sergio Severino Severo
+			Sigismondo Silvano Silvestro Simone_Simon Simonetto Sinibaldo Tedaldo Teodoro Tibaldo_Theobald Tony Torgodorio Torquato Uberto Ugo_Hugh Vincenzo_Vincent Vitale Vito Vittore Zaccaria
+		}
+		female_names = {
+			Amira Bahiyya Bilqis Fahriya Hadiya Hawwa Jaida Kamila Lem'an Melek Najiba Ra'isa Rahima Sadiqa Salaama Siddiqa Tarifa Zahida Zubayda 
+			Aisha Aaliyah Aamina Aamira Aaqila Aarifa Adelah_Adela Adiba Adilah Adilia Adiva Aeesha Aesha Badeea Badia Badra Bahiyya Bajila Baraah Barakah_Benedicta
+			Baria Bashira Basilie Basima Basimah Cala Cantara Daisha Dalal Dema Dimah Dinara Dua Durra Durriyya Eleonorka Adriana Agnese_Agnes Agostina Alessandra Alisia_Alice Aloisia	 Ambrosia Anastasia_Anastasia Angela Antonella Antonia Argentina Assunta Augusta Aurelia Ausonia
+			Bianca_Blanche Candida Caracosa Carla Carmela Caterina_Catherine Cecilia_Cecilia Claudia Cornelia Dora Edda Elena_Helen Eleonora_Eleanor Elisa_Elisabeth Ermenegilda Eudossia Eugenia
+			Eva Filomena Flavia Fortunata Fosca Francesca_Francesca Giacinta Giovanna Georgina Giuditta Giulia_Juliana 
+			Joscella Laura_Laura Lavinia Leonide Livia Lodovica Lucia_Lucia Lucrezia Maddalena_Magdalena Marcella Margherita_Margaret Maria_Maria Mariana 
+			Paola_Paula Patrizia_Patricia Renata Ricciarda_Ricarda Rosalia Silvana
+			Sofia_Sophia Stefania_Stephania Valentina Violante_Yolanda
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+
+        dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = arab_culture_modifier
+
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 20
+		mother_name_chance = 30
+	}
+}

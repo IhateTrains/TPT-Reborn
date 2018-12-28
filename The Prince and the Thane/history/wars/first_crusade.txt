@@ -1,0 +1,21 @@
+name = "First Crusade"
+
+casus_belli = {
+	actor = 2013
+	recipient = 144013
+	casus_belli=crusade
+	landed_title=k_jerusalem
+	date=1096.8.14
+}
+
+1096.8.14 = {
+	add_attacker = 2013
+        add_attacker = 10072
+	add_defender = 144013
+}
+
+1099.7.21 = {
+	rem_attacker = 2013
+        rem_attacker = 10072
+	rem_defender = 144013
+}

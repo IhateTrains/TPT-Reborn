@@ -1,0 +1,22 @@
+# 1052 - Hardsyssel
+
+# County Title
+title = c_hardsyssel
+
+# Settlements
+max_settlements = 3
+b_skive = castle
+b_ringkobing = city
+
+#b_vardehus = castle
+#b_krubholm= castle
+#b_dynaes = castle
+#b_ulfborg = temple
+
+# Misc
+culture = danish
+religion = catholic
+terrain = forest
+
+# History
+

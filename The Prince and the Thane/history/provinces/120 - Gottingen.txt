@@ -1,0 +1,27 @@
+# 120 - Göttingen
+
+# County Title
+title = c_gottingen
+
+# Settlements
+max_settlements = 4
+
+b_marburga = castle
+#b_hersfeld = temple
+#b_lich = temple
+#b_gudensberg = castle
+#b_waldeck = castle
+			
+b_fulda = temple
+b_kassel = city
+#b_fritzlar =city
+
+
+
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+

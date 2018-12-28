@@ -1,0 +1,37 @@
+846.1.1={
+	liege="k_italy"
+}
+931.1.1={
+	liege="e_hre"
+}
+1027.1.1={
+	liege=d_toscana
+}
+1103.1.1={
+	holder=1191293 #Rogerio Upezzinghi
+}
+1120.1.1={
+	liege=e_hre
+}
+1131.1.1={
+	holder=1191294 #Odalmario Adimari
+}
+1148.1.1={
+	holder=1191295 #Galgano Pannocchieschi
+}
+1171.1.1={
+	holder=1191296 #Ugo Saladini
+}
+1184.1.1={
+	holder=1191297 #Ildebrando Pannocchieschi
+}
+1212.1.1={
+	holder=1191298 #Pagano Pannocchieschi
+}
+1239.1.1={
+	holder=1191299 #Ranieri I Ubertini
+}
+1260.1.1={
+	holder=1191300 #Ranieri II Ubertini
+}
+

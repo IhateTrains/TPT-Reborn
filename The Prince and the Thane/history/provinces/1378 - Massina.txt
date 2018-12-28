@@ -1,0 +1,18 @@
+# 1378 - Massina
+
+# County Title
+title = c_massina
+
+# Settlements
+max_settlements = 3
+b_macina = castle
+b_dia = city
+
+#b_kabora = temple
+
+
+# Misc
+culture = soninke
+religion = pagan
+
+# History

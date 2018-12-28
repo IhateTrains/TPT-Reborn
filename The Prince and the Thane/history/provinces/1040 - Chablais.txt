@@ -1,0 +1,22 @@
+# 1040 - Chablais
+
+# County Title
+title = c_chablais
+
+# Settlements
+max_settlements = 3
+
+b_allinges = castle
+b_stmaurice = temple
+
+#b_blonay
+#b_aigle
+#b_thonon
+#b_abondance
+#b_aulps
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History

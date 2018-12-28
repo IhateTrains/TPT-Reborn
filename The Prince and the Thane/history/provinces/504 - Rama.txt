@@ -1,0 +1,37 @@
+# 504 - Rama
+
+# County Title
+title = c_rama
+
+# Settlements
+max_settlements = 5
+b_bobovac = castle
+#b_visoki = castle
+#b_vranduk = castle
+#b_travnik = castle
+#b_hodidjed = castle
+#b_cajan = castle
+b_vrhbosna = city
+#b_podvisoki = castle
+#b_fojnica = city
+#b_tornik = city
+#b_sutjeska = city
+#b_bilino = city
+ 
+b_mile = temple
+#b_kresevo = temple
+#b_milodraz = temple
+#b_mostre = temple
+#b_olovo = temple
+ 
+
+
+
+
+# Misc
+culture = bosnian
+religion = catholic
+
+# History
+
+1232.1.1= { religion = bogomilist } 

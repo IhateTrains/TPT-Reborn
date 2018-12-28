@@ -1,0 +1,33 @@
+# 1128 - Viterbo
+
+# County Title
+title = c_viterbo
+
+# Settlements
+max_settlements = 5
+
+b_roccaviterbo = castle
+b_nepi = temple
+b_anguillara = castle
+b_vico = castle
+
+#b_viterbo = city
+#b_tolfa = city
+#b_morlupo = castle
+#b_rignano = castle
+#b_castellodirota = castle
+#b_civitacastellana = city
+
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History
+1099.1.1 = { 
+    b_viterbo = city
+    capital = b_viterbo 
+}
+1106.1.1 = { trade_post = b_dappiano }
+1285.1.1 = { trade_post = b_doria }
+1310.1.1 = { b_tolfa = city }

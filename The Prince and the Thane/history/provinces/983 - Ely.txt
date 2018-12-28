@@ -1,0 +1,18 @@
+# 983 - Ely
+
+# County Title
+title = c_ely
+
+# Settlements
+max_settlements = 2
+
+b_ely = temple
+#b_lynn = city
+
+# Misc
+culture = saxon
+religion = catholic
+
+# History
+1100.11.11 = { culture = english }
+ 

@@ -1,0 +1,154 @@
+anglo_saxon = {
+	graphical_culture = westerngfx
+
+	english = {
+		graphical_culture = englishgfx
+		
+		color = { 0.8 0.2 0.2 }
+		
+		# Does not exist in 1066 - is the result of cultural amalgamation between Saxon and Norman through events
+		male_names = {
+			Adam_Adam Alan_Alan Alexander_Alexander Amaury_Amalric Andrew_Andrew Anselm_Anselm Anthony_Anthony Aubrey_Albert
+			Baldwin_Baldwin Bartholomew_Bartolomeus Bertram_Bertrand Brian_Brian
+			Drew_Dreux Edmund_Edmund Edward_Edward Elias_Elias Eudo_Otto Eustace_Eustace
+			Fraunk_Francis Fulk_Folke Gerald_Gerald Geoffrey_Godfrey Gilbert_Gilbert Giles_Egidius Guncelin Guy_Guy
+			Hamo_Hamon Henry_Henry Herbert_Herbert Hubert_Hubert Hugh_Hugh Humphrey_Humphrey
+			Ingram_Enguerrand James_Jacob John_John Jordan_Jordan Laurence_Laurence
+			Marmaduke Matthew_Matthew Maurice_Maurice Nicholas_Nicholas
+			Oliver_Oliver Patrick_Patrick Payn_Pagan Paul_Paul Philip_Philip Piers_Peter
+			Ralph_Ralph Reynaud_Reinhold Richard_Richard Robert_Robert Roger_Roger
+			Simon_Simon Stephen_Stephen Theobald_Theobald Thomas_Thomas
+			Waleran_Waleran Walter_Walter Warin_Guérin William_William			
+			# Old list
+			# Adam_Adam Alan Albert_Albert Alexander_Alexander Alfred Andrew_Andrew Anselm_Anselm Arnold_Arnold Arthur_Arthur Aubrey Christopher_Christopher David_David Edmund_Edmund Edward_Edward Eric_Erik Eustace_Eustace Fulk_Folke Geoffrey George_George Gerald_Gerald Gilbert_Gilbert
+			# Godfrey_Godfrey Gregory_Gregory Guy_Guy Henry_Henry Hugh_Hugh Humphrey Jocelyn John_John Jordan_Jordan Laurence_Laurence Lionel Mark_Marcus Martin_Martin Matthew_Matthew Maurice Michael_Michael Nicholas_Nicholas Paul_Paul Peter_Peter Philip_Philip
+			# Ralph_Ralph Randolph_Ralph Reginald Richard_Richard Robert_Robert Roger_Roger Simon_Simon Stephen_Stephen Theobald_Theobald Thomas_Thomas Waleran Walter_Walter William_William
+		}
+		female_names = {
+			Adela_Adela Adelaide_Adelaide Alice_Alice Amice Anne_Anna Aveline_Avelina Beatrice_Beatrice Blanche_Blanche Catherine_Catherine Cecilia_Cecilia Constance_Constance Edith_Edith Ela Eleanor_Eleanor Elizabeth_Elisabeth Emma_Emma Hawise Isabel_Elisabeth
+			Isabella_Elisabeth Joan_Joan Joanna_Joan Juliana_Juliana Mahaut_Mahaut Margaret_Margaret Mary_Maria Matilda_Matilda Maud_Matilda Philippa_Philippa Sybilla_Sibylla
+		}
+		from_dynasty_prefix = "of "
+		bastard_dynasty_prefix = "Fitz"
+
+		modifier = english_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+    
+	saxon = {
+		graphical_culture = saxongfx
+		
+		color = { 0.8 0.3 0.3 }
+		
+		male_names = {
+			Ælaf_Olaf Ælfgar Ælfheah Ælfraed_Alfred Ælfweald Ælfweard Ælfwine Ælle Æsc Æscwine Æthelbeald Æthelberht_Albert Æthelfrith Æthelhere Æthelmær 
+            Æthelric Æthelræd Æthelstan Æthelweald Æthelwealh Æthelweard Æthelwine Æthelwulf  Baldræd Beorn_Beorn Beornræd Beornwulf Beowulf Berhtric 
+            Berhtwulf Burghræd Centwine Ceolræd Ceolweald Ceolwulf Coenric Coenræd Coenwulf Cuthberht Cuthræd Cwichelm Cynebeald Cynefrith Cyneheard 
+            Cynehelm Cynemær Cyneric Cyneweald Cynewulf Deorwine Eadbeald Eadberht Eadfrith Eadgar_Edgar Eadmund_Edmund Eadraed Eadric Eadweald 
+            Eadweard_Edward Eadwig Eadwine Eadwulf Ealdfrith Ealdmund Ealdræd Ealdwine_Alwin Ealdwulf Ealhmund Eanberht Eanfrith Eanhere Eardwulf Earled 
+            Earnweald_Arnold Eastmund Ecgberht_Egbert Ecgfrith Ecgric Ecgtheow Eoforwine Eorcenberht Eoric Eormenric Eormenræd Eorpweald Eowa Freamund 
+            Frearic Freawulf Frithuwald Glædwine Godric Godwine Heaberht_Herbert Hereweald_Harold Hereweard Hlothere_Lothair Hrothberht_Robert Hrothgar_Roger 
+            Hygelac Leofdæg Leofric Leofwine Maldræd Morcær_Marcus Nothelm Offa Osbeorn_Osbern Osberht_Osbert Osgar_Oscar Oshere Oslac Osmund Osric Osræd 
+            Osweald Oswig Oswine Oswulf Pæga Ricberht Ricsige Rædwald Seaxbald Seaxræd Seaxweard Sigeberht_Siegbert Sigefrith_Siegfried Sigehelm 
+            Sigemund_Siegmund Sigeric Sigeræd Sigeweard_Sigurd Sighere Stigand Swithelm Swithræd Swithun Swæfberht Swæfheard Swæfræd Sæbert Sælræd 
+            Sæweald Theodhere_Theodore Theodric Theodræd Theodwulf Thoræd Uhtræd Wealdhere_Walter Wealtheof Wigberht Wigeheard Wiglaf Wigmund Wigstan Wihtræd 
+            Wilfrith Wilheard Wilmær Wine Winefrith Wulf_Ulf Wulfhere Wulfnoth Wulfric Wulfstan 
+		}
+		female_names = {
+			Ælfgifu Ælflæd Ælfthryth Ælfwyn Æthelflæd Æthelhild Æthelswyth Æthelthryth Agatha_Agatha Eadflæd Eadgifu Eadgyth Eadhburh Eadhild 
+			Eadwyn Ealdgyth Ecgfrida Ecgwyn Eadhild Eadgyth_Edith Ælfleda Ælfrida Ælfwyn Godgifu Gunhilda_Gunhild Gytha Sigrid_Sigrid Wulfhild 
+			Wulfthryth
+		}
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "essunu"
+		female_patronym = "esdohter"
+		prefix = no # The patronym is added as a suffix
+
+		modifier = saxon_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+        }
+	scottish = {
+		graphical_culture = englishgfx
+		
+		color = { 0.8 0.35 0.45 }
+
+		male_names = {
+			Adam_Adam Alan_Alan Alexander_Alexander Alpin Alwin_Alwin Andrew_Andrew
+			Angus_Angus Archibald_Archibald Arthur_Arthur Christopher_Christopher Colin Constantine_Constantine
+			David_David Donald_Donald Douglas Duff Duncan_Duncan Edgar_Edgar Edward_Edward Ewan_Ewan
+			Ferchar Fergus_Fergus Finlay Geoffrey_Godfrey Gilbert_Gilbert Giric_Gregory Godfrey_Godfrey
+			Gregory_Gregory Henry_Henry Hugh_Hugh Iain_John Indulf Ingram_Enguerrand James_Jacob John_John
+			Kenneth_Kenneth Lachlan_Roland Lambert_Lambert Laurence_Laurence Lewis_Louis Lulach
+			Magnus_Magnus Malcolm_Malcolm Malise_Malise Matthew_Matthew Murdoch_Murdoch Niall_Nils
+			Patrick_Patrick Ranald_Reginald Richard_Richard Robert_Robert Roderick_Roderick
+			Simon_Simon Stewart_Stewart Thomas_Thomas Walter_Walter William_William
+		}
+		female_names = {
+			Ada Affraic_Euphemia Agnes_Agnes Alice_Alice Annabella Aufrica_Euphemia Bethóc Bridget Catherine_Catherine Cecily_Cecilia
+			Christina_Christina Deirdre_Deirdre Donada Edith_Edith Ela Eleanor_Eleanor Elspeth_Elisabeth Euna Eva_Eva Fenella_Finnguala
+			Fiona Flora_Flora Gruoch Helen_Helen Isabel_Elisabeth Joan_Joan Julia_Juliana Mabel_Mabel Margaret_Margaret Mariota Marjory
+			Martha_Martha Mary_Maria Maud_Matilda Mór_Mór Mòrag Muriel_Muriel Rachel_Ragnhild Ruth Shona_Joan
+		}
+		from_dynasty_prefix = "de "
+
+		modifier = english_culture_modifier
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 15
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 15
+		mother_name_chance = 10
+	}
+    anglonorse = {
+		graphical_culture = englishgfx
+		
+		used_for_random = no
+		
+		color = { 1.0 0.33 0.33 }
+		
+		male_names = {
+			Ælaf_Olaf Ælle Æthelbald Æthelbert Æthelfrith Æthelhere Æthelmær Æthelred Æthelric Æthelstan Æthelthryth Æthelweard Æthelwine Æthelwold
+			Æthelwulf Albert_Albert Aldred Aldwin Aldwulf Alfgar Alfred Alfwold Baldred Beorn_Beorn Beornred Beornwulf Burgred Ceolwulf Coenred Coenwulf Cuthbert
+			Cynewulf Eadbert Eadfrid Eadgar Eadmund Eadred Eadric Eadulf Eadwald Eadward_Edward Eadwig Eadwin Ealdred Ealmund Eanbert Eanfrith Eanhere
+			Eardulf Earled Edwy Egbert Egfrith Elfweard Elfwine Eormenric Estmond Godwin Harold Hlothere Leofric Leofwine Maldred Morcar_Marcus Offa Oshere
+			Osred Osric Osulf Oswald Oswine Oswiu Robert_Robert Sæbert Sælred Sæwald Sæxbald Sæxred Sigebert Sigehelm Sigered Sigeric Sighere Siward Stigand
+			Swæfred Swithelm Swithred Thored Thurcytel Uhtred Ulf_Ulf Walcher Waltheof Wiglaf Wihtred Wulfhere Wulfnoth Åle Åmund Ølver Alv_Alf Arne Arnfinn Arnkjell Arnmod 
+			Arnvid Aslak Audun Bård Bjørn_Beorn Eigil_Egil Eilif Einar Eirik_Erik Erlend Erling Eystein_Eysteinn Finn
+			Grim Gudbrand Gudleik Gudmund Gudrød Gunnar Guttorm Håkon_Hakon Håvard Haldor Halfdan Halkjell Harald Helge_Helge Inge Ivar Jon_John Kåre Kolbein Lodin
+			Magnus_Magnus Ogmund Orm Ossor Ottar Pål_Paul Ragnvald Sigurd Skjalg Skofte Skule Svein_Sven Sverre Torbjørn_Torbjörn Tore Torfinn Torgeir Torgil_Torkel
+			Tormod Torstein Trond Tryggve Vigleik Øystein_Eysteinn
+		}
+		female_names = {
+			Ælfgifu Ælflæd Ælfthryth Ælfwyn Æthelflæd Æthelhild Æthelswyth Agatha_Agatha Eadflæd Eadgifu Eadgyth Eadhburh Eadhild 
+			Eadwine Ealdgyth Ecgfrida Ecgwynn Edhilda Edith_Edith Elfleda Elfrida Elfwynn Elgiva Godgifu Gunhilda_Gunhild Gytha
+			Margaret_Margaret Sigrid_Sigrid Wulfthryth Åshild Åsta_Asta Astrid_Astrid Brigida_Brigid Cecilia_Cecilia Eldrid Gjertrud_Gertrude 
+			Gudrid Gudrun_Gudrun Gyda Gyrid Haldora Homlaug Ingebjørg Ingjerd Ingrid_Ingrid Jorunn
+			Karin_Catherine Kristina_Christina Margrete_Margaret Maria_Maria Ragna Ragnhild Rannveig Sigrid_Sigrid Snøfrid Sunniva Svanhild Thora_Thora Thorborg
+		}
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "sson"
+		female_patronym = "sdater"
+		prefix = no # The patronym is added as a suffix
+
+		modifier = saxon_culture_modifier
+        }
+}

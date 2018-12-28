@@ -1,0 +1,21 @@
+# 462 - Krizevci # Pozega
+
+# County Title
+title = c_krizevci
+
+# Settlements
+max_settlements = 4
+
+b_pozega = castle
+b_brod = city
+#b_vinkovci = castle
+#b_durdevac = castle
+#b_vukovar = city
+
+
+
+# Misc
+culture = croatian
+religion = catholic
+
+# History

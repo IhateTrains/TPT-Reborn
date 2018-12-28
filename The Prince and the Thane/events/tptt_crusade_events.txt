@@ -1,0 +1,451 @@
+##############################################################
+#
+# The Prince and the Thane crusade events - written by idib816
+#
+##############################################################
+
+namespace = crusade
+
+# Who to give crusade land to
+character_event = {
+	id = crusade.1
+	picture = "GFX_evt_jerusalem"
+	is_triggered_only = yes
+		
+	desc = "EVTDESCcrusade.1"
+	
+	# A landless brother
+	option = {
+		name = "To my brother"
+		ai_chance = {
+			factor = 40
+		}
+		trigger = {
+			OR = {
+				ai = no
+				NOT = { religion_group = muslim }
+			}		
+			any_sibling = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}	
+		}
+		prestige = 500
+		random_sibling = {
+			limit = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no	
+				religion = ROOT
+				is_alive = yes
+			}
+            add_character_modifier = { name = crusade_timer duration = 3650 }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					add_trait = crusader
+				}
+				if = {
+					limit = {
+						religion = shiite
+					}
+					add_trait = mujahid
+				}
+				if = {
+					limit = {
+						religion = sunni
+					}
+					add_trait = mujahid
+				}			
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_greece }
+								ROOT = { religion = catholic }
+								e_latin_empire = { has_holder = no }
+							}
+							e_latin_empire = { 
+								gain_title = PREVPREVPREV
+							}							
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_nikaea }
+								ROOT = { religion = sunni culture = turkish }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								gain_title = PREVPREVPREV
+							}							
+						}						
+						kingdom = { 
+							destroy_landed_title = yes
+							revoke_law = investiture_law_0
+							revoke_law = investiture_law_1
+							add_law = city_tax_0
+							add_law = city_contract_0
+							add_law = temple_tax_0
+							add_law = temple_contract_0
+							gain_title = PREVPREVPREV
+							if = {
+								limit = {
+									ROOT = { religion = catholic }
+								}
+								add_law = investiture_law_0
+							}
+							if = {
+								limit = {
+									ROOT = { religion_group = muslim }
+								}
+								add_law = iqta_tax_0
+								add_law = iqta_contract_0
+							}													
+						}						
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}
+				}	
+				treasury = 400
+				prestige = 500
+				piety = 100	
+				set_defacto_liege = THIS
+			}			
+		}
+		any_demesne_title = {
+			location = { clr_province_flag = previous_holding }
+		}		
+	}
+	
+	# A younger son
+	option = {
+		name = "To my son"
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			OR = {
+				ai = no
+				NOT = { religion_group = muslim }
+			}		
+			any_child = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}	
+		}
+		prestige = 500
+		random_child = {
+			limit = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no	
+				religion = ROOT
+				is_alive = yes
+			}		
+            add_character_modifier = { name = crusade_timer duration = 3650 }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					add_trait = crusader
+				}
+				if = {
+					limit = {
+						religion = shiite
+					}
+					add_trait = mujahid
+				}
+				if = {
+					limit = {
+						religion = sunni
+					}
+					add_trait = mujahid
+				}			
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_greece }
+								ROOT = { religion = catholic }
+								e_latin_empire = { has_holder = no }
+							}
+							e_latin_empire = { 
+								gain_title = PREVPREVPREV
+							}							
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_nikaea }
+								ROOT = { religion = sunni culture = turkish }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								gain_title = PREVPREVPREV
+							}							
+						}						
+						kingdom = { 
+							destroy_landed_title = yes
+							revoke_law = investiture_law_0
+							revoke_law = investiture_law_1
+							add_law = city_tax_0
+							add_law = city_contract_0
+							add_law = temple_tax_0
+							add_law = temple_contract_0
+							gain_title = PREVPREVPREV
+							if = {
+								limit = {
+									ROOT = { religion = catholic }
+								}
+								add_law = investiture_law_0
+							}
+							if = {
+								limit = {
+									ROOT = { religion_group = muslim }
+								}
+								add_law = iqta_tax_0
+								add_law = iqta_contract_0
+							}													
+						}						
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}
+				}	
+				treasury = 400
+				prestige = 500
+				piety = 100	
+				set_defacto_liege = THIS
+			}			
+		}
+		any_demesne_title = {
+			location = { clr_province_flag = previous_holding }
+		}		
+	}
+	
+	# A dynasty member I like 
+	option = {
+		name = "To my protege"
+		ai_chance = {
+			factor = 10
+		}
+		trigger = {
+			OR = {
+				ai = no
+				NOT = { religion_group = muslim }
+			}		
+			any_dynasty_member = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}	
+		}
+		prestige = 500
+		random_dynasty_member = {
+			limit = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no	
+				religion = ROOT
+				is_alive = yes
+			}		
+            add_character_modifier = { name = crusade_timer duration = 3650 }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					add_trait = crusader
+				}
+				if = {
+					limit = {
+						religion = shiite
+					}
+					add_trait = mujahid
+				}
+				if = {
+					limit = {
+						religion = sunni
+					}
+					add_trait = mujahid
+				}			
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_greece }
+								ROOT = { religion = catholic }
+								e_latin_empire = { has_holder = no }
+							}
+							e_latin_empire = { 
+								gain_title = PREVPREVPREV
+							}							
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_nikaea }
+								ROOT = { religion = sunni culture = turkish }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								gain_title = PREVPREVPREV
+							}							
+						}						
+						kingdom = { 
+							destroy_landed_title = yes
+							revoke_law = investiture_law_0
+							revoke_law = investiture_law_1
+							add_law = city_tax_0
+							add_law = city_contract_0
+							add_law = temple_tax_0
+							add_law = temple_contract_0
+							gain_title = PREVPREVPREV
+							if = {
+								limit = {
+									ROOT = { religion = catholic }
+								}
+								add_law = investiture_law_0
+							}
+							if = {
+								limit = {
+									ROOT = { religion_group = muslim }
+								}
+								add_law = iqta_tax_0
+								add_law = iqta_contract_0
+							}													
+						}						
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}
+				}	
+				treasury = 400
+				prestige = 500
+				piety = 100	
+				set_defacto_liege = THIS
+			}			
+		}
+		any_demesne_title = {
+			location = { clr_province_flag = previous_holding }
+		}		
+	}
+	
+	# Myself
+	option = {
+		name = "I will have it"
+		ai_chance = {
+			factor = 0
+		}		
+		trigger = {
+			OR = {
+				ai = no
+				any_demesne_title = {
+					location = { 
+						NOT = { has_province_flag = previous_holding }
+						any_neighbor_province = {
+							has_province_flag = previous_holding
+						}
+					}
+				}	
+			}
+		}
+		any_demesne_title = {
+			location = { clr_province_flag = previous_holding }
+		}	
+	}	
+}

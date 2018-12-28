@@ -1,0 +1,54 @@
+933.1.1={
+	holder=2220035 #Marino II di Gaeta
+    law = succ_patrician_elective
+}
+
+960.1.1={
+	holder=2220036 #Giovanni II di Gaeta
+}
+
+990.1.1={
+	holder=2220037 #Giovanni III di Gaeta
+}
+
+1000.1.1={
+	holder=2220038 #Giovanni IV di Gaeta
+}
+
+1012.1.1={
+	holder=2220039 #Giovanni V di Gaeta
+}
+
+1039.1.1={
+	holder=1116 #Waimar di Salerno
+}
+
+1045.1.1={
+	holder = 1000167111 #Atenulf V
+}
+
+1062.1.1={
+	holder = 73347 #Atenulf VI
+}
+
+1068.1.1={
+	holder=1000167000 #Geoffrey Ridel
+}
+1086.1.1={
+	holder=1000167001 #Reginald Ridel
+}
+1090.1.1={
+	holder=1000167002 #Gualganus Ridel
+}
+1091.1.1={
+	holder=1000167003 #Lando (or Landulf - possibly a Lombard or Greek descendant; will be Norman for gameplay)
+}
+1103.1.1={
+	holder=1000167004 #William de Blosseville
+}
+1105.1.1={
+	holder=1000167005 #Richard Drengot (as regent for nephew Jonathan from 1112, in own name from 1121-1140)
+}
+1140.1.1={
+	holder=0
+}

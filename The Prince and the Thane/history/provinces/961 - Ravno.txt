@@ -1,0 +1,22 @@
+# 961 - Ravno
+
+# County Title
+title = c_ravno
+
+# Settlements
+max_settlements = 3
+
+
+
+
+b_sokobanja = castle
+b_knjazuvac = city
+#b_ravno = city
+
+# Misc
+culture = bulgarian
+religion = orthodox
+
+# History
+
+ 

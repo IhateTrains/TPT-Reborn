@@ -1,0 +1,74 @@
+1066.1.1=
+{
+liege="d_deheubarth"
+	law = agnatic_succession
+	law = succ_gavelkind
+	holder=138496 #Maredudd ap Owain ap Edwin
+}
+1070.1.1={
+	holder = 81815 #Rhys ap Owain ap Edwin
+}
+1076.1.1={
+	holder = 81816 #Rhys ap Tewdwr
+}
+1093.4.1={
+	holder = 152
+}
+1094.1.1={
+	holder = 41032
+}
+1098.1.1={
+	holder = 41004
+}
+1102.1.1={
+	holder = 202992
+} 
+1135.1.1={
+	holder = 214810 #Gruffyd ap Rhys
+}
+1137.1.1={
+	liege = "d_gwynedd"
+	holder = 214710 #Owain ap Gruffyd
+}
+1169.11.1=
+{
+	holder = 214716 #Hywell ap Owain
+}
+1170.1.1=
+{
+	holder = 214700 #Dafydd ab Owain with 232002
+}
+1195.1.1=
+{
+	holder = 214714 #Llywelyn ab Iorwerth	
+}
+1240.4.11=
+{
+	holder = 138486 #Dafydd ab Llywelyn
+}
+1246.1.1=
+{
+	holder = 420001 #Llywelyn ap Gruffydd
+}
+1277.9.29= #Treaty of Aberconwy
+{
+	liege=k_england
+}
+1282.12.10=
+{
+	holder = 420002 #Dafydd ap Gruffyd
+}
+1283.9.29=
+{
+	holder = 454520 #Edward I Longshanks
+}
+1307.1.2={
+	holder = 454510 #Edward II
+}
+1327.2.1={
+	holder = 454500 #Edward III
+}
+1337.1.1=
+{
+	holder=454501
+}

@@ -1,0 +1,19 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+nm_peasant_resistance = {
+	local_revolt_risk = 0.25
+	castle_levy_size = -0.8
+	city_levy_size = -0.8
+	temple_levy_size = -0.8
+	city_tax_modifier = -0.8
+	castle_tax_modifier = -0.8
+	temple_tax_modifier = -0.8
+	icon = 31
+}
+nm_holding_blot = {
+	icon = 31
+}
+nm_blot_timer = {
+	icon = 31
+}

@@ -1,0 +1,516 @@
+# Archbishops of York
+
+1901032 = {
+	name="Ecgbert" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	690.1.1 = {
+		birth="690.1.1" #Circa
+	}
+	766.1.1 = {
+		death="766.1.1"
+	}
+}
+1901033 = {
+	name="Æthelbert" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	710.1.1 = {
+		birth="710.1.1" #Circa
+	}
+	780.1.1 = {
+		death="780.1.1"
+	}
+}
+1901034 = {
+	name="Eanbald" #Eanbald I
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	723.1.1 = {
+		birth="723.1.1" #Circa
+	}
+	796.1.1 = {
+		death="796.1.1"
+	}
+}
+1901035 = {
+	name="Eanbald" #Eanbald II
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	746.1.1 = {
+		birth="746.1.1" #Circa
+	}
+	808.1.1 = {
+		death="808.1.1"
+	}
+}
+1901036 = {
+	name="Wulfsige" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	765.1.1 = {
+		birth="765.1.1" #Circa
+	}
+	834.1.1 = {
+		death="834.1.1"
+	}
+}
+1901037 = {
+	name="Wigmund" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	779.1.1 = {
+		birth="779.1.1" #Circa
+	}
+	854.1.1 = {
+		death="854.1.1"
+	}
+}
+1901038 = {
+	name="Wulfhere" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	833.1.1 = {
+		birth="833.1.1" #Circa
+	}
+	900.1.1 = {
+		death="900.1.1"
+	}
+}
+1901039 = {
+	name="Æthebald" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	851.1.1 = {
+		birth="851.1.1" #Circa
+	}
+	916.1.1 = {
+		death="916.1.1"
+	}
+}
+1901040 = {
+	name="Lodeward" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	864.1.1 = {
+		birth="864.1.1" #Circa
+	}
+	931.1.1 = {
+		death="931.1.1"
+	}
+}
+1901041 = {
+	name="Wulfstan" #Wulfstan I
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	887.1.1 = {
+		birth="887.1.1" #Circa
+	}
+	956.1.1 = {
+		death="956.1.1"
+	}
+}
+1901042 = {
+	name="Oscytel" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	897.1.1 = {
+		birth="897.1.1" #Circa
+	}
+	971.1.1 = {
+		death="971.1.1"
+	}
+}
+1901043 = {
+	name="Oswald" 
+	dynasty=150150227
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	929.1.1 = {
+		birth="929.1.1" #Circa
+	}
+	995.1.1 = {
+		death="995.1.1"
+	}
+}
+1901044 = {
+	name="Ealdwulf" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	938.1.1 = {
+		birth="938.1.1" #Circa
+	}
+	1002.1.1 = {
+		death="1002.1.1"
+	}
+}
+1901045 = {
+	name="Wulfstan" #Wulfstan II
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	951.1.1 = {
+		birth="951.1.1" #Circa
+	}
+	1023.1.1 = {
+		death="1023.1.1"
+	}
+}
+1901046 = {
+	name="Ælfric" 
+	dynasty=557
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	979.1.1 = {
+		birth="979.1.1" #Circa
+	}
+	1051.1.1 = {
+		death="1051.1.1"
+	}
+}
+1901047 = {
+	name="Cynesige" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	997.1.1 = {
+		birth="997.1.1" #Circa
+	}
+	1061.1.1 = {
+		death="1061.1.1"
+	}
+}
+1901016 = {
+	name="Ealdred" 
+	dynasty=100057
+	culture="saxon"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1005.1.1 = {
+		birth="1005.1.1" #Circa
+	}
+	1069.9.11 = {
+		death="1069.9.11"
+	}
+}
+1901017 = {
+	name="Thomas" 
+	dynasty=1150150198
+	culture="frankish"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1035.1.1 = {
+		birth="1035.1.1" #Circa
+	}
+	1100.11.18 = {
+		death="1100.11.18"
+	}
+}
+1901018 = {
+	name="Gerard" 
+	dynasty=100057
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1040.1.1 = {
+		birth="1040.1.1" #Circa
+	}
+	1108.5.21 = {
+		death="1108.5.21"
+	}
+}
+1901019 = {
+	name="Thomas" 
+	dynasty=100057
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1050.1.1 = {
+		birth="1050.1.1" #Circa
+	}
+	1114.2.24 = {
+		death="1114.2.24"
+	}
+}
+1901020 = {
+	name="Thurstan" 
+	dynasty=1150150198
+	culture="frankish"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1070.1.1 = {
+		birth="1070.1.1" #Circa
+	}
+	1140.2.6 = {
+		death="1140.2.6"
+	}
+}
+1901021 = {
+	name="William" 
+	dynasty=100057
+	culture="norman"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1095.1.1 = {
+		birth="1095.1.1" #Circa
+	}
+	1154.6.8 = {
+		death="1154.6.8"
+	}
+}
+1901022 = {
+	name="Roger" 
+	dynasty=1150150199
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1115.1.1 = {
+		birth="1115.1.1" #Circa
+	}
+	1181.1.1 = {
+		death="1181.1.1"
+	}
+}
+1901023 = {
+	name="Geoffrey" 
+	dynasty=106
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	father=204500
+	1152.1.1 = {
+		birth="1152.1.1" #Circa
+	}
+	1212.12.12 = {
+		death="1212.12.12"
+	}
+}
+1901024 = {
+	name="Walter" 
+	dynasty=1150150200
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1195.1.1 = {
+		birth="1195.1.1" #Circa
+	}
+	1255.5.1 = {
+		death="1255.5.1"
+	}
+}
+1901025 = {
+	name="Godfrey" 
+	dynasty=1150150201
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1200.1.1 = {
+		birth="1200.1.1" #Circa
+	}
+	1265.1.1 = {
+		death="1265.1.1"
+	}
+}
+1901026 = {
+	name="Walter" 
+	dynasty=1150150202
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1220.1.1 = {
+		birth="1220.1.1" #Circa
+	}
+	1279.4.1 = {
+		death="1279.4.1"
+	}
+}
+1901027 = {
+	name="William" 
+	dynasty=1150150203
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1225.1.1 = {
+		birth="1225.1.1" #Circa
+	}
+	1285.1.1 = {
+		death="1285.1.1"
+	}
+}
+1901028 = {
+	name="John" 
+	dynasty=1150150204
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1232.1.1 = {
+		birth="1232.1.1" #Circa
+	}
+	1296.1.1 = {
+		death="1296.1.1"
+	}
+}
+1901029 = {
+	name="Thomas" 
+	dynasty=1150150205
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1240.1.1 = {
+		birth="1240.1.1" #Circa
+	}
+	1304.1.1 = {
+		death="1304.1.1"
+	}
+}
+1901030 = {
+	name="William" 
+	dynasty=1150150206
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1245.1.1 = {
+		birth="1245.1.1" #Circa
+	}
+	1315.12.6 = {
+		death="1315.12.6"
+	}
+}
+
+1901031 = {
+	name="William" 
+	dynasty=1150150207
+	culture="english"
+	religion="catholic"	
+	add_trait="celibate"
+	add_trait="mastermind_theologian"
+	add_trait="zealous"
+	add_trait="scholar"
+	1265.1.1 = {
+		birth="1265.1.1" #Circa
+	}
+	1340.4.5 = {
+		death="1340.4.5"
+	}
+}

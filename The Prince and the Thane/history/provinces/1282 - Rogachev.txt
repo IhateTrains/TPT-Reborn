@@ -1,0 +1,19 @@
+# 1282 - Rogachev
+
+# County Title
+title = c_rogachew
+
+# Settlements
+max_settlements = 3
+
+b_rahachow = castle
+b_zlobin = city
+#b_stresin = castle
+#b_lukski = castle
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History

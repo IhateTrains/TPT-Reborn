@@ -1,0 +1,116 @@
+#TPtT Jewish dynasties
+
+2109008={
+	name="Zadokid"
+	culture = falashim
+}
+
+9001000 = {
+    name="Cohen" #Cohen hands
+    culture = sephardic
+}
+
+9001001 = {
+    name="Levy"
+    culture = sephardic
+}
+
+9001002 = {
+    name="Cohen" #Cohen hands
+    culture = ashkenazi
+}
+
+9001003 = {
+    name="Levy"
+    culture = ashkenazi
+}
+
+9001004 = {
+    name="Cohen" #Cohen hands
+    culture = mizrahi
+}
+
+9001005 = {
+    name="Levy"
+    culture = mizrahi
+}
+
+9001006 = {
+    name="Iacob"
+    culture = sephardic
+}
+
+9001007 = {
+    name="Salmonis"
+    culture = sephardic
+}
+
+9001008 = {
+    name="Astruch"
+    culture = sephardic
+}
+
+9001009 = {
+    name="Nazirite"
+    culture = mizrahi
+}
+
+9001010 = {
+    name="Albaz"
+    culture = mizrahi
+}
+
+9001011 = {
+    name="Hayek"
+    culture = mizrahi
+}
+
+9001012 = {
+    name="Aboutbul"
+    culture = mizrahi
+}
+
+9001013 = {
+    name="Hakim"
+    culture = mizrahi
+}
+
+9001014 = {
+    name="Naggar"
+    culture = mizrahi
+}
+
+9001015 = {
+    name="Sabbagh"
+    culture = mizrahi
+}
+
+9001016 = {
+    name="Sabban"
+    culture = mizrahi
+}
+
+9001017 = {
+    name="Sarrouf"
+    culture = mizrahi
+}
+
+9001018 = {
+    name="Shenhav"
+    culture = mizrahi
+}
+
+9001019 = {
+    name="Ben David" #Lion of Judah?
+    culture = mizrahi
+}
+
+9001020 = {
+    name="Cohen" #Cohen hands
+    culture = falashim
+}
+
+9001021 = {
+    name="Levy"
+    culture = falashim
+}

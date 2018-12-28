@@ -1,0 +1,33 @@
+# 322 - Modena
+
+# County Title
+title = c_modena
+
+# Settlements
+max_settlements = 4
+
+b_carpi = castle
+b_modena = city
+b_abbaziadinonantola = temple
+#b_sassuolo = city
+#b_finalemodena = city
+#b_roccadellefinale = castle
+#b_fioranomodenese = castle
+#b_formigine = city
+#b_vignola = temple
+
+
+# Misc
+culture = italian
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_modena = ct_wall_1
+	b_modena = ct_wall_q_1
+	b_modena = ct_marketplace_1
+	b_modena = ct_militia_barracks_1
+	b_modena = ct_civics_1
+	b_modena = ct_university_1
+}

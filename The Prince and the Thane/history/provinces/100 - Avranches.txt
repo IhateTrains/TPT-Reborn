@@ -1,0 +1,24 @@
+# 100 - Avranches
+
+# County Title
+title = c_avranches
+
+# Settlements
+max_settlements = 4
+
+b_mortain = castle
+b_avranches = temple
+b_domfront = castle
+#b_flers = city
+#b_brecey = city
+#b_tinchebray = castle
+#b_abbayedelonlay = temple
+
+
+# Misc
+culture = norman
+religion = catholic
+
+# History
+1100.11.11 = { culture = frankish }
+

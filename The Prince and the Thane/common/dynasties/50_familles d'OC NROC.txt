@@ -1,0 +1,44 @@
+#Dynasties: 1.000.036.000 - 1.000.036.999 
+
+# Note : I'll have to review those three (merging them with their doubles)
+
+1000036000 = {
+	# name="d'Alzonne" #AKA Aton 
+	# vicomtes d'Albi de 942 à 1050	
+	name="d'Albi"
+	# Solo : this is actually the root of the Trencavel family, not a different dynasty.
+	culture = occitan
+#TP 5 56
+}
+1000036001 = {
+	name="de Beziers" 
+	#vicomtes de Béziers de 881 à 1030
+	culture = occitan
+#TP 5 58
+}
+1000036002 = {
+	name="de Carcassonne" 
+	#vicomtes de Béziers de 1030 à 1074 
+	#comtes de Carcassonne de 1067 à 1099
+	culture = occitan
+#TP 5 59
+}
+#1000036003 de Beauvais
+
+
+# Solo : Those should probably be moved in their correct files
+
+#Comtes de Corse
+1000036006 = {
+	name="di Cinarca"
+	culture = corsican
+#TP 5 67
+}
+1000036007 = {
+	name="da Mare"
+	culture = italian
+}
+#101840 "della Rocca"
+
+
+

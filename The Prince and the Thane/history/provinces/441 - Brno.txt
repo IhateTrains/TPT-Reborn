@@ -1,0 +1,26 @@
+# 441 - Brno
+
+# County Title
+title = c_brno
+
+# Settlements
+max_settlements = 5
+
+b_brno = castle
+b_mikulov = city
+b_zdar = temple
+#b_pernstejn = castle
+#b_svitavy = castle
+#b_ivancice = city
+#b_boskovice = city
+#b_rejhrad = temple
+#b_tisnov = temple
+
+# Misc
+culture = moravian
+religion = catholic
+
+# History
+1000.1.1 = { 
+	b_mikulov = ct_jewish_community_1
+}

@@ -1,0 +1,1204 @@
+#############################################################################################
+#
+# The Prince and the Thane homosexual and flavour events - written by idib816 and Pierre-Luc
+#
+#############################################################################################
+
+namespace = flavour_events
+
+#Grown up swords
+character_event = {
+	id = flavour_events.0
+	desc = "EVTDESCflavour_events.0"
+	picture = GFX_evt_armory
+	
+	is_triggered_only = yes
+	
+	min_age = 14
+	only_playable = yes
+	prisoner = no
+	only_men = yes
+	
+	trigger = {
+		any_child = {
+			is_married = no
+			is_female = no
+			age = 11
+			NOT = { age = 14 }
+			NOT = { trait = craven }
+			NOT = { trait = brave }
+		}
+	}
+	
+	immediate = {
+		random_child = {
+			limit = {
+				is_married = no
+				is_female = no
+				age = 11
+				NOT = { age = 14 }
+				NOT = { trait = craven }
+				NOT = { trait = brave }
+			}
+			set_character_flag = grown_up_sword
+		}
+	}
+
+	option = {
+		name = "EVTOPTAflavour_events.0" #Wood it is
+		hidden_tooltip = {
+		    random_child = {
+			    limit = { has_character_flag = grown_up_sword }
+				character_event = {
+					id = flavour_events.1 #Wooden swords
+				}			
+			    clr_character_flag = grown_up_sword
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBflavour_events.0" #Steel it is
+		hidden_tooltip = {
+		random_child = {
+			limit = { has_character_flag = grown_up_sword }
+				character_event = {
+					id = flavour_events.2 #Steel swords
+				}			
+			}
+			clr_character_flag = grown_up_sword
+		}
+	}
+}
+
+#Wooden swords
+character_event = {
+	id = flavour_events.1
+	desc = "EVTDESCflavour_events.1"
+	picture = GFX_evt_armory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAflavour_events.1"
+		opinion = {
+			modifier = opinion_relieved
+			who = ROOT
+			years = 1
+		}
+		random = {
+			chance = 5
+			add_trait = craven
+			hidden_tooltip = { character_event = { id = 38257 } }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBflavour_events.1"
+		opinion = {
+			modifier = opinion_irritated
+			who = ROOT
+			years = 1
+		}
+		random = {
+			chance = 5
+			add_trait = brave
+			hidden_tooltip = { character_event = { id = 38270 } }
+		}
+	}
+	option = {
+		name = "EVTOPTCflavour_events.1"
+		opinion = {
+			modifier = opinion_irritated
+			who = ROOT
+			years = 1
+		}
+		random_list = {
+			75 = {  add_trait = brave hidden_tooltip = { character_event = { id = 38270 } } }
+			10 = { change_martial = 1 }
+			14 = { add_trait = wounded hidden_tooltip = { character_event = { id = 38280 } } }
+			1 = { death = { death_reason = death_accident } }
+		}
+	}
+}
+
+#Steel swords
+character_event = {
+	id = flavour_events.2
+	desc = "EVTDESCflavour_events.2"
+	picture = GFX_evt_armory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAflavour_events.2"
+		opinion = {
+			modifier = talent_recognized
+			who = ROOT
+			years = 1
+		}
+		random = {
+			chance = 5
+			add_trait = brave
+			hidden_tooltip = { character_event = { id = 38270 } }
+		}
+	}
+	option = {
+		name = "EVTOPTBflavour_events.2"
+		FROM = {			
+			opinion = {
+				modifier = opinion_disgusted
+				who = ROOT
+				years = 1
+			}
+		}
+		random = {
+			chance = 75
+			add_trait = craven
+			hidden_tooltip = { character_event = { id = 38257 } }
+		}
+	}
+	option = {
+		name = "EVTOPTCflavour_events.2"
+		random_list = {
+			70 = {  }
+			24 = { add_trait = wounded hidden_tooltip = { character_event = { id = 38280 } } }
+			5 = { death = { death_reason = death_accident } }
+		}
+	}
+}
+
+#swordsmanship tournament
+character_event = {
+	id = flavour_events.3
+	desc = "EVTDESCflavour_events.3"
+	picture = GFX_evt_camp_large_army
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+	    OR = {
+	    	trait = master_warrior
+		    trait = skilled_warrior
+		}
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 3.5
+			trait = brave
+		}
+		modifier = {
+			factor = 3.75
+			trait = strong
+		}
+		modifier = {
+			factor = 0
+			trait = slothful
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.3"
+		prestige = 25
+		wealth = -25
+		random = {
+			chance = 25
+			add_trait = proud
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.3"
+		prestige = -5
+		random = {
+			chance = 25
+			add_trait = craven
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}
+	}
+}
+
+#stature as clerical envoy
+character_event = {
+	id = flavour_events.4
+	desc = "EVTDESCflavour_events.4"
+	picture = GFX_evt_pope
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = clerical_envoy
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.5
+			trait = brave
+		}
+		modifier = {
+			factor = 2.75
+			trait = strong
+		}
+		modifier = {
+			factor = 0.1
+			trait = content
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.4"
+		prestige = -15
+		piety = 35
+		random = {
+			chance = 50
+			add_trait = zealous
+			remove_trait = clerical_envoy
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBflavour_events.4"
+		prestige = 25
+		piety = -50
+		random = {
+			chance = 35
+			add_trait = proud
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+		    } 	
+	    }
+    }	
+}
+
+
+#cultural baggage of a chicken
+character_event = {
+	id = flavour_events.5
+	desc = "EVTDESCflavour_events.5"
+	picture = GFX_evt_courtiers_looking_scandalized
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = uneducated
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.5
+			trait = slow
+		}
+		modifier = {
+			factor = 0.75
+			trait = imbecile
+		}
+		modifier = {
+			factor = 5.25
+			trait = genius
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.5"
+		prestige = 15
+		scaled_wealth = -0.9
+		random = {
+			chance = 50
+			add_trait = humble
+			remove_trait = uneducated
+			hidden_tooltip = {
+				character_event = { id = 38260 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.5"
+		prestige = -25
+		piety = -50
+		random = {
+			chance = 50
+			add_trait = proud
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+			}	
+		}
+	}	
+}
+
+
+#philosophical fair
+character_event = {
+	id = flavour_events.7
+	desc = "EVTDESCflavour_events.7"
+	picture = GFX_evt_philosopher
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = philosopher
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 4.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 3.75
+			trait = genius
+		}
+		modifier = {
+			factor = 0.1
+			trait = content
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.7"
+		prestige = -15
+		random = {
+			chance = 50
+			add_trait = wroth
+			remove_trait = philosopher
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.7"
+		prestige = 50
+		scaled_wealth = -0.3
+		random = {
+			chance = 50
+			add_trait = charitable
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.7"
+		prestige = -25
+		piety = -25
+		wealth = 100
+		random = {
+			chance = 50
+			add_trait = greedy
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}
+	}
+}
+
+#local bandit ring
+character_event = {
+	id = flavour_events.8
+	desc = "EVTDESCflavour_events.8"
+	picture = GFX_evt_bandits_forest
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = machiavellian
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 3.75
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.1
+			trait = just
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.8"
+		piety = 25
+		random = {
+			chance = 75
+			add_trait = just
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.8"
+		piety = -5
+		wealth = 100
+		random = {
+			chance = 50
+			add_trait = deceitful
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.8"
+		piety = -50
+		wealth = 200
+		random = {
+			chance = 50
+			add_trait = lady_macbeth
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.75 }
+			}
+		}
+	}
+}
+
+#work on master plan
+character_event = {
+	id = flavour_events.9
+	desc = "EVTDESCflavour_events.9"
+	picture = GFX_evt_avicenna
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = reformer
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.75
+			trait = genius
+		}
+		modifier = {
+			factor = 0.1
+			trait = content
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.9"
+		prestige = 15
+		wealth = 50
+		random = {
+			chance = 75
+			add_trait = just
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.9"
+		prestige = 25
+		wealth = 150
+		random = {
+			chance = 35
+			add_trait = greedy
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.9"
+		prestige = 50
+		random = {
+			chance = 75
+			remove_trait = reformer
+			add_trait = conservative
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.69 }
+			}
+		}
+	}
+}
+
+#National bank
+character_event = {
+	id = flavour_events.10
+	desc = "EVTDESCflavour_events.10"
+	picture = GFX_evt_jewish_banker
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = bank_sponsor
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 3.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 3.75
+			trait = just
+		}
+        modifier = {
+			factor = 0.75
+			trait = greedy
+		}
+        modifier = {
+			factor = 0.75
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 3.5
+			stewardship = 15
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.10"
+		piety = 25
+		wealth = 50
+		random = {
+			chance = 60
+			remove_trait = bank_sponsor
+			add_trait = zealous
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.10"
+		prestige = 25
+		piety = -25
+		scaled_wealth = 0.4
+		random = {
+			chance = 35
+			add_trait = greedy
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.10"
+		prestige = 50
+		random = {
+			chance = 50
+			add_trait = charlatan
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.63 }
+			}
+		}
+	}
+}
+
+#Tapestry
+character_event = {
+	id = flavour_events.11
+	desc = "EVTDESCflavour_events.11"
+	picture = GFX_evt_hastings
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = war_hero
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.75
+			trait = just
+		}
+		modifier = {
+			factor = 0.2
+			trait = humble
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.11"
+		piety = 25
+		random = {
+			chance = 50
+			add_trait = humble
+	    }
+    }
+	
+	option = {
+		name = "EVTOPTBflavour_events.11"
+		wealth = -50
+		piety = -25
+		random = {
+			chance = 50
+			add_trait = proud
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+			}	
+		}
+	}	
+}
+
+#Steward collect taxes
+character_event = {
+	id = flavour_events.12
+	desc = "EVTDESCflavour_events.12"
+	picture = GFX_evt_throne_room
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 3.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.75
+			trait = just
+		}
+		modifier = {
+			factor = 1.5
+			trait = arbitrary
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.12"
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 35
+			add_trait = conservative
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.69 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBflavour_events.12"
+		prestige = -10
+		piety = -25
+		wealth = 100
+		random = {
+			chance = 50
+			add_trait = reformer
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.67 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "Yeah yeah.."
+		prestige = -10
+		wealth = 25
+		random = {
+			chance = 10
+			add_trait = slothful
+		}
+	}
+}
+
+#Bard asks for patronage
+character_event = {
+	id = flavour_events.13
+	desc = "EVTDESCflavour_events.13"
+	picture = GFX_evt_musician
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 4.5
+			trait = charitable
+		}
+		modifier = {
+			factor = 4.75
+			trait = gluttonous
+		}
+		modifier = {
+			factor = 0.25
+			trait = temperate
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.13"
+		prestige = -15
+		random = {
+			chance = 25
+			add_trait = proud
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.13"
+		prestige = 10
+		scaled_wealth = -0.2
+		random = {
+			chance = 75
+			add_trait = gregarious
+			hidden_tooltip = {
+				character_event = { id = 38265 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.13"
+		piety = 5
+		scaled_wealth = -0.5
+        random = { 
+		    chance = 25
+		    create_character = {
+				random_traits = yes
+				trait = musician
+				dynasty = random
+			} 
+		}
+		random = {
+			chance = 35
+			add_trait = charitable
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+			}
+		}
+	}
+}
+
+#Musician wants to teach you
+character_event = {
+	id = flavour_events.14
+	desc = "EVTDESCflavour_events.14"
+	picture = GFX_evt_musician
+	
+	min_age = 14
+	max_age = 30
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+        NOT = { trait = musician }
+        NOT = { trait = poet }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.75
+			trait = just
+		}
+		modifier = {
+			factor = 0.1
+			trait = slothful
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.14"
+		prestige = 15
+		scaled_wealth = -0.5
+        random = { 
+		    chance = 25
+		    create_character = {
+				random_traits = yes
+				trait = musician
+				trait = poet
+				dynasty = random
+			} 
+		}
+		random = {
+			chance = 75
+			add_trait = musician
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.95 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.14"
+		prestige = 20
+		scaled_wealth = -0.6
+		random = { 
+		    chance = 25
+		    create_character = {
+			    random_traits = yes
+			    trait = musician
+			    trait = poet
+			    dynasty = random
+			} 
+		}
+		random = {
+			chance = 50
+			add_trait = poet
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.14"
+		piety = 5
+		prestige = -15
+		random = {
+			chance = 15
+			add_trait = uneducated
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.77 }
+			}
+		}
+	}
+}
+
+#Alchemist with formula
+character_event = {
+	id = flavour_events.15
+	desc = "EVTDESCflavour_events.15"
+	picture = GFX_evt_alchemist
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.75
+			trait = just
+		}
+		modifier = {
+			factor = 0.15
+			trait = zealous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.15"
+		prestige = 15
+		piety = 25
+		random = {
+			chance = 25
+			add_trait = cynical
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.15"
+		prestige = 10
+		scaled_wealth = 0.2
+		random = {
+			chance = 25
+			add_trait = alchemist
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.106 }
+			}
+		}	
+	}	
+	
+	option = {
+		name = "EVTOPTCflavour_events.15"
+		prestige = 25
+		piety = -25
+		scaled_wealth = 0.5
+		add_trait = alchemist
+		hidden_tooltip = {
+				character_event = { id = tptt_traits.106 }
+			}
+		random = {
+			chance = 15
+			add_trait = maimed
+			hidden_tooltip = {
+				character_event = { id = 38281 }
+			}
+		}
+	}
+}
+
+#Pope accused me of sorcery
+character_event = {
+	id = flavour_events.16
+	desc = "EVTDESCflavour_events.16"
+	picture = GFX_evt_alchemist
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = alchemist
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.75
+			trait = just
+		}
+		modifier = {
+			factor = 7.0
+			trait = arbitrary
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAflavour_events.16"
+		piety = 25
+		random = {
+			chance = 75
+			remove_trait = alchemist
+			add_trait = zealous
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTBflavour_events.16"
+		prestige = 10
+		piety = -25
+		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}	
+		random = {
+			chance = 35
+			add_trait = machiavellian
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.16"
+		piety = 5
+		random = {
+			chance = 75
+			add_trait = deceitful
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+			}
+		}
+	}
+}
+
+#Latest economical policies have been bad
+character_event = {
+	id = flavour_events.17
+	desc = "EVTDESCflavour_events.17"
+	picture = GFX_evt_council_around_table
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 3.5
+			trait = greedy
+		}
+        modifier = {
+			factor = 3.25
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.25
+			trait = bank_sponsor
+		}
+
+		modifier = {
+			factor = 0.25
+			trait = just
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBflavour_events.17"
+		prestige = -15
+		piety = 25
+		scaled_wealth = -1
+		random = {
+			chance = 35
+			add_trait = reformer
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.67 }
+		    }
+        }			
+	}
+
+	option = {
+		name = "EVTOPTAflavour_events.17"
+		prestige = -20
+		scaled_wealth = -0.5
+		random = {
+			chance = 50
+			add_trait = craven
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCflavour_events.17"
+		prestige = -25
+		piety = -25
+		scaled_wealth = -0.75
+		random = {
+			chance = 75
+			add_trait = arbitrary
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+			}
+		}
+	}
+}

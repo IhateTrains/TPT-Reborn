@@ -1,0 +1,698 @@
+# Faction tags need to start with 'faction_'
+
+# Supported types:
+# liege_titles, liege_titles_w_claimant, character
+
+# The succession law factions have hard coded elements to ensure that the correct heir is shown in Plot and 
+# Faction interfaces and that AI faction members vote for laws in accordance with the faction goal.
+# The valid tags correspond to the law name: faction_succ_seniority, faction_succ_primogeniture, etc.
+# (faction_succ_ultimogeniture is fully supported by the code, but not currently implemented)
+
+###############
+# FACTIONS
+###############
+
+# Loyal to their immediate liege; will always support their liege in civil wars
+faction_liege_loyalist = {
+	type = character
+	exclusive = yes
+	
+	potential = {
+		is_ruler = yes
+		independent = no
+		is_landed = yes
+		is_adult = yes
+	    liege = { higher_tier_than = COUNT }
+		NOT = { trait = incapable }
+		primary_title = { higher_tier_than = BARON }
+		
+		NOT = { in_faction = faction_succ_primogeniture }
+		NOT = { in_faction = faction_succ_seniority }
+		NOT = { in_faction = faction_succ_gavelkind }
+		NOT = { in_faction = faction_succ_feudal_elective }
+		NOT = { in_faction = faction_independence }
+		NOT = { in_faction = faction_lower_crown_authority }
+		NOT = { in_faction = faction_claimant }
+		NOT = { in_faction = faction_guelphs }
+		NOT = { in_faction = faction_ghibellines }
+		
+	}
+	
+	allow = {
+		prisoner = no
+		NOT = {
+			liege = {
+				any_vassal = {
+					NOT = { in_faction = faction_liege_loyalist }
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_coerced_into_joining_faction }
+				}
+			}
+		}
+	}
+	
+	chance = {
+		factor = 1
+		
+		# Must either:
+		#	Be conservative
+		#	Be just
+		#	Be a friend of the liege
+		#	Be an ally of the liege
+		#	Be a lover of the liege
+		modifier = {
+			factor = 0
+			NOT = { trait = conservative }
+			NOT = { trait = just }
+			NOT = { liege = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_friend } } }
+			NOT = { liege = { dynasty = ROOT } }
+			NOT = { liege = { is_close_relative = ROOT } }
+			NOT = { liege = { spouse = { character = ROOT } } }
+			NOT = { liege = { spouse = { is_close_relative = ROOT } } }
+			NOT = { liege = { reverse_opinion = { who = ROOT value = 50 } } }
+			NOT = { liege = { lover = { character = ROOT } } }
+		}
+		
+		# Personality Effects
+		modifier = {
+			factor = 5
+			trait = conservative
+		}
+		modifier = {
+			factor = 0.2
+			trait = lady_macbeth
+		}
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.25
+			trait = just
+		}
+		modifier = {
+			factor = 0.8
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 1.25
+			trait = honest
+		}
+		modifier = {
+			factor = 0.8
+			trait = deceitful
+		}
+		
+		# Culture and Religion Effects
+		modifier = {
+			factor = 2
+			liege = { culture = ROOT }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { liege = { culture = ROOT } }
+		}
+		modifier = {
+			factor = 2
+			liege = { culture_group = ROOT }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { liege = { culture_group = ROOT } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { trait = cynical }
+			liege = { religion = ROOT }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { trait = cynical }
+			NOT = { liege = { religion = ROOT } }
+		}
+		modifier = {
+			factor = 5
+			trait = zealous
+			liege = { religion = ROOT }
+		}
+		modifier = {
+			factor = 0
+			trait = zealous
+			liege = { NOT = { religion = ROOT } }
+		}
+		
+		# Opinion Effects
+		modifier = {
+			factor = 1.25
+			liege = { reverse_opinion = { who = ROOT value = 100 } }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { reverse_opinion = { who = ROOT value = 90 } }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { reverse_opinion = { who = ROOT value = 80 } }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { reverse_opinion = { who = ROOT value = 70 } }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { reverse_opinion = { who = ROOT value = 60 } }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { reverse_opinion = { who = ROOT value = 50 } }
+		}
+		
+		# Liege Personality Effects
+		modifier = {
+			factor = 2
+			liege = { trait = kind }
+		}
+		modifier = {
+			factor = 3
+			liege = { trait = just }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = conservative }
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = reformer }
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = cruel }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = brave }
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = craven }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = proud }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = humble }
+		}
+		modifier = {
+			factor = 0.2
+			liege = { trait = lunatic }
+		}
+		modifier = {
+			factor = 0.2
+			liege = { trait = possessed }
+		}
+		
+		# Liege legitimacy effects
+		modifier = {
+			factor = 0.2
+			NOT = { trait = arbitrary }
+			NOT = { liege = { ROOT = { primary_title = { de_jure_liege_or_above = PREVPREV } } } }
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+			NOT = { liege = { ROOT = { primary_title = { de_jure_liege_or_above = PREVPREV } } } }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { trait = arbitrary }
+			liege = {
+				OR = {
+					trait = bastard
+					trait = legit_bastard
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_suspected_bastard }
+					primary_title = { any_claimant = { has_opinion_modifier = { who = PREVPREV modifier = opinion_usurped_title } } }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+			liege = {
+				OR = {
+					trait = bastard
+					trait = legit_bastard
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_suspected_bastard }
+					primary_title = { any_claimant = { has_opinion_modifier = { who = PREVPREV modifier = opinion_usurped_title } } }
+				}
+			}
+		}
+	}
+	
+	membership = {
+		factor = 1
+		
+		modifier = {
+			factor = 0
+			OR = {
+				in_faction = faction_succ_primogeniture
+				in_faction = faction_succ_feudal_elective
+				in_faction = faction_succ_seniority
+				in_faction = faction_succ_gavelkind
+				in_faction = faction_independence
+				in_faction = faction_lower_crown_authority
+				in_faction = faction_claimant
+			}
+		}
+		
+		# Coercion Effects
+		modifier = {
+			factor = 10000
+			has_opinion_modifier = { who = FROM modifier = opinion_coerced_into_joining_faction }
+		}
+		
+		# Personality Effects
+		modifier = {
+			factor = 5
+			trait = conservative
+		}
+		modifier = {
+			factor = 0.2
+			trait = lady_macbeth
+		}
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.25
+			trait = just
+		}
+		modifier = {
+			factor = 0.8
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 1.25
+			trait = honest
+		}
+		modifier = {
+			factor = 0.8
+			trait = deceitful
+		}
+		
+		# Culture and Religion Effects
+		modifier = {
+			factor = 3
+			liege = { culture = ROOT }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { liege = { culture = ROOT } }
+		}
+		modifier = {
+			factor = 2
+			liege = { culture_group = ROOT }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { liege = { culture_group = ROOT } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { trait = cynical }
+			liege = { religion = ROOT }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { trait = cynical }
+			NOT = { liege = { religion = ROOT } }
+		}
+		modifier = {
+			factor = 5
+			trait = zealous
+			liege = { religion = ROOT }
+		}
+		modifier = {
+			factor = 0
+			trait = zealous
+			liege = { NOT = { religion = ROOT } }
+			NOT = { FROM = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_coerced_into_joining_faction } } }
+		}
+		
+		# Opinion Effects
+		modifier = {
+			factor = 1.5
+			liege = { reverse_opinion = { who = ROOT value = 99 } }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { reverse_opinion = { who = ROOT value = 90 } }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { reverse_opinion = { who = ROOT value = 80 } }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { reverse_opinion = { who = ROOT value = 70 } }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { reverse_opinion = { who = ROOT value = 60 } }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { reverse_opinion = { who = ROOT value = 50 } }
+		}
+		
+		# Opinion Effects with faction starter
+		modifier = {
+			factor = 1.25
+			FROM = { reverse_opinion = { who = ROOT value = 75 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { reverse_opinion = { who = ROOT value = 60 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { reverse_opinion = { who = ROOT value = 50 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { reverse_opinion = { who = ROOT value = 40 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { reverse_opinion = { who = ROOT value = 30 } }
+		}
+		modifier = {
+			factor = 0.33
+			NOT = { FROM = { reverse_opinion = { who = ROOT value = -9 } } }
+		}
+		modifier = {
+			factor = 0.33
+			NOT = { FROM = { reverse_opinion = { who = ROOT value = -19 } } }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { FROM = { reverse_opinion = { who = ROOT value = -29 } } }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { FROM = { reverse_opinion = { who = ROOT value = -39 } } }
+		}
+		modifier = {
+			factor = 0
+			NOT = { FROM = { reverse_opinion = { who = ROOT value = -49 } } }
+		}
+		
+		# Liege Personality Effects
+		modifier = {
+			factor = 2
+			liege = { trait = war_hero }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = just }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = conservative }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = lady_macbeth }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = kind }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = cruel }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = brave }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = craven }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { trait = proud }
+		}
+		modifier = {
+			factor = 0.8
+			liege = { trait = humble }
+		}
+		modifier = {
+			factor = 0.2
+			liege = { trait = lunatic }
+		}
+		modifier = {
+			factor = 0.2
+			liege = { trait = possessed }
+		}
+		
+		# Liege power effects (reversed for balancing reasons)
+		
+		modifier = {
+			factor = 0.5
+			liege = { tier = EMPEROR }
+		}
+		modifier = {
+			factor = 0.75
+			liege = { tier = KING }
+		}
+		
+		# Liege legitimacy effects
+		
+		modifier = {
+			factor = 0.2
+			NOT = { trait = arbitrary }
+			NOT = { liege = { ROOT = { primary_title = { de_jure_liege_or_above = PREVPREV } } } }
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+			NOT = { liege = { ROOT = { primary_title = { de_jure_liege_or_above = PREVPREV } } } }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { trait = arbitrary }
+			liege = {
+				OR = {
+					trait = bastard
+					trait = legit_bastard
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_suspected_bastard }
+					primary_title = { any_claimant = { has_opinion_modifier = { who = PREVPREV modifier = opinion_usurped_title } } }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+			liege = {
+				OR = {
+					trait = bastard
+					trait = legit_bastard
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_suspected_bastard }
+					primary_title = { any_claimant = { has_opinion_modifier = { who = PREVPREV modifier = opinion_usurped_title } } }
+				}
+			}
+		}
+	}
+	
+	success = { always = no }
+	abort = { always = no }
+	abort_effect = { }
+	effect = { }
+}
+
+# Guelphs
+faction_guelphs = {
+	type = liege_titles_w_claimant # 'new_character' is a Claimant, or, if the title is Elective, anyone eligible for election
+	exclusive = yes # Can only lead or be in one faction of this type
+	
+	# Plotter scope
+	potential = {
+		has_global_flag = investiture_contest
+		NOT = { has_global_flag = investiture_contest_end }
+		independent = no
+		is_landed = yes
+		is_adult = yes
+		trait = guelph
+		NOT = { trait = incapable }
+		liege = {
+			has_landed_title = e_hre
+			has_law = investiture_law_1
+		}
+		NOT = { in_faction = faction_ghibellines }
+	}
+		
+	
+	# Target scope
+	allow = {
+		new_character = {
+			NOT = { has_landed_title = PREV }
+			
+			NOT = { is_primary_heir = FROM }
+			
+			same_realm = FROM
+			
+			culture = german
+			trait = guelph
+			
+		    religion_head = { opinion = { who = PREV value = 25 } }
+			
+			is_female = no
+		}	
+	}
+	
+	# AI creation weight
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			NOT = { trait = guelph } 
+		}
+	}
+	
+	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
+	membership = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			NOT = { trait = guelph } 
+		}
+	}
+	
+	success = {
+		e_hre = {
+		    has_law = investiture_law_0
+		}
+	}
+	
+	abort = {
+		always = no		# Factions will abort if the Potential or Allow triggers are no longer valid
+	}
+	
+	abort_effect = {
+	}
+	
+	effect = {
+	    any_playable_ruler = {
+		    limit = {
+			    religion = catholic
+			}
+			narrative_event = {
+			    id = guelphs_ghibellines.5
+			}
+		}
+	}
+}
+
+# Ghibellines
+faction_ghibellines = {
+	type = liege_titles_w_claimant # 'new_character' is a Claimant, or, if the title is Elective, anyone eligible for election
+	exclusive = yes # Can only lead or be in one faction of this type
+	
+	# Plotter scope
+	potential = {
+	    OR = {
+	        culture_group = italian_group
+	        NOT = { year = 1200 }
+		}
+		has_global_flag = investiture_contest_end
+		independent = no
+		is_landed = yes
+		is_adult = yes
+		trait = ghibelline
+		NOT = { trait = incapable }
+		NOT = { trait = incapable }
+		liege = {
+			has_landed_title = e_hre
+			has_law = investiture_law_0
+		}
+		NOT = { in_faction = faction_guelphs }
+	}
+		
+	
+	# Target scope
+	allow = {
+		new_character = {
+			NOT = { has_landed_title = PREV }
+			
+			NOT = { is_primary_heir = FROM }
+			
+			same_realm = FROM
+			trait = ghibelline
+		}	
+	}
+	
+	# AI creation weight
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			NOT = { trait = ghibelline }
+		}
+	}
+	
+	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
+	membership = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			NOT = { trait = ghibelline }
+		}
+	}
+	
+	success = {
+		e_hre = {
+		    has_law = investiture_law_1
+		}
+	}
+	
+	abort = {
+		always = no		# Factions will abort if the Potential or Allow triggers are no longer valid
+	}
+	
+	abort_effect = {
+	}
+	
+	effect = {
+	    any_playable_ruler = {
+		    limit = {
+			    religion = catholic
+			}
+			narrative_event = {
+			    id = guelphs_ghibellines.1
+			}
+		}
+	}
+}

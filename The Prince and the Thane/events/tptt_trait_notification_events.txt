@@ -1,0 +1,540 @@
+######################################
+# Trait Notifaction Events
+# 
+# Written by idib816
+######################################
+				  #Child   #You
+# alchemist 			= tptt_traits.97 & tptt_traits.106
+# antisemite 			= tptt_traits.64 & tptt_traits.65
+# charlatan 			= tptt_traits.62 & tptt_traits.63
+# early bank sponsor 		= tptt_traits.60 & tptt_traits.61
+# clerical envoy		= tptt_traits.52 & tptt_traits.53
+# conservative			= tptt_traits.68 & tptt_traits.69
+# great swordsman		= tptt_traits.48 & tptt_traits.49
+# crazed plotter 		= tptt_traits.74 & tptt_traits.75
+# pragmatist 			= tptt_traits.72 & tptt_traits.73
+# taunted knight 		= tptt_traits.50 & tptt_traits.51
+# musician 			= tptt_traits.96 & tptt_traits.95
+# philosopher 			= tptt_traits.56 & tptt_traits.57
+# tales of the grail		= tptt_traits.78 & tptt_traits.79
+# reformer			= tptt_traits.66 & tptt_traits.67
+# relic hunter 			= tptt_traits.80 & tptt_traits.81
+# stubborn 			=  & 
+# tolerant			= tptt_traits.70 & tptt_traits.71
+# uneducatedcardinal		= tptt_traits.54 & tptt_traits.55
+# uneducatedphilosopher		= tptt_traits.58 & tptt_traits.59
+# uneducatedpragmatist	 	= tptt_traits.76 & tptt_traits.77
+# uneducated			= tptt_traits.98 & tptt_traits.77
+# victorious warrior		=   NA	 & tptt_traits.94
+# guardian refused to pay 	=   NA   & tptt_traits.102 (with Option A as well)
+# teacher's efforts had no eff. =   NA   & tptt_traits.103 (with Option A as well)
+
+
+
+############################################################################################################################################################################################################################################################################################################################################################################################
+
+namespace = tptt_traits
+
+# guardian notification - clerical envoy child
+character_event = {
+	id = tptt_traits.52
+	desc = "EVTDESCtptt_traits.52"
+	picture = GFX_evt_clerical_envoy2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# guardian notification - uneducatedcardinal child
+
+character_event = {
+	id = tptt_traits.54
+	desc = "EVTDESCtptt_traits.54"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - philosopher child
+character_event = {
+	id = tptt_traits.56
+	desc = "EVTDESCtptt_traits.56"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - uneducatedphilosopher child
+
+character_event = {
+	id = tptt_traits.58
+	desc = "EVTDESCtptt_traits.58"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - reformer child
+
+character_event = {
+	id = tptt_traits.66
+	desc = "EVTDESCtptt_traits.66"
+	picture = GFX_evt_reformer2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - conservative child
+
+character_event = {
+	id = tptt_traits.68
+	desc = "EVTDESCtptt_traits.68"
+	picture = GFX_evt_conservative2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - tolerant child
+
+character_event = {
+	id = tptt_traits.70
+	desc = "EVTDESCtptt_traits.70"
+	picture = GFX_evt_tolerant2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - tales of the grail child
+
+character_event = {
+	id = tptt_traits.78
+	desc = "EVTDESCtptt_traits.78"
+	picture = GFX_evt_grail2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - relic hunter child
+
+character_event = {
+	id = tptt_traits.80
+	desc = "EVTDESCtptt_traits.80"
+	picture = GFX_evt_relic_hunter2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - Bank Sponsor child
+
+character_event = {
+	id = tptt_traits.60
+	desc = "EVTDESCtptt_traits.60"
+	picture = GFX_evt_jewish_banker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - Charlatan child
+
+character_event = {
+	id = tptt_traits.62
+	desc = "EVTDESCtptt_traits.62"
+	picture = GFX_evt_charlatan2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - Antisemite child
+
+character_event = {
+	id = tptt_traits.64
+	desc = "EVTDESCtptt_traits.64"
+	picture = GFX_evt_jewish_banker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - pragmatist child
+
+character_event = {
+	id = tptt_traits.72
+	desc = "EVTDESCtptt_traits.72"
+	picture = GFX_evt_pragmatist2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - crazed plotter child
+
+character_event = {
+	id = tptt_traits.74
+	desc = "EVTDESCtptt_traits.74"
+	picture = GFX_evt_lady_macbeth
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - uneducatedpragmatist child
+
+character_event = {
+	id = tptt_traits.76
+	desc = "EVTDESCtptt_traits.76"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - clerical envoy
+
+character_event = {
+	id = tptt_traits.53
+	desc = "EVTDESCtptt_traits.53"
+	picture = GFX_evt_clerical_envoy2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - uneducatedcardinal
+
+character_event = {
+	id = tptt_traits.55
+	desc = "EVTDESCtptt_traits.55"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+# notification - philosopher
+
+character_event = {
+	id = tptt_traits.57
+	desc = "EVTDESCtptt_traits.57"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - uneducatedphilosopher
+
+character_event = {
+	id = tptt_traits.59
+	desc = "EVTDESCtptt_traits.59"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - reformer
+
+character_event = {
+	id = tptt_traits.67
+	desc = "EVTDESCtptt_traits.67"
+	picture = GFX_evt_reformer2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - conservative
+
+character_event = {
+	id = tptt_traits.69
+	desc = "EVTDESCtptt_traits.69"
+	picture = GFX_evt_conservative2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - tolerant
+
+character_event = {
+	id = tptt_traits.71
+	desc = "EVTDESCtptt_traits.71"
+	picture = GFX_evt_tolerant2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - tales of the grail
+
+character_event = {
+	id = tptt_traits.79
+	desc = "EVTDESCtptt_traits.79"
+	picture = GFX_evt_grail2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - relic hunter
+
+character_event = {
+	id = tptt_traits.81
+	desc = "EVTDESCtptt_traits.81"
+	picture = GFX_evt_relic_hunter2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+
+# notification - Bank Sponsor
+
+character_event = {
+	id = tptt_traits.61
+	desc = "EVTDESCtptt_traits.61"
+	picture = GFX_evt_jewish_banker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - Charlatan
+
+character_event = {
+	id = tptt_traits.63
+	desc = "EVTDESCtptt_traits.63"
+	picture = GFX_evt_charlatan2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - Antisemite
+
+character_event = {
+	id = tptt_traits.65
+	desc = "EVTDESCtptt_traits.65"
+	picture = GFX_evt_jewish_banker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+
+# notification - pragmatist
+
+character_event = {
+	id = tptt_traits.73
+	desc = "EVTDESCtptt_traits.73"
+	picture = GFX_evt_council_pragmatist2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - crazed plotter
+
+character_event = {
+	id = tptt_traits.75
+	desc = "EVTDESCtptt_traits.75"
+	picture = GFX_evt_lady_macbeth
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - uneducatedpragmatist
+
+character_event = {
+	id = tptt_traits.77
+	desc = "EVTDESCtptt_traits.77"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+
+# notification - Victorious warrior
+
+character_event = {
+	id = tptt_traits.94
+	desc = "EVTDESCtptt_traits.94"
+	picture = GFX_evt_orlando
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - musician
+
+character_event = {
+	id = tptt_traits.95
+	desc = "EVTDESCtptt_traits.95"
+	picture = GFX_evt_musician
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - musician child
+
+character_event = {
+	id = tptt_traits.96
+	desc = "EVTDESCtptt_traits.96"
+	picture = GFX_evt_musician
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - alchemist child
+
+character_event = {
+	id = tptt_traits.97
+	desc = "EVTDESCtptt_traits.97"
+	picture = GFX_evt_alchemist2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - uneducated child
+
+character_event = {
+	id = tptt_traits.98
+	desc = "EVTDESCtptt_traits.98"
+	picture = GFX_evt_uneducated2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}
+
+# notification - alchemist
+
+character_event = {
+	id = tptt_traits.106
+	desc = "EVTDESCtptt_traits.106"
+	picture = GFX_evt_alchemist2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+	}
+}

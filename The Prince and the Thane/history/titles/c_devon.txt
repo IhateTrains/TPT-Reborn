@@ -1,0 +1,49 @@
+1066.1.1=
+{
+liege="k_england"
+holder=122 # Harold Godwinson
+}
+1066.10.14=
+{
+holder=41260 #Baldwin de Brionne (lord of Okehampton)
+}
+1090.2.1=
+{
+holder=41263 #Richard de Brionne (lord of Okehampton)
+}
+1137.6.25=
+{
+holder=204655 #Baldwin I de Redvers
+}
+1155.1.4=
+{
+holder=204657 #Richard I de Redvers
+}
+1162.1.2=
+{
+holder=204658 #Baldwin II de Redvers
+}
+1188.5.28=
+{
+holder=204660 #Richard II de Redvers
+}
+1193.8.19=
+{
+holder=204650 #William de Redvers
+}
+1217.9.10=
+{
+holder=32511 #Baldwin III de Redvers
+}
+1245.2.15=
+{
+holder=32512 #Baldwin IV de Redvers
+}
+1262.9.13=
+{
+holder=32513 #Isabel de Redvers
+}
+1293.11.10=
+{
+holder=31004 #Hugh de Courtenay
+}

@@ -1,0 +1,4 @@
+#Archevêché puis ville libre.
+986.1.1 = {
+	liege="e_hre"
+}

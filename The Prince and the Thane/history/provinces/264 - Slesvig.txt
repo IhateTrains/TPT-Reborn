@@ -1,0 +1,28 @@
+# 264 - Slesvig
+
+# County Title
+title = c_slesvig
+
+# Settlements
+max_settlements = 5
+b_sonderborg = castle
+b_slesvig = city
+b_loegum = temple
+b_hedeby = city
+#b_aabenraahus = castle
+#b_flensborg = city
+#b_aabenraa = temple
+#b_tonder = temple
+
+
+
+# Misc
+culture = danish
+religion = catholic
+
+# History
+
+980.1.1 = { trade_post = b_brethaestath }
+1362.1.1 = { trade_post = b_vorrade }
+
+

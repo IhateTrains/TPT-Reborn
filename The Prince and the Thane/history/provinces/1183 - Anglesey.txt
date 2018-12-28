@@ -1,0 +1,21 @@
+# 1183 - Anglesey
+
+# County Title
+title = c_anglesey
+
+# Settlements
+max_settlements = 3
+b_aberlleiniog = castle
+b_aberffraw = city
+#b_beaymaris = castle
+#b_llanbadarn = temple
+
+
+
+# Misc
+culture = welsh
+religion = catholic
+terrain = hills
+
+# History
+

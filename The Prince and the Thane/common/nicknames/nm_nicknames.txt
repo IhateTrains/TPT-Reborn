@@ -1,0 +1,10 @@
+nick_the_divine = {
+	allow = {
+		has_character_modifier = nm_possessed_odin_recognised
+		has_character_modifier = nm_possessed_freya_recognised
+		has_character_modifier = nm_possessed_loke_recognised
+	}
+	chance = {
+		factor = 1000
+	}
+}

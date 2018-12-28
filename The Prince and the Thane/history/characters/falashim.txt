@@ -1,0 +1,129 @@
+93900 = {
+	name="Gudit" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	add_trait="cruel"
+	add_trait="cynical"
+	add_trait="wroth"
+	add_trait="brilliant_strategist"
+	female=yes
+	930.1.1={
+		birth="930.1.1"
+	}
+	1000.1.1={
+		death="1000.1.1"
+	}
+}
+
+93901 = {
+	name="Gebre" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	mother=93900
+	960.1.1={
+		birth="960.1.1"
+	}
+	1015.1.1={
+		death="1015.1.1"
+	}
+}
+
+93902 = {
+	name="Iskander" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93901
+	985.1.1={
+		birth="985.1.1"
+	}
+	1064.1.1={
+		death="1064.1.1"
+	}
+}
+
+93903 = {
+	name="Dawit" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93902
+	1032.1.1={
+		birth="1032.1.1"
+	}
+	1096.1.1={
+		death="1096.1.1"
+	}
+}
+
+93904 = {
+	name="Aman" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93903
+	1070.1.1={
+		birth="1070.1.1"
+	}
+	1125.1.1={
+		death="1125.1.1"
+	}
+}
+
+93905 = {
+	name="Dawit" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93904
+	1108.1.1={
+		birth="1108.1.1"
+	}
+	1159.1.1={
+		death="1159.1.1"
+	}
+}
+
+93906 = {
+	name="Mamo" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93905
+	1133.1.1={
+		birth="1133.1.1"
+	}
+	1194.1.1={
+		death="1194.1.1"
+	}
+}
+
+93907 = {
+	name="Semer" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93906
+	1168.1.1={
+		birth="1168.1.1"
+	}
+	1220.1.1={
+		death="1220.1.1"
+	}
+}
+
+93908 = {
+	name="Iskander" 
+	dynasty=2109008
+	religion="jewish"
+	culture="falashim"
+	father=93907
+	1201.1.1={
+		birth="1201.1.1"
+	}
+	1268.1.1={
+		death="1268.1.1"
+	}
+}

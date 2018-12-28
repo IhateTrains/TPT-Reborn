@@ -1,0 +1,21 @@
+# 1 - Vestisland
+
+# County Title
+title = c_vestisland
+
+# Settlements
+max_settlements = 2
+
+b_husavik = castle
+#b_borgarnes = city
+
+
+
+
+
+# Misc
+culture = icelandic
+religion = catholic
+
+
+# History

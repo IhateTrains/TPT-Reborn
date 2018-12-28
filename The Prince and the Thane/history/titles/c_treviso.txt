@@ -1,0 +1,29 @@
+
+863.1.1={
+	liege = "d_verona"
+}
+863.1.1={
+	holder=163057
+}
+1028.1.1={
+	holder=70626
+}
+1038.8.11={
+	holder=20352
+}
+1081.7.31={
+	holder=70627
+}
+1090.5.12={
+	liege="e_hre"
+}
+1098.1.1={
+	holder = 1191056 #Gilberto Collalto
+}
+1130.7.8 = { 
+	holder = 1191058 #Rambaldo III Collalto
+}
+1160.1.1={
+	holder=1191059 #Guido Collalto
+	liege=0
+}

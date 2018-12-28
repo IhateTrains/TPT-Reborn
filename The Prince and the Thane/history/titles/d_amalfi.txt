@@ -1,0 +1,46 @@
+954.1.1={
+	holder=2220007 #Mastalo II d'Amalfi
+    law = succ_patrician_elective
+}
+
+958.1.1={
+	holder=2220008 #Sergio I d'Amalfi
+}
+
+966.1.1={
+	holder=2220009 #Mansone I d'Amalfi
+}
+
+1004.1.1={
+	holder=2220010 #Giovanni d'Amalfi
+}
+
+1007.1.1={
+	holder=2220011 #Sergio II d'Amalfi
+}
+
+1028.1.1={
+	holder=2220012 #Mansone II d'Amalfi
+}
+
+1039.1.1={
+	holder=1116 #Waimar di Salerno
+}
+1043.1.1={
+	holder=2220012 #Mansone II d'Amalfi
+}
+1052.1.1={
+	holder=2220013 #Giovanni II d'Amalfi
+}
+
+1069.1.1={
+	holder=2220014 #Sergio III d'Amalfi
+}
+
+1073.1.1={
+	holder=1142 #Roger Borsa d'Altavilla
+    law = succ_primogeniture
+}
+1111.1.1={
+	holder=0
+}

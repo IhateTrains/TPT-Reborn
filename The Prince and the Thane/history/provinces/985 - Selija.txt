@@ -1,0 +1,21 @@
+# 985 - Selija
+
+# County Title
+title = c_selija
+
+# Settlements
+max_settlements = 2
+
+b_selpils = castle
+#b_jekabpils = city
+#b_nereta = city
+#b_jaunjelgava = castle
+
+# Misc
+culture = lettigallish
+religion = baltic_pagan
+
+# History
+
+1199.1.1 = { religion = catholic }
+

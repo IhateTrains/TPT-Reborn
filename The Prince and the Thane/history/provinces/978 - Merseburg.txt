@@ -1,0 +1,19 @@
+# 978 - Merseburg
+
+# County Title
+title = c_merseburg
+
+# Settlements
+max_settlements = 3
+
+b_merseburg = castle
+b_leipzig = city
+#b_weissensfels = city
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+
+

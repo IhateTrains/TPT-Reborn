@@ -1,0 +1,66 @@
+######################################
+#New francoprovençal dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035081-1000035130
+######################################
+
+1000035081 = {
+name="de Challant"
+ culture = francoprovençal # val d'Aoste
+# solo : d'argent au chef de gueules, à la cotice de sable
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 140
+          emblem = 34
+          color = 2
+          color = 1
+          color = 0
+      }
+  }
+}
+1000035082 = {
+name="Sarriod"
+ culture = francoprovençal # val d'Aoste
+# solo : d'argent à la bande d'azur, chargée de trois lions passants d'or 
+}
+# NB : I'll move those to my list, they belong with the others
+
+
+1000035373 = {
+name="Turci" # That's the family from Asti
+ culture = italian # not francoprovençal
+# solo : d'argent à l'aigle de sable
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 30
+          emblem = 0
+          color = 3
+          color = 1
+          color = 0
+      }
+  }
+}
+
+
+
+
+
+
+
+
+######################################
+#Generic dynasites
+#Range 1000035131-1000035150
+######################################
+
+
+
+

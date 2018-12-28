@@ -1,0 +1,947 @@
+castle = {
+#Warrior Cult, special pagan building that gives more infantry to pagans
+	ca_warrior_cult = {
+		desc = ca_warrior_cult_desc
+		auto_add_at_year = 10
+		potential = {
+			FROM = {
+				OR = { religion_group = pagan_group
+                                religion_group = other_pagan_group
+                                religion_group = baltic_pagan_group }
+                                NOT = { culture = mongol }
+				NOT = {
+					any_liege = {
+						NOT = { OR = { religion_group = pagan_group
+                                                religion_group = other_pagan_group
+                                                religion_group = baltic_pagan_group } }
+                                                culture = mongol
+					}
+				}
+			}
+			OR = { religion_group = pagan_group
+                                religion_group = other_pagan_group
+                                religion_group = baltic_pagan_group }
+                        NOT = { culture = mongol }
+		}
+		build_cost = 10
+		build_time = 60
+		light_infantry = 200
+		heavy_infantry = 80
+		archers = 80
+		ai_creation_factor = 300 #AI should always build this if it can
+	}
+## Military Engineers ##
+##Small Military Engineers Workshop
+ca_engineers_1 = {	
+		desc = ca_engineers_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
+                is_capital = yes }
+		prerequisites = { ca_wall_2 }
+		build_cost = 350
+		build_time = 1000
+		levy_reinforce_rate = 0.10
+		tax_income = -0.5
+		garrison_size = 0.15
+		garrison_growth = 0.05
+		fort_level = 1
+		local_build_time_modifier = -0.05
+		tech_growth_modifier_military = 0.1
+		
+		ai_creation_factor = 75
+
+		start = {
+		}
+	}	
+##Large Military Engineers Workshop
+ca_engineers_2 = {
+		desc = ca_engineers_2_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+                is_capital = yes }
+		upgrades_from = ca_engineers_1
+		build_cost = 500
+		build_time = 1250
+		levy_reinforce_rate = 0.10
+		tax_income = -0.5
+		garrison_size = 0.15
+		garrison_growth = 0.1
+		fort_level = 0.5
+		local_build_time_modifier = -0.1
+		tech_growth_modifier_military = 0.1
+		
+		ai_creation_factor = 70
+
+		start = {
+		}
+	}
+### Justice
+### Village Green ###
+	ca_justice_1 = {
+		desc = ca_justice_1_desc
+		potential = {
+			religion_group = christian
+			NOT = { culture_group = byzantine }
+		}	
+	    prerequisites = { ca_keep_1 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		build_cost = 30
+		build_time = 365
+		tax_income = 0.10
+		ai_creation_factor = 83
+		
+		start = {
+			year = 1080
+		}
+	}
+### Bailiffs Office ###	
+	ca_justice_2 = {
+		desc = ca_justice_2_desc
+		potential = {
+			religion_group = christian
+			NOT = { culture_group = byzantine }
+		}
+		prerequisites = { ca_town_3 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_justice_1
+		build_cost = 45
+		build_time = 365
+		local_revolt_risk = -0.005
+		pikemen = 7
+		tax_income = 0.25
+		ai_creation_factor = 82
+
+		start = {
+			year = 1100
+		}
+	}
+### Manorial Courthall ###	
+	ca_justice_3 = {
+		desc = ca_justice_3_desc
+		potential = {
+			religion_group = christian
+			NOT = { culture_group = byzantine }
+		}
+		prerequisites = { ca_town_4 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_justice_2
+		build_cost = 75
+		build_time = 456
+		tax_income = 0.25
+		ai_creation_factor = 81
+
+		start = {
+			year = 1150
+		}
+	}	
+### Comital Courthouse ###	
+	ca_justice_4 = {
+		desc = ca_justice_4_desc
+		potential = {
+			religion_group = christian
+			NOT = { culture_group = byzantine }
+		}
+		prerequisites = { ca_town_5 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_justice_3
+		build_cost = 100
+		build_time = 730
+		local_revolt_risk = -0.01
+		pikemen = 15
+		tax_income = 0.25
+		ai_creation_factor = 80
+
+		start = {	
+		}
+	}	
+### Royal Court Gallery ###	
+	ca_justice_5 = {
+		desc = ca_justice_5_desc
+		potential = {
+			religion_group = christian
+			NOT = { culture_group = byzantine }
+		}
+		prerequisites = { ca_town_6 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_justice_4
+		build_cost = 150
+		build_time = 1095
+		local_revolt_risk = -0.01
+		pikemen = 25
+		tax_income = 0.25
+		ai_creation_factor = 79
+
+		start = {
+		}
+	}
+##Military Holy Orders building
+	ca_order_house = {
+		desc = ca_order_house_desc
+		potential = {
+			FROM = {
+				OR = {
+					has_landed_title = d_teutonic_order
+					has_landed_title = d_knights_templar
+					has_landed_title = d_knights_hospitaler
+					has_landed_title = d_ghazi_sunni
+					has_landed_title = d_ghazi_shiite
+					has_landed_title = d_hashshashin
+					has_landed_title = d_ulfheonar
+					has_landed_title = d_devotees_of_the_true_prophet
+					has_landed_title = d_great_host
+					has_landed_title = d_guardians_of_the_sacred_flame
+					has_landed_title = d_disciples_of_the_old_gods
+					has_landed_title = d_druze_shields
+					has_landed_title = d_melachim
+					has_landed_title = d_bear_warriors
+					has_landed_title = d_order_lazarus
+					has_landed_title = d_order_mountjoy
+					has_landed_title = d_order_jesus
+					has_landed_title = d_order_jordi
+					has_landed_title = d_order_thomas
+					has_landed_title = d_order_virgin
+					has_landed_title = d_order_sepulchre
+					has_landed_title = d_order_montesa
+					has_landed_title = d_order_redstar
+					has_landed_title = d_order_dobrzyn
+					has_landed_title = d_order_livonian
+					has_landed_title = d_order_aviz
+					has_landed_title = d_order_saint_james
+					has_landed_title = d_order_calatrava
+					has_landed_title = d_order_alcantara
+					has_landed_title = d_order_santiago
+				}
+			}
+		}
+		build_cost = 250
+		build_time = 730
+		light_infantry = 350
+		heavy_infantry = 250
+		knights = 200
+		archers = 75
+                monthly_character_piety = 1
+		ai_creation_factor = 101
+
+		start = {
+			year = 1066
+		}
+	}
+### Alchemists
+### Alchemist's Workshop ###
+	ct_alchemists_1 = {
+		desc = ca_alchemists_1_desc
+	    potential = { 
+			FROM = { trait = alchemist }
+                        is_capital = yes
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		build_cost = 150
+		build_time = 365
+		local_tax_modifier = 0.05
+                tech_growth_modifier = 0.05
+                monthly_character_piety = -0.1
+		ai_creation_factor = 100
+		
+		start = {
+		}
+	}
+### Alchemist's Tower ###
+	ct_alchemists_2 = {
+		desc = ca_alchemists_2_desc
+	    potential = { 
+			FROM = { trait = alchemist }
+                        is_capital = yes
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ct_alchemists_1
+	        build_cost = 350
+		build_time = 730
+		local_tax_modifier = 0.05
+                tech_growth_modifier = 0.05
+                monthly_character_piety = -0.1
+                monthly_character_prestige = 0.25
+		ai_creation_factor = 90
+		
+		start = {
+		}
+	}
+### Alchemist's Guild ###
+	ct_alchemists_3 = {
+		desc = ca_alchemists_3_desc
+	    potential = { 
+			FROM = { trait = alchemist }
+                        is_capital = yes
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ct_alchemists_2
+	        build_cost = 500
+		build_time = 1095
+		local_tax_modifier = 0.05
+                tech_growth_modifier = 0.05
+                monthly_character_piety = -0.1
+                monthly_character_prestige = 0.25
+		ai_creation_factor = 80
+		
+		start = {
+		}
+	}
+### Farms
+### Communal Tenure ###
+	ca_farm_1 = {
+		desc = ca_farm_desc
+            potential = { 
+                Or = {
+                    terrain = farmlands
+                    terrain = hills
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                } 
+		build_cost = 75
+		build_time = 90
+		tax_income = 0.5
+		ai_creation_factor = 92
+		
+		start = {
+		}
+	}
+### Farming Cottages ###	
+	ca_farm_2 = {
+		desc = ca_farm_desc
+	    potential = { 
+                Or = {
+                    terrain = farmlands
+                    terrain = hills
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                } 
+		prerequisites = { ca_town_1 }
+		upgrades_from = ca_farm_1
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		build_cost = 100
+		build_time = 365
+		tax_income = 0.20
+		ai_creation_factor = 85
+
+		start = {
+		}
+	}
+### Irrigated Farms ###	
+	ca_farm_3 = {
+		desc = ca_farm_desc
+		potential = { 
+                Or = {
+                    terrain = farmlands
+                    terrain = plains
+                    terrain = hills
+                    terrain = coastal_desert
+                         }                     
+                } 
+		prerequisites = { ca_town_2 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = ca_farm_2
+		build_cost = 125
+		build_time = 365
+		garrison_size = 0.05
+		tax_income = 0.30
+		ai_creation_factor = 84
+
+		start = {
+		year = 1200
+		}
+	}	
+### Large Irrigated Farms ###	
+	ca_farm_4 = {
+		desc = ca_farm_desc
+	    potential = { 
+                Or = {
+                    terrain = farmlands
+                    terrain = plains
+                    terrain = hills
+                    terrain = coastal_desert
+                         }                     
+                } 
+		trigger = { TECH_CASTLE_TAXES = 3 }
+		upgrades_from = ca_farm_3
+		build_cost = 150
+		build_time = 730
+		garrison_size = 0.05
+		tax_income = 0.40
+		ai_creation_factor = 83
+
+		start = {
+		year = 1250
+		}
+	}	
+### Animal Pastures
+### Cattle Pastures ###
+	ca_cattle_1 = {
+		desc = ca_cattle_desc
+	    potential = { 
+            Or = {
+                    terrain = farmlands
+                    terrain = hills
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                } 
+		prerequisites = { ca_keep_1 }
+	        build_cost = 40
+		build_time = 155
+		tax_income = 0.4
+		ai_creation_factor = 72
+
+		start = {
+		    year = 1066
+		}
+	}
+### Cattle Barn ###	
+	ca_cattle_2 = {
+		desc = ca_cattle_desc
+		potential = { 
+                Or = {
+                    terrain = farmlands
+                    terrain = hills
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                } 
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		upgrades_from = ca_cattle_1
+		build_cost = 60
+		build_time = 290
+		tax_income = 0.4
+		ai_creation_factor = 71
+
+		start = {
+		    year = 1120
+		}
+	}
+### Cattle Stable ###	
+	ca_cattle_3 = {
+		desc = ca_cattle_desc
+		potential = { 
+                Or = {
+                    terrain = farmlands
+                    terrain = hills
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                } 
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = ca_cattle_2
+		build_cost = 100
+		build_time = 345
+		tax_income = 0.4
+		ai_creation_factor = 70
+
+		start = {
+		year = 1200
+		}
+	}
+### Goat Pastures ###
+	ca_goat_1 = {
+		desc = ca_goat_desc
+	    potential = { 
+            Or = {
+                    terrain = mountain
+                    terrain = hills
+                         }                     
+                } 
+		prerequisites = { ca_keep_1 }
+	    build_cost = 28.5
+		build_time = 155
+		tax_income = 0.20
+		ai_creation_factor = 72
+
+		start = {
+		    year = 1066
+		}
+	}
+### Goat Barn ###	
+	ca_goat_2 = {
+		desc = ca_goat_desc
+		potential = { 
+            Or = {
+                    terrain = mountain
+                    terrain = hills
+                         }                     
+                }
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		upgrades_from = ca_goat_1
+		build_cost = 50
+		build_time = 290
+		tax_income = 0.20
+		ai_creation_factor = 71
+
+		start = {
+		year = 1100
+		}
+	}
+### Goat Stable ###	
+	ca_goat_3 = {
+		desc = ca_goat_desc
+		potential = { 
+                    Or = {
+                    terrain = mountain  
+                    terrain = hills
+                     }   
+                }
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = ca_goat_2
+		build_cost = 75
+		build_time = 365
+		tax_income = 0.20
+		ai_creation_factor = 70
+
+		start = {
+		year = 1200
+		}
+	}
+### Swine Pen ###
+	ca_swine_1 = {
+		desc = ca_swine_desc
+	    potential = { 
+                FROM = { Or = { religion_group = pagan_group
+                religion_group = christian } }
+                Or = {
+                    terrain = marsh
+                    terrain = woods
+                         }                     
+                } 
+		prerequisites = { ca_keep_1 }
+	    build_cost = 30
+		build_time = 195
+		tax_income = 0.2
+		ai_creation_factor = 72
+
+		start = {
+		    year = 1066
+		}
+	}
+### Swine Pastures ###	
+	ca_swine_2 = {
+		desc = ca_swine_desc
+		potential = { 
+                FROM = { Or = { religion_group = pagan_group
+                religion_group = christian } }
+                Or = {
+                    terrain = marsh
+                    terrain = woods
+                         }                     
+                }
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		upgrades_from = ca_swine_1
+		build_cost = 45
+		build_time = 365
+		tax_income = 0.35
+		ai_creation_factor = 71
+
+		start = {
+		year = 1100
+		}
+	}
+### Hog Barn ###	
+	ca_swine_3 = {
+		desc = ca_swine_desc
+		potential = { 
+                FROM = { Or = { religion_group = pagan_group
+                religion_group = christian } }
+                terrain = woods          
+                }
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = ca_swine_2
+		build_cost = 75
+		build_time = 415
+		tax_income = 0.5
+		ai_creation_factor = 70
+
+		start = {
+		year = 1200
+		}
+	}	
+### Lumber Camps
+### Lumberjacks Camp ###
+	ca_timber_1 = {
+		desc = ca_timber_desc
+	    potential = { 
+                Or = {
+                    terrain = forest
+                    terrain = woods
+                    terrain = jungle
+                         }                     
+                }
+		prerequisites = { ca_keep_1 }
+		trigger = { TECH_CONSTRUCTION = 1 }
+	        build_cost = 75
+		build_time = 180
+		tax_income = 0.5
+		ai_creation_factor = 85
+		
+		start = {
+		}
+	}
+### Lumber Yard ###	
+	ca_timber_2 = {
+		desc = ca_timber_desc
+		potential = { 
+                Or = {
+                    terrain = forest
+                    terrain = woods
+                    terrain = jungle
+                         }                     
+                }
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CONSTRUCTION = 2 }
+		upgrades_from = ca_timber_1
+		build_cost = 150
+		build_time = 365
+		tax_income = 0.75
+		local_build_time_modifier = -0.02
+		local_build_cost_modifier = -0.02
+		ai_creation_factor = 84
+
+		start = {
+		    year = 1100
+		}
+	}
+### Logging Mill ###	
+	ca_timber_3 = {
+		desc = ca_timber_desc
+		potential = { 
+                Or = {
+                    terrain = forest
+                    terrain = woods
+                    terrain = jungle
+                         }                     
+                }
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		upgrades_from = ca_timber_2
+		build_cost = 250
+		build_time = 730
+		tax_income = 1
+		local_build_time_modifier = -0.02
+		local_build_cost_modifier = -0.02
+		ai_creation_factor = 83
+
+		start = {
+		}
+	}	
+### Hunter Camps
+### Hunters Camp ###
+	ca_hunting_lodges_1 = {
+		desc = ca_hunters_desc
+	    potential = { 
+                Or = {
+                    terrain = steppe
+                    terrain = arctic
+                    terrain = forest
+                    terrain = woods
+                         }                     
+                }
+		prerequisites = { ca_town_1 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+	        build_cost = 100
+		build_time = 180
+		tax_income = 0.75
+		ai_creation_factor = 85
+		
+		start = {
+		}
+	}
+### Hunter's Lodge ###	
+	ca_hunting_lodges_2 = {
+		desc = ca_hunters_desc
+		potential = { 
+                Or = {
+                    terrain = steppe
+                    terrain = arctic
+                    terrain = forest
+                    terrain = woods
+                         }                     
+                }
+		prerequisites = { ca_town_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_hunting_lodges_1
+		build_cost = 175
+		build_time = 365
+		tax_income = 1
+		ai_creation_factor = 84
+
+		start = {
+		    year = 1100
+		}
+	}
+### Castle Mines 
+### Small Marble Quarry 
+	ca_mines_marble_1 = {
+		desc = ca_marble_mines_desc
+	    potential = { 
+                Or = {
+                    terrain = mountain
+                    terrain = impassable_mountains
+                         }                     
+                }	
+		prerequisites = { ca_town_1 }
+		build_cost = 45 
+		build_time = 765
+		tax_income = 0.75
+		ai_creation_factor = 88
+		
+		start = {
+		}
+	}	
+### Large Marble Quarry
+	ca_mines_marble_2 = {
+		desc = ca_marble_mines_desc
+	    potential = { 
+                    terrain = mountain   
+                }
+		prerequisites = { ca_town_3 }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		upgrades_from = ca_mines_marble_1
+	   	build_cost = 175
+		build_time = 1895
+		tax_income = 0.75
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1140
+		}
+	}	
+### Small Silver Mine ##
+	ca_mines_silver_1 = {
+		desc = ca_silver_mines_desc
+	    potential = { 
+			OR = {      
+			province_id = 11  # Dublin  
+			province_id = 120 # Gottingen
+		        province_id = 180 # Granada
+			province_id = 217 # Auvergne
+			province_id = 250 # Breisgau
+                        province_id = 261 # Hamburg
+                        province_id = 290 # Uppland
+			province_id = 311 # Plauen
+                        province_id = 326 # Calari
+                        province_id = 358 # Aquileia
+			province_id = 435 # Upper Silesia
+			province_id = 444 # Esztergom
+			province_id = 449 # Osterreich
+			province_id = 463 # Usora
+			province_id = 502 # Rashka
+                        province_id = 527 # Krakowskie
+			province_id = 603 # Alania
+			province_id = 610 # Bulgar
+			province_id = 703 # Karin
+			province_id = 704 # Theodosiopolis
+                        province_id = 845 # Anti Atlas
+			province_id = 853 # Bam
+			province_id = 881 # Asosa
+			province_id = 889 # Chelyabi
+			province_id = 903 # Samarkand
+		        }	
+		}	
+		prerequisites = { ca_town_1 }
+		build_cost = 45 
+		build_time = 765
+		tax_income = 1.5
+		ai_creation_factor = 200
+		
+		start = {
+		}
+	}	
+### Large Silver Mine ##
+	ca_mines_silver_2 = {
+		desc = ca_silver_mines_desc
+	    potential = { 
+			OR = {      
+			province_id = 11  # Dublin  
+			province_id = 120 # Gottingen
+		        province_id = 180 # Granada
+			province_id = 217 # Auvergne
+			province_id = 250 # Breisgau
+                        province_id = 261 # Hamburg
+                        province_id = 290 # Uppland
+			province_id = 311 # Plauen
+                        province_id = 326 # Calari
+                        province_id = 358 # Aquileia
+			province_id = 435 # Upper Silesia
+			province_id = 444 # Esztergom
+			province_id = 449 # Osterreich
+			province_id = 463 # Usora
+			province_id = 502 # Rashka
+                        province_id = 527 # Krakowskie
+			province_id = 603 # Alania
+			province_id = 610 # Bulgar
+			province_id = 703 # Karin
+			province_id = 704 # Theodosiopolis
+                        province_id = 845 # Anti Atlas
+			province_id = 853 # Bam
+			province_id = 881 # Asosa
+			province_id = 889 # Chelyabi
+			province_id = 903 # Samarkand
+		        }	
+		}
+		prerequisites = { ca_town_3 }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		upgrades_from = ca_mines_silver_1
+	   	build_cost = 125
+		build_time = 1895
+		tax_income = 2
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1150
+		}
+	}	
+### Small Gold Mine ##
+	ca_mines_gold_1 = {
+		desc = ca_silver_gold_mines_desc
+	    potential = { 
+			OR = {   
+		        province_id = 156 # Coruna
+                        province_id = 192 # Salamanca
+                        province_id = 197 # Toledo
+			province_id = 363 # Litomerice
+			province_id = 437 # Praha
+			province_id = 461 # Zagreb
+                        province_id = 501 # Naissus
+			province_id = 506 # Vidin
+			province_id = 515 # Tirgoviste
+                        province_id = 671 # Suenik
+			province_id = 831 # Al Djazair
+			province_id = 847 # Tharasset
+			province_id = 861 # Asir
+			province_id = 882 # Ankober
+			province_id = 885 # Matamma
+			province_id = 893 # Surgut
+			province_id = 905 # Herat
+			province_id = 919 # Oulata
+			province_id = 926 # Bambuk
+		        }	
+		}	
+		prerequisites = { ca_town_1 }
+		build_cost = 45 
+		build_time = 765
+		tax_income = 2
+		ai_creation_factor = 200
+		
+		start = {
+		}
+	}
+### Large Gold Mine ##
+	ca_mines_gold_2 = {
+		desc = ca_silver_gold_mines_desc
+	    potential = { 
+			OR = {   
+		        province_id = 156 # Coruna
+                        province_id = 192 # Salamanca
+                        province_id = 197 # Toledo
+			province_id = 363 # Litomerice
+			province_id = 437 # Praha
+			province_id = 461 # Zagreb
+                        province_id = 501 # Naissus
+			province_id = 506 # Vidin
+			province_id = 515 # Tirgoviste
+                        province_id = 671 # Suenik
+			province_id = 831 # Al Djazair
+			province_id = 847 # Tharasset
+			province_id = 861 # Asir
+			province_id = 882 # Ankober
+			province_id = 885 # Matamma
+			province_id = 893 # Surgut
+			province_id = 905 # Herat
+			province_id = 919 # Oulata
+			province_id = 926 # Bambuk
+		        }	
+		}	
+		prerequisites = { ca_town_3 }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		upgrades_from = ca_mines_gold_1
+	   	build_cost = 125
+		build_time = 1895
+		tax_income = 2.5
+		ai_creation_factor = 89
+
+		start = {
+		    year = 1200
+		}
+	}	
+### Small Clay Quarry ###
+	ca_mines_clay_1 = {
+		desc = ca_clay_mines_desc
+	    potential = { Or = { 
+			terrain = marsh	
+                        terrain = coastal_desert }
+		}
+		prerequisites = { ca_town_1 }	
+		build_cost = 100 
+		build_time = 765
+		tax_income = 0.75
+		ai_creation_factor = 88
+		
+		start = {
+		}
+	}
+### Large Clay Quarry ##
+	ca_mines_clay_2 = {
+		desc = ca_clay_mines_desc
+	    potential = { Or = { 
+			terrain = marsh	
+                        terrain = coastal_desert }
+		}
+		prerequisites = { ca_town_3 }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		upgrades_from = ca_mines_clay_1
+	   	build_cost = 225
+		build_time = 1895
+		tax_income = 0.75
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1100
+		}
+	}
+### Shroud temple ###
+	ca_shroud_temple = {
+		desc = ca_shroud_temple_desc
+	    potential = { FROM = { religion = catholic
+		} }
+            trigger = {
+			always = no
+		}
+		tax_income = 1.5
+		build_cost = 0
+		build_time = 0
+                monthly_character_piety = 1
+		ai_creation_factor = 1
+
+		start = {
+			year = 1500
+		}
+	}
+### Grail temple ##
+	ca_grail_temple = {
+		desc = ca_grail_temple_desc
+	    potential = { FROM = { religion = catholic
+		} }
+                trigger = {
+			always = no
+		}
+		tax_income = 1.5
+		build_cost = 0
+		build_time = 0
+                monthly_character_piety = 1
+		ai_creation_factor = 1
+
+		start = {
+			year = 1500
+		}
+	}
+}

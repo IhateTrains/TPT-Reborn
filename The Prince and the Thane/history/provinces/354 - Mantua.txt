@@ -1,0 +1,26 @@
+# 354 - Mantua
+
+# County Title
+title = c_mantua
+
+# Settlements
+max_settlements = 5
+
+b_redondesco = castle
+b_mantua = city
+b_viadana = castle
+b_asola = castle
+
+#b_sabbioneta = temple
+#b_serravalle = castle
+
+# Misc
+culture = italian
+religion = catholic
+
+# History
+900.1.1 = { 
+	b_mantua = ct_jewish_community_1
+}
+1115.7.24 = { capital = b_mantua }
+1319.1.1 = { capital = b_redondesco }

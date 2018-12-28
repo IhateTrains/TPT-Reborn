@@ -1,0 +1,1735 @@
+#character
+on_yearly_pulse = {
+
+	random_events = {
+		
+		#Personality Traits
+		10 = 1000
+		10 = 1001
+		10 = 1003
+		10 = 1004
+		10 = 1005
+		10 = 1006
+		10 = 1007
+		10 = 1008
+		10 = 1009
+		10 = 1010
+		10 = 1011
+		10 = 1012
+		10 = 1013
+		10 = 1014
+		10 = 1015
+		10 = 1016
+		10 = 1017
+		10 = 1018
+		10 = 1019
+		10 = 1030
+		10 = 1031
+		10 = 1032
+		10 = 1033
+		10 = 1034
+		10 = 1035
+		10 = 1036
+		10 = 1037
+		10 = 1038
+		10 = 1039
+		10 = 1040
+		10 = 1041
+		10 = 1043
+		10 = 1044
+		10 = 1045
+		10 = 1046
+		10 = 1047
+		10 = 1048
+		10 = 1049
+		10 = 1050
+		10 = 1051
+		10 = 1052
+		10 = 1053
+		10 = 1054
+		10 = 1057
+		10 = 1058
+		10 = 3264
+		10 = 3730
+		10 = 3735
+	
+	    #Norse Mod seid events
+		90 = 330002
+		90 = 330003
+		90 = 330007
+		90 = 330008
+		90 = 330009
+		90 = 330013
+		90 = 330018
+		90 = 330019
+		
+		#Lifestyle events
+		100 = 3520
+		100 = 3525
+		100 = 3530
+		100 = 3535
+		100 = 3540
+		100 = 3543
+		100 = 3546
+		100 = 3550
+		100 = 3555
+		100 = 3560
+		100 = 3563
+		100 = 3568
+		100 = 3570
+		100 = 3575
+		100 = 3585
+		100 = 3590
+		100 = 3593
+		100 = 3600
+		100 = 3605
+		100 = 3610
+		100 = 3615
+		100 = 3620
+		100 = 3625
+		100 = 3630
+		100 = 3635
+		100 = 3640
+		100 = 3645
+		100 = 3650
+		100 = 3655
+		100 = 3660
+		100 = 3665
+		100 = 3675
+		100 = 3680
+		100 = 3685
+		100 = 3690
+		100 = 3700
+		
+		#Prince and Thane pagan events
+		150 = pagans.11
+		150 = pagans.12
+		150 = pagans.13
+		150 = pagans.15
+		
+		#Prince and Thane cardinal events
+		200 = holy_see.36
+		200 = holy_see.37 
+		200 = holy_see.38 
+		200 = holy_see.39 
+		200 = holy_see.40
+		200 = holy_see.41 
+		200 = holy_see.42 
+		200 = holy_see.43 
+		
+		#Hunting Events
+		200 = 4075
+		
+		#Bastard Events
+		100 = 76000
+		100 = 76005
+		100 = 76010
+		100 = 76015
+		100 = 76020
+		100 = 76025
+		100 = 76030
+		100 = 76035
+		100 = 76040
+		
+		#Ward Events
+		100 = 78000
+		100 = 78005
+		100 = 78010
+		100 = 78015
+		100 = 78020
+		100 = 78025
+		100 = 78030
+				
+		#Prince and Thane fealty events
+        200 = fealty.6
+        200 = fealty.11
+		
+		#Prince and Thane peerage events
+		300 = peerage.2
+		300 = peerage.3
+		300 = peerage.4
+		300 = peerage.5
+		300 = peerage.6
+		300 = peerage.7
+		300 = peerage.8
+		300 = peerage.9
+		300 = peerage.10
+		300 = peerage.11
+		
+		#Norse Mod Blot events
+		80 = 310001
+		80 = 310003
+		80 = 310004
+		80 = 310005	
+		80 = 310009	
+		80 = 310010
+		80 = 310011
+		80 = 310012
+		80 = 310013
+		80 = 310014
+		80 = 310015
+				
+		#Prince and Thane manteinance events
+        300 = manteinance.3 #Templar manteinance
+		300 = manteinance.4 #Martial traits manteinance
+        300 = manteinance.5 #Templar manteinance 2
+        300 = manteinance.6 #Pregnant men
+		300 = manteinance.7 #Ducal assignment
+        300 = manteinance.8 #Kingdom assignment
+        300 = templars.8 #Templar manteinance 3
+        300 = knight.16 #Knight manteinance 1
+        300 = knight.17 #Knight manteinance 2
+		300 = 330000 #Norse Mod manteinance 1
+		300 = 330001 #Norse Mod manteinance 2
+		300 = 330017 #Norse Mod manteinance 3
+		300 = law_manteinance.0 #Law manteinance
+		300 = law_manteinance.1 #Law manteinance
+		300 = law_manteinance.2 #Law manteinance
+		300 = law_manteinance.3 #Law manteinance
+		300 = law_manteinance.4 #Law manteinance
+		300 = law_manteinance.5 #Law manteinance
+		300 = law_manteinance.6 #Law manteinance
+		300 = law_manteinance.7 #Law manteinance
+		300 = law_manteinance.8 #Law manteinance
+		300 = law_manteinance.9 #Law manteinance
+		300 = law_manteinance.10 #Law manteinance
+		300 = law_manteinance.11 #Law manteinance
+		300 = law_manteinance.12 #Law manteinance
+		300 = law_manteinance.13 #Law manteinance
+		300 = law_manteinance.14 #Law manteinance
+		300 = law_manteinance.15 #Law manteinance
+		300 = law_manteinance.16 #Law manteinance
+		300 = law_manteinance.17 #Law manteinance
+		300 = manteinance.9 #Claims manteinance
+		300 = intrigue.116 #Plot flags
+		300 = intrigue.117 #Plot flags
+		300 = intrigue.161 #Plot backers ask for promised title
+		300 = religious.12 #Excommunicated Rome manteinance
+		300 = manteinance.1 #Fighter trait manteinance
+		300 = manteinance.2 #Exilarch manteinance
+		
+		#Birth events
+		50 = 312 #diligent
+		250 = 450 #courtier initiates romance with their liege
+		
+		#Campaign events
+		50 = 6900
+		50 = 6910
+		50 = 6920
+		
+		#Hafiz
+		10 = 1070
+		
+		2000 = 0 # Chance of no yearly event
+
+	}
+}
+
+
+#character
+on_bi_yearly_pulse = {
+
+	random_events = {
+		
+		#Prince and Thane flavour events
+		30 = flavour_events.0
+        30 = flavour_events.3
+	    30 = flavour_events.4
+        30 = flavour_events.5
+        30 = flavour_events.7
+        30 = flavour_events.8
+        30 = flavour_events.9
+        30 = flavour_events.10
+        30 = flavour_events.11
+        30 = flavour_events.12
+        30 = flavour_events.13
+        30 = flavour_events.14
+        30 = flavour_events.15
+        30 = flavour_events.16
+        30 = flavour_events.17
+		
+		#Rumours Events
+		50 = 69000
+		50 = 69003 
+		50 = 69010 
+		50 = 69014 
+		50 = 69020 
+		50 = 69023 
+		50 = 69030 
+		50 = 69037 
+		50 = 69040 
+		50 = 69043 
+		50 = 69050 
+		50 = 69052 
+		50 = 69054 
+		50 = 69056 
+		50 = 69058  
+		50 = 69060  
+		50 = 69063  
+		50 = 69070
+		50 = 69073
+		50 = 69100
+		50 = 69095
+		
+		#Religious Events
+		100 = 39230
+		
+		#Lovers Events
+		100 = 64000
+		100 = 64005
+		100 = 64006
+		100 = 64010
+		100 = 64015
+		100 = 64030
+		100 = 64035
+		100 = 64040
+		
+		#Family events
+		150 = 37000
+		150 = 37005
+		150 = 37050
+		150 = 37054
+		150 = 37056
+		
+		# Married Life Events
+		100 = 30000
+		100 = 30001
+		100 = 30004
+		100 = 30020
+		100 = 30021
+		100 = 30025
+		100 = 30030
+		100 = 30040
+		100 = 30045
+		100 = 30050
+		100 = 30051
+		100 = 30052
+		100 = 30055
+		100 = 30056
+		100 = 30057
+		100 = 30058
+		100 = 30059
+		100 = 30060
+		100 = 30063
+		100 = 30066
+		100 = 30069
+		100 = 30072
+		100 = 30075
+		100 = 30085
+		100 = 30100
+		100 = 30105
+		100 = 30110
+		
+		#Prince and Thane plot events
+        40 = intrigue.1 #Blood fest
+		40 = intrigue.12 #Brothel assassination
+		40 = intrigue.23 #Ambush assassination
+		40 = intrigue.34 #Ambush assassination
+		40 = intrigue.50 #Initiate conspiracy
+		40 = intrigue.52 #Buying a councillor's loyalty
+		40 = intrigue.70 #Buying wife or lover's loyalty
+		40 = intrigue.71 #Kill target with wife or lover involved
+		40 = intrigue.101 #Killing target with poisoned wine
+		40 = intrigue.105 #Seizing throne when target's at war
+		40 = intrigue.106 #Killing target with help of spymaster
+		40 = intrigue.113 #Killing target with help of marshal
+		40 = intrigue.124 #Conspiracy uncovered
+		40 = intrigue.126 #Replace regent with yourself
+		40 = intrigue.132 #Richard III
+		40 = intrigue.150 #Tour de Nesle affair
+		40 = intrigue.157 #Heir assassination
+		40 = intrigue.165 #Rivalry with kin killer
+		40 = intrigue.171 #Revenge castration
+		
+        #Prince and Thane religious events
+        80 = religious.1
+        80 = religious.2
+        80 = religious.3
+        80 = religious.4
+		80 = religious.15 #Child not of your same religion
+		
+		#Prince and Thane templar events
+        50 = templars.0
+        50 = templars.4
+        50 = templars.5
+        50 = templars.6
+        50 = templars.7
+        50 = templars.9
+        50 = templars.10
+        50 = templars.11
+        50 = templars.13
+        50 = templars.16
+        50 = templars.17
+        50 = templars.18
+        50 = templars.21
+        100 = templars.22 #Templar going home
+		
+	    #Prince and Thane Guelph/Ghibellines events
+        100 = guelphs_ghibellines.0 #Beginning of Investiture contest
+        100 = guelphs_ghibellines.2 #Guelph/Ghibellines taking sides (Germans)
+        100 = guelphs_ghibellines.3 #Guelph/Ghibellines taking sides (Italian)
+		300 = guelphs_ghibellines.4 #Cultural sanity check
+		100 = guelphs_ghibellines.18 #Lombard League formation
+	
+		#Various Traits Events
+		10 = 65000
+		10 = 65001
+		10 = 65003
+		10 = 65005
+		10 = 65007
+		10 = 65009
+		10 = 65166
+		10 = 65011
+		10 = 65020
+		10 = 65021
+		10 = 65022
+		10 = 65023
+		10 = 65030
+		10 = 65031
+		10 = 65032
+		10 = 65033
+		10 = 65034
+		10 = 65035
+		10 = 65036
+		10 = 65037
+		10 = 65040
+		10 = 65041
+		10 = 65042
+		10 = 65043
+		10 = 65165
+		10 = 65044
+		10 = 65045
+		10 = 65048
+		10 = 65049
+		10 = 65050
+		10 = 65051
+		10 = 65052
+		10 = 65053
+		10 = 65055
+		10 = 65057
+		10 = 65060
+		10 = 65061
+		10 = 65065
+		10 = 65070
+		10 = 65071
+		10 = 65072
+		10 = 65074
+		10 = 65080
+		10 = 65081
+		10 = 65085
+		10 = 65090
+		10 = 65095
+		10 = 65100
+		10 = 65101
+		10 = 65102
+		10 = 65105
+		10 = 65106
+		10 = 65107
+		10 = 65110
+		10 = 65115
+		10 = 65120
+		10 = 65125
+		10 = 65126
+		10 = 65130
+		10 = 65135
+		10 = 65140
+		10 = 65145
+		10 = 65150
+		10 = 65155
+		10 = 65160
+		
+		#Volva and Diviner Events
+		70 = 1331100
+		70 = 1331102
+		70 = 1331104
+		70 = 1331106
+		70 = 331100
+		70 = 331102
+		70 = 331104
+		70 = 331106
+		
+		#Prince and Thane cardinal events
+		100 = holy_see.44 #Suggest your son as Cardinal
+		
+		#Vassal Request events
+		20 = 63000
+		20 = 63010
+		20 = 63030
+		20 = 63040
+		20 = 63050
+		20 = 63060
+		
+		#Polygamy events
+		20 = 89000
+		20 = 89005
+		20 = 89015
+		20 = 89020
+		20 = 89030
+		
+		#Dynasty requests
+		250 = 66000
+		250 = 66050
+		250 = 66100
+		
+		1200 = 0 #Chance of no bi-yearly event
+	}
+}
+
+#character
+on_five_year_pulse = {
+
+	random_events = {
+		
+		#Hedge Knights Events
+		20 = 71000 
+		20 = 71006 
+		
+		#Court Events
+		60 = 73000
+		60 = 73001
+		60 = 73002
+		60 = 73003
+		60 = 73004
+		60 = 73005
+		60 = 73006
+		60 = 73007
+		60 = 73008
+		60 = 73009
+		60 = 73010
+		
+		#Misc Traits, Paranoid, Honest,Gregagrious, Craven
+		10 = 3480
+		10 = 3485
+		10 = 3490
+		10 = 3495	
+		10 = 3280
+		10 = 3282
+		10 = 3283
+		10 = 3286
+		10 = 3710
+		10 = 3715
+		10 = 3720
+		10 = 3725
+		10 = 3300
+		10 = 3305
+		10 = 3310
+		10 = 3315
+		
+		#Deceitful
+		10 = 3260
+		10 = 3261
+		10 = 3262
+		10 = 3263
+		
+		#Prince and Thane plot events
+        30 = prisoner.1 #Escape from prison event
+		40 = intrigue.65 #Bought character has second thoughts
+		40 = intrigue.95 #Get claim on target's titles
+		50 = intrigue.166 #Thomas Becket
+		
+		#Prince and Thane job flavour events
+        40 = job_flavour.0 #Chancellor deals with petitioners
+        40 = job_flavour.1 #Chancellor deals with diplomatic incident
+        50 = job_flavour.2 #Councillor quarrels with liege
+        50 = job_flavour.3 #Chancellor deals with insults in the street
+        40 = job_flavour.4 #Chancellor deals with foreign envoy
+        40 = job_flavour.5 #Chancellor deals with scandal
+        40 = job_flavour.6 #Chancellor deals with foreign envoy gifts
+        40 = job_flavour.7 #Chancellor deals with diplomatic insult
+        50 = job_flavour.8 #Chaplain deals with philosophical book
+        40 = job_flavour.9 #Chaplain deals with heretic talks
+        40 = job_flavour.10 #Chaplain deals with woman accused of sorcery
+        40 = job_flavour.11 #Chaplain deals with sexual scandal
+        50 = job_flavour.12 #Chaplain deals with end of the world rumors
+        40 = job_flavour.13 #Steward deals with interest on realm's debt
+        40 = job_flavour.14 #Steward deals with ineffective policies
+        40 = job_flavour.15 #Steward deals with need of money during wartime
+        40 = job_flavour.16 #Steward deals with jewish moneylanders
+        40 = job_flavour.17 #Steward deals with foreign merchants
+        40 = job_flavour.18 #Steward deals with liege spending too much
+        40 = job_flavour.19 #Marshal deals with poorly disciplined soldiers
+        40 = job_flavour.20 #Marshal deals with poorly equipped soldiers
+        40 = job_flavour.21 #Marshal deals with soldiers accused of rape
+        40 = job_flavour.22 #Marshal deals with homosexual sergeant
+        40 = job_flavour.23 #Marshal deals with old mounts for knights
+        40 = job_flavour.24 #Marshal deals with deserters
+        40 = job_flavour.25 #Spymaster deals with foreign spy
+        40 = job_flavour.26 #Spymaster deals with street informants
+        40 = job_flavour.27 #Spymaster deals with scandal
+        40 = job_flavour.28 #Spymaster deals with liege's unfaithful wife
+        40 = job_flavour.29 #Spymaster vs. Church
+        40 = job_flavour.30 #Spymaster deals with turncloak foreign spy
+        40 = job_flavour.31 #Councillor deals with death menace
+        40 = job_flavour.32 #Councillor vs. liege
+		
+		# Feudal Life Events
+		100 = 4000
+		100 = 4005
+		100 = 4010
+		100 = 4015
+		100 = 4020
+		100 = 4035
+		100 = 4036
+		100 = 4040
+		100 = 4041
+		100 = 4045
+		100 = 4050
+		100 = 4055
+		100 = 4060
+		100 = 4085
+		100 = 4110
+		100 = 4115
+		100 = 4120
+		100 = 4125
+		100 = 4130
+		100 = 4135
+		100 = 4145
+		100 = 4150
+		100 = 4155
+		100 = 4160
+		100 = 4175
+		
+		#Seven Virtues
+		10 = 3020
+		10 = 3021
+		10 = 3022
+		10 = 3025
+		10 = 3026
+		10 = 3030
+		10 = 3035
+		10 = 3012
+		10 = 3013
+		10 = 3095
+		10 = 3080
+		10 = 3081
+		10 = 3082
+		10 = 3083
+		10 = 3084
+		10 = 3085
+		10 = 3120
+		10 = 3121
+		10 = 3123
+		10 = 3124
+		10 = 3125
+		10 = 3126
+		10 = 3200
+		10 = 3202
+		10 = 3203
+		10 = 3205
+		10 = 3240
+		10 = 3242
+		10 = 3243
+		10 = 3245
+		10 = 3246
+		10 = 3247
+		10 = 3248
+		10 = 3258
+		10 = 3160
+		10 = 3170
+		10 = 3175
+
+		#Seven Deadly Sins
+		10 = 3000
+		10 = 3001
+		10 = 3005
+		10 = 3010
+		10 = 3011		
+		10 = 3040
+		10 = 3045
+		10 = 3050
+		10 = 3055
+		10 = 3060
+		10 = 3065
+		10 = 3070
+		10 = 3075
+		10 = 3100
+		10 = 3105
+		10 = 3110
+		10 = 3115
+		10 = 3180
+		10 = 3185
+		10 = 3190
+		10 = 3195
+		10 = 3140
+		10 = 3141
+		10 = 3142
+		10 = 3143
+		10 = 3144
+		10 = 3145
+		10 = 3220
+		10 = 3225
+		10 = 3230
+		10 = 3235
+		
+		#Job Flavour Events
+		30 = 75010
+		30 = 75020
+		30 = 75030
+		30 = 75040
+		30 = 75050
+		30 = 75060
+		30 = 75065
+		30 = 75070
+		30 = 75075
+		30 = 75080
+		30 = 75085
+		30 = 75090
+		30 = 75095
+		30 = 75105
+		30 = 75110
+		30 = 75120
+		
+		#Prince and Thane historical realms event
+        100 = historical_realms.1 #Swiss Confederacy
+        100 = historical_realms.6 #Sultanate of Rum
+		
+		#Prince and Thane religious events
+        40 = religious.5 #Pope demands return of Rome
+		50 = religious.6 #Jubilee
+		40 = religious.7 #Mission to neighbor pagan rulers
+		50 = religious.13 #Religious authority strengthened
+		50 = religious.14 #Religious authority weakened
+		
+		#Prince and Thane knight events
+        100 = knight.0 #Becoming a knight event
+		
+        #Prince and Thane martial events
+        100 = martial.0 #Commander deals with soldiers accused of rape
+        50 = martial.1 #Commander deals homosexual sergeant
+        50 = martial.2 #Commander deals with old mounts for knights
+        100 = martial.3 #Commander deals with deserters
+        80 = martial.4 #Ambushed by enemy
+        80 = martial.6 #Camp struck by disease
+        80 = martial.7 #Provisions gone bad
+        80 = martial.8 #Camp riot!
+        80 = martial.9 #Camp fire!
+        25 = martial.10 #Reinforcements 1
+        50 = martial.11 #Reinforcements 2
+		
+		#Brave
+		10 = 3320
+		10 = 3325
+		10 = 3330
+		10 = 3335
+		10 = 3740
+		
+		#Shy
+		10 = 3340
+		10 = 3345
+		10 = 3350
+		10 = 3355
+		
+		#Ambitious
+		10 = 3360
+		10 = 3365
+		10 = 3370
+		10 = 3375
+		10 = 3371
+		
+		#Content
+		10 = 3380
+		10 = 3385
+		10 = 3390
+		10 = 3395
+		10 = 3745
+		
+		#Arbitrary
+		10 = 3400
+		10 = 3405
+		10 = 3410
+		10 = 3415
+		10 = 3411
+		
+		#Just
+		10 = 3420
+		10 = 3425
+		10 = 3430
+		10 = 3435
+		
+		#Cynical
+		10 = 3440
+		10 = 3445
+		10 = 3450
+		10 = 3455	
+		10 = 3456		
+		
+		#Zealous
+		10 = 3460
+		10 = 3465
+		10 = 3470
+		10 = 3475
+		10 = 3476
+		10 = 3750
+		10 = 3755
+
+		#Trusting
+		10 = 3500
+		10 = 3505
+		10 = 3510
+		10 = 3515
+				
+		500 = 0 # Chance of no yearly event
+	}
+}
+
+#character
+on_decade_pulse = {
+
+random_events = {
+		
+		#Prince and Thane jewish events
+        30 = jews.7
+        30 = jews.8 #Jewish community asks for a tax break
+        30 = jews.9 #Jewish treaty
+		
+		#Prince and Thane miscellaneous events
+		30 = pagans.1 #Pagan province conversion
+		
+		#Prince and Thane historical characters events
+        50 = 150361 
+        50 = 150362 
+		50 = 150364 
+		50 = 150365 
+		50 = 150366 
+		50 = 150367
+		50 = 150368 
+		50 = 150369
+		50 = 150370 
+		50 = 150371 
+		50 = 150372 
+		50 = 150373
+		50 = 150374 
+		50 = 150375 
+		50 = 150376
+		50 = 150377  
+		50 = 150393  
+		50 = 150394  
+		50 = 150395  
+		50 = 150396 
+		50 = 150397 
+		50 = 150399  
+		50 = 150400  
+		50 = 150401  
+		50 = 150402  
+		50 = 150403  
+		50 = 150404  
+		50 = 150405  
+		50 = 150406  
+		50 = 150407  
+		50 = 150408  
+		50 = 150409
+		50 = 150413    
+		50 = 180181     
+		50 = 180182    
+		50 = 180183    
+		50 = 180184   
+		50 = 180156   
+		50 = 180157   
+		50 = 180158   
+		50 = 180159   
+		50 = 180160   
+		50 = 180161   
+		50 = 180162  
+		50 = 180163   
+		50 = 180164   
+		50 = 180165   
+		50 = 180166   
+		50 = 180167   
+		50 = 180168   
+		50 = 180169   
+		50 = 180170   
+		50 = 180173    
+		50 = 180174    
+		50 = 180175    
+		50 = 180176    
+		50 = 180177    
+		50 = 180178   
+		50 = 180179    
+		50 = 180180     
+		50 = 180212      
+		50 = 180223    
+		50 = 180224  
+		
+		#Prince and Thane climate related events
+        20 = province_prosperity.15 
+        20 = province_prosperity.16
+        20 = province_prosperity.17
+		
+		#Old age events
+		40 = oldage.1
+		40 = oldage.2
+		40 = oldage.3
+		40 = oldage.4
+		
+		#Prince and Thane romance events
+		40 = romance.1 #Councillor seduces ruler's spouse
+		40 = romance.14 #Lustful turning to hedonist
+		40 = romance.15 #Lustful turning to chaste
+		40 = romance.16 #Chaste turning to celibate
+        20 = romance.17
+		40 = romance.18 #Lonely whilst campaigning
+		40 = romance.20 #Peasant presents a baby
+		
+		80 = 0	# Chance of no yearly event
+
+    }
+}
+
+# For characters 2 to 16 years old
+on_yearly_childhood_pulse = {
+
+	random_events = {
+		
+		#Prince and Thane education events
+		50 = tptt_traits.33
+		50 = tptt_traits.36
+		50 = tptt_traits.39
+		50 = tptt_traits.42
+		50 = tptt_traits.45
+		50 = tptt_traits.89
+		50 = tptt_traits.99
+		50 = tptt_traits.104
+		150 = knight.1 #Becoming a Squire
+        50 = wards.0 #Norman Swordsman Training 
+		50 = wards.4 #Jewish Banker Training
+		50 = wards.7 #Muslim Envoy Training
+		
+		# Childhood Personality Events
+		
+		#Age 6-16, aiming to get at least 4 traits before adult.
+		100 = 1500
+		100 = 1510
+		100 = 1520
+		100 = 1530
+		100 = 1540
+		100 = 1550
+		100 = 1560
+		100 = 1570
+		100 = 1580
+		100 = 1590
+		100 = 1600
+		100 = 1610
+		100 = 1620
+		100 = 1630
+		100 = 1640
+		100 = 1650
+		100 = 1660
+		100 = 1670
+		100 = 1680
+		100 = 1690
+		100 = 1700
+		100 = 1710
+		100 = 1720
+		100 = 1730
+		100 = 1632
+		100 = 1732
+		100 = 1965
+		
+		#Toddler flavour events (age 2-5), not very common, but some will get them.
+		10 = 1900 
+		10 = 1901
+		10 = 1902
+		10 = 1903
+		10 = 1904
+		
+		#Young children flavour events, (age 6-10), not very common, but some will get then..
+		20 = 1905
+		20 = 1906
+		20 = 1907
+		20 = 1908
+		20 = 1909
+		20 = 1910
+		20 = 1911
+		20 = 1912
+		
+		#Youngsters flavour events (age 11-15), not very common, but some will get then..
+		50 = 1913
+		50 = 1914
+		50 = 1915
+		50 = 1916
+		50 = 1917
+		50 = 1918
+		50 = 1919
+		50 = 1920
+		50 = 1921
+		50 = 1922
+		50 = 1923
+		50 = 1924
+		50 = 1925
+		50 = 1926
+		50 = 1927
+		50 = 1928
+		50 = 1929
+		50 = 1930
+		50 = 1931
+		50 = 1932
+		50 = 1933
+		50 = 1934
+		50 = 1935
+
+        1000 = 0 # Chance of no yearly event
+	}
+}
+
+#on combat pulse
+on_combat_pulse = {
+
+	random_events = {
+
+        #Prince and Thane events
+        30 = battle_charges.0 #Battle charge
+        30 = battle_charges.1 #Battle charge 2
+        30 = battle_charges.2 # Battle charge 3
+        30 = battle_charges.3 # Battle charge 4
+        30 = battle_charges.4 # Battle charge 5
+        30 = battle_charges.5 # Battle charge 6
+        30 = battle_charges.6 # Battle charge 7
+        50 = battlefield_duel.0 # Battlefield duel
+
+		#Vanilla events
+        10 = 242 # Killed
+		25 = 243 # Wounded
+		5 = 244 # Maimed
+		5 = 245 # Serious head injury
+		10 = 246 # Improves martial education
+		20 = 247 # Flat improvement to martial skill
+		10 = 248 # Knowledge boost in capital from battle.
+		20 = 255 # Marshal: Unnecessary violence
+		10 = 270 # Gain Brave
+		10 = 271 # Gain Craven
+		5 = 272 # Gain Wroth
+		5 = 273 # Gain Patient
+		20 = 96500 # Gain Combat Trait 1
+		20 = 96501 # Gain Combat Trait 2
+		20 = 96502 # Gain Combat Trait 3
+		
+		1500 = 0 # Chance of no yearly event
+		
+	}
+}
+
+#on siege pulse
+on_siege_pulse = {
+
+	random_events = {
+                
+        #Prince and Thane events
+        100 = siege.2
+		100 = siege.3
+		100 = siege.4
+        100 = siege.5
+		100 = siege.6
+		100 = siege.7
+		100 = siege.8
+		100 = siege.9
+		100 = province_prosperity.8 #Building gets sacked
+        10 = 242 # Killed
+		25 = 243 # Wounded
+		5 = 244 # Maimed
+
+		#Vanilla events
+		100 = 62000
+		100 = 62001
+		100 = 62003
+		100 = 62004
+		100 = 62005
+		100 = 62006
+		100 = 62007
+		100 = 62008
+		100 = 62009
+		100 = 62010
+		25 = 62014
+		100 = 62015
+		5 = 62011	
+		5 = 62012
+		5 = 62013
+		
+		200000 = 0  # Chance of no yearly event
+		
+	}
+}
+
+#character
+on_battle_won = {
+
+	random_events = {
+		
+		#Vanilla events
+		20 = 260 #Heroism shown
+		50 = 8310 #Crusader becomes zealous
+ 
+        #Prince and Thane events
+        50 = knight.5 #Battlefield promotion.
+        50 = battle_events.0 #Battle improvement to martial educ 1
+		50 = battle_events.1 #Battle improvement to martial educ 2
+		50 = battle_events.2 #Battle improvement to martial educ 3
+        20 = battle_events.3 #Battle improvement to combat skills 1
+        20 = battle_events.4 #Battle improvement to combat skills 2
+        20 = battle_events.5 #Battle improvement to combat skills 3
+        10 = battle_events.6 #Flat improvement to martial skill
+        50 = battle_events.12 #Knighted
+        50 = battle_events.13 #Becomes Squire
+				
+        1200 = 0 # Chance of no yearly event
+				
+				
+	}
+}
+
+on_battle_won_leader = {
+
+    random_events = {
+	
+		#Vanilla events
+		20 = 261 #Soldier Distinguish himself.
+
+        #Prince and Thane events
+		50 = 246 # Improves martial education
+        50 = battle_events.6 #Flat improvement to martial skill
+        300 = battle_events.12 #Knighted
+        200 = knight.5 #Battlefield promotion.
+		
+        800 = 0 # Chance of no yearly event
+    }
+}
+
+on_battle_lost = {
+
+	random_events = {
+
+        #Prince and Thane events
+        50 = battle_events.7 #Combat prowess goes down
+        50 = battle_events.8 #Martial skill goes down
+        50 = battle_events.14 #Battle downgrade to martial educ
+        80 = battle_events.9  #Imprisoned by the enemy (count)
+		80 = battle_events.10  #Imprisoned by the enemy (duke)
+		80 = battle_events.11  #Imprisoned by the enemy (king)
+		10 = 271 #Gain Craven
+		10 = 272 #Gain Wroth
+        50 = 250 #Imprisoned by the enemy
+		20 = 8320 #Crusader becomes cynical
+		
+		1500 = 0 # Chance of no yearly event
+		
+	}
+}
+
+on_battle_lost_leader = {
+
+    random_events = {
+		1500 = 0 # Chance of no yearly event		
+    }
+}
+
+on_siege_won_leader = {
+
+	events = {
+
+        #Prince and Thane events
+		siege.1 #Mandylion Loot
+		siege.13 #Grail Loot
+                
+        #Vanilla events
+        8330 #Conquers the crusade target
+		60100 #Mongols sack Kiev
+		60101 #Mongols sack Novgorod
+		60102 #Mongols sack Krakow
+		60103 #Mongols sack Aachen
+		60104 #Mongols sack Paris
+		60105 #Mongols sack London
+		60106 #Mongols sack Rome
+		60107 #Mongols sack Venice
+		60108 #Mongols sack Constantinople
+		60109 #Mongols sack Lisbon
+		60110 #Mongols sack Smolensk
+		60111 #Mongols sack Prague
+		60112 #Mongols sack Vienna
+		60113 #Mongols sack Esztergom
+		60114 #Mongols sack Athens
+		60115 #Mongols sack Belgrade
+		60116 #Mongols sack Baghdad
+		60117 #Mongols sack Damascus
+		60118 #Mongols sack Jerusalem
+		60119 #Mongols sack Alexandria
+		60120 #Mongols sack Cairo
+		60121 #Mongols sack Mecca
+		88005 #Mongols sack city near the Hashshashin
+		
+	}
+	
+	random_events = {
+           
+        #Vanilla events		   
+		100 = 8340 #Finds the Spear of Destiny / Holy Lance
+		100 = 8342 #Finds the Holy Grail
+		500 = 8345 #Sack of Jerusalem
+		50 = 8310 #Crusader becomes zealous
+		
+        1000 = 0 # Chance of no yearly event
+
+	}
+}
+
+on_siege_lost_leader = {
+	events = {
+		8350 # Loses the crusade target's capital
+	}
+	
+	random_events = {
+		400 = 0
+		50 = 62500 #Capture enemy character
+		10 = siege.10 #Kill enemy character
+ 		100 = SSI.61 #Aztec sacrifice
+	}
+}
+
+# Fires for all characters presumed to be in the Holding at the time. Siege winner unit owner in the 'new_character' scope, lost holding title in FROM, local character in ROOT.
+on_siege_over = {
+	random_events = {
+		400 = 0
+		15 = 62500 #Capture enemy character
+		10 = siege.10 #Kill enemy character
+ 		100 = SSI.61 #Aztec sacrifice
+	}
+}
+
+#character
+on_failed_assassination = {
+
+	random_events = {
+ 		85 = 156 #No harm done
+ 		14 = 157 #Wounded
+ 		1 = 158 #Maimed
+ 	}
+}
+
+#character
+on_failed_assassination_disc = {
+	random_events = {
+ 		85 = 159 #No harm done
+ 		14 = 160 #Wounded
+ 		1 = 161 #Maimed
+ 	}
+}
+
+#character
+on_assassination = {
+	events = {
+ 		162
+ 	}
+}
+
+#character
+on_assassination_disc = {
+	events = {
+ 		163
+ 	}
+}
+
+# character
+on_birth = {
+	events = {
+		300 #A Bastard is born
+		318 #A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
+		genetics.8 #Birth order
+	}
+}
+
+#character (at 2 months)
+on_pregnancy = {
+	events = {
+ 		400 #Pregnancy in matrimony
+ 		401 #Pregnancy out of wedlock
+ 		402 #Pregnancy in matrimony, with another father!
+ 	}
+}
+
+#character
+on_crusade_creation = {
+	events = {
+ 		200 #Crusade against Muslims
+ 		201 #Holy War against Pagans
+ 		320 #Jihad against Christians
+ 	}
+}
+
+# Character. 
+on_marriage = {
+	events = {
+        family_relations.1 #Family relations
+        family_relations.2 #Family relations
+        500 #Royal Marriage Aid Duty
+ 	}
+}
+
+#character. Triggers if someone tries to imprison someone landed and fails. This leads to an automatic war declaration(independece)
+on_avoided_imprison_started_war = {
+	events = {
+ 		150 #Avoided imprison, declared independece
+ 	}
+}
+
+#character. Triggers if someone becomes imprisoned by the diplo-action
+on_became_imprisoned = {
+	events = {
+        151 #Was imprisoned
+ 	}
+}
+
+#character. Triggers if someone tries to imprison someone unlanded and fails. Character is exiled to another country
+on_avoided_imprison_fled_country = {
+	events = {
+ 		152
+ 	}
+}
+
+#character. Triggers if someone is released from prison
+on_released_from_prison = {
+	events = {
+ 		153
+ 	}
+}
+
+#character. Triggers if someone is executed
+on_executed = {
+	events = {
+ 		154
+ 	}
+}
+
+#character. Triggers if someone is exiled
+on_exiled = {
+	events = {
+ 		155
+ 	}
+}
+
+on_death = {
+	events = {
+		650
+		24500
+		24502
+		38000
+		70041
+		holy_see.0 #Cardinal dies
+		holy_see.16 #Pope dies
+		88291 #Furusiyya ends
+	}
+	random_events = {
+		10 = 24505
+		10 = 24510
+		100 = 0
+	}
+}
+
+on_merc_rampage = {
+	events = {
+ 		38050
+ 	}
+}
+
+on_merc_leave = {
+	events = {
+ 		38051
+ 	}
+}
+
+on_merc_turn_coat_from = {
+	events = {
+ 		38052
+ 	}
+}
+
+on_merc_turn_coat_to = {
+	events = {
+ 		38053
+ 	}
+}
+
+on_holy_order_leave = {
+	events = {
+ 		38054
+ 	}
+}
+
+on_letter_event_message = {
+	events = {
+		1
+	}
+}
+
+on_character_event_message = {
+	events = {
+		2
+	}
+}
+
+###########################
+# DIPLOMATIC NOTIFICATIONS
+###########################
+
+DEMAND_RELIGIOUS_CONVERSION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		202
+	}
+}
+
+DEMAND_RELIGIOUS_CONVERSION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		203
+	}
+}
+
+REVOKE_TITLE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		204
+	}
+}
+
+REVOKE_TITLE_INTERACTION_DECLINE_EVENT = {
+	events = {
+		205
+	}
+}
+
+OFFER_PEACE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		206
+	}
+}
+
+OFFER_PEACE_INTERACTION_DECLINE_EVENT = {
+	events = {
+		207
+	}
+}
+
+SEND_GIFT_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		208
+	}
+}
+
+SEND_GIFT_INTERACTION_DECLINE_EVENT = {
+	events = {
+		209
+	}
+}
+
+OFFER_VASSALIZATION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		210
+	}
+}
+
+OFFER_VASSALIZATION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		211
+	}
+}
+
+ARRANGE_BETROTHAL_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		212
+	}
+}
+
+ARRANGE_BETROTHAL_INTERACTION_DECLINE_EVENT = {
+	events = {
+		213
+	}
+}
+
+ARRANGE_SUCC_BETROTHAL_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		330
+	}
+}
+
+ARRANGE_SUCC_BETROTHAL_INTERACTION_DECLINE_EVENT = {
+	events = {
+		331
+	}
+}
+
+OFFER_SUCCESSION_MARRIGE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		214
+	}
+}
+
+OFFER_SUCCESSION_MARRIGE_INTERACTION_DECLINE_EVENT = {
+	events = {
+		215
+	}
+}
+
+OFFER_MARRIGE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		216
+	}
+}
+
+OFFER_MARRIGE_INTERACTION_DECLINE_EVENT = {
+	events = {
+		217
+	}
+}
+
+RANSOM_CHARACTER_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		218
+	}
+}
+
+RANSOM_CHARACTER_INTERACTION_DECLINE_EVENT = {
+	events = {
+		219
+	}
+}
+
+EDUCATE_CHARACTER_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		220
+	}
+}
+
+EDUCATE_CHARACTER_INTERACTION_DECLINE_EVENT = {
+	events = {
+		221
+	}
+}
+
+ABANDON_AMBITION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		222
+	}
+}
+
+ABANDON_AMBITION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		223
+	}
+}
+
+STOP_BACKING_AMBITION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		224
+	}
+}
+
+STOP_BACKING_AMBITION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		225
+	}
+}
+
+JOIN_AMBITION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		226
+	}
+}
+
+JOIN_AMBITION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		227
+	}
+}
+
+GRANT_LANDED_TITLE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		228
+	}
+}
+
+GRANT_LANDED_TITLE_INTERACTION_DECLINE_EVENT = {
+	events = {
+#		229
+	}
+}
+
+APPOINT_TO_OFFICE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		230
+	}
+}
+
+APPOINT_TO_OFFICE_INTERACTION_DECLINE_EVENT = {
+	events = {
+		231
+	}
+}
+
+ASK_FOR_INVASION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		232
+	}
+}
+
+ASK_FOR_INVASION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		233
+	}
+}
+
+ASK_FOR_DIVORCE_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		234
+	}
+}
+
+ASK_FOR_DIVORCE_INTERACTION_DECLINE_EVENT = {
+	events = {
+		235
+	}
+}
+
+ASK_FOR_EXCOMMUNICATION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		236
+	}
+}
+
+ASK_FOR_EXCOMMUNICATION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		237
+	}
+}
+
+CALL_ALLY_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		238
+	}
+}
+
+CALL_ALLY_INTERACTION_DECLINE_EVENT = {
+	events = {
+		239
+	}
+}
+
+DECLARE_WAR_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		240
+		241
+	}
+}
+
+INVITE_TO_COURT_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		280
+	}
+}
+
+INVITE_TO_COURT_INTERACTION_DECLINE_EVENT = {
+	events = {
+		281
+	}
+}
+
+ASK_FOR_VASSALIZATION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		282
+	}
+}
+
+ASK_FOR_VASSALIZATION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		283
+	}
+}
+
+ASK_TO_LIFT_EXCOMMUNICATION_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		284
+	}
+}
+
+ASK_TO_LIFT_EXCOMMUNICATION_INTERACTION_DECLINE_EVENT = {
+	events = {
+		285
+	}
+}
+
+ASK_TO_RANSOM_CHARACTER_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		286
+	}
+}
+
+ASK_TO_RANSOM_CHARACTER_INTERACTION_DECLINE_EVENT = {
+	events = {
+		287
+	}
+}
+
+ASK_TO_JOIN_WAR_INTERACTION_ACCEPT_EVENT = {
+	events = {
+		293
+	}
+}
+
+ASK_TO_JOIN_WAR_INTERACTION_DECLINE_EVENT = {
+	events = {
+		294
+	}
+}
+
+# never triggered, but reserved for CB use
+on_warleader_death = {
+	events = {
+		251
+		252
+	}
+}
+
+# Respond to a proposed change of law
+on_approve_law = {
+	events = {
+		290
+	}
+}
+
+# Respond to a proposed change of de jure law
+on_approve_de_jure_law = {
+	events = {
+		291
+		292
+	}
+}
+
+# When rebels appear
+on_rebel_revolt = {
+	events = {
+		rebels.0 #600
+	}
+}
+
+# When province defects to rebels
+on_defect_to_rebels = {
+	events = {
+		610
+		rebels.35
+	}
+}
+
+# When rebels disperse
+on_defect_from_rebels = {
+	events = {
+		615
+	}
+}
+
+# When a mission succeeds
+on_crusade_success = {
+	events = {
+		620
+	}
+}
+
+# When a mission fails
+on_crusade_failure = {
+	events = {
+		621
+	}
+}

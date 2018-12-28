@@ -1,0 +1,53 @@
+
+5001000 = {
+    name="Longhi" #Casalodi
+    culture = italian
+}
+
+5001001 = {
+    name="Collalto" 
+    culture = venetian
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 169
+            emblem = 0
+            color = 3
+            color = 1
+            color = 0
+        }
+    }     
+}
+
+5001002 = {
+    name="di Palearia" #di Pagliara
+    culture = southern_italian
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 116
+            emblem = 3
+            color = 4
+            color = 1
+            color = 0
+        }
+    }    
+}
+
+5001003 = {
+    name="da Sovana"
+    culture = tuscan
+}
+
+5001004 = {
+    name="Buonaparte"
+    culture = tuscan
+}
+
+5001005 = {
+    name="Corsini"
+    culture = tuscan
+}
+

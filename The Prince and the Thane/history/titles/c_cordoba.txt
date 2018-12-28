@@ -1,0 +1,67 @@
+1031.1.1={
+	holder=45000
+	liege=d_cordoba
+}
+1043.1.1={
+	holder=45001
+}
+1065.1.1={
+	holder=20852
+}
+1070.1.1={
+	holder=3214
+	liege=d_sevilla
+}
+1081.1.1={
+	holder=73214
+}
+1091.1.1={
+	holder=464010
+	liege=k_mauretania
+}
+1119.1.1={
+	holder=224025
+}
+1144.1.1={
+	holder=73665
+	liege=d_cordoba
+}
+1145.1.1={
+	holder=73181
+}
+1145.7.1={
+	holder=73665
+}
+1146.1.1={
+	holder=155072
+}
+1148.1.1={
+	holder=224001
+	liege=k_mauretania
+}
+1189.1.1={
+	holder=73615
+}
+1208.1.1={
+	holder=73616
+}
+1228.1.1={
+	holder=73625
+	liege=d_murcia
+}
+1236.1.1={
+	holder=457620
+	liege=d_cordoba
+}
+1252.5.30={
+	holder=457540
+}
+1284.4.4={
+	holder=457530
+}
+1295.4.25={
+	holder=457520
+}
+1312.9.7={
+	holder=457500
+}

@@ -1,0 +1,510 @@
+family_palace = {
+
+	# Mansion
+	fp_mansion_1 = {
+		desc = fp_mansion_1_desc
+		build_cost = 200
+		build_time = 1095
+		ai_creation_factor = 110
+		
+		levy_size = 0.1
+		tax_income = 2
+		
+		start = {
+			year = 1066
+		}
+	}
+	
+	# Great Mansion
+	fp_mansion_2 = {
+		desc = fp_mansion_2_desc
+		upgrades_from = fp_mansion_1
+		build_cost = 300
+		build_time = 1460
+		ai_creation_factor = 109
+		
+		levy_size = 0.2
+		tax_income = 6
+		max_tradeposts = 3
+		
+		start = {
+			year = 1156
+		}
+	}
+	
+	# Palace
+	fp_mansion_3 = {
+		desc = fp_mansion_3_desc
+		upgrades_from = fp_mansion_2
+		build_cost = 400
+		build_time = 2190
+		ai_creation_factor = 108
+		
+		levy_size = 0.3
+		tax_income = 8
+		max_tradeposts = 3
+		
+		start = {
+			year = 1246
+		}
+	}
+	
+	# Grand Palace
+	fp_mansion_4 = {
+		desc = fp_mansion_4_desc
+		upgrades_from = fp_mansion_3
+		build_cost = 500
+		build_time = 2190
+		ai_creation_factor = 107
+		
+		levy_size = 0.4
+		tax_income = 10
+		max_tradeposts = 3
+		
+		start = {
+			year = 1400
+		}
+	}
+	
+	# Guard Barracks
+	fp_barracks_1 = {
+		desc = fp_barracks_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		heavy_infantry = 70
+		pikemen = 50
+		
+		start = {
+			year = 1066
+		}
+	}
+	
+	# Swordsmith
+	fp_barracks_2 = {
+		desc = fp_barracks_2_desc
+		upgrades_from = fp_barracks_1
+		prerequisites = { fp_mansion_2 }
+		build_cost = 250
+		build_time = 1095
+		ai_creation_factor = 104
+		
+		heavy_infantry = 85
+		pikemen = 65
+		
+		start = {
+			year = 1156
+		}
+	}
+	
+	# Armory
+	fp_barracks_3 = {
+		desc = fp_barracks_3_desc
+		upgrades_from = fp_barracks_2
+		prerequisites = { fp_mansion_3 }
+		build_cost = 350
+		build_time = 1460
+		ai_creation_factor = 103
+		
+		heavy_infantry = 100
+		pikemen = 80
+		
+		start = {
+			year = 1296
+		}
+	}
+	
+	# Small Stable
+	fp_stable_1 = {
+		desc = fp_stable_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		light_cavalry = 75
+		
+		start = {
+			year = 1096
+		}
+	}
+	
+	# Riding Grounds
+	fp_stable_2 = {
+		desc = fp_stable_2_desc
+		build_cost = 250
+		build_time = 1095
+		upgrades_from = fp_stable_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 104
+		
+		light_cavalry = 90
+		
+		start = {
+			year = 1156
+		}
+	}
+	
+	# Horse Breeder
+	fp_stable_3 = {
+		desc = fp_stable_3_desc
+		build_cost = 350
+		build_time = 1460
+		upgrades_from = fp_stable_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 103
+		
+		light_cavalry = 105
+		knights = 45
+		
+		start = {
+			year = 1300
+		}
+	}
+	
+	# Bowyer
+	fp_bowyer_1 = {
+		desc = fp_bowyer_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		light_infantry = 95
+		archers = 95
+		
+		start = {
+			year = 1066
+		}
+	}
+	
+	# Target Range
+	fp_bowyer_2 = {
+		desc = fp_bowyer_2_desc
+		build_cost = 250
+		build_time = 1095
+		upgrades_from = fp_bowyer_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 104
+		
+		light_infantry = 110
+		archers = 110
+		
+		start = {
+			year = 1156
+		}
+	}
+	
+	# Crossbow Workshop
+	fp_bowyer_3 = {
+		desc = fp_bowyer_3_desc
+		build_cost = 350
+		build_time = 1460
+		upgrades_from = fp_bowyer_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 103
+		
+		light_infantry = 120
+		archers = 120
+		
+		start = {
+			year = 1296
+		}
+	}
+	
+	# Map Room
+	fp_shipyard_1 = {
+		desc = fp_shipyard_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		galleys = 12
+		
+		start = {
+			year = 1066
+		}
+	}
+	
+	#  Private Shipyard
+	fp_shipyard_2 = {
+		desc = fp_shipyard_2_desc
+		build_cost = 250
+		build_time = 1095
+		upgrades_from = fp_shipyard_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 104
+		
+		galleys = 18
+		
+		start = {
+			year = 1146
+		}
+	}
+	
+	# Naval Arsenal
+	fp_shipyard_3 = {
+		desc = fp_shipyard_3_desc
+		build_cost = 350
+		build_time = 1460
+		upgrades_from = fp_shipyard_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 103
+		
+		galleys = 24
+		
+		start = {
+			year = 1296
+		}
+	}
+	
+	# Military Warehouse
+	fp_warehouse_1 = {
+		desc = fp_warehouse_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		land_morale = 0.1
+		levy_reinforce_rate = 0.1
+		retinuesize = 1000
+		
+		start = {
+			year = 1096
+		}
+	}
+	
+	# Palace Archive
+	fp_warehouse_2 = {
+		desc = fp_warehouse_2_desc
+		build_cost = 250
+		build_time = 1095
+		upgrades_from = fp_warehouse_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 104
+		
+		stewardship = 1
+		land_morale = 0.2
+		levy_reinforce_rate = 0.2
+		retinuesize = 2000
+		
+		start = {
+			year = 1176
+		}
+	}
+	
+	# Administrative Office
+	fp_warehouse_3 = {
+		desc = fp_warehouse_3_desc
+		build_cost = 350
+		build_time = 1460
+		upgrades_from = fp_warehouse_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 103
+		
+		stewardship = 1
+		land_morale = 0.3
+		levy_reinforce_rate = 0.3
+		retinuesize = 3000
+		
+		start = {
+			year = 1320
+		}
+	}
+	
+	# Palace Garden
+	fp_garden_1 = {
+		desc = fp_garden_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		monthly_character_prestige = 0.20
+		
+		start = {
+			year = 1096
+		}
+	}
+	
+	# Scenic Pond
+	fp_garden_2 = {
+		desc = fp_garden_2_desc
+		build_cost = 250
+		build_time = 1095
+		ai_creation_factor = 104
+
+		upgrades_from = fp_garden_1
+		prerequisites = { fp_mansion_2 }
+
+		diplomacy = 1
+		monthly_character_prestige = 0.30
+		
+		start = {
+			year = 1196
+		}
+	}
+	
+	# Hedge Maze
+	fp_garden_3 = {
+		desc = fp_garden_3_desc
+		build_cost = 350
+		build_time = 1460
+		ai_creation_factor = 103
+
+		upgrades_from = fp_garden_2
+		prerequisites = { fp_mansion_3 }
+
+		diplomacy = 1
+		monthly_character_prestige = 0.50
+		
+		start = {
+			year = 1296
+		}
+	}
+	
+	# Wine Cellar
+	fp_cellar_1 = {
+		desc = fp_cellar_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		fertility = 0.1
+		
+		start = {
+			year = 1096
+		}
+	}
+	
+	# Catacombs
+	fp_cellar_2 = {
+		desc = fp_cellar_2_desc
+		build_cost = 250
+		build_time = 1095
+		ai_creation_factor = 104
+
+		upgrades_from = fp_cellar_1
+		prerequisites = { fp_mansion_2 }
+		
+		martial = 1
+		monthly_character_piety = 0.25
+		
+		start = {
+			year = 1196
+		}
+	}
+	
+	# Dungeon Complex
+	fp_cellar_3 = {
+		desc = fp_cellar_3_desc
+		build_cost = 350
+		build_time = 1460
+		ai_creation_factor = 103
+		
+		upgrades_from = fp_cellar_2
+		prerequisites = { fp_mansion_3 }
+		
+		martial = 1
+		monthly_character_prestige = 0.25
+		
+		start = {
+			year = 1296
+		}
+	}
+	
+	# Secluded Shrine
+	fp_shrine_1 = {
+		desc = fp_shrine_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		church_opinion = 10
+		monthly_character_piety = 0.10
+		
+		start = {
+			year = 1096
+		}
+	}
+	
+	# Private Art Collection
+	fp_shrine_2 = {
+		desc = fp_shrine_2_desc
+		build_cost = 250
+		build_time = 1095
+		upgrades_from = fp_shrine_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 104
+		
+		learning = 1
+		monthly_character_piety = 0.25
+		
+		start = {
+			year = 1196
+		}
+	}
+	
+	# Grand Library
+	fp_shrine_3 = {
+		desc = fp_shrine_3_desc
+		build_cost = 350
+		build_time = 1460
+		upgrades_from = fp_shrine_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 103
+		
+		learning = 1
+		monthly_character_piety = 0.50
+		
+		start = {
+			year = 1296
+		}
+	}
+	
+	# Fortified Vault
+	fp_vault_1 = {
+		desc = fp_vault_1_desc
+		build_cost = 150
+		build_time = 730
+		ai_creation_factor = 105
+		
+		tax_income = 4
+		
+		start = {
+			year = 1116
+		}
+	}
+	
+	# Secret Passages
+	fp_vault_2 = {
+		desc = fp_vault_2_desc
+		build_cost = 250
+		build_time = 1095
+		upgrades_from = fp_vault_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 104
+		
+		tax_income = 5
+		intrigue = 1
+		
+		start = {
+			year = 1216
+		}
+	}
+	
+	# Hidden Chamber
+	fp_vault_3 = {
+		desc = fp_vault_3_desc
+		build_cost = 350
+		build_time = 1460
+		upgrades_from = fp_vault_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 103
+		
+		tax_income = 6
+		intrigue = 1
+		
+		start = {
+			year = 1316
+		}
+	}
+}

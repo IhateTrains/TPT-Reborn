@@ -1,0 +1,29 @@
+# 298 - Småland
+
+# County Title
+title = c_smaland
+
+# Settlements
+max_settlements = 3
+b_nasborg = castle
+b_jonkoping = city
+#b_brahehus = castle
+#b_alvesta = temple
+#b_kronoberg = castle
+#b_piksborg = castle
+#b_aringsas = temple
+
+#b_ljungby = city
+# Misc
+culture = gothic
+religion = norse_pagan
+
+# History
+1066.1.1 = { 
+	b_nasborg = ca_keep_1
+}
+
+
+1130.1.1 = { religion = catholic }
+
+1150.1.1 = { b_jonkoping = city }

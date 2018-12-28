@@ -1,0 +1,2513 @@
+############################################################################
+#
+# The Prince and the Thane historical characters events - written by idib816
+#
+############################################################################
+
+#Thomas Aquinas
+
+character_event = {
+	id = 150361
+	title = "EVTNAME150361"
+	desc = "EVTDESC150361"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+        year = 1240
+        NOT = { year = 1260 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = thomas_aquinas
+			has_global_flag = thomas_aquinas }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = "EVTOPTA150361"
+		prestige = 100
+		set_character_flag = thomas_aquinas
+		set_global_flag = thomas_aquinas
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = Tommaso
+			random_traits = no
+			dynasty = 12243
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = central_italian
+			trait = clerical_envoy
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 5
+				intrigue = 10
+				stewardship = 12
+				diplomacy = 10
+				learning = 14
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150361"
+		set_character_flag = thomas_aquinas
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Albertus Magnus
+
+character_event = {
+	id = 150362
+	title = "EVTNAME150362"
+	desc = "EVTDESC150362"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 119
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+                NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = albertus_magnus
+			has_global_flag = albertus_magnus }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150362"
+		prestige = 100
+		set_character_flag = albertus_magnus
+		set_global_flag = albertus_magnus
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = Albertus
+			random_traits = no
+			dynasty = 150150151
+			female = no
+			age = 35
+                        culture = german
+			trait = philosopher
+			trait = clerical_envoy
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 14
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150362"
+		set_character_flag = albertus_magnus
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Roger Bacon
+
+character_event = {
+	id = 150364
+	title = "EVTNAME150364"
+	desc = "EVTDESC150364"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 31
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+                NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = roger_bacon
+			has_global_flag = roger_bacon }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150364"
+		prestige = 100
+		set_character_flag = roger_bacon
+		set_global_flag = roger_bacon
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Roger
+			random_traits = no
+			dynasty = 4007
+			female = no
+			age = 40
+			trait = philosopher
+			trait = alchemist
+                        culture = english
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 5
+				stewardship = 5
+				diplomacy = 10
+				learning = 12
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150364"
+		prestige = -100
+		set_character_flag = roger_bacon
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Thomas Bradwardine
+
+character_event = {
+	id = 150365
+	title = "EVTNAME150365"
+	desc = "EVTDESC150365"
+	picture = GFX_evt_alchemist
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 57
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1310
+                NOT = { year = 1330 }
+		NOT = {
+			OR = { has_character_flag = thomas_bradwardine
+			has_global_flag = thomas_bradwardine }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150365"
+		set_character_flag = thomas_bradwardine
+		set_global_flag = thomas_bradwardine
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = Thomas
+			random_traits = no
+			dynasty = 150150154
+			female = no
+                        culture = english
+			age = 40
+			trait = scholar
+			trait = alchemist
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 12
+				intrigue = 10
+				stewardship = 7
+				diplomacy = 8
+				learning = 13
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150365"
+		set_character_flag = thomas_bradwardine
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#William of Ockham
+
+character_event = {
+	id = 150366
+	title = "EVTNAME150366"
+	desc = "EVTDESC150366"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 55
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1310
+                NOT = { year = 1330 }
+		NOT = {
+			OR = { has_character_flag = william_ockham
+			has_global_flag = william_ockham }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150366"
+		set_character_flag = william_ockham
+		set_global_flag = william_ockham
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = William
+			random_traits = no
+			dynasty = 150150155
+			female = no
+                        culture = english
+			age = 50
+			trait = scholar
+			trait = philosopher
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 4
+				stewardship = 15
+				diplomacy = 5
+				learning = 12
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150366"
+		set_character_flag = william_ockham
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Richard of Wallingford
+
+character_event = {
+	id = 150367
+	title = "EVTNAME150367"
+	desc = "EVTDESC150367"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 59
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1310
+                NOT = { year = 1330 }
+		NOT = {
+			OR = { has_character_flag = richard_wallingford
+			has_global_flag = richard_wallingford }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150367"
+		set_character_flag = richard_wallingford
+		set_global_flag = richard_wallingford
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1 
+		add_trait = mecenate
+		create_character = {
+			name = Richard
+			random_traits = no
+			dynasty = 150150156
+			female = no
+			age = 35
+			trait = genius
+			trait = philosopher
+                        culture = english
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 5
+				intrigue = 4
+				stewardship = 15
+				diplomacy = 5
+				learning = 14
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150367"
+		set_character_flag = richard_wallingford
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Johannes de Sacrobosco
+
+character_event = {
+	id = 150368
+	title = "EVTNAME150368"
+	desc = "EVTDESC150368"
+	picture = GFX_evt_alchemist
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 112
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1200
+                NOT = { year = 1220 }
+		NOT = {
+			OR = { has_character_flag = johannes_sacrobosco
+			has_global_flag = johannes_sacrobosco }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150368"
+		set_character_flag = johannes_sacrobosco
+		set_global_flag = johannes_sacrobosco
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Johannes
+			random_traits = no
+			dynasty = 150150157
+			female = no
+			age = 40
+			trait = alchemist
+			trait = scholar
+                        culture = english
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 5
+				intrigue = 4
+				stewardship = 10
+				diplomacy = 5
+				learning = 16
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150368"
+		set_character_flag = johannes_sacrobosco
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Duns Scotus
+
+character_event = {
+	id = 150369
+	title = "EVTNAME150369"
+	desc = "EVTDESC150369"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 48
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1280
+                NOT = { year = 1300 }
+		NOT = {
+			OR = { has_character_flag = duns_scotus
+			has_global_flag = duns_scotus }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150369"
+		set_character_flag = duns_scotus
+		set_global_flag = duns_scotus
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = "John Duns"
+			random_traits = no
+			dynasty = 150150158
+			female = no
+			age = 35
+                        culture = scottish
+			trait = philosopher
+			trait = scholar
+			trait = bank_sponsor
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 5
+				intrigue = 4
+				stewardship = 15
+				diplomacy = 12
+				learning = 16
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150369"
+		set_character_flag = duns_scotus
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Erasmus Witelo
+
+character_event = {
+	id = 150370
+	title = "EVTNAME150370"
+	desc = "EVTDESC150370"
+	picture = GFX_evt_alchemist
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 434
+		war = no
+                year = 1240
+                NOT = { year = 1260 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = erasmus_witelo
+			has_global_flag = erasmus_witelo }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150370"
+		set_character_flag = erasmus_witelo
+		set_global_flag = erasmus_witelo
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = Erasmus
+			random_traits = no
+			dynasty = 150150159
+			female = no
+                        culture = polish
+			age = 35
+			trait = philosopher
+			trait = scholar
+			trait = alchemist
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 5
+				stewardship = 12
+				diplomacy = 10
+				learning = 15
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150370"
+		set_character_flag = erasmus_witelo
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Jean Buridan
+
+character_event = {
+	id = 150371
+	title = "EVTNAME150371"
+	desc = "EVTDESC150371"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 112
+		war = no
+                year = 1310
+                NOT = { year = 1330 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = jean_buridan
+			has_global_flag = jean_buridan }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150371"
+		set_character_flag = jean_buridan
+		set_global_flag = jean_buridan
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = Jean
+			random_traits = no
+			dynasty = 150150160
+			female = no
+			age = 35
+                        culture = frankish
+			trait = philosopher
+			trait = scholar
+			trait = alchemist
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 8
+				intrigue = 6
+				stewardship = 14
+				diplomacy = 11
+				learning = 13
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150371"
+		set_character_flag = jean_buridan
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Nicole Oresme
+
+character_event = {
+	id = 150372
+	title = "EVTNAME150372"
+	desc = "EVTDESC150372"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 112
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1320
+                NOT = { year = 1340 }
+		NOT = {
+			OR = { has_character_flag = nicole_oresme
+			has_global_flag = nicole_oresme }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150372"
+		set_character_flag = nicole_oresme
+		set_global_flag = nicole_oresme
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1  
+		add_trait = mecenate
+		create_character = {
+			name = Nicole
+			random_traits = no
+			dynasty = 150150161
+			female = no
+                        culture = frankish
+			age = 35
+			trait = philosopher
+			trait = bank_sponsor
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 8
+				intrigue = 13
+				stewardship = 14
+				diplomacy = 11
+				learning = 15
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150372"
+		set_character_flag = nicole_oresme
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Vincent of Beauvais
+
+character_event = {
+	id = 150373
+	title = "EVTNAME150373"
+	desc = "EVTDESC150373"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 74
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+                NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = vincent_beauvais
+			has_global_flag = vincent_beauvais }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150373"
+		set_character_flag = vincent_beauvais
+		set_global_flag = vincent_beauvais
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Vincent
+			random_traits = no
+			dynasty = 150150162
+			female = no
+                        culture = frankish
+			age = 35
+			trait = philosopher
+			trait = scholar
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 6
+				intrigue = 5
+				stewardship = 5
+				diplomacy = 10
+				learning = 15
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150373"
+		set_character_flag = vincent_beauvais
+		set_global_flag = vincent_beauvais
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Petrarch
+
+character_event = {
+	id = 150374
+	title = "EVTNAME150374"
+	desc = "EVTDESC150374"
+	picture = GFX_evt_dante
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1340
+                NOT = { year = 1360 }
+		
+		NOT = {
+			OR = { has_character_flag = petrarch
+			has_global_flag = petrarch }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150374"
+		set_character_flag = petrarch
+		set_global_flag = petrarch
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Francesco
+			random_traits = no
+			dynasty = 150150163
+			female = no
+                        culture = tuscan
+			age = 35
+			trait = poet
+			trait = scholar
+			trait = chaste
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 6
+				intrigue = 5
+				stewardship = 5
+				diplomacy = 12
+				learning = 15
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150374"
+		set_character_flag = petrarch
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Dante
+
+character_event = {
+	id = 150375
+	title = "EVTNAME150375"
+	desc = "EVTDESC150375"
+	picture = GFX_evt_dante
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1280
+                NOT = { year = 1300 }
+		NOT = {
+			OR = { has_character_flag = dante_alighieri
+			has_global_flag = dante_alighieri }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150375"
+		set_character_flag = dante_alighieri
+		set_global_flag = dante_alighieri
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Dante
+			random_traits = no
+			dynasty = 150150164
+			female = no
+                        culture = tuscan
+			age = 35
+			trait = poet
+			trait = scholar
+			trait = chaste
+                        trait = guelph
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 12
+				stewardship = 5
+				diplomacy = 10
+				learning = 12
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150375"
+		set_character_flag = dante_alighieri
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Giovanni Boccaccio
+
+character_event = {
+	id = 150376
+	title = "EVTNAME150376"
+	desc = "EVTDESC150376"
+	picture = GFX_evt_wench
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+                year = 1340
+                NOT = { year = 1360 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = giovanni_boccaccio
+			has_global_flag = giovanni_boccaccio }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150376"
+		set_character_flag = giovanni_boccaccio
+		set_global_flag = giovanni_boccaccio
+		prestige = 100
+                piety = -25
+                scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Giovanni
+			random_traits = no
+			dynasty = 150150165
+			female = no
+                        culture = tuscan
+			age = 35
+			trait = poet
+			trait = scholar
+			trait = lustful
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 17
+				stewardship = 5
+				diplomacy = 13
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150376"
+		set_character_flag = giovanni_boccaccio
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Saint Bonaventure
+
+character_event = {
+	id = 150377
+	title = "EVTNAME150377"
+	desc = "EVTDESC150377"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 333
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+                NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = saint_bonaventure
+			has_global_flag = saint_bonaventure }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150377"
+		set_character_flag = saint_bonaventure
+		set_global_flag = saint_bonaventure
+		prestige = 100
+                piety = 25
+                scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Giovanni
+			random_traits = no
+			dynasty = 150150166
+			female = no
+                        culture = central_italian
+			age = 45
+			trait = celibate
+			trait = scholar
+			trait = philosopher
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 10
+				stewardship = 5
+				diplomacy = 10
+				learning = 14
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150377"
+		set_character_flag = saint_bonaventure
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Saint Francis
+
+character_event = {
+	id = 150393
+	title = "EVTNAME150393"
+	desc = "EVTDESC150393"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 349
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1200
+                NOT = { year = 1220 }
+		NOT = {
+			OR = { has_character_flag = saint_francis
+			has_global_flag = saint_francis }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150393"
+		set_character_flag = saint_francis
+		set_global_flag = saint_francis
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Francis
+			random_traits = no
+			dynasty = 150150179
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = central_italian
+			trait = clerical_envoy
+			trait = celibate
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 3
+				stewardship = 7
+				diplomacy = 7
+				learning = 17
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150393"
+		set_character_flag = saint_francis
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Marco Polo
+
+character_event = {
+	id = 150394
+	title = "EVTNAME150394"
+	desc = "EVTDESC150394"
+	picture = GFX_evt_alchemist
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 356
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1270
+                NOT = { year = 1290 }
+		NOT = {
+			OR = { has_character_flag = marco_polo
+			has_global_flag = marco_polo }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150394"
+		set_character_flag = marco_polo
+		set_global_flag = marco_polo
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Marco
+			random_traits = no
+			dynasty = 150150180
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = venetian
+			trait = brave
+			trait = tolerant
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 10
+				stewardship = 7
+				diplomacy = 15
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150394"
+		set_character_flag = marco_polo
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Niccolò de' Conti
+
+character_event = {
+	id = 150395
+	title = "EVTNAME150395"
+	desc = "EVTDESC150395"
+	picture = GFX_evt_alchemist
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 356
+		war = no
+		in_command = no
+                year = 1400
+                NOT = { year = 1420 }
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = niccolo_conti
+			has_global_flag = niccolo_conti }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150395"
+		set_character_flag = niccolo_conti
+		set_global_flag = niccolo_conti
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Niccolò
+			random_traits = no
+			dynasty = 150150181
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = venetian
+			trait = brave
+			trait = tolerant
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 5
+				stewardship = 6
+				diplomacy = 13
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150395"
+		set_character_flag = niccolo_conti
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Robert Grosseteste
+
+character_event = {
+	id = 150396
+	title = "EVTNAME150396"
+	desc = "EVTDESC150396"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 62
+		war = no
+		in_command = no
+                year = 1220
+                NOT = { year = 1240 }
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = robert_grosseteste
+			has_global_flag = robert_grosseteste }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150396"
+		set_character_flag = robert_grosseteste
+		set_global_flag = robert_grosseteste
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Robert
+			random_traits = no
+			dynasty = 150150182
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = english
+			trait = celibate
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 5
+				stewardship = 6
+				diplomacy = 12
+				learning = 13
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150396"
+		set_character_flag = robert_grosseteste
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Geoffrey Chaucer
+
+character_event = {
+	id = 150397
+	title = "EVTNAME150397"
+	desc = "EVTDESC150397"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 64
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1370
+                NOT = { year = 1390 }
+		NOT = {
+			OR = { has_character_flag = geoffrey_chaucer
+			has_global_flag = geoffrey_chaucer }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150397"
+		set_character_flag = geoffrey_chaucer
+		set_global_flag = geoffrey_chaucer
+		prestige = 100
+                piety = 25
+		create_character = {
+			name = Geoffrey
+			random_traits = no
+			dynasty = 150150183
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = english
+			trait = poet
+			trait = tolerant
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 10
+				stewardship = 7
+				diplomacy = 15
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150397"
+		set_character_flag = geoffrey_chaucer
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Peter Waldo
+
+character_event = {
+	id = 150399
+	title = "EVTNAME150399"
+	desc = "EVTDESC150399"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 227
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1180
+                NOT = { year = 1200 }
+		NOT = {
+			OR = { has_character_flag = peter_waldo
+			has_global_flag = peter_waldo }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150399"
+		set_character_flag = peter_waldo
+		set_global_flag = peter_waldo
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Peter
+			random_traits = no
+			dynasty = 150150185
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = frankish
+			trait = chaste
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 5
+				stewardship = 10
+				diplomacy = 12
+				learning = 15
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150399"
+		set_character_flag = peter_waldo
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#André de Longjumeau
+
+character_event = {
+	id = 150400
+	title = "EVTNAME150400"
+	desc = "EVTDESC150400"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 107
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1230
+                NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = andre_long
+			has_global_flag = andre_long }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150400"
+		set_character_flag = andre_long
+		set_global_flag = andre_long
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = André
+			random_traits = no
+			dynasty = 150150186
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = frankish
+			trait = chaste
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 5
+				stewardship = 10
+				diplomacy = 15
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150400"
+		set_character_flag = andre_long
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Peter Abelard
+
+character_event = {
+	id = 150401
+	title = "EVTNAME150401"
+	desc = "EVTDESC150401"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 114
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1120
+                NOT = { year = 1140 }
+		NOT = {
+			OR = { has_character_flag = peter_abelard
+			has_global_flag = peter_abelard }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150401"
+		set_character_flag = peter_abelard
+		set_global_flag = peter_abelard
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Peter
+			random_traits = no
+			dynasty = 150150187
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = frankish
+			trait = chaste
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 5
+				stewardship = 10
+				diplomacy = 15
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150401"
+		set_character_flag = peter_abelard
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Donatello
+
+character_event = {
+	id = 150402
+	title = "EVTNAME150402"
+	desc = "EVTDESC150402"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1400
+                NOT = { year = 1420 }
+		NOT = {
+			OR = { has_character_flag = david_donatello
+			has_global_flag = david_donatello }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150402"
+		set_character_flag = david_donatello
+		set_global_flag = david_donatello
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Donato
+			random_traits = no
+			dynasty = 150150188
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = tuscan
+			trait = chaste
+			trait = scholar
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 2
+				intrigue = 5
+				stewardship = 10
+				diplomacy = 12
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150402"
+		set_character_flag = david_donatello
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Cimabue
+
+character_event = {
+	id = 150403
+	title = "EVTNAME150403"
+	desc = "EVTDESC150403"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1260
+                NOT = { year = 1280 }
+		NOT = {
+			OR = { has_character_flag = cimabue
+			has_global_flag = cimabue }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150403"
+		set_character_flag = cimabue
+		set_global_flag = cimabue
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Benvenuto
+			random_traits = no
+			dynasty = 150150189
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = tuscan
+			trait = quick
+			trait = scholar
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 6
+				intrigue = 5
+				stewardship = 4
+				diplomacy = 14
+				learning = 12
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150403"
+		set_character_flag = cimabue
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Filippo Brunelleschi
+
+character_event = {
+	id = 150404
+	title = "EVTNAME150404"
+	desc = "EVTDESC150404"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1390
+                NOT = { year = 1410 }
+		NOT = {
+			OR = { has_character_flag = pippo_brunelleschi
+			has_global_flag = pippo_brunelleschi }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150404"
+		set_character_flag = pippo_brunelleschi
+		set_global_flag = pippo_brunelleschi
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Filippo
+			random_traits = no
+			dynasty = 150150190
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = tuscan
+			trait = quick
+			trait = scholar
+			trait = midas_touched
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 5
+				stewardship = 8
+				diplomacy = 13
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150404"
+		set_character_flag = pippo_brunelleschi
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Jan Hus
+
+character_event = {
+	id = 150405
+	title = "EVTNAME150405"
+	desc = "EVTDESC150405"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 437
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1380
+                NOT = { year = 1400 }
+		NOT = {
+			OR = { has_character_flag = jan_hus
+			has_global_flag = jan_hus }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150405"
+		set_character_flag = jan_hus
+		set_global_flag = jan_hus
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Jan
+			random_traits = no
+			dynasty = 150150191
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = bohemian
+			trait = chaste
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 5
+				stewardship = 8
+				diplomacy = 10
+				learning = 12
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150405"
+		set_character_flag = jan_hus
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Geoffrey of Monmouth
+
+character_event = {
+	id = 150406
+	title = "EVTNAME150406"
+	desc = "EVTDESC150406"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 57
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1120
+                NOT = { year = 1140 }
+		NOT = {
+			OR = { has_character_flag = geoffrey_monmouth
+			has_global_flag = geoffrey_monmouth }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150406"
+		set_character_flag = geoffrey_monmouth
+		set_global_flag = geoffrey_monmouth
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Geoffrey
+			random_traits = no
+			dynasty = 150150192
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = english
+			trait = quick
+			trait = scholar
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 5
+				stewardship = 8
+				diplomacy = 13
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150406"
+		set_character_flag = geoffrey_monmouth
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#John Wycliffe
+
+character_event = {
+	id = 150407
+	title = "EVTNAME150407"
+	desc = "EVTDESC150407"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 62
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1340
+                NOT = { year = 1360 }
+		NOT = {
+			OR = { has_character_flag = john_wycliffe
+			has_global_flag = john_wycliffe }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150407"
+		set_character_flag = john_wycliffe
+		set_global_flag = john_wycliffe
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = John
+			random_traits = no
+			dynasty = 150150193
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = english
+			trait = chaste
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 5
+				stewardship = 8
+				diplomacy = 10
+				learning = 12
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150407"
+		set_character_flag = john_wycliffe
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#William Wallace
+
+character_event = {
+	id = 150408
+	title = "EVTNAME150408"
+	desc = "EVTDESC150408"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 45
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1280
+                NOT = { year = 1300 }
+		NOT = {
+			OR = { has_character_flag = william_wallace
+			has_global_flag = william_wallace }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150408"
+		set_character_flag = william_wallace
+		set_global_flag = william_wallace
+		prestige = 100
+		scaled_wealth = -1
+		create_character = {
+			name = William
+			random_traits = no
+			dynasty = 3133
+			female = no
+			age = 30
+			trait = brave
+                        culture = scottish
+			trait = war_hero
+			trait = zealous
+			trait = brilliant_strategist
+			health = 10
+			attributes = {
+				martial = 10
+				intrigue = 2
+				stewardship = 2
+				diplomacy = 7
+				learning = 5
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150408"
+		set_character_flag = william_wallace
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Giotto
+
+character_event = {
+	id = 150409
+	title = "EVTNAME150409"
+	desc = "EVTDESC150409"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+                year = 1300
+                NOT = { year = 1320 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = giotto_bondone
+			has_global_flag = giotto_bondone }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150409"
+		set_character_flag = giotto_bondone
+		set_global_flag = giotto_bondone
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Giotto
+			random_traits = no
+			dynasty = 150150194
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = tuscan
+			trait = genius
+			trait = scholar
+			trait = chaste
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 5
+				stewardship = 8
+				diplomacy = 10
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150409"
+		set_character_flag = giotto_bondone
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Saxo Grammaticus
+
+character_event = {
+	id = 150413
+	title = "EVTNAME150413"
+	desc = "EVTDESC150413"
+	picture = GFX_evt_philosopher
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 266
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1180
+                NOT = { year = 1200 }
+		NOT = {
+			OR = { has_character_flag = saxo_grammaticus
+			has_global_flag = saxo_grammaticus }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA150413"
+		set_character_flag = saxo_grammaticus
+		set_global_flag = saxo_grammaticus
+		prestige = 100
+                piety = 25
+		scaled_wealth = -1
+		add_trait = mecenate
+		create_character = {
+			name = Saxo
+			random_traits = no
+			dynasty = 150150198
+			female = no
+			age = 35
+			trait = philosopher
+                        culture = danish
+			trait = alchemist
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 7
+				intrigue = 10
+				stewardship = 8
+				diplomacy = 8
+				learning = 10
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB150413"
+		set_character_flag = saxo_grammaticus
+		prestige = -100
+                piety = 75
+                add_trait = conservative
+                remove_trait = reformer
+	}
+}
+
+#Pierre Dubois
+
+character_event = {
+	id = 180181
+	title = "EVTNAME180181"
+	desc = "EVTDESC180181"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 96
+		war = no
+                year = 1270
+                NOT = { year = 1290 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = pierre_dubois
+			has_global_flag = pierre_dubois }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180181"
+		set_character_flag = pierre_dubois
+		set_global_flag = pierre_dubois
+		prestige = 100
+                piety = 25
+                add_trait = mecenate
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Pierre
+			random_traits = no
+			dynasty = 150150220
+			female = no
+			age = 30
+			trait = poet
+                        culture = norman
+			trait = zealous
+			trait = scholar
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180181"
+		set_character_flag = pierre_dubois
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Boetius of Dacia
+
+character_event = {
+	id = 180182
+	title = "EVTNAME180182"
+	desc = "EVTDESC180182"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 266
+		war = no
+                year = 1270
+                NOT = { year = 1290 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = boeto_dacia
+			has_global_flag = boeto_dacia }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+ 
+	option = {
+		name = "EVTOPTA180182"
+		set_character_flag = boeto_dacia
+		set_global_flag = boeto_dacia
+		prestige = 100
+                piety = 25
+                add_trait = mecenate
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Boetius
+			random_traits = no
+			dynasty = 150150221
+			female = no
+			age = 30
+			trait = philosopher
+                        culture = danish
+			trait = zealous
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180182"
+		set_character_flag = boeto_dacia
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Siger of Brabant
+
+character_event = {
+	id = 180183
+	title = "EVTNAME180183"
+	desc = "EVTDESC180183"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 117
+		war = no
+		in_command = no
+                year = 1260
+                NOT = { year = 1280 }
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = siger_brabant
+			has_global_flag = siger_brabant }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180183"
+		set_character_flag = siger_brabant
+		set_global_flag = siger_brabant
+		prestige = 100
+                piety = 25
+                add_trait = mecenate
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Siger
+			random_traits = no
+			dynasty = 150150222
+			female = no
+			age = 30
+			trait = philosopher
+                        culture = dutch
+			trait = zealous
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180183"
+		set_character_flag = siger_brabant
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Bernard de Clairvaux
+
+character_event = {
+	id = 180184
+	title = "EVTNAME180184"
+	desc = "EVTDESC180184"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 112
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1110
+                NOT = { year = 1130 }
+		NOT = {
+			OR = { has_character_flag = bernardo_chiaravalle
+			has_global_flag = bernardo_chiaravalle }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180184"
+		set_character_flag = bernardo_chiaravalle
+		set_global_flag = bernardo_chiaravalle
+		prestige = 100
+                piety = 25
+                add_trait = mecenate
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Bernard
+			random_traits = no
+			dynasty = 150150223
+			female = no
+			age = 30
+			trait = philosopher
+                        culture = frankish
+			trait = zealous
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180184"
+		set_character_flag = bernardo_chiaravalle
+		prestige = -100
+                piety = 75
+	}
+}
+

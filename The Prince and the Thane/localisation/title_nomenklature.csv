@@ -1,0 +1,681 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+CATEPANATE_OF;Catepanate of;Catepanate of;Catepanate of;;Catepanate of;;;;;;;;;x
+MARQUIS_OF;Marquisate of;Marquisate de;Marquisate of;;Marquisate of;;;;;;;;;x
+MARQUIS;Marquis;Marquis;Marquis;;Marquis;;;;;;;;;x
+MARQUIS_FOA;Your Excellency;;Your Excellency;;Your Excellency;;;;;;;;;x
+ARCHBISHOP_OF;Diocese of;Diocese of;Diocese of;;Diocese of;;;;;;;;;x
+ARCHBISHOP;Archbishop;Archbishop;Archbishop;;Archbishop;;;;;;;;;x
+ARCHBISHOP_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+COHEN_HAGADOL_FOA;haCohen;haCohen;haCohen;;haCohen;;;;;;;;;x
+COHEN_HAGADOL_OF;Great Sinhedrin of;Great Sinhedrin of;Great Sinhedrin of;;Great Sinhedrin of;;;;;;;;;x
+COHEN_HAGADOL;Cohen haGadol;Cohen haGadol;Cohen haGadol;;Cohen haGadol;;;;;;;;;x
+GIUDICATO_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+WARLORD_FOA;Your Lordship;Your Lordship;Your Lordship;;Your Lordship;;;;;;;;;x
+WARRIOR_PRIEST_FOA;Your Holiness;Your Holiness;Your Holiness;;Your Holiness;;;;;;;;;x
+HAMMER_LORD_FOA;Your Lordship;Your Lordship;Your Lordship;;Your Lordship;;;;;;;;;x
+DUKECOUNT;Count;Count;Count;;Count;;;;;;;;;x
+DUKECOUNT_FOA;Your Grace;;Your Grace;;Your Grace;;;;;;;;;x
+DUKEcounty_of;County of;Comte de;County of;;County of;;;;;;;;;x
+DUKEKING;King;Roi;King;;King;;;;;;;;;x
+DUKEKING_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+DUKEkingdom_of;Kingdom of;Royaume de;Kingdom of;;Kingdom of;;;;;;;;;x
+DUKEPRINCE;Prince;Prince;Prince;;Prince;;;;;;;;;x
+DUKEPRINCE_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+DUKEPRINCE_OF;Principality of;Principality of;Principality of;;Principality of;;;;;;;;;x
+ABBOT_OF;Abbey of;Abbey of;Abbey of;;Abbey of;;;;;;;;;x
+VOIVODE;Voivode;Voivode;Voivode;;Voivode;;;;;;;;;x
+VOIVODE_OF;Voivodeship of;Voivodeship of;Voivodeship of;;Voivodeship of;;;;;;;;;x
+PALATINE;Count Palatine;Count Palatine;Count Palatine;;Count Palatine;;;;;;;;;x
+PALATINE_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+PALATINE_OF;Palatinate of;Palatinate of;Palatinate of;;Palatinate of;;;;;;;;;x
+ARCHDUKE;Archduke;Archduke;Archduke;;Archduke;;;;;;;;;x
+ARCHduchy_of;Archduchy of;Archduchy of;Archduchy of;;Archduchy of;;;;;;;;;x
+GRANDDUKE;Grand Duke;Grand Duke;Grand Duke;;Grand Duke;;;;;;;;;x
+GRANDDUKE_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+GRANDduchy_of;Grand Duchy of;Grand Duchy of;Grand Duchy of;;Grand Duchy of;;;;;;;;;x
+DUKEDESPOT;Despot;Despot;Despot;;Despot;;;;;;;;;x
+DUKEDESPOT_FOA;Your Lordship;Your Lordship;Your Lordship;;Your Lordship;;;;;;;;;x
+DUKEDESPOT_OF;Despotate of;Despotate of;Despotate of;;Despotate of;;;;;;;;;x
+title_dauphine_of_france;The Dauphin ofViennois;The Dauphin ofViennois;The Dauphin ofViennois;;The Dauphin ofViennois;;;;;;;;;x
+title_dauphine_of_france_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+KINGDUKE;Duke;Duke;Duke;;Duke;;;;;;;;;x
+KINGDUKE_female;Duchess;Duchess;Duchess;;Duchess;;;;;;;;;x
+KINGDUKE_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+KINGduchy_of;Duchy of;Duchy of;Duchy of;;Duchy of;;;;;;;;;x
+KINGCA;Duke;Duke;Duke;;Duke;;;;;;;;;x
+KINGCA_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+KINGCA_OF;Duchy of;Duchy of;Duchy of;;Duchy of;;;;;;;;;x
+title_kingdom_of_romans;King ofthe Romans;King ofthe Romans;King ofthe Romans;;King ofthe Romans;;;;;;;;;x
+title_kingdom_of_romans_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+title_kingdom_of_romans_desc;Originally a title preserved for an elected emperor, that had yet to  be crowned by the pope. Later used as title for the heir apparent ofthe holy roman empire.;Originally a title preserved for an elected emperor, that had yet to  be crowned by the pope. Later used as title for the heir apparent ofthe holy roman empire.;Originally a title preserved for an elected emperor, that had yet to  be crowned by the pope. Later used as title for the heir apparent ofthe holy roman empire.;;Originally a title preserved for an elected emperor, that had yet to  be crowned by the pope. Later used as title for the heir apparent ofthe holy roman empire.;;;;;;;;;x
+title_dauphine_of_france_desc;Title bestowed upon the heir apparent ofthe kingdom ofFrance. The usages began in 1350(the king had aquired the title in 1349 from Humbert II who had sold the title along with his feudal estates) when Charles the 5th assumed the title, and ended in 1791(french revoultion), it did however reapear breifly during the short reign ofthe restored Bourbon monarchy(1824-1830);Title bestowed upon the heir apparent ofthe kingdom ofFrance. The usages began in 1350(the king had aquired the title in 1349 from Humbert II who had sold the title along with his feudal estates) when Charles the 5th assumed the title, and ended in 1791(french revoultion), it did however reapear breifly during the short reign ofthe restored Bourbon monarchy(1824-1830);Title bestowed upon the heir apparent ofthe kingdom ofFrance. The usages began in 1350(the king had aquired the title in 1349 from Humbert II who had sold the title along with his feudal estates) when Charles the 5th assumed the title, and ended in 1791(french revoultion), it did however reapear breifly during the short reign ofthe restored Bourbon monarchy(1824-1830);;Title bestowed upon the heir apparent ofthe kingdom ofFrance. The usages began in 1350(the king had aquired the title in 1349 from Humbert II who had sold the title along with his feudal estates) when Charles the 5th assumed the title, and ended in 1791(french revoultion), it did however reapear breifly during the short reign ofthe restored Bourbon monarchy(1824-1830);;;;;;;;;x
+EF;Sun-King;Sun-King;Sun-King;;Sun-King;;;;;;;;;x
+EF_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+EF_OF;Royaume of;Royaume of;Royaume of;;Royaume of;;;;;;;;;x
+EN;Supreme Chief;Supreme Chief;Supreme Chief;;Supreme Chief;;;;;;;;;x
+EN_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+EN_OF;Union of;Union of;Union of;;Union of;;;;;;;;;x
+EP;Emperor;Emperor;Emperor;;Emperor;;;;;;;;;x
+EP_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+EP_OF;Commonwealth of;Commonwealth of;Commonwealth of;;Commonwealth of;;;;;;;;;x
+KINGEMPEROR;Megas Komnenos;Megas Komnenos;Megas Komnenos;;Megas Komnenos;;;;;;;;;x
+KINGEMPEROR_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+KINGEMPEROR_OF;Empire of;Empire of;Empire of;;Empire of;;;;;;;;;x
+EI;Emperor;Emperor;Emperor;;Emperor;;;;;;;;;x
+EI_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+EI_OF;Union of;Union of;Union of;;Union of;;;;;;;;;x
+DM;Duke;Duke;Duke;;Duke;;;;;;;;;x
+DM_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+DM_OF;Duchy of;Duchy of;Duchy of;;Duchy of;;;;;;;;;x
+DB;Duke;Duke;Duke;;Duke;;;;;;;;;x
+DB_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+DB_OF;Duchy of;Duchy of;Duchy of;;Duchy of;;;;;;;;;x
+DESPOT;Despot;Despot;Despot;;Despot;;;;;;;;;x
+DESPOT_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+DESPOT_OF;Despotate of;Despotate of;Despotate of;;Despotate of;;;;;;;;;x
+FE;Archbishop;Archbishop;Archbishop;;Archbishop;;;;;;;;;x
+FE_FOA;Your Holiness;Your Holiness;Your Holiness;;Your Holiness;;;;;;;;;x
+FE_OF;Diocese of;Diocese of;Diocese of;;Diocese of;;;;;;;;;x
+title_archchancellor_of_germany;Arch-Chancellor ofGermany;Arch-Chancellor ofGermany;Arch-Chancellor ofGermany;;Arch-Chancellor ofGermany;;;;;;;;;x
+title_archchancellor_of_germany_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+title_archchancellor_of_germany_desc;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofMainz was reserved the right to hold the Arch-Chancellery ofGermany;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofMainz was reserved the right to hold the Arch-Chancellery ofGermany;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofMainz was reserved the right to hold the Arch-Chancellery ofGermany;;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofMainz was reserved the right to hold the Arch-Chancellery ofGermany;;;;;;;;;x
+title_archchancellor_of_burgundy;Arch-Chancellor ofBurgundy;Arch-Chancellor ofBurgundy;Arch-Chancellor ofBurgundy;;Arch-Chancellor ofBurgundy;;;;;;;;;x
+title_archchancellor_of_burgundy_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+title_archchancellor_of_burgundy_desc;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofTrier was reserved the right to hold the Arch-Chancellery ofBurgundy ;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofTrier was reserved the right to hold the Arch-Chancellery ofBurgundy ;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofTrier was reserved the right to hold the Arch-Chancellery ofBurgundy ;;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofTrier was reserved the right to hold the Arch-Chancellery ofBurgundy ;;;;;;;;;x
+title_archchancellor_of_italy;Arch-Chancellor ofItaly;Arch-Chancellor ofItaly;Arch-Chancellor ofItaly;;Arch-Chancellor ofItaly;;;;;;;;;x
+title_archchancellor_of_italy_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+title_archchancellor_of_italy_desc;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofKöln  was reserved the right to hold the Arch-Chancellery ofItaly;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofKöln  was reserved the right to hold the Arch-Chancellery ofItaly;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofKöln  was reserved the right to hold the Arch-Chancellery ofItaly;;Among the high offices ofthe empire, the office as Arch-Chancellor was split into three, one for each ofthe clerigical electors. The Archbishop ofKöln  was reserved the right to hold the Arch-Chancellery ofItaly;;;;;;;;;x
+title_archcupbearer_of_hre;Arch-Cupbearer;Arch-Cupbearer;Arch-Cupbearer;;Arch-Cupbearer;;;;;;;;;x
+title_archcupbearer_of_hre_FOA;Your Serene Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+title_archcupbearer_of_hre_desc;The title ofArchcupbearer was reserved for the king ofBohemia, like most ofthe electors the king ofBohemia only assumed his responsibilties at the coronation ofthe emperor, where he unlike the other holders ofhigh offices did'nt beare any ofthe  the imperial regalia. Due to not carrying any ofthe regalia, the office ofArchcupbearer unlike the high offices didn't come with a augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofAlthann.;The title ofArchcupbearer was reserved for the king ofBohemia, like most ofthe electors the king ofBohemia only assumed his responsibilties at the coronation ofthe emperor, where he unlike the other holders ofhigh offices did'nt beare any ofthe  the imperial regalia. Due to not carrying any ofthe regalia, the office ofArchcupbearer unlike the high offices didn't come with a augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofAlthann.;The title ofArchcupbearer was reserved for the king ofBohemia, like most ofthe electors the king ofBohemia only assumed his responsibilties at the coronation ofthe emperor, where he unlike the other holders ofhigh offices did'nt beare any ofthe  the imperial regalia. Due to not carrying any ofthe regalia, the office ofArchcupbearer unlike the high offices didn't come with a augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofAlthann.;;The title ofArchcupbearer was reserved for the king ofBohemia, like most ofthe electors the king ofBohemia only assumed his responsibilties at the coronation ofthe emperor, where he unlike the other holders ofhigh offices did'nt beare any ofthe  the imperial regalia. Due to not carrying any ofthe regalia, the office ofArchcupbearer unlike the high offices didn't come with a augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofAlthann.;;;;;;;;;x
+title_archsteward_of_hre;Arch-Steward;Arch-Steward;Arch-Steward;;Arch-Steward;;;;;;;;;x
+title_archsteward_of_hre_FOA;Your Serene Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+title_archsteward_of_hre_desc;The title ofArchsteward was given to either the Duke ofBavaria or the count Palatine, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the golden orb. The golden orb was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofArchsteward, it was to be portrayed as a golden orb on a red field. The daily duties ofthe office was delegated to the count ofWaldburg.;The title ofArchsteward was given to either the Duke ofBavaria or the count Palatine, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the golden orb. The golden orb was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofArchsteward, it was to be portrayed as a golden orb on a red field. The daily duties ofthe office was delegated to the count ofWaldburg.;The title ofArchsteward was given to either the Duke ofBavaria or the count Palatine, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the golden orb. The golden orb was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofArchsteward, it was to be portrayed as a golden orb on a red field. The daily duties ofthe office was delegated to the count ofWaldburg.;;The title ofArchsteward was given to either the Duke ofBavaria or the count Palatine, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the golden orb. The golden orb was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofArchsteward, it was to be portrayed as a golden orb on a red field. The daily duties ofthe office was delegated to the count ofWaldburg.;;;;;;;;;x
+title_archmarshal_of_hre;Arch-Marshall;Arch-Marshall;Arch-Marshall;;Arch-Marshall;;;;;;;;;x
+title_archmarshal_of_hre_FOA;Your Serene Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+title_archmarshal_of_hre_desc;The title ofarchmarshal was given to the elector ofSaxony(firstly the duke ofSaxony, and after the dissultion ofthe old duchy the honor was granted to the duke ofSaxe-Wittenberg), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the sword. The sword was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchmarshal, it was to be portrayed as two crossed red swords on a black and white field. The daily duties ofthe office was delegated to the count ofPappenheim.;The title ofarchmarshal was given to the elector ofSaxony(firstly the duke ofSaxony, and after the dissultion ofthe old duchy the honor was granted to the duke ofSaxe-Wittenberg), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the sword. The sword was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchmarshal, it was to be portrayed as two crossed red swords on a black and white field. The daily duties ofthe office was delegated to the count ofPappenheim.;The title ofarchmarshal was given to the elector ofSaxony(firstly the duke ofSaxony, and after the dissultion ofthe old duchy the honor was granted to the duke ofSaxe-Wittenberg), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the sword. The sword was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchmarshal, it was to be portrayed as two crossed red swords on a black and white field. The daily duties ofthe office was delegated to the count ofPappenheim.;;The title ofarchmarshal was given to the elector ofSaxony(firstly the duke ofSaxony, and after the dissultion ofthe old duchy the honor was granted to the duke ofSaxe-Wittenberg), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the sword. The sword was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchmarshal, it was to be portrayed as two crossed red swords on a black and white field. The daily duties ofthe office was delegated to the count ofPappenheim.;;;;;;;;;x
+title_archchamberlain_of_hre;Arch-Chamberlain;Arch-Chamberlain;Arch-Chamberlain;;Arch-Chamberlain;;;;;;;;;x
+title_archchamberlain_of_hre_FOA;Your Serene Highness;Your Serene Highness;Your Serene Highness;;Your Serene Highness;;;;;;;;;x
+title_archchamberlain_of_hre_desc;The title ofarchchamberlin was given to the margrave ofBrandenburg, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the scepter. The scepter was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchchamberlin, it was to be portrayed as a golden scepter on a blue field. The daily duties ofthe office was delegated to the count ofHohenzollern(you could say, it stayed in the family..).;The title ofarchchamberlin was given to the margrave ofBrandenburg, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the scepter. The scepter was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchchamberlin, it was to be portrayed as a golden scepter on a blue field. The daily duties ofthe office was delegated to the count ofHohenzollern(you could say, it stayed in the family..).;The title ofarchchamberlin was given to the margrave ofBrandenburg, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the scepter. The scepter was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchchamberlin, it was to be portrayed as a golden scepter on a blue field. The daily duties ofthe office was delegated to the count ofHohenzollern(you could say, it stayed in the family..).;;The title ofarchchamberlin was given to the margrave ofBrandenburg, like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the scepter. The scepter was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchchamberlin, it was to be portrayed as a golden scepter on a blue field. The daily duties ofthe office was delegated to the count ofHohenzollern(you could say, it stayed in the family..).;;;;;;;;;x
+title_archtreasurer_of_hre;Arch-Treasurer;Arch-Treasurer;Arch-Treasurer;;Arch-Treasurer;;;;;;;;;x
+title_archtreasurer_of_hre_FOA;Your Serene Highness;Your Serene Highness;Your Serene Highness;;Your Serene Highness;;;;;;;;;x
+title_archtreasurer_of_hre_desc;The title ofarchtreasurer was given to the count Palatine in 1623 when the Duke ofBavaria replaced the count as Archsenechal(the title ofarchtreasurer had not exsisted before), when the Bavarian duke fell out offavour again the Count Palatine resumed the title ofArchsenchal and the duke ofHanover made the new archtreasurer(when the duke ofBavaria got reconciled the count reasumed the dignity ofArchtreasuer).  Like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the crown ofCharlemagne(Charlemagne never wore it as it was made several hundered years after his death). The crown was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchtreasurer, it was to be portrayed as a golden cown on a red field. The daily duties ofthe office was delegated to the count ofSinzendorf.;The title ofarchtreasurer was given to the count Palatine in 1623 when the Duke ofBavaria replaced the count as Archsenechal(the title ofarchtreasurer had not exsisted before), when the Bavarian duke fell out offavour again the Count Palatine resumed the title ofArchsenchal and the duke ofHanover made the new archtreasurer(when the duke ofBavaria got reconciled the count reasumed the dignity ofArchtreasuer).  Like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the crown ofCharlemagne(Charlemagne never wore it as it was made several hundered years after his death). The crown was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchtreasurer, it was to be portrayed as a golden cown on a red field. The daily duties ofthe office was delegated to the count ofSinzendorf.;The title ofarchtreasurer was given to the count Palatine in 1623 when the Duke ofBavaria replaced the count as Archsenechal(the title ofarchtreasurer had not exsisted before), when the Bavarian duke fell out offavour again the Count Palatine resumed the title ofArchsenchal and the duke ofHanover made the new archtreasurer(when the duke ofBavaria got reconciled the count reasumed the dignity ofArchtreasuer).  Like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the crown ofCharlemagne(Charlemagne never wore it as it was made several hundered years after his death). The crown was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchtreasurer, it was to be portrayed as a golden cown on a red field. The daily duties ofthe office was delegated to the count ofSinzendorf.;;The title ofarchtreasurer was given to the count Palatine in 1623 when the Duke ofBavaria replaced the count as Archsenechal(the title ofarchtreasurer had not exsisted before), when the Bavarian duke fell out offavour again the Count Palatine resumed the title ofArchsenchal and the duke ofHanover made the new archtreasurer(when the duke ofBavaria got reconciled the count reasumed the dignity ofArchtreasuer).  Like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, where he carried the crown ofCharlemagne(Charlemagne never wore it as it was made several hundered years after his death). The crown was also the augmentation(special symbol to be placed in the center ofthe coat ofarm) that came with the  office ofarchtreasurer, it was to be portrayed as a golden cown on a red field. The daily duties ofthe office was delegated to the count ofSinzendorf.;;;;;;;;;x
+title_archbannerbearer_of_hre;Arch-Bannerbearer;Arch-Bannerbearer;Arch-Bannerbearer;;Arch-Bannerbearer;;;;;;;;;x
+title_archbannerbearer_of_hre_FOA;Your Serene Highness;Your Serene Highness;Your Serene Highness;;Your Serene Highness;;;;;;;;;x
+title_archbannerbearer_of_hre_desc;The title ofarchbannerbearer was given to the duke ofHanover when the Duke ofBavaria replaced the count Palatine as Archsenechal for the second time in 1718(the title ofarchbannerbearer had not exsisted before), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, but at this point there was nothing left to carry and the office didn't come with an augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofZeppelin-Aschhausen.;The title ofarchbannerbearer was given to the duke ofHanover when the Duke ofBavaria replaced the count Palatine as Archsenechal for the second time in 1718(the title ofarchbannerbearer had not exsisted before), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, but at this point there was nothing left to carry and the office didn't come with an augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofZeppelin-Aschhausen.;The title ofarchbannerbearer was given to the duke ofHanover when the Duke ofBavaria replaced the count Palatine as Archsenechal for the second time in 1718(the title ofarchbannerbearer had not exsisted before), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, but at this point there was nothing left to carry and the office didn't come with an augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofZeppelin-Aschhausen.;;The title ofarchbannerbearer was given to the duke ofHanover when the Duke ofBavaria replaced the count Palatine as Archsenechal for the second time in 1718(the title ofarchbannerbearer had not exsisted before), like most ofthe electors the holder only assumed his responsibilties at the coronation ofthe emperor, but at this point there was nothing left to carry and the office didn't come with an augmentation(special symbol to be placed in the center ofthe coat ofarm). The daily duties ofthe office was delegated to the count ofZeppelin-Aschhausen.;;;;;;;;;x
+ADA;Archduke;Archduke;Archduke;;Archduke;;;;;;;;;x
+ADA_female;Archduchess;Archduchess;Archduchess;;Archduchess;;;;;;;;;x
+ADA_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+ADA_OF;Archduchy of;Archduchy of;Archduchy of;;Archduchy of;;;;;;;;;x
+KINGCA_female;Duchess;Herzogin;Herzogin;;Herzogin;;;;;;;;;x
+BURGRAVE;Burgrave;Burgrave;Burgrave;;Burgrave;;;;;;;;;x
+BURGRAVE_female;Burgravine;Burgravine;Burgravine;;Burgravine;;;;;;;;;x
+BURGRAVE_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+BURGRAVE_OF;Burgravate of;Burgravate of;Burgravate of;;Burgravate of;;;;;;;;;x
+CPALATIN;Count Palatine;Count Palatine;Count Palatine;;Count Palatine;;;;;;;;;x
+CPALATIN_FOA;your right honourableness;your right honourableness;your right honourableness;;your right honourableness;;;;;;;;;x
+CPALATIN_OF;Palatinate of;Palatinate of;Palatinate of;;Palatinate of;;;;;;;;;x
+GIUDICATO;Judge;Judge;Judge;;Judge;;;;;;;;;x
+GIUDICATO_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+GIUDICATO_OF;Giudicato of;Giudicato of;Giudicato of;;Giudicato of;;;;;;;;;x
+MARQUISATE;Marquis;Marquis;Marquis;;Marquis;;;;;;;;;x
+MARQUISATE_female;Marquise;Marquise;Marquise;;Marquise;;;;;;;;;x
+MARQUISATE_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+MARQUISATE_OF;Marquisate of;Marquisate of;Marquisate of;;Marquisate of;;;;;;;;;x
+MARGRAVE;Margrave;Margrave;Margrave;;Margrave;;;;;;;;;x
+MARGRAVE_female;Margravine;Margravine;Margravine;;Margravine;;;;;;;;;x
+MARGRAVE_FOA;Your Most Honourable;Your Most Honourable;Your Most Honourable;;Your Most Honourable;;;;;;;;;x
+MARGRAVE_OF;March of;March of;March of;;March of;;;;;;;;;x
+LANDGRAVE;Landgrave;Landgrave;Landgrave;;Landgrave;;;;;;;;;x
+LANDGRAVE_female;Landgravine;Landgravine;Landgravine;;Landgravine;;;;;;;;;x
+LANDGRAVE_OF;Landgraviate of;Landgraviate of;Landgraviate of;;Landgraviate of;;;;;;;;;x
+LANDGRAVE_FOA;Your Grace;Your Grace;Your Grace;;Your Grace;;;;;;;;;x
+HANSE;Hochmeister;Hochmeister;Hochmeister;;Hochmeister;;;;;;;;;x
+HANSE_female;Hochmeisterin;Hochmeisterin;Hochmeisterin;;Hochmeisterin;;;;;;;;;x
+HANSE_title_ruler_consort_female;Our Lady;Our Lady;Our Lady;;Our Lady;;;;;;;;;x
+HANSE_FOA;Your Grace;Votre Grace;Euer Gnaden;;Su Gracia;;;;;;;;;x
+HANSE_OF;Hochmeister of;Hochmeister of;Hochmeister of;;Hochmeister of;;;;;;;;;x
+Grand_duke;Grand Duke;Grand Duke;Grand Duke;;Grand Duke;;;;;;;;;x
+Grand_duke_foa;Grand Duke;Grand Duke;Grand Duke;;Grand Duke;;;;;;;;;x
+Grand_duchy_of;Grand Duchy of;Grand Duchy of;Grand Duchy of;;Grand Duchy of;;;;;;;;;x
+title_female_child;Her Highness;Her Highness;Her Highness;;Her Highness;;;;;;;;;x
+title_male_child;His Highness;His Highness;His Highness;;His Highness;;;;;;;;;x
+LANDGRAAFSCHAP;Landgrave of;Landgrave of;Landgrave of;;Landgrave of;;;;;;;;;x
+LANDGRAAFSCHAP_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+LANDGRAAFSCHAP_OF;Landgraviate of;Landgraviate of;Landgraviate of;;Landgraviate of;;;;;;;;;x
+VICOMTE;Viscount;Viscount;Viscount;;Viscount;;;;;;;;;x
+VICOMTE_OF;Viscounty of;Viscount of;Viscount of;;Viscount of;;;;;;;;;x
+VICOMTE_FOA;My Lord;My Lord;My Lord;;MyLord ;;;;;;;;;x
+VICOMTE_female;Viscountess;Viscountess;Viscountess;;Viscountess;;;;;;;;;x
+VICOMTE_title_ruler_consort;Viscount;Viscount;Viscount;;Viscount;;;;;;;;;x
+VICOMTE_title_ruler_consort_female;Viscountess;Viscountess;Viscountess;;Viscountess;;;;;;;;;x
+city_baron_occitan;Consul;Consul;Consul;;Consul;;;;;;;;;x
+CAPITOUL;Capitol;Capitol;Capitol;;Capitol;;;;;;;;;x
+CAPITOUL_FOA;Your Honor;Votre Honneur;Your Honor;;Your Honor;;;;;;;;;x
+MAGCONF;Magistrate;Magistrate;Magistrate;;Magistrate;;;;;;;;;x
+MAGCONF_OF;Confederacy of;Confederacy of;Confederacy of;;Confederacy of;;;;;;;;;x
+VOIEVODAT;Voievod;Voievod;Voievod;;Voievod;;;;;;;;;x
+VOIEVODAT_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+VOIEVODAT_OF;Voievodate of;Voievodate of;Voievodate of;;Voievodate of;;;;;;;;;x
+########################################;;;;;;;;;;;;;;
+#GERMAN;;;;;;;;;;;;;;
+baron_german;Freeman;Freiherr;Freiherr;;Freiherr;;;;;;;;;x
+baron_female_german;Freewoman;Freifrau;Freifrau;;Freifrau;;;;;;;;;x
+baron_title_ruler_consort_german;Freeman;Freiherr;Freiherr;;Freiherr;;;;;;;;;x
+baron_title_ruler_consort_female_german;Freewoman;Freifrau;Freifrau;;Freifrau;;;;;;;;;x
+emperor_german;Kaiser;Kaiser;Kaiser;;Káiser;;;;;;;;;x
+emperor_female_german;Kaiserin;Kaiserin;Kaiserin;;Emperatriz;;;;;;;;;x
+emperor_title_ruler_consort_female_german;Kaiserin;Kaiserin;Kaiserin;;Kaiserin;;;;;;;;;x
+city_count_german;Bürgermeister;Bürgermeister;Bürgermeister;;Bürgermeister;;;;;;;;;x
+city_county_of_german;Free City of;Free City of;Free City of;;Free City of;;;;;;;;;x
+city_duchy_of_german;Free Imperial City of;Free Imperial City of;Free Imperial City of;;Free Imperial City of;;;;;;;;;x
+city_kingdom_of_german;City League of;City League of;City League of;;City League of;;;;;;;;;x
+city_empire_of_german;Imperial League of;Imperial League of;Imperial League of;;Imperial League of;;;;;;;;;x
+#GREEK;;;;;;;;;;;;;;
+king_greek;Despot;Despot;Despot;;Despot;;;;;;;;;x
+king_female_greek;Despoina;Despoina;Despoina;;Despoina;;;;;;;;;x
+king_title_ruler_consort_greek;Despot;Despot;Despot;;Despot;;;;;;;;;x
+king_title_ruler_consort_female_greek;Despoina;Despoina;Despoina;;Despoina;;;;;;;;;x
+emperor_greek;Basileus;Basileus;Basileus;;Basileus;;;;;;;;;x
+emperor_female_greek;Basilissa;Basilissa;Basilissa;;Basilissa;;;;;;;;;x
+emperor_title_ruler_consort_female_greek;Basilissa;Basilissa;Basilissa;;Basilissa;;;;;;;;;x
+title_prince_greek;Kaisar;Kaisar;Kaisar;;Kaisar;;;;;;;;;x
+title_prince_female_greek;Kaisarissa;Kaisarissa;Kaisarissa;;Kaisarissa;;;;;;;;;x
+barony_of_greek;Bandon of;Bandon of;Bandon of;;Bandon of;;;;;;;;;x
+count_greek;Droungarios;Droungarios;Droungarios;;Droungarios;;;;;;;;;x
+county_of_greek;Droungos of;Droungos of;Droungos of;;Droungos of;;;;;;;;;x
+duke_greek;Strategos;Strategos;Strategos;;Strategos;;;;;;;;;x
+duchy_of_greek;Thema of;Thema of;Thema of;;Thema of;;;;;;;;;x
+kingdom_of_greek;Despotate of;Despotate of;Despotate of;;Despotate of;;;;;;;;;x
+city_county_of_greek;Polis of;Polis of;Polis of;;Polis of;;;;;;;;;x
+city_duchy_of_greek;Politeia of;Politeia of;Politeia of;;Politeia of;;;;;;;;;x
+city_kingdom_of_greek;Arch-Politeia of;Arch-Politeia of;Arch-Politeia of;;Arch-Politeia of;;;;;;;;;x
+city_empire_of_greek;Dynasteia of;Dynasteia of;Dynasteia of;;Dynasteia of;;;;;;;;;x
+#SWEDISH, DANISH and NORWEGIAN;;;;;;;;;;;;;;
+duke_north_germanic;Jarl;Jarl;Jarl;;Jarl;;;;;;;;;x
+duke_female_north_germanic;Frú;Frú;Frú;;Frú;;;;;;;;;x
+duchy_of_north_germanic;Jarldom of;Jarldom of;Jarldom of;;Jarldom of;;;;;;;;;x
+#RUSSIAN;;;;;;;;;;;;;;x
+baron_russian;Boyar;Boyar;Boyar;;Boyar;;;;;;;;;x
+baron_female_russian;Boyarin;Boyarin;Boyarin;;Boyarin;;;;;;;;;x
+baron_title_ruler_consort_russian;Boyar;Boyar;Boyar;;Boyar;;;;;;;;;x
+baron_title_ruler_consort_female_russian;Boyarin;Boyarin;Boyarin;;Boyarin;;;;;;;;;x
+emperor_russian;Tsar;Tsar;Tsar;;Tsar;;;;;;;;;x
+emperor_female_russian;Tsarina;Tsarina;Tsarina;;Tsarina;;;;;;;;;
+emperor_title_ruler_consort_russian;Tsar;Tsar;Tsar;;Tsar;;;;;;;;;x
+emperor_title_ruler_consort_female_russian;Tsarina;Tsarina;Tsarina;;Tsarina;;;;;;;;;x
+empire_of_russian;Tsardom of;Tsardom of;Tsardom of;;Tsardom of;;;;;;;;;x
+#SCOTTISH;;;;;;;;;;;;;;x
+count_scottish;Earl;Earl;Earl;;Earl;;;;;;;;;x
+count_title_ruler_consort_scottish;Earl;Earl;Earl;;Earl;;;;;;;;;x
+duke_scottish;Mormaer;Mormaer;Mormaer;;Mormaer;;;;;;;;;x
+duke_title_ruler_consort_scottish;Mormaer;Mormaer;Mormaer;;Mormaer;;;;;;;;;x
+county_of_scottish;Earldom of;Earldom of;Earldom of;;Earldom of;;;;;;;;;x
+duchy_of_scottish;Mormaerdom of;Mormaerdom of;Mormaerdom of;;Mormaerdom of;;;;;;;;;
+city_baron_scottish;Bailie;Bailie;Bailie;;Bailie;;;;;;;;;x
+city_count_scottish;Provost;Provost;Provost;;Provost;;;;;;;;;x
+city_barony_of_scottish;Burgh of;Burgh of;Burgh of;;Burgh of;;;;;;;;;x
+city_county_of_scottish;Burgh of;Burgh of;Burgh of;;Burgh of;;;;;;;;;x
+#IRISH;;;;;;;;;;;;;;x
+duke_irish;King;King;King;;King;;;;;;;;;x
+duke_female_irish;Queen;Queen;Queen;;Queen;;;;;;;;;x
+duke_title_ruler_consort_irish;King;King;King;;King;;;;;;;;;x
+duke_title_ruler_consort_female_irish;Queen;Queen;Queen;;Queen;;;;;;;;;x
+king_irish;High King;High King;High King;;High King;;;;;;;;;x
+king_female_irish;High Queen;High Queen;High Queen;;High Queen;;;;;;;;;
+king_title_ruler_consort_irish;High King;High King;High King;;High King;;;;;;;;;x
+king_title_ruler_consort_female_irish;High Queen;High Queen;High Queen;;High Queen;;;;;;;;;x
+duchy_of_irish;Kingdom of;Kingdom of;Kingdom of;;Kingdom of;;;;;;;;;x
+kingdom_of_irish;High Kingdom of;High Kingdom of;High Kingdom of;;High Kingdom of;;;;;;;;;x
+#WELSH;;;;;;;;;;;;;;x
+count_welsh;Earl;Earl;Earl;;Earl;;;;;;;;;x
+count_title_ruler_consort_welsh;Earl;Earl;Earl;;Earl;;;;;;;;;x
+county_of_welsh;Earldom of;Earldom of;Earldom of;;Earldom of;;;;;;;;;x
+duchy_of_welsh;Principality of;Principality of;Principality of;;Principality of;;;;;;;;;x
+kingdom_of_welsh;Kingdom of;Kingdom of;Kingdom of;;Kingdom of;;;;;;;;;x
+empire_of_welsh;Kingdom of;Kingdom of;Kingdom of;;Kingdom of;;;;;;;;;
+duke_welsh;Prince;Prince;Prince;;Prince;;;;;;;;;x
+duke_female_welsh;Princess;Princess;Princess;;Princess;;;;;;;;;x
+duke_title_ruler_consort_welsh;Prince;Prince;Prince;;Prince;;;;;;;;;x
+duke_title_ruler_consort_female_welsh;Princess;Princess;Princess;;Princess;;;;;;;;;x
+#LITHUANIAN;;;;;;;;;;;;;;x
+duke_lithuanian;Duke;Duke;Duke;;Duke;;;;;;;;;x
+duke_lithuanian_female;Duchess;Duchess;Duchess;;Duchess;;;;;;;;;x
+king_lithuanian;Grand Duke;Grand Duke;Grand Duke;;Grand Duke;;;;;;;;;x
+king_lithuanian_female;Grand Duchess;Grand Duchess;Grand Duchess;;Grand Duchess;;;;;;;;;x
+king_title_ruler_consort_lithuanian;Duke;Duke;Duke;;Duke;;;;;;;;;x
+king_title_ruler_consort_female_lithuanian;Duchess;Duchess;Duchess;;Duchess;;;;;;;;;
+emperor_lithuanian_female;Queen;Queen;Queen;;Queen;;;;;;;;;x
+emperor_title_ruler_consort_lithuanian;King;King;King;;King;;;;;;;;;x
+emperor_title_ruler_consort_female_lithuanian;Queen;Queen;Queen;;Queen;;;;;;;;;x
+kingdom_of_lithuanian;Grand Duchy of;Grand Duchy of;Grand Duchy of;;Grand Duchy of;;;;;;;;;x
+#ENGLISH;;;;;;;;;;;;;;x
+count_english;Earl;Earl;Earl;;Earl;;;;;;;;;x
+count_title_ruler_consort_english;Earl;Earl;Earl;;Earl;;;;;;;;;x
+county_of_english;Earldom of;Earldom of;Earldom of;;Earldom of;;;;;;;;;x
+city_baron_english;Sheriff;Sheriff;Sheriff;;Sheriff;;;;;;;;;x
+city_count_english;High Sheriff;High Sheriff;High Sheriff;;High Sheriff;;;;;;;;;x
+#SAXON;;;;;;;;;;;;;;
+baron_saxon;Thegn;Thegn;Thegn;;Thegn;;;;;;;;;x
+baron_title_ruler_consort_saxon;Thegn;Thegn;Thegn;;Thegn;;;;;;;;;x
+duke_saxon;Earl;Earl;Earl;;Earl;;;;;;;;;x
+duke_female_saxon;Hlaefdige;Hlaefdige;Hlaefdige;;Hlaefdige;;;;;;;;;x
+duke_title_ruler_consort_saxon;Earl;Earl;Earl;;Earl;;;;;;;;;x
+duke_title_ruler_consort_female_saxon;Hlaefdige;Hlaefdige;Hlaefdige;;Hlaefdige;;;;;;;;;
+duchy_of_saxon;Earldom of;Earldom of;Earldom of;;Earldom of;;;;;;;;;x
+city_baron_saxon;Tithingman;Tithingman;Tithingman;;Tithingman;;;;;;;;;x
+city_count_saxon;Provost;Provost;Provost;;Provost;;;;;;;;;x
+city_barony_of_saxon;Tithing of;Tithing of;Tithing of;;Tithing of;;;;;;;;;x
+city_county_of_saxon;Burgh;Burgh;Burgh;;Burgh;;;;;;;;;x
+county_of_saxon;Shire of;Shire of;Shire of;;Shire of;;;;;;;;;x
+#CASTILLANCATALAN;;;;;;;;;;;;;;x
+title_prince_castillan;Infante;Infante;Infante;;Infante;;;;;;;;;x
+title_prince_female_castillan;Infanta;Infanta;Infanta;;Infanta;;;;;;;;;x
+title_prince_catalan;Infante;Infante;Infante;;Infante;;;;;;;;;x
+title_prince_female_catalan;Infanta;Infanta;Infanta;;Infanta;;;;;;;;;x
+title_prince_basque;Infante;Infante;Infante;;Infante;;;;;;;;;x
+title_prince_female_basque;Infanta;Infanta;Infanta;;Infanta;;;;;;;;;
+#NORMAN;;;;;;;;;;;;;;x
+baron_norman;Chatelain;Chatelain;Chatelain;;Chatelain;;;;;;;;;x
+baron_female_norman;Chatelaine;Chatelaine;Chatelaine;;Chatelaine;;;;;;;;;x
+baron_title_ruler_consort_norman;Chatelain;Chatelain;Chatelain;;Chatelain;;;;;;;;;x
+baron_title_ruler_consort_female_norman;Chatelaine;Chatelaine;Chatelaine;;Chatelaine;;;;;;;;;x
+barony_of_norman;Chatellenie of;Chatellenie of;Chatellenie of;;Chatellenie of;;;;;;;;;x
+city_baron_norman;Baillif;Baillif;Baillif;;Baillif;;;;;;;;;
+city_barony_of_norman;Bailiwick of;Bailiwick of;Bailiwick of;;Bailiwick of;;;;;;;;;x
+#Pommeranian;;;;;;;;;;;;;;x
+duchy_of_pommeranian;Principality of;Principality of;Principality of;;Principality of;;;;;;;;;x
+duke_pommeranian;Prince;Prince;Prince;;Prince;;;;;;;;;x
+duke_female_pommeranian;Princess;Princess;Princess;;Princess;;;;;;;;;x
+duke_title_ruler_consort_pommeranian;Prince;Prince;Prince;;Prince;;;;;;;;;x
+duke_title_ruler_consort_female_pommeranian;Princess;Princess;Princess;;Princess;;;;;;;;;x
+#Croatian;;;;;;;;;;;;;;
+duke_croatian;Ban;Ban;Ban;;Ban;;;;;;;;;x
+duchy_of_croatian;Banat of;Banat of;Banat of;;Banat of;;;;;;;;;x
+#Serbian;;;;;;;;;;;;;;x
+king_serbian;Tsar;Tsar;Tsar;;Tsar;;;;;;;;;x
+king_female_serbian;Tsarina;Tsarina;Tsarina;;Tsarina;;;;;;;;;x
+king_title_ruler_consort_serbian;Tsar;Tsar;Tsar;;Tsar;;;;;;;;;
+king_title_ruler_consort_female_serbian;Tsarina;Tsarina;Tsarina;;Tsarina;;;;;;;;;x
+kingdom_of_serbian;Tsardom of;Tsardom of;Tsardom of;;Tsardom of;;;;;;;;;x
+#Bulgarian;;;;;;;;;;;;;;
+king_bulgarian;Tsar;Tsar;Tsar;;Tsar;;;;;;;;;x
+king_female_bulgarian;Tsarina;Tsarina;Tsarina;;Tsarina;;;;;;;;;x
+king_title_ruler_consort_bulgarian;Tsar;Tsar;Tsar;;Tsar;;;;;;;;;x
+king_title_ruler_consort_female_bulgarian;Tsarina;Tsarina;Tsarina;;Tsarina;;;;;;;;;x
+#PAGAN;;;;;;;;;;;;;;x
+temple_duke_norse_pagan;Hofgoði;Hofgoði;Hofgoði;;Hofgoði;;;;;;;;;
+temple_duke_female_norse_pagan;Hofgyðja;Hofgyðja;Hofgyðja;;Hofgyðja;;;;;;;;;x
+count_norse_pagan;Thane;Thane;Thane;;Thane;;;;;;;;;x
+count_norse_pagan_female;Thane;Thane;Thane;;Thane;;;;;;;;;x
+baron_norse_pagan;Hersir;Hersir;Hersir;;Hersir;;;;;;;;;x
+baron_norse_pagan_female;Hersir;Hersir;Hersir;;Hersir;;;;;;;;;
+temple_king_norse_pagan;Allsherjargoði;Allsherjargoði;Allsherjargoði;;Allsherjargoði;;;;;;;;;x
+temple_baron_norse_pagan;Goði;Goði;Goði;;Goði;;;;;;;;;x
+city_baron_norse_pagan;Ålderman;Ålderman;Ålderman;;Ålderman;;;;;;;;;x
+city_count_norse_pagan;Lagman;Lagman;Lagman;;Lagman;;;;;;;;;x
+#JEWISH;;;;;;;;;;;;;;x
+job_spiritual_jewish_group;Chief Rabbi;Chief Rabbi;Chief Rabbi;;Chief Rabbi;;;;;;;;;x
+temple_baron_jewish_group;Rabbi;Rabbi;Rabbi;;Rabbi;;;;;;;;;x
+temple_count_jewish_group;Great Rabbi;Great Rabbi;Great Rabbi;;Great Rabbi;;;;;;;;;x
+temple_duke_jewish_group;Melech;Melech;Melech;;Melech;;;;;;;;;x
+temple_king_jewish_group;Melech haMelachim;Melech haMelachim;Melech haMelachim;;Melech haMelachim;;;;;;;;;x
+temple_kingdom_of_jewish_group;Great Sinhedrin of;Great Sinhedrin of;Great Sinhedrin of;;Great Sinhedrin of;;;;;;;;;x
+temple_duchy_of_jewish_group;Lesser Sinhedrin of;Lesser Sinhedrin of;Lesser Sinhedrin of;;Lesser Sinhedrin of;;;;;;;;;x
+temple_county_of_jewish_group;Beth din of;Beth din of;Beth din of;;Beth din of;;;;;;;;;x
+temple_barony_of_jewish_group;Synagogue of;Synagogue of;Synagogue of;;Synagogue of;;;;;;;;;x
+GRANDDUKE_OF;Grand Duchy of;Grand Duchy of;Grand Duchy of;;Grand Duchy of;;;;;;;;;
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+#CHRISTIAN;;;;;;;;;;;;;;x
+temple_barony_of_christian;Diocese of;Diocese of;Diocese of;;Diocese of;;;;;;;;;x
+#ITALIAN(venetian);;;;;;;;;;;;;;x
+city_count_venetian;Mayor;Mayor;Mayor;;Mayor;;;;;;;;;x
+city_county_of_venetian;Commune of;Commune of;Commune of;;Commune of;;;;;;;;;x
+city_duke_venetian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_king_venetian;Doge;Doge;Doge;;Doge;;;;;;;;;
+city_emperor_venetian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_duchy_of_venetian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+city_kingdom_of_venetian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+#ITALIAN(central);;;;;;;;;;;;;;x
+city_count_central_italian;Mayor;Mayor;Mayor;;Mayor;;;;;;;;;x
+city_county_of_central_italian;Commune of;Commune of;Commune of;;Commune of;;;;;;;;;x
+city_duke_central_italian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_king_central_italian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_emperor_central_italian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_duchy_of_central_italian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;
+city_kingdom_of_central_italian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;
+#ITALIAN(southern);;;;;;;;;;;;;;
+city_count_southern_italian;Mayor;Mayor;Mayor;;Mayor;;;;;;;;;
+city_county_of_southern_italian;Commune of;Commune of;Commune of;;Commune of;;;;;;;;;
+#ITALIAN(ligurian);;;;;;;;;;;;;;
+city_count_ligurian;Mayor;Mayor;Mayor;;Mayor;;;;;;;;;x
+city_county_of_ligurian;Commune of;Commune of;Commune of;;Commune of;;;;;;;;;
+city_duke_ligurian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_king_ligurian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_emperor_ligurian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_duchy_of_ligurian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+city_kingdom_of_ligurian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+#ITALIAN(langobardisch);;;;;;;;;;;;;;x
+city_count_langobardisch;Mayor;Mayor;Mayor;;Mayor;;;;;;;;;x
+city_county_of_langobardisch;Commune of;Commune of;Commune of;;Commune of;;;;;;;;;
+city_duke_langobardisch;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_king_langobardisch;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_emperor_langobardisch;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_duchy_of_langobardisch;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+city_kingdom_of_langobardisch;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+#ITALIAN(padan);;;;;;;;;;;;;;x
+city_count_italian;Mayor;Mayor;Mayor;;Mayor;;;;;;;;;x
+city_county_of_italian;Commune of;Commune of;Commune of;;Commune of;;;;;;;;;
+city_duke_italian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_king_italian;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_emperor_italian;Doge;Doge;Doge;;Doge;;;;;;;;;
+city_duchy_of_italian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+city_kingdom_of_italian;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+temple_king_pagan_group;Godi;Godi;Godi;;Godi;;;;;;;;;x
+temple_duke_pagan_group;Godi;Godi;Godi;;Godi;;;;;;;;;x
+temple_count_pagan_group;Godi;Godi;Godi;;Godi;;;;;;;;;x
+temple_baron_pagan_group;Godi;Godi;Godi;;Godi;;;;;;;;;x
+temple_kingdom_of_pagan_group;Jarldom of;Jarldom of;Jarldom of;;Jarldom of;;;;;;;;;x
+temple_duchy_of_pagan_group;Jarldom of;Jarldom of;Jarldom of;;Jarldom of;;;;;;;;;
+temple_county_of_pagan_group;Jarldom of;Jarldom of;Jarldom of;;Jarldom of;;;;;;;;;x
+temple_barony_of_pagan_group;Høvdingdømme of;Høvdingdømme of;Høvdingdømme of;;Høvdingdømme of;;;;;;;;;x
+barony_of_pagan_group;Høvdingdømme of;Høvdingdømme of;Høvdingdømme of;;Høvdingdømme of;;;;;;;;;x
+duke_pagan_group;Jarl;Jarl;Jarl;;Jarl;;;;;;;;;x
+count_pagan_group;Høvding;Høvding;Høvding;;Høvding;;;;;;;;;x
+baron_pagan_group;Hirdmann;Hirdmann;Hirdmann;;Hirdmann;;;;;;;;;x
+duchy_of_pagan_group;Jarldom of;Jarldom of;Jarldom of;;Jarldom of;;;;;;;;;x
+county_of_pagan_group;Att of;Att of;Att of;;Att of;;;;;;;;;
+temple_king_other_pagan_group;High Diviner;High Diviner;High Diviner;;High Diviner;;;;;;;;;x
+temple_duke_other_pagan_group;Reverred Diviner;Reverred Diviner;Reverred Diviner;;Reverred Diviner;;;;;;;;;x
+temple_count_other_pagan_group;Diviner;Diviner;Diviner;;Diviner;;;;;;;;;x
+temple_baron_other_pagan_group;Local Diviner;Local Diviner;Local Diviner;;Local Diviner;;;;;;;;;x
+temple_kingdom_of_other_pagan_group;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+temple_duchy_of_other_pagan_group;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_county_of_other_pagan_group;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_barony_of_other_pagan_group;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+barony_of_other_pagan_group;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+duke_other_pagan_group;Chief;Chief;Chief;;Chief;;;;;;;;;x
+count_other_pagan_group;Tribal Chief;Tribal Chief;Tribal Chief;;Tribal Chief;;;;;;;;;x
+baron_other_pagan_group;Local Chief;Local Chief;Local Chief;;Local Chief;;;;;;;;;x
+duchy_of_other_pagan_group;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+county_of_other_pagan_group;Tribal Chiefdom of;Tribal Chiefdom of;Tribal Chiefdom of;;Tribal Chiefdom of;;;;;;;;;x
+king_other_pagan_group;High Chief;High Chief;High Chief;;High Chief;;;;;;;;;x
+kingdom_of_other_pagan_group;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+temple_king_baltic_pagan_group;High Diviner;High Diviner;High Diviner;;High Diviner;;;;;;;;;x
+temple_duke_baltic_pagan_group;Reverred Diviner;Reverred Diviner;Reverred Diviner;;Reverred Diviner;;;;;;;;;x
+temple_count_baltic_pagan_group;Diviner;Diviner;Diviner;;Diviner;;;;;;;;;x
+temple_baron_baltic_pagan_group;Local Diviner;Local Diviner;Local Diviner;;Local Diviner;;;;;;;;;x
+temple_kingdom_of_baltic_pagan_group;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+temple_duchy_of_baltic_pagan_group;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_county_of_baltic_pagan_group;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_barony_of_baltic_pagan_group;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+barony_of_baltic_pagan_group;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+duke_baltic_pagan_group;Chief;Chief;Chief;;Chief;;;;;;;;;x
+count_baltic_pagan_group;Tribal Chief;Tribal Chief;Tribal Chief;;Tribal Chief;;;;;;;;;x
+baron_baltic_pagan_group;Local Chief;Local Chief;Local Chief;;Local Chief;;;;;;;;;x
+duchy_of_baltic_pagan_group;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+county_of_baltic_pagan_group;Tribal Chiefdom of;Tribal Chiefdom of;Tribal Chiefdom of;;Tribal Chiefdom of;;;;;;;;;x
+king_baltic_pagan_group;High Chief;High Chief;High Chief;;High Chief;;;;;;;;;x
+kingdom_of_baltic_pagan_group;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+#GAELIC;;;;;;;;;;;;;;x
+count_norsegaelic;Earl;Earl;Earl;;Earl;;;;;;;;;x
+count_title_ruler_consort_norsegaelic;Earl;Earl;Earl;;Earl;;;;;;;;;x
+duke_norsegaelic;Thane;Thane;Thane;;Thane;;;;;;;;;x
+duke_title_ruler_consort_norsegaelic;Thane;Thane;Thane;;Thane;;;;;;;;;x
+county_of_norsegaelic;Earldom of;Earldom of;Earldom of;;Earldom of;;;;;;;;;x
+duchy_of_norsegaelic;Thegn of;Thegn of;Thegn of;;Thegn of;;;;;;;;;x
+city_baron_norsegaelic;Bailie;Bailie;Bailie;;Bailie;;;;;;;;;x
+city_count_norsegaelic;Provost;Provost;Provost;;Provost;;;;;;;;;x
+city_barony_of_norsegaelic;Burgh of;Burgh of;Burgh of;;Burgh of;;;;;;;;;x
+city_county_of_norsegaelic;Burgh of;Burgh of;Burgh of;;Burgh of;;;;;;;;;x
+#ARABIC;;;;;;;;;;;;;;x
+baron_maghreb_african;Wâli;Wâli;Wâli;;Valí;;;;;;;;;x
+barony_of_maghreb_african;Wilayah of;Wilaya de;Wilayah von;;Vilayato de;;;;;;;;;x
+count_maghreb_african;Sheikh;Cheikh;Scheich;;Jeque;;;;;;;;;x
+county_of_maghreb_african;Sheikhdom of;Cheikat de;Scheichtum von;;Dominio del Jeque;;;;;;;;;x
+duke_maghreb_african;Emir;Émir;Emir;;Emir;;;;;;;;;x
+duke_female_maghreb_african;Emira;Émirat;Emirin;;Emira;;;;;;;;;x
+duchy_of_maghreb_african;Emirate of;Émirat de;Emirat von;;Emirato de;;;;;;;;;x
+king_maghreb_african;Sultan;Sultan;Sultan;;Sultán;;;;;;;;;x
+king_female_maghreb_african;Sultana;Sultane;Sultanin;;Sultana;;;;;;;;;x
+kingdom_of_maghreb_african;Sultanate of;Sultanat de;Sultanat von;;Sultanato de;;;;;;;;;x
+baron_berber;Wâli;Wâli;Wâli;;Valí;;;;;;;;;x
+barony_of_berber;Wilayah of;Wilaya de;Wilayah von;;Vilayato de;;;;;;;;;x
+count_berber;Sheikh;Cheikh;Scheich;;Jeque;;;;;;;;;x
+county_of_berber;Sheikhdom of;Cheikat de;Scheichtum von;;Dominio del Jeque;;;;;;;;;x
+duke_berber;Emir;Émir;Emir;;Emir;;;;;;;;;x
+duke_female_berber;Emira;Émirat;Emirin;;Emira;;;;;;;;;x
+duchy_of_berber;Emirate of;Émirat de;Emirat von;;Emirato de;;;;;;;;;x
+king_berber;Sultan;Sultan;Sultan;;Sultán;;;;;;;;;x
+king_female_berber;Sultana;Sultane;Sultanin;;Sultana;;;;;;;;;x
+kingdom_of_berber;Sultanate of;Sultanat de;Sultanat von;;Sultanato de;;;;;;;;;x
+baron_sicilian_arabic;Wâli;Wâli;Wâli;;Valí;;;;;;;;;x
+barony_of_sicilian_arabic;Wilayah of;Wilaya de;Wilayah von;;Vilayato de;;;;;;;;;x
+count_sicilian_arabic;Sheikh;Cheikh;Scheich;;Jeque;;;;;;;;;x
+county_of_sicilian_arabic;Sheikhdom of;Cheikat de;Scheichtum von;;Dominio del Jeque;;;;;;;;;x
+duke_sicilian_arabic;Emir;Émir;Emir;;Emir;;;;;;;;;x
+duke_female_sicilian_arabic;Emira;Émirat;Emirin;;Emira;;;;;;;;;x
+duchy_of_sicilian_arabic;Emirate of;Émirat de;Emirat von;;Emirato de;;;;;;;;;x
+king_sicilian_arabic;Sultan;Sultan;Sultan;;Sultán;;;;;;;;;x
+king_female_sicilian_arabic;Sultana;Sultane;Sultanin;;Sultana;;;;;;;;;x
+kingdom_of_andalusian_arabic;Sultanate of;Sultanat de;Sultanat von;;Sultanato de;;;;;;;;;x
+baron_andalusian_arabic;Wâli;Wâli;Wâli;;Valí;;;;;;;;;x
+barony_of_andalusian_arabic;Wilayah of;Wilaya de;Wilayah von;;Vilayato de;;;;;;;;;x
+count_andalusian_arabic;Sheikh;Cheikh;Scheich;;Jeque;;;;;;;;;x
+county_of_andalusian_arabic;Sheikhdom of;Cheikat de;Scheichtum von;;Dominio del Jeque;;;;;;;;;x
+duke_andalusian_arabic;Emir;Émir;Emir;;Emir;;;;;;;;;x
+duke_female_andalusian_arabic;Emira;Émirat;Emirin;;Emira;;;;;;;;;x
+duchy_of_andalusian_arabic;Emirate of;Émirat de;Emirat von;;Emirato de;;;;;;;;;x
+king_andalusian_arabic;Sultan;Sultan;Sultan;;Sultán;;;;;;;;;x
+king_female_andalusian_arabic;Sultana;Sultane;Sultanin;;Sultana;;;;;;;;;x
+kingdom_of_andalusian_arabic;Sultanate of;Sultanat de;Sultanat von;;Sultanato de;;;;;;;;;x
+GRANDduchy_of;Grand Duchy of;Grand Duchy of;Grand Duchy of;;Grand Duchy of;;;;;;;;;x
+DUKEDESPOT;Despot;Despot;Despot;;Despot;;;;;;;;;x
+DUKEDESPOT_FOA;Your Lordship;Your Lordship;Your Lordship;;Your Lordship;;;;;;;;;x
+DUKEDESPOT_OF;Despotate of;Despotate of;Despotate of;;Despotate of;;;;;;;;;x
+JUND_OF;Jund of;Jund of;Jund of;;Jund of;;;;;;;;;x
+PRINCE;Prince;Prince;Prince;;Prince;;;;;;;;;x
+PRINCE_female;Princess;Princesse;Princesse;;Princesse;;;;;;;;;x
+Oasis_OF;Oasis of;Oasis de;Oasis von;;Oasis de;;;;;;;;;x
+DE_JURE_DUCHY__SAXON_DESC;The §Y$PROVINCE$§W is traditionally considered a part ofthe §Y$EARLDOM$§W. ;La province de §Y$PROVINCE$§W fait traditionnellement partie du duché de §Y$DUCHY$§W. ;Die §Y$PROVINZ$§W wird traditionell als Teil des §Y$DUCHY$§W angesehen. ;;La provincia de §Y$PROVINCE$§W se considera, por tradición, parte del ducado de §Y$DUCHY$§W.;;;;;;;;;x
+DE_JURE_DUCHY_SAXON_DESC_NO_HOLDER;Currently, this earldom is held by no one.;Actuellement, ce duché n’est détenu par personne.;Momentan ist dieses Herzogtum in niemandes Besitz.;;Este ducado no tiene propietario en estos momentos.;;;;;;;;;x
+DE_JURE_DUCHY-SAXON_DESC_HOLDER_1;§Y$EARL$§W is the current earl, and also de facto controller of§Y$PROVINCE$§W.;§Y$DUKE$§W est l’actuel duc et contrôle, de facto, la province de §Y$PROVINCE$§W.;§Y$DUKE$§W ist der derzeitige Herzog und kontrolliert auch de facto §Y$PROVINZ$§W.;;§Y$DUKE$§W es el duque actual y dirigente de facto de §Y$PROVINCE$§W.;;;;;;;;;x
+DE_JURE_DUCHY_SAXON_DESC_HOLDER_2;§Y$EARL$§W is the current earl, who will strive to regain actual control of§Y$PROVINCE$§W.;§Y$DUKE$§W est l’actuel duc et se battra pour reprendre le contrôle de la province de §Y$PROVINCE$§W.;§Y$DUKE$§W ist der derzeitige Herzog, der sich bemüht, die Kontrolle über §Y$PROVINZ$§W wiederzuerlangen.;;§Y$DUKE$§W es el duque actual, que intentará retomar el control de §Y$PROVINCE$§W.;;;;;;;;;x
+TRIGGER_COUNTY_SAXON;Shire;Comté;Grafschaft;;Condado;;;;;;;;;x
+TRIGGER_DUCHY_SAXON;Earldom;Duché;Herzogtum;;Ducado;;;;;;;;;x
+baron_somali;Wâli;Wâli;Wâli;;Valí;;;;;;;;;x
+barony_of_somali;Wilayah of;Wilaya de;Wilayah von;;Vilayato de;;;;;;;;;x
+count_somali;Sheikh;Cheikh;Scheich;;Jeque;;;;;;;;;x
+county_of_somali;Sheikhdom of;Cheikat de;Scheichtum von;;Dominio del Jeque;;;;;;;;;x
+duke_somali;Emir;Émir;Emir;;Emir;;;;;;;;;x
+duke_female_somali;Emira;Émirat;Emirin;;Emira;;;;;;;;;x
+duchy_of_somali;Emirate of;Émirat de;Emirat von;;Emirato de;;;;;;;;;x
+king_somali;Sultan;Sultan;Sultan;;Sultán;;;;;;;;;x
+king_female_somali;Sultana;Sultane;Sultanin;;Sultana;;;;;;;;;x
+kingdom_of_somali;Sultanate of;Sultanat de;Sultanat von;;Sultanato de;;;;;;;;;x
+king_ethiopian;Ras;Ras;Ras;;Ras;;;;;;;;;x
+EARLDOM_OF;Earldom of;Earldom of;Earldom of;;Earldom of;;;;;;;;;x
+EARLDOM_FOA;Earl;Earl;Earl;;Earl;;;;;;;;;x
+LEAGUE_FOA;Condottiero;Condottiero;Condottiero;;Condottiero;;;;;;;;;x
+LEAGUE_OF;Alliance of;Alliance of;Alliance of;;Alliance of;;;;;;;;;x
+city_duke_tuscan;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_king_tuscan;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_emperor_tuscan;Doge;Doge;Doge;;Doge;;;;;;;;;x
+city_duchy_of_tuscan;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+city_kingdom_of_tuscan;Most Serene Republic of;Most Serene Republic of;Most Serene Republic of;;Most Serene Republic of;;;;;;;;;x
+city_king_russian;Knyaz;Knyaz;Knyaz;;Knyaz;;;;;;;;;x
+city_count_russian;Posadnik;Posadnik;Posadnik;;Posadnik;;;;;;;;;x
+city_duke_russian;Grand Posadnik;Grand Posadnik;Grand Posadnik;;Grand Posadnik;;;;;;;;;x
+;;;;;;;;;;;;;;x
+city_baron_jewish_group;Head of the Village;Head of the Village;Head of the Village;;Head of the Village;;;;;;;;;x
+city_count_jewish_group;Head of the City;Head of the City;Head of the City;;Head of the City;;;;;;;;;x
+city_duke_jewish_group;Prince;Prince;Prince;;Prince;;;;;;;;;x
+city_king_jewish_group;Grand Prince;Grand Prince;Grand Prince;;Grand Prince;;;;;;;;;x
+city_kingdom_of_jewish_group;Great Principality of;Great Principality of;Great Principality of;;Great Principality of;;;;;;;;;x
+city_duchy_of_jewish_group;Principality of;Principality of;Principality of;;Principality of;;;;;;;;;x
+city_county_of_jewish_group;City of;City of;City of;;City of;;;;;;;;;x
+city_barony_of_jewish_group;Village of;Village of;Village of;;Village of;;;;;;;;;x
+;;;;;;;;;;;;;;x
+baron_jewish_group;Elder;Elder;Elder;;Elder;;;;;;;;;x
+baron_female_jewish_group;Eldress;Eldress;Eldress;;Eldress;;;;;;;;;x
+count_jewish_group;Chief;Chief;Chief;;Chief;;;;;;;;;x
+count_female_jewish_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+duke_jewish_group;Governor;Governor;Governor;;Governor;;;;;;;;;x
+duke_female_jewish_group;Madam Governor;Madam Governor;Madam Governor;;Madam Governor;;;;;;;;;x
+king_jewish_group;King;King;King;;King;;;;;;;;;x
+king_female_jewish_group;Queen;Queen;Queen;;Queen;;;;;;;;;x
+emperor_jewish_group;Emperor;Emperor;Emperor;;Emperor;;;;;;;;;x
+emperor_female_jewish_group;Empress;Empress;Empress;;Empress;;;;;;;;;x
+emperor_of_jewish_group;Empire of;Empire of;Empire of;;Empire of;;;;;;;;;x
+kingdom_of_jewish_group;Kingdom of;Kingdom of;Kingdom of;;Kingdom of;;;;;;;;;x
+duchy_of_jewish_group;Region of;Region of;Region of;;Region of;;;;;;;;;x
+county_of_jewish_group;District of;District of;District of;;District of;;;;;;;;;x
+barony_of_jewish_group;Council of;Council of;Council of;;Council of;;;;;;;;;x
+;;;;;;;;;;;;;;x
+temple_king_cuman;High Diviner;High Diviner;High Diviner;;High Diviner;;;;;;;;;x
+temple_duke_cuman;Reverred Diviner;Reverred Diviner;Reverred Diviner;;Reverred Diviner;;;;;;;;;x
+temple_count_cuman;Diviner;Diviner;Diviner;;Diviner;;;;;;;;;x
+temple_baron_cuman;Local Diviner;Local Diviner;Local Diviner;;Local Diviner;;;;;;;;;x
+temple_kingdom_of_cuman;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+temple_duchy_of_cuman;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_county_of_cuman;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_barony_of_cuman;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+barony_of_cuman;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+duke_cuman;Chief;Chief;Chief;;Chief;;;;;;;;;x
+count_cuman;Tribal Chief;Tribal Chief;Tribal Chief;;Tribal Chief;;;;;;;;;x
+baron_cuman;Local Chief;Local Chief;Local Chief;;Local Chief;;;;;;;;;x
+duchy_of_cuman;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+county_of_cuman;Tribal Chiefdom of;Tribal Chiefdom of;Tribal Chiefdom of;;Tribal Chiefdom of;;;;;;;;;x
+king_cuman;High Chief;High Chief;High Chief;;High Chief;;;;;;;;;x
+kingdom_of_cuman;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+duke_female_cuman;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+count_female_cuman;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+baron_female_cuman;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+king_female_cuman;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+baron_title_ruler_consort_komi;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+count_title_ruler_consort_komi;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+duke_title_ruler_consort_komi;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+king_title_ruler_consort_komi;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+baron_title_ruler_consort_pecheneg;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+count_title_ruler_consort_pecheneg;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+duke_title_ruler_consort_pecheneg;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+king_title_ruler_consort_pecheneg;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+temple_king_komi;High Diviner;High Diviner;High Diviner;;High Diviner;;;;;;;;;x
+temple_duke_komi;Reverred Diviner;Reverred Diviner;Reverred Diviner;;Reverred Diviner;;;;;;;;;x
+temple_count_komi;Diviner;Diviner;Diviner;;Diviner;;;;;;;;;x
+temple_baron_komi;Local Diviner;Local Diviner;Local Diviner;;Local Diviner;;;;;;;;;x
+temple_kingdom_of_komi;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+temple_duchy_of_komi;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_county_of_komi;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_barony_of_komi;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+barony_of_komi;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+duke_komi;Chief;Chief;Chief;;Chief;;;;;;;;;x
+count_komi;Tribal Chief;Tribal Chief;Tribal Chief;;Tribal Chief;;;;;;;;;x
+baron_komi;Local Chief;Local Chief;Local Chief;;Local Chief;;;;;;;;;x
+duchy_of_komi;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+county_of_komi;Tribal Chiefdom of;Tribal Chiefdom of;Tribal Chiefdom of;;Tribal Chiefdom of;;;;;;;;;x
+king_komi;High Chief;High Chief;High Chief;;High Chief;;;;;;;;;x
+kingdom_of_komi;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+duke_female_komi;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+count_female_komi;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+baron_female_komi;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+king_female_komi;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+temple_king_pecheneg;High Diviner;High Diviner;High Diviner;;High Diviner;;;;;;;;;x
+temple_duke_pecheneg;Reverred Diviner;Reverred Diviner;Reverred Diviner;;Reverred Diviner;;;;;;;;;x
+temple_count_pecheneg;Diviner;Diviner;Diviner;;Diviner;;;;;;;;;x
+temple_baron_pecheneg;Local Diviner;Local Diviner;Local Diviner;;Local Diviner;;;;;;;;;x
+temple_kingdom_of_pecheneg;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+temple_duchy_of_pecheneg;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_county_of_pecheneg;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+temple_barony_of_pecheneg;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+barony_of_pecheneg;Tribe of;Tribe of;Tribe of;;Tribe of;;;;;;;;;x
+duke_pecheneg;Chief;Chief;Chief;;Chief;;;;;;;;;x
+count_pecheneg;Tribal Chief;Tribal Chief;Tribal Chief;;Tribal Chief;;;;;;;;;x
+baron_pecheneg;Local Chief;Local Chief;Local Chief;;Local Chief;;;;;;;;;x
+duchy_of_pecheneg;Chiefdom of;Chiefdom of;Chiefdom of;;Chiefdom of;;;;;;;;;x
+county_of_pecheneg;Tribal Chiefdom of;Tribal Chiefdom of;Tribal Chiefdom of;;Tribal Chiefdom of;;;;;;;;;x
+king_pecheneg;High Chief;High Chief;High Chief;;High Chief;;;;;;;;;x
+kingdom_of_pecheneg;High Chiefdom of;High Chiefdom of;High Chiefdom of;;High Chiefdom of;;;;;;;;;x
+duke_female_pecheneg;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+count_female_pecheneg;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+baron_female_pecheneg;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+king_female_pecheneg;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+;;;;;;;;;;;;;;x
+baron_title_ruler_consort_jewish_group;Madam Elder;Madam Elder;Madam Elder;;Madam Elder;;;;;;;;;x
+count_title_ruler_consort_jewish_group;Madam Governor;Madam Governor;Madam Governor;;Madam Governor;;;;;;;;;x
+duke_title_ruler_consort_jewish_group;Princess Consort;Princess Consort;Princess Consort;;Princess Consort;;;;;;;;;x
+king_title_ruler_consort_jewish_group;Queen Consort;Queen Consort;Queen Consort;;Queen Consort;;;;;;;;;x
+;;;;;;;;;;;;;;x
+duke_female_pagan_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+count_female_pagan_group;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+baron_female_pagan_group;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+king_female_pagan_group;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+baron_title_ruler_consort_pagan_group;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+count_title_ruler_consort_pagan_group;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+duke_title_ruler_consort_pagan_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+king_title_ruler_consort_pagan_group;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+;;;;;;;;;;;;;;x
+duke_female_baltic_pagan_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+count_female_baltic_pagan_group;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+baron_female_baltic_pagan_group;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+king_female_baltic_pagan_group;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+baron_title_ruler_consort_baltic_pagan_group;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+count_title_ruler_consort_baltic_pagan_group;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+duke_title_ruler_consort_baltic_pagan_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+king_title_ruler_consort_baltic_pagan_group;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+;;;;;;;;;;;;;;x
+duke_female_other_pagan_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+count_female_other_pagan_group;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+baron_female_other_pagan_group;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+king_female_other_pagan_group;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+baron_title_ruler_consort_other_pagan_group;Local Chiefess;Local Chiefess;Local Chiefess;;Local Chiefess;;;;;;;;;x
+count_title_ruler_consort_baltic_pagan_group;Tribal Chiefess;Tribal Chiefess;Tribal Chiefess;;Tribal Chiefess;;;;;;;;;x
+duke_title_ruler_consort_other_pagan_group;Chiefess;Chiefess;Chiefess;;Chiefess;;;;;;;;;x
+king_title_ruler_consort_other_pagan_group;High Chiefess;High Chiefess;High Chiefess;;High Chiefess;;;;;;;;;x
+KHAGAN;Khagan;Khagan;Khagan;;Khagan;;;;;;;;;x
+KHAGAN_FOA;Your Highness;Your Highness;Your Highness;;Your Highness;;;;;;;;;x
+KHAGAN_OF;Khaganate of;Khaganate of;Khaganate of;;Khaganate of;;;;;;;;;x
+PATRIARCH_OF;Patriarchate of;Patriarchate of;Patriarchate of;;Patriarchate of;;;;;;;;;x
+county_maghreb_african;Sheikhdom;Cheikat;Scheichtum;;Sheikhdom;;;;;;;;;x
+duchy_maghreb_african;Emirate;Émirat;Emirat;;Emirate;;;;;;;;;x
+kingdom_maghreb_african;Sultanate;Sultanat;Sultanat;;Sultanato;;;;;;;;;x
+barony_maghreb_african;Wilayah;Wilaya;Wilayah;;Vilayato;;;;;;;;;x
+county_somali;Sheikhdom;Cheikat;Scheichtum;;Sheikhdom;;;;;;;;;x
+duchy_somali;Emirate;Émirat;Emirat;;Emirate;;;;;;;;;x
+kingdom_somali;Sultanate;Sultanat;Sultanat;;Sultanato;;;;;;;;;x
+barony_somali;Wilayah;Wilaya;Wilayah;;Vilayato;;;;;;;;;x
+LORDSHIP_OF;Lordship of;Lordship of;Lordship of;;Lordship of;;;;;;;;;x
+LORD;Lord;Lord;Lord;;Lord;;;;;;;;;x
+LORD_female;Lady;Lady;Lady;;Lady;;;;;;;;;x
+JUND_OF;Jund of;Jund of;Jund of;;Jund of;;;;;;;;;x
+PRINCE;Prince;Prince;Prince;;Prince;;;;;;;;;x
+PRINCE_female;Princesse;Princesse;Princesse;;Princesse;;;;;;;;;x
+Oasis_OF;Oasis of;Oasis de;Oasis von;;Oasis de;;;;;;;;;x
+title_rector_of_burgundy;Rektor von Burgund;Rektor von Burgund;Rektor von Burgund;;Rektor von Burgund;;;;;;;;;x
+title_rector_of_burgundy_FOA;your serene highness;your serene highness;your serene highness;;your serene highness;;;;;;;;;x
+title_rector_of_burgundy_desc;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;;When William III, Count of Burgundy was assassinated in February 1127, King Lothar III supported the claims of William's uncle Duke Conrad of Zähringen to the countship and conferred on him the regal powers over Burgundy. Lacking a proper title, the Zähringer called themselves dukes and rectors of Burgundy, in order to gain the status of dukes of Burgundy. The Duchy of Burgundy was in fact a part of France, so the royal chancellory avoided the term and the effective power of the rector (in Roman law, a generic term for provincial governor) was restricted to the possessions of the Zähringer east of the Jura.;;;;;;;;;x
+county_berber;Sheikhdom;Cheikat;Scheichtum;;Sheikhdom;;;;;;;;;x
+duchy_berber;Emirate;Émirat;Emirat;;Emirate;;;;;;;;;x
+kingdom_berber;Sultanate;Sultanat;Sultanat;;Sultanato;;;;;;;;;x
+barony_berber;Wilayah;Wilaya;Wilayah;;Vilayato;;;;;;;;;x
+city_kingdom_of_muslim;Sultanate of;;;;;;;;;;;;;x
+city_duchy_of_muslim;Emirate of;;;;;;;;;;;;;x
+city_county_of_muslim;Sheikhdom of;;;;;;;;;;;;;x
+DIOCESE_OF;Diocese of;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

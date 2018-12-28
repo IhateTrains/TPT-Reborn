@@ -1,0 +1,18 @@
+# 1409 - Djado
+
+# County Title
+title = c_djado
+
+# Settlements
+max_settlements = 1
+
+b_djado = city
+
+# Misc
+culture = tuareg
+religion = ibadi
+
+# History
+
+
+

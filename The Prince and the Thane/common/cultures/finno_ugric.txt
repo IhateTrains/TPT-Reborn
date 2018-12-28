@@ -1,0 +1,83 @@
+finno_ugric = {
+	graphical_culture = easterngfx
+
+	finnish = {
+		graphical_culture = norsegfx
+		
+		color = { 0.1 0.6 0.6 }
+
+		male_names = {
+			Aranti Ampuja Asikka Artukka Aikamieli Aikio Ano Arijoutsi Arpia Auvo Armas Arvo Asikko Ensio Eura Himottu Hirvi Havu Harmaa Haukka 
+			Huuhka Hyväri Hyvälempi Hyvätty Härkäpää Hintsa Ihanti Ihalempi Ihamuoto Ikävalko Ilakka Ilma Ilmatoivia Ikitiera Ikopäivä Ilmo Into Jalkava Jurva
+			Kaleva Kaivattu Kainu Kaipia Koveri Kulta Kupias Kaukovalta Keiho Kekko Kokko Kostia Kotarikko Kultamies Kova Kukko Kurittu Kalevi Kettu Kolli 
+			Lintu Lemetti Lempi Leino Lemmäs Lempo Maanavilja Montaja Menikko Mustia Miero Mielikko Mielitty Mietti Miemo Miela Nousia Neuvo Nuolia Ohto Ora Otra Osma Oivas Otava Otso 
+			Paaso Puukko Pitkäpää Pitkä Päiviö Rautio Rahikka Reko Repo Saukko Susi Suorsa Satajalka Satatieto Sotijalo Seppo Susi Torittu Terätautia
+			Terho Tapatora Tammi Tapavaino Tietävä Tornio Toivas Tulo Titti Toikka Toivo Tuokki Torio Unaja Uro Utujoutsi Ukko Uoti Urho Väinö Vaania Vaito Vartia Valta Valtari Vihavaino Viljakka Valto Veli Viti Villi Voitto
+		}
+		female_names = {
+			Aamu Aino Hellä Helmi Hellikki Hopea Ilta Kaarina_Catherine Käpy Kielo Kukka Kuutamo Läpsä Lauha Lempi Liekko Mahla Maija Marja Mesi Metta Oiva Päivä Päivi Pihla Pilvi Pyry Rauha Raita Sati
+			Sisko Suoma Salme Taimi Talvikki Terhi Tuija Tuovi Tuuli Tuulikki Tuomikki Tyyne Tyyni Vanamo Venla
+		}
+		from_dynasty_prefix = "of "
+		male_patronym = "npoika"
+		female_patronym = "ntytär"
+		prefix = no # The patronym is added as a suffix
+
+		modifier = finnish_culture_modifier
+	}
+	lappish	 = {
+		graphical_culture = mongolgfx
+		
+		color = { 0.2 0.65 0.65 }
+
+		male_names = {
+			Ággi Áigesárri Áilu Ámmot Ára Árrajuoksa Ásllat Èoavvá Ahkemiella Algebaeivi Baeivi Baeivvet Biejan Bijás Bilzi Dávgon Duttá Gáivvas
+			Gáktu Henes Járre Jeansa Juvven_John Lágon Lávrrohas Leammá Mellet Mihka Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi
+			Sárra Speaidna Viggu
+		}
+		female_names = {
+			Áidná Álgen Állet Èuvje Biellá Biergá Buohttá Duojá Gealá Gierá Giste Juoksáhkká Leandu Máidna Násti Naná Njáves Oajá Sáráhkká Sealggá 
+			Seará Soabá Sojá Suoinná Suonjar Uksáhkká
+		}
+		from_dynasty_prefix = "of "
+
+		modifier = finnish_culture_modifier
+	}
+    livonian = {
+		graphical_culture = norsegfx
+		color = { 0.35 0.85 0.85 }
+
+		male_names = {
+                Aigo Ailo Aino Aivo Ako Alo Anno Antero Ari Arne Arvo Asse Asso Avo Caupo Dabrel Eino Elju Endo Ero Gerweder Helgo Heljo Illo Ilmedous Ilo Imake 
+                Imme Jullo Jumãrs Kalle Kaupo Kike Kovals Kulevene Kyrianus Layanus Leho Lembe Lembewalde Lembits Mikko Musts Ninnus Nunnus Paimis Pedo Peite Piške 
+                Raimo Raino Raivo Reijo Reino Soiga Sula Taivis Taivo Uldenago Vaino Valata Valve Vanema Veino Vello Vesike Vietso Viezo Viliendi Wade Waldeko Wane Wiezo Ylo Ymaut
+		}
+		female_names = {
+                Elmede Helgi Helju Helmi Helvi Hilja Ilma Imake Imatra Imetra Imma Jumara Leili Lelu Liva Maimu Olavi Raili Vanema
+			}
+                from_dynasty_prefix = "kohta "
+
+		modifier = baltic_culture_modifier
+	}
+    tsuudi = {
+		graphical_culture = norsegfx
+		color = { 0.3 0.8 0.8 }
+
+		male_names = {
+                        Aavo Aimur Ain Aino Alar Alevipoeg Alo Anti Ants Are Arne Arseni Arved Arvi Arvo Baldur Cake Culle Eego Eerik Eksitaja Enn Enu Gunnar Hannu Hoidja 
+                        Hännamees Ilmar Ilo Jumal Järvevana Kaevukoll Kalev Kalevine Kalevipoeg Kalju Kalm Kõu Koit Leho Lembit Lembitu Mana Manalane Mati Meelis Meeme Melete 
+                        Metsavana Muntelene Olavi Olev Olevipoeg Osmi Pardiajaja Peninukk Peremees Pikker Pikne Puuk Raivo Sohni Soini Sulev Sulevipoeg Taevas Taevataat Taimo 
+                        Taivas Taivo Tappete Toivo Tont Tooni Toor Tooru Tuuleisa Tuuslar Uku Unnepeve Vambola Vanaisa Yalde Ylle Äike
+		}
+		female_names = {
+                        Aime Aive Anu Astrid Eda Eevi Eha Ehaema Endla Ent Haldjas Hele Helga Helgi Heli Helja Helju Helme Helve Hämarik Ilmaneitsi Ilmatütar 
+                        Ilo Ilu Inda Ingrid Jutta Kairi Kaja Kalmuneiu Kratt Laine Leili Linda Lumme Luupainaja Maaemä Maimu Maire Meeli Metsaema Murueide Murueit 
+                        Näkk Nõid Painaja Piret Pisuhänd Salme Siret Sirje Taara Taarapita Tarapita Tarapitha Tharapita Tooru Tulihänd Tuule-Emä 
+                        Tütred Vaike Veteema Äiatar
+			}
+
+		from_dynasty_prefix = "gada "
+
+		modifier = finnish_culture_modifier
+	}
+}

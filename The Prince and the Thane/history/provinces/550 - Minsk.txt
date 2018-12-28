@@ -1,0 +1,24 @@
+# 550 - Minsk
+
+# County Title
+title = c_minsk
+
+# Settlements
+max_settlements = 5
+b_minsk = castle
+b_bobruisk = city
+
+#b_berezino = city
+#b_chervyen = temple
+#b_dzierzynsk = city
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+
+
+
+

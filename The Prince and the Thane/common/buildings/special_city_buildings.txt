@@ -1,0 +1,531 @@
+city = {
+### Jewish Communities ###	
+	ct_jewish_community_1 = {	
+		desc = ct_jewish_community_desc
+		potential = {
+			FROM = {
+				NOT = { religion_group = jewish_group }
+			}
+			NOT = { religion_group = jewish_group }
+		}
+		trigger = {
+			always = no
+		}
+		build_cost = 0
+		build_time = 0
+		tax_income = 2
+		ai_creation_factor = 1
+
+		start = {
+			year = 1500
+		}
+	}
+	ct_jewish_community_2 = {
+		desc = ct_jewish_community_desc
+		upgrades_from = ct_jewish_community_1
+		potential = {
+			FROM = {
+				NOT = { religion_group = jewish_group }
+			}
+			NOT = { religion_group = jewish_group }
+		}		
+		trigger = {
+			always = no
+		}
+		build_cost = 0
+		build_time = 0
+		tax_income = 2
+		ai_creation_factor = 1
+
+		start = {
+			year = 1500
+		}
+	}
+	ct_jewish_community_3 = {
+		desc = ct_jewish_community_desc
+		upgrades_from = ct_jewish_community_2
+		potential = {
+			FROM = {
+				NOT = { religion_group = jewish_group }
+			}
+			NOT = { religion_group = jewish_group }
+		}		
+		trigger = {
+			always = no
+		}
+		build_cost = 0
+		build_time = 0
+		tax_income = 2
+		ai_creation_factor = 1
+
+		start = {
+			year = 1500
+		}
+	}
+	
+### Jewish District ###	
+	ct_jewish_district = {
+		desc = ct_jewish_district_desc
+
+		prerequisites = { ct_jewish_community_1 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		build_cost = 400
+		build_time = 2340
+		tax_income = 1.50
+                monthly_character_piety = -0.05
+		local_tax_modifier = 0.05
+		ai_creation_factor = 80
+                
+
+		start = {	
+		}
+	}
+	
+### Jewellers ###
+### Jewelsmith ###
+	ct_jewellers_1 = {
+		desc = ct_jewish_jewelers_desc
+		prerequisites = { ct_jewish_community_1 }
+		trigger = { TECH_CONSTRUCTION = 1 TECH_CITY_CONSTRUCTION = 1 } # civic industy & city construction at lvl 1
+		build_cost = 75
+		build_time = 365
+		local_tax_modifier = 0.075
+                monthly_character_piety = -0.025
+		ai_creation_factor = 85
+
+		start = {
+		    year = 1066
+		}
+	}
+### Jewellers Guild ###
+	ct_jewellers_2 = {
+		desc = ct_jewish_jewelers_desc
+		prerequisites = { ct_marketplace_4 }
+		trigger = { TECH_CONSTRUCTION = 3 TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_jewellers_1
+	        build_cost = 400
+		build_time = 1095
+		local_tax_modifier = 0.075
+        monthly_character_piety = -0.025
+		ai_creation_factor = 83
+
+		start = {
+		    year = 1150
+		}
+	}
+### Carpeters workshops
+### Carpet Emporium ###
+	ct_carpet_workshops_1 = {
+		desc = ct_carpet_workshop_desc
+	    potential = { 
+			OR = {
+				province_id = 692 # Al Nadjaf
+				province_id = 684 # Nisibin
+				province_id = 670 # Azerbaijan
+				province_id = 701 # Taron
+				province_id = 690 # Al Amarah
+				province_id = 647 # Avhaz
+				province_id = 641 # Hormuz
+				province_id = 899 # Tis
+				province_id = 634 # Nishapur
+				province_id = 632 # Khorasan
+				province_id = 905 # Herat
+				province_id = 903 # Samarkand
+				province_id = 821 # Constantine
+				province_id = 823 # Biskra
+				province_id = 830 # Lemdiyya
+				province_id = 832 # Orania
+				province_id = 837 # Figuig
+				province_id = 838 # El Rif
+				province_id = 839 # Cebta
+			}	
+		}
+		trigger = { TECH_CONSTRUCTION = 1 TECH_CITY_CONSTRUCTION = 1 }
+		build_cost = 50
+		build_time = 220
+		local_tax_modifier = 0.05
+		ai_creation_factor = 84 
+
+		start = {
+		    year = 1066
+		}
+	}
+### Carpet Workshop ###
+	ct_carpet_workshops_2 = {
+		desc = ct_carpet_workshop_desc
+	    potential = { 
+			OR = {
+				province_id = 692 # Al Nadjaf
+				province_id = 684 # Nisibin
+				province_id = 670 # Azerbaijan
+				province_id = 701 # Taron
+				province_id = 690 # Al Amarah
+				province_id = 647 # Avhaz
+				province_id = 641 # Hormuz
+				province_id = 899 # Tis
+				province_id = 634 # Nishapur
+				province_id = 632 # Khorasan
+				province_id = 905 # Herat
+				province_id = 903 # Samarkand
+				province_id = 821 # Constantine
+				province_id = 823 # Biskra
+				province_id = 830 # Lemdiyya
+				province_id = 832 # Orania
+				province_id = 837 # Figuig
+				province_id = 838 # El Rif
+				province_id = 839 # Cebta
+			}	
+		}
+		upgrades_from = ct_carpet_workshops_1
+		trigger = { TECH_CONSTRUCTION = 2 TECH_CITY_CONSTRUCTION = 2 }
+	        build_cost = 100
+		build_time = 365
+		local_tax_modifier = 0.05
+		ai_creation_factor = 83
+
+		start = {
+		    year = 1150
+		}
+	}
+### Carpet Manufactury ###
+	ct_carpet_workshops_3 = {
+		desc = ct_carpet_workshop_desc
+	    potential = { 
+			OR = {
+                                province_id = 692 # Al Nadjaf
+				province_id = 684 # Nisibin
+				province_id = 670 # Azerbaijan
+				province_id = 701 # Taron
+				province_id = 690 # Al Amarah
+				province_id = 647 # Avhaz
+				province_id = 641 # Hormuz
+				province_id = 899 # Tis
+				province_id = 634 # Nishapur
+				province_id = 632 # Khorasan
+				province_id = 905 # Herat
+				province_id = 903 # Samarkand
+				province_id = 821 # Constantine
+				province_id = 823 # Biskra
+				province_id = 830 # Lemdiyya
+				province_id = 832 # Orania
+				province_id = 837 # Figuig
+				province_id = 838 # El Rif
+				province_id = 839 # Cebta
+			}	
+		}
+		trigger = { TECH_CONSTRUCTION = 4 TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_carpet_workshops_2
+	        build_cost = 150
+		build_time = 730
+		local_tax_modifier = 0.05
+		ai_creation_factor = 82
+
+		start = {
+		    year = 1200
+		}
+	}
+### Fishing wharfs
+### Fishing Dock
+	ct_fishing_1 = {
+		desc = ct_fishing_dock_desc
+	    potential = { 
+			port = yes
+			
+		}	
+		prerequisites = { ct_port_1 }
+		build_cost = 55
+		build_time = 365
+		tax_income = 0.28
+		ai_creation_factor = 88
+
+		start = {
+		    year = 1066
+		}
+	}
+### Fishing Harbour
+	ct_fishing_2 = {
+		desc = ct_fishing_dock_desc
+	    potential = { 
+			port = yes
+			
+	        }
+                prerequisites = { ct_port_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		upgrades_from = ct_fishing_1
+	   	build_cost = 105
+		build_time = 730
+		tax_income = 0.28
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1125
+		}
+	}	
+### Large Fishing Harbour
+	ct_fishing_3 = {
+		desc = ct_fishing_dock_desc
+	   potential = { 
+			port = yes
+			
+	        }
+                prerequisites = { ct_port_4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_fishing_2
+	   	build_cost = 160
+		build_time = 850
+		tax_income = 0.28
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1175
+		}
+	}		
+	
+
+	
+	
+### Wineries   
+### Wine Press ###
+	ct_winery_1 = {
+		desc = ct_winery_desc
+	    potential = { 
+			terrain = hills
+		}
+		prerequisites = { ct_marketplace_1 }
+		trigger = { TECH_CONSTRUCTION = 1 TECH_CITY_CONSTRUCTION = 1 }
+		build_cost = 75
+		build_time = 220
+		local_tax_modifier = 0.055
+		ai_creation_factor = 84 
+
+		start = {
+		    year = 1066
+		}
+	}
+### Winery ###
+	ct_winery_2 = {
+		desc = ct_winery_desc
+	    potential = { 
+			terrain = hills
+		}
+		prerequisites = { ct_marketplace_2 }
+		trigger = { TECH_CONSTRUCTION = 2 TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_winery_1
+	    build_cost = 175
+		build_time = 365
+		local_tax_modifier = 0.055
+		ai_creation_factor = 83
+
+		start = {
+		    year = 1100
+		}
+	}
+### Large Winery ###
+	ct_winery_3 = {
+		desc = ct_winery_desc
+	    potential = { 
+			terrain = hills
+		}
+		prerequisites = { ct_marketplace_3 }
+		trigger = { TECH_CONSTRUCTION = 4 TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_winery_2
+	    build_cost = 225
+		build_time = 730
+		local_tax_modifier = 0.055
+		ai_creation_factor = 82
+		
+		start = {
+		year = 1200
+		}
+	}	
+## Spice Markets ##	
+##Spice Caravan Trade Stop
+ct_spice_1 = {
+		desc = ct_spice_desc
+	    potential = { 
+		            OR = {   
+                                 province_id = 649 # Basra
+                                 province_id = 693 # Baghdad
+		                 province_id = 709 # Asas
+			         province_id = 710 # Al Bichri
+			         province_id = 712 # Suwaida
+		                 province_id = 719 # Mecca
+			         province_id = 733 # Aleppo
+			         province_id = 734 # Aintab
+					}   
+		}
+		prerequisites = { ct_wall_2 }
+		build_cost = 100
+		build_time = 297
+		tax_income = 1.5
+		ai_creation_factor = 100
+
+		start = {
+		    year = 1066
+		}
+	}
+##Spice Market
+ct_spice_2 = {
+		desc = ct_spice_desc
+	     potential = { 
+		            OR = {   
+                                 province_id = 649 # Basra
+                                 province_id = 693 # Baghdad
+		                 province_id = 709 # Asas
+			         province_id = 710 # Al Bichri
+			         province_id = 712 # Suwaida
+		                 province_id = 719 # Mecca
+			         province_id = 733 # Aleppo
+			         province_id = 734 # Aintab
+					}   
+		}
+		upgrades_from = ct_spice_1
+		build_cost = 250
+		build_time = 397
+		tax_income = 2.0
+		ai_creation_factor = 99
+
+		start = {
+		    year = 1100
+		}
+	}
+# Regional Spice Market
+ct_spice_3 = {
+		desc = ct_spice_desc
+	    potential = { 
+		            OR = {   
+                                 province_id = 649 # Basra
+                                 province_id = 693 # Baghdad
+		                 province_id = 709 # Asas
+			         province_id = 710 # Al Bichri
+			         province_id = 712 # Suwaida
+		                 province_id = 719 # Mecca
+			         province_id = 733 # Aleppo
+			         province_id = 734 # Aintab
+					}   
+		}
+		upgrades_from = ct_spice_2
+		prerequisites = { ct_wall_3 }
+		build_cost = 350
+		build_time = 497
+		tax_income = 2.5
+		ai_creation_factor = 99
+		
+		start = {
+		year = 1200
+		    }
+	}
+## Cloth Manufactury
+##Small Clothweavers
+ct_cloth_1 = {
+		desc = ct_cloth_desc
+	    potential = { 
+		             OR = {   
+                                  province_id = 9   # Connaught
+			          province_id = 14  # Desmond
+			          province_id = 18  # Dyfed
+			          province_id = 19  # Glamorgan
+			          province_id = 20  # Gwent
+			          province_id = 27  # Dorset
+			          province_id = 28  # Somerset
+                                  province_id = 29  # Devon
+		                  province_id = 32  # Middlesex
+                                  province_id = 46  # Fife
+                                  province_id = 49  # Carrick
+			          province_id = 57  # York
+			          province_id = 64  # Gwynedd
+                                  province_id = 65  # Powys
+			          province_id = 78  # Brugge
+			          province_id = 76  # Yperen
+			          province_id = 102 # Penthievre
+			          province_id = 104 # Cornouaille
+			          province_id = 105 # Vannes
+			          province_id = 107 # Anjou
+			          province_id = 112 # Ile De France	
+                                  province_id = 117 # Brabant
+			          province_id = 142 # Thouars
+			          province_id = 153 # Viscaya
+			          province_id = 205 # Empuries	
+		                  province_id = 233 # Genoa
+			          province_id = 234 # Pavia
+		                  province_id = 235 # Lombardia					
+			          province_id = 267 # Jylland
+			          province_id = 306 # Rostock 
+			          province_id = 307 # Werle
+                                  province_id = 356 # Venezia
+			          province_id = 443 # Nitra
+			          province_id = 445 # Pressburg
+			          province_id = 467 # Split	
+		                  province_id = 465 # Zadar
+			          province_id = 495 # Kaliopolis
+			          province_id = 524 # Gemer
+			          province_id = 781 # Darum   
+					}   
+		}
+		build_cost = 140
+		build_time = 200
+		tax_income = 1.0
+		ai_creation_factor = 99
+
+		start = {
+		    year = 1066
+		}
+}
+## Large Clothweavers
+ct_cloth_2 = {
+		desc = ct_cloth_desc
+	    potential = { 
+		             OR = {   
+                                  province_id = 9   # Connaught
+			          province_id = 14  # Desmond
+			          province_id = 18  # Dyfed
+			          province_id = 19  # Glamorgan
+			          province_id = 20  # Gwent
+			          province_id = 27  # Dorset
+			          province_id = 28  # Somerset
+                                  province_id = 29  # Devon
+		                  province_id = 32  # Middlesex
+                                  province_id = 46  # Fife
+                                  province_id = 49  # Carrick
+			          province_id = 57  # York
+			          province_id = 64  # Gwynedd
+                                  province_id = 65  # Powys
+			          province_id = 78  # Brugge
+			          province_id = 76  # Yperen
+			          province_id = 102 # Penthievre
+			          province_id = 104 # Cornouaille
+			          province_id = 105 # Vannes
+			          province_id = 107 # Anjou
+			          province_id = 112 # Ile De France	
+                                  province_id = 117 # Brabant
+			          province_id = 142 # Thouars
+			          province_id = 153 # Viscaya
+			          province_id = 205 # Empuries	
+		                  province_id = 233 # Genoa
+			          province_id = 234 # Pavia
+		                  province_id = 235 # Lombardia					
+			          province_id = 267 # Jylland
+			          province_id = 306 # Rostock 
+			          province_id = 307 # Werle
+                                  province_id = 356 # Venezia
+			          province_id = 443 # Nitra
+			          province_id = 445 # Pressburg
+			          province_id = 467 # Split	
+		                  province_id = 465 # Zadar
+			          province_id = 495 # Kaliopolis
+			          province_id = 524 # Gemer
+			          province_id = 781 # Darum   
+					}   
+		}
+		upgrades_from = ct_cloth_1
+		prerequisites = { ct_wall_2 }
+		build_cost = 250
+		build_time = 200
+		tax_income = 1.5
+		ai_creation_factor = 84
+		
+		start = {
+		year = 1150
+	        }	
+        }
+}

@@ -1,0 +1,16 @@
+# 922 - Tadmekka
+
+# County Title
+title = c_tadmekka
+
+# Settlements
+max_settlements = 2
+b_tadmekka = castle
+#b_essako = castle # Es Souk
+
+
+# Misc
+culture = tuareg
+religion = ibadi
+
+# History

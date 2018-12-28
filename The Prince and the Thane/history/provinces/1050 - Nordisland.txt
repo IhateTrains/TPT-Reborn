@@ -1,0 +1,24 @@
+# 1050 - Norðurland
+
+# County Title
+title = c_nordisland
+
+# Settlements
+max_settlements = 3
+
+b_borgarvirki = castle
+
+#b_hrisey = castle
+#b_akureyri = city
+#b_holar = temple
+#b_goddalir = castle
+
+
+
+# Misc
+culture = icelandic
+religion = catholic
+
+# History
+1025.1.1 = { religion = catholic }
+

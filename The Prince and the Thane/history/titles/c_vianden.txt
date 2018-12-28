@@ -1,0 +1,48 @@
+1000.1.1={
+	liege="d_lower_lorraine"
+}
+1000.1.1={
+	holder=0 #Unknown rulers
+}
+1090.1.1={
+	holder=910050 #Bertolph
+}
+1124.1.1={
+	holder=910051 #Friedrich, Bertolph's son-in-law. Wife's name is unknown.
+}
+1152.1.1={
+	holder=910052 #Sigfrid
+}
+1171.1.1={
+	holder=910053 #Friedrich I, unclear why he is called Friedrich the FIRST
+}
+1187.1.1={
+	holder=910054 #Friedrich II
+}
+1220.1.1={
+	holder=910054 #Heinrich I
+}
+1252.1.1={
+	holder=910060 #Filip I
+}
+1273.1.1={
+	holder=910061 #Gottfried I
+}
+1310.1.1={
+	holder=910063 #Filip II
+}
+1316.1.1={
+	holder=910064 #Heinrich II
+}
+
+
+
+
+
+
+
+
+
+1354.3.13={
+liege="d_luxembourg"
+}

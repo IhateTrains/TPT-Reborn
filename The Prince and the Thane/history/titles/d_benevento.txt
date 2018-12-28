@@ -1,0 +1,68 @@
+865.1.1={
+	holder=163071 # Adelchis
+}
+878.1.1={
+	holder=1191122 # Waifer
+}
+881.1.1={
+	holder=1191123 # Radelchis
+}
+900.1.1={
+	holder=73331 # Atenolf I
+}
+912.1.1={
+	holder=73330 # Landolf I
+}
+913.1.1={
+	holder=73332 # Atenolf II
+}
+914.1.1={
+	holder=73330 # Landolf I
+}
+933.1.1={
+	holder=73329 # Atenolf III
+}
+934.1.1={
+	holder=73330 # Landolf I
+}
+943.1.1={
+	holder=73328 # Landolf II
+}
+961.1.1={
+	holder=73325 # Landolf III
+}
+962.1.1={
+	holder=73327 # Pandolf I
+}
+981.3.1={
+	holder=73336 # Landolf IV
+}
+981.4.1={
+	holder=73324 # Pandolf II
+}
+1014.8.1={
+	holder=73323 # Landolf V
+}
+1034.9.1={
+	holder=73321 # Pandolf III
+}
+1038.1.1={
+	holder=73318 # Landolf VI
+}
+1039.1.1={
+	holder=73321 # Pandolf III
+}
+1051.1.1={
+	holder=73317 # Pandolf IV
+	liege=k_papal_state
+}
+1052.1.1={
+	holder=73321 # Pandolf III
+}
+1078.1.1={
+	holder=1128 #Robert I de Hauteville
+	liege=0
+}
+1081.1.1={
+	holder=0
+}

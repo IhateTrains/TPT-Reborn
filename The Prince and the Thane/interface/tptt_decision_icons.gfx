@@ -1,0 +1,462 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_get_concubine"
+		texturefile = "gfx\\decisions\\concubine.dds"
+	}
+       spriteType = {
+		name = "GFX_estabilish_heretic_pope"
+		texturefile = "gfx\\decisions\\investiture.dds"
+	}
+
+	spriteType = {
+		name = "GFX_get_toyboy"
+		texturefile = "gfx\\decisions\\concubine.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_priest"
+		texturefile = "gfx\\decisions\\decision_icon_employspiritual.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_steward"
+		texturefile = "gfx\\decisions\\decision_icon_employtreasurer.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_chancellor"
+		texturefile = "gfx\\decisions\\decision_icon_employchancelor.dds"
+	}	
+	spriteType = {
+		name = "GFX_employ_marshal"
+		texturefile = "gfx\\decisions\\decision_icon_employmarshal.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_spymaster"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+	spriteType = {
+		name = "GFX_pil_send_ravens"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+	spriteType = {
+		name = "GFX_pil_fabricate_conception_decision_1"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+	spriteType = {
+		name = "GFX_pil_fabricate_conception_decision_2"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+	spriteType = {
+		name = "GFX_pil_fabricate_conception_decision_3"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+	spriteType = {
+		name = "GFX_pil_fabricate_conception_decision_4"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pil_fabricate_conception_decision_5"
+		texturefile = "gfx\\decisions\\decision_icon_employspymaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_present_debutante"
+		texturefile = "gfx\\decisions\\debutante.dds"			}	
+	spriteType = {
+		name = "GFX_buy_indulgence_for_sins"
+		texturefile = "gfx\\decisions\\convert_religion.tga"
+	}	
+	spriteType = {
+		name = "GFX_pogrom"
+		texturefile = "gfx\\decisions\\rebuild_temple.dds"
+	}	
+	spriteType = {
+		name = "GFX_estabilish_magna_carta"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}	
+	spriteType = {
+		name = "GFX_make_royal_entry"
+		texturefile = "gfx\\decisions\\royal_entry.dds"		}	
+	spriteType = {
+		name = "GFX_take_loan"
+	texturefile = "gfx\\decisions\\decision_icon_employtreasurer.dds"	
+      }	
+
+	spriteType = {
+		name = "GFX_feast_0"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_feast_1"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_feast_2"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}	
+	spriteType = {
+		name = "GFX_summer_fair_0"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}
+	spriteType = {
+		name = "GFX_summer_fair_1"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}	
+	spriteType = {
+		name = "GFX_summer_fair_2"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}	
+	spriteType = {
+		name = "GFX_hold_grand_hunt_0"
+		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_grand_hunt_1"
+		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
+	}	
+	spriteType = {
+		name = "GFX_hold_grand_hunt_2"
+		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
+	}	
+	spriteType = {
+		name = "GFX_go_on_hajj"
+		texturefile = "gfx\\interface\\decision_icon_go_on_hajj.dds"
+	}
+	spriteType = {
+		name = "GFX_go_on_hajj_1"
+		texturefile = "gfx\\interface\\decision_icon_go_on_hajj.dds"
+	}
+	spriteType = {
+		name = "GFX_go_on_hajj_2"
+		texturefile = "gfx\\interface\\decision_icon_go_on_hajj.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_abdicate"
+		texturefile = "gfx\\decisions\\royal_entry.dds"	
+     }
+	spriteType = {
+		name = "GFX_reform_succession"
+		texturefile = "gfx\\decisions\\royal_entry.dds"	
+     }
+	spriteType = {
+		name = "GFX_estabilish_ius_primae_noctis_1"
+		texturefile = "gfx\\decisions\\ius_primae.dds"
+	}
+      spriteType = {
+		name = "GFX_banish_ius_primae_noctis"
+		texturefile = "gfx\\decisions\\concubine.dds"
+	}
+	spriteType = {
+		name = "GFX_coronation"
+		texturefile = "gfx\\decisions\\ball.dds"
+	}
+	spriteType = {
+		name = "GFX_king_coronation"
+		texturefile = "gfx\\decisions\\ball.dds"
+	}
+      spriteType = {
+		name = "GFX_estabilish_exchequer_of_pleas"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_estabilish_sabor_parliament"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_estabilish_estates_general"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_estates_generales"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_imperial_diet"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_estates_of_parliament"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_court_of_common_pleas"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_exchequer_of_the_jews"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_charter_of_the_forest"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_statute_of_merton"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_quia_emptores"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+spriteType = {
+		name = "GFX_estabilish_siete_partidas"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+    spriteType = {
+		name = "GFX_arrest_the_templars_france"
+		texturefile = "gfx\\decisions\\decision_templar.dds"
+	}
+spriteType = {
+		name = "GFX_donation_to_the_patriarch"
+	texturefile = "gfx\\decisions\\decision_icon_employtreasurer.dds"
+	}
+spriteType = {
+		name = "GFX_tribute_to_caliphate"
+		texturefile = "gfx\\decisions\\decision_icon_charity.dds"
+	}
+spriteType = {
+		name = "GFX_switch_allegiance"
+		texturefile = "gfx\\decisions\\investiture.dds"
+	}
+spriteType = {
+		name = "GFX_faction_guelphs_ultimatum"
+		texturefile = "gfx\\decisions\\investiture.dds"
+	} 
+spriteType = {
+		name = "GFX_faction_ghibellines_ultimatum"
+		texturefile = "gfx\\decisions\\investiture.dds"
+	}
+
+spriteType = {
+		name = "GFX_switch_allegiance2"
+		texturefile = "gfx\\decisions\\investiture.dds"
+	}
+spriteType = {
+		name = "GFX_legitimize_bastard"
+		texturefile = "gfx\\decisions\\royal_entry.dds"
+	}
+spriteType = {
+		name = "GFX_issue_declaration_of_repentance"
+		texturefile = "gfx\\decisions\\convert_religion.dds"
+	}
+spriteType = {
+		name = "GFX_convert_to_liege_religion"
+		texturefile = "gfx\\decisions\\convert_religion.dds"
+	}
+spriteType = {
+		name = "GFX_convert_to_parent_religion"
+		texturefile = "gfx\\decisions\\convert_religion.dds"
+	}
+spriteType = {
+		name = "GFX_convert_to_liege_culture"
+		texturefile = "gfx\\decisions\\convert_culture.dds"
+	}
+spriteType = {
+		name = "GFX_show_me_the_medal_winners"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+spriteType = {
+		name = "GFX_hold_a_epic_tournament_LP"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+
+spriteType = {
+		name = "GFX_hold_a_epic_tournament_high_lord"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+
+spriteType = {
+		name = "GFX_hold_a_epic_tournament_lord"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+spriteType = {
+		name = "GFX_nm_employ_volva"
+	      texturefile = "gfx\\decisions\\viking.dds"
+      }
+spriteType = {
+		name = "GFX_nm_go_viking"
+		texturefile = "gfx\\decisions\\viking.dds"		
+      }
+spriteType = {
+		name = "GFX_nm_return_home"
+		texturefile = "gfx\\decisions\\viking.dds"		
+      }
+spriteType = {
+		name = "GFX_nm_blot_decision"
+		texturefile = "gfx\\decisions\\viking.dds"		
+      }
+spriteType = {
+		name = "GFX_ransom_all" 
+           texturefile = "gfx\\decisions\\prisoner_swap.dds"			
+      }
+spriteType = {
+		name = "GFX_request_important_prisoners"
+		texturefile = "gfx\\decisions\\prisoner_swap.dds"		
+      }
+spriteType = {
+		name = "GFX_bring_out_of_hiding"
+		texturefile = "gfx\\decisions\\bring_out_of_hiding.dds"		
+      }
+spriteType = {
+		name = "GFX_arrange_prisoner_swap"
+		texturefile = "gfx\\decisions\\prisoner_swap.dds"		
+      } 
+spriteType = {
+		name = "GFX_rebuild_the_temple"
+		texturefile = "gfx\\decisions\\rebuild_temple.dds"		
+      } 
+spriteType = {
+		name = "GFX_offer_temple_sacrifice"
+		texturefile = "gfx\\decisions\\rebuild_temple.dds"		
+      }
+spriteType = {
+		name = "GFX_demand_trial_by_combat"
+		texturefile = "gfx\\decisions\\royal_entry.dds"		
+      } 
+spriteType = {
+		name = "GFX_return_home"
+		texturefile = "gfx\\decisions\\decision_templar.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_santiago"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_alcantara"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_calatrava"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_saint_james"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_aviz"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_livonian"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_dobrzyn"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_redstar"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_montesa"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_sepulchre"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_virgin"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_thomas"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_jordi"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_jesus"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_mountjoy"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      } 
+spriteType = {
+		name = "GFX_found_order_lazarus"
+		texturefile = "gfx\\decisions\\holy_order.dds"		
+      }
+
+	
+	spriteType = {
+		name = "GFX_take_loan"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_50"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_100"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_200"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_400"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_600"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_800"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan_1000"
+		texturefile = "gfx\\decisions\\decision_icon_loan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pogrom"
+		texturefile = "gfx\\decisions\\decision_icon_pogrom.dds"
+	}
+      spriteType = {
+		name = "GFX_create_commonwealth_poland"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_commonwealth_hungary"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_viking_empire"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_russian_empire"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_viking_empire"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_italian_kingdom"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_french_kingdom"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_spanish_kingdom"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+      spriteType = {
+		name = "GFX_create_united_kingdom"
+		texturefile = "gfx\\decisions\\edict.dds"
+	}
+
+} 
+

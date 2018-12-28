@@ -1,0 +1,675 @@
+######################################
+#New venetian dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035221-1000035270
+######################################
+
+1000035221 = {
+name="Carraresi"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 38
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  }	 
+}
+
+1000035222 = {
+name="Camposampiero"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+1000035223 = {
+name="Barbarigo"
+ culture = venetian
+}
+
+1000035224 = {
+name="Bembo"
+ culture = venetian
+# d'azur au chevron d'or, accompagné de trois quintefeuilles d'or
+# TP 32 18
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 5
+          texture_internal = 29
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  }
+}
+
+1000035225 = {
+name="Bon"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 137
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  } 
+}
+
+1000035226 = {
+name="Bragadin"
+ culture = venetian
+  #TP 32 19 
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 120
+          emblem = 0
+          color = 2
+          color = 4
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 120
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  }
+}
+
+1000035227 = {
+name="Badoer"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 165
+          emblem = 22
+          color = 2
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035228 = {
+name="Barbaro"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 4
+          texture_internal = 152
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  }
+
+}
+
+1000035230 = {
+name="Dolfin"
+ culture = venetian
+# d'azur à trois dauphins d'or *
+}
+
+1000035231 = {
+name="Loredan"
+ culture = venetian
+# coupé d'or et d'azur, à six quintefeuilles de l'un en l'autre
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 5
+          texture_internal = 76
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  }
+}
+
+1000035232 = {
+name="Orseolo"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 16
+          emblem = 0
+          color = 3
+          color = 0
+          color = 0
+      }
+  } 
+}
+
+1000035233 = {
+name="Pisani"
+ culture = venetian
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 1
+          color = 4
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+
+1000035234 = {
+name="Priuli"
+ culture = venetian
+  coat_of_arms = {
+      template = 5
+      layer = {
+          texture = 1
+          texture_internal = 0
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 233
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035235 = {
+name="Partecipazio"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 150
+          emblem = 24
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035236 = {
+name="Querini"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 69
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+1000035237 = {
+name="Thiene"
+ culture = venetian
+# d'azur au pal endenté d'argent *
+}
+1000035238 = {
+name="Altan"
+ culture = venetian
+}
+1000035239 = {
+name="Amalteo"
+ culture = venetian
+}
+1000035240 = {
+name="Bonomo"
+ culture = venetian
+}
+1000035241 = {
+name="Caiselli"
+ culture = venetian
+}
+1000035242 = {
+name="Colloredo"
+ culture = venetian
+}
+1000035243 = {
+name="Lanthieri"
+ culture = venetian
+}
+1000035244 = {
+name="Panciera"
+ culture = venetian
+}
+1000035245 = {
+name="Polcenigo"
+ culture = venetian
+}
+1000035246 = {
+name="Prata"
+ culture = venetian
+}
+1000035247 = {
+name="Sbrojavacca"
+ culture = venetian
+}
+1000035248 = {
+name="Obizzi"
+ culture = venetian
+}
+1000035249 = {
+name="da Peraga"
+ culture = venetian
+}
+1000035250 = {
+name="Carbonara"
+ culture = venetian
+}
+1000035251 = {
+name="Collalto"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 169
+          emblem = 0
+          color = 3
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035252 = {
+name="Tempesta"
+ culture = venetian
+}
+1000035253 = {
+name="Baffo"
+ culture = venetian
+  coat_of_arms = {
+      template = 2
+      layer = {
+          texture = 0
+          texture_internal = 165
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 165
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+1000035254 = {
+name="Bembo"
+ culture = venetian
+}
+1000035255 = {
+name="Cappello"
+ culture = venetian
+}
+1000035256 = {
+name="Magno"
+ culture = venetian
+}
+1000035257 = {
+name="Marcello"
+ culture = venetian
+}
+1000035258 = {
+name="Moro"
+ culture = venetian
+}
+1000035259 = {
+name="Mosto"
+ culture = venetian
+}
+1000035260 = {
+name="Mula"
+ culture = venetian
+}
+1000035261 = {
+name="Nadal"
+ culture = venetian
+}
+1000035262 = {
+name="Orio"
+ culture = venetian
+}
+1000035263 = {
+name="Porto"
+ culture = venetian
+}
+1000035264 = {
+name="Salamon"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 5
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035265 = {
+name="Valier"
+ culture = venetian
+}
+1000035266 = {
+name="Trissino"
+ culture = venetian
+}
+1000035267 = {
+name="Venier"
+ culture = venetian
+}
+1000035268 = {
+name="Molin"
+ culture = venetian
+}
+1000035269 = {
+name="Foscari"
+ culture = venetian
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 168
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+      layer = {
+          texture = 1
+          texture_internal = 0
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035270 = {
+name="Briani"
+ culture = venetian
+}
+1000035271 = {
+name="Sambonifacio"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 166
+          emblem = 0
+          color = 1
+          color = 3
+          color = 0
+      }
+  } 
+}
+1000035272 = {
+name="Barbaran"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 3
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035273 = {
+name="Bissari"
+ culture = venetian
+}
+1000035274 = {
+name="Acotanto"
+ culture = venetian
+}
+1000035275 = {
+name="Amizzo"
+ culture = venetian
+}
+1000035276 = {
+name="Armer"
+ culture = venetian
+}
+1000035277 = {
+name="Barison"
+ culture = venetian
+}
+1000035278 = {
+name="Basadonna"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 47
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035279 = {
+name="Baseggio"
+ culture = venetian
+}
+1000035280 = {
+name="Belegno"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 165
+          emblem = 0
+          color = 3
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035281 = {
+name="Boldù"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 49
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035282 = {
+name="Bolani"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 213
+          emblem = 0
+          color = 2
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035283 = {
+name="Calbo"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 168
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035284 = {
+name="Caotorta"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 4
+          texture_internal = 152
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  }
+}
+1000035285 = {
+name="Caravello"
+ culture = venetian
+}
+1000035286 = {
+name="Centranico"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 5
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035287 = {
+name="Correr"
+ culture = venetian
+# coupé d'argent sur azur, au losange de l'un en l'autre *
+}
+1000035288 = {
+name="Diedo"
+ culture = venetian
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 226
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 226
+          emblem = 0
+          color = 4
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035289 = {
+name="Erizzo"
+ culture = venetian
+}
+1000035290 = {
+name="Foscarini"
+ culture = venetian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 225
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  } 
+}
+
+
+
+
+
+######################################
+#Generic dynasites
+#Range #################### 
+######################################
+
+
+
+

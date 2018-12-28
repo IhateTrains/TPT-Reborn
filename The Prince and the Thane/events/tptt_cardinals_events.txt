@@ -1,0 +1,2115 @@
+############################################################################
+#
+# The Prince and the Thane cardinal and conclave events - written by idib816
+#
+############################################################################
+
+namespace = holy_see
+
+#On cardinal death
+character_event = {
+	id = holy_see.0
+	desc = "EVTDESCholy_see.0"
+	picture = "GFX_evt_clerical_envoy2"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = trait_cardinal
+	}
+	
+	option = {
+		name = "EVTOPTAholy_see.0"
+		k_papal_state = {
+			holder_scope = {
+				change_variable = { which = "cardinal_count" value = -1 }
+			}					
+		}
+		if = {
+		    limit = {
+		        has_character_flag = created_cardinal
+			}
+		    k_papal_state = {
+			    holder_scope = {
+				    change_variable = { which = "created_cardinals" value = -1 }
+			    }					
+		    }
+		}
+	}
+}
+
+#New Cardinal is nominated (A landed bishop)
+character_event = {
+	id = holy_see.1
+	desc = "EVTDESCholy_see.1"
+	picture = "GFX_evt_clerical_envoy2"
+	
+	only_rulers = yes
+	only_men = yes
+	
+    trigger = {
+	    lower_tier_than = KING
+	    religion = catholic
+	    is_theocracy = yes
+	    NOT = { trait = trait_cardinal }
+	    k_papal_state = {
+	        holder_scope = {
+	            NOT = { check_variable = { which = "cardinal_count" value = 15 } }
+		        NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_rival } }
+		    	opinion = { who = ROOT value = 0 }
+		    }
+	    }
+    }
+	
+	mean_time_to_happen = {
+		months = 3600
+		
+		modifier = {
+		    factor = 0.05
+			father = { tier = EMPEROR }
+		}
+		modifier = {
+		    factor = 5
+			father = { is_ruler = no }
+		}
+		modifier = {
+		    factor = 0.15
+			father = { tier = KING }
+		}
+		modifier = {
+		    factor = 0.25
+			father = { tier = DUKE }
+		}
+		modifier = {
+		    factor = 0.5
+			prestige = 500
+		}
+		modifier = {
+		    factor = 0.25
+			prestige = 750
+		}
+		modifier = {
+		    factor = 0.25
+			prestige = 1000
+		}
+		modifier = {
+		    factor = 0.5
+			piety = 500
+		}
+		modifier = {
+		    factor = 0.25
+			piety = 750
+		}
+		modifier = {
+		    factor = 0.25
+			piety = 1000
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 10
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 11
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 12
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 13
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 14
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 15
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 16
+		}
+		modifier = {
+		    factor = 0.5
+			age = 30
+		}
+		modifier = {
+		    factor = 0.25
+			age = 40
+		}
+		modifier = {
+		    factor = 0.25
+			age = 45
+		}
+		modifier = {
+		    factor = 0.25
+			age = 50
+		}
+		modifier = {
+		    factor = 0.25
+			age = 55
+		}
+		modifier = {
+		    factor = 0.15
+			age = 60
+		}
+		modifier = {
+		    factor = 0.25
+			trait = mastermind_theologian
+		}
+		modifier = {
+		    factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+		    factor = 3
+			trait = content
+		}
+		modifier = {
+		    factor = 3
+			trait = humble
+		}
+		modifier = {
+		    factor = 1.75
+			tier = BARON
+		}
+		modifier = {
+		    factor = 0.5
+			tier = COUNT
+		}
+		modifier = {
+		    factor = 0.25
+			tier = DUKE
+		}
+	}
+
+	option = {
+	
+		name = "EVTOPTAholy_see.5" #Accept	
+		add_trait = trait_cardinal
+		prestige = 250
+        piety = 100
+		k_papal_state = {
+		    holder_scope = {
+			    reverse_opinion = {
+				    modifier = opinion_grateful
+				    who = ROOT
+					months = 1200
+				}
+			    change_variable = { which = "cardinal_count" value = 1 }
+			}
+		}
+	}
+}
+
+#New Cardinal is nominated (A court bishop of at least a duchy)
+character_event = {
+	id = holy_see.2
+	desc = "EVTDESCholy_see.1"
+	picture = "GFX_evt_clerical_envoy2"
+	
+    min_age = 14
+	only_men = yes
+	
+    trigger = {
+	    religion = catholic
+	    NOT = { trait = trait_cardinal }
+	    ai = yes
+	    has_job_title = job_spiritual
+	    employer = { 
+	        religion = catholic
+		    higher_tier_than = COUNT
+	    }
+	k_papal_state = {
+	    holder_scope = {
+	        NOT = { check_variable = { which = "cardinal_count" value = 15 } }
+		    NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_rival } }
+			opinion = { who = ROOT value = 0 }
+		   }
+	    }
+    }
+	
+	mean_time_to_happen = {
+		months = 1200
+		
+		modifier = {
+		    factor = 0.05
+			father = { tier = EMPEROR }
+		}
+		modifier = {
+		    factor = 5
+			father = { is_ruler = no }
+		}
+		modifier = {
+		    factor = 0.15
+			father = { tier = KING }
+		}
+		modifier = {
+		    factor = 0.25
+			father = { tier = DUKE }
+		}
+		modifier = {
+		    factor = 0.5
+			prestige = 500
+		}
+		modifier = {
+		    factor = 0.25
+			prestige = 750
+		}
+		modifier = {
+		    factor = 0.25
+			prestige = 1000
+		}
+		modifier = {
+		    factor = 0.5
+			piety = 500
+		}
+		modifier = {
+		    factor = 0.25
+			piety = 750
+		}
+		modifier = {
+		    factor = 0.25
+			piety = 1000
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 10
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 11
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 12
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 13
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 14
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 15
+		}
+		modifier = {
+		    factor = 0.5
+			learning = 16
+		}
+		modifier = {
+		    factor = 0.5
+			age = 30
+		}
+		modifier = {
+		    factor = 0.25
+			age = 40
+		}
+		modifier = {
+		    factor = 0.25
+			age = 45
+		}
+		modifier = {
+		    factor = 0.25
+			age = 50
+		}
+		modifier = {
+		    factor = 0.25
+			age = 55
+		}
+		modifier = {
+		    factor = 0.15
+			age = 60
+		}
+		modifier = {
+		    factor = 0.25
+			trait = mastermind_theologian
+		}
+		modifier = {
+		    factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+		    factor = 3
+			trait = content
+		}
+		modifier = {
+		    factor = 3
+			trait = humble
+		}
+		modifier = {
+		    factor = 0.5
+			tier = COUNT
+		}
+		modifier = {
+		    factor = 0.25
+			tier = DUKE
+		}
+	}
+
+	option = {
+	
+		name = "EVTOPTAholy_see.5" #Accept	
+		add_trait = trait_cardinal
+		prestige = 250
+        piety = 100
+		if = { 
+		    limit  = {
+			    is_married = yes
+			}
+		    remove_spouse = spouse
+		}
+		k_papal_state = {
+		    holder_scope = {
+			    reverse_opinion = {
+				    modifier = opinion_grateful
+				    who = ROOT
+					months = 1200
+				}
+			    change_variable = { which = "cardinal_count" value = 1 }
+			}
+		}
+	}
+}
+
+#New Cardinal is created
+character_event = {
+	id = holy_see.3
+	desc = "EVTDESCholy_see.48"
+	picture = "GFX_evt_clerical_envoy2"
+	
+	only_rulers = yes
+	
+    trigger = {
+	    has_landed_title = k_papal_state
+	    k_papal_state = { holder_scope = { NOT = { check_variable = { which = "created_cardinals" value = 8 } } } }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTAholy_see.48"
+	    k_papal_state = { holder_scope = { change_variable = { which = "created_cardinals" value = 1 } } }
+		k_papal_state = {
+			holder_scope = {
+				change_variable = { which = "cardinal_count" value = 1 }
+			}					
+		}
+		create_random_priest = {
+			random_traits = no
+	        culture = ROOT
+	        dynasty = random
+          	female = no
+         	min_age = 40
+	        religion = catholic
+	        trait = trait_cardinal
+	        trait = celibate
+		}
+	    new_character = {
+		    set_character_flag = created_cardinal
+		    opinion = {
+		        modifier = opinion_grateful
+		        who = ROOT
+	            months = 1200
+	        }
+		}
+	}
+}
+
+#Cardinal counter. (conclave initialised flag)
+character_event = {
+	id = holy_see.14
+	desc = "EVTDESCholy_see.14"
+	picture = "GFX_evt_clerical_envoy2"
+	
+	trigger = {
+		has_landed_title = k_papal_state
+		NOT = { has_global_flag = conclave_initialised }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = "EVTOPTAholy_see.14"
+		set_global_flag = conclave_initialised
+		any_playable_ruler = {
+	        any_realm_character = {
+				limit = {
+					trait = trait_cardinal
+					NOT = { character = ROOT }
+				}
+			ROOT = { change_variable = { which = "cardinal_count" value = 1 } }
+			}
+	    }
+	}
+}
+
+#Pope Dies. (On death)
+character_event = {
+	id = holy_see.16
+	desc = "EVTDESCholy_see.16"
+	picture = "GFX_evt_pope"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+        any_playable_ruler = {
+			limit = { religion = catholic }
+            character_event = { id = holy_see.17 days = 2 random = 5 }  
+		}
+	}
+	
+	trigger = {
+		has_landed_title = k_papal_state
+	}
+	
+	option = {
+		name = "EVTOPTAholy_see.16"
+	}
+}
+
+#Pope Dies - Ruler notification
+character_event = {
+	id = holy_see.17
+	desc = "EVTDESCholy_see.17"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	
+	immediate = {
+	    if = { 
+		    limit = {
+			    NOT = { has_global_flag = conclave_event }
+			}
+            k_papal_state = {
+		    	holder_scope = {
+			        character_event = { id = holy_see.18 days = 20 }
+			    }
+		    }
+		}
+		set_global_flag = conclave_event
+	}
+	
+	option = {
+		ai_chance = { factor = 0 }
+		name = "EVTOPTAholy_see.17" 
+	}
+	
+	option = {
+	    trigger = { any_dynasty_member = { trait = trait_cardinal } NOT = { has_character_flag = being_backed } higher_tier_than = COUNT }
+		name = "EVTOPTBholy_see.17" 
+		prestige = -150
+		piety = -75
+		wealth = -350
+		set_character_flag = backing_cardinal
+		random_dynasty_member = {
+		    limit = {
+			    trait = trait_cardinal
+			}
+			set_character_flag = being_backed
+            opinion = {
+				modifier = opinion_backed_papal_bid
+				who = ROOT
+				months = 180
+			}
+		    reverse_opinion = {
+				modifier = opinion_backed_papal_bid
+				who = ROOT
+				months = 180
+			}
+		}
+	}
+}
+
+#The Conclave
+character_event = {
+	id = holy_see.18
+	desc = "EVTDESCholy_see.17"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    clr_global_flag = conclave_event
+	}
+	
+	trigger = {
+	    has_landed_title = k_papal_state
+	}
+	
+	immediate = {
+	    random_playable_ruler = { #First papable, a Roman cardinal
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					OR = {  
+                        has_minor_title = title_cardinal_ostia
+                        has_minor_title = title_cardinal_palestrina
+                        has_minor_title = title_cardinal_porto
+                        has_minor_title = title_cardinal_velletri
+                        has_minor_title = title_cardinal_tusculum
+                        has_minor_title = title_cardinal_albano
+					}    
+				}
+				set_character_flag = PA_1
+			}
+		}
+	    random_playable_ruler = { #Second papable, a landed bishop
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+                            has_minor_title = title_cardinal_ostia
+                            has_minor_title = title_cardinal_palestrina
+                            has_minor_title = title_cardinal_porto
+                            has_minor_title = title_cardinal_velletri
+                            has_minor_title = title_cardinal_tusculum
+                            has_minor_title = title_cardinal_albano
+						}
+					}
+					is_ruler = yes
+					higher_tier_than = BARON
+				}
+				set_character_flag = PA_2
+			}
+		}
+	    random_playable_ruler = { #Third papable, a great theologian
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					OR = {
+					    trait = mastermind_theologian
+						learning = 14
+					}
+				}
+				set_character_flag = PA_3
+			}
+		}
+	    random_playable_ruler = { #Fourth papable, a highborn bishop
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					father_even_if_dead = {
+					    higher_tier_than = COUNT
+					}
+				}
+				set_character_flag = PA_4
+			}
+		}
+	    random_playable_ruler = { #Fifth papable, a pious or prestigious bishop
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					OR = {
+					    piety = 450
+						prestige = 750
+					}
+				}
+				set_character_flag = PA_5
+			}
+		}
+	    random_playable_ruler = { #Sixth papable, a sponsored bishop
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					has_character_flag = being_backed
+				}
+				set_character_flag = PA_6
+			}
+		}
+	    random_playable_ruler = { #Seventh papable, a hre bishop from a key bisphoric
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					OR = {
+					    has_landed_title = d_trier
+					    has_landed_title = d_osnabruck
+					    has_landed_title = d_bishopmunster
+					    has_landed_title = d_bremen
+					    has_landed_title = d_magdeburg
+					    has_landed_title = d_mainz
+					    has_landed_title = d_koln
+					    has_landed_title = d_bamberg
+					    has_landed_title = d_salzburg
+					    has_landed_title = d_chur
+					    has_landed_title = d_basel
+					}
+				}
+				set_character_flag = PA_7
+			}
+		}
+	    random_playable_ruler = { #Eight papable, a french or british bishop from a key bisphoric
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					OR = {
+					    has_landed_title = d_arles
+					    has_landed_title = d_lyon
+					    has_landed_title = d_archreims
+					    has_landed_title = d_cluny
+					    has_landed_title = d_canterbury
+					    has_landed_title = d_archbishop_york
+					}
+				}
+				set_character_flag = PA_8
+			}
+		}
+	    random_playable_ruler = { #Ninth papable, an italian cardinal
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					culture_group = italian_group
+				}
+				set_character_flag = PA_9
+			}
+		}
+	    random_playable_ruler = { #Tenth papable, a cardinal who knows his way around things
+		    random_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+					NOT = { 
+					    OR = { 
+						    has_minor_title = title_cardinal_deacon
+						    has_minor_title = title_cardinal_protodeacon
+						}
+					}
+					OR = {
+					    diplomacy = 14
+						intrigue = 14
+						trait = ambitious
+						trait = machiavellian
+					}
+				}
+				set_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_1
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_1
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_2
+				}
+			}
+		}
+		name = "EVTOPTBholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_2
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_3
+				}
+			}
+		}
+		name = "EVTOPTCholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_3
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_4
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_4
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_5
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_5
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_6
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_6
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_7
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_7
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_8
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_8
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_9
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_9
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+	
+    option = {
+	    trigger = { 
+		    any_playable_ruler = { 
+		        any_realm_character = {
+				    has_character_flag = PA_10
+				}
+			}
+		}
+		name = "EVTOPTAholy_see.18" 
+		random_playable_ruler = { 
+		    random_realm_character = {
+			    limit = {
+				    has_character_flag = PA_10
+				}
+				character_event = { 
+				    id = holy_see.20
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = PA_1
+				clr_character_flag = PA_2
+				clr_character_flag = PA_3
+				clr_character_flag = PA_4
+				clr_character_flag = PA_5
+				clr_character_flag = PA_6
+				clr_character_flag = PA_7
+				clr_character_flag = PA_8
+				clr_character_flag = PA_9
+				clr_character_flag = PA_10
+			}
+		}
+	}
+}
+
+#Chosen Pope takes his seat
+character_event = {
+	id = holy_see.20
+	desc = "EVTDESCholy_see.20"
+	picture = "GFX_evt_pope"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_trait = trait_cardinal
+	    if = { 
+		    limit = {
+			    is_ruler = yes
+				independent = no
+			}
+		    create_random_priest = {
+			    random_traits = yes
+	            culture = ROOT
+	            dynasty = random
+          	    female = no
+         	    min_age = 40
+	            religion = catholic
+		    }
+	        new_character = {
+		        inherit = ROOT
+				ROOT = { 
+				    liege = {
+					    set_defacto_vassal = PREVPREV
+					}
+				}
+			}
+		}
+	    if = { 
+		    limit = {
+			    is_ruler = yes
+				independent = yes
+			}
+		    create_random_priest = {
+			    random_traits = yes
+	            culture = ROOT
+	            dynasty = random
+          	    female = no
+         	    min_age = 40
+	            religion = catholic
+		    }
+	        new_character = {
+		        inherit = ROOT
+			}
+		}
+	}
+    option = {
+		name = "EVTOPTAholy_see.20" 
+        k_papal_state = { grant_title = ROOT }
+		clr_global_flag = conclave_initialised
+		k_papal_state = {
+			holder_scope = {
+				change_variable = { which = "cardinal_count" value = -1 }
+			}					
+		}
+		clr_character_flag = being_backed
+        FROM = { banish = yes }
+		any_playable_ruler = { 
+		    limit = {
+			    religion = catholic
+			    has_character_flag = backing_cardinal
+				has_opinion_modifier = { 
+					who = ROOT
+					modifier = opinion_backed_papal_bid
+				}
+				reverse_has_opinion_modifier = { 
+					who = ROOT
+					modifier = opinion_backed_papal_bid
+				}
+			}
+			character_event = { 
+			    id = holy_see.21
+			}
+		}
+        any_playable_ruler = {
+			any_realm_character = {
+				limit = {
+					trait = trait_cardinal
+					NOT = { character = ROOT }
+					is_ruler = no
+					is_councillor = no
+				}
+				ROOT = {
+					reverse_banish = PREV
+				}
+			}
+		}
+		any_playable_ruler = { 
+		    limit = {
+			    religion = catholic
+			    has_character_flag = backing_cardinal
+				NOT = { 
+				    has_opinion_modifier = { 
+					    who = ROOT
+					    modifier = opinion_backed_papal_bid
+				    }
+				    reverse_has_opinion_modifier = { 
+					    who = ROOT
+					    modifier = opinion_backed_papal_bid
+				    }
+				}
+			}
+			character_event = { 
+			    id = holy_see.22
+			}
+		}
+		any_playable_ruler = { 
+		    limit = { 
+			    religion = catholic
+			    NOT = { has_character_flag = backing_cardinal }
+			}
+			narrative_event = { 
+			    id = holy_see.23
+			}
+		}
+	}
+}
+
+#Papal bid succesful - Ruler notification
+character_event = {
+	id = holy_see.21
+	desc = "EVTDESCholy_see.21"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = "EVTOPTAholy_see.21"
+        piety = 50
+        prestige = 150
+		clr_character_flag = backing_cardinal
+        any_playable_ruler = {
+            any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = being_backed
+			}
+		}
+        reverse_opinion = {
+			modifier = backed_papacy
+			who = FROM
+			months = 1200
+		}  
+	}
+}
+
+#Papal bid unsuccesful - Ruler notification
+character_event = {
+	id = holy_see.22
+	desc = "EVTDESCholy_see.22"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = "EVTOPTAholy_see.21"
+        piety = -25
+        prestige = -50
+		clr_character_flag = backing_cardinal
+        any_playable_ruler = {
+            any_realm_character = {
+			    limit = { 
+				    trait = trait_cardinal
+				}
+				clr_character_flag = being_backed
+			}
+		}
+        reverse_opinion = {
+			modifier = backed_other_papacy
+			who = FROM
+			months = 1200
+		}  
+	}
+}
+
+#New Pope notification to rulers (FROM is the new pope)
+narrative_event = {
+	id = holy_see.23
+	desc = "EVTDESCholy_see.23"
+	title = "Habemus Papam!"
+	picture = "GFX_evt_pope"
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = "EVTOPTAholy_see.23"
+		clr_character_flag = backing_cardinal
+        piety = 10
+	}
+}
+
+#Protodeacon appointed
+character_event = {
+	id = holy_see.36
+	desc = "You've been appointed protodeacon"
+	only_men = yes
+    min_age = 40
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = { NOT = { has_minor_title = title_cardinal_protodeacon } }
+        has_minor_title = title_cardinal_deacon
+	}
+
+    mean_time_to_happen = {
+		years = 1
+	}
+	
+	option = { 
+		name = "It's an honor"
+        remove_title = title_cardinal_deacon
+		give_minor_title = title_cardinal_protodeacon
+        prestige = 75
+        piety = 50
+	}
+}
+
+#Deacon appointed
+character_event = {
+	id = holy_see.37
+	desc = "You've been appointed deacon"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+	    e_rebels = { holder_scope = { NOT = { check_variable = { which = "cardinal_deacons" value = 2 } } } }
+        NOT = { 
+		    OR = { 
+			    has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		years = 1
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_deacon
+        prestige = 50
+        piety = 25
+		e_rebels = { holder_scope = { change_variable = { which = "cardinal_deacons" value = 1 } } }
+	}
+}
+
+#Cardinal of Ostia appointed
+character_event = {
+	id = holy_see.38
+	desc = "You've been appointed cardinal of Ostia"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = { 
+		    NOT = { has_minor_title = title_cardinal_ostia } 
+		}
+        b_ostia = { 
+		    holder_scope = { NOT = { trait = trait_cardinal }  }
+		}
+        NOT = { 
+		    OR = {
+    			has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_ostia
+        prestige = 50
+        piety = 100
+        b_ostia = {
+            gain_title = ROOT 
+		}
+		k_papal_state = {
+			holder_scope = {
+				ROOT = { set_defacto_liege = PREV }
+			}
+		}
+	}
+}
+
+#Cardinal of Tusculum appointed
+character_event = {
+	id = holy_see.39
+	desc = "You've been appointed cardinal of Tusculum"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = { 
+		    NOT = { has_minor_title = title_cardinal_tusculum } 
+		}
+        b_tusculum = { 
+		    holder_scope = { NOT = { trait = trait_cardinal }  }
+		}
+        NOT = { 
+		    OR = { 
+			    has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_tusculum
+        prestige = 50
+        piety = 100
+        b_tusculum = { gain_title = ROOT }
+		k_papal_state = {
+		    holder_scope = {
+				ROOT = { set_defacto_liege = PREV }
+			}
+		}
+	}
+}
+
+#Cardinal of Porto appointed
+character_event = {
+	id = holy_see.40
+	desc = "You've been appointed cardinal of Porto"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = {
+    		NOT = { has_minor_title = title_cardinal_porto } 
+		}
+        b_mentana = { 
+		    holder_scope = { NOT = { trait = trait_cardinal }  }
+		}
+        NOT = { 
+		    OR = { 
+			    has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_porto
+        prestige = 50
+        piety = 100
+        b_mentana = { gain_title = ROOT }
+		k_papal_state = {
+			holder_scope = {
+				ROOT = { set_defacto_liege = PREV }
+			}
+		}
+	}
+}
+
+#Cardinal of Palestrina appointed
+character_event = {
+	id = holy_see.41
+	desc = "You've been appointed cardinal of Palestrina"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = { 
+			NOT = { has_minor_title = title_cardinal_palestrina } 
+		}
+        b_trevignanoromano = { 
+		    holder_scope = { NOT = { trait = trait_cardinal }  }
+		}
+        NOT = { 
+			OR = { 
+			    has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_palestrina
+        prestige = 50
+        piety = 100
+        b_trevignanoromano = { gain_title = ROOT }
+		k_papal_state = {
+			holder_scope = {
+				ROOT = { set_defacto_liege = PREV }
+			}
+		}
+	}
+}
+
+#Cardinal of Velletri appointed
+character_event = {
+	id = holy_see.42
+	desc = "You've been appointed cardinal of Velletri"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = { 
+		    NOT = { has_minor_title = title_cardinal_velletri } 
+		}
+        b_velletri = { 
+		    holder_scope = { NOT = { trait = trait_cardinal }  }
+		}
+        NOT = { 
+		    OR = { 
+			    has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_velletri
+        prestige = 50
+        piety = 100
+        b_velletri = { gain_title = ROOT }
+		k_papal_state = {
+			holder_scope = {
+				ROOT = { set_defacto_liege = PREV }
+			}
+		}
+	}
+}
+
+#Cardinal of Albano appointed
+character_event = {
+	id = holy_see.43
+	desc = "You've been appointed cardinal of Albano"
+	only_men = yes
+	
+	trigger = {
+		trait = trait_cardinal
+        is_ruler = no
+		liege = { has_landed_title = k_papal_state }
+        any_realm_character = { 
+		    NOT = { has_minor_title = title_cardinal_albano } 
+		}
+        b_palo = { 
+		    holder_scope = { NOT = { trait = trait_cardinal }  }
+		}
+        NOT = { 
+		    OR = { 
+			    has_minor_title = title_cardinal_deacon
+                has_minor_title = title_cardinal_protodeacon 
+                has_minor_title = title_cardinal_ostia
+                has_minor_title = title_cardinal_palestrina
+                has_minor_title = title_cardinal_porto
+                has_minor_title = title_cardinal_velletri
+                has_minor_title = title_cardinal_tusculum
+                has_minor_title = title_cardinal_albano 
+			} 
+		}
+	}
+
+    mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = "It's an honor"
+		give_minor_title = title_cardinal_albano
+        prestige = 50
+        piety = 100
+        b_palo = { gain_title = ROOT }
+		k_papal_state = {
+			holder_scope = {
+				ROOT = { set_defacto_liege = PREV }
+			}
+		}
+	}
+}
+
+#Suggest your son for the Cardinal office
+character_event = {
+	id = holy_see.44
+	desc = "My son has received an ecclesiastical education. Many say he is now ready for a higher position, even the cardinalcy perhaps.."
+	picture = "GFX_evt_clerical_envoy2"
+	border = GFX_event_normal_frame_religion
+		
+	is_triggered_only = yes
+	
+	trigger = {
+	    religion = catholic
+		NOT = {
+		    OR = {
+			    trait = humble
+				trait = content
+			}
+		}
+	    k_papal_state = { holder_scope = { NOT = { check_variable = { which = "cardinal_count" value = 25 } } } }
+	    OR = {
+		    higher_tier_than = COUNT
+		    prestige = 500
+	    }
+		any_child = {
+		    ai = yes
+		    is_female = no
+		    is_ruler = no
+		    religion = catholic
+		    age = 20
+		    NOT = { 
+				OR = {
+		            has_character_flag = proposed_for_cardinal
+				    trait = trait_cardinal
+                    trait = templar
+                    trait = templar_leader
+				    is_primary_heir = yes
+				}
+			}	
+			OR = {
+			    trait = detached_priest
+				trait = martial_cleric
+				trait = scholarly_theologian
+				trait = mastermind_theologian
+			}
+		}
+	}
+
+    mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = { 
+		name = "I should make his name to the Pope"
+		random = { 
+		    chance = 30
+		    add_trait = ambitious 
+			hidden_tooltip = {
+				character_event = { id = 38278 }
+			}
+		}
+	    any_child = {
+		    limit = {
+			ai = yes
+		    is_female = no
+			is_ruler = no
+		    age = 20
+	        religion = catholic
+		        NOT = { 
+				    OR = {
+		                has_character_flag = proposed_for_cardinal
+				        trait = trait_cardinal
+                        trait = templar
+                        trait = templar_leader
+				        is_primary_heir = yes
+				    }
+			    }	
+			    OR = {
+			        trait = detached_priest
+				    trait = martial_cleric
+				    trait = scholarly_theologian
+				    trait = mastermind_theologian
+					learning = 10
+			    }
+		    }
+		set_character_flag = proposed_for_cardinal
+	    }
+	    hidden_tooltip = {
+	        k_papal_state = { holder_scope = { letter_event = { id = holy_see.45 days = 30 } } }
+		}
+	}
+	
+	option = { 
+		name = "He is not ready"
+	    prestige = -50
+		random = { chance = 50
+		add_trait = content 
+			hidden_tooltip = {
+				character_event = { id = 38279 }
+			}
+		}
+	}
+}
+
+#Papal response
+letter_event = {
+	id = holy_see.45
+	desc = "EVTDESCholy_see.45"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "No way"
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_spouse
+					}
+				}
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_child
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_vassal
+					}
+				}
+			}			
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					NOT = {
+						opinion = {
+							who = FROM
+							value = -20
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					NOT = {
+						opinion = {
+							who = FROM
+							value = -40
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					NOT = {
+						opinion = {
+							who = FROM
+							value = -60
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					NOT = {
+						opinion = {
+							who = FROM
+							value = -80
+						}
+					}
+				}
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = cruel }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = wroth }
+			}
+            modifier = {
+				factor = 0.25
+				FROM = { trait = just }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = honest }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = kind }
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = deceitful }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = lady_macbeth }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = conservative }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { NOT = { diplomacy = 10 } }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { NOT = { prestige = 500 } }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					NOT = {
+						opinion = {
+							who = FROM
+							value = -99
+						}
+					}
+				}
+			}
+		}
+	    FROM = { letter_event = { id = holy_see.46 days = 15 } }	
+	}
+	
+	option = { 
+		name = "Okay"
+		ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 0.5
+				FROM = { trait = cruel }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = just }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { piety = 250 }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = clerical_envoy }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { martial = 14 }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = master_warrior }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = honest }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = kind }
+			}
+            modifier = {
+				factor = 2
+				FROM = { trait = gregarious }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { diplomacy = 10 }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = deceitful }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 250 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 500 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 750 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 1000 }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 99
+					}
+				}
+			}
+		}
+		FROM = { 
+		    letter_event = { id = holy_see.47 days = 15 }
+		    any_child = { 
+			    limit  = {
+		            has_character_flag = proposed_for_cardinal
+				}
+		        if = { 
+		            limit  = { is_married = yes }
+		            remove_spouse = spouse
+		        }
+		        k_papal_state = {
+				    holder_scope = {
+			            reverse_banish = PREV
+			            change_variable = { which = "cardinal_count" value = 1 }
+					}
+		        }
+		        add_trait = celibate
+		        add_trait = trait_cardinal
+		    }
+		}
+	}
+}
+
+#Papal response - bad outcome
+letter_event = {
+	id = holy_see.46
+	desc = "The proposal of nominating your son as a Cardinal is insulting. His Holyness the Pope"
+	border = GFX_event_letter_frame_religion
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Damn!"
+		prestige = -100
+		piety = -50
+		opinion = {
+			modifier = opinion_angry
+			who = FROM
+			months = 120
+		}
+	}
+}
+
+#Papal response - good outcome
+letter_event = {
+	id = holy_see.47
+	desc = "Your son is an adequate candidate indeed, I will nominate him as Cardinal of the Holy See. His Holyness the Pope"
+	border = GFX_event_letter_frame_religion
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Gloria!"
+		prestige = 100
+		piety = 50
+		opinion = {
+			modifier = opinion_delighted
+			who = FROM
+			months = 120
+		}
+	}
+}

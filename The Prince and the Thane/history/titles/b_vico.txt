@@ -1,0 +1,40 @@
+800.1.1={
+	liege="c_viterbo"
+}
+867.1.1={
+	holder=1191230 #Arnolfo Castelli
+}
+923.1.1={
+	holder=1191231 #Pietro Castelli
+}
+987.1.1={
+	holder=1191232 #Alberto Castelli
+}
+1040.1.1={
+	holder=1191233 #Pantaleone Castelli
+}
+1090.1.1={
+	holder=1191236 #Pietro Castelli
+}
+1132.1.1={
+	holder=1191237 #Angelo Castelli
+}
+1159.1.1={
+	holder=1191238 #Giovanni I Castelli
+}
+1220.1.1={
+	holder=1191241 #Giovanni II Castelli
+}
+1248.1.1={
+	holder=1191242 #Pietro Castelli
+}
+1268.1.1={
+	holder=1191243 #Giovanni IV Castelli
+}
+1278.1.1={
+	holder=1191244 #Manfredo I Castelli
+}
+1315.1.1={
+	holder=1191245 #Giovanni V Castelli
+}
+

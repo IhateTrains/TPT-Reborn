@@ -1,0 +1,18 @@
+# 409 - Bezhetsky Verh
+
+# County Title
+title = c_bezhetsky_verh
+
+# Settlements
+max_settlements = 3
+
+b_staryaladoga = castle
+b_tikhvin = temple
+b_pikalyovo = city
+#b_kirishi = city
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History

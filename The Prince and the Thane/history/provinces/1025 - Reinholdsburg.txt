@@ -1,0 +1,23 @@
+# 1025 - Reinholdsburg
+
+# County Title
+title = c_reinholdsburg
+
+# Settlements
+max_settlements = 4
+
+b_krummediek = castle
+#b_kiel = city
+#b_gottorp = castle
+#b_neumunster = castle
+#b_glucksburg = castle
+#b_reinholdsburg = city
+
+# Misc
+culture = danish
+religion = catholic
+
+# History
+
+
+

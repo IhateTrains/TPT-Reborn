@@ -1,0 +1,21 @@
+# 238 - Valais
+
+# County Title
+title = c_valais
+
+# Settlements
+max_settlements = 3
+
+b_sion = temple
+b_loeche = city
+
+#b_chatillonlebas
+#b_morel
+#b_conthey
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
+

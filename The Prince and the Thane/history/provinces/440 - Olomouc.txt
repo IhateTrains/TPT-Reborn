@@ -1,0 +1,24 @@
+# 440 - Olomouc
+
+# County Title
+title = c_olomouc
+
+# Settlements
+max_settlements = 6
+b_olomouc = temple
+b_hradiste = city
+b_ostrava = castle
+#b_prerov = castle
+#b_sumperk = castle
+#b_hranice = castle
+#b_unicov = city
+#b_jevicko = city
+#b_velehrad = temple
+#b_kromeriz = temple
+
+# Misc
+culture = moravian
+religion = catholic
+
+# History
+1213.1.1 = { b_unicov = city }

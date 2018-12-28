@@ -1,0 +1,25 @@
+# 348 - Foggia
+
+# County Title
+title = c_foggia
+
+# Settlements
+max_settlements = 4
+
+b_montesantangelo = castle
+b_foggia = city
+b_vieste = temple
+
+#b_sansevero =city
+#b_manfredoni = castle
+#b_lucera = castle
+#b_siponto = temple
+
+
+# Misc
+culture = southern_italian
+religion = catholic
+
+# History
+
+1101.1.1 = { trade_post = b_dandolo }

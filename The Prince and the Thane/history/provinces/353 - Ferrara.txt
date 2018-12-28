@@ -1,0 +1,35 @@
+# 353 - Ferrara
+
+# County Title
+title = c_ferrara
+
+# Settlements
+max_settlements = 4
+
+
+b_finaleemilia = castle
+b_ferrara = city
+
+#b_codigoro = temple
+#b_commacchio = city
+#b_copparo = temple
+#b_bondeno = city
+#b_voghiera = city
+#b_portomaggiore = city
+#b_argenta = city
+#b_castelloestense = castle
+#b_sangiorgiodipiano = castle
+#b_roccadicento = castle
+#b_castellodimesola = castle
+
+
+# Misc
+culture = italian
+religion = catholic
+
+# History
+800.1.1 = { 
+	b_ferrara = ct_jewish_community_1
+	b_ferrara = ct_jewish_community_2
+}
+1122.1.1 = { trade_post = b_contarini }

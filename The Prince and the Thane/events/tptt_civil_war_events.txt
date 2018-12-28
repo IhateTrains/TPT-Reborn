@@ -1,0 +1,3873 @@
+########################################################################
+#
+# The Prince and the Thane civil war events - written by idib816
+#
+########################################################################
+
+namespace = civil_war
+
+# Deal with traitors after on_fail civil war
+character_event = {
+	id = civil_war.1
+	desc = "EVTDESCcivil_war.1"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcivil_war.1"	#Pardon the traitors but not their leader
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+		}
+		prestige = -50
+		piety = 50
+		random_list = {
+		    50 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    10 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    15 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    25 = { add_trait = craven 
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				NOT = { has_character_flag = traitor_leader }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "is being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.4 days = 1 tooltip = "is not pardoned" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.1"	#Pardon everyone
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.25
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.25
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.25
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			modifier = {
+				factor = 3
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = charitable
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+		}
+		prestige = -100
+		piety = 75
+		random_list = {
+		    20 = { add_trait = just  
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+            }
+		    20 = { add_trait = kind  
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = craven  
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 20
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "is being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCcivil_war.1"	#Imprison the leader
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.5
+				trait = envious
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 1.25
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+		}
+		prestige = 50
+		piety = -25
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.5 days = 1 tooltip = "will rot in the dungeons" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				NOT = { has_character_flag = traitor_leader }
+			}
+			character_event = { id = civil_war.4 days = 1 tooltip = "is not pardoned" } 
+		}
+	}
+}
+
+# Deal with traitors after on_reverse_demand civil war
+character_event = {
+	id = civil_war.2
+	desc = "EVTDESCcivil_war.2"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcivil_war.1"	#Pardon the traitors but not their leader
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+		}
+		prestige = -100
+		piety = 50
+		random_list = {
+		    75 = { add_trait = just  
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    10 = { add_trait = charitable  
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    15 = { add_trait = craven  
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				NOT = { has_character_flag = traitor_leader }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "is being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.4 days = 1 tooltip = "is not pardoned" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.1"	#Pardon everyone
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.25
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.25
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.25
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			modifier = {
+				factor = 3
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = charitable
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+		}
+		prestige = -150
+		piety = 50
+		random_list = {
+		    25 = { add_trait = just  
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    40 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    35 = { add_trait = craven  
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 20
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "is being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAcivil_war.2"	#Execute the leader and imprison the rest
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.75
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.5
+				trait = envious
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 1.25
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+		}
+		prestige = 100
+		piety = -50
+		random_list = {
+		    20 = { add_trait = cruel  
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    30 = { add_trait = wroth  
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    30 = { add_trait = just  
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    10 = { add_trait = arbitrary  
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    10 = { add_trait = brave  
+				hidden_tooltip = {
+					character_event = { id = 38270 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_disgruntled 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.6 days = 1 tooltip = "will be executed" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				NOT = { has_character_flag = traitor_leader }
+			}
+			character_event = { id = civil_war.5 days = 1 tooltip = "will rot in the dungeons" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.2"	#Execute the leader, seize his titles and imprison the rest
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.5
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 1.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = content
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+		}
+		prestige = 150
+		piety = -100
+		random_list = {
+		    25 = { add_trait = cruel  
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    35 = { add_trait = wroth  
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    10 = { add_trait = just  
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = arbitrary  
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    10 = { add_trait = brave  
+				hidden_tooltip = {
+					character_event = { id = 38270 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_tyrant 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of his titles" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				NOT = { has_character_flag = traitor_leader }
+			}
+			character_event = { id = civil_war.5 days = 1 tooltip = "will rot in the dungeons" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCcivil_war.2"	#Execute everyone and seize their titles
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 3
+				trait = envious
+			}
+			modifier = {
+				factor = 2.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.75
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 2
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.05
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = content
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+		}
+		prestige = 250
+		piety = -150
+		random_list = {
+		    30 = { add_trait = cruel  
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    30 = { add_trait = wroth  
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    10 = { add_trait = greedy  
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    30 = { add_trait = arbitrary  
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_tyrant 
+			    who = ROOT
+			    years = 25
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of their titles" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTDcivil_war.2"	#Damnatio memoriae
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.25
+				trait = just
+			}
+			modifier = {
+				factor = 4
+				trait = greedy
+			}
+			modifier = {
+				factor = 4
+				trait = envious
+			}
+			modifier = {
+				factor = 4
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 2
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 3
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 3
+				trait = impaler
+			}
+			modifier = {
+				factor = 0.05
+				trait = kind
+			}
+			modifier = {
+				factor = 0.05
+				trait = humble
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = content
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+		}
+		prestige = 250
+		piety = -300
+		random_list = {
+		    20 = { add_trait = cruel  
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    20 = { add_trait = wroth  
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    50 = { add_trait = arbitrary  
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    10 = { add_trait = impaler }
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_tyrant 
+			    who = ROOT
+			    years = 50
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of their titles" } 
+		    any_dynasty_member = { 
+		        limit = { vassal_of = ROOT is_female = no }
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of their titles" } 
+			}
+		    any_dynasty_member = { 
+		        limit = { vassal_of = ROOT is_female = yes }
+			character_event = { id = civil_war.5 days = 1 tooltip = "will rot in the dungeons" } 
+			}
+		}
+	}
+	
+	option = {
+		name = "Their cases will be decided on singularly"	#Value their cases singularly
+		ai_chance = {
+			factor = 30
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.10 days = 1 } 
+		}
+	}
+}
+
+# Traitor is being pardoned
+character_event = {
+	id = civil_war.3
+	desc = "EVTDESCcivil_war.3"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It is divine to pardon"	#Our liege is a just man
+		prestige = 50
+		piety = 25
+		clr_character_flag = petitioning_pardon
+		FROM = { remove_opinion = { who = ROOT modifier = opinion_traitor } }
+		opinion = {
+			modifier = opinion_grateful
+			who = FROM
+			years = 10
+		}
+	}
+}
+
+# Traitor is not pardoned
+character_event = {
+	id = civil_war.4
+	desc = "EVTDESCcivil_war.4"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Until next time" #Our liege is a harsh man
+		prestige = -150
+		piety = -100
+		opinion = {
+			modifier = opinion_tyrant
+			who = FROM
+			years = 10
+		}
+	}
+}
+
+# Traitor is thrown in jail
+character_event = {
+	id = civil_war.5
+	desc = "EVTDESCcivil_war.5"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I did not deserve this"	#Our liege is a harsh man
+		prestige = -150
+		piety = -100
+		imprison = FROM
+		opinion = {
+			modifier = opinion_tyrant
+			who = FROM
+			years = 25
+		}
+		any_dynasty_member = {
+		    opinion = {
+			    modifier = opinion_tyrant
+			    who = FROM
+			    years = 10
+		    }
+		}
+	}
+}
+
+# Traitor is executed
+character_event = {
+	id = civil_war.6
+	desc = "EVTDESCcivil_war.6"
+	picture = "GFX_evt_beheading"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			if = {
+				limit = { 
+					dynasty = ROOT 
+					NOT = { religion_group = muslim }
+				}
+				add_trait = kinslayer 
+				hidden_tooltip = {
+					character_event = { id = 38287 }
+				}
+			}
+			if = {
+				limit = { 
+					spouse = { character = ROOT }
+				}
+				spouse = {
+					any_dynasty_member = {
+						limit = {
+							is_alive = yes
+							NOT = { character = FROM }
+						}
+						opinion = {
+							who = FROM
+							modifier = opinion_spouse_slayer
+							months = 120
+						}
+					}
+				}
+			}
+		}
+		mother = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		father = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		any_child = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		any_sibling = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		death = {
+			death_reason = death_execution
+			killer = FROM
+		}
+	}
+	
+	option = {
+		name = "Strike, man, strike!"
+		prestige = -150
+		piety = -100
+	}
+}
+
+# Deal with traitors after lost civil war
+character_event = {
+	id = civil_war.8
+	desc = "EVTDESCcivil_war.8"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcivil_war.1"	#Pardon the traitors but not their leader
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+		}
+		prestige = -50
+		piety = 50
+		random_list = {
+		    50 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    10 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    15 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    25 = { add_trait = craven 
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				NOT = { has_character_flag = traitor_leader }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "is being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+			character_event = { id = civil_war.4 days = 1 tooltip = "is not pardoned" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.1"	#Pardon everyone
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 3
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2.5
+				trait = craven
+			}
+		}
+		prestige = -100
+		piety = 75
+		random_list = {
+		    20 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    20 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = craven 
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 20
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "is being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAcivil_war.8"	#Pardon no one
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 2.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 2.5
+				trait = envious
+			}
+			modifier = {
+				factor = 2.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 2.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 2.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+		}
+		prestige = -100
+		piety = 75
+		random_list = {
+		    30 = { add_trait = deceitful 
+				hidden_tooltip = {
+					character_event = { id = 38255 }
+				}
+			}
+		    10 = { add_trait = lady_macbeth 
+				hidden_tooltip = {
+					character_event = { id = tptt_traits.75 }
+				}
+			}
+		    20 = { add_trait = brave 
+				hidden_tooltip = {
+					character_event = { id = 38270 }
+				}
+			}
+		    40 = { add_trait = wroth 
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_disgruntled
+			    who = ROOT
+			    years = 10
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			character_event = { id = civil_war.4 days = 1 tooltip = "is not being pardoned" } 
+		}
+		any_vassal = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+				has_character_flag = traitor_leader
+			}
+			clr_character_flag = traitor_leader
+		}
+	}
+}
+
+# Traitor is executed and stripped of his titles
+character_event = {
+	id = civil_war.7
+	desc = "EVTDESCcivil_war.7"
+	picture = "GFX_evt_beheading"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			if = {
+				limit = { 
+					dynasty = ROOT 
+					NOT = { religion_group = muslim }
+				}
+				add_trait = kinslayer
+				hidden_tooltip = {
+					character_event = { id = 38287 }
+				}
+			}
+			if = {
+				limit = { 
+					spouse = { character = ROOT }
+				}
+				spouse = {
+					any_dynasty_member = {
+						limit = {
+							is_alive = yes
+							NOT = { character = FROM }
+						}
+						opinion = {
+							who = FROM
+							modifier = opinion_spouse_slayer
+							months = 120
+						}
+					}
+				}
+			}
+		}
+		mother = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		father = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		any_child = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+		any_sibling = {
+			opinion = {
+				who = FROM
+				modifier = opinion_killed_close_kin
+				months = 1200
+			}
+		}
+	}
+	
+	option = {
+		name = "And will you rule better?"
+		prestige = -250
+		piety = -150
+        hidden_tooltip = { FROM = { inherit = ROOT } }
+		death = {
+			death_reason = death_execution
+			killer = FROM
+		}
+	}
+}
+
+# Deal with allys after won civil war
+character_event = {
+	id = civil_war.9
+	desc = "EVTDESCcivil_war.9"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcivil_war.9"	#Compensate them modestly in gold
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 2.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 2.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.75
+				prestige = 500
+			}
+			modifier = {
+				factor = 0.75
+				prestige = 1000
+			}
+		}
+		prestige = -50
+		scaled_wealth = -0.75
+		random_list = {
+		    45 = { add_trait = greedy
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    10 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    25 = { add_trait = deceitful
+				hidden_tooltip = {
+					character_event = { id = 38255 }
+				} 
+			}
+		}
+		any_realm_character = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = civil_war_supporter }
+			}
+			character_event = { id = civil_war.12 days = 1 tooltip = "will be modestly compensated" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.9"	#Compensate them generously in gold
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2.25
+				trait = kind
+			}
+			modifier = {
+				factor = 2.25
+				trait = charitable
+			}
+		}
+		prestige = 50
+		scaled_wealth = -2.5
+		random_list = {
+		    20 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    20 = { add_trait = honest 
+				hidden_tooltip = {
+					character_event = { id = 38262 }
+				}
+			}
+		}
+		any_realm_character = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = civil_war_supporter }
+			}
+			character_event = { id = civil_war.13 days = 1 tooltip = "will be generously compensated" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCcivil_war.9"	#Do not compensate them
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0.25
+				trait = just
+			}
+			modifier = {
+				factor = 3.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 3.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 3.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.75
+				prestige = 500
+			}
+			modifier = {
+				factor = 0.75
+				prestige = 1000
+			}
+		}
+		prestige = -100
+		random_list = {
+		    50 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    50 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		}
+		any_realm_character = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = civil_war_supporter }
+			}
+			character_event = { id = civil_war.14 days = 1 tooltip = "will not be compensated" } 
+		}
+	}
+	
+	option = {
+		name = "Their requests will be decided on singularly" #See their requests singularly
+		ai_chance = {
+			factor = 35
+		}
+		any_realm_character = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = civil_war_supporter }
+			}
+			character_event = { id = civil_war.15 days = 15 random = 10 tooltip = "will see their petitions heard" } 
+		}
+	}
+}
+
+# Liege is judging your case singularly (traitor)
+character_event = {
+	id = civil_war.10
+	desc = "EVTDESCcivil_war.10"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I beg pardon!"	#Petition for pardon
+		prestige = -50
+		set_character_flag = petitioning_pardon
+		hidden_tooltip = { FROM = { character_event = { id = civil_war.11 days = 2 } } }
+	}
+	
+	option = {
+		name = "Know, my name is lost"	#Accept whatever judgment
+		prestige = 25
+		hidden_tooltip = { FROM = { character_event = { id = civil_war.11 days = 2 } } }
+	}
+}
+
+# Deal with traitors singularly
+character_event = {
+	id = civil_war.11
+	desc = "EVTDESCcivil_war.11"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcivil_war.11" #Pardon him
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 0.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 3
+				FROM = { has_character_flag = petitioning_pardon }
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		prestige = -15
+		piety = 5
+		random_list = {
+		    50 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    25 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    25 = { add_trait = craven 
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		FROM = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			character_event = { id = civil_war.3 days = 1 tooltip = "will be pardoned" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.11" #Imprison him
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 1.25
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = envious
+			}
+			modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { has_character_flag = petitioning_pardon }
+			}
+			modifier = {
+				factor = 0.75
+				trait = craven
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		piety = -5
+		random_list = {
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    20 = { add_trait = craven 
+				hidden_tooltip = {
+					character_event = { id = 38257 }
+				}
+			}
+		    20 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = liege_peaceful_resolution 
+			    who = ROOT
+			    years = 5
+			}
+		}
+		FROM = { 
+		    limit = {
+			    reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor }
+			}
+			character_event = { id = civil_war.5 days = 1 tooltip = "will be imprisoned" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCcivil_war.11"	#Execute him
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 1.5
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { has_character_flag = petitioning_pardon }
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		prestige = 20
+		piety = -10
+		random_list = {
+		    20 = { add_trait = cruel 
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    30 = { add_trait = wroth 
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    30 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    10 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    10 = { add_trait = brave 
+				hidden_tooltip = {
+					character_event = { id = 38270 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_disgruntled 
+			    who = ROOT
+			    years = 5
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.6 days = 1 tooltip = "will be executed" }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTDcivil_war.11"	#Execute him and seize his titles
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 2
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = content
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { has_character_flag = petitioning_pardon }
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		prestige = 50
+		piety = -35
+		random_list = {
+		    25 = { add_trait = cruel 
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    35 = { add_trait = wroth 
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    10 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		    20 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    10 = { add_trait = brave 
+				hidden_tooltip = {
+					character_event = { id = 38270 }
+				}
+			}
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_tyrant 
+			    who = ROOT
+			    years = 10
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of his titles" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTEcivil_war.11"	#Damnatio memoriae
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 3
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 3
+				trait = cruel
+			}
+			modifier = {
+				factor = 3
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 2
+				trait = lady_macbeth
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = content
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { has_character_flag = petitioning_pardon }
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		prestige = 250
+		piety = -300
+		random_list = {
+		    20 = { add_trait = cruel 
+				hidden_tooltip = {
+					character_event = { id = 38259 }
+				}
+			}
+		    20 = { add_trait = wroth 
+				hidden_tooltip = {
+					character_event = { id = 38254 }
+				}
+			}
+		    50 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    10 = { add_trait = impaler }
+		}
+		any_vassal = { 
+		    limit = {
+			    NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_traitor } }
+			}
+		    opinion = { 
+			    modifier = opinion_tyrant 
+			    who = ROOT
+			    years = 30
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of their titles" } 
+		    any_dynasty_member = { 
+		        limit = { vassal_of = ROOT is_female = no }
+			character_event = { id = civil_war.7 days = 1 tooltip = "will be executed and stripped of their titles" } 
+			}
+		    any_dynasty_member = { 
+		        limit = { vassal_of = ROOT is_female = yes }
+			character_event = { id = civil_war.5 days = 1 tooltip = "will rot in the dungeons" } 
+			}
+		}
+	}
+}
+
+# Liege has compensated you modestly
+character_event = {
+	id = civil_war.12
+	desc = "EVTDESCcivil_war.12"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The still small voice of gratitude"
+		prestige = -15
+		scaled_wealth = 0.25
+		opinion = { 
+			modifier = modestly_compensated 
+			who = FROM
+			years = 15
+		}
+	}
+}
+
+# Liege has compensated you generously
+character_event = {
+	id = civil_war.13
+	desc = "EVTDESCcivil_war.13"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Your bounty is beyond my speaking"
+		prestige = 50
+		scaled_wealth = 1
+		opinion = { 
+			modifier = generously_compensated 
+			who = FROM
+			years = 15
+		}
+	}
+}
+
+# Liege has not compensated you
+character_event = {
+	id = civil_war.14
+	desc = "EVTDESCcivil_war.14"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Thank you for nothing"
+		prestige = -50
+		opinion = { 
+			modifier = not_compensated 
+			who = FROM
+			years = 15
+		}
+	}
+}
+
+# Deal with allys singularly (ally)
+character_event = {
+	id = civil_war.15
+	desc = "EVTDESCcivil_war.15"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcivil_war.15" #Ask for a monetary compensation
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = arbitrary
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.16 days = 5 } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcivil_war.15" #Ask for the chancellor spot
+		trigger = { diplomacy = 12 is_female = no vassal_of = FROM
+		OR = { FROM = { NOT = { has_character_flag = chancellor_spot_awarded } }
+		FROM = { had_character_flag = { flag = chancellor_spot_awarded days = 100 } } } }
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				diplomacy = 14
+			}
+			modifier = {
+				factor = 2
+				diplomacy = 16
+			}
+			modifier = {
+				factor = 2
+				diplomacy = 18
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.17 days = 1 } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCcivil_war.15" #Ask for the spymaster spot
+		trigger = { intrigue = 12 vassal_of = FROM 
+		OR = { FROM = { NOT = { has_character_flag = spymaster_spot_awarded } }
+		FROM = { had_character_flag = { flag = spymaster_spot_awarded days = 100 } } } }
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				intrigue = 14
+			}
+			modifier = {
+				factor = 2
+				intrigue = 16
+			}
+			modifier = {
+				factor = 2
+				intrigue = 18
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.18 days = 1 } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTDcivil_war.15" #Ask for the marshal spot
+		trigger = { martial = 12 is_female = no vassal_of = FROM 
+		OR = { FROM = { NOT = { has_character_flag = marshal_spot_awarded } }
+		FROM = { had_character_flag = { flag = marshal_spot_awarded days = 100 } } } }
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				martial = 14
+			}
+			modifier = {
+				factor = 2
+				martial = 16
+			}
+			modifier = {
+				factor = 2
+				martial = 18
+			}
+		}
+		FROM = { 
+			character_event = { id = civil_war.19 days = 1 } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTEcivil_war.15" #Ask for a county
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = humble
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+		}
+		trigger = { 
+		    FROM = { 
+			    any_demesne_title = { 
+				tier = COUNT 
+				can_be_given_away = yes 
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                    }  
+				} 
+		    }
+		}
+		FROM = { 
+			character_event = { id = civil_war.20 days = 1 } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTFcivil_war.15" #Ask for a duchy
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = humble
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 3
+				tier = COUNT
+			}
+		}
+		
+		trigger = { 
+		    FROM = { 
+			    higher_tier_than = DUKE
+			    any_demesne_title = { 
+				tier = DUKE
+				can_be_given_away = yes 
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                    }  
+				} 
+		    }
+		}
+		FROM = { 
+			character_event = { id = civil_war.21 days = 1 } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTGcivil_war.15" #Ask for a kingdom
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 3
+				trait = ambitious
+			}
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 3
+				tier = DUKE
+			}
+			modifier = {
+				factor = 0.25
+				trait = humble
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+		}
+		
+		trigger = { 
+		    FROM = { 
+			    higher_tier_than = KING
+			    any_demesne_title = { 
+				tier = KING
+				can_be_given_away = yes 
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                    }  
+				} 
+		    }
+		}
+		FROM = { 
+			character_event = { id = civil_war.22 days = 1 } 
+		}
+	}
+}
+
+# Asking for a monetary compensation
+character_event = {
+	id = civil_war.16
+	desc = "EVTDESCcivil_war.16"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		ai_chance = { factor = 90 }
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				} 
+			}
+		}
+		prestige = 25
+		piety = 5
+		scaled_wealth = -1
+		FROM = { 
+			character_event = { id = civil_war.13 days = 2 tooltip = "will be generously compensated" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = { factor = 10 }
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -15
+		piety = -10
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Asking for the chancellor spot
+character_event = {
+	id = civil_war.17
+	desc = "EVTDESCcivil_war.17"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		set_character_flag = chancellor_spot_awarded
+		ai_chance = { factor = 70 }
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		}
+		prestige = 35
+		piety = 15
+		FROM = { 
+			give_job_title = job_chancellor
+			character_event = { id = civil_war.23 days = 2 tooltip = "will have the spot" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = { factor = 30 }
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -15
+		piety = -10
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Asking for the spymaster spot
+character_event = {
+	id = civil_war.18
+	desc = "EVTDESCcivil_war.18"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		set_character_flag = spymaster_spot_awarded
+		ai_chance = { factor = 70 }
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		}
+		prestige = 35
+		piety = 15
+		FROM = { 
+			give_job_title = job_spymaster
+			character_event = { id = civil_war.23 days = 2 tooltip = "will have the spot" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = { factor = 30 }
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -15
+		piety = -10
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Asking for the marshal spot
+character_event = {
+	id = civil_war.19
+	desc = "EVTDESCcivil_war.19"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		set_character_flag = marshal_spot_awarded
+		ai_chance = { factor = 70 }
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		}
+		prestige = 35
+		piety = 15
+		FROM = { 
+			give_job_title = job_marshal
+			character_event = { id = civil_war.23 days = 2 tooltip = "will have the spot" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = { factor = 30 }
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -15
+		piety = -10
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Asking for a county
+character_event = {
+	id = civil_war.20
+	desc = "EVTDESCcivil_war.20"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		}
+		prestige = 50
+		piety = 25
+		FROM = { 
+			character_event = { id = civil_war.24 days = 2 tooltip = "will have the county" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -15
+		piety = -10
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Asking for a duchy
+character_event = {
+	id = civil_war.21
+	desc = "EVTDESCcivil_war.21"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		}
+		prestige = 100
+		piety = 50
+		FROM = { 
+			character_event = { id = civil_war.25 days = 2 tooltip = "will have the duchy" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -25
+		piety = -20
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Asking for a kingdom
+character_event = {
+	id = civil_war.22
+	desc = "EVTDESCcivil_war.22"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "You indeed deserved it"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		random_list = {
+		    30 = { add_trait = charitable 
+				hidden_tooltip = {
+					character_event = { id = 38273 }
+				}
+			}
+		    30 = { add_trait = kind 
+				hidden_tooltip = {
+					character_event = { id = 38268 }
+				}
+			}
+		    40 = { add_trait = just 
+				hidden_tooltip = {
+					character_event = { id = 38267 }
+				}
+			}
+		}
+		prestige = 150
+		piety = 75
+		FROM = { 
+			character_event = { id = civil_war.26 days = 2 tooltip = "will have the kingdom" } 
+		}
+	}
+	
+	option = {
+		name = "You are asking for too much"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		random_list = {
+		    30 = { add_trait = arbitrary 
+				hidden_tooltip = {
+					character_event = { id = 38266 }
+				}
+			}
+		    30 = { add_trait = greedy 
+				hidden_tooltip = {
+					character_event = { id = 38252 }
+				}
+			}
+		    40 = {  }
+		}
+		prestige = -50
+		piety = -25
+		FROM = { 
+			character_event = { id = civil_war.14 days = 2 tooltip = "will not be compensated" } 
+		}
+	}
+}
+
+# Liege has given you council spot
+character_event = {
+	id = civil_war.23
+	desc = "EVTDESCcivil_war.23"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is grand"
+		prestige = 50
+		opinion = { 
+			modifier = generously_compensated
+			who = FROM
+			years = 10
+		}
+	}
+}
+
+# Liege has given you the county
+character_event = {
+	id = civil_war.24
+	desc = "EVTDESCcivil_war.24"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    FROM = { 
+	        random_demesne_title = { 
+			    limit = {
+			    	tier = COUNT
+			    	can_be_given_away = yes 
+			     	NOT = { location = { is_capital = yes } }
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                        location = { any_neighbor_province = { owner = { character = ROOT } } } 
+                    }  
+			    } 
+				grant_title = ROOT
+			} 
+		} 
+	} 
+	
+	option = {
+		name = "Excellent"
+		prestige = 75
+		opinion = { 
+			modifier = generously_compensated
+			who = FROM
+			years = 15
+		}
+	}
+}
+
+# Liege has given you the duchy
+character_event = {
+	id = civil_war.25
+	desc = "EVTDESCcivil_war.25"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    FROM = { 
+	        random_demesne_title = { 
+			    limit = {
+			    	tier = DUKE
+			    	can_be_given_away = yes 
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                    }  
+			    } 
+				grant_title = ROOT
+			} 
+		} 
+	} 
+	
+	option = {
+		name = "Excellent"
+		prestige = 100
+		opinion = { 
+			modifier = generously_compensated
+			who = FROM
+			years = 25
+		}
+	}
+}
+
+# Liege has given you the kingdom
+character_event = {
+	id = civil_war.26
+	desc = "EVTDESCcivil_war.26"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    FROM = { 
+	        random_demesne_title = { 
+			    limit = {
+			    	tier = KING
+			    	can_be_given_away = yes 
+                    OR = { 
+                        claimed_by = ROOT
+		                has_de_jure_pretension = ROOT 
+                    }  
+			    } 
+				grant_title = ROOT
+			} 
+		} 
+	} 
+	
+	option = {
+		name = "Excellent"
+		prestige = 150
+		opinion = { 
+			modifier = generously_compensated
+			who = FROM
+			years = 50
+		}
+	}
+}

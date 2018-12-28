@@ -1,0 +1,7 @@
+834.1.1={
+	liege="k_papal_state"
+}
+1139.1.1={
+	liege=0 #Free Commune
+}
+

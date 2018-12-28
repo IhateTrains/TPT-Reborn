@@ -1,0 +1,1105 @@
+######################################################################################################
+#
+# The Prince and the Thane melting pots events - written by idib816, Zaldax, Mr. C and Sleight of Hand
+#
+######################################################################################################
+
+namespace = sicilian
+
+# The Sicilian Melting Pot -- Norman Version (Default)
+character_event = {
+	id = sicilian.0
+	desc = "EVTDESCsicilian.0"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = norman
+		any_demesne_province = {
+			AND = {
+				kingdom = {
+					title = k_sicily
+				}
+					OR = {
+						culture = greek
+			                        culture_group = italian_group
+						culture = maghreb_arabic
+						culture = norman
+					}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.75
+			learning = 7
+		}
+		modifier = {
+			factor = 0.75
+			learning = 9
+		}
+		modifier = {
+			factor = 0.75
+			learning = 11
+		}
+		modifier = {
+			factor = 0.75
+			learning = 13
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { learning = 1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.0"
+		culture = sicilian
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_sicily
+					}
+				OR = {
+				culture = maghreb_arabic
+				culture = greek
+			        culture_group = italian_group
+				culture = norman
+			     	}
+			}
+			culture = sicilian
+		}
+	}
+}
+
+# It's spreading
+character_event = {
+	id = sicilian.1
+	desc = "EVTDESCsicilian.1"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = sicilian
+		any_demesne_province = {
+			kingdom = {
+				title = k_sicily
+			}
+			OR = {
+				culture = greek
+			        culture_group = italian_group
+				culture = maghreb_arabic
+				culture = norman
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.1"
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_sicily
+				}
+				OR = {	
+					culture = greek
+					culture = norman
+					culture = maghreb_arabic
+			        culture_group = italian_group
+				}
+			}
+			culture = sicilian
+		}
+	}
+}
+
+#Make my court speak Sicilian
+character_event = {
+	id = sicilian.2
+	desc = "EVTDESCsicilian.2"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = sicilian
+		top_liege = {
+			primary_title = {
+				title = k_sicily
+			}
+		}
+		any_courtier = {
+			OR = {
+				culture = maghreb_arabic
+				culture = norman
+				culture = greek
+			        culture_group = italian_group
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.2"
+		random_courtier = {
+			limit = {
+				OR = {	
+					culture = maghreb_arabic
+					culture = norman
+					culture = greek
+			        culture_group = italian_group
+				}
+			}
+			culture = sicilian
+			hidden_tooltip = {
+				character_event = { id = sicilian.4 days = 3 }
+			}
+		}
+	}
+}
+
+#Make my vassal speak Sicilian
+character_event = {
+	id = sicilian.3
+	desc = "EVTDESCsicilian.3"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = sicilian
+		top_liege = {
+			primary_title = {
+				title = k_sicily
+			}
+		}
+		any_vassal = {
+			OR = {
+			        culture_group = italian_group
+				culture = norman
+				culture = greek
+				culture = maghreb_arabic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.3"
+		random_vassal = {
+			limit = {
+				OR = {	
+			        culture_group = italian_group
+					culture = norman
+					culture = maghreb_arabic
+					culture = greek
+				}
+			}
+			culture = sicilian
+			hidden_tooltip = {
+				character_event = { id = sicilian.4 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = sicilian.4
+	desc = "EVTDESCsicilian.4"
+	picture = GFX_evt_throne_room
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAsicilian.4"
+		culture = sicilian
+	}
+}
+# The Sicilian Melting Pot -- Greek Version
+character_event = {
+	id = sicilian.5
+	desc = "EVTDESCsicilian.5"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = greek
+		any_demesne_province = {
+			AND = {
+				kingdom = {
+					title = k_sicily
+				}
+					OR = {
+						culture = greek
+			        culture_group = italian_group
+						culture = maghreb_arabic
+						culture = norman
+					}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.75
+			learning = 7
+		}
+		modifier = {
+			factor = 0.75
+			learning = 9
+		}
+		modifier = {
+			factor = 0.75
+			learning = 11
+		}
+		modifier = {
+			factor = 0.75
+			learning = 13
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { learning = 1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.5"
+		culture = sicilian_greek
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_sicily
+					}
+				OR = {
+				culture = maghreb_arabic
+				culture = greek
+			        culture_group = italian_group
+				culture = norman
+			     	}
+			}
+			culture = sicilian_greek
+		}
+	}
+}
+
+# It's spreading
+character_event = {
+	id = sicilian.6
+	desc = "EVTDESCsicilian.6"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = sicilian_greek
+		any_demesne_province = {
+			kingdom = {
+				title = k_sicily
+			}
+			OR = {
+				culture = greek
+			        culture_group = italian_group
+				culture = maghreb_arabic
+				culture = norman
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.6"
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_sicily
+				}
+				OR = {	
+					culture = greek
+					culture = norman
+					culture = maghreb_arabic
+			        culture_group = italian_group
+				}
+			}
+			culture = sicilian_greek
+		}
+	}
+}
+
+#Make my court speak Sicilian
+character_event = {
+	id = sicilian.7
+	desc = "EVTDESCsicilian.7"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = sicilian_greek
+		top_liege = {
+			primary_title = {
+				title = k_sicily
+			}
+		}
+		any_courtier = {
+			OR = {
+				culture = maghreb_arabic
+				culture = norman
+				culture = greek
+			        culture_group = italian_group
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.7"
+		random_courtier = {
+			limit = {
+				OR = {	
+					culture = maghreb_arabic
+					culture = norman
+					culture = greek
+			        culture_group = italian_group
+				}
+			}
+			culture = sicilian_greek
+			hidden_tooltip = {
+				character_event = { id = sicilian.4 days = 3 }
+			}
+		}
+	}
+}
+
+#Make my vassal speak Sicilian
+character_event = {
+	id = sicilian.8
+	desc = "EVTDESCsicilian.8"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = sicilian_greek
+		top_liege = {
+			primary_title = {
+				title = k_sicily
+			}
+		}
+		any_vassal = {
+			OR = {
+			        culture_group = italian_group
+				culture = norman
+				culture = greek
+				culture = maghreb_arabic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.8"
+		random_vassal = {
+			limit = {
+				OR = {	
+			        culture_group = italian_group
+					culture = norman
+					culture = maghreb_arabic
+					culture = greek
+				}
+			}
+			culture = sicilian_greek
+			hidden_tooltip = {
+				character_event = { id = sicilian.9 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = sicilian.9
+	desc = "EVTDESCsicilian.9"
+	picture = GFX_evt_throne_room
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAsicilian.9"
+		culture = sicilian_greek
+	}
+}
+# The Sicilian Melting Pot -- Arabic Version
+character_event = {
+	id = sicilian.10
+	desc = "EVTDESCsicilian.10"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = maghreb_arabic
+		any_demesne_province = {
+			AND = {
+				kingdom = {
+					title = k_sicily
+				}
+					OR = {
+						culture = greek
+			        culture_group = italian_group
+						culture = maghreb_arabic
+						culture = norman
+					}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.75
+			learning = 7
+		}
+		modifier = {
+			factor = 0.75
+			learning = 9
+		}
+		modifier = {
+			factor = 0.75
+			learning = 11
+		}
+		modifier = {
+			factor = 0.75
+			learning = 13
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { learning = 1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.10"
+		culture = sicilian_arabic
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_sicily
+					}
+				OR = {
+				culture = maghreb_arabic
+				culture = greek
+			        culture_group = italian_group
+				culture = norman
+			     	}
+			}
+			culture = sicilian_arabic
+		}
+	}
+}
+
+# It's spreading
+character_event = {
+	id = sicilian.11
+	desc = "EVTDESCsicilian.11"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = sicilian_arabic
+		any_demesne_province = {
+			kingdom = {
+				title = k_sicily
+			}
+			OR = {
+				culture = greek
+			        culture_group = italian_group
+				culture = maghreb_arabic
+				culture = norman
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.11"
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_sicily
+				}
+				OR = {	
+					culture = greek
+					culture = norman
+					culture = maghreb_arabic
+			        culture_group = italian_group
+				}
+			}
+			culture = sicilian_arabic
+		}
+	}
+}
+
+#Make my court speak Sicilian
+character_event = {
+	id = sicilian.12
+	desc = "EVTDESCsicilian.12"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = sicilian_arabic
+		top_liege = {
+			primary_title = {
+				title = k_sicily
+			}
+		}
+		any_courtier = {
+			OR = {
+				culture = maghreb_arabic
+				culture = norman
+				culture = greek
+			        culture_group = italian_group
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.12"
+		random_courtier = {
+			limit = {
+				OR = {	
+					culture = maghreb_arabic
+					culture = norman
+					culture = greek
+			        culture_group = italian_group
+				}
+			}
+			culture = sicilian_arabic
+			hidden_tooltip = {
+				character_event = { id = sicilian.12 days = 3 }
+			}
+		}
+	}
+}
+
+#Make my vassal speak Sicilian
+character_event = {
+	id = sicilian.13
+	desc = "EVTDESCsicilian.13"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = sicilian_arabic
+		top_liege = {
+			primary_title = {
+				title = k_sicily
+			}
+		}
+		any_vassal = {
+			OR = {
+			        culture_group = italian_group
+				culture = norman
+				culture = greek
+				culture = maghreb_arabic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAsicilian.13"
+		random_vassal = {
+			limit = {
+				OR = {	
+			        culture_group = italian_group
+					culture = norman
+					culture = maghreb_arabic
+					culture = greek
+				}
+			}
+			culture = sicilian_arabic
+			hidden_tooltip = {
+				character_event = { id = sicilian.14 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = sicilian.14
+	desc = "EVTDESCsicilian.14"
+	picture = GFX_evt_throne_room
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAsicilian.14"
+		culture = sicilian_arabic
+	}
+}
+
+namespace = scots
+
+# Norman influence in Scotland
+character_event = {
+	id = scots.1
+	desc = "EVTDESCscots.1"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1100
+		culture = norman
+		any_demesne_province = {
+			kingdom = {
+				title = k_scotland
+			}
+			culture = saxon
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.75
+			learning = 7
+		}
+		modifier = {
+			factor = 0.75
+			learning = 9
+		}
+		modifier = {
+			factor = 0.75
+			learning = 11
+		}
+		modifier = {
+			factor = 0.75
+			learning = 13
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { learning = 1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAscots.1"
+		culture = scottish
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_scotland
+				}
+				culture = saxon
+			}
+			culture = scottish
+		}
+	}
+}
+
+# It's spreading
+character_event = {
+	id = scots.2
+	desc = "EVTDESCscots.2"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1100
+		culture = scottish
+		any_demesne_province = {
+			kingdom = {
+				title = k_scotland
+			}
+			OR = {
+				culture = irish
+				culture = saxon
+				culture = norman
+                                culture = norsegaelic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = "EVTOPTAscots.2"
+		random_demesne_province = {
+			limit = {
+				kingdom = {
+					title = k_scotland
+				}
+				OR = {	
+					culture = irish
+					culture = saxon
+					culture = norman
+                                        culture = norsegaelic
+				}
+			}
+			culture = scottish
+		}
+	}
+}
+
+#Make my court speak Scots
+character_event = {
+	id = scots.3
+	desc = "EVTDESCscots.3"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1100
+		culture = scottish
+		top_liege = {
+			primary_title = {
+				title = k_scotland
+			}
+		}
+		any_courtier = {
+			OR = {
+				culture = irish
+				culture = saxon
+				culture = norman
+                                culture = norsegaelic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "EVTOPTAscots.3"
+		random_courtier = {
+			limit = {
+				OR = {	
+					culture = irish
+					culture = saxon
+					culture = norman
+                                        culture = norsegaelic
+				}
+			}
+			culture = scottish
+			hidden_tooltip = {
+				character_event = { id = scots.4 days = 3 }
+			}
+		}
+	}
+}
+
+#Make my vassal speak Scots
+character_event = {
+	id = scots.4
+	desc = "EVTDESCscots.4"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1100
+		culture = scottish
+		top_liege = {
+			primary_title = {
+				title = k_scotland
+			}
+		}
+		any_vassal = {
+			OR = {
+				culture = irish
+				culture = saxon
+				culture = norman
+                                culture = norsegaelic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "EVTOPTAscots.4"
+		random_vassal = {
+			limit = {
+				OR = {	
+					culture = irish
+					culture = saxon
+					culture = norman
+                                        culture = norsegaelic
+				}
+			}
+			culture = scottish
+			hidden_tooltip = {
+				character_event = { id = scots.5 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = scots.5
+	desc = "EVTDESCscots.5"
+	picture = GFX_evt_throne_room
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAscots.5"
+		culture = scottish
+	}
+}
+
+namespace = neapolitan
+
+# The Neapolitan Melting Pot
+character_event = {
+	id = neapolitan.0
+	desc = "EVTDESCneapolitan.0"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = langobardisch
+		any_demesne_province = {
+			OR = {
+			    culture = southern_italian
+				culture = greek
+				culture = langobardisch
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.75
+			learning = 7
+		}
+		modifier = {
+			factor = 0.75
+			learning = 9
+		}
+		modifier = {
+			factor = 0.75
+			learning = 11
+		}
+		modifier = {
+			factor = 0.75
+			learning = 13
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { learning = 1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAneapolitan.0"
+		culture = neapolitan
+		random_demesne_province = {
+			limit = {
+		    	OR = {
+	    		    culture = southern_italian
+	     			culture = greek
+	    			culture = langobardisch
+	    		}
+			}
+			culture = neapolitan
+		}
+	}
+}
+
+# It's spreading
+character_event = {
+	id = neapolitan.1
+	desc = "EVTDESCneapolitan.1"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1150
+		culture = neapolitan
+		any_demesne_province = {
+		    OR = {
+	            culture = southern_italian
+	   			culture = greek
+	   			culture = langobardisch
+	   		}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAneapolitan.1"
+		random_demesne_province = {
+			limit = {
+		    	OR = {
+	    		    culture = southern_italian
+	     			culture = greek
+	    			culture = langobardisch
+	    		}
+			}
+			culture = neapolitan
+		}
+	}
+}
+
+#Make my court speak Neapolitan
+character_event = {
+	id = neapolitan.2
+	desc = "EVTDESCneapolitan.2"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = neapolitan
+		any_courtier = {
+		    OR = {
+	            culture = southern_italian
+	   			culture = greek
+	   			culture = langobardisch
+	   		}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTAneapolitan.2"
+		random_courtier = {
+			limit = {
+	    	    OR = {
+	                culture = southern_italian
+	     			culture = greek
+	     			culture = langobardisch
+	    		}
+			}
+			culture = neapolitan
+			hidden_tooltip = {
+				character_event = { id = neapolitan.4 days = 3 }
+			}
+		}
+	}
+}
+
+#Make my vassal speak Neapolitan
+character_event = {
+	id = neapolitan.3
+	desc = "EVTDESCneapolitan.3"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1150
+		culture = neapolitan
+		any_vassal = {
+		    OR = {
+	            culture = southern_italian
+	   			culture = greek
+	   			culture = langobardisch
+	   		}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTAneapolitan.3"
+		random_vassal = {
+			limit = {
+	    	    OR = {
+	                culture = southern_italian
+	   	    		culture = greek
+	   	    		culture = langobardisch
+	   	    	}
+			}
+			culture = neapolitan
+			hidden_tooltip = {
+				character_event = { id = neapolitan.4 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = neapolitan.4
+	desc = "EVTDESCneapolitan.4"
+	picture = GFX_evt_throne_room
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAneapolitan.4"
+		culture = neapolitan
+	}
+}

@@ -1,0 +1,26 @@
+# 1145 - Perugia
+
+# County Title
+title = c_perugia
+
+# Settlements
+max_settlements = 4
+
+b_perugia = city
+b_castiglionedellago = castle
+
+#b_bastiaumbra = castle
+#b_castellodelleforme = castle
+#b_magione = temple
+#b_castellodelleone = castle
+#b_deruta = city
+#b_torgiano = city
+#b_bettona = city
+#b_castelbuonospoleto = castle
+
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History

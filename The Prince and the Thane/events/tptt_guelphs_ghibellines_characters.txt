@@ -1,0 +1,1698 @@
+#####################################################################################
+#
+# The Prince and the Thane Guelph & Ghibelline characters events - written by idib816
+#
+#####################################################################################
+
+#Guglielmo Pazzo
+
+character_event = {
+	id = 180156
+	title = "EVTNAME180156"
+	desc = "EVTDESC180156"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+        year = 1240
+        NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = guglielmo_pazzo
+			has_global_flag = guglielmo_pazzo }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180156"
+		prestige = 100
+		set_character_flag = guglielmo_pazzo
+		set_global_flag = guglielmo_pazzo
+                piety = 25
+                scaled_wealth = -0.5 
+		create_character = {
+			name = Guglielmo
+			random_traits = no
+			dynasty = 1000035011
+			female = no
+			age = 20
+			trait = master_warrior
+                        culture = tuscan
+			trait = ghibelline
+			trait = brave
+			trait = brilliant_strategist
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 6
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180156"
+		set_character_flag = guglielmo_pazzo
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Guido I da Montefeltro
+
+character_event = {
+	id = 180157
+	title = "EVTNAME180157"
+	desc = "EVTDESC180157"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 329
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+        NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = guido_montefeltro
+			has_global_flag = guido_montefeltro }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180157"
+		set_character_flag = guido_montefeltro
+		set_global_flag = guido_montefeltro
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Guido
+			random_traits = no
+			dynasty = 13068
+			female = no
+			age = 20
+			trait = deceitful
+                        culture = central_italian
+			trait = ghibelline
+			trait = ambitious
+			trait = brilliant_strategist
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 6
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180157"
+		set_character_flag = guido_montefeltro
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Corso Donati
+
+character_event = {
+	id = 180158
+	title = "EVTNAME180158"
+	desc = "EVTDESC180158"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1270
+        NOT = { year = 1290 }
+		NOT = {
+			OR = { has_character_flag = corso_donati
+			has_global_flag = corso_donati }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180158"
+		set_character_flag = corso_donati
+		set_global_flag = corso_donati
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Corso
+			random_traits = no
+			dynasty = 150150201
+			female = no
+			age = 20
+			trait = zealous
+                        culture = tuscan
+			trait = guelph
+			trait = ambitious
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180158"
+		set_character_flag = corso_donati
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Giordano d'Anglano
+
+character_event = {
+	id = 180159
+	title = "EVTNAME180159"
+	desc = "EVTDESC180159"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 347
+		war = no
+                year = 1230
+        NOT = { year = 1260 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = giordano_anglano
+			has_global_flag = giordano_anglano }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180159"
+		set_character_flag = giordano_anglano
+		set_global_flag = giordano_anglano
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Giordano
+			random_traits = no
+			dynasty = 150150202
+			female = no
+			age = 20
+			trait = cynical
+                        culture = southern_italian
+			trait = ghibelline
+			trait = ambitious
+			trait = brilliant_strategist
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180159"
+		set_character_flag = giordano_anglano
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Pietro della Vigna
+
+character_event = {
+	id = 180160
+	title = "EVTNAME180160"
+	desc = "EVTDESC180160"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 334
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1190
+        NOT = { year = 1210 }
+		NOT = {
+			OR = { has_character_flag = pietro_vigna
+			has_global_flag = pietro_vigna }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180160"
+		set_character_flag = pietro_vigna
+		set_global_flag = pietro_vigna
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Pietro
+			random_traits = no
+			dynasty = 150150203
+			female = no
+			age = 20
+			trait = cynical
+                        culture = southern_italian
+			trait = ghibelline
+			trait = ambitious
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180160"
+		set_character_flag = pietro_vigna
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Farinata degli Uberti
+
+character_event = {
+	id = 180161
+	title = "EVTNAME180161"
+	desc = "EVTDESC180161"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+                year = 1230
+        NOT = { year = 1260 }
+		war = no
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = farinata_uberti
+			has_global_flag = farinata_uberti }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180161"
+		set_character_flag = farinata_uberti
+		set_global_flag = farinata_uberti
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Farinata
+			random_traits = no
+			dynasty = 150150204
+			female = no
+			age = 20
+			trait = cynical
+                        culture = tuscan
+			trait = ghibelline
+			trait = ambitious
+			trait = brilliant_strategist
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180161"
+		set_character_flag = farinata_uberti
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Brunetto Latini
+
+character_event = {
+	id = 180162
+	title = "EVTNAME180162"
+	desc = "EVTDESC180162"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+                year = 1240
+        NOT = { year = 1260 }
+		war = no
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = brunetto_latini
+			has_global_flag = brunetto_latini }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180162"
+		set_character_flag = brunetto_latini
+		set_global_flag = brunetto_latini
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Brunetto
+			random_traits = no
+			dynasty = 150150205
+			female = no
+			age = 20
+			trait = scholar
+                        culture = tuscan
+			trait = guelph
+			trait = philosopher
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180162"
+		set_character_flag = brunetto_latini
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Provenzano Salvani
+
+character_event = {
+	id = 180163
+	title = "EVTNAME180163"
+	desc = "EVTDESC180163"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 330
+		war = no
+                year = 1230
+        NOT = { year = 1260 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = provenzano_salvani
+			has_global_flag = provenzano_salvani }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180163"
+		set_character_flag = provenzano_salvani
+		set_global_flag = provenzano_salvani
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Provenzano
+			random_traits = no
+			dynasty = 150150206
+			female = no
+			age = 20
+			trait = cynical
+                        culture = tuscan
+			trait = ghibelline
+			trait = brave
+			trait = brilliant_strategist
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180163"
+		set_character_flag = provenzano_salvani
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Dino Compagni
+
+character_event = {
+	id = 180164
+	title = "EVTNAME180164"
+	desc = "EVTDESC180164"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+                year = 1270
+        NOT = { year = 1290 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = dino_compagni
+			has_global_flag = dino_compagni }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180164"
+		set_character_flag = dino_compagni
+		set_global_flag = dino_compagni
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Dino
+			random_traits = no
+			dynasty = 150150207
+			female = no
+			age = 20
+			trait = zealous
+                        culture = tuscan
+			trait = guelph
+			trait = bank_sponsor
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180164"
+		set_character_flag = dino_compagni
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Guido Cavalcanti
+
+character_event = {
+	id = 180165
+	title = "EVTNAME180165"
+	desc = "EVTDESC180165"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+                year = 1260
+        NOT = { year = 1280 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = guido_cavalcanti
+			has_global_flag = guido_cavalcanti }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180165"
+		set_character_flag = guido_cavalcanti
+		set_global_flag = guido_cavalcanti
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Guido
+			random_traits = no
+			dynasty = 150150208
+			female = no
+			age = 20
+			trait = zealous
+                        culture = tuscan
+			trait = guelph
+			trait = poet
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180165"
+		set_character_flag = guido_cavalcanti
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Giano della Bella
+
+character_event = {
+	id = 180166
+	title = "EVTNAME180166"
+	desc = "EVTDESC180166"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+                year = 1260
+        NOT = { year = 1280 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = giano_bella
+			has_global_flag = giano_bella }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180166"
+		set_character_flag = giano_bella
+		set_global_flag = giano_bella
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Giano
+			random_traits = no
+			dynasty = 150150209
+			female = no
+			age = 20
+			trait = deceitful
+                        culture = tuscan
+			trait = guelph
+			trait = ambitious
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180166"
+		set_character_flag = giano_bella
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Loderingo degli Andalò
+
+character_event = {
+	id = 180167
+	title = "EVTNAME180167"
+	desc = "EVTDESC180167"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 352
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1220
+        NOT = { year = 1240 }
+		NOT = {
+			OR = { has_character_flag = loderingo_andalo
+			has_global_flag = loderingo_andalo }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180167"
+		set_character_flag = loderingo_andalo
+		set_global_flag = loderingo_andalo
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Loderingo
+			random_traits = no
+			dynasty = 150150210
+			female = no
+			age = 20
+			trait = deceitful
+                        culture = italian
+			trait = ghibelline
+			trait = ambitious
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180167"
+		set_character_flag = loderingo_andalo
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Guido Bonatti
+
+character_event = {
+	id = 180168
+	title = "EVTNAME180168"
+	desc = "EVTDESC180168"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 322
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+        NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = guido_bonatti
+			has_global_flag = guido_bonatti }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180168"
+		set_character_flag = guido_bonatti
+		set_global_flag = guido_bonatti
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Guido
+			random_traits = no
+			dynasty = 150150211
+			female = no
+			age = 20
+			trait = cynical
+                        culture = italian
+			trait = ghibelline
+			trait = alchemist
+			trait = midas_touched
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180168"
+		set_character_flag = guido_bonatti
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Guillaume de Durfort
+
+character_event = {
+	id = 180169
+	title = "EVTNAME180169"
+	desc = "EVTDESC180169"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 319
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+        NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = guillaume_durfort
+			has_global_flag = guillaume_durfort }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180169"
+		set_character_flag = guillaume_durfort
+		set_global_flag = guillaume_durfort
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Guillaume
+			random_traits = no
+			dynasty = 150150212
+			female = no
+			age = 20
+			trait = cynical
+                        culture = frankish
+			trait = guelph
+			trait = brave
+			trait = skilled_tactician
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180169"
+		set_character_flag = guillaume_durfort
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Richard of Saint Victor
+
+character_event = {
+	id = 180170
+	title = "EVTNAME180170"
+	desc = "EVTDESC180170"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 112
+                year = 1140
+        NOT = { year = 1160 }
+		war = no
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = richard_victor
+			has_global_flag = richard_victor }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180170"
+		set_character_flag = richard_victor
+		set_global_flag = richard_victor
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Richard
+			random_traits = no
+			dynasty = 150150213
+			female = no
+			age = 40
+			trait = zealous
+                        culture = frankish
+			trait = chaste
+			trait = crusader
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180170"
+		set_character_flag = richard_victor
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Ottaviano degli Ubaldini
+
+character_event = {
+	id = 180173
+	title = "EVTNAME180173"
+	desc = "EVTDESC180173"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 328
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1220
+        NOT = { year = 1240 }
+		NOT = {
+			OR = { has_character_flag = ottaviano_ubaldini
+			has_global_flag = ottaviano_ubaldini }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180173"
+		set_character_flag = ottaviano_ubaldini
+		set_global_flag = ottaviano_ubaldini
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Ottaviano
+			random_traits = no
+			dynasty = 12248
+			female = no
+			age = 30
+			trait = zealous
+                        culture = tuscan
+			trait = chaste
+			trait = ghibelline
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 9
+				intrigue = 9
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180173"
+		set_character_flag = ottaviano_ubaldini
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Accursio da Bagnolo
+
+character_event = {
+	id = 180174
+	title = "EVTNAME180174"
+	desc = "EVTDESC180174"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 352
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1200
+        NOT = { year = 1220 }
+		NOT = {
+			OR = { has_character_flag = accursio_bagnolo
+			has_global_flag = accursio_bagnolo }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180174"
+		set_character_flag = accursio_bagnolo
+		set_global_flag = accursio_bagnolo
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Accursio
+			random_traits = no
+			dynasty = 150150214
+			female = no
+			age = 30
+			trait = zealous
+                        culture = italian
+			trait = chaste
+			trait = guelph
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 5
+				intrigue = 4
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180174"
+		set_character_flag = accursio_bagnolo
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Bulgaro
+
+character_event = {
+	id = 180175
+	title = "EVTNAME180175"
+	desc = "EVTDESC180175"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 352
+		war = no
+		in_command = no
+                year = 1100
+        NOT = { year = 1120 }
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = bulgaro
+			has_global_flag = bulgaro }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180175"
+		set_character_flag = bulgaro
+		set_global_flag = bulgaro
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Bulgaro
+			random_traits = no
+			dynasty = 100352
+			female = no
+			age = 30
+			trait = zealous
+                        culture = italian
+			trait = chaste
+			trait = guelph
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180175"
+		set_character_flag = bulgaro
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Azzone da Bologna
+
+character_event = {
+	id = 180176
+	title = "EVTNAME180176"
+	desc = "EVTDESC180176"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 352
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1140
+        NOT = { year = 1160 }
+		NOT = {
+			OR = { has_character_flag = azzone_bologna
+			has_global_flag = azzone_bologna }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180176"
+		set_character_flag = azzone_bologna
+		set_global_flag = azzone_bologna
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Azzone
+			random_traits = no
+			dynasty = 100352
+			female = no
+			age = 30
+			trait = zealous
+                        culture = italian
+			trait = chaste
+			trait = guelph
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180176"
+		set_character_flag = azzone_bologna
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Guido Guinizzelli
+
+character_event = {
+	id = 180177
+	title = "EVTNAME180177"
+	desc = "EVTDESC180177"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 352
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1240
+        NOT = { year = 1260 }
+		NOT = {
+			OR = { has_character_flag = guido_guinizzelli
+			has_global_flag = guido_guinizzelli }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180177"
+		set_character_flag = guido_guinizzelli
+		set_global_flag = guido_guinizzelli
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Guido
+			random_traits = no
+			dynasty = 150150216
+			female = no
+			age = 30
+			trait = poet
+                        culture = italian
+			trait = chaste
+			trait = guelph
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180177"
+		set_character_flag = guido_guinizzelli
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Ciriaco Pizzecolli
+
+character_event = {
+	id = 180178
+	title = "EVTNAME180178"
+	desc = "EVTDESC180178"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 350
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1390
+        NOT = { year = 1410 }
+		NOT = {
+			OR = { has_character_flag = ciriaco_pizzecolli
+			has_global_flag = ciriaco_pizzecolli }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180178"
+		set_character_flag = ciriaco_pizzecolli
+		set_global_flag = ciriaco_pizzecolli
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Ciriaco
+			random_traits = no
+			dynasty = 150150217
+			female = no
+			age = 30
+			trait = brave
+                        culture = central_italian
+			trait = relic_hunter
+			trait = scholar
+			trait = grey_eminence
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 7
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180178"
+		set_character_flag = ciriaco_pizzecolli
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Graziano da Chiusi
+
+character_event = {
+	id = 180179
+	title = "EVTNAME180179"
+	desc = "EVTDESC180179"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 352
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1090
+        NOT = { year = 1110 }
+		NOT = {
+			OR = { has_character_flag = graziano_chiusi
+			has_global_flag = graziano_chiusi }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180179"
+		set_character_flag = graziano_chiusi
+		set_global_flag = graziano_chiusi
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Graziano
+			random_traits = no
+			dynasty = 150150218
+			female = no
+			age = 30
+			trait = guelph
+                        culture = italian
+			trait = zealous
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180179"
+		set_character_flag = graziano_chiusi
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Dagoberto Lanfranchi
+
+character_event = {
+	id = 180180
+	title = "EVTNAME180180"
+	desc = "EVTDESC180180"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 327
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1090
+        NOT = { year = 1110 }
+		NOT = {
+			OR = { has_character_flag = dagoberto_lanfranchi
+			has_global_flag = dagoberto_lanfranchi }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180180"
+		set_character_flag = dagoberto_lanfranchi
+		set_global_flag = dagoberto_lanfranchi
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Dagoberto
+			random_traits = no
+			dynasty = 150150219
+			female = no
+			age = 30
+			trait = guelph
+                        culture = tuscan
+			trait = zealous
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 4
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 6
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180180"
+		set_character_flag = dagoberto_lanfranchi
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Peter of Capua
+
+character_event = {
+	id = 180212
+	title = "EVTNAME180212"
+	desc = "EVTDESC180212"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 334
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1170
+        NOT = { year = 1190 }
+		NOT = {
+			OR = { has_character_flag = peter_capua
+			has_global_flag = peter_capua }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180212"
+		set_character_flag = peter_capua
+		set_global_flag = peter_capua
+		prestige = 100
+                piety = 25
+                add_trait = mecenate
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Pietro
+			random_traits = no
+			dynasty = 7184
+			female = no
+			age = 30
+			trait = crusader
+                        culture = southern_italian
+			trait = zealous
+			trait = brave
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 8
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180212"
+		set_character_flag = peter_capua
+		prestige = -100
+                piety = 75
+	}
+}
+
+
+
+#Fibonacci
+
+character_event = {
+	id = 180223
+	title = "EVTNAME180223"
+	desc = "EVTDESC180223"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 327
+		war = no
+		in_command = no
+		is_ill = no
+                year = 1180
+        NOT = { year = 1200 }
+		NOT = {
+			OR = { has_character_flag = fibonacci
+			has_global_flag = fibonacci }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180223"
+		set_character_flag = fibonacci
+		set_global_flag = fibonacci
+		prestige = 100
+                piety = 25
+                add_trait = mecenate
+                scaled_wealth = -0.5  
+		create_character = {
+			name = Leonardo
+			random_traits = no
+			dynasty = 150150225
+			female = no
+			age = 30
+                        culture = tuscan
+			trait = genius
+			trait = scholar
+			trait = midas_touched
+			health = 10
+			attributes = {
+				martial = 8
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180223"
+		set_character_flag = fibonacci
+		prestige = -100
+                piety = 75
+	}
+}
+
+#Willian of Moerbeke
+
+character_event = {
+	id = 180224
+	title = "EVTNAME180224"
+	desc = "EVTDESC180224"
+	picture = GFX_evt_knight_and_king
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		owns = 94
+		war = no
+                year = 1220
+        NOT = { year = 1240 }
+		in_command = no
+		is_ill = no
+		NOT = {
+			OR = { has_character_flag = billy_mor
+			has_global_flag = billy_mor }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA180224"
+		set_character_flag = billy_mor
+		set_global_flag = billy_mor
+		prestige = 100
+                piety = 25
+                scaled_wealth = -0.5 
+                add_trait = mecenate 
+		create_character = {
+			name = Willem
+			random_traits = no
+			dynasty = 150150226
+			female = no
+			age = 30
+                        culture = dutch
+			trait = philosopher
+			trait = scholar
+			trait = mastermind_theologian
+			health = 10
+			attributes = {
+				martial = 8
+				intrigue = 4
+				stewardship = 5
+				diplomacy = 8
+				learning = 8
+			}
+		}
+	}
+        option = {
+		name = "EVTOPTB180224"
+		set_character_flag = billy_mor
+		prestige = -100
+                piety = 75
+	}
+}

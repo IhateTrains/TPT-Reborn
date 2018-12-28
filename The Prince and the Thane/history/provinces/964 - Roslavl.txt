@@ -1,0 +1,21 @@
+# 964 - Roslavl
+
+# County Title
+title = c_roslavl
+
+# Settlements
+max_settlements = 3
+b_mitishkino = castle
+b_roslavl = city
+#b_elnya = temple
+#b_pacynrostislvl = city
+#b_spass_demensk city
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+
+

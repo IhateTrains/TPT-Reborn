@@ -1,0 +1,15 @@
+# 1364 - Tindouf
+
+# County Title
+title = c_tindouf
+
+# Settlements
+max_settlements = 1
+
+b_tindouf = castle
+
+# Misc
+culture = masmuda
+religion = sunni
+
+# History

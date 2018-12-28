@@ -1,0 +1,178 @@
+######################################################################
+#
+# The Prince and the Thane Pagan events - written by idib816 and Aspie
+#
+######################################################################
+
+namespace = pagans
+
+#Province conversion
+
+character_event = {
+	id = pagans.1
+	desc = "EVTDESCpagans.1"
+	picture = GFX_evt_pagan
+	
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    OR = {
+		    religion_group = pagan_group
+		    religion_group = baltic_pagan_group
+            religion_group = african_pagan_group
+		    religion_group = other_pagan_group 
+		}
+		any_demesne_province = { NOT = { religion = ROOT }  }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+		
+		modifier = {
+			factor = 1.75
+			trait = just
+		}
+		modifier = {
+			factor = 0.35
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 1.5
+			trait = charismatic_negotiator
+		}
+		modifier = {
+			factor = 2.5
+			trait = grey_eminence
+		}
+		modifier = {
+			factor = 3.5
+			trait = mastermind_theologian
+		}
+		modifier = {
+			factor = 2.5
+			piety = 250
+		}
+		modifier = {
+			factor = 2.5
+			piety = 500
+		}
+		modifier = {
+			factor = 2.5
+			piety = 750
+		}
+		modifier = {
+			factor = 2.5
+			piety = 1000
+		}
+		modifier = {
+			factor = 2.5
+			prestige = 500
+		}
+		modifier = {
+			factor = 2.5
+			prestige = 750
+		}
+		
+		modifier = {
+			factor = 2.5
+			prestige = 1000
+		}
+		modifier = {
+			factor = 0.25
+			trait = cynical
+		}
+		modifier = {
+			factor = 3.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 1.25
+			learning = 8
+		}
+		modifier = {
+			factor = 1.25
+			learning = 9
+		}
+		modifier = {
+			factor = 1.25
+			learning = 10
+		}
+		modifier = {
+			factor = 1.25
+			learning = 11
+		}
+		modifier = {
+			factor = 1.25
+			learning = 12
+		}
+		modifier = {
+			factor = 1.25
+			learning = 13
+		}
+		modifier = {
+			factor = 1.25
+			learning = 14
+		}
+		modifier = {
+			factor = 1.25
+			learning = 15
+		}
+		modifier = {
+			factor = 1.25
+			learning = 16
+		}
+		modifier = {
+			factor = 2
+			realm_learning = 20
+		}
+		modifier = {
+			factor = 2.5
+			realm_learning = 25
+		}
+		modifier = {
+			factor = 3.5
+			realm_learning = 30
+		}
+		modifier = {
+			factor = 5
+			realm_learning = 35
+		}
+	}
+	
+	option = {
+		name = "GREAT!"
+		prestige = 10
+        piety = 25
+        random_demesne_province = { 
+		    limit = { NOT = { religion = ROOT } }
+		    religion = ROOT 
+		}
+	}
+}
+

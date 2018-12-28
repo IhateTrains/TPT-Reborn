@@ -1,0 +1,30 @@
+# 493 - Philippopolis
+
+# County Title
+title = c_philippopolis
+
+# Settlements
+max_settlements = 4
+
+b_philippopolis = castle
+b_klokoknitsa = city
+b_xantheia = temple
+#b_peritheorion = castle
+#b_anaktoropolis = castle
+
+
+# Misc
+culture = greek
+religion = bogomilist #many Paulicians were deported to here
+
+# History
+
+
+#4th crusade
+1181.1.1 = { trade_post = b_dandolo } 
+1205.1.1 = { remove_settlement = b_klokoknitsa } 
+
+1337.1.1 = { b_klokoknitsa = city }
+
+1384.1.1 = { culture = turkish }
+1384.1.1 = { religion = sunni }

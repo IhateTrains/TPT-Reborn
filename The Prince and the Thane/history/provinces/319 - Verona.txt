@@ -1,0 +1,59 @@
+# 319 - Verona
+
+# County Title
+title = c_verona
+
+# Settlements
+max_settlements = 5
+
+b_castellodicalmano = castle
+b_verona = city
+b_lonigo = city
+b_abbaziadisanzeno = temple
+
+#b_rivoliverona = castle 
+#b_negrarverona = city
+#b_villafrancadiverona = castle
+#b_sanmartino = city
+#b_peschiera = temple
+#b_montecchio = castle
+#b_malcesine = city
+#b_castelloscaligero = castle
+#b_castelvecchioverona = castle
+#b_zevioverona = city
+#b_abbaziadisanpietro = temple
+#b_sanbonifacio = city
+#b_grezzena = city
+
+
+
+
+# Misc
+culture = venetian
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_lonigo = ct_wall_1
+	b_lonigo = ct_wall_q_1
+	b_lonigo = ct_marketplace_1
+	b_lonigo = ct_militia_barracks_1
+	b_lonigo = ct_militia_barracks_2
+	b_verona = ct_jewish_community_1
+	b_verona = ct_wall_1
+	b_verona = ct_wall_2
+	b_verona = ct_wall_3
+	b_verona = ct_wall_q_1
+	b_verona = ct_wall_q_2
+	b_verona = ct_marketplace_1
+	b_verona = ct_marketplace_2
+	b_verona = ct_militia_barracks_1
+	b_verona = ct_militia_barracks_2
+	b_verona = ct_militia_barracks_3
+}
+
+1090.5.12 = { capital = b_verona }
+1100.1.1 = { capital = b_castellodicalmano }
+1115.7.24 = { capital = b_verona }
+1305.1.1 = { capital = b_castellodicalmano }

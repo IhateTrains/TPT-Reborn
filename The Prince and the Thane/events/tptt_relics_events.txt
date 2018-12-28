@@ -1,0 +1,1226 @@
+########################################################################
+#
+# The Prince and the Thane relics events - written by idib816 and Ambrox
+#
+########################################################################
+
+namespace = grail
+
+#Holy Grail Research 
+
+narrative_event = {	# grail.1 - Holy Grail Research - Rumors about Palestine (1066/1186)
+	id = grail.1
+	desc = "EVTDESCgrail.1"
+	picture = "GFX_evt_grail2"
+	title = "The Holy Grail"
+	border = "GFX_event_narrative_frame_religious"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        year = 1066
+        NOT = { year = 1186 }
+        NOT = { has_global_flag = holy_grail_found }
+	}
+	
+	mean_time_to_happen = {	# modifier range (min/max) -> 60/120 years
+		years = 60		
+	}
+	
+	option = {
+        name = "EVTOPTAgrail.1"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.1"	
+ 		remove_trait = zealous
+        prestige = -35
+        piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.1"
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+		hidden_tooltip = {
+		    narrative_event = { id = grail.6 days = 30 }
+		}
+	}
+}
+
+narrative_event = {	# grail.2 - Holy Grail Research - Rumors about Thrace (1187/1204)
+	id = grail.2
+	desc = "EVTDESCgrail.2"
+	picture = "GFX_evt_grail2"
+	border = "GFX_event_narrative_frame_religious"
+	title = "The Holy Grail"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        year = 1187
+        NOT = { year = 1205 }
+        NOT = { has_global_flag = holy_grail_found }
+	}
+	
+	mean_time_to_happen = {	
+		years = 9	
+	}
+	
+	option = {
+        name = "EVTOPTAgrail.1"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.1"	
+ 		remove_trait = zealous
+        prestige = -35
+        piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.1"
+		hidden_tooltip = {
+		    narrative_event = { id = grail.6 days = 30 }
+		}
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+}
+
+narrative_event = {	# grail.3 - Holy Grail Research - Rumors about Champagne (1205/1270)
+	id = grail.3
+	desc = "EVTDESCgrail.3"
+	picture = "GFX_evt_grail2"
+	border = "GFX_event_narrative_frame_religious"
+	title = "The Holy Grail"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        year = 1205
+        NOT = { year = 1270 }
+        NOT = { has_global_flag = holy_grail_found }
+	}
+	
+	mean_time_to_happen = {	
+		years = 33	
+	}
+	
+	option = {
+        name = "EVTOPTAgrail.1"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.1"	
+ 		remove_trait = zealous
+        prestige = -35
+        piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.1"
+		hidden_tooltip = {
+		    narrative_event = { id = grail.6 days = 30 }
+		}
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+}
+
+narrative_event = {	# grail.4 - Holy Grail Research - Rumors about Po river (1271/1336)
+	id = grail.4
+	desc = "EVTDESCgrail.4"
+	picture = "GFX_evt_grail2"
+	border = "GFX_event_narrative_frame_religious"
+	title = "The Holy Grail"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        year = 1271
+        NOT = { year = 1336 }
+        NOT = { has_global_flag = holy_grail_found }
+	}
+	
+	mean_time_to_happen = {	# modifier range (min/max) -> 33/66 years
+		years = 33		
+	}
+	
+	option = {
+        name = "EVTOPTAgrail.1"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.1"	
+ 		remove_trait = zealous
+        prestige = -35
+        piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.1"
+		hidden_tooltip = {
+		    narrative_event = { id = grail.6 days = 30 }
+		}
+        add_trait = relic_hunter 
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+}
+
+narrative_event = {	# grail.5 - Holy Grail Research - Rumors about Sierra Nevada (1337/1453)
+	id = grail.5
+	desc = "EVTDESCgrail.5"
+	picture = "GFX_evt_grail2"
+	border = "GFX_event_narrative_frame_religious"
+	title = "The Holy Grail"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		religion = catholic
+        year = 1337
+        NOT = { year = 1453 }
+        NOT = { has_global_flag = holy_grail_found }
+	}
+	
+	mean_time_to_happen = {	# modifier range (min/max) -> 60/120 years
+		years = 60	
+	}
+	
+	option = {
+        name = "EVTOPTAgrail.1"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.1"	
+ 		remove_trait = zealous
+        prestige = -35
+        piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.1"
+		hidden_tooltip = {
+		    narrative_event = { id = grail.6 days = 30 }
+		}
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+}
+
+narrative_event = {	# grail.6 - Holy Grail Research 
+	id = grail.6
+	desc = "EVTDESCgrail.6"
+	picture = "GFX_evt_grail2"
+	title = "The Grail Research"
+	border = "GFX_event_narrative_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = holy_grail_found }
+	}
+
+	option = {
+        name = "EVTOPTAgrail.6"	
+        random = { 
+		    chance = 33
+ 		    add_trait = zealous
+            hidden_tooltip = { 
+		        character_event = { id = 38269 } 
+		    }		
+		}
+        piety = 50
+        prestige = 10
+ 		scaled_wealth = -1.75	
+		hidden_tooltip = {
+            narrative_event = { id = grail.7 days = 120 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.6"
+        prestige = -50
+        piety = -25
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        remove_trait = relic_hunter
+	}	
+}
+
+narrative_event = {	# grail.7 - Holy Grail Research - Night dreams while searching
+	id = grail.7
+	desc = "EVTDESCgrail.7"
+	picture = "GFX_evt_grail2"
+	title = "The Grail Research"
+	border = "GFX_event_narrative_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = holy_grail_found }
+	}
+	
+	option = {	
+        name = "EVTOPTAgrail.7"	
+ 		remove_trait = zealous
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.7"	
+		hidden_tooltip = {
+		    character_event = { id = grail.8 days = 20 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.7"	
+	    hidden_tooltip = {
+		    character_event = { id = grail.9 days = 20 }
+		}
+	}	
+}
+
+character_event = {	# grail.8 - Holy Grail Research - bribe search
+	id = grail.8
+	desc = "EVTDESCgrail.8"
+	picture = "GFX_evt_holy_grail"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = holy_grail_found }
+	}
+
+	option = {
+        name = "EVTOPTAgrail.8"	
+ 		scaled_wealth = -1
+        hidden_tooltip = {
+		    random_list = { 
+			    20 = { narrative_event = { id = grail.11 days = 10 } }
+			    80 = { character_event = { id = grail.10 days = 10 } }
+		    }
+        }
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.8"	
+ 		scaled_wealth = -0.5
+        hidden_tooltip = {
+		    random_list = { 
+		        5 = { narrative_event = { id = grail.11 days = 10 } }
+			    95 = { character_event = { id = grail.10 days = 10 } }
+		    }
+        }
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.8"	
+ 		piety = -50
+        remove_trait = zealous	
+	}	
+}
+
+character_event = {	# grail.9 - Holy Grail Research - bloody search
+	id = grail.9
+	desc = "EVTDESCgrail.9"
+	picture = "GFX_evt_holy_grail"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = holy_grail_found }
+	}
+
+	option = {
+        name = "EVTOPTAgrail.9"	
+ 		piety = -50
+        hidden_tooltip = {
+		    random_list = { 
+			    20 = { narrative_event = { id = grail.11 days = 10 } }
+			    80 = { character_event = { id = grail.10 days = 10 } }
+		    }
+        }
+	}
+	
+	option = {
+        name = "EVTOPTBgrail.9"	
+ 		piety = -25
+        hidden_tooltip = {
+		    random_list = { 
+                5 = { narrative_event = { id = grail.11 days = 10 } }
+			    95 = { character_event = { id = grail.10 days = 10 } }
+		    }
+        }
+	}
+	
+	option = {
+        name = "EVTOPTCgrail.8"	
+ 		piety = -50
+        remove_trait = zealous	
+	}	
+}
+
+character_event = {	# Holy Grail Research - stop search
+	id = grail.10
+	desc = "EVTDESCgrail.10"
+	picture = "GFX_evt_holy_grail"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = holy_grail_found }
+	}
+
+	option = {
+        name = "EVTOPTAgrail.10"
+ 		prestige = -75
+        random = { 
+		    chance = 50
+            add_trait = cynical
+            hidden_tooltip = {
+				character_event = { id = 38258 }
+		    }				
+		}
+	}	
+}
+
+narrative_event = {	# Holy Grail Research - found!!!
+	id = grail.11
+	desc = "EVTDESCgrail.11"
+	picture = "GFX_evt_holy_grail"
+	title = "The Grail is Found!"
+	border = "GFX_event_narrative_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = holy_grail_found }
+	}
+
+	option = {
+        name = "EVTOPTAgrail.11"
+ 		prestige = 500
+        piety = 250
+        set_global_flag = holy_grail_found
+		set_character_flag = grail_temple_possible
+		hidden_tooltip = {
+		    character_event = {
+			    id = grail.12
+				days = 180
+			}
+		}
+	}	
+}
+
+character_event = {	# Grail temple
+	id = grail.12
+	picture = "GFX_evt_holy_grail"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCgrail.12"
+
+    is_triggered_only = yes
+
+    trigger = { 
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+	    has_character_flag = grail_temple_possible 
+        NOT = { has_global_flag = holy_grail_found }
+	}
+
+	option = {
+        name = "EVTOPTAmandylion.23"
+		prestige = 100
+        piety = 150
+        wealth = -350
+        random_demesne_title = {
+            limit = { tier = BARON is_feudal = yes location = { is_capital = yes } }
+            add_building = ca_grail_temple 
+		}
+		clr_character_flag = grail_temple_possible
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    limit = { religion_group = christian }
+				narrative_event = {
+				    id = grail.13
+				}
+			}
+		}
+	}
+}
+
+narrative_event = { #Grail found notification
+	id = grail.13
+	title = "The Grail has been found!"
+	desc = "The Holy Grail has been found! It is now in the hands of [From.GetTitledName], who has built a temple in its honour in [From.Capital.GetName]"
+	
+	picture = "GFX_evt_icon"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "A holy moment!"
+		piety = 10
+	}
+}
+
+namespace = mandylion
+
+# Mandylion/Shroud chain
+
+narrative_event = {	# mandylion.0 - Mandylion/Shroud - 1066/1204 - exposed at Byzantion 
+	id = mandylion.0
+
+	desc = "EVTDESCmandylion.0"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_narrative_frame_religious"
+	title = "The Mandylion"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		religion_group = christian
+        year = 1066
+        NOT = { year = 1204 }
+        NOT = { has_character_flag = seen_shroud }
+	}
+	
+	mean_time_to_happen = {	# modifier range (min/max) -> 21/140 years
+		years = 120		
+	}
+	
+    option = {
+        name = "EVTOPTAmandylion.0"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.0"	
+ 		remove_trait = zealous
+        prestige = -35
+        piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCmandylion.0"
+		hidden_tooltip = {
+		    narrative_event = { id = mandylion.2 days = 30 }
+		}
+        scaled_wealth = -0.5
+        set_character_flag = seen_shroud
+	}
+}
+
+narrative_event = {	# mandylion.1 - Mandylion/Shroud - 1356/1453 - exposed at Lirey (Troyes)
+	id = mandylion.1
+
+	desc = "EVTDESCmandylion.1"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_narrative_frame_religious"
+	title = "The Mandylion"
+
+    min_age = 14
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+    only_rulers = yes
+
+	trigger = {		
+		is_feudal = yes
+		religion_group = christian
+        year = 1356
+        NOT = { year = 1453 }
+        NOT = { has_global_flag = acquired_shroud }
+        NOT = { has_character_flag = seen_shroud }
+	}
+
+	mean_time_to_happen = {	# modifier range (min/max) -> 75/75 years
+		years = 75
+	}
+	
+	option = {
+        name = "EVTOPTAmandylion.0"	
+ 		add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+        prestige = -25
+        piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.0"	
+ 		remove_trait = zealous
+                prestige = -35
+                piety = -10
+	}
+	
+	option = {
+        name = "EVTOPTCmandylion.0"
+		hidden_tooltip = {
+		    narrative_event = { id = mandylion.2 days = 30 }
+		}
+        scaled_wealth = -0.5
+        set_character_flag = seen_shroud
+	}
+}
+
+narrative_event = {	# mandylion.2 - Mandylion/Shroud - Voyage to see it
+	id = mandylion.2
+
+	desc = "EVTDESCmandylion.2"
+	picture = "GFX_evt_icon"
+	title = "The Mandylion"
+	border = "GFX_event_narrative_frame_religious"
+
+    is_triggered_only = yes
+
+	trigger = {		
+		OR = {	
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+	option = {
+        name = "EVTOPTAmandylion.2"	
+		add_trait = zealous
+		hidden_tooltip = {
+			character_event = { id = 38269 }
+		}
+ 		scaled_wealth = -0.2
+        piety = 25
+        health = 1
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.2"	
+        piety = -10
+        add_trait = cynical
+		hidden_tooltip = {
+			character_event = { id = 38258 }
+		}
+ 	}
+}
+
+narrative_event = {	# mandylion.4 - Mandylion/Shroud - 1205/1355 - start search together with Knights Templar (n.1)
+	id = mandylion.4
+	desc = "EVTDESCmandylion.4"
+	picture = "GFX_evt_icon"
+	title = "The Mandylion Search"
+	border = "GFX_event_narrative_frame_religious"
+
+	trigger = {	
+		is_feudal = yes	
+		religion_group = christian
+        year = 1205
+        NOT = { year = 1335 }
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+	mean_time_to_happen = {	# modifier range (min/max) -> 22/150 years
+		years = 110
+	}
+
+	option = {	
+        name = "EVTOPTAmandylion.4"	
+ 		piety = -50
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.4"	
+ 		scaled_wealth = -0.5
+		hidden_tooltip = {
+		    character_event = { id = mandylion.7 days = 120 }
+		}
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTCmandylion.4"	
+ 		scaled_wealth = -0.5
+		hidden_tooltip = {
+		    character_event = { id = mandylion.8 days = 120 }
+		}
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTDmandylion.4"	
+ 		scaled_wealth = -0.5
+		hidden_tooltip = {
+		    character_event = { id = mandylion.9 days = 120 }
+		}
+        add_trait = relic_hunter
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.81 }
+		}
+	}
+}
+
+character_event = {	# mandylion.7 - Mandylion/Shroud - wrong! 
+	id = mandylion.7
+	desc = "EVTDESCmandylion.7"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.7"	
+        prestige = -50
+	}
+}
+
+character_event = {	# mandylion.8 - Mandylion/Shroud - ambush!
+	id = mandylion.8
+	desc = "EVTDESCmandylion.8"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.8"	
+        prestige = -20
+        change_intrigue = -1
+        random = { 
+		    chance = 25
+            death = { death_reason = death_battle } 
+		}
+	}
+}
+
+character_event = {	# mandylion.9 - Mandylion/Shroud - right! 
+	id = mandylion.9
+	desc = "EVTDESCmandylion.9"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.9"	
+        prestige = 25
+		hidden_tooltip = {
+		    character_event = { id = mandylion.10 days = 30 }
+		}
+	}
+}
+
+character_event = {	# mandylion.10 - Mandylion/Shroud - noble family takes care of Mandylion
+	id = mandylion.10
+	desc = "EVTDESCmandylion.10"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.10"
+		hidden_tooltip = {
+		    character_event = { id = mandylion.11 days = 15 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.10"
+		hidden_tooltip = {
+		    character_event = { id = mandylion.13 days = 15 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTCmandylion.10"
+		hidden_tooltip = {
+		    character_event = { id = mandylion.17 days = 15 }
+		}
+	}
+}
+
+character_event = {	# mandylion.11 - Mandylion/Shroud - assault their castle?
+	id = mandylion.11
+	desc = "EVTDESCmandylion.11"
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.11"
+		hidden_tooltip = {
+		    character_event = { id = mandylion.12 days = 5 }
+            health = -1
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.11"
+        prestige = -25
+		hidden_tooltip = {
+		    character_event = { id = mandylion.10 }
+		}
+	}
+}
+
+character_event = {	# mandylion.12 - Mandylion/Shroud - assault - loot and chance finding Mandylion
+	id = mandylion.12
+	picture = "GFX_evt_icon"
+	desc = "EVTDESCmandylion.12"
+	border = "GFX_event_normal_frame_religious"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.12"
+		wealth = 500
+		hidden_tooltip = { 
+		    random_list = {
+			    65 = { character_event = { id = mandylion.12 } }
+			    35 = { character_event = { id = mandylion.29 } }
+            }
+		}
+	}
+}
+
+character_event = {	# mandylion.13 - Mandylion/Shroud - steal Mandylion - step 1 -> patrol
+	id = mandylion.13
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.13"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.13"
+		hidden_tooltip = { 
+		    random_list = {
+			    75 = { character_event = { id = mandylion.14 } }
+			    25 = { character_event = { id = mandylion.29 } }
+            }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.13"
+        prestige = -25
+		hidden_tooltip = {
+		    character_event = { id = mandylion.10 }
+		}
+	}
+}
+
+character_event = {	# mandylion.14 - Mandylion/Shroud - steal Mandylion - step 2 -> gate
+	id = mandylion.14
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.14"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.14"
+		hidden_tooltip = { 
+		    random_list = {
+			    75 = { character_event = { id = mandylion.15 } }
+			    25 = { character_event = { id = mandylion.29 } }
+            }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.14"
+        prestige = -25
+		hidden_tooltip = {
+		    character_event = { id = mandylion.10 }
+		}
+	}
+}
+
+character_event = {	# mandylion.15 - Mandylion/Shroud - steal Mandylion - step 3 -> great hall
+	id = mandylion.15
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.15"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.15"
+		hidden_tooltip = {
+    		random_list = {
+			    75 = { character_event = { id = mandylion.16 } }
+			    25 = { character_event = { id = mandylion.29 } }
+            }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.15"
+        prestige = -25
+		hidden_tooltip = {
+		    character_event = { id = mandylion.10 }
+		}
+	}
+}
+
+character_event = {	# mandylion.16 - Mandylion/Shroud - steal Mandylion - step 4 -> escape
+	id = mandylion.16
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.16"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.16"
+		health = -1
+		hidden_tooltip = { 
+		    random_list = {
+			    75 = { narrative_event = { id = mandylion.22 } }
+			    25 = { character_event = { id = mandylion.29 } }
+            }
+		}
+	}
+}
+
+character_event = {	# mandylion.17 - Mandylion/Shroud - buy Mandylion - initial approach
+	id = mandylion.17
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.17"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.17"
+		wealth = -1000
+		hidden_tooltip = {
+		    character_event = { id = mandylion.18 days = 2 }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.17"
+		hidden_tooltip = {
+		    character_event = { id = mandylion.10 }
+		}
+	}
+}
+
+character_event = {	# mandylion.18 - Mandylion/Shroud - buy Mandylion 
+	id = mandylion.18
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.18"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.18"
+		wealth = -500
+		hidden_tooltip = { 
+		    random_list = {
+			    75 = { narrative_event = { id = mandylion.22 } }
+			    25 = { character_event = { id = mandylion.29 } }
+            }
+		}
+	}
+	
+	option = {
+        name = "EVTOPTBmandylion.18"
+	    hidden_tooltip = {
+		    character_event = { id = mandylion.10 }
+		}
+	}
+}
+
+character_event = {	# mandylion.29 - Mandylion/Shroud - NOT found
+	id = mandylion.29
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.29"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.29"
+		prestige = -100
+ 	}	
+}
+
+narrative_event = {	# mandylion.22 - Mandylion/Shroud - found!!!
+	id = mandylion.22
+	picture = "GFX_evt_icon"
+	title = "The Mandylion is ours!"
+	border = "GFX_event_narrative_frame_religious"
+	desc = "EVTDESCmandylion.22"
+
+    is_triggered_only = yes 
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+        name = "EVTOPTAmandylion.22"
+		prestige = 100
+        piety = 250
+        change_learning = 1
+		set_global_flag = acquired_shroud
+		set_character_flag = shroud_temple_possible
+		hidden_tooltip = {
+		    character_event = {
+			    id = mandylion.23
+				days = 180
+			}
+		}
+	}	
+}
+
+character_event = {	# Shroud temple
+	id = mandylion.23
+	picture = "GFX_evt_icon"
+	border = "GFX_event_normal_frame_religious"
+	desc = "EVTDESCmandylion.23"
+	
+	is_triggered_only = yes
+
+    trigger = { has_character_flag = shroud_temple_possible }
+
+	option = {
+        name = "EVTOPTAmandylion.23"
+		prestige = 100
+        piety = 150
+        wealth = -350
+        random_demesne_title = {
+            limit = { tier = BARON is_feudal = yes location = { is_capital = yes } }
+            add_building = ca_shroud_temple 
+		}
+		clr_character_flag = shroud_temple_possible
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    limit = { religion_group = christian }
+				narrative_event = {
+				    id = mandylion.24
+				}
+			}
+		}
+	}
+}
+
+narrative_event = { #Shroud found notification
+	id = mandylion.24
+	title = "The Shroud has been found!"
+	desc = "The Shroud has been found! It is now in the hands of [From.GetTitledName], who has built a temple in its honour in [From.Capital.GetName]"
+	
+	picture = "GFX_evt_icon"
+	
+	is_triggered_only = yes
+
+	trigger = {		
+        NOT = { has_global_flag = acquired_shroud }
+	}
+
+
+	option = {
+		name = "A holy moment!"
+		piety = 10
+	}
+}

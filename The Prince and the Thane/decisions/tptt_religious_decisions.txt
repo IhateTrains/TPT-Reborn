@@ -1,0 +1,176 @@
+decisions = {
+
+    buy_indulgence_for_sins = {
+		potential = {
+		    OR = {
+			    religion = catholic
+			    is_heresy_of = catholic
+			}
+			age = 14
+			demesne_size = 1
+			NOT = { has_character_flag = ask_for_indulgence }
+		}
+		allow = {
+			scaled_wealth = 1.0
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = ask_for_indulgence
+			rightful_religious_head_scope = {
+				character_event = { id = 39250 days = 5 random = 12 tooltip = "indulgence_ask" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 10.0
+				}
+			}
+		}
+	}
+
+	issue_declaration_of_repentance = {
+		potential = {
+		    OR = {
+			    religion = catholic
+			    is_heresy_of = catholic
+			}
+			age = 14
+			demesne_size = 1
+			NOT = { has_character_flag = ask_for_repentance }
+			rightful_religious_head_scope = {
+				ROOT = {
+					excommunicated_for = PREV
+				}
+			}
+		}
+		allow = {
+			scaled_wealth = 2.0
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = ask_for_repentance
+			rightful_religious_head_scope = {
+				character_event = { id = 39252 days = 5 random = 12 tooltip = "repentance_ask" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 10.0
+				}
+			}
+		}
+	}
+
+    donation_to_the_patriarch = {
+		potential = {
+		    OR = {
+			    religion = orthodox
+			    is_heresy_of = orthodox
+		    	religion = miaphysite
+		    	is_heresy_of = miaphysite
+			}
+			age = 14
+			NOT = { has_character_flag = patriarch_donation }
+		}
+		allow = {
+			scaled_wealth = 1.5
+		}
+		effect = {
+			set_character_flag = patriarch_donation 
+            scaled_wealth = -1.0
+            piety = 50
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	estabilish_heretic_pope = {
+		potential = {
+		    OR = {
+		    	religion = bogomilist
+		    	religion = cathar
+		    	religion = fraticelli
+		    	religion = lollard
+		    	religion = waldensian
+			}
+			age = 14
+			is_ruler = yes
+			piety = 0
+			NOT = { 
+			    OR = {
+				    AND = {
+					    religion = bogomilist
+			            has_global_flag = bogomilist_patriarch
+					}
+				    AND = {
+					    religion = cathar
+			            has_global_flag = cathar_patriarch
+					}
+				    AND = {
+					    religion = fraticelli
+			            has_global_flag = fraticelli_patriarch
+					}
+				    AND = {
+					    religion = waldensian
+			            has_global_flag = waldensian_patriarch
+					}
+				    AND = {
+					    religion = lollard
+			            has_global_flag = lollard_patriarch
+					}
+				}
+			}
+		}
+		allow = {
+			wealth = 500
+			piety = 150
+			prestige = 500
+		}
+		effect = {
+			custom_tooltip = TOOLTIPHERETICPOPE
+			hidden_tooltip = {
+			    if = { 
+				    limit = { religion = bogomilist }
+			        narrative_event = {
+				        id = religious.16
+				    }
+				}
+			    if = { 
+				    limit = { religion = cathar }
+			        narrative_event = {
+				        id = religious.18
+				    }
+				}
+			    if = { 
+				    limit = { religion = fraticelli }
+			        narrative_event = {
+				        id = religious.20
+				    }
+				}
+			    if = { 
+				    limit = { religion = waldensian }
+			        narrative_event = {
+				        id = religious.22
+				    }
+				}
+			    if = { 
+				    limit = { religion = lollard }
+			        narrative_event = {
+				        id = religious.24
+				    }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
+	

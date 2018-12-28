@@ -1,0 +1,10 @@
+983.1.1={
+	liege=e_hre
+}
+1080.1.1={
+	liege=k_papal_state
+}
+1199.1.1={
+	holder=0
+	liege=0 #Free Commune
+}

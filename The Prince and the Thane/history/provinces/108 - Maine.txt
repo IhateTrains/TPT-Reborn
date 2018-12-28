@@ -1,0 +1,18 @@
+# 108 - Maine
+
+# County Title
+title = c_maine
+
+# Settlements
+max_settlements = 3
+
+b_le_mans = castle
+#b_beaumont = castle
+b_sable = city
+
+# Misc
+culture = frankish
+religion = catholic
+
+# History
+

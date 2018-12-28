@@ -1,0 +1,33 @@
+850.1.1={
+	liege="c_mantua"
+}
+1055.1.1={
+	holder=1191000 #Ugo Cavalcabò
+}
+1100.1.1={
+	holder=1191001 #Corrado Cavalcabò
+}
+1140.1.1={
+	holder=1191002 #Sopramonte Cavalcabò
+}
+1190.1.1={
+	holder=1191003 #Corrado Cavalcabò
+}
+1220.1.1={
+	holder=1191004 #Cavalcabò Cavalcabò
+}
+1275.1.1={
+	holder=1191005 #Carlo Cavalcabò
+}
+1295.1.1={
+	holder=1191014 #Ugolino Cavalcabò
+}
+1305.1.1={
+	holder=1191015 #Guglielmo Cavalcabò
+}
+1312.1.1={
+	holder=1191016 #Giacomo Cavalcabò
+}
+1322.1.1={
+	holder=1191017 #Marsiglio Cavalcabò
+}

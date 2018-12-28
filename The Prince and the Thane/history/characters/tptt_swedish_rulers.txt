@@ -1,0 +1,83 @@
+3191000 = {
+	name="Anund"
+	religion="catholic"
+	dynasty=1 #Gardske
+	culture="russian"
+	1025.1.1 = {
+		birth="1025.1.1"
+	}
+	1087.1.1 = {
+		death="1087.1.1"
+	}
+}
+3191001 = {
+	name="Sweyn" #Blot Sveinn
+	religion="norse_pagan"
+	dynasty=496
+	father=3191002
+	culture="swedish"
+	1050.1.1 = {
+		birth="1050.1.1"
+	}
+	1065.1.1 = {
+		add_spouse=3191005 #Daughter of Stenkil
+	}
+	1087.1.1 = {
+		death="1087.1.1"
+	}
+}
+3191002 = {
+	name="Sigþorn" #Father of Blot Sveinn
+	religion="norse_pagan"
+	dynasty=496
+	father=100529
+	culture="swedish"
+	1023.1.1 = {
+		birth="1023.1.1"
+	}
+	1060.1.1 = {
+		death="1060.1.1"
+	}
+}
+3191003 = {
+	name="Ádjarf" #Brother of Blot Sveinn
+	religion="norse_pagan"
+	dynasty=496
+	father=3191002
+	culture="swedish"
+	1054.1.1 = {
+		birth="1054.1.1"
+	}
+	1093.1.1 = {
+		death="1093.1.1"
+	}
+}
+3191004 = {
+	name="Mey" #Sister of Blot Sveinn, wife of Ingi the Elder
+	religion="norse_pagan"
+	female=yes
+	dynasty=496
+	father=3191002
+	culture="swedish"
+	1052.1.1 = {
+		birth="1052.1.1"
+	}
+	1085.1.1 = {
+		death="1085.1.1"
+	}
+}
+3191005 = {
+	name="Cecilia" #Wife of Blot Sveinn, daughter of Stenkil, real name unknown
+	religion="catholic"
+	female=yes
+	dynasty=498
+	father=100522
+	mother=100514
+	culture="swedish"
+	1051.4.5 = {
+		birth="1051.4.5"
+	}
+	1093.1.1 = {
+		death="1093.1.1"
+	}
+}

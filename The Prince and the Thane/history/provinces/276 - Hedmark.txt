@@ -1,0 +1,23 @@
+# 276 - Hedmark
+
+# County Title
+title = c_hedmark
+
+# Settlements
+max_settlements = 3
+
+b_hringisakr = castle
+#b_fylkishaugr = city
+b_hamarhus = temple
+#b_gjovik = city
+#b_tengilstadir = city
+#b_hrignes = castle
+#b_skogr = temple
+
+
+# Misc
+culture = norwegian
+religion = catholic
+
+# History
+

@@ -1,0 +1,32 @@
+# 1001 - Zavrsje
+
+# County Title
+title = c_zavrsje
+
+# Settlements
+max_settlements = 3
+b_livno = castle
+#b_glamoc = castle
+b_tomislavgrad = city
+#b_veselastraza = city
+
+#b_prozor = castle
+#b_susjedgrad = castle
+#b_rog = castle
+#b_duvno = city
+#b_rama = city
+#b_kupres = temple
+#b_rapovina = temple
+#b_rakitno = city
+
+# Misc
+culture = bosnian
+religion = catholic
+
+# History
+
+ 
+ 
+ 
+
+

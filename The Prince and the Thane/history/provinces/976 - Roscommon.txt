@@ -1,0 +1,18 @@
+# 976 - Roscommon
+
+# County Title
+title = c_roscommon
+
+# Settlements
+max_settlements = 2
+
+b_roscommon = castle
+#b_elphin = city
+
+# Misc
+culture = irish
+religion = catholic
+terrain = hills
+
+# History
+

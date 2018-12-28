@@ -1,0 +1,18 @@
+# 1004 - Kotor
+
+# County Title
+title = c_kotor
+
+# Settlements
+max_settlements = 4
+b_budva = castle
+b_kotor = city
+#b_perzagno = city
+#b_dobrota = city
+#b_tivat = temple
+
+# Misc
+culture = serbian
+religion = orthodox
+
+# History

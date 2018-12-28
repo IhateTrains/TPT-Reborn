@@ -1,0 +1,1852 @@
+###################################################################
+# 
+# The Prince and the Thane nicknames - Written by idib816 and Syren
+#
+###################################################################
+
+# TRIGGERED ONLY
+################
+
+nick_the_dragonslayer = {}
+nick_trincanocte = {}
+nick_balbo = {}
+nick_the_kingslayer = {}
+nick_the_founder = {}
+nick_the_exile = {}
+nick_the_lombard = {}
+nick_rufus = {}
+nick_bosso = {}
+nick_borsa = {}
+nick_sanicandro = {}
+nick_adelin = {}
+nick_clito = {}
+nick_crispin = {}
+nick_goz = {}
+nick_lupus = {}
+nick_parvulus = {}
+nick_poitevin = {}
+nick_taillebois = {}
+nick_the_viscount = {}
+nick_tasso = {}
+nick_walter = {}
+nick_fitzroy = {}
+nick_leybourn = {}
+nick_heron = {}
+nick_liath = {}
+nick_badlesmere = {}
+nick_bedlesmere = {}
+nick_fitzalan = {}
+nick_la_zouche = {}
+nick_foliot = {}
+nick_beauchamp = {}
+nick_penalengoa = {}
+nick_naiarakoa = {}
+nick_abarka = {}
+nick_la_vascona = {}
+nick_aritza = {}
+nick_caignart = {}
+nick_grenonat = {}
+nick_fergant = {}
+nick_boterel = {}
+nick_barbetorte = {}
+nick_stalre = {}
+nick_mytzes = {}
+nick_shishman = {}
+nick_cid = {}
+nick_buenos_fueros = {}
+nick_manos_blancas = {}
+nick_emplazado = {}
+nick_jorobado = {}
+nick_cabeza_estopa = {}
+nick_the_fratricide = {}
+nick_the_hairy = {}
+nick_the_trembling = {}
+nick_the_one_eyed = {}
+nick_the_kid = {}
+nick_the_deacon = {}
+nick_skadelar = {}
+nick_blatand = {}
+nick_tveskag = {}
+nick_barbu = {}
+nick_the_fowler = {}
+nick_barbarossa = {}
+nick_leather_cloaks = {}
+nick_boruma = {}
+nick_dubh = {}
+nick_the_blind = {}
+nick_the_red = {}
+nick_fairhair = {}
+nick_mearanach = {}
+nick_gamle = {}
+nick_the_aetheling = {}
+nick_rus = {}
+nick_le_bref = {}
+nick_gernobadatus = {}
+nick_auguste = {}
+nick_ferreol = {}
+nick_harbu = {}
+nick_le_rechin = {}
+nick_le_tricheur = {}
+nick_le_champenois = {}
+nick_puer = {}
+nick_walcher = {}
+nick_carloman = {}
+nick_quentin = {}
+nick_mauclerc = {}
+nick_bossu = {}
+nick_the_bald = {}
+nick_transmarinus = {}
+nick_begue = {}
+nick_lungaspada = {}
+nick_pescatore = {}
+nick_gigante = {}
+nick_the_settler  = {}
+nick_the_farmer = {}
+nick_the_bolognese = {}
+nick_the_hooded = {}
+nick_khorobrit = {}
+nick_bolshoy = {}
+nick_menshoy = {}
+nick_bolshoe_gnesdo = {}
+nick_bogolyubsky = {}
+nick_the_singer = {}
+nick_the_bearded = {}
+nick_the_pilgrim = {}
+nick_the_lazy = {}
+nick_parapinakes = {}
+nick_the_elder = {}
+nick_kalusine = {}
+nick_skylitzes = {}
+nick_despina = {}
+nick_the_eunuch = {}
+nick_psellos = {}
+nick_the_armenian = {}
+nick_logothetes = {}
+nick_the_khazar = {}
+nick_kopronymos = {}
+nick_the_isaurian = {}
+nick_rinotmetos = {}
+nick_pogonatos = {}
+nick_megalos = {}
+nick_dicoros = {}
+nick_the_thracian = {}
+nick_the_younger = {}
+nick_chlorus = {}
+nick_junior = {}
+nick_arabus = {}
+nick_the_calligrapher = {}
+nick_mystikos = {}
+nick_megale = {}
+nick_grammatikos = {}
+nick_neos = {}
+nick_barfot = {}
+nick_the_brown = {}
+nick_the_saint = {}
+nick_the_catholic = {}
+nick_the_green = {}
+nick_the_tall = {}
+  
+# GIVEN BY STATS
+#################
+
+nick_the_hunchback = {
+	allow = {
+		age = 16
+		trait = hunchback
+	}
+	chance = {
+		factor = 4
+	}
+}
+
+nick_the_poet = {
+	allow = {
+		age = 20
+		trait = poet
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_affable = {
+	allow = {
+		age = 20
+		diplomacy = 10
+		trait = kind
+		trait = gregarious
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_leper = {
+	allow = {
+		age = 16
+		trait = leper
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_spider = {
+	allow = {
+		ruled_years = 10
+		intrigue = 12
+		NOT = {
+			trait = honest
+			trait = wroth
+		}
+		OR = {
+			trait = elusive_shadow
+			trait = intricate_webweaver
+		}
+		OR = {
+			trait = deceitful
+			trait = patient
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_eloquent = {
+	allow = {
+		age = 16
+		diplomacy = 12
+		NOT = {
+			trait = lisp
+			trait = possessed
+		}
+		OR = {
+			trait = charismatic_negotiator
+			trait = grey_eminence
+		}
+		OR = {
+			trait = gregarious
+			trait = poet
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_meek = {
+	allow = {
+		age = 16
+		trait = humble
+		NOT = {
+			trait = strong
+			trait = gregarious
+			trait = proud
+		}
+		OR = {
+			trait = weak
+			trait = shy
+			trait = craven
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_prudent = {
+	allow = {
+		age = 20
+		trait = patient
+		NOT = {
+			trait = wroth
+			trait = drunkard
+			trait = lunatic
+			trait = possessed
+			trait = brave
+		}
+		OR = {
+			trait = temperate
+			trait = chaste
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_learned = {
+	allow = {
+		age = 20
+		learning = 12
+		trait = scholar
+		NOT = {
+			trait = imbecile
+			trait = slow
+		}
+		OR = {
+			trait = mastermind_theologian
+			trait = scholarly_theologian
+			trait = genius
+			trait = quick
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_impaler = {
+	allow = {
+		age = 16
+		trait = impaler
+		NOT = {
+			trait = just
+			trait = kind
+		}
+		OR = {
+			trait = wroth
+			trait = arbitrary
+			trait = cruel
+		}
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_butcher = {
+	allow = {
+		age = 16
+		NOT = {
+			trait = just
+			trait = kind
+		}
+		OR = {
+			trait = cruel
+			trait = impaler
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_cunning = {
+	allow = {
+		age = 16
+		intrigue = 10
+		trait = deceitful
+		NOT = {
+			trait = trusting
+			trait = imbecile
+			trait = slow
+			trait = inbred
+		}
+		OR = {
+			trait = genius
+			trait = quick
+			trait = intricate_webweaver
+			trait = elusive_shadow
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_indolent = {
+	allow = {
+		age = 15
+		trait = slothful
+		NOT = {
+			trait = ambitious
+			trait = diligent
+		}
+		OR = {
+			trait = content
+			trait = patient
+			trait = gluttonous
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_wolf = {
+	allow = {
+		ruled_years = 15
+		martial = 10
+		intrigue = 8
+		OR = {
+			trait = brave
+			trait = deceitful
+		}
+		OR = {
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+		NOT = {
+			trait = honest
+		}
+	}
+	chance = {
+		factor = 4
+	}
+}
+
+nick_the_downcast = {
+	allow = {
+		age = 20
+		trait = depressed
+		NOT = {
+			trait = gregarious
+			trait = diligent
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_scholar = {
+	allow = {
+		age = 20
+		trait = scholar
+	}
+	chance = {
+		factor = 4
+	}
+}
+
+nick_the_mild = {
+	allow = {
+		age = 20
+		trait = kind
+		trait = temperate
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_theologian = {
+	allow = {
+		age = 20
+		learning = 10
+		NOT = {
+			trait = imbecile
+			trait = cynical
+		}
+		OR = {
+			trait = mastermind_theologian
+			trait = scholarly_theologian
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_decadent = {
+	allow = {
+		age = 16
+		trait = hedonist
+		OR = {
+			trait = gluttonous
+			trait = greedy
+			trait = drunkard
+			trait = lustful
+		}
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_stout = {
+	allow = {
+		age = 20
+		trait = strong
+		trait = gluttonous
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_vain = {
+	allow = {
+		age = 15
+		trait = proud
+		trait = fair
+		NOT = { trait = dwarf }
+		NOT = { trait = inbred }
+		NOT = { trait = harelip }
+		NOT = { trait = hunchback }
+		NOT = { age = 40 }
+	}
+	chance = {
+		factor = 4
+	}
+}
+
+nick_the_planter = {
+	allow = {
+		age = 20
+		trait = gardener
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_ugly = {
+	allow = {
+		age = 15
+		trait = ugly
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_short = {
+	allow = {
+		age = 15
+		trait = dwarf
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_parricide = {
+	allow = {
+		age = 15
+		trait = kinslayer
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_rash = {
+	allow = {
+		age = 20
+		trait = wroth
+		trait = brave
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_warrior = {
+	allow = {
+		age = 20
+		ruled_years = 10
+		martial = 10
+		NOT = { trait = infirm }
+		NOT = { trait = incapable }
+		NOT = { trait = craven }
+		OR = {
+			trait = brave
+			trait = crusader
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4.0
+			trait = duelist
+		}
+		modifier = {
+			factor = 5.0
+			trait = crusader
+		}
+		modifier = {
+			factor = 5.0
+			trait = brave
+		}
+		modifier = {
+			factor = 5.0
+			trait = tough_soldier
+		}
+		modifier = {
+			factor = 5.0
+			trait = skilled_tactician
+		}
+		modifier = {
+			factor = 5.0
+			trait = brilliant_strategist
+		}
+	}
+}
+
+nick_the_mystic = {
+	allow = {
+		age = 20
+		NOT = { piety = 200 }
+		NOT = { trait = cynical }
+		learning = 8
+		trait = mystic
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_bad = {
+	allow = {
+		age = 20
+		trait = greedy
+		trait = arbitrary
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_generous = {
+	allow = {
+		age = 20
+		trait = charitable
+		trait = kind
+	}
+	chance = {
+		factor = 4
+	}
+}
+
+nick_the_honorable = {
+	allow = {
+		age = 20
+		trait = honest
+		trait = just
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_treacherous = {
+	allow = {
+		age = 20
+		trait = deceitful
+		trait = arbitrary
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_weak = {
+	allow = {
+		age = 20
+		trait = weak
+		OR = {
+			trait = craven
+			trait = content
+		}
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_scarred = {
+	allow = {
+		age = 20
+		OR = {
+			trait = wounded
+			trait = maimed
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5.0
+			trait = wounded
+		}
+		modifier = {
+			factor = 5.0
+			trait = maimed
+		}
+	}
+}
+
+nick_the_quiet = {
+	allow = {
+		age = 15
+		trait = shy
+		trait = content
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_shrewd = {
+	allow = {
+		ruled_years = 10
+		stewardship = 12
+		NOT = {
+			trait = slothful
+			trait = zealous
+		}
+		OR = {
+			trait = midas_touched
+			trait = fortune_builder
+		}
+		OR = {
+			trait = diligent
+			trait = cynical
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_truthful = {
+	allow = {
+		age = 15
+		trait = honest
+		trait = trusting
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_distrustful = {
+	allow = {
+		age = 15
+		trait = deceitful
+		trait = paranoid
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_peaceful = {
+	allow = {
+		age = 20
+		trait = content
+		trait = kind
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_peaceable = {
+	allow = {
+		age = 20
+		trait = kind
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_ambitious = {
+	allow = {
+		age = 20
+		trait = ambitious
+		trait = envious
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_lewd = {
+	allow = {
+		age = 20
+		trait = lustful
+		OR = {
+			AND = {
+				has_lover = yes
+				lover = {
+					is_close_relative = ROOT
+				}
+			}
+			trait = hedonist
+		}
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_lover = yes
+			lover = {
+				is_close_relative = ROOT
+			}		
+		}
+	}
+}
+
+nick_the_dwarf = {
+	allow = {
+		age = 15
+		trait = dwarf
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_fool = {
+	allow = {
+		age = 20
+		OR = {
+			trait = imbecile
+			trait = inbred
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_great = {
+	allow = {
+		ruled_years = 10
+		prestige = 1000
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 4.0
+			prestige = 2000
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 4000
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 6000
+		}
+	}
+}
+
+nick_the_white = {
+	allow = {
+		ruled_years = 10
+		prestige = 350
+                trait = guelph
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 250
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_black = {
+	allow = {
+		ruled_years = 10
+		prestige = 350
+                trait = ghibelline
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 250
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_beheader = {
+	allow = {
+		Not = { piety = 0 }
+                trait = cruel
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 4.0
+			trait = wroth
+		}
+		modifier = {
+			factor = 4.0
+			trait = impaler
+		}
+	}
+}
+
+nick_the_elightened = {
+	allow = {
+		prestige = 350
+                trait = reformer
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4.0
+			trait = just
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_alchemist = {
+	allow = {
+		prestige = 350
+                trait = alchemist
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 4.0
+			trait = mystic
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 750
+		}
+	}
+}
+
+nick_ironside = {
+	allow = {
+		prestige = 350
+                trait = brave
+                martial = 12
+                trait = conservative
+                piety = 150
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 4.0
+			trait = wroth
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_invincible = {
+	allow = {
+		prestige = 350
+                martial = 15
+                trait = war_hero
+                piety = 150
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 5.0
+			trait = brave
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 3.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_moor = {
+	allow = {
+		religion_group = christian
+                Or = { culture_group = arabic
+                culture_group = east_african
+                culture_group = west_african
+                }
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_jew = {
+	allow = {
+		religion = jewish
+	}
+	chance = {
+		factor = 10
+	}
+}
+
+nick_the_restorer = {
+	allow = {
+		prestige = 250
+                piety = 50
+                trait = conservative
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 4.0
+			trait = proud
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 3.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_bloody = {
+	allow = {
+                trait = cruel
+                trait = wroth
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4.0
+			trait = craven
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 7.0
+			trait = lady_macbeth
+		}
+	}
+}
+
+nick_the_chansonnier = {
+	allow = {
+                trait = musician
+                prestige = 250
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 5.0
+			trait = proud
+		}
+	}
+}
+
+nick_dracul = {
+	allow = {
+                trait = impaler
+                prestige = 250
+                culture_group = south_slavic
+	}
+	chance = {
+		factor = 4
+		modifier = {
+			factor = 4.0
+			trait = cruel
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 350
+		}
+		modifier = {
+			factor = 5.0
+			trait = wroth
+		}
+	}
+}
+
+nick_eurgetes = {
+	allow = {
+                trait = charitable
+                prestige = 250
+                culture = greek
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 4.0
+			trait = kind
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 350
+		}
+		modifier = {
+			factor = 5.0
+			trait = proud
+		}
+	}
+}
+
+nick_epiphanes = {
+	allow = {
+                trait = proud
+                prestige = 250
+                culture = greek
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 4.0
+			trait = kind
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 350
+		}
+		modifier = {
+			factor = 5.0
+			trait = brave
+		}
+	}
+}
+
+nick_lackland = {
+	allow = {
+		prestige = 350
+                piety = 150
+                age = 35
+                Not = {
+                ruled_years = 5 }
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 5.0
+			trait = greedy
+		}
+		modifier = {
+			factor = 4.0
+			prestige = 500
+		}
+		modifier = {
+			factor = 3.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_virgin = {
+	allow = {
+		prestige = 350
+                piety = 150
+                age = 30
+                trait = celibate
+                is_female = yes
+	}
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 5.0
+			trait = zealous
+		}
+		modifier = {
+			factor = 4.0
+			piety = 500
+		}
+		modifier = {
+			factor = 3.0
+			prestige = 750
+		}
+	}
+}
+
+nick_the_shadow = {
+	allow = {
+		prestige = 350
+                piety = 150
+                age = 25
+                intrigue = 15 
+                is_female = no
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5.0
+			trait = elusive_shadow
+		}
+                modifier = {
+			factor = 0
+			trait = honest
+		}
+                modifier = {
+			factor = 0
+			Not = { diplomacy = 8 }
+		}
+		modifier = {
+			factor = 5.0
+			intrigue = 20
+		}
+		modifier = {
+			factor = 3.0
+			prestige = 1500
+		}
+	}
+}
+
+
+nick_guiscard = {
+	allow = {
+		prestige = 500
+                age = 25
+                intrigue = 15 
+                is_female = no
+                Or = { culture = norman
+                culture = frankish
+                culture = occitan }
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5.0
+			trait = elusive_shadow
+		}
+                modifier = {
+			factor = 0
+			trait = honest
+		}
+                modifier = {
+			factor = 0
+			Not = { diplomacy = 8 }
+		}
+		modifier = {
+			factor = 5.0
+			intrigue = 20
+		}
+		modifier = {
+			factor = 3.0
+			prestige = 1500
+		}
+	}
+}
+
+nick_curthose = {
+	allow = {
+                is_female = no
+                Or = { culture = norman
+                culture = frankish
+                culture = english
+                culture = occitan
+                culture = scottish }
+                trait = tall
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 2
+			age = 10
+		}
+                modifier = {
+			factor = 0
+			age = 30
+		}
+	}
+}
+
+nick_bras = {
+	allow = {
+                is_female = no
+                Or = { culture = norman
+                culture = frankish
+                culture = english
+                culture = occitan
+                culture = scottish }
+                Or = { trait = strong
+                trait = brave }
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+                modifier = {
+			factor = 2
+			trait = strong
+		}
+                modifier = {
+			factor = 2
+			trait = brilliant_strategist
+		}
+                modifier = {
+			factor = 2
+			prestige = 750
+		}
+	}
+}
+
+nick_le_meschin = {
+	allow = {
+                is_female = no
+                Or = { culture = norman
+                culture = frankish
+                culture = english
+                culture = occitan
+                culture = scottish }
+                Or = { trait = arbitrary
+                trait = cruel }
+	}
+	chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+                modifier = {
+			factor = 2
+			trait = impaler
+		}
+                modifier = {
+			factor = 2
+			trait = machiavellian
+		}
+                modifier = {
+			factor = 2
+			prestige = 750
+		}
+	}
+}
+
+nick_longshanks = {
+	allow = {
+                is_female = no
+                Or = { 
+                culture = english
+                culture = scottish }
+                trait = tall
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 2
+			age = 10
+		}
+                modifier = {
+			factor = 0
+			age = 30
+		}
+	}
+}
+
+nick_curtmantle = {
+	allow = {
+                is_female = no
+                Or = { 
+                culture = english
+                culture = scottish
+                culture = frankish
+                culture = norman }
+                trait = tall
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 2
+			age = 10
+		}
+                modifier = {
+			factor = 0
+			age = 30
+		}
+	}
+}
+
+nick_the_battler = {
+	allow = {
+                is_female = no
+                martial = 16
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 10
+			war = yes
+		}
+                modifier = {
+			factor = 5
+			trait = brilliant_strategist
+		}
+	}
+}
+
+nick_hardeknud = {
+	allow = {
+                is_female = no
+                martial = 16
+                culture = danish
+                OR = {
+                trait = strong
+                trait = cruel
+                }
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 3
+			age = 40
+		}
+                modifier = {
+			factor = 5
+			trait = conservative
+		}
+	}
+}
+
+nick_the_rich = {
+	allow = {
+                wealth = 500
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			wealth = 1000
+		}
+                modifier = {
+			factor = 2
+			wealth = 1500
+		}
+	}
+}
+
+nick_kyrre = {
+	allow = {
+                culture_group = north_germanic
+	            trait = humble
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4
+			trait = kind
+		}
+                modifier = {
+			factor = 4
+			trait = honest
+		}
+	}
+}
+
+nick_skakke= {
+	allow = {
+                culture_group = north_germanic
+	            trait = maimed
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 3
+			martial = 12
+		}
+	}
+}
+nick_munn = {
+	allow = {
+                culture_group = north_germanic
+	trait = grey_eminence
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 2
+			prestige = 500
+		}
+                modifier = {
+			factor = 2
+			prestige = 1000
+		}
+	}
+}
+nick_lavard = {
+	allow = {
+                culture_group = north_germanic
+	OR = {
+	trait = kind
+	prestige = 1250
+	}
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+                modifier = {
+			factor = 3
+			prestige = 1000
+		}
+	}
+}
+nick_herdebrei = {
+	allow = {
+                culture_group = north_germanic
+	martial = 16
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 4
+			trait = strong
+		}
+                modifier = {
+			factor = 3
+			martial = 20
+		}
+	}
+}
+nick_gille = {
+	allow = {
+                culture_group = north_germanic
+	trait = zealous
+	religion_group = christian
+	NOT = { trait = excommunicated }
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 4
+			piety = 500
+		}
+                modifier = {
+			factor = 2
+		    piety = 1000
+		}
+	}
+}
+
+nick_the_hotspur = {
+	allow = {
+		ruled_years = 15
+		martial = 10
+		OR = {
+			trait = wroth
+			trait = diligent
+		}
+		OR = {
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+		NOT = {
+			trait = patient
+		}
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_pompous = {
+	allow = {
+		age = 20
+		diplomacy = 10
+		trait = proud
+		trait = gregarious
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_boar = {
+	allow = {
+		age = 20
+		trait = wroth
+		trait = gluttonous
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_krokrygg = {
+	allow = {
+                culture_group = north_germanic
+	trait = hunchback
+	}
+	chance = {
+		factor = 3
+	}
+}
+
+nick_the_upright = {
+	allow = {
+		age = 18
+		trait = just
+		trait = honest
+		trait = charitable
+	}
+	chance = {
+		factor = 2
+	}
+}
+
+nick_the_skald = {
+	allow = {
+		age = 20
+		culture_group = north_germanic
+		trait = poet
+		trait = gregarious
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_bard = {
+	allow = {
+		age = 20
+		culture_group = celtic
+		trait = poet
+		trait = gregarious
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_scop = {
+	allow = {
+		age = 20
+		culture_group = anglo_saxon
+		trait = poet
+		trait = gregarious
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_recluse = {
+	allow = {
+		age = 20
+		trait = shy
+		trait = paranoid
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_candid = {
+	allow = {
+		age = 15
+		trait = honest
+		trait = brave
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_clubfoot = {
+	allow = {
+		age = 15
+		trait = clubfooted
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_suspicious = {
+	allow = {
+		age = 15
+		trait = cynical
+		intrigue = 10
+		NOT = { trait = trusting }
+		NOT = { trait = imbecile }
+		NOT = { trait = slow }
+		NOT = { trait = incapable }
+		OR = {
+			trait = flamboyant_schemer
+			trait = intricate_webweaver
+			trait = elusive_shadow
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			trait = paranoid
+		}
+	}
+}
+
+nick_the_eagle = {
+	allow = {
+		age = 15
+		trait = brave
+		martial = 10
+		NOT = { trait = slothful }
+		NOT = { trait = imbecile }
+		NOT = { trait = slow }
+		NOT = { trait = incapable }
+		OR = {
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			trait = diligent
+		}
+	}
+}
+
+nick_the_seemly = {
+	allow = {
+		age = 15
+		trait = charitable
+		diplomacy = 10
+		NOT = { trait = deceitful }
+		NOT = { trait = imbecile }
+		NOT = { trait = lustful }
+		NOT = { trait = hedonist }
+		NOT = { trait = cruel }
+		NOT = { trait = slow }
+		NOT = { trait = incapable }
+		OR = {
+			trait = underhanded_rogue
+			trait = charismatic_negotiator
+			trait = grey_eminence
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			trait = honest
+		}
+	}
+}
+
+nick_the_ashik = {
+	allow = {
+		age = 20
+		culture = turkish
+		trait = poet
+		trait = gregarious
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_minnesinger = {
+	allow = {
+		age = 20
+		culture = german
+		trait = poet
+		trait = gregarious
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_wanton = {
+	allow = {
+		ruled_years = 10
+		NOT = {
+			trait = temperate
+			trait = chaste
+		}
+		OR = {
+			trait = hedonist
+			trait = gluttonous
+			trait = drunkard
+		}
+		OR = {
+			trait = arbitrary
+			trait = lustful
+			trait = cynical
+		}
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_glorious = {
+	allow = {
+		age = 30
+		ruled_years = 25
+		prestige = 1000
+		piety = 500
+		OR = {
+			trait = quick
+			trait = genius
+		}
+		NOT = {
+			trait = slow
+			trait = imbecile
+		}
+		OR = {
+			trait = grey_eminence
+			trait = intricate_webweaver
+			trait = elusive_shadow
+			trait = charismatic_negotiator
+			trait = brilliant_strategist
+			trait = skilled_tactician
+		}
+	}
+	chance = {
+		factor = 2
+	}
+}

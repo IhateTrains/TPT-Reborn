@@ -1,0 +1,33 @@
+1000.1.1={
+	holder=2220068 #Ladislav Gucetic
+	holding_dynasty = 8001005 # Gucetic
+	liege="d_ragusa"
+}
+
+1050.1.1={
+	holder=2220069 #Stanislav Gucetic
+}
+
+1110.1.1={
+	holder=2220070 #Petar Gucetic
+}
+
+1150.1.1={
+	holder=2220071 #Ivan Gucetic
+}
+
+1190.1.1={
+	holder=2220072 #Karlo Gucetic
+}
+
+1230.1.1={
+	holder=2220073 #Stanislav Gucetic
+}
+
+1270.1.1={
+	holder=2220074 #Petar Gucetic
+}
+
+1310.1.1={
+	holder=2220075 #Karlo Gucetic
+}

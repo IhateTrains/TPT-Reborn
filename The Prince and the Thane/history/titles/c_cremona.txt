@@ -1,0 +1,19 @@
+1027.1.1={
+	liege=d_toscana
+	holder=0
+}
+1115.7.24 = {
+    liege="e_hre"
+}
+1254.1.1={
+	liege="d_lombardia"
+}
+1276.1.1={
+	holder=1191005 #Carlo Cavalcabò
+}
+1295.1.1={
+	holder=1191014 #Ugolino Cavalcabò
+}
+1307.1.1={
+	holder=1191016 #Giacomo Cavalcabò
+}

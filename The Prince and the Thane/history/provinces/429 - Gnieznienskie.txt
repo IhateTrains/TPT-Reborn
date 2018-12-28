@@ -1,0 +1,20 @@
+# 429 - Gnieznienskie
+
+# County Title
+title = c_gnieznienskie
+
+# Settlements
+max_settlements = 4
+b_gniezno = temple
+b_lekno = temple
+b_znin = castle
+
+#b_wagrowiec = castle
+#b_naklo = castle
+
+
+# Misc
+culture = polish
+religion = catholic
+
+# History

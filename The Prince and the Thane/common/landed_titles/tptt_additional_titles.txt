@@ -1,0 +1,470 @@
+#################### 
+#
+# RELIGIOUS HEADS
+#
+####################
+
+d_exilarch = {
+    color={ 135 206 250 }
+    color2={ 220 220 0 }
+       
+    capital = 693 # Baghdad
+ 
+    title = "Exilarch"
+	foa = "COHEN_HAGADOL_FOA"
+    short_name = yes
+       
+    location_ruler_title = yes
+ 
+    allow = {
+        piety = 1000
+    }
+ 
+    # Controls a religion
+    controls_religion = karaite
+       
+    religion = karaite
+    culture = mizrahi
+       
+    # Cannot be held as a secondary title
+    primary = yes
+       
+    dynasty_title_names = no        # Will not be named "Seljuk", etc.
+}
+
+d_cohen_hagadol_samaritan = {
+	color={ 60 140 40 }
+	color2={ 255 255 255 }
+	
+	capital = 774 # Jerusalem
+
+	location_ruler_title = yes
+	
+	title = "COHEN_HAGADOL"
+	foa = "COHEN_HAGADOL_FOA"
+	title_prefix = "COHEN_HAGADOL_OF"
+	short_name = yes
+	
+	religion = samaritan
+	
+	# Always exists
+	landless = yes
+	
+	culture = mizrahi
+
+	# Controls a religion
+	controls_religion = samaritan
+
+    # Cannot be held as a secondary title
+	primary = yes
+	
+	
+	# Regnal names
+	male_names = {
+	    Shelemiah Tsedaka Yitzhaq Abraham Levi Shalma Amram Yaacob Matzliach Abisha Asher Phinhas 
+		Yosef Shalom Elazar Aharon Zadok Yohanan Azariah Joazar Joiada Onias Manasseh Simon Jason
+	}
+}
+
+d_cohen_hagadol = {
+	color={ 10 120 10 }
+	color2={ 200 180 0 }
+	
+	capital = 774 # Jerusalem
+
+	location_ruler_title = yes
+	
+	creation_requires_capital = yes
+	
+	dignity = 100 # Counted as having this many more counties than it does
+	
+	title = "COHEN_HAGADOL"
+	foa = "COHEN_HAGADOL_FOA"
+	title_prefix = "COHEN_HAGADOL_OF"
+	short_name = yes
+	
+	religion = jewish
+	
+	culture = mizrahi
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = jewish
+
+        # Cannot be held as a secondary title
+	primary = yes
+	
+	allow = {
+		always = no
+	}
+	
+	male_names = {
+	    Aaron Eleazar Phinehas Abishua Zadok Ahimaaz Azariah Yohanan Hilkiah Yehoshua Manasseh Onias Simon Jason
+		Yonathan Ismael Aristobulus Matthias Ananelus Ananus Teophilus Ananias Joazar Antigonus Joiakim Jadduah
+	}
+}
+	
+k_cathar_papal_state = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 333 # Rome
+	
+	title = "POPE"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = cathar
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Regnal names
+	male_names = {
+		John Gregory Benedict Clement Innocent Leo Pius Stephen Boniface Urban Alexander Adrian Paul
+		Celestine Martin Nicholas Sixtus Felix Sergius Anastasius Honorius Eugene Sylvester Victor
+		Lucius Callixtus Julius Pelagius Adeodatus Theodore Marinus Agapetus Damasus Paschal
+		Gelasius Marcellus "John Paul" Anacletus Evaristus Telesphorus Hyginus Anicetus Mark Hilarius 
+		Simplicius Symmachus Hormisdas Silverius Vigilius Sabinian Severinus Vitalian Donus Agatho
+		Conon Sisinnius Constantine Zachary Formosus Romanus Lando
+	}
+}
+k_fraticelli_papal_state = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 333 # Rome
+	
+	title = "POPE"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = fraticelli
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Regnal names
+	male_names = {
+		John Gregory Benedict Clement Innocent Leo Pius Stephen Boniface Urban Alexander Adrian Paul
+		Celestine Martin Nicholas Sixtus Felix Sergius Anastasius Honorius Eugene Sylvester Victor
+		Lucius Callixtus Julius Pelagius Adeodatus Theodore Marinus Agapetus Damasus Paschal
+		Gelasius Marcellus "John Paul" Anacletus Evaristus Telesphorus Hyginus Anicetus Mark Hilarius 
+		Simplicius Symmachus Hormisdas Silverius Vigilius Sabinian Severinus Vitalian Donus Agatho
+		Conon Sisinnius Constantine Zachary Formosus Romanus Lando
+	}
+}
+k_waldensian_papal_state = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 333 # Rome
+	
+	title = "POPE"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = waldensian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Regnal names
+	male_names = {
+		John Gregory Benedict Clement Innocent Leo Pius Stephen Boniface Urban Alexander Adrian Paul
+		Celestine Martin Nicholas Sixtus Felix Sergius Anastasius Honorius Eugene Sylvester Victor
+		Lucius Callixtus Julius Pelagius Adeodatus Theodore Marinus Agapetus Damasus Paschal
+		Gelasius Marcellus "John Paul" Anacletus Evaristus Telesphorus Hyginus Anicetus Mark Hilarius 
+		Simplicius Symmachus Hormisdas Silverius Vigilius Sabinian Severinus Vitalian Donus Agatho
+		Conon Sisinnius Constantine Zachary Formosus Romanus Lando
+	}
+}
+k_lollard_papal_state = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 333 # Rome
+	
+	title = "POPE"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = lollard
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Regnal names
+	male_names = {
+		John Gregory Benedict Clement Innocent Leo Pius Stephen Boniface Urban Alexander Adrian Paul
+		Celestine Martin Nicholas Sixtus Felix Sergius Anastasius Honorius Eugene Sylvester Victor
+		Lucius Callixtus Julius Pelagius Adeodatus Theodore Marinus Agapetus Damasus Paschal
+		Gelasius Marcellus "John Paul" Anacletus Evaristus Telesphorus Hyginus Anicetus Mark Hilarius 
+		Simplicius Symmachus Hormisdas Silverius Vigilius Sabinian Severinus Vitalian Donus Agatho
+		Conon Sisinnius Constantine Zachary Formosus Romanus Lando
+	}
+}
+
+d_bogomilist = {
+	color={ 255 198 249 }
+	color2={ 220 220 0 }
+	
+	capital = 496 # Constantinople
+	
+	title = "Patriarch"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	short_name = yes
+
+    # Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = bogomilist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Regnal names
+	male_names = {
+		Abraham Alexandros Alexios Agatho Anastasios Andronikos Athanasios Benjamin Christodolos Cosmas Kyril Damian 
+		Demetrius Dioscorus Gabriel Yohannes Iosephos Isaakios Iakobos Makarios Markianos Markos Matheos Khail Mina 
+		Petros Philotheos Shenouda Simeon Theodoros Theophilus Timotheos Zacharias
+	}
+}
+	
+#################### 
+#
+# TITULAR KINGDOMS
+#
+####################	
+
+k_gondar = {
+	color={ 223 223 211 }
+	color2={ 255 255 255 }
+	
+	capital = 883 #Gondar
+	
+	culture = falashim
+	
+	allow = {
+		OR = {
+			religion_group = jewish_group
+			k_gondar = { is_titular = no }
+		}
+	}
+}
+
+k_israel = {
+		color={ 0 56 184 } 	#Jewish Blue
+		capital = 774 # Jerusalem
+		culture = sephardic
+		
+	    title = "haMelech"
+	    foa = "haMelech"
+	    title_prefix = "Mamlechet"
+	
+		allow = {
+			religion_group = jewish_group
+		}
+}
+
+d_marino = {	
+	color = { 0  128  255 }
+	capital = 956 # Sanmarino
+	culture = italian	
+	allow = {
+		culture_group = italian_group
+		religion_group = christian
+		is_republic = yes
+	}
+}
+
+k_lombard_league = {
+	color={ 255 255 255 }
+	capital = 355 # Padua
+	culture = italian
+	
+    title = "Condottiero"
+	foa = "LEAGUE_FOA"
+	title_prefix = "LEAGUE_OF"
+	
+	dignity = 200 # Never want the Republic of Genoa to change primary title
+	
+	allow = {
+		always = no
+	}
+}
+
+#################### 
+#
+# ARCHBISHOPS
+#
+####################
+	
+d_canterbury = {
+		color={ 69 129 119 }
+		color2={ 255 255 255 }
+		capital = 72 # Kent
+
+	    title = "ARCHBISHOP"
+	    foa = "ARCHBISHOP_FOA"
+	    title_prefix = "ARCHBISHOP_OF"
+		
+		dignity = 200
+		
+	    location_ruler_title = yes
+	
+		religion = catholic
+	    landless = yes
+
+	    primary = yes
+	}
+	
+d_archbishop_york = {
+	color={ 89 189 29 }
+	color2={ 255 255 255 }
+	capital = 57 # York
+
+	title = "ARCHBISHOP"
+	foa = "ARCHBISHOP_FOA"
+	title_prefix = "ARCHBISHOP_OF"
+		
+	dignity = 200
+    landless = yes
+		
+	location_ruler_title = yes
+	
+	religion = catholic
+
+	primary = yes
+}
+	
+d_arles = {
+	color={ 243 209 23 } 
+	color2={ 220 220 0 }
+		
+	capital	= 925 # Arles
+	culture = francoprovençal
+
+	title = "ARCHBISHOP"
+	foa = "ARCHBISHOP_FOA"
+	title_prefix = "ARCHBISHOP_OF"
+		
+	dignity = 200
+	
+	religion = catholic
+
+	primary = yes
+		
+    location_ruler_title = yes
+
+	allow = {
+		AND = { 
+			religion_group = christian
+			is_theocracy = yes
+			piety = 500	
+		}				
+	}
+}
+	
+	
+d_cluny = {
+		color={ 89 189 29 }
+		color2={ 255 255 255 }
+		capital = 225 # Macon
+
+	title = "Abbot"
+	foa = "ARCHBISHOP_FOA"
+    title_prefix = "ABBOT_OF"
+		
+	dignity = 200
+		
+    landless = yes
+    location_ruler_title = yes
+	religion = catholic
+	primary = yes
+}
+	
+	
+#################### 
+#
+# TITULAR DUCHIES
+#
+####################
+
+d_catepanate_italy = {
+	color={ 40 132 250 }
+	color2={ 255 255 255 }
+	capital = 346 # Bari
+		
+	short_name = yes
+		
+	title = "Catepan"
+
+    dignity = 200 # Never want the Republic of Genoa to change primary title	     
+	
+	allow = {
+		culture = greek
+		liege = { has_landed_title = e_byzantium }
+	}
+}
+
+d_hilal = {
+	color={ 34 155 68 }
+	color2={ 255 255 255 }
+
+	capital = 1402 # Waddan
+}
+	
+d_marquisate_provence = {
+	color={ 243 209 23 } 
+	color2={ 220 220 0 }
+	
+	capital	= 221 # Provence
+	culture = francoprovençal
+
+    title = "MARQUISATE"
+	foa = "MARQUISATE_FOA"
+    title_prefix = "MARQUISATE_OF"
+		
+	dignity = 10
+	
+	religion = catholic
+
+	primary = yes
+
+	allow = {
+		OR = { 
+			has_landed_title = c_provence
+			has_landed_title = c_toulouse
+		}				
+		OR = { 
+			culture = francoprovençal	
+			culture = occitan	
+		}				
+		tier = COUNT
+	}
+}
+	

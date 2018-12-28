@@ -1,0 +1,27 @@
+# 99 - Evreux
+
+# County Title
+title = c_evreux
+
+# Settlements
+max_settlements = 5
+
+
+b_evreux = castle
+b_lisieux = temple
+b_ivry = castle
+b_honfleur = city
+#b_conchesenouches = castle
+#b_donjondechambois = castle
+#b_tourdesarchives = castle
+#b_chateaudestourelles = castle
+#b_pontleveque = city
+#b_verneuil = temple
+
+# Misc
+culture = norman
+religion = catholic
+
+# History
+
+1100.11.11 = { culture = frankish }

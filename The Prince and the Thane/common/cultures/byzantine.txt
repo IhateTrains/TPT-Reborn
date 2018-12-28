@@ -1,0 +1,101 @@
+byzantine = {
+	graphical_culture = easterngfx
+
+	greek = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Adralestos Adrianos_Adrian Aetios Agallianos Agapetos Agathonikos Akindynos Alexandros_Alexander Alexios_Alexis Anastasios
+			Andreas_Andrew Andronikos_Andronicus Anthimos Antiochos Antonios_Antoninus Argyros Arsenios Athanasios_Athanasius
+			Bardas Bartholomaios_Bartolomeus Basileios_Basil Belkonas Benediktos_Benedict Blasios_Blaise
+			Christodoulos Christophoros_Christopher Damianos_Damian Daniel_Daniel David_David Demetrios_Demetrius
+			Diogenes Dionysios_Dionysus Dorotheos Dositheos Dragotas Eleutherios Elias_Elias Elpidios Epiphanios
+			Esaias_Isaiah Eugenios_Eugene Eumathios Euphemianos Euphemios Eusebios Eustathios_Eustace Eustratios
+			Euthymios Gabriel_Gabriel Georgios_George Gerasimos Germanos Gregoras_Gregory Gregorios_Gregory
+			Hilarion Himerios Hypatios Iakobos_Jacob Ignatios_Ignatius Ioannes_John Ioannikios_John
+			Ionas_Jonah Ioseph_Joseph Isaakios_Isaac Kallinikos Kalos Katakalon Klemes Konstantinos_Constantine
+			Kosmas_Cosmas Kristilas Kyriakos Kyrillos_Cyril Laurentios_Laurence Lazaros_Elazar Leon_Leo
+			Leontios Loukas_Luke Loukianos_Lucius Makarios Manuel_Manuel Marianos_Marius Marinos
+			Markos_Marcus Matthaios_Matthew Mauros Maximos_Maximilian Meletios Melias Merkourios
+			Methodios_Methodios Metrophanes Michael_Michael Moschos Myron Nedanos Neophytos
+			Nikephoros Niketas Nikodemos Nikolaos_Nicholas Nikon Niphon Orestes Pankratios
+			Pantaleon Pantherios Pardos Paulos_Paul Petros_Peter Philaretos Philetos Philippos_Philip
+			Philotheos Photeinos Photios Polyeuktos Pothos Prokopios_Procopius Romanos_Roman Sabas
+			Samuel_Samuel Sergios_Sergius Sisinios Sophronios Staurakios Stephanos_Stephen Strategios
+			Stylianos Symbatikios Symeon_Simon Synesios Theocharistos Theodoretos Theodoros_Theodore
+			Theodosios Theodotos_Theodat Theodoulos Theognostos Theoktistos Theophanes_Theophanus
+			Theophilos Theophylaktos Theosteriktos Thomas_Thomas Timotheos Tornikios Tzernes Zacharias_Zacharias
+			# Old list
+			#Adrianos Akakios Alexandros_Alexander Alexios_Alexis Anastasios Anatolios Andreas_Andrew Andronikos_Andronicus Anthemios Anthimos Antiochos Antonios_Antoninus Apollonios Arsenios Artemios Athanasios_Athanasius Bardas
+			#Bartholomaios_Bartolomeus Basileios_Basil Belisarios Boethios Bosporios Christophoros Chrysanthos Chrysogonos Damianos Daniel_Daniel David_David Demetrios_Demetrius Diogenes Dionysios_Dionysus Dorotheos Eirenaios Eudoxios Eustratios
+			#Eugenios Euphemios Eusebios Eustathios_Eustace Evangelos Gabriel_Gabriel Gennadios Georgios_George Gerasimos Germanos Gregoras_Gregory Gregorios_Gregory Hektorios Helias Heraklios_Heracles Hierotheos Himerios
+			#Hippolytos Hypatios Iakobos_Jacob Ignatios_Ignatius Innokentios Ioannes_John Ioannikios Iordanes Ioseph_Joseph Isaakios Isaias Isidoros Ioulianos_Julian Ioustinianos Ioustinos Kaisarios
+			#Kallinikos Kallistos Komitas Konstantinos Konstantios_Constantine Kosmas_Cosmas Kyriakos Kyrillos_Cyril Kyros Laurentios_Laurence Lazaros Leon_Leo Leontios Loukas Makarios Manuel Markos_Marcus
+			#Matthaios_Matthew Maurikios Maximos Megistos Meletios Methodios Michail_Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos_Nicholas Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
+			#Pavlos_Paul Pelagios_Pelagius Petros_Peter Philaretos Philippos_Philip Philotheos Phokas Photios Polykarpos Porphyrios Prokopios_Procopius Pyrros Raphail Romanos_Roman Sabas Samuel_Samuel Serapion Sebastianos_Sebastian Sergios Stephanos_Stephen
+			#Staurakios Symeon_Simon Symmachos Theocharistos Theodoros_Theodore Theodosios Theodotos_Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas_Thomas Tiberios 
+			#Timotheos Tryphon Valerios Zacharias Zenobios Zenon
+		}
+		female_names = {
+			Adriana Agathe_Agatha Agne_Agnes Aikaterine Alexandra Alexeia Anastasia_Anastasia Anna_Anna Anthe Anthousa Antipatra Antonina Apollonia Athanasia Barbara Basileia Basilissa
+			Chrysogone Damiane Demetra Dionysia Dorothea_Dorothy Aigidia Eirene_Irene Elaiodora Epiphania Eudokia_Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne_Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene_Helen Hypatia Ioanna_Joan Ioulia_Juliana Iouliana_Juliana Iustina Kale Konstantine Kyra Kyriake
+			Leontia Margarita_Margaret Maria_Maria Markia Martha_Martha Melissa_Melisende Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronella_Petronilla Philippa_Philippa Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla_Sibylla
+			Simonis Sophia_Sophia Stephania_Stephania Thekla Theochariste Theodora_Theodora Theodosia_Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
+		}
+
+		from_dynasty_prefix = "ve "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = greek_culture_modifier
+	}
+        sicilian_greek = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.9 0.3 0.9 }
+
+		male_names = {
+			Adrianos Akakios Alexandros_Alexander Alexios_Alexis Anastasios Anatolios Andreas_Andrew Andronikos_Andronicus Anthemios Anthimos Antiochos Antonios_Antoninus Apollonios Arsenios Artemios Athanasios_Athanasius Bardas
+			Bartholomaios_Bartolomeus Basileios_Basil Belisarios Boethios Bosporios Christophoros Chrysanthos Chrysogonos Damianos Daniel_Daniel David_David Demetrios_Demetrius Diogenes Dionysios_Dionysus Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios_Eustace Evangelos Gabriel_Gabriel Gennadios Georgios_George Gerasimos Germanos Gregoras_Gregory Gregorios_Gregory Hektorios Helias Heraklios_Heracles Hierotheos Himerios
+			Hippolytos Hypatios Iakobos_Jacob Ignatios_Ignatius Innokentios Ioannes_John Ioannikios Iordanes Ioseph_Joseph Isaakios Isaias Isidoros Ioulianos_Julian Ioustinianos Ioustinos Kaisarios
+			Kallinikos Kallistos Komitas Konstantinos Konstantios_Constantine Kosmas_Cosmas Kyriakos Kyrillos_Cyril Kyros Laurentios_Laurence Lazaros Leon_Leo Leontios Loukas Makarios Manuel Markos_Marcus
+			Matthaios_Matthew Maurikios Maximos Megistos Meletios Methodios Michail_Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos_Nicholas Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
+			Pavlos_Paul Pelagios_Pelagius Petros_Peter Philaretos Philippos_Philip Philotheos Phokas Photios Polykarpos Porphyrios Prokopios_Procopius Pyrros Raphail Romanos_Roman Sabas Samuel_Samuel Serapion Sebastianos_Sebastian Sergios Stephanos_Stephen
+			Staurakios Symeon_Simon Symmachos Theocharistos Theodoros_Theodore Theodosios Theodotos_Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas_Thomas Tiberios 
+			Timotheos Tryphon Valerios Zacharias Zenobios Zenon
+		}
+		female_names = {
+			Adriana Agathe_Agatha Agne_Agnes Aikaterine Alexandra Alexeia Anastasia_Anastasia Anna_Anna Anthe Anthousa Antipatra Antonina Apollonia Athanasia Barbara Basileia Basilissa
+			Chrysogone Damiane Demetra Dionysia Dorothea_Dorothy Aigidia Eirene_Irene Elaiodora Epiphania Eudokia_Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne_Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene_Helen Hypatia Ioanna_Joan Ioulia_Juliana Iouliana_Juliana Iustina Kale Konstantine Kyra Kyriake
+			Leontia Margarita_Margaret Maria_Maria Markia Martha_Martha Melissa_Melisende Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronella_Petronilla Philippa_Philippa Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla_Sibylla
+			Simonis Sophia_Sophia Stephania_Stephania Thekla Theochariste Theodora_Theodora Theodosia_Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
+		}
+
+		from_dynasty_prefix = "ve "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = greek_culture_modifier
+	}
+}

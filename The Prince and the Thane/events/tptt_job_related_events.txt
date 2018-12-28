@@ -1,0 +1,4523 @@
+##################################################################
+#
+# The Prince and the Thane job related events - written by idib816
+#
+##################################################################
+
+namespace = job_flavour
+
+#Chancellor deals with petitioners
+character_event = {
+	id = job_flavour.0
+	picture = "GFX_evt_medieval_court"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.0"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_chancellor
+	}
+	
+    mean_time_to_happen = {
+		days = 2
+	}	
+	
+	option = {
+		name = "I will hear them all out and compensate them justly"
+        piety = 10
+        employer = { 
+		    scaled_wealth = -0.55
+            opinion = {
+				modifier = opinion_disgruntled
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+		    }  
+		}
+        random = { 
+		    chance = 5
+            add_trait = patient 
+			hidden_tooltip = {
+				character_event = { id = 38264 }
+		    } 
+		}
+		random = { 
+		    chance = 35
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "Only those of noble birth deserve to be heard or compensated"
+        piety = -10
+        prestige = 5
+        employer = { 
+		    scaled_wealth = -0.35
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { name = incompetent_rule duration = 365 } 
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+        random = { 
+		    chance = 5
+            add_trait = temperate 
+			hidden_tooltip = {
+				character_event = { id = 38276 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = proud
+			}
+            modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+            modifier = {
+				factor = 0
+				trait = humble
+			}
+		}
+	}	
+
+    option = {
+		name = "I have a better deal for you my friends.."
+        trigger = { stewardship = 12 }
+        piety = -25
+        prestige = 10
+        employer = { 
+		    scaled_wealth = -0.25
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 15
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.35 }
+	}
+
+    option = {
+		name = "The Lord will compensate you in the afterlife"
+        trigger = { learning = 13 }
+        piety = 10
+        prestige = -5
+        employer = {
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { chance = 25
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.25 }
+	}
+}
+
+#Chancellor deals with a diplomatic incident
+character_event = {
+	id = job_flavour.1
+	picture = "GFX_evt_medieval_court"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.1"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_chancellor
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Gold is a sound enough apology"
+        piety = 10
+        prestige = 5
+        employer = { 
+		    prestige = -15 
+            scaled_wealth = -0.25
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+		    } 
+		}
+		random = { chance = 35
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "But those ribs were so tasty.."
+                piety = -10
+        employer = { 
+		    piety = -15
+            prestige = -5
+            opinion = {
+				modifier = opinion_disgruntled
+				who = ROOT
+				years = 5
+			} 
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = incompetent_rule duration = 730 
+				} 
+			}
+        }
+        random = { 
+		    chance = 25
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+		    } 
+		}
+        random = { 
+		    chance = 45
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = tolerant
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll propose them an appealing deal to seal the incident.."
+        trigger = { stewardship = 12 }
+        piety = -25
+        prestige = 10
+        wealth = 25
+        employer = { 
+		    scaled_wealth = 0.5
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 15
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.2 }
+	}
+
+    option = {
+		name = "Why do I always have to talk us out of everything?"
+        trigger = { diplomacy = 15 }
+        prestige = 10
+        employer = {
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.75 }
+	}
+}
+
+#Councillor quarrels with liege
+character_event = {
+	id = job_flavour.2
+	picture = "GFX_evt_council"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.2"
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+        is_councillor = yes
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Screw him!"
+        prestige = 10
+        employer = { 
+		    prestige = -15 
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 50
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+	}
+
+    option = {
+		name = "We'll strike a deal later"
+        trigger = { stewardship = 12 }
+        piety = -10
+        employer = {
+		    prestige = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = {
+		chance = 25
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    }
+		}
+	}	
+
+    option = {
+		name = "I need to apologize before it's too late"
+        prestige = -10
+        employer = { 
+		    prestige = 5
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+			chance = 15
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+		    } 
+		}
+	}
+
+    option = {
+		name = "I'll talk the council to my side"
+        trigger = { diplomacy = 15 }
+        prestige = 10
+        employer = {
+            opinion = {
+				modifier = opinion_disgruntled
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    }
+		}
+	}
+}
+
+#Councillor deals with insults in the streets
+character_event = {
+	id = job_flavour.3
+	picture = "GFX_evt_palio"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.3"
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+        is_councillor = yes
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "I'll have their heads on a spike!"
+        prestige = 10
+        piety = -15
+        employer = { 
+		    prestige = -15 
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = incompetent_rule duration = 730 
+				} 
+			} 
+        }
+        random = { chance = 50
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+        random = { chance = 20 add_trait = impaler }
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+		}
+	}
+
+    option = {
+		name = "Gold will silence them.."
+        trigger = { stewardship = 12 }
+        wealth = -100
+        employer = { 
+		    prestige = 10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+            modifier = {
+				factor = 1.25
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll Stumble out an apology"
+        prestige = -15
+        employer = { 
+		    prestige = -25
+            opinion = {
+				modifier = opinion_disgruntled
+				who = ROOT
+				years = 5
+			} 
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = incompetent_rule duration = 365 
+				} 
+			} 
+        }
+        random = { 
+		    chance = 15
+            add_trait = slothful 
+			hidden_tooltip = {
+				character_event = { id = 38251 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.35 }
+	}
+
+    option = {
+		name = "Persuasion is my second name, I'll talk them to my side"
+        trigger = { diplomacy = 12 }
+        prestige = 10
+        employer = {
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+          
+        ai_chance = { factor = 0.7 }
+	}
+}
+
+#Chancellor deals with a foreign envoy
+character_event = {
+	id = job_flavour.4
+	picture = "GFX_evt_emissary_muslim"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.4"
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_chancellor
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Our kindness is golden"
+        piety = 5
+        prestige = 15
+        employer = { 
+		    prestige = 10
+            scaled_wealth = -0.4
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { chance = 25
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+		    } 
+		}
+		random = { 
+		    chance = 35
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+        option = {
+		name = "He will be treated 'au pair', nothing more"
+                piety = 5
+        employer = { 
+		    piety = 10
+            prestige = 5
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { chance = 25
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}	
+
+    option = {
+		name = "We don't need filthy foreigners wandering around!"
+        piety = -25
+        employer = { 
+		    prestige = -15
+            piety = -10
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+			chance = 45
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+        ai_chance = { factor = 0.2 }
+	}
+}
+
+#Chancellor deals with a scandal
+character_event = {
+	id = job_flavour.5
+	picture = "GFX_evt_wench"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.5"
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	is_triggered_only = yes
+	
+    trigger = {
+		has_job_title = job_chancellor
+		religion_group = christian
+        employer = { is_female = no }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Silence is golden"
+        piety = 5
+        prestige = -15
+        employer = { 
+		    prestige = -10
+            scaled_wealth = -0.4
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+		    } 
+		}
+		random = { 
+		    chance = 35
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "Publicly deny everything"
+		trigger = { diplomacy = 14 } 
+        piety = 5
+        employer = { 
+		    piety = 10
+            prestige = 5
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { chance = 25
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}	
+
+    option = {
+		name = "Only the Lord can save his sinner soul!"
+		trigger = { NOT = { trait = cynical } }
+        piety = 10
+        employer = { 
+		    prestige = -15
+            piety = -20
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 45
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.2 }
+	}
+}
+
+#Chancellor deals with a foreign envoy bringing gifts
+character_event = {
+	id = job_flavour.6
+	picture = "GFX_evt_sultan"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.6"
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_chancellor
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "I see what you're saying"
+        prestige = -15
+        wealth = 100
+        employer = { 
+		    prestige = -10
+            scaled_wealth = 0.5
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 35
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.75
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}
+
+    option = {
+		name = "My Lord will be very happy"
+        piety = 5
+        prestige = 10
+        employer = { 
+		    scaled_wealth = 0.75
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = honest 
+			hidden_tooltip = {
+				character_event = { id = 38262 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = honest
+			}
+            modifier = {
+				factor = 1.6
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}	
+
+    option = {
+		name = "God forbids us to deal with infidels"
+		trigger = { 
+		    OR = { 
+			    religion_group = christian
+				religion_group = muslim
+			}
+		}
+        piety = 10
+        employer = { 
+		    prestige = -15
+            piety = -20
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 45
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.2 }
+	}
+}
+
+#Chancellor deals with a diplomatic insult
+character_event = {
+	id = job_flavour.7
+	picture = "GFX_evt_medieval_court"
+	border = GFX_event_normal_frame_diplomacy
+	desc = "EVTDESCjob_flavour.7"
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	is_triggered_only = yes
+	
+    trigger = {
+		has_job_title = job_chancellor
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Off with his head!"
+        prestige = 10
+        piety = -5
+        employer = { 
+		    prestige = 10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 35
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+        random_independent_ruler = {
+            opinion = {
+				modifier = opinion_angry
+				who = liege
+				years = 5
+			} 
+        }
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.75
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+
+    option = {
+		name = "We demand compensations"
+        piety = 5
+        prestige = 15
+        employer = { 
+		    scaled_wealth = 0.5
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.6
+				trait = honest
+			}
+            modifier = {
+				factor = 0
+				trait = proud
+			}
+		}
+	}	
+
+    option = {
+		name = "The Lord will forgive his carelessness"
+        piety = 10
+        employer = { 
+		    prestige = -25
+            piety = 10
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 45
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.2 }
+	}
+}
+
+#Chaplain deals with a philosophical book
+character_event = {
+	id = job_flavour.8
+	picture = "GFX_evt_philosopher"
+	border = GFX_event_normal_frame_religious
+	desc = "EVTDESCjob_flavour.8"
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	is_triggered_only = yes
+	
+    trigger = {
+		has_job_title = job_spiritual
+        religion_group = christian
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "There is wisdom in his words"
+        prestige = 10
+        piety = -5
+        employer = { 
+		    prestige = 10
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 15
+            add_trait = philosopher 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.57 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				learning = 12
+			}
+            modifier = {
+				factor = 1.75
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = uneducated
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "I'll take the useful bits to our cause"
+        trigger = { learning = 14 }
+        piety = -5
+        prestige = 15
+        employer = { 
+		    piety = -10
+            prestige = 25
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = cynical
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "To the stake!"
+        piety = 10
+        employer = {
+    		prestige = -25
+            piety = 10
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = incompetent_rule duration = 1000 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 45
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.4 }
+	}
+}
+
+#Chaplain deals with heretic talks
+character_event = {
+	id = job_flavour.9
+	picture = "GFX_evt_heretic"
+	border = GFX_event_normal_frame_religious
+	desc = "EVTDESCjob_flavour.9"
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_spiritual
+        religion_group = christian
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "There is truth in those words"
+        prestige = 5
+        piety = -25
+        employer = { 
+		    piety = -20
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { chance = 25 add_trait = excommunicated  }
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				learning = 12
+			}
+            modifier = {
+				factor = 1.75
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = uneducated
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "Their fervor can be used to our cause"
+        trigger = { diplomacy = 12 }
+        piety = -5
+        prestige = 15
+        employer = { 
+		    piety = -5
+            prestige = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 5
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "Their burning will make a fine show"
+        piety = 10
+        employer = { 
+		    prestige = -25
+            piety = 10
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = religious_tension duration = 730 
+				} 
+			}  
+        }
+        random = {
+    		chance = 45
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.3 }
+	}
+}
+
+#Chaplain deals with a woman accused of sorcery
+character_event = {
+	id = job_flavour.10
+	picture = "GFX_evt_witch"
+	border = GFX_event_normal_frame_religious
+	desc = "EVTDESCjob_flavour.10"
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+        religion_group = christian
+		has_job_title = job_spiritual
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "The lash will suffice"
+        prestige = -10
+        piety = 5
+        employer = {
+    		prestige = -10
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 15
+            add_trait = cruel
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.75
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = uneducated
+			}
+                modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "God is merciful"
+        trigger = { learning = 15 }
+        piety = -5
+        prestige = 15
+        employer = { 
+		    piety = -10
+            prestige = 25
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = just
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.6
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "Burn her!"
+        piety = 10
+        employer = { 
+		    prestige = -25
+            piety = 10
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = incompetent_rule duration = 730 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 35
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.4 }
+	}
+}
+
+#Chaplain deals with a sexual scandal 
+character_event = {
+	id = job_flavour.11
+	picture = "GFX_evt_wench"
+	border = GFX_event_normal_frame_religious
+	desc = "EVTDESCjob_flavour.11"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_spiritual
+        employer = { 
+		    is_female = no
+            trait = lustful 
+		}
+        religion_group = christian
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "A donation will make God extra merciful"
+        prestige = 5
+        piety = 5
+        employer = { 
+		    prestige = -10
+            piety = 5
+            scaled_wealth = -0.3
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 15
+            add_trait = just 
+		    hidden_tooltip = {
+				character_event = { id = 38267 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.75
+				piety = 500
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = lustful
+			}
+		}
+	}
+
+    option = {
+		name = "Love as thou wilt!"
+        piety = -15
+        prestige = 5
+        employer = { 
+		    piety = -20
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = lustful
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+            modifier = {
+				factor = 0
+				trait = celibate
+			}
+		}
+	}	
+
+    option = {
+		name = "I cannot ignore such sins!"
+        piety = 10
+        employer = {
+    		prestige = -25
+            piety = -20
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = religious_tension duration = 730 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 35
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.4 }
+	}
+}
+
+#Chaplain deals with rumors of the end of the world approaching
+character_event = {
+	id = job_flavour.12
+	picture = "GFX_evt_pale_rider"
+	border = GFX_event_normal_frame_religious
+	desc = "EVTDESCjob_flavour.12"
+	
+   is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_spiritual
+        religion_group = christian
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Gold will ease their worries"
+        prestige = 5
+        piety = 5
+        employer = { 
+		    prestige = -10
+            piety = 5
+            scaled_wealth = -0.25
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 15
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "This is nonsense!"
+        piety = -15
+        prestige = 5
+        employer = {
+    		piety = -20
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = religious_tension duration = 365 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 25
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+
+        ai_chance = {
+		factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "May God save our sinner souls"
+        piety = 10
+        employer = {
+    		prestige = -10
+            piety = 25
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = religious_tension duration = 730 
+				}
+			}  
+        }
+        random = { 
+		    chance = 35
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.3 }
+	}
+}
+
+#Steward deals with the interests on the realm's debts
+character_event = {
+	id = job_flavour.13
+	picture = "GFX_evt_banker2"
+	border = GFX_event_normal_frame_economy
+	desc = "EVTDESCjob_flavour.13"
+	
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_treasurer
+	}
+	
+    mean_time_to_happen = {
+		days = 2
+	}	
+	
+	option = {
+		name = "Some more gold will ease their worries"
+        prestige = 5
+        piety = 5
+        employer = { 
+		    prestige = -10
+            piety = 5
+            scaled_wealth = -0.25
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 15
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "What a bunch of vultures"
+        piety = -15
+        prestige = 5
+        employer = { 
+		    piety = -10
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 5
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+	    	factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = charitable
+			}
+		}
+	}	
+
+    option = {
+		name = "An extra tax will do the trick"
+        piety = -10
+        employer = { 
+		    prestige = -10
+            piety = -25
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = high_taxes duration = 730 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 35
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.3 }
+	}
+}
+
+#Steward deals with ineffective policies
+character_event = {
+	id = job_flavour.14
+	picture = "GFX_evt_spymaster"
+	border = GFX_event_normal_frame_economy
+	desc = "EVTDESCjob_flavour.14"
+	
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_treasurer
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "One more step is needed"
+        prestige = 5
+        piety = 5
+        employer = { 
+		    prestige = -10
+            piety = 5
+            scaled_wealth = -0.5
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 15
+            add_trait = reformer 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.67 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = reformer
+			}
+            modifier = {
+				factor = 1.75
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 0
+				trait = conservative
+			}
+		}
+	}
+
+    option = {
+		name = "I know better!"
+        trigger = { stewardship = 15 }
+        piety = -15
+        prestige = 10
+        employer = { 
+		    piety = -10
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 5
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = cynical
+			}
+            modifier = {
+				factor = 0
+				trait = reformer
+			}
+		}
+	}	
+
+    option = {
+		name = "An extra tax will save our coffers"
+        piety = -10
+        employer = { 
+		    prestige = -10
+            piety = -25
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = high_taxes duration = 730 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 35
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.15 }
+	}
+}
+
+#Steward deals with the need of money during wartime
+character_event = {
+	id = job_flavour.15
+	picture = "GFX_evt_crusade_siege"
+	border = GFX_event_normal_frame_economy
+	desc = "EVTDESCjob_flavour.15"
+	
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_treasurer
+        employer = { war = yes }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "If we change this and add that.."
+        prestige = 5
+        employer = { 
+		    prestige = 10
+            piety = -5
+            scaled_wealth = 0.2
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			} 
+        }
+		random = { 
+		    chance = 10
+            add_trait = charlatan 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.63 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = reformer
+			}
+            modifier = {
+				factor = 1.75
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 0
+				trait = conservative
+			}
+		}
+	}
+
+    option = {
+		name = "I have a gift for finding gold"
+        trigger = { stewardship = 15 }
+        piety = -15
+        prestige = 10
+        employer = { 
+		    piety = -10
+            scaled_wealth = 0.75
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 10
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = midas_touched
+			}
+            modifier = {
+				factor = 0
+				trait = charitable
+			}
+		}
+	}	
+
+    option = {
+		name = "The smallfolk will understand an extra tax"
+        trigger = { diplomacy = 12 }
+        piety = -10
+        employer = { 
+		    prestige = -10
+            scaled_wealth = 0.5
+            piety = -25
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = high_taxes duration = 365 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 25
+            add_trait = greedy
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+		    } 
+		}
+
+        ai_chance = { factor = 0.25 }
+	}
+}
+
+#Steward deals with jewish moneylanders in the realm
+character_event = {
+	id = job_flavour.16
+	picture = "GFX_evt_jewish_banker"
+	border = GFX_event_normal_frame_economy
+	desc = "EVTDESCjob_flavour.16"
+	
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_treasurer
+	}
+	
+    mean_time_to_happen = {
+		days = 2
+	}	
+	
+	option = {
+		name = "I allowed them to do so.."
+        piety = -15
+        employer = { 
+		    piety = -25
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = religious_tension duration = 365 
+				} 
+			}   
+        }
+		random = { 
+		    chance = 10
+            add_trait = charlatan 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.63 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+            modifier = {
+				factor = 1.75
+				trait = bank_sponsor
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "We can all strike a nice deal"
+        trigger = { stewardship = 15 }
+        piety = -15
+        prestige = 10
+        employer = { 
+		    piety = -10
+            scaled_wealth = 0.5
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 5
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = midas_touched
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "God forbids such practices"
+        piety = 15
+        employer = { 
+		    prestige = -10
+            piety = 10
+            scaled_wealth = -0.25
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = religious_tension duration = 365 
+				} 
+			}  
+        }
+        random = { 
+		    chance = 35
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				piety = 350
+			}
+            modifier = {
+				factor = 0
+				trait = tolerant
+			}
+		}
+	}
+}
+
+#Steward deals with foreign merchants
+character_event = {
+	id = job_flavour.17
+	picture = "GFX_evt_jugglers_muslim"
+	border = GFX_event_normal_frame_economy
+	desc = "EVTDESCjob_flavour.17"
+	
+    is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_treasurer
+	}
+	
+    mean_time_to_happen = {
+		days = 3
+	}	
+	
+	option = {
+		name = "We'll take their gifts and smile them away"
+        piety = -15
+        employer = { 
+		    piety = -25
+            scaled_wealth = 0.3
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		random = { 
+		    chance = 10
+            add_trait = charlatan
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.63 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = uneducated
+			}
+            modifier = {
+				factor = 1.75
+				trait = conservative
+			}
+            modifier = {
+				factor = 0
+				trait = tolerant
+			}
+		}
+	}
+
+    option = {
+		name = "I see gold"
+        trigger = { stewardship = 15 }
+        piety = -15
+        prestige = 10
+        employer = {
+    		piety = -10
+            scaled_wealth = 0.55
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 5
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = midas_touched
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "We'll trade their heads on a spike!"
+        piety = 15
+        employer = { 
+		    prestige = -10
+            piety = 10
+            scaled_wealth = -0.25
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random_independent_ruler = {
+            opinion = {
+				modifier = opinion_angry
+				who = liege
+				years = 5
+			} 
+        }
+
+        random = { 
+		    chance = 45
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        random = { 
+		    chance = 25
+            add_trait = impaler 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				piety = 350
+			}
+            modifier = {
+				factor = 0
+				trait = tolerant
+			}
+		}
+	}
+}
+
+#Steward deals with liege spending too much
+character_event = {
+	id = job_flavour.18
+	picture = "GFX_evt_market"
+	border = GFX_event_normal_frame_economy
+	desc = "EVTDESCjob_flavour.18"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_treasurer
+        employer = { 
+		    OR = { 
+			    trait = charitable
+                trait = drunkard
+                trait = lustful
+                trait = gluttonous 
+			} 
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 2
+	}	
+	
+	option = {
+		name = "Talk him into moderation"
+        piety = 10
+        employer = { 
+		    piety = 5
+            scaled_wealth = -0.15
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 10
+            add_trait = temperate 
+			hidden_tooltip = {
+				character_event = { id = 38276 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = temperate
+			}
+            modifier = {
+				factor = 1.75
+				trait = zealous
+			}
+            modifier = {
+				factor = 0
+				trait = lustful
+			}
+		}
+	}
+
+    option = {
+		name = "I can find two coins for each one he spends"
+        trigger = { stewardship = 16 }
+        piety = -15
+        prestige = 10
+        employer = { 
+		    piety = -10
+            scaled_wealth = 0.3
+            prestige = 5
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+		
+        random = { 
+		    chance = 5
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = midas_touched
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll scold him in front of the entire court"
+        piety = 15
+        employer = {
+    		prestige = -20
+            piety = 10
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 25
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				piety = 450
+			}
+            modifier = {
+				factor = 0
+				trait = humble
+			}
+		}
+	}
+}
+
+#Marshal deals with badly disciplined soldiers
+character_event = {
+	id = job_flavour.19
+	picture = "GFX_evt_melee"
+	desc = "EVTDESCjob_flavour.19"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_marshal
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "I'll slightly rise their wages to motivate them"
+        prestige = 10
+        employer = { 
+            scaled_wealth = -0.25
+            add_character_modifier = { name = troops_likes_marshal duration = 730 }
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		random = { 
+		    chance = 10
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "No lack of discipline will be allowed"
+        trigger = { martial = 16 }
+        prestige = 15
+        employer = { 
+		    prestige = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = {
+		    chance = 10
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = brilliant_strategist
+			}
+            modifier = {
+				factor = 0
+				trait = slothful
+			}
+		}
+	}	
+
+    option = {
+		name = "A few less heads, a much better discipline"
+        piety = -15
+        employer = { 
+		    prestige = 10
+            piety = -10
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 25
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.5
+				trait = impaler
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Marshal deals with poorly equipped soldiers
+character_event = {
+	id = job_flavour.20
+	picture = "GFX_evt_armory"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCjob_flavour.20"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_marshal
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Only the best for my men"
+        prestige = 10
+        employer = { 
+            scaled_wealth = -0.45
+            add_character_modifier = { name = troops_likes_marshal duration = 730 }
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 10
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "I know where to find the coin for what we need"
+        trigger = { stewardship = 14 }
+        prestige = 15
+        employer = {
+    		prestige = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+        
+		random = {  
+		    chance = 5
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.5
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = brilliant_strategist
+			}
+            modifier = {
+				factor = 0
+				trait = slothful
+			}
+		}
+	}	
+
+    option = {
+		name = "No great steel is needed when God is on our side"
+        piety = 25
+        employer = { 
+		    piety = 10
+            add_character_modifier = { name = demotivated_troops duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 25
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				piety = 350
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}
+}
+
+#Marshal deals with soldiers accused of rape
+character_event = {
+	id = job_flavour.21
+	picture = "GFX_evt_wench"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCjob_flavour.21"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_marshal
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "They will be punished, I promise you.."
+        prestige = 10
+        employer = { 
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 10
+            add_trait = arbitrary 
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.75
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}
+
+    option = {
+		name = "It wasn't them, I know!"
+        trigger = { diplomacy = 14 }
+        piety = -10
+        employer = { 
+		    piety = -15
+            add_character_modifier = { name = troops_likes_marshal duration = 730 }
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll have their manhood on a plate"
+        piety = 25
+        employer = { 
+		    piety = 10
+            add_character_modifier = { name = demotivated_troops duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 25
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Marshal deals with an homosexual sergeant
+character_event = {
+	id = job_flavour.22
+	picture = "GFX_evt_gaylovers2"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCjob_flavour.22"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_marshal
+        NOT = { trait = homosexual }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "I won't allow queerness in my ranks"
+        prestige = 10
+        employer = { 
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		random = {
+    		chance = 10
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}
+
+    option = {
+		name = "He's a good sergeant, that's it"
+        trigger = { diplomacy = 14 }
+        piety = -10
+        employer = { 
+		    piety = -15
+            add_character_modifier = { name = troops_likes_marshal duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+                
+		random = { 
+		    chance = 15
+            add_trait = tolerant 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.71 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.6
+				trait = honest
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}	
+
+    option = {
+		name = "For God's sake, behead this abomination!"
+        piety = 25
+        employer = {
+    		piety = 10
+            add_character_modifier = { name = demotivated_troops duration = 730 }
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 25
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+                modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}
+}
+
+#Marshal deals with old mounts for knights
+character_event = {
+	id = job_flavour.23
+	picture = "GFX_evt_horseknight"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCjob_flavour.23"
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	is_triggered_only = yes
+	
+    trigger = {
+		has_job_title = job_marshal
+		OR = {
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "The best knights deserve the best mounts"
+        trigger = { stewardship = 12 }
+        prestige = 10
+        employer = { 
+		    scaled_wealth = -0.5
+            add_character_modifier = { name = troops_likes_marshal duration = 730 }
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = charitable
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "Only those who can afford it will have a new mount"
+        piety = -5
+        employer = {
+    		piety = -10
+            add_character_modifier = { name = demotivated_troops duration = 365 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+        
+		random = { 
+		    chance = 15
+            add_trait = proud 
+			hidden_tooltip = {
+				character_event = { id = 38261 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 3
+				trait = greedy
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}	
+
+    option = {
+		name = "They are just as lame as their riders and liege"
+        prestige = -10
+        piety = -5
+        employer = {
+    		prestige = -15
+            add_character_modifier = { name = demotivated_troops duration = 730 }
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 15
+            add_trait = honest 
+			hidden_tooltip = {
+				character_event = { id = 38262 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = brilliant_strategist
+			}
+		}
+	}
+}
+
+#Marshal deals with deserters
+character_event = {
+	id = job_flavour.24
+	picture = "GFX_evt_beheading"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCjob_flavour.24"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		has_job_title = job_marshal
+	}
+	
+    mean_time_to_happen = {
+		days = 3
+	}	
+	
+	option = {
+		name = "The lash and a few days in the dungeon will suffice"
+        prestige = 10
+        employer = { 
+            add_character_modifier = { name = troops_likes_marshal duration = 730 }
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = cruel
+			}
+		}
+	}
+
+    option = {
+		name = "Who am I to judge them instead of God?"
+        piety = 10
+        prestige = -15
+        employer = { 
+		    piety = 15
+            add_character_modifier = { name = demotivated_troops duration = 365 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+		
+        random = { 
+		    chance = 15
+            add_trait = zealous
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.2
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.6
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}	
+
+    option = {
+		name = "Their heads will show the others what happens to deserters"
+        prestige = 10
+        piety = -15
+        employer = {
+    		prestige = 5
+            piety = -10
+            add_character_modifier = { name = demotivated_troops duration = 730 }
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { chance = 15 add_trait = impaler }
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = impaler
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Spymaster deals with a foreign spy
+character_event = {
+	id = job_flavour.25
+	picture = "GFX_evt_spymaster"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.25"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_spymaster
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Torture him to learn what he knows, then throw him in the dungeon"
+        piety = -10
+        employer = { 
+            add_character_modifier = { name = spy_imprison duration = 365 }
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.75
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+
+    option = {
+		name = "Let him go, for now"
+        piety = 10
+        prestige = -15
+        employer = { 
+		    piety = 15
+            add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+        
+		random = { 
+		    chance = 15
+            add_trait = kind 
+			hidden_tooltip = {
+				character_event = { id = 38268 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.2
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.6
+				trait = kind
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}	
+
+    option = {
+		name = "His head on a spike is what I want"
+        prestige = 10
+        piety = -5
+        employer = { 
+            piety = -10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { chance = 15 add_trait = impaler }
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = impaler
+			}
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 0
+				trait = deceitful
+			}
+		}
+	}
+}
+
+#Spymaster deals with street informants about liege assassination plans
+character_event = {
+	id = job_flavour.26
+	picture = "GFX_evt_whispers"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.26"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_spymaster
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "You will be paid well for this information"
+        piety = -10
+        employer = { 
+		    scaled_wealth = -0.4
+            add_character_modifier = { name = spy_imprison duration = 365 }
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = charitable 
+			hidden_tooltip = {
+				character_event = { id = 38273 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+            modifier = {
+				factor = 1.75
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "There is nothing to fear, God is on our side"
+        piety = 10
+        prestige = -15
+        employer = { 
+		    piety = 15
+            add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+		
+        random = {
+		    chance = 15
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+	    	} 
+		}
+
+        ai_chance = {
+		    factor = 0.2
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.6
+				trait = slothful
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}	
+
+    option = {
+		name = "The plotters will wake up a head shorter"
+        prestige = 10
+        piety = -5
+        employer = { 
+		    prestige = 15
+            piety = -10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { chance = 15 add_trait = impaler }
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = impaler
+			}
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Spymaster deals with hiding a scandal
+character_event = {
+	id = job_flavour.27
+	picture = "GFX_evt_shadowy_cabal"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.27"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_spymaster
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "No one needs to know this"
+        piety = -10
+        employer = { 
+		    scaled_wealth = -0.4
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.75
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "This information in the right hands could make me rich.."
+        prestige = -15
+        wealth = 150
+        employer = { 
+		    piety = -15
+            add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+				
+        random = {
+    		chance = 15
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.2
+            modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.6
+				trait = greedy
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}	
+
+    option = {
+		name = "Dead men can't speak, can they?"
+        prestige = 10
+        piety = -15
+        employer = { 
+		    prestige = 10
+            piety = -10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 35
+            add_trait = arbitrary 
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Spymaster deals with unfaithful liege's wife
+character_event = {
+	id = job_flavour.28
+	picture = "GFX_evt_marriage_muslim"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.28"
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_spymaster
+        employer = { 
+		    is_female = no
+            is_married = yes
+            spouse = { has_lover = yes } 
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "A fat purse will shut him up"
+        piety = -10
+        employer = { 
+		    scaled_wealth = -0.4
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.75
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "If he dies I'm the only one left to know.."
+        prestige = -10
+        piety = -15
+        wealth = 150
+        employer = { 
+		    piety = -15
+            add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+        
+		random = { 
+		    chance = 10
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+		    } 
+		}
+
+        ai_chance = {
+	     	factor = 0.2
+            modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.6
+				trait = greedy
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}	
+
+    option = {
+		name = "My daggers are already slashing in the dark.."
+        trigger = { intrigue = 16 }
+        prestige = 20
+        piety = -15
+        employer = { 
+		    prestige = 10
+            piety = -10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 15
+            add_trait = arbitrary 
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = slothful
+			}
+		}
+	}
+}
+
+#The spymaster's interests clash with the church's
+character_event = {
+	id = job_flavour.29
+	picture = "GFX_evt_spymaster"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.29"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_spymaster
+        NOT = { 
+		    OR = { 
+			    piety = 250 
+			    trait = zealous 
+		    }
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "The realm's best interest comes before God"
+        piety = -15
+        employer = { 
+		    piety = -25
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = {
+    		chance = 20
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "Faith comes first"
+        prestige = -10
+        piety = 15
+        employer = {
+    		piety = -15
+            add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+		
+        random = { 
+		    chance = 20
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				piety = 100
+			}
+            modifier = {
+				factor = 1.6
+				trait = slothful
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll talk some reason into those empty heads"
+        trigger = { diplomacy = 14 }
+        prestige = 20
+        piety = 15
+        employer = { 
+		    prestige = 20
+            piety = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 15
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.45
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = slothful
+			}
+		}
+	}
+}
+
+#Spymaster deals with a turncloak foreign spy
+character_event = {
+	id = job_flavour.30
+	picture = "GFX_evt_spymaster"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.30"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+		has_job_title = job_spymaster
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "We hang turncloaks here"
+        piety = -15
+        prestige = 10
+        employer = { 
+		    piety = -10
+            opinion = {
+				modifier = opinion_unconvinced
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 20
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = wroth
+			}
+            modifier = {
+				factor = 0
+				trait = deceitful
+			}
+		}
+	}
+
+    option = {
+		name = "Let him spill his beans"
+        piety = -15
+        prestige = 10
+        employer = {
+    		piety = -10
+            scaled_wealth = -0.65
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+		random = { 
+		    chance = 10
+             add_trait = machiavellian 
+			 hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.25
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.75
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "I can use him for my own goals"
+        trigger = { intrigue = 15 }
+        prestige = 10
+        piety = -15
+        employer = {
+    		piety = -15
+            add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			} 
+        }
+		
+        random = { 
+		    chance = 20
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.6
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = honest
+			}
+		}
+	}	
+
+    option = {
+		name = "He almost had me fooled with this gibberish.."
+        trigger = { intrigue = 16 }
+        prestige = 20
+        piety = 10
+        employer = { 
+		    prestige = 20
+            add_character_modifier = { name = the_suspicious duration = 730 }
+            piety = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 15
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0
+				trait = slothful
+			}
+		}
+	}
+}
+
+#Councillor deals with a death menace
+character_event = {
+	id = job_flavour.31
+	picture = "GFX_evt_spymaster"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.31"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+        is_councillor = yes
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "I'll have a few heads on a spike!"
+        prestige = 10
+        piety = -5
+        employer = { 
+		    prestige = 10 
+            opinion = {
+				modifier = opinion_worried
+				who = ROOT
+				years = 5
+			}
+            random_demesne_province = { 
+                limit = { is_capital = yes }
+                add_province_modifier = { 
+                    name = incompetent_rule duration = 730 
+				} 
+			} 
+        }
+		
+        random = { 
+	        chance = 50
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+		    } 
+		}
+        
+		random = { chance = 20  add_trait = impaler }
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+		}
+	}
+
+    option = {
+		name = "I'll have the heralds talk the smallfolk into sanity"
+        trigger = { diplomacy = 12 }
+        wealth = -100
+        employer = { 
+		    prestige = 10
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+       
+	    random = { 
+		    chance = 25
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+
+        ai_chance = {
+	    	factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+            modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}	
+
+    option = {
+		name = "I know people that know where to find those bastards"
+        trigger = { intrigue = 15 }
+        prestige = 10
+        piety = -15
+        employer = { 
+		    scaled_wealth = -0.15
+            piety = -10 
+            prestige = 15
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			} 
+        }
+		
+        random = { 
+		    chance = 25
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+		    } 
+		}
+          
+        ai_chance = { factor = 0.5 }
+	}
+}
+
+#Councillor deals with the liege's concerns on his policies
+character_event = {
+	id = job_flavour.32
+	picture = "GFX_evt_throne_room"
+	border = GFX_event_normal_frame_intrigue
+	desc = "EVTDESCjob_flavour.32"
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+	
+    trigger = {
+        is_councillor = yes
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = "Apologize for my ill doings"
+        prestige = -10
+        piety = 15
+        employer = { 
+		    prestige = 10 
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		
+        random = { 
+		    chance = 15
+            add_trait = humble 
+			hidden_tooltip = {
+				character_event = { id = 38260 }
+		    } 
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = humble
+			}
+            modifier = {
+				factor = 1.5
+				trait = kind
+			}
+		}
+	}
+
+    option = {
+		name = "I'll talk the idiot into sanity"
+        trigger = { diplomacy = 15 }
+        prestige = 20
+        employer = { 
+		    prestige = -15
+            opinion = {
+				modifier = opinion_convinced
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = deceitful
+            hidden_tooltip = {
+				character_event = { id = 38255 }
+		    }	
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = grey_eminence
+			}
+            modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = humble
+			}
+		}
+	}	
+
+    option = {
+		name = "I have means to strengthen my position"
+        trigger = { intrigue = 14 }
+        prestige = 10
+        piety = -15
+        employer = { 
+		    prestige = -15
+            opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			} 
+        }
+        random = { 
+		    chance = 25
+            add_trait = deceitful
+		    hidden_tooltip = {
+				character_event = { id = 38255 }
+		    } 
+		}
+          
+        ai_chance = { factor = 0.4 }
+	}
+}
+

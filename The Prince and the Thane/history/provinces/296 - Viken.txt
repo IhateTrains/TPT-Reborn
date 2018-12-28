@@ -1,0 +1,24 @@
+# 296 - Viken
+
+# County Title
+title = c_viken
+
+# Settlements
+max_settlements = 3
+b_bagahus = castle
+#b_kungahalla = city
+b_marstrand = city
+
+#b_svenneby = temple
+#b_svarteborg = castle
+#b_ockero = city
+#b_hede = castle
+#b_kungsviken = city
+
+# Misc
+culture = norwegian
+religion = catholic
+
+# History
+
+1260.1.1 = { trade_post = b_warendorp }

@@ -1,0 +1,2942 @@
+125051 = {
+	name="Sirma"
+	female=yes
+	religion="orthodox"
+	culture="cuman"
+	1068.1.2={
+		birth="1068.1.2"
+	}
+	1097.1.3={
+		death="1097.1.3"
+	}
+}
+
+125092 = {
+	name="Anna"
+	female=yes
+	religion="orthodox"
+	culture="cuman"
+	1050.1.2={
+		birth="1050.1.2"
+	}
+	1111.1.2={
+		death="1111.1.2"
+	}
+}
+
+125145 = {
+	name="Maria"
+	female=yes
+	religion="orthodox"
+	culture="cuman"
+	father=125404
+	1180.1.2={
+		birth="1180.1.2"
+	}
+	1230.1.2={
+		death="1230.1.2"
+	}
+}
+
+125400 = {
+	name="Svoboda"
+	female=yes
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=228030
+	1171.1.2={
+		birth="1171.1.2"
+	}
+	1187.1.2={
+	religion="orthodox"
+	name="Anastasia"
+	# AKA: Svoboda
+	}
+	1220.1.2={
+		death="1220.1.2"
+	}
+}
+
+125401 = {
+	name="Atrak"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=806
+	1090.1.1={
+		birth="1090.1.1"
+	}
+	1146.1.1={
+		death="1146.1.1"
+	}
+}
+
+125402 = {
+	name="Kobyak"
+	religion="tengri_pagan"
+	culture="cuman"
+	1130.1.1={
+		birth="1130.1.1"
+	}
+	1183.1.1={
+		death="1183.1.1"
+	}
+}
+
+125403 = {
+	name="Girgen"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=228030
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1223.1.1={
+		death="1223.1.1"
+	}
+}
+
+125404 = {
+	name="Kotyan"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=228030
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+20646 = {
+	name="Törtogul"
+	# AKA: Tortogul
+	dynasty=100558
+	martial=8
+	diplomacy=6
+	intrigue=6
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="underhanded_rogue"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20647 = {
+	name="Asalup"
+	dynasty=100559
+	martial=4
+	diplomacy=6
+	intrigue=5
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="kind"
+	add_trait="zealous"
+	add_trait="cynical"
+	add_trait="tough_soldier"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20648 = {
+	name="Uzur"
+	dynasty=100565
+	martial=8
+	diplomacy=6
+	intrigue=8
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="honest"
+	add_trait="arbitrary"
+	add_trait="martial_cleric"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20650 = {
+	name="Kutan"
+	dynasty=100557
+	martial=7
+	diplomacy=4
+	intrigue=4
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20651 = {
+	name="Itlar"
+	dynasty=100566
+	martial=5
+	diplomacy=8
+	intrigue=7
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="charismatic_negotiator"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20653 = {
+	name="Uzluk"
+	dynasty=100594
+	martial=8
+	diplomacy=7
+	intrigue=5
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="greedy"
+	add_trait="amateurish_plotter"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20655 = {
+	name="Borç"
+	# AKA: Borc
+	dynasty=100596
+	martial=4
+	diplomacy=5
+	intrigue=6
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="zealous"
+	add_trait="charismatic_negotiator"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20656 = {
+	name="Sirçan"
+	# AKA: Sircan
+	dynasty=100597
+	martial=7
+	diplomacy=6
+	intrigue=6
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="fortune_builder"
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1100.1.1={
+		death="1100.1.1"
+	}
+}
+
+20657 = {
+	name="Uzur"
+	dynasty=100599
+	martial=8
+	diplomacy=7
+	intrigue=5
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="skilled_tactician"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20658 = {
+	name="Tolun"
+	dynasty=100607
+	martial=8
+	diplomacy=5
+	intrigue=6
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="ill"
+	add_trait="tough_soldier"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+20923 = {
+	name="Okhotur"
+	dynasty=100615
+	martial=7
+	diplomacy=8
+	intrigue=8
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="tough_soldier"
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1120.1.1={
+		death="1120.1.1"
+	}
+}
+
+222633 = {
+	name="Maria"
+	female = yes
+	dynasty=698
+	religion="orthodox"
+	culture="cuman"
+	father=90143
+	1110.1.2={
+		birth="1110.1.2"
+	}
+	1170.1.2={
+		death="1170.1.2"
+	}
+}
+
+222673 = {
+	name="Anna"
+	female = yes
+	dynasty=698
+	religion="orthodox"
+	culture="cuman"
+	father=90143
+	1092.1.2={
+		birth="1092.1.2"
+	}
+	1150.1.3={
+		death="1150.1.3"
+	}
+}
+
+228030 = {
+	name="Könçek"
+	# AKA: Koza
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=125401
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1203.1.1={
+		death="1203.1.1"
+	}
+}
+
+228034 = {
+	name="Koza"
+	dynasty=100556
+	martial=6
+	diplomacy=4
+	intrigue=4
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1060.1.1={
+		birth="1060.1.1"
+	}
+	1110.1.1={
+		death="1110.1.1"
+	}
+}
+
+228036 = {
+	name="Garu"
+	dynasty=100566
+	martial=7
+	diplomacy=5
+	intrigue=7
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228037 = {
+	name="Itlar"
+	dynasty=100594
+	martial=5
+	diplomacy=6
+	intrigue=6
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="wroth"
+	add_trait="arbitrary"
+	add_trait="zealous"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228038 = {
+	name="Borj"
+	dynasty=100595
+	martial=4
+	diplomacy=8
+	intrigue=8
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228039 = {
+	name="Kobyak"
+	dynasty=100608
+	martial=6
+	diplomacy=6
+	intrigue=6
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="flamboyant_schemer"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228040 = {
+	name="Bonyak"
+	dynasty=100609
+	martial=4
+	diplomacy=6
+	intrigue=5
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228041 = {
+	name="Borj"
+	dynasty=100614
+	martial=4
+	diplomacy=4
+	intrigue=6
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="patient"
+	add_trait="envious"
+	add_trait="martial_cleric"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228042 = {
+	name="Garu"
+	dynasty=100615
+	martial=7
+	diplomacy=5
+	intrigue=7
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228043 = {
+	name="Sevenj"
+	dynasty=100616
+	martial=7
+	diplomacy=4
+	intrigue=5
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="wroth"
+	add_trait="charismatic_negotiator"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228044 = {
+	name="Kubasar"
+	dynasty=100617
+	martial=6
+	diplomacy=6
+	intrigue=6
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="kind"
+	add_trait="craven"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228045 = {
+	name="Borj"
+	dynasty=100618
+	martial=4
+	diplomacy=7
+	intrigue=5
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="zealous"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228046 = {
+	name="Borj"
+	dynasty=100619
+	martial=4
+	diplomacy=5
+	intrigue=4
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228047 = {
+	name="Törtogul"
+	# AKA: Tortogul
+	dynasty=100620
+	martial=8
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="chaste"
+	add_trait="underhanded_rogue"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228048 = {
+	name="Eilbu"
+	dynasty=100621
+	martial=4
+	diplomacy=5
+	intrigue=4
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="flamboyant_schemer"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228049 = {
+	name="Kobyak"
+	dynasty=100622
+	martial=6
+	diplomacy=8
+	intrigue=5
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="cynical"
+	add_trait="flamboyant_schemer"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228050 = {
+	name="Girgen"
+	dynasty=100623
+	martial=5
+	diplomacy=7
+	intrigue=7
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="kind"
+	add_trait="hunchback"
+	add_trait="flamboyant_schemer"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228051 = {
+	name="Asalup"
+	dynasty=100624
+	martial=4
+	diplomacy=6
+	intrigue=5
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="arbitrary"
+	add_trait="humble"
+	add_trait="zealous"
+	add_trait="wroth"
+	add_trait="thrifty_clerk"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228052 = {
+	name="Ituk"
+	dynasty=100625
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="greedy"
+	add_trait="scholarly_theologian"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228053 = {
+	name="Sirjan"
+	dynasty=100626
+	martial=7
+	diplomacy=7
+	intrigue=6
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="proud"
+	add_trait="patient"
+	add_trait="skilled_tactician"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228054 = {
+	name="Kobyak"
+	dynasty=100627
+	martial=6
+	diplomacy=5
+	intrigue=7
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="chaste"
+	add_trait="just"
+	add_trait="cynical"
+	add_trait="charismatic_negotiator"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228055 = {
+	name="Sokal"
+	dynasty=100557
+	martial=7
+	diplomacy=8
+	intrigue=6
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228056 = {
+	name="Koza"
+	dynasty=100558
+	martial=6
+	diplomacy=6
+	intrigue=4
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="tough_soldier"
+	1070.1.1={
+		birth="1070.1.1"
+	}
+	1115.1.1={
+		death="1115.1.1"
+	}
+}
+
+228057 = {
+	name="Sokal"
+	dynasty=100559
+	martial=7
+	diplomacy=5
+	intrigue=8
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="deceitful"
+	add_trait="arbitrary"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228058 = {
+	name="Kopti"
+	dynasty=100563
+	martial=6
+	diplomacy=5
+	intrigue=4
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="scholarly_theologian"
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1100.1.1={
+		death="1100.1.1"
+	}
+}
+
+228059 = {
+	name="Atrak"
+	dynasty=100596
+	martial=4
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="honest"
+	add_trait="martial_cleric"
+	1060.1.1={
+		birth="1060.1.1"
+	}
+	1110.1.1={
+		death="1110.1.1"
+	}
+}
+
+228061 = {
+	name="Burikhan"
+	dynasty=100597
+	martial=7
+	diplomacy=5
+	intrigue=6
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="diligent"
+	add_trait="cynical"
+	add_trait="underhanded_rogue"
+	1080.1.1={
+		birth="1080.1.1"
+	}
+	1130.1.1={
+		death="1130.1.1"
+	}
+}
+
+228062 = {
+	name="Durgulel"
+	dynasty=100599
+	martial=4
+	diplomacy=5
+	intrigue=5
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="skilled_tactician"
+	1070.1.1={
+		birth="1070.1.1"
+	}
+	1125.1.1={
+		death="1125.1.1"
+	}
+}
+
+228066 = {
+	name="Uturku"
+	dynasty=100607
+	martial=8
+	diplomacy=6
+	intrigue=8
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="scholarly_theologian"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228067 = {
+	name="Eldejyk"
+	dynasty=100602
+	martial=5
+	diplomacy=7
+	intrigue=7
+	stewardship=8
+	religion="orthodox"
+	culture="cuman"
+	add_trait="brave"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+31184 = {
+	name="Anna"
+	female = yes
+	dynasty=698
+	religion="orthodox"
+	culture="cuman"
+	
+	1172.1.1={
+		birth="1172.1.1"
+	}
+	1222.1.1={
+		death="1222.1.1"
+	}
+}
+
+479000 = {
+	name="Bönek"
+	# AKA: BOnek
+	dynasty=100614
+	martial=4
+	diplomacy=5
+	intrigue=5
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="envious"
+	add_trait="fortune_builder"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479010 = {
+	name="Bönek"
+	# AKA: BOnek
+	dynasty=100615
+	martial=4
+	diplomacy=4
+	intrigue=5
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479020 = {
+	name="Uzluk"
+	dynasty=100616
+	martial=8
+	diplomacy=8
+	intrigue=4
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="skilled_tactician"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479040 = {
+	name="Itlar"
+	dynasty=100607
+	martial=5
+	diplomacy=7
+	intrigue=6
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="lustful"
+	add_trait="just"
+	add_trait="humble"
+	add_trait="skilled_tactician"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479060 = {
+	name="Kubasar"
+	dynasty=100556
+	martial=6
+	diplomacy=7
+	intrigue=5
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="honest"
+	add_trait="humble"
+	add_trait="brave"
+	add_trait="thrifty_clerk"
+	1090.1.1={
+		birth="1090.1.1"
+	}
+	1150.1.1={
+		death="1150.1.1"
+	}
+}
+
+479070 = {
+	name="Uzur"
+	dynasty=100564
+	martial=8
+	diplomacy=7
+	intrigue=5
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="envious"
+	add_trait="wroth"
+	add_trait="temperate"
+	add_trait="thrifty_clerk"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479080 = {
+	name="Sirçan"
+	# AKA: Sircan
+	dynasty=100566
+	martial=7
+	diplomacy=8
+	intrigue=6
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="wroth"
+	add_trait="martial_cleric"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479090 = {
+	name="Itlar"
+	dynasty=100594
+	martial=5
+	diplomacy=8
+	intrigue=7
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="scholarly_theologian"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479100 = {
+	name="Sevenç"
+	# AKA: Sevenc
+	dynasty=100595
+	martial=7
+	diplomacy=4
+	intrigue=6
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="honest"
+	add_trait="brave"
+	add_trait="hunchback"
+	add_trait="tough_soldier"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479110 = {
+	name="Sirçan"
+	# AKA: Sircan
+	dynasty=100618
+	martial=7
+	diplomacy=5
+	intrigue=7
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="wroth"
+	add_trait="gluttonous"
+	add_trait="tough_soldier"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479120 = {
+	name="Kutan"
+	dynasty=100619
+	martial=7
+	diplomacy=5
+	intrigue=8
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="underhanded_rogue"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479130 = {
+	name="Uzur"
+	dynasty=100620
+	martial=8
+	diplomacy=8
+	intrigue=8
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="zealous"
+	add_trait="patient"
+	add_trait="scholarly_theologian"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479140 = {
+	name="Saru"
+	dynasty=100621
+	martial=7
+	diplomacy=4
+	intrigue=7
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="honest"
+	add_trait="flamboyant_schemer"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479150 = {
+	name="Sirçan"
+	# AKA: Sircan
+	dynasty=100622
+	martial=7
+	diplomacy=6
+	intrigue=6
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="thrifty_clerk"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479160 = {
+	name="Bönek"
+	# AKA: BOnek
+	dynasty=100623
+	martial=4
+	diplomacy=4
+	intrigue=7
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="patient"
+	add_trait="skilled_tactician"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479170 = {
+	name="Togli"
+	dynasty=100624
+	martial=7
+	diplomacy=4
+	intrigue=4
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="humble"
+	add_trait="wroth"
+	add_trait="cynical"
+	add_trait="scholarly_theologian"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479180 = {
+	name="Koza"
+	dynasty=100625
+	martial=6
+	diplomacy=4
+	intrigue=4
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="lustful"
+	add_trait="wroth"
+	add_trait="charismatic_negotiator"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479190 = {
+	name="Uzur"
+	dynasty=100627
+	martial=8
+	diplomacy=6
+	intrigue=5
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="diligent"
+	add_trait="flamboyant_schemer"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479200 = {
+	name="Eldeçyük"
+	# AKA: EldecyUk
+	dynasty=100557
+	martial=5
+	diplomacy=5
+	intrigue=7
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="slothful"
+	add_trait="tough_soldier"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479210 = {
+	name="Borç"
+	# AKA: Borc
+	dynasty=100558
+	martial=4
+	diplomacy=8
+	intrigue=5
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="scholarly_theologian"
+	1095.1.1={
+		birth="1095.1.1"
+	}
+	1150.1.1={
+		death="1150.1.1"
+	}
+}
+
+479220 = {
+	name="Bönek"
+	# AKA: BOnek
+	dynasty=100559
+	martial=4
+	diplomacy=8
+	intrigue=5
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
+479230 = {
+	name="Borç"
+	# AKA: Borc
+	dynasty=100563
+	martial=4
+	diplomacy=7
+	intrigue=5
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="chaste"
+	add_trait="wroth"
+	add_trait="scholarly_theologian"
+	1080.1.1={
+		birth="1080.1.1"
+	}
+	1140.1.1={
+		death="1140.1.1"
+	}
+}
+
+479240 = {
+	name="Eldeçyük"
+	dynasty=100596
+	martial=5
+	diplomacy=7
+	intrigue=6
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="cynical"
+	add_trait="skilled_tactician"
+	1090.1.1={
+		birth="1090.1.1"
+	}
+	1150.1.1={
+		death="1150.1.1"
+	}
+}
+
+70370 = {
+	name="Horca"
+	dynasty=8635
+	martial=8
+	diplomacy=7
+	intrigue=4
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="honest"
+	add_trait="just"
+	add_trait="tough_soldier"
+	father=159141
+	910.1.1={
+		birth="910.1.1"
+	}
+	958.1.1={
+		death="958.1.1"
+	}
+}
+
+70371 = {
+	name="Gyula"
+	dynasty=8635
+	martial=7
+	diplomacy=6
+	intrigue=4
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="deceitful"
+	add_trait="zealous"
+	add_trait="skilled_tactician"
+	father=70370
+	935.1.1={
+		birth="935.1.1"
+	}
+	986.1.1={
+		death="986.1.1"
+	}
+}
+
+70372 = {
+	name="Zombor"
+	dynasty=8635
+	martial=6
+	diplomacy=6
+	intrigue=6
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="chaste"
+	add_trait="arbitrary"
+	add_trait="indulgent_wastrel"
+	father=70370
+	
+	937.1.1={
+		birth="937.1.1"
+	}
+	980.1.1={
+		death="980.1.1"
+	}
+}
+
+70373 = {
+	name="Gyula"
+	dynasty=8635
+	martial=4
+	diplomacy=3
+	intrigue=3
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="celibate"
+	add_trait="temperate"
+	add_trait="misguided_warrior"
+	father=70372
+	
+	952.1.1={
+		birth="952.1.1"
+	}
+	1003.1.1={
+		death="1003.1.1"
+	}
+}
+
+753 = {
+	name="Sarolta"
+	female = yes
+	dynasty=8635
+	martial=7
+	diplomacy=4
+	intrigue=8
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="diligent"
+	add_trait="envious"
+	add_trait="underhanded_rogue"
+	father=70371
+	954.1.1={
+		birth="954.1.1"
+	}
+	1000.1.1={
+		death="1000.1.1"
+	}
+}
+
+801 = {
+	name="Anna"
+	female = yes
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=90142
+	1053.1.2={
+		birth="1053.1.2"
+	}
+	1103.1.2={
+		death="1103.1.2"
+	}
+}
+
+806 = {
+	name="Saru"
+	# AKA: Sharu
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=90142
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1110.1.1={
+		death="1110.1.1"
+	}
+}
+
+90142 = {
+	name="Blush"
+	# AKA: Borc
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	1020.1.1={
+		birth="1020.1.1"
+	}
+	1066.1.1={
+		death="1066.1.1"
+	}
+}
+
+90143 = {
+	name="Aepak"
+	# AKA: Sugr
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=90142
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1120.1.1={
+		death="1120.1.1"
+	}
+}
+
+98042 = {
+	name="Elizabeth"
+	female=yes
+	dynasty=698
+	religion="catholic"
+	culture="cuman"
+	father=125404
+	1236.1.1={
+		birth="1236.1.1"
+	}
+	1290.1.2={
+		death="1290.1.2"
+	}
+}
+
+34820 = {
+	name="Atrak"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1230.1.1={
+		death="1230.1.1"
+	}
+}
+
+34821 = {
+	name="Sokal"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1241.1.1={
+		death="1241.1.1"
+	}
+}
+
+34822 = {
+	name="Kubasar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+
+34823 = {
+	name="Sugr"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1241.1.1={
+		death="1241.1.1"
+	}
+}
+
+34824 = {
+	name="Etrek"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1230.1.1={
+		death="1230.1.1"
+	}
+}
+
+34825 = {
+	name="Bönek"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1241.1.1={
+		death="1241.1.1"
+	}
+}
+
+34826 = {
+	name="Sotan"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1190.1.1={
+		death="1190.1.1"
+	}
+}
+
+34827 = {
+	name="Kozel"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1225.1.1={
+		death="1225.1.1"
+	}
+}
+
+34828 = {
+	name="Asep"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1250.1.1={
+		death="1250.1.1"
+	}
+}
+
+34829 = {
+	name="Saru"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1230.1.1={
+		birth="1230.1.1"
+	}
+	1270.1.1={
+		death="1270.1.1"
+	}
+}
+
+34832 = {
+	name="Uzluk"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+34833 = {
+	name="Ituk"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1230.1.1={
+		death="1230.1.1"
+	}
+}
+
+34834 = {
+	name="Tortogul"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34839 = {
+	name="Blush" 
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1230.1.1={
+		death="1230.1.1"
+	}
+}
+
+34840 = {
+	name="Asalup"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34845 = {
+	name="Sokal"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1070.1.1={
+		birth="1070.1.1"
+	}
+	1120.1.1={
+		death="1120.1.1"
+	}
+}
+
+34846 = {
+	name="Kozel"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1100.1.1={
+		birth="1100.1.1"
+	}
+	1150.1.1={
+		death="1150.1.1"
+	}
+}
+
+34847 = {
+	name="Sotan"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1130.1.1={
+		birth="1130.1.1"
+	}
+	1170.1.1={
+		death="1170.1.1"
+	}
+}
+
+34848 = {
+	name="Begluk"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1220.1.1={
+		death="1220.1.1"
+	}
+}
+
+34849 = {
+	name="Kuntuvdi"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34854 = {
+	name="Kubasar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1045.1.1={
+		birth="1045.1.1"
+	}
+	1091.1.1={
+		death="1091.1.1"
+	}
+}
+
+34856 = {
+	name="Sirçan"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1130.1.1={
+		birth="1130.1.1"
+	}
+	1180.1.1={
+		death="1180.1.1"
+	}
+}
+
+34857 = {
+	name="Togli"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+
+34858 = {
+	name="Gzi"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34863 = {
+	name="Togli"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1120.1.1={
+		birth="1120.1.1"
+	}
+	1180.1.1={
+		death="1180.1.1"
+	}
+}
+
+34864 = {
+	name="Çilbu"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+
+34865 = {
+	name="Bachman"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34882 = {
+	name="Kubasar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1120.1.1={
+		birth="1120.1.1"
+	}
+	1180.1.1={
+		death="1180.1.1"
+	}
+}
+
+34883 = {
+	name="Kozel"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+
+34884 = {
+	name="Sugr"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34889 = {
+	name="Girgen"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1180.1.1={
+		death="1180.1.1"
+	}
+}
+
+34890 = {
+	name="Etrek"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+
+34891 = {
+	name="Bonyak"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34896 = {
+	name="Itlar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1180.1.1={
+		death="1180.1.1"
+	}
+}
+
+34897 = {
+	name="Asalup"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+
+34898 = {
+	name="Aepak"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1238.1.1={
+		death="1238.1.1"
+	}
+}
+
+34945 = {
+	name="Itlar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1095.1.1={
+		death="1095.1.1"
+	}
+}
+
+34946 = {
+	name="Pulad"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1075.1.1={
+		birth="1075.1.1"
+	}
+	1130.1.1={
+		death="1130.1.1"
+	}
+}
+
+34947 = {
+	name="Sokal"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1105.1.1={
+		birth="1105.1.1"
+	}
+	1160.1.1={
+		death="1160.1.1"
+	}
+}
+
+34948 = {
+	name="Kuntuvdi"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1190.1.1={
+		death="1190.1.1"
+	}
+}
+
+34949 = {
+	name="Bönek"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1227.1.1={
+		death="1227.1.1"
+	}
+}
+34954 = {
+	name="Kutan"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1095.1.1={
+		death="1095.1.1"
+	}
+}
+
+34955 = {
+	name="Blush"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1075.1.1={
+		birth="1075.1.1"
+	}
+	1130.1.1={
+		death="1130.1.1"
+	}
+}
+
+34956 = {
+	name="Itlar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1105.1.1={
+		birth="1105.1.1"
+	}
+	1160.1.1={
+		death="1160.1.1"
+	}
+}
+
+34957 = {
+	name="Kubasar"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1190.1.1={
+		death="1190.1.1"
+	}
+}
+
+34958 = {
+	name="Aepak"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1227.1.1={
+		death="1227.1.1"
+	}
+}
+
+34963 = {
+	name="Sirçan"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1095.1.1={
+		death="1095.1.1"
+	}
+}
+
+34964 = {
+	name="Etrek"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1075.1.1={
+		birth="1075.1.1"
+	}
+	1130.1.1={
+		death="1130.1.1"
+	}
+}
+
+34965 = {
+	name="Uzur"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1105.1.1={
+		birth="1105.1.1"
+	}
+	1160.1.1={
+		death="1160.1.1"
+	}
+}
+
+34966 = {
+	name="Begluk"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1190.1.1={
+		death="1190.1.1"
+	}
+}
+
+34967 = {
+	name="Çilbu"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1218.1.1={
+		death="1218.1.1"
+	}
+}
+
+228028 = {
+	name="Boru"
+	dynasty=100514
+	martial=4
+	diplomacy=7
+	intrigue=4
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="tough_soldier"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228029 = {
+	name="Sol"
+	dynasty=100516
+	martial=7
+	diplomacy=8
+	intrigue=5
+	stewardship=5
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="slothful"
+	add_trait="arbitrary"
+	add_trait="craven"
+	add_trait="skilled_tactician"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228031 = {
+	name="Küerçi"
+	# AKA: KUerci
+	dynasty=100512
+	martial=6
+	diplomacy=4
+	intrigue=8
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="amateurish_plotter"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228032 = {
+	name="Teber"
+	dynasty=100542
+	martial=8
+	diplomacy=5
+	intrigue=5
+	stewardship=6
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="just"
+	add_trait="amateurish_plotter"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+228033 = {
+	name="Yeke"
+	dynasty=100543
+	martial=5
+	diplomacy=6
+	intrigue=5
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="envious"
+	add_trait="martial_cleric"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+480140 = {
+	name="Bartan"
+	dynasty=100597
+	martial=4
+	diplomacy=6
+	intrigue=7
+	stewardship=4
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="diligent"
+	add_trait="amateurish_plotter"
+	1115.1.1={
+		birth="1115.1.1"
+	}
+	1170.1.1={
+		death="1170.1.1"
+	}
+}
+
+480150 = {
+	name="Shirgugetu"
+	dynasty=100599
+	martial=7
+	diplomacy=7
+	intrigue=8
+	stewardship=8
+	religion="tengri_pagan"
+	culture="cuman"
+	add_trait="chaste"
+	add_trait="brave"
+	add_trait="flamboyant_schemer"
+	1105.1.1={
+		birth="1105.1.1"
+	}
+	1160.1.1={
+		death="1160.1.1"
+	}
+}
+
+34990 = {
+	name="Sunkur"
+	dynasty=7323
+	religion="sunni"
+	culture="cuman"
+	1230.1.1={
+		birth="1230.1.1"
+	}
+	1280.1.1={
+		death="1280.1.1"
+	}
+}
+
+34991 = {
+	name="Shudja al-Din"
+	dynasty=7324
+	religion="sunni"
+	culture="cuman"
+	1250.1.1={
+		birth="1250.1.1"
+	}
+	1297.1.1={
+		death="1297.1.1"
+	}
+}
+
+34992 = {
+	name="Sayf-ad-Din"
+	dynasty=100566
+	religion="sunni"
+	culture="cuman"
+	1275.1.1={
+		birth="1275.1.1"
+	}
+	1312.1.1={
+		death="1312.1.1"
+	}
+}
+
+34993 = {
+	name="Sayf-ad-Din"
+	dynasty=100691
+	religion="sunni"
+	culture="cuman"
+	1280.1.1={
+		birth="1280.1.1"
+	}
+	1340.1.1={
+		death="1340.1.1"
+	}
+}
+
+125600 = {
+	name="Almis Djafar"
+	# AKA: Almis Djafar
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=159128
+	860.1.2={
+		birth="860.1.2"
+	}
+	925.1.2={
+		death="925.1.2"
+	}
+}
+
+125601 = {
+	name="Hasan"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125600
+	890.1.2={
+		birth="890.1.2"
+	}
+	930.1.2={
+		death="930.1.2"
+	}
+}
+
+125602 = {
+	name="Mikail Yalkau"
+	# AKA: Mikail Yalkau
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125600
+	900.1.2={
+		birth="900.1.2"
+	}
+	943.1.2={
+		death="943.1.2"
+	}
+}
+
+125603 = {
+	name="Talib Mumin"
+	# AKA: Talib Mumin
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125601
+	920.1.2={
+		birth="920.1.2"
+	}
+	980.1.2={
+		death="980.1.2"
+	}
+}
+
+125604 = {
+	name="Ibrahim"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=41417
+	954.1.2={
+		birth="954.1.2"
+	}
+	1025.1.2={
+		death="1025.1.2"
+	}
+}
+
+125605 = {
+	name="Shamgun"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=41420
+	1080.1.2={
+		birth="1080.1.2"
+	}
+	1135.1.2={
+		death="1135.1.2"
+	}
+}
+
+125606 = {
+	name="Khisam Anbal"
+	# AKA: Khisam Anbal
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=3506
+	1088.1.2={
+		birth="1088.1.2"
+	}
+	1164.1.2={
+		death="1164.1.2"
+	}
+}
+
+125607 = {
+	name="Otyak"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125605
+	1110.1.2={
+		birth="1110.1.2"
+	}
+	1185.1.2={
+		death="1185.1.2"
+	}
+}
+
+125608 = {
+	name="Abdullah Chebir"
+	# AKA: Abdullah Chebir
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125607
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1236.1.2={
+		death="1236.1.2"
+	}
+}
+
+3500 = {
+	name="Masgut"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=41417
+	952.1.2={
+		birth="952.1.2"
+	}
+	1006.1.2={
+		death="1006.1.2"
+	}
+}
+
+3502 = {
+	name="Azgar"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=3500
+	978.1.2={
+		birth="978.1.2"
+	}
+	1061.1.2={
+		death="1061.1.2"
+	}
+}
+
+3504 = {
+	name="Akhad Moskha"
+	# AKA: Akhad Moskha
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=3502
+	1001.1.2={
+		birth="1001.1.2"
+	}
+	1071.1.2={
+		death="1071.1.2"
+	}
+}
+
+3506 = {
+	name="Selim Kolyn"
+	# AKA: Kol'n
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=3504
+	1039.1.2={
+		birth="1039.1.2"
+	}
+	1089.1.2={
+		death="1089.1.2"
+	}
+}
+
+41417 = {
+	name="Mohammed"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125600
+	920.1.2={
+		birth="920.1.2"
+	}
+	976.1.2={
+		death="976.1.2"
+	}
+}
+
+41418 = {
+	name="Timar Mumin Badjanak"
+	# AKA: Timar Mumin Badjanak
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=41417
+	950.1.2={
+		birth="950.1.2"
+	}
+	1004.1.2={
+		death="1004.1.2"
+	}
+}
+
+41419 = {
+	name="Ashraf Baluq"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=41418
+	1000.1.2={
+		birth="1000.1.2"
+	}
+	1061.1.2={
+		death="1061.1.2"
+	}
+}
+
+41420 = {
+	name="Adam"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=41419
+	1050.1.2={
+		birth="1050.1.2"
+	}
+	1118.1.2={
+		death="1118.1.2"
+	}
+}
+
+
+34935 = {
+	name="Selim"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=125608
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1237.1.1={
+		death="1237.1.1"
+	}
+}
+
+34936 = {
+	name="Ilgam"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34935
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1239.1.1={
+		death="1239.1.1"
+	}
+}
+
+34937 = {
+	name="Baiyan"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34935
+	1202.1.1={
+		birth="1202.1.1"
+	}
+	1241.1.1={
+		death="1241.1.1"
+	}
+}
+
+34938 = {
+	name="Djiku"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34935
+	1205.1.1={
+		birth="1205.1.1"
+	}
+	1261.1.1={
+		death="1261.1.1"
+	}
+}
+
+34939 = {
+	name="Bulat Temur"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34938
+	1230.1.1={
+		birth="1230.1.1"
+	}
+	1267.1.1={
+		death="1267.1.1"
+	}
+}
+
+34940 = {
+	name="Hasan"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34938
+	1233.1.1={
+		birth="1233.1.1"
+	}
+	1276.1.1={
+		death="1276.1.1"
+	}
+}
+
+34941 = {
+	name="Saltan"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34938
+	1234.1.1={
+		birth="1234.1.1"
+	}
+	1271.1.1={
+		death="1271.1.1"
+	}
+}
+
+34942 = {
+	name="Muhammad"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34940
+	1260.1.1={
+		birth="1260.1.1"
+	}
+	1294.1.1={
+		death="1294.1.1"
+	}
+}
+
+34943 = {
+	name="Tetiak"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34940
+	1263.1.1={
+		birth="1263.1.1"
+	}
+	1310.1.1={
+		death="1310.1.1"
+	}
+}
+
+34944 = {
+	name="Bichur"
+	dynasty=591
+	religion="sunni"
+	culture="cuman"
+	father=34943
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1345.1.1={
+		death="1345.1.1"
+	}
+}
+
+159139 = {
+	name="Emese"
+	female=yes
+	dynasty=1029005
+	religion="tengri_pagan"
+	culture="cuman"
+	father=159140
+	775.1.2={
+		birth="775.1.2"
+	}
+	800.1.1={
+		add_spouse=159138
+	}
+	855.1.2={
+		death="855.1.2"
+	}
+}
+
+159140 = {
+	name="Önedbelia"
+	dynasty=1029005
+	religion="tengri_pagan"
+	culture="cuman"
+	745.1.2={
+		birth="745.1.2"
+	}
+	815.1.2={
+		death="815.1.2"
+	}
+}
+
+20663 = {
+	name="Isaac"
+	dynasty=100620
+	martial=7
+	diplomacy=4
+	intrigue=5
+	stewardship=4
+	religion="jewish"
+	culture="cuman"
+	add_trait="chaste"
+	add_trait="arbitrary"
+	add_trait="scholarly_theologian"
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1089.1.1={
+		death="1089.1.1"
+	}
+}
+
+161730 = {
+	name="Begluk"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1110.1.1={
+		death="1110.1.1"
+	}
+}
+
+161731 = {
+	name="Atrak"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	father=161730
+	1080.1.1={
+		birth="1080.1.1"
+	}
+	1140.1.1={
+		death="1140.1.1"
+	}
+}
+
+161732 = {
+	name="Sokal"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	father=161731
+	1110.1.1={
+		birth="1110.1.1"
+	}
+	1170.1.1={
+		death="1170.1.1"
+	}
+}
+
+161733 = {
+	name="Aepak"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	father=161732
+	1140.1.1={
+		birth="1140.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+161734 = {
+	name="Kutan"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	father=161733
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1220.1.1={
+		death="1220.1.1"
+	}
+}
+
+
+161735 = {
+	name="Kozel"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	father=161734
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1230.1.1={
+		death="1230.1.1"
+	}
+}

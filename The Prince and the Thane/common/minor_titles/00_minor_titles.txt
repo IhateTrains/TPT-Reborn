@@ -1,0 +1,1276 @@
+########################################################
+# MINOR TITLES
+# Characters can have any number of these
+########################################################
+#	grant_limit: Max number of holders.
+#	realm_in_name: Append the name of the country after the title (Queen [of Sweden])
+#	allow: conditions for the character to hold the title
+#	regent: This is the title for regents (not really "minor")
+#	gain_effect: fires when the title is granted
+#	lose_effect: fires when a title is lost if dismissal_trigger evaluates to false
+#	message: should fire a message to the its owner when set
+#	The other fields are all character modifiers.
+
+#######################################
+# HARD: AUTO-GRANTED - DO NOT REMOVE!
+#######################################
+
+title_regent = {
+	realm_in_name = yes
+	dignity = 0.9
+	
+	monthly_salary = 0.5
+	monthly_prestige = 0.25
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_ruler_consort = {
+	dignity = 0.88
+	show_as_title = yes
+	realm_in_name = yes
+	spouse_context = yes
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.02
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+
+	message = no
+}
+
+title_queen_mother = {
+	dignity = 0.85
+	show_as_title = yes
+	realm_in_name = yes
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.01
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}
+
+title_prince = {
+	dignity = 0.8
+	show_as_title = yes
+	realm_in_name = yes
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.01
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}
+
+# Not currently in use
+title_courtesan = {
+	dignity = 0.05
+	realm_in_name = yes
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}
+
+#######################################
+# SOFT: GRANTABLE - FULLY MODDABLE
+#######################################
+
+title_court_eunuch = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.1
+	
+	allow = {
+		age = 14
+		trait = eunuch
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_roman_empire }
+		}
+	}
+	
+	gain_effect = {
+		FROM = {
+			prestige = 10
+		}
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_court_dwarf = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.01
+	
+	allow = {
+		age = 14
+		trait = dwarf
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+	}
+	
+	gain_effect = {
+		FROM = {
+			prestige = 10
+		}
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_king_of_romans = {
+	dignity = 150
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = no
+	
+	monthly_prestige = 0.5
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		is_primary_heir = yes
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archchancellor_of_germany = {
+	dignity = 5
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = no
+
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		has_landed_title = d_mainz 
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archchancellor_of_burgundy = {
+	dignity = 5
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = no
+
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		has_landed_title = d_trier 
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archchancellor_of_italy = {
+	dignity = 5
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = no
+
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		has_landed_title = d_koln 
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archcupbearer_of_hre = {
+	dignity = 2
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = yes
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		has_landed_title = k_bohemia 
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archsteward_of_hre = {
+	dignity = 5
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = yes
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		OR = { has_landed_title = d_lower_lorraine
+                        has_landed_title = k_bavaria                
+	}
+        }
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archmarshal_of_hre = {
+	dignity = 10
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = yes
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		OR = { has_landed_title = d_saxony
+                       has_landed_title = k_saxony                
+	}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archchamberlain_of_hre = {
+	dignity = 5
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = yes
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+                    has_landed_title = d_brandenburg
+              
+        }
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archtreasurer_of_hre = {
+	dignity = 2
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = yes
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		OR = { has_landed_title = d_lower_lorraine
+                        has_landed_title = d_brunswick                
+	}
+        }
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_archbannerbearer_of_hre = {
+	dignity = 2
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = yes
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_hre
+		}
+		OR = { has_landed_title = d_brunswick
+                        has_landed_title = k_franconia
+                        has_landed_title = k_lower_lorraine
+                        has_landed_title = k_upper_lorraine
+                        has_landed_title = k_frisia
+                        has_landed_title = k_carinthia 
+                        has_landed_title = k_germany               
+	}
+        }
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_dauphine_of_france = {
+	dignity = 10
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = no
+	
+	monthly_prestige = 0.5
+	
+	allow = {
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = k_france
+		}
+		is_primary_heir = yes
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_court_jester = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = -10
+	
+	monthly_salary = 0.05
+	monthly_prestige = -0.5
+	
+	allow = {
+		age = 14
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_keeper_of_swans }
+		NOT = { has_minor_title = title_master_of_the_horse }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_high_almoner }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+# Keeper of the King's Swans
+title_keeper_of_swans = {
+	dignity = 5
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_master_of_the_horse }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_high_almoner }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_master_of_the_horse = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { religion_group = muslim }
+		}
+		
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_keeper_of_swans }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_high_almoner }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_master_of_the_hunt = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_keeper_of_swans }
+		NOT = { has_minor_title = title_master_of_the_horse }
+		NOT = { has_minor_title = title_high_almoner }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_high_almoner = {
+	dignity = 3
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		FROM = {
+			is_feudal = yes
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { religion_group = muslim }
+		}
+                OR = {
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_keeper_of_swans }
+		NOT = { has_minor_title = title_master_of_the_horse }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_cupbearer = {
+	dignity = 1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = e_hre }
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_keeper_of_swans }
+		NOT = { has_minor_title = title_master_of_the_horse }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_high_almoner }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_seneschal = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.15
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = e_hre }
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_keeper_of_swans }
+		NOT = { has_minor_title = title_master_of_the_horse }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_high_almoner }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_keeper_of_the_great_seal }
+                NOT = { has_minor_title = title_monsignor }
+                NOT = { has_minor_title = title_academician }
+                NOT = { has_minor_title = title_chamberlain }
+                NOT = { has_minor_title = title_constable_tower_london }
+                NOT = { has_minor_title = title_justiciar }
+                NOT = { has_minor_title = title_dean_chapel_royal }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_paramount_knight = {
+	dignity = 0.8
+	grant_limit = 0 
+	opinion_effect = 0
+
+	monthly_prestige = 0.5
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+# Byzantine Titles
+title_despot = {
+	dignity = 3
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 25
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	counts_as_purple_born = yes
+	
+	allow = {
+		is_female = no
+		is_close_relative = FROM
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_byzantium
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_sebastokrator }
+		NOT = { has_minor_title = title_caesar }
+		NOT = { has_minor_title = title_kouropalates }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_sebastokrator = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 20
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		is_close_relative = FROM
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_byzantium
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_despot }
+		NOT = { has_minor_title = title_caesar }
+		NOT = { has_minor_title = title_kouropalates }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_caesar = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_byzantium
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_despot }
+		NOT = { has_minor_title = title_sebastokrator }
+		NOT = { has_minor_title = title_kouropalates }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_kouropalates = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_byzantium
+			NOT = { religion_group = muslim }
+		}
+		NOT = { has_minor_title = title_despot }
+		NOT = { has_minor_title = title_sebastokrator }
+		NOT = { has_minor_title = title_caesar }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_anthypatos = {
+	dignity = 2
+	grant_limit = 4
+	opinion_effect = 10
+	
+	monthly_salary = 0.15
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			has_landed_title = e_byzantium
+			NOT = { religion_group = muslim }
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_imperial_eunuch = {
+	dignity = 0.050
+	grant_limit = 1
+	opinion_effect = 60
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		trait = eunuch
+		FROM = {
+			is_feudal = yes
+			NOT = { religion_group = muslim }
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+# Muslim World titles
+
+title_food_taster = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = -10
+	
+	monthly_salary = 0.2
+	monthly_prestige = -0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			religion_group = muslim
+		}
+		NOT = { has_minor_title = title_court_calligrapher }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_chief_architect }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_chief_qadi }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_court_calligrapher = {
+	dignity = 2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.2
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			religion_group = muslim
+		}
+		NOT = { has_minor_title = title_food_taster }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_chief_architect }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_chief_qadi }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_court_musician = {
+	dignity = 1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.2
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		FROM = {
+			is_feudal = yes
+			religion_group = muslim
+		}
+		
+		NOT = { has_minor_title = title_food_taster }
+		NOT = { has_minor_title = title_court_calligrapher }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_chief_architect }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_chief_qadi }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_court_poet = {
+	dignity = 1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.2
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			religion_group = muslim
+		}
+		NOT = { has_minor_title = title_food_taster }
+		NOT = { has_minor_title = title_court_calligrapher }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_chief_architect }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_chief_qadi }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_chief_architect = {
+	dignity = 1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.2
+	monthly_prestige = 0.25
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			religion_group = muslim
+		}
+		NOT = { has_minor_title = title_food_taster }
+		NOT = { has_minor_title = title_court_calligrapher }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_chief_qadi }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_chief_qadi = {
+	dignity = 5
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.2
+	monthly_prestige = 0.5
+	
+	allow = {
+		age = 14
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			religion_group = muslim
+		}
+		religion_group = muslim
+		OR = {
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
+		}
+		NOT = { has_minor_title = title_food_taster }
+		NOT = { has_minor_title = title_court_calligrapher }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_chief_architect }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+# MERCHANT REPUBLIC TITLES
+
+# State Inquisitor
+title_state_inquisitor = {
+	dignity = 0.06
+	realm_in_name = yes
+	grant_limit = 3
+	opinion_effect = 12
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.004
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_merchant_republic = yes
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_high_admiral }
+		NOT = { has_minor_title = title_high_judge }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_high_admiral = {
+	dignity = 0.1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.006
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_merchant_republic = yes
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_state_inquisitor }
+		NOT = { has_minor_title = title_high_judge }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_high_judge = {
+	dignity = 0.15
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.006
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_merchant_republic = yes
+		}
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_state_inquisitor }
+		NOT = { has_minor_title = title_high_admiral }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+# Special - This title determines the heir of a Patrician
+title_patrician_heir = {
+	dignity = 0.05
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 50
+	
+	patrician_heir = yes
+	
+	monthly_salary = 0.01
+	monthly_prestige = 0.002
+	
+	allow = {
+		is_female = no
+		dynasty = FROM
+		NOT = { trait = bastard }
+		FROM = {
+			is_patrician = yes
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}

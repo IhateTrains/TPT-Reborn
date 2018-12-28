@@ -1,0 +1,51 @@
+
+1000064002 = {
+	name="di Luni"
+	culture = italian #Lombardo
+}
+
+1000064003 = {
+	name="de Zori"
+	culture = sardinian
+}
+
+1000064004 = {
+	name="de Gunale"
+	culture = sardinian
+}
+
+1000064005 = {
+	name="di Torres"
+	culture = sardinian
+}
+
+1000064006 = {
+	name="Crescenzi"
+	culture = central_italian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 3
+          texture_internal = 17
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  }	
+}
+
+1000064008 = {
+	name="Adelardi" #AKA Marcheselli
+	culture = italian
+}
+
+1000064009 = {
+	name="di Urbino"
+	culture = central_italian
+}
+
+1000064010 = {
+	name="di Fermo"
+	culture = central_italian
+}

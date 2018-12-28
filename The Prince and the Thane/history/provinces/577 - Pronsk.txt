@@ -1,0 +1,23 @@
+# 577 - Pronsk
+
+# County Title
+title = c_pronsk
+
+# Settlements
+max_settlements = 4
+
+b_skopin = castle
+b_pronsk = city
+b_elets = castle
+
+#b_ryazhsk = city
+#b_lipetsk = city
+#b_dankov = castle
+
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History

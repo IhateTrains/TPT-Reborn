@@ -1,0 +1,1217 @@
+########################################################################
+#
+# The Prince and the Thane homage and fealty events - written by idib816
+#
+########################################################################
+
+namespace = fealty
+
+# Commendation Ceremony invites to realm lords
+letter_event = {
+	id = fealty.1
+	desc = "EVTDESCfealty.1"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.1"	# I will pay homage
+		set_character_flag = attend_commendation
+		set_character_flag = swore_fealty
+		hidden_tooltip = {
+		    FROM = {
+			    letter_event = { id = fealty.3 days = 5 }
+		    }
+	    }
+		opinion = {
+			modifier = swore_fealty
+			who = FROM
+			months = 1200
+		}
+		reverse_opinion = {
+			modifier = swore_fealty
+			who = FROM
+			months = 1200
+		}
+		ai_chance = {
+			factor = 0.75
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+            modifier = {
+				factor = 1.5
+				trait = content
+			}
+			modifier = {
+				factor = 5
+				tier = BARON
+			}
+            modifier = {
+				factor = 1.5
+				trait = humble
+			}
+            modifier = {
+				factor = 5
+				is_theocracy = yes
+			}
+            modifier = {
+				factor = 20
+				trait = trait_cardinal
+				FROM = { has_landed_title = k_papal_state }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = cruel }
+			}
+			modifier = {
+				factor = 0.35
+				FROM = { NOT = { culture = ROOT } }
+			}
+			modifier = {
+				factor = 0.35
+				FROM = { NOT = { religion = ROOT } }
+			}
+			modifier = {
+				factor = 0.25
+				FROM = { NOT = { religion_group = ROOT } }
+			}
+			modifier = {
+				factor = 0.25
+				FROM = { NOT= { culture_group = ROOT } }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = ill }
+			}
+            modifier = {
+				factor = 0.25
+				FROM = { trait = turncloak }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = wounded }
+			}
+            modifier = {
+				factor = 0.35
+				trait = turncloak
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = just }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { piety = 250 }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = clerical_envoy }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { martial = 14 }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = master_warrior }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = honest }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = kind }
+			}
+            modifier = {
+				factor = 2
+				FROM = { trait = gregarious }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { diplomacy = 10 }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = deceitful }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 250 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 500 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 750 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 1000 }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBfealty.1"	# No homage
+        prestige = -50
+		set_character_flag = refused_to_swear_fealty 
+		reverse_opinion = {
+			modifier = refused_to_swear_fealty
+			who = FROM
+			months = 1200
+		}
+		FROM = {
+			letter_event = { id = fealty.2 days = 25 }
+		}
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_spouse
+					}
+				}
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_child
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				tier = BARON
+				FROM = { higher_tier_than = COUNT }
+			}
+			modifier = {
+				factor = 0.25
+				tier = COUNT
+				FROM = { higher_tier_than = DUKE }
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_vassal
+					}
+				}
+			}			
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -20
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -40
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -60
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -80
+						}
+					}
+				}
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = cruel }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = wroth }
+			}
+            modifier = {
+				factor = 0.25
+				FROM = { trait = just }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = honest }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = kind }
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = deceitful }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = lady_macbeth }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = conservative }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { NOT = { diplomacy = 10 } }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { NOT = { prestige = 500 } }
+			}
+            modifier = {
+				factor = 1.25
+				demesne_size = 4
+			}
+            modifier = {
+				factor = 1.5
+				demesne_size = 5
+			}
+            modifier = {
+				factor = 1.25
+				demesne_size = 6
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -99
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Commendation Ceremony being organized
+narrative_event = {
+	id = fealty.0
+	desc = "EVTDESCfealty.0"
+	picture = "GFX_evt_palio"
+	title = "EVTNAMEfealty.4"
+	border = "GFX_event_narrative_frame_diplomacy"
+	
+    only_rulers = yes
+
+    min_age = 6
+        
+	trigger = { 
+        is_feudal = yes
+        war = no
+        in_command = no
+		prisoner = no
+        NOT = { OR = { culture_group = byzantine 
+        culture_group = east_african
+        culture_group = north_germanic
+        culture_group = west_african  } }
+        num_of_vassals = 1
+        higher_tier_than = BARON
+        religion_group = christian
+	    NOT = { ruled_years = 3 }
+	    NOT = { trait = templar }
+	    NOT = { trait = templar_leader }
+	    NOT = { has_character_flag = commendation_ceremony_done }
+    }
+
+    mean_time_to_happen = { 
+        days = 90
+    }
+	
+	option = {
+		name = "EVTOPTAfealty.0"	# Excellent, now invite all the lords
+        set_character_flag = commendation_ceremony_done
+		hidden_tooltip = {
+			narrative_event = { id = fealty.4 days = 40 }
+			any_vassal = {
+				limit = {
+					age = 14
+					NOT = { trait = incapable }
+					NOT = { character = ROOT }
+                    religion_group = christian		
+					prisoner = no
+		            NOT = { has_character_flag = swore_fealty }
+		            NOT = { has_character_flag = refused_to_swear_fealty }
+                    war = no
+				}
+			letter_event = { id = fealty.1 days = 5 } # Invitation to commendation ceremony
+			}
+		}
+	}
+}
+
+# Inform lord of not swearing fealty
+letter_event = {
+	id = fealty.2
+	desc = "EVTDESCfealty.2"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.2"	
+        prestige = -25
+        random = { 
+		    chance = 35
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = {
+					id = 38257 #Notify Craven
+				}
+			} 
+		}
+	}
+ 
+    option = {
+		name = "EVTOPTBfealty.7"
+        prestige = 5
+        random = { 
+		    chance = 45
+            add_trait = just
+			hidden_tooltip = {
+				character_event = {
+					id = 38267 #Notify Just
+				}
+			} 
+		}
+        hidden_tooltip = {
+            random = { 
+			    chance = 15
+                change_martial = 1 
+			}
+		    FROM = {
+		        character_event = { id = fealty.8 }
+		    }
+        }
+	}     
+}
+
+# Inform lord of attending commendation ceremony
+letter_event = {
+	id = fealty.3
+	desc = "EVTDESCfealty.3"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.3"	# I'm Glad
+		prestige = 5
+	}
+}
+
+# Commendation Ceremony
+narrative_event = {
+	id = fealty.4
+	title = "EVTNAMEfealty.4"
+	desc = "EVTDESCfealty.4"
+	picture = "GFX_evt_palio"
+	border = "GFX_event_narrative_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.4"
+		if = { limit = { tier = count }
+		prestige = 50
+		piety = 10 }
+		if = { limit = { tier = duke }
+		prestige = 75
+		piety = 25 }
+		if = { limit = { tier = king }
+		prestige = 100
+		piety = 50 }
+		if = { limit = { tier = emperor }
+		prestige = 150
+		piety = 75 }
+		hidden_tooltip = {
+			any_vassal = {
+				limit = {
+					has_character_flag = attend_commendation
+					NOT = { character = ROOT }
+				}
+				narrative_event = { id = fealty.5 days = 30 }
+			}
+		}
+	}
+}
+
+# Commendation - attended realm lord inform ceremony
+narrative_event = {
+	id = fealty.5
+	desc = "EVTDESCfealty.5"
+	title = "EVTNAMEfealty.4"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_narrative_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.5"	# The ceremony was beautiful
+		prestige = 15
+		clr_character_flag = attend_commendation
+	}
+}
+
+# New vassal has to swear fealty when commendation is already done
+character_event = {
+	id = fealty.6
+	desc = "EVTDESCfealty.6"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+    only_rulers = yes
+    min_age = 14
+        
+	trigger = { 
+        higher_tier_than = BARON
+		independent = no
+		NOT = { has_character_flag = swore_fealty }
+		NOT = { has_character_flag = refused_to_swear_fealty }
+		prisoner = no
+	    NOT = { trait = templar }
+	    NOT = { trait = templar_leader }
+        religion_group = christian	
+        war = no
+        in_command = no
+        liege = { 
+            war = no
+		    prisoner = no
+            in_command = no
+	        NOT = { trait = templar }
+	        NOT = { trait = templar_leader }
+            religion_group = christian
+            NOT = { 
+			    OR = { 
+				    culture_group = byzantine 
+                    culture_group = north_germanic
+                    culture_group = east_african
+                    culture_group = west_african  
+				} 
+			}
+		    NOT = { character = ROOT }
+            has_character_flag = commendation_ceremony_done
+	        NOT = { 
+			    OR = { 
+				    has_opinion_modifier = { who = ROOT modifier = swore_fealty }
+                    has_opinion_modifier = { who = ROOT modifier = refused_to_swear_fealty } 
+				} 
+			} 
+		}
+    }
+
+    mean_time_to_happen = { 
+        months = 24
+    }
+	
+	option = {
+		name = "EVTOPTAfealty.6"	# I will pay homage
+        prestige = 10
+		set_character_flag = swore_fealty
+        random = { 
+		    chance = 10
+            add_trait = content
+			hidden_tooltip = {
+				character_event = {
+					id = 38279 #Notify Content
+				}
+			}  
+		}
+		liege = { 
+		    reverse_opinion = {
+				modifier = swore_fealty
+				who = ROOT
+				months = 1200
+			}
+		}
+		ai_chance = {
+			factor = 0.75
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = liege
+						value = 20
+					}
+				}
+			}
+            modifier = {
+				factor = 1.5
+				trait = content
+			}
+            modifier = {
+				factor = 1.5
+				trait = humble
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = cruel }
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = ill }
+			}
+            modifier = {
+				factor = 0.25
+				liege = { trait = turncloak }
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = wounded }
+			}
+            modifier = {
+				factor = 0.35
+				trait = turncloak
+			}
+			modifier = {
+				factor = 0.35
+				liege = { NOT= { culture = ROOT } }
+			}
+			modifier = {
+				factor = 0.35
+				liege = { NOT= { religion = ROOT } }
+			}
+			modifier = {
+				factor = 0.25
+				liege = { NOT= { religion_group = ROOT } }
+			}
+			modifier = {
+				factor = 0.25
+				liege = { NOT= { culture_group = ROOT } }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { trait = just }
+			}
+            modifier = {
+				factor = 5
+				is_theocracy = yes
+			}
+            modifier = {
+				factor = 20
+				trait = trait_cardinal
+				liege = { has_landed_title = k_papal_state }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { piety = 250 }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { trait = clerical_envoy }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { martial = 14 }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { trait = master_warrior }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { trait = honest }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { trait = kind }
+			}
+            modifier = {
+				factor = 2
+				liege = { trait = gregarious }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { diplomacy = 10 }
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = deceitful }
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.2
+				liege = { prestige = 250 }
+			}
+            modifier = {
+				factor = 1.2
+				liege = { prestige = 500 }
+			}
+            modifier = {
+				factor = 1.2
+				liege = { prestige = 750 }
+			}
+            modifier = {
+				factor = 1.2
+				liege = { prestige = 1000 }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = liege
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = liege
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = liege
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = liege
+						value = 100
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBfealty.6" # No homage
+        prestige = -25
+		set_character_flag = refused_to_swear_fealty 
+		liege = {
+			character_event = { id = fealty.7 }
+		}
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = liege
+						modifier = attempted_murder
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				tier = BARON
+				liege = { higher_tier_than = COUNT }
+			}
+			modifier = {
+				factor = 0
+				tier = COUNT
+				liege = { higher_tier_than = DUKE }
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = liege
+						modifier = attempted_murder_of_spouse
+					}
+				}
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = liege
+						modifier = attempted_murder_of_child
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion_modifier = {
+						who = liege
+						modifier = attempted_murder_of_vassal
+					}
+				}
+			}			
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = liege
+							value = -20
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = liege
+							value = -40
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = liege
+							value = -60
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = liege
+							value = -80
+						}
+					}
+				}
+			}
+            modifier = {
+				factor = 1.25
+				liege = { trait = cruel }
+			}
+            modifier = {
+				factor = 1.25
+				liege = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.25
+				liege = { trait = wroth }
+			}
+            modifier = {
+				factor = 0.25
+				liege = { trait = just }
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = honest }
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = kind }
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.25
+				liege = { trait = deceitful }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { trait = lady_macbeth }
+			}
+            modifier = {
+				factor = 1.25
+				liege = { trait = conservative }
+			}
+            modifier = {
+				factor = 1.25
+				liege = { NOT = { diplomacy = 10 } }
+			}
+            modifier = {
+				factor = 1.5
+				liege = { NOT = { prestige = 500 } }
+			}
+            modifier = {
+				factor = 1.25
+				demesne_size = 4
+			}
+            modifier = {
+				factor = 1.5
+				demesne_size = 5
+			}
+            modifier = {
+				factor = 1.25
+				demesne_size = 6
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = liege
+							value = -99
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Inform ruler of not swearing fealty
+character_event = {
+	id = fealty.7
+	desc = "EVTDESCfealty.7"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.7"	
+        prestige = -25
+        random = { 
+		    chance = 35
+            add_trait = craven
+			hidden_tooltip = {
+				character_event = {
+					id = 38257 #Notify Craven
+				}
+			} 
+		}
+		opinion = {
+			modifier = refused_to_swear_fealty
+			who = FROM
+			months = 1200
+		}
+	}
+
+    option = {
+		name = "EVTOPTBfealty.7"
+		opinion = {
+			modifier = refused_to_swear_fealty
+			who = FROM
+			months = 1200
+		}
+        prestige = -10
+        random = { 
+			chance = 35
+            add_trait = just
+			hidden_tooltip = {
+				character_event = {
+					id = 38267 #Notify Just
+				}
+			} 
+		}
+        random = { 
+		    chance = 25
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = {
+					id = 38254 #Notify Wroth
+				}
+			}
+		}
+        hidden_tooltip = {
+            random = { 
+			    chance = 5
+                change_martial = 1 
+			}
+		    FROM = {
+		        character_event = { id = fealty.8 }
+		    }
+        }
+	}     
+}
+
+# Inform vassal of war declaration
+character_event = {
+	id = fealty.8
+	desc = "EVTDESCfealty.8"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	      
+	trigger = { 
+        is_alive = yes
+		FROM = { 
+		    is_landed = yes 
+            is_alive = yes
+		}
+	}
+
+    option = {
+		name = "EVTOPTAfealty.8"
+                prestige = -50
+                piety = -20
+		liege = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = bid_for_independence
+			}
+		}
+	}       
+}
+
+# Inform ruler of oathbreaking
+character_event = {
+	id = fealty.9
+	desc = "EVTDESCfealty.9"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAfealty.9"	
+        prestige = -50
+        random = { chance = 15
+        change_diplomacy = -1 }
+		remove_opinion = {
+			modifier = swore_fealty
+			who = FROM
+		}
+		reverse_remove_opinion = {
+			modifier = swore_fealty
+			who = FROM
+		}
+        opinion = {
+			modifier = oathbreaker
+			who = FROM
+			months = 1200
+		}
+	}
+}
+
+# Character is an oathbreaker
+character_event = {
+	id = fealty.10
+	desc = "I broke the oath I swore to my liege!"
+	picture = "GFX_evt_scandal"
+	border = "GFX_event_normal_frame_war"
+	
+	only_rulers = yes
+
+    min_age = 14
+        
+	trigger = { 
+        any_war = {
+		    attacker = { character = ROOT }
+		    OR = {
+				using_cb = bid_for_independence
+				using_cb = change_gavelkind_succession_law
+				using_cb = lower_crown_authority_law
+				using_cb = cb_faction_independence
+				using_cb = claim_on_liege
+				using_cb = claim_on_liege_plot
+				using_cb = other_claim_on_liege
+				using_cb = change_seniority_succession_law
+				using_cb = change_primogeniture_succession_law
+				using_cb = change_feudal_elective_succession_law
+				using_cb = depose_liege
+				using_cb = overthrow_ruler
+				using_cb = overthrow_ruler_no_calls
+				using_cb = succession_on_liege
+				using_cb = other_succession_on_liege
+			}
+			defender = { has_opinion_modifier = { who = ROOT modifier = swore_fealty } 
+			reverse_has_opinion_modifier = { who = ROOT modifier = swore_fealty } }
+		}
+    }
+
+    mean_time_to_happen = { 
+        days = 1
+    }
+	
+	option = {
+		name = "I had my reasons"
+		add_trait = turncloak
+		prestige = -150
+		any_war = { 
+		    limit = { 
+		    attacker = { character = ROOT }
+		    OR = {
+				using_cb = bid_for_independence
+				using_cb = change_gavelkind_succession_law
+				using_cb = lower_crown_authority_law
+				using_cb = cb_faction_independence
+				using_cb = claim_on_liege
+				using_cb = claim_on_liege_plot
+				using_cb = other_claim_on_liege
+				using_cb = change_seniority_succession_law
+				using_cb = change_primogeniture_succession_law
+				using_cb = change_feudal_elective_succession_law
+				using_cb = depose_liege
+				using_cb = overthrow_ruler
+				using_cb = overthrow_ruler_no_calls
+				using_cb = succession_on_liege
+				using_cb = other_succession_on_liege
+			}
+			defender = { has_opinion_modifier = { who = ROOT modifier = swore_fealty } 
+			reverse_has_opinion_modifier = { who = ROOT modifier = swore_fealty } }
+		}
+		defender = { limit = { has_opinion_modifier = { who = ROOT modifier = swore_fealty } 
+		reverse_has_opinion_modifier = { who = ROOT modifier = swore_fealty } } 
+		character_event = { id = fealty.9 } }
+		}
+	}
+}
+
+
+# Fealty sanity check
+character_event = {
+	id = fealty.11
+	desc = "EVTDESCfealty.11"
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_diplomacy
+
+    only_rulers = yes
+		
+	is_triggered_only = yes
+	
+	trigger = {
+        war = no
+        ai = yes
+        any_playable_ruler = {
+            war = no
+            has_opinion_modifier = { who = ROOT modifier = swore_fealty }
+            NOT = { vassal_of = ROOT }
+            NOT = { is_liege_of = ROOT }
+        }
+    }	
+	
+	mean_time_to_happen = {
+		years = 1000
+	}
+	
+	option = {
+		name = "EVTOPTAfealty.11"
+		clr_character_flag = swore_fealty
+		clr_character_flag = refused_to_swear_fealty
+        any_playable_ruler = { 
+            limit = {
+			    war = no
+                has_opinion_modifier = { who = ROOT modifier = swore_fealty }
+                reverse_has_opinion_modifier = { who = ROOT modifier = swore_fealty }
+                NOT = { vassal_of = ROOT }
+                NOT = { is_liege_of = ROOT }
+            }	
+            remove_opinion = {
+				modifier = swore_fealty
+				who = ROOT
+			}
+		    reverse_remove_opinion = {
+				modifier = swore_fealty
+				who = ROOT
+			}
+        } 
+	}
+}

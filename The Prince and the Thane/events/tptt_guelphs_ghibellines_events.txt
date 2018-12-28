@@ -1,0 +1,3513 @@
+#####################################################
+#
+# Guelphs and Ghibellines events - written by idib816
+#
+#####################################################
+
+namespace = guelphs_ghibellines
+
+## Beginning of investiture contest
+
+character_event = {
+	id = guelphs_ghibellines.0
+	desc = "EVTDESCguelphs_ghibellines.0"
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	
+	trigger = {
+		war = no
+		OR = {
+		    trait = ambitious
+			trait = cynical
+			trait = excommunicated
+		    religion_head = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+		}
+		NOT = {
+		    trait = zealous
+		}
+		NOT = {
+		    trait = guelph
+		}
+		NOT = {
+		    year = 1350
+		}
+        religion = catholic
+		NOT = { has_global_flag = investiture_contest }
+		NOT = { has_character_flag = refused_investiture_contest }
+		has_landed_title = e_hre 
+		has_law = investiture_law_0
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	    modifier = {
+			factor = 0.1
+			year = 1200
+		}
+	    modifier = {
+			factor = 0.01
+			year = 1250
+		}
+	    modifier = {
+			factor = 0.1
+			year = 1300
+		}
+	    modifier = {
+			factor = 10
+			trait = cynical
+		}
+		modifier = {
+			factor = 5
+			rightful_religious_head_scope = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -25
+		            }
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			rightful_religious_head_scope = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -50
+		            }
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			rightful_religious_head_scope = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -75
+		            }
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			rightful_religious_head_scope = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -99
+		            }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAguelphs_ghibellines.0"
+		prestige = 300
+		piety = -150
+		set_global_flag = investiture_contest 
+        clr_global_flag = investiture_contest_end
+		any_demesne_title = {
+			limit = {
+				OR = { tier = KING tier = EMPEROR }
+       				is_titular = no
+       				has_law = investiture_law_0 
+	    		}
+			revoke_law = investiture_law_0
+			add_law_w_cooldown = investiture_law_1
+		}
+		rightful_religious_head_scope = {
+            religion_authority = -0.15
+		}
+		random = {
+		    chance = 50
+			add_trait = excommunicated
+		}
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    limit = { 
+				    religion = catholic 
+				}
+				narrative_event = { 
+				    id = guelphs_ghibellines.1 
+				}
+			}
+		}	
+        ai_chance = {
+		    factor = 0.8
+            modifier = {
+				factor = 2.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.75
+				trait = clerical_envoy
+			}
+                modifier = {
+				factor = 0.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.75
+				trait = antisemite
+			}
+            modifier = {
+				factor = 0.5
+				piety = 275
+			}
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 0.35
+				trait = mastermind_theologian
+			}
+		}	
+	}
+    option = {
+		name = "EVTOPTBguelphs_ghibellines.0"
+		set_character_flag = refused_investiture_contest
+		prestige = -300
+		piety = 150
+		rightful_religious_head_scope = {
+            religion_authority = 0.05
+		}
+        random_list = {
+			33 = { 
+			    add_trait = zealous
+   				hidden_tooltip = {
+					character_event = {
+					   id = 38259
+					}
+				}
+			}
+			33 = { 
+			    add_trait = craven
+   				hidden_tooltip = {
+					character_event = {
+					   id = 38257
+					}
+				}
+			}
+			34 = { }
+		}
+        ai_chance = {
+            factor = 0.55
+            modifier = {
+				factor = 0.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = ghibelline }
+			}
+            modifier = {
+				factor = 1.75
+				liege = { trait = guelph }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 1.35
+				trait = mastermind_theologian
+			}
+		}	
+	}
+}
+
+## The beginning of the Investiture Contest notification
+
+narrative_event = {
+	id = guelphs_ghibellines.1
+    title = "EVTNAMEguelphs_ghibellines.1"
+	desc = "EVTDESCguelphs_ghibellines.1"
+	picture = "GFX_evt_pope"
+	border = GFX_event_narrative_frame_religion
+    is_triggered_only = yes
+
+	option = {
+		name = "We may need to pick sides soon.."
+		set_global_flag = investiture_contest
+		clr_global_flag = investiture_contest_end
+    }
+}
+
+## Pick Sides! (Germans)
+
+character_event = {
+	id = guelphs_ghibellines.2
+	desc = "EVTDESCguelphs_ghibellines.2"
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+        culture = german
+        religion = catholic
+		NOT = { trait = guelph }
+		has_global_flag = investiture_contest
+		NOT = { has_global_flag = investiture_contest_end }
+		NOT = { has_landed_title = e_hre }
+		NOT = { trait = ghibelline }
+        NOT = { has_landed_title = k_papal_state } 
+		e_hre = { has_law = investiture_law_1 }
+        top_liege = { 
+		    OR = {
+    			has_landed_title = k_papal_state 
+                has_landed_title = e_hre 
+			} 
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+
+	option = {
+		name = "EVTOPTAguelphs_ghibellines.2"
+		prestige = 100
+		piety = -25
+        add_character_modifier = { name = ghibelline_cb duration = -1 hidden = yes }
+		add_trait = ghibelline
+        ai_chance = {
+		    factor = 0.45
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.75
+				trait = antisemite
+			}
+            modifier = {
+				factor = 0.5
+				piety = 275
+			}
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.75
+				liege = { trait = ghibelline }
+			}
+            modifier = {
+				factor = 0.75
+				liege = { trait = guelph }
+			}
+            modifier = {
+				factor = 1.75
+				top_liege = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 0.5
+				top_liege = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				trait = mastermind_theologian
+			}
+		}	
+	}
+    option = {
+		name = "EVTOPTBguelphs_ghibellines.2"
+	    prestige = -75
+	    piety = 100
+        add_character_modifier = { name = guelph_cb duration = -1 hidden = yes }
+	    add_trait = guelph
+        ai_chance = {
+                factor = 0.55
+                modifier = {
+				factor = 0.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = ghibelline }
+			}
+            modifier = {
+				factor = 1.75
+				liege = { trait = guelph }
+			}
+            modifier = {
+				factor = 0.75
+				top_liege = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 1.75
+				top_liege = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 1.35
+				trait = mastermind_theologian
+			}
+		}	
+	}
+}
+
+## Pick Sides! (Italians)
+
+character_event = {
+	id = guelphs_ghibellines.3
+	desc = "EVTDESCguelphs_ghibellines.3"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+        
+    is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+		    has_global_flag = investiture_contest
+		    has_global_flag = investiture_contest_end
+		}
+		NOT = { year = 1350 }
+        culture_group = italian_group
+        religion = catholic
+		NOT = { trait = guelph }
+		NOT = { trait = ghibelline }
+        NOT = { has_landed_title = k_papal_state } 
+        NOT = { has_landed_title = e_hre } 
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "EVTOPTAguelphs_ghibellines.3"
+		prestige = 100
+		piety = -75
+        add_character_modifier = { name = ghibelline_cb duration = -1 hidden = yes }
+		add_trait = ghibelline
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.75
+				trait = antisemite
+			}
+            modifier = {
+				factor = 0.5
+				piety = 275
+			}
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.75
+				liege = { trait = ghibelline }
+			}
+            modifier = {
+				factor = 0.75
+				liege = { trait = guelph }
+			}
+            modifier = {
+				factor = 1.75
+				top_liege = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 0.5
+				top_liege = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				trait = mastermind_theologian
+			}
+		}		
+	}
+    
+	option = {
+		name = "EVTOPTBguelphs_ghibellines.3"
+		prestige = -25
+		piety = 100
+        add_character_modifier = { name = guelph_cb duration = -1 hidden = yes }
+		add_trait = guelph
+            ai_chance = {
+                factor = 0.7
+            modifier = {
+				factor = 0.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = ghibelline }
+			}
+            modifier = {
+				factor = 1.75
+				liege = { trait = guelph }
+			}
+            modifier = {
+				factor = 0.75
+				top_liege = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 1.75
+				top_liege = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 35 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 1.35
+				trait = mastermind_theologian
+			}
+		}	
+	}
+}
+
+## No other culture is allowed to be guelph/ghibelline.
+
+character_event = {
+	id = guelphs_ghibellines.4
+	desc = "EVTDESCguelphs_ghibellines.4"
+	picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+	    NOT = { 
+		    OR = { 
+			    culture = german  
+                culture_group = italian_group 
+			}  
+		} 
+		OR = { 
+		    trait = guelph 
+		    trait = ghibelline 
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "EVTOPTAguelphs_ghibellines.4"
+		remove_trait = guelph
+		remove_trait = ghibelline
+	}
+}
+
+## The End of the Investiture Contest
+
+narrative_event = {
+	id = guelphs_ghibellines.5
+    title = "EVTNAMEguelphs_ghibellines.5"
+	desc = "EVTDESCguelphs_ghibellines.5"
+	picture = "GFX_evt_holy_emperor"
+	border = GFX_event_narrative_frame_religion
+
+    is_triggered_only = yes
+	
+	trigger = {
+        religion = catholic
+	}
+
+	option = {
+		name = "EVTOPTAguelphs_ghibellines.5"
+        clr_global_flag = investiture_contest
+        set_global_flag = investiture_contest_end
+    }
+}
+
+# Ultimatum - Investiture (Guelphs)
+letter_event = {
+	id = guelphs_ghibellines.6
+	desc = "EVTDESC8005"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { in_faction = faction_guelphs }
+	}
+	
+	immediate = {
+		FROM = { 
+			diplomatic_immunity = yes 
+			any_faction_backer = {
+				faction = faction_guelphs
+				diplomatic_immunity = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "They are right.."
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				trait = weak
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+			modifier = {
+				factor = 1.5
+				trait = humble
+			}
+			modifier = {
+				factor = 1.5
+				trait = kind
+			}
+			modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.25
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { 
+				    reverse_opinion = { 
+					    who = ROOT
+					    value = 25
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { 
+				    reverse_opinion = { 
+					    who = ROOT
+					    value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { 
+				    reverse_opinion = { 
+					    who = ROOT
+					    value = 75
+					}
+				}
+			}
+			modifier = {
+				factor = 0.001
+				FROM = {
+					NOT = {
+						faction_power = 
+						{
+							faction = faction_guelphs
+							power = 0.25
+						}
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = {
+					ai = no
+					NOT = { in_faction = faction_guelphs }
+				}
+				character_event = { id = guelphs_ghibellines.7 }
+			}
+			FROM = {
+				letter_event = { id = guelphs_ghibellines.8 }
+				any_faction_backer = {
+					faction = faction_guelphs
+					letter_event = { id = guelphs_ghibellines.8 }
+					diplomatic_immunity = no
+				}
+				diplomatic_immunity = no
+			}
+		}
+		any_demesne_title = {
+			limit = {
+				OR = { tier = KING tier = EMPEROR }
+       				is_titular = no
+       				has_law = investiture_law_1 
+	    		}
+			revoke_law = investiture_law_1
+			add_law_w_cooldown = investiture_law_0
+		}
+		prestige = -100
+		piety = 50
+	}
+	option = {
+		name = "The hell with them!"
+		prestige = 50
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			# Account for relative faction power
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_guelphs power = 0.75 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_guelphs power = 1.0 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_guelphs power = 1.25 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_guelphs power = 1.5 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_guelphs power = 1.75 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_guelphs power = 2.0 } }
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.5 } } }
+				}
+				random = {
+					chance = 5
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.75 } } }
+				}
+				random = {
+					chance = 15
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.75 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.0 } } }
+				}
+				random = {
+					chance = 25
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.0 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.25 } } }
+				}
+				random = {
+					chance = 35
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.5 } } }
+				}
+				random = {
+					chance = 45
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.75 } } }
+				}
+				random = {
+					chance = 55
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.75 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.0 } } }
+				}
+				random = {
+					chance = 65
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.0 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.25 } } }
+				}
+				random = {
+					chance = 75
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.5 } } }
+				}
+				random = {
+					chance = 85
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.75 } } }
+				}
+				random = {
+					chance = 95
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.75 } }
+				}
+				character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+			}
+		}
+		FROM = {
+			letter_event = { id = guelphs_ghibellines.9 days = 3 tooltip = "This will mean war" }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						NOT = { faction_power = { faction = faction_guelphs power = 0.25 } }
+					}
+					random_list = {
+						60 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						40 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 0.25 } 
+						NOT = { faction_power = { faction = faction_guelphs power = 0.5 } }
+					}
+					random_list = {
+						10 = {
+						}
+						55 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						35 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 0.5 } 
+						NOT = { faction_power = { faction = faction_guelphs power = 0.75} }
+					}
+					random_list = {
+						20 = {
+						}
+						50 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						30 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 0.75 } 
+						NOT = { faction_power = { faction = faction_guelphs power = 1.0 } }
+					}
+					random_list = {
+						30 = {
+						}
+						45 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						25 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 1.0 }
+						NOT = { faction_power = { faction = faction_guelphs power = 1.25 } }
+					}
+					random_list = {
+						40 = {
+						}
+						30 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						30 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 1.25 }
+						NOT = { faction_power = { faction = faction_guelphs power = 1.5 } }
+					}
+					random_list = {
+						50 = {
+						}
+						25 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						25 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 1.5 }
+						NOT = { faction_power = { faction = faction_guelphs power = 1.75 } }
+					}
+					random_list = {
+						60 = {
+						}
+						15 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						25 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 1.75 }
+						NOT = { faction_power = { faction = faction_guelphs power = 2.0 } }
+					}
+					random_list = {
+						70 = {
+						}
+						10 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						20 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 2.0 }
+						NOT = { faction_power = { faction = faction_guelphs power = 2.25 } }
+					}
+					random_list = {
+						80 = {
+						}
+						5 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						15 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_guelphs power = 2.0 }
+						NOT = { faction_power = { faction = faction_guelphs power = 2.25 } }
+					}
+					random_list = {
+						90 = {
+						}
+						10 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Inform other vassals - Investiture (Guelphs)
+character_event = {
+	id = guelphs_ghibellines.7
+	desc = "EVTDESCguelphs_ghibellines.7"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_intrigue
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I_SEE"
+	}
+}
+
+# Demand accepted - Investiture (Guelphs)
+letter_event = {
+	id = guelphs_ghibellines.8
+	desc = "EVTDESCguelphs_ghibellines.8"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EXCELLENT"
+		clr_character_flag = faction_guelphs_ultimatum_taken
+		any_playable_ruler = {
+		    narrative_event = {
+			    id = guelphs_ghibellines.5
+			}
+		}
+	}
+}
+
+# Demand rejected - Investiture (Guelphs)
+letter_event = {
+	id = guelphs_ghibellines.9
+	desc = "EVTDESCguelphs_ghibellines.9"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To War!"
+		
+		clr_character_flag = faction_guelphs_ultimatum_taken
+		faction_guelphs = { # The target (title) of the faction
+			reverse_war = {
+				target = ROOT
+				casus_belli = investiture_conflict
+				faction = faction_guelphs
+			}
+		}
+		
+		hidden_tooltip = { 
+		    rightful_religious_head_scope = {
+			    character_event = {
+				    id = guelphs_ghibellines.14
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+# Ultimatum - Investiture (Ghibellines)
+letter_event = {
+	id = guelphs_ghibellines.10
+	desc = "EVTDESC8005"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { in_faction = faction_ghibellines }
+	}
+	
+	immediate = {
+		FROM = { 
+			diplomatic_immunity = yes 
+			any_faction_backer = {
+				faction = faction_ghibellines
+				diplomatic_immunity = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "They are right.."
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				trait = weak
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+			modifier = {
+				factor = 1.5
+				trait = humble
+			}
+			modifier = {
+				factor = 1.5
+				trait = kind
+			}
+			modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 2.5
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.25
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { 
+				    reverse_opinion = { 
+					    who = ROOT
+					    value = 25
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { 
+				    reverse_opinion = { 
+					    who = ROOT
+					    value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { 
+				    reverse_opinion = { 
+					    who = ROOT
+					    value = 75
+					}
+				}
+			}
+			modifier = {
+				factor = 0.001
+				FROM = {
+					NOT = {
+						faction_power = 
+						{
+							faction = faction_ghibellines
+							power = 0.25
+						}
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = {
+					ai = no
+					NOT = { in_faction = faction_ghibellines }
+				}
+				character_event = { id = guelphs_ghibellines.11 }
+			}
+			FROM = {
+				letter_event = { id = guelphs_ghibellines.12 }
+				any_faction_backer = {
+					faction = faction_ghibellines
+					letter_event = { id = guelphs_ghibellines.12 }
+					diplomatic_immunity = no
+				}
+				diplomatic_immunity = no
+			}
+		}
+		any_demesne_title = {
+			limit = {
+				OR = { tier = KING tier = EMPEROR }
+       				is_titular = no
+       				has_law = investiture_law_0 
+	    		}
+			revoke_law = investiture_law_0
+			add_law_w_cooldown = investiture_law_1
+		}
+		piety = -100
+	}
+	option = {
+		name = "The hell with them!"
+		piety = 50
+		prestige = 25
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			# Account for relative faction power
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_ghibellines power = 0.75 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_ghibellines power = 1.0 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_ghibellines power = 1.25 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_ghibellines power = 1.5 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_ghibellines power = 1.75 } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { faction_power = { faction = faction_ghibellines power = 2.0 } }
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.5 } } }
+				}
+				random = {
+					chance = 5
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.75 } } }
+				}
+				random = {
+					chance = 15
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.75 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.0 } } }
+				}
+				random = {
+					chance = 25
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.0 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.25 } } }
+				}
+				random = {
+					chance = 35
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.5 } } }
+				}
+				random = {
+					chance = 45
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.75 } } }
+				}
+				random = {
+					chance = 55
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.75 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.0 } } }
+				}
+				random = {
+					chance = 65
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.0 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.25 } } }
+				}
+				random = {
+					chance = 75
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.5 } } }
+				}
+				random = {
+					chance = 85
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.75 } } }
+				}
+				random = {
+					chance = 95
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.75 } }
+				}
+				character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+			}
+		}
+		FROM = {
+			letter_event = { id = guelphs_ghibellines.13 days = 3 tooltip = "This will mean war" }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						NOT = { faction_power = { faction = faction_ghibellines power = 0.25 } }
+					}
+					random_list = {
+						60 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						40 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 0.25 } 
+						NOT = { faction_power = { faction = faction_ghibellines power = 0.5 } }
+					}
+					random_list = {
+						10 = {
+						}
+						55 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						35 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 0.5 } 
+						NOT = { faction_power = { faction = faction_ghibellines power = 0.75} }
+					}
+					random_list = {
+						20 = {
+						}
+						50 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						30 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 0.75 } 
+						NOT = { faction_power = { faction = faction_ghibellines power = 1.0 } }
+					}
+					random_list = {
+						30 = {
+						}
+						45 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						25 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 1.0 }
+						NOT = { faction_power = { faction = faction_ghibellines power = 1.25 } }
+					}
+					random_list = {
+						40 = {
+						}
+						30 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						30 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 1.25 }
+						NOT = { faction_power = { faction = faction_ghibellines power = 1.5 } }
+					}
+					random_list = {
+						50 = {
+						}
+						25 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						25 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 1.5 }
+						NOT = { faction_power = { faction = faction_ghibellines power = 1.75 } }
+					}
+					random_list = {
+						60 = {
+						}
+						15 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						25 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 1.75 }
+						NOT = { faction_power = { faction = faction_ghibellines power = 2.0 } }
+					}
+					random_list = {
+						70 = {
+						}
+						10 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						20 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 2.0 }
+						NOT = { faction_power = { faction = faction_ghibellines power = 2.25 } }
+					}
+					random_list = {
+						80 = {
+						}
+						5 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						15 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_ghibellines power = 2.0 }
+						NOT = { faction_power = { faction = faction_ghibellines power = 2.25 } }
+					}
+					random_list = {
+						90 = {
+						}
+						10 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Inform other vassals - Investiture (Ghibellines)
+character_event = {
+	id = guelphs_ghibellines.11
+	desc = "EVTDESCguelphs_ghibellines.11"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_intrigue
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I_SEE"
+	}
+}
+
+# Demand accepted - Investiture (Ghibellines)
+letter_event = {
+	id = guelphs_ghibellines.12
+	desc = "EVTDESCguelphs_ghibellines.12"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EXCELLENT"
+		clr_character_flag = faction_ghibellines_ultimatum_taken
+	}
+}
+
+# Demand rejected - Investiture (Ghibellines)
+letter_event = {
+	id = guelphs_ghibellines.13
+	desc = "EVTDESCguelphs_ghibellines.13"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To War!"
+		
+		clr_character_flag = faction_ghibellines_ultimatum_taken
+		faction_ghibellines = { # The target (title) of the faction
+			reverse_war = {
+				target = ROOT
+				casus_belli = investiture_conflict
+				faction = faction_ghibellines
+			}
+		}
+	}
+}
+
+# Pope notified of investiture contest fight by Guelphs/Lombard League formation
+character_event = {
+	id = guelphs_ghibellines.14
+	desc = "AI_EVENT"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "A" #Send money
+		FROM = {
+		    character_event = {
+			    id = guelphs_ghibellines.15
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	
+	option = {
+		name = "B" #Send troops
+		wealth = -350
+		FROM = {
+		    character_event = {
+			    id = guelphs_ghibellines.16
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = "C" #Join in
+		FROM = {
+		    character_event = {
+			    id = guelphs_ghibellines.17
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+# The Pope sent you money!
+character_event = {
+	id = guelphs_ghibellines.15
+	desc = "EVTDESCguelphs_ghibellines.15"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent" #Cool
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 2.5
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = FROM
+				years = 10
+			}
+		}
+	}
+}
+
+# The Pope sent you troops!
+character_event = {
+	id = guelphs_ghibellines.16
+	desc = "EVTDESCguelphs_ghibellines.16"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent" #Cool
+		tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = FROM
+				years = 10
+			}
+		}
+	    capital_scope = {
+			tooltip = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						attrition = 1.0
+						earmark = faction_revolters
+				        troops = {
+					        pikemen = { 200 200 }
+				        	light_cavalry = { 150 150 }
+				        	light_infantry = { 500 500 }
+				        	heavy_infantry = { 100 100 }
+			        		knights = { 75 75 }
+			        		archers = { 250 250 }
+			    	    }
+					}
+				}
+			}
+		}
+	}
+}
+
+# The Pope joined in the war!
+character_event = {
+	id = guelphs_ghibellines.17
+	desc = "EVTDESCguelphs_ghibellines.17"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent" #Cool
+		hidden_tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = FROM
+				years = 10
+			}
+			FROM = {
+				join_attacker_wars = ROOT
+			}
+		}
+	}
+}
+
+# Lombard League
+character_event = {
+	id = guelphs_ghibellines.18
+	desc = "EVTDESCguelphs_ghibellines.18"
+	
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	trigger = {
+		is_feudal = yes
+	    NOT = { higher_tier_than = DUKE }
+	    k_italy = { has_holder = no }
+	    k_lombard_league = { has_holder = no }
+	    e_hre = { has_holder = yes }
+		year = 1100
+		OR = {
+		    has_landed_title = c_lombardia
+		    has_landed_title = c_brescia
+		    has_landed_title = c_bergamo
+		    has_landed_title = c_como
+		    has_landed_title = c_pavia
+		    has_landed_title = c_cremona
+		    has_landed_title = c_parma
+		    has_landed_title = c_piacenza
+		    has_landed_title = c_genoa
+		    has_landed_title = c_modena
+		    has_landed_title = c_reggionellemilia
+		    has_landed_title = c_ivrea
+		    has_landed_title = c_mantua
+		    has_landed_title = c_novellara
+		    has_landed_title = c_venezia
+		    has_landed_title = c_treviso
+		    has_landed_title = c_bassano
+		    has_landed_title = c_verona
+		    has_landed_title = c_padova
+		}
+		OR = {
+		    trait = ambitious
+			trait = zealous
+			trait = guelph
+			trait = machiavellian
+		    religion_head = { reverse_opinion = { who = ROOT value = 50 } }
+		}
+		NOT = {
+		    trait = ghibelline
+		    year = 1350
+		}
+		culture = italian
+        religion = catholic
+		NOT = { has_global_flag = investiture_contest }
+		NOT = { has_character_flag = refused_lombard_league }
+		NOT = { has_global_flag = lombard_league_formed }
+		liege = {
+		    has_landed_title = e_hre
+		    OR = {
+		        has_law = centralization_2
+		        has_law = centralization_3
+		        has_law = centralization_4
+			}
+			NOT = {
+			    any_war = {
+					using_cb = lower_crown_authority_law
+			    }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 1
+	    modifier = {
+			factor = 0.1
+			tier = COUNT
+		}
+	    modifier = {
+			factor = 0.5
+			trait = humble
+		}
+	    modifier = {
+			factor = 0.25
+			trait = content
+		}
+	    modifier = {
+			factor = 5
+			trait = ambitious
+		}
+	    modifier = {
+			factor = 0.25
+			liege = {
+			    has_law = centralization_2
+			}
+		}
+	    modifier = {
+			factor = 2.5
+			liege = {
+			    has_law = centralization_3
+			}
+		}
+	    modifier = {
+			factor = 4
+			liege = {
+			    has_law = centralization_4
+			}
+		}
+	    modifier = {
+			factor = 2.5
+			trait = guelph
+		}
+		modifier = {
+			factor = 0.35
+			liege = {
+			    reverse_opinion = {
+			        who = ROOT
+			        value = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+			    reverse_opinion = {
+			        who = ROOT
+			        value = 50
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+			    trait = strong
+			}
+		}
+		modifier = {
+			factor = 0.15
+			liege = {
+			    trait = just
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+			    reverse_opinion = {
+			        who = ROOT
+			        value = 75
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+			    reverse_opinion = {
+			        who = ROOT
+			        value = 99
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			liege = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -25
+		            }
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			liege = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -50
+		            }
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			liege = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -75
+		            }
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			liege = {
+			    NOT = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = -99
+		            }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAguelphs_ghibellines.18" #Form it
+		ai_chance = {
+            factor = 0.85
+                modifier = {
+				factor = 0.75
+				trait = cynical
+			}
+            modifier = {
+				factor = 2
+				trait = ambitious
+			}
+            modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0.25
+				trait = craven
+			}
+            modifier = {
+				factor = 1.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 4
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 3
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 2
+				trait = mastermind_theologian
+			}
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 99
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -25
+		                }
+				     }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -50
+		                }
+				     }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -75
+		                }
+				     }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -99
+		                }
+				     }
+			    }
+			}
+		}
+		set_global_flag = lombard_league_formed
+		prestige = 200
+		piety = 100
+		hidden_tooltip = {
+	    	k_lombard_league = {
+		    	grant_title = ROOT   
+     		}
+			e_hre = {
+			    holder_scope = {
+				    ROOT = {
+					    set_defacto_liege = PREV
+					}
+			        letter_event  = {
+				        id = guelphs_ghibellines.21
+					    days = 5
+					}
+				}
+			}
+		}
+		any_playable_ruler = {
+		    limit = { 
+		        OR = {
+        		    has_landed_title = c_lombardia
+        		    has_landed_title = c_brescia
+        		    has_landed_title = c_bergamo
+        		    has_landed_title = c_como
+        		    has_landed_title = c_pavia
+        		    has_landed_title = c_cremona
+        		    has_landed_title = c_parma
+        		    has_landed_title = c_piacenza
+	        	    has_landed_title = c_genoa
+	        	    has_landed_title = c_modena
+	        	    has_landed_title = c_reggionellemilia
+	        	    has_landed_title = c_ivrea
+	        	    has_landed_title = c_mantua
+	        	    has_landed_title = c_novellara
+	        	    has_landed_title = c_venezia
+	        	    has_landed_title = c_treviso
+	        	    has_landed_title = c_bassano
+	        	    has_landed_title = c_verona
+		            has_landed_title = c_padova
+	         	}
+				NOT = {
+				    OR = {
+        		        trait = ghibelline
+					    higher_tier_than = DUKE
+						character = ROOT
+					}
+	        	}
+				OR = {
+        		    independent = yes
+					liege = { has_landed_title = e_hre }
+	        	}
+				culture_group = italian_group
+			}
+			letter_event = {
+			    id = guelphs_ghibellines.19
+				tooltip = "will be asked to join the League"
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBguelphs_ghibellines.18" #Pussy out
+		ai_chance = {
+            factor = 0.15
+            modifier = {
+				factor = 2.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 3.25
+				trait = craven
+			}
+            modifier = {
+				factor = 0.5
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				piety = 300
+			}
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 0.35
+				trait = mastermind_theologian
+			}
+			modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 0
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 10
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 20
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 30
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 40
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 50
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 60
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 70
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 80
+				    }
+			    }
+			}
+		}
+		set_character_flag = refused_lombard_league
+		prestige = -150
+		piety = -50
+	    add_trait = craven
+   		hidden_tooltip = {
+    		character_event = {
+			    id = 38257
+			}
+		}
+	}
+}
+
+# Joining in the Lombard League?
+letter_event = {
+	id = guelphs_ghibellines.19
+	desc = "EVTDESCguelphs_ghibellines.19"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "In the name of the Iron Crown!" #Yes
+		prestige = 75
+		piety = 25
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    liege = {
+					    has_landed_title = e_hre
+					}
+				}
+		        set_character_flag = former_hre
+			}
+			k_lombard_league = {
+			    holder_scope = {
+				    ROOT = {
+					    set_defacto_liege = PREV
+					}
+				}
+	     	}
+			FROM = {
+			    letter_event = {
+				    id = guelphs_ghibellines.20
+				}
+			}
+		}
+		
+		ai_chance = {
+            factor = 0.75
+            modifier = {
+				factor = 0.75
+				trait = cynical
+			}
+            modifier = {
+				factor = 2
+				trait = ambitious
+			}
+            modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0.25
+				trait = craven
+			}
+            modifier = {
+				factor = 1.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 4
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 3
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 2
+				trait = mastermind_theologian
+			}
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 99
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -25
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -50
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -75
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -99
+		                }
+				    }
+			    }
+			}
+		}
+	}
+
+	option = {
+		name = "I don't think so" 
+		piety = -25
+		prestige = -50
+		ai_chance = {
+            factor = 0.25
+            modifier = {
+				factor = 2.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 3.25
+				trait = craven
+			}
+            modifier = {
+				factor = 0.5
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				piety = 300
+			}
+            modifier = {
+				factor = 1.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 0.35
+				trait = mastermind_theologian
+			}
+			modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 0
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 10
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 20
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 30
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 40
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 50
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 60
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 70
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 80
+				    }
+			    }
+			}
+		}
+	}
+}
+
+# FROM has joined in the LL
+letter_event = {
+	id = guelphs_ghibellines.20
+	desc = "EVTDESCguelphs_ghibellines.20"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent"
+        prestige = 25
+	}
+}
+
+# Emperor informed of rebellion and LL creation
+letter_event = {
+	id = guelphs_ghibellines.21
+	desc = "EVTDESCguelphs_ghibellines.21"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "For the Reich!"
+		ai_chance = {
+		    factor = 0.9
+            modifier = {
+				factor = 2.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.75
+				trait = antisemite
+			}
+            modifier = {
+				factor = 0.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 0.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 1.75
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 0.35
+				trait = mastermind_theologian
+			}
+		}	
+        prestige = 50
+		piety = -50
+   		hidden_tooltip = {
+		    k_lombard_league = {
+			    holder_scope = {
+			        letter_event = {
+			            id = guelphs_ghibellines.22
+			        }
+				}
+		    }
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.5 } } }
+				}
+				random = {
+					chance = 5
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.75 } } }
+				}
+				random = {
+					chance = 15
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 0.75 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.0 } } }
+				}
+				random = {
+					chance = 25
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.0 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.25 } } }
+				}
+				random = {
+					chance = 35
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.5 } } }
+				}
+				random = {
+					chance = 45
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.75 } } }
+				}
+				random = {
+					chance = 55
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 1.75 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.0 } } }
+				}
+				random = {
+					chance = 65
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.0 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.25 } } }
+				}
+				random = {
+					chance = 75
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.25 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.5 } } }
+				}
+				random = {
+					chance = 85
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.5 } }
+					NOT = { any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.75 } } }
+				}
+				random = {
+					chance = 95
+					character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = { faction_power = { faction = faction_liege_loyalist power = 2.75 } }
+				}
+				character_event = { id = 45002 days = 60 } # Loyalists flock to the liege's banner
+			}
+		}
+	}
+	
+	option = {
+		name = "I have to comply"
+        prestige = -100
+	    add_trait = craven
+   		hidden_tooltip = {
+    		character_event = {
+			    id = 38257
+			}
+		    FROM = {
+		        letter_event = {
+		       	    id = guelphs_ghibellines.23
+		        }
+	    	}
+		}
+		any_demesne_title = {
+		    if = {
+			    limit = { has_law = centralization_2 }
+		        add_law_w_cooldown = centralization_1
+		    }
+	  	    if = {
+	    		limit = { has_law = centralization_3 }
+		    	add_law_w_cooldown = centralization_2
+	    	}
+	        if = {
+	    		limit = { has_law = centralization_4 }
+	    		add_law_w_cooldown = centralization_3
+	    	}
+		}
+		ai_chance = {
+            factor = 0.25
+            modifier = {
+				factor = 0.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.5
+				piety = 275
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0.5
+				liege = { trait = ghibelline }
+			}
+            modifier = {
+				factor = 1.75
+				liege = { trait = guelph }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 2.35
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 1.5
+				rightful_religious_head_scope = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 0.35
+				rightful_religious_head_scope = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+            modifier = {
+				factor = 1.35
+				trait = mastermind_theologian
+			}
+		}
+	}
+}
+
+# Demand rejected - LL
+letter_event = {
+	id = guelphs_ghibellines.22
+	desc = "EVTDESCguelphs_ghibellines.22"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To War!"
+		
+		e_hre = { 
+		    holder_scope = { 
+		    	reverse_war = {
+		     		target = ROOT
+		    		casus_belli = lower_crown_authority_law
+	    		}
+    		}
+		}
+		
+		hidden_tooltip = { 
+		    rightful_religious_head_scope = {
+			    character_event = {
+				    id = guelphs_ghibellines.14
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+# Demand accepted/War won - LL
+letter_event = {
+	id = guelphs_ghibellines.23
+	desc = "EVTDESCguelphs_ghibellines.23"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent"
+		prestige = 100
+		piety = 75
+		
+		hidden_tooltip = { 
+		    any_vassal = {
+			    limit = { higher_tier_than = BARON }
+			    letter_event = {
+				    id = guelphs_ghibellines.24
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+		    e_hre = {
+		        holder_scope = { 
+		            ROOT = { set_defacto_liege = PREV }
+			    }
+	        }
+	    }
+		
+		k_lombard_league = {
+			destroy_landed_title = THIS
+		}
+	}
+}
+
+# Demand accepted/War won - LL (Vassal notification)
+letter_event = {
+	id = guelphs_ghibellines.24
+	desc = "EVTDESCguelphs_ghibellines.24"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent"
+		prestige = 50
+		piety = 25
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    has_character_flag = former_hre
+				}
+			    clr_character_flag = former_hre
+		        e_hre = {
+			        holder_scope = { 
+			            ROOT = { set_defacto_liege = PREV }
+					}
+				}
+		    }
+		}
+	}
+}
+
+# War lost - LL
+letter_event = {
+	id = guelphs_ghibellines.25
+	desc = "EVTDESCguelphs_ghibellines.25"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A catastrophe"
+		prestige = -150
+		piety = -75
+		
+		hidden_tooltip = { 
+		    any_vassal = { 
+			    limit = { higher_tier_than = BARON }
+			    letter_event = {
+				    id = guelphs_ghibellines.26
+				}
+			}
+		}
+		
+		k_lombard_league = {
+			destroy_landed_title = THIS
+		}
+		hidden_tooltip = {
+		    e_hre = {
+		        holder_scope = { 
+		            ROOT = { set_defacto_liege = PREV }
+			    }
+	        }
+	    }
+	}
+}
+
+# War lost - LL (Vassal notification)
+letter_event = {
+	id = guelphs_ghibellines.26
+	desc = "EVTDESCguelphs_ghibellines.26"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A catastrophe"
+		prestige = -50
+		piety = -25
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    has_character_flag = former_hre
+				}
+			    clr_character_flag = former_hre
+		        e_hre = {
+			        holder_scope = { 
+			            ROOT = { set_defacto_liege = PREV }
+				    }
+		        }
+		    }
+	    }
+	}
+}
+
+# Emperor notified of Ghibellines vs. Guelphs war
+character_event = {
+	id = guelphs_ghibellines.27
+	desc = "EVTDESCguelphs_ghibellines.27"
+	
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "I will send them gold" #Send money
+		FROM = {
+		    character_event = {
+			    id = guelphs_ghibellines.28
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	
+	option = {
+		name = "I will send them troops" #Send troops
+		wealth = -350
+		FROM = {
+		    character_event = {
+			    id = guelphs_ghibellines.29
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "I will fight alongside them!" #Join in
+		FROM = {
+		    character_event = {
+			    id = guelphs_ghibellines.30
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+# The Emperor sent you money!
+character_event = {
+	id = guelphs_ghibellines.28
+	desc = "EVTDESCguelphs_ghibellines.28"
+	
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent" #Cool
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 2.5
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = FROM
+				years = 10
+			}
+		}
+	}
+}
+
+# The Emperor sent you troops!
+character_event = {
+	id = guelphs_ghibellines.29
+	desc = "EVTDESCguelphs_ghibellines.29"
+	
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent" #Cool
+		tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = FROM
+				years = 10
+			}
+		}
+	    capital_scope = {
+			tooltip = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						attrition = 1.0
+				        troops = {
+					        pikemen = { 100 100 }
+				        	light_cavalry = { 150 150 }
+				        	light_infantry = { 100 100 }
+				        	heavy_infantry = { 200 200 }
+			        		knights = { 350 350 }
+			        		archers = { 100 100 }
+			    	    }
+					}
+				}
+			}
+		}
+	}
+}
+
+# The Emperor joined in the war!
+character_event = {
+	id = guelphs_ghibellines.30
+	desc = "EVTDESCguelphs_ghibellines.30"
+	
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent" #Cool
+		hidden_tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = FROM
+				years = 10
+			}
+			FROM = {
+				join_attacker_wars = ROOT
+			}
+		}
+	}
+}
+
+# Attacker/Defender Guelphs vs. Ghibellines event (hidden)
+character_event = {
+	id = guelphs_ghibellines.31
+	desc = "NotShown"
+	
+	picture = GFX_evt_holy_emperor
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+		    limit = {
+		        has_character_modifier = guelph_cb
+		    }
+	        rightful_religious_head_scope = {
+		   	    character_event = {
+			        id = guelphs_ghibellines.14
+		   			days = 5
+		   		}
+		   	}
+	 	}
+		if = {
+		    limit = {
+		        has_character_modifier = ghibelline_cb
+		    }
+	        e_hre = {
+				holder_scope = {
+		         	character_event = {
+		        		id = guelphs_ghibellines.27
+		        		days = 5
+					}
+		        }
+		    }
+		}
+	}
+
+	option = {
+		name = "NotShown"
+	}
+}

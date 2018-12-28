@@ -1,0 +1,102 @@
+##########################################################
+#
+# The Prince and the Thane old age events - written by Wiz
+#
+##########################################################
+
+namespace = oldage
+
+#Reduce fertility / change stats for older characters
+character_event = {
+	id = oldage.1
+	picture = "GFX_evt_illness"
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	trigger = {
+		age = 50 
+		NOT = { has_character_flag = age_50 }
+	}
+		
+	desc = "EVTDESColdage.1"
+	
+
+	option = {
+		name = "EVTOPTAoldage.1"
+		fertility = -0.1
+		change_martial = -1
+		change_learning = 1
+		set_character_flag = age_50
+	}	
+}
+
+character_event = {
+	id = oldage.2
+	picture = "GFX_evt_illness"
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	trigger = {
+		age = 60 
+		NOT = { has_character_flag = age_60 }
+	}
+		
+	desc = "EVTDESColdage.1"
+	
+
+	option = {
+		name = "EVTOPTAoldage.1"
+		fertility = -0.1
+		change_martial = -1
+		change_learning = 1
+		set_character_flag = age_60
+	}	
+}
+
+character_event = {
+	id = oldage.3
+	picture = "GFX_evt_illness"
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	trigger = {
+		age = 70 
+		NOT = { has_character_flag = age_70 }
+	}
+		
+	desc = "EVTDESColdage.1"
+
+	option = {
+		name = "EVTOPTAoldage.1"
+		fertility = -0.1
+		change_martial = -1
+		change_learning = 1
+		set_character_flag = age_70
+	}	
+}
+
+character_event = {
+	id = oldage.4
+	picture = "GFX_evt_illness"
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	trigger = {
+		age = 80 
+		NOT = { has_character_flag = age_80 }
+	}
+		
+	desc = "EVTDESColdage.1"
+
+	option = {
+		name = "EVTOPTAoldage.1"
+		fertility = -0.1
+		change_martial = -1
+		change_learning = 1
+		set_character_flag = age_80
+	}	
+}

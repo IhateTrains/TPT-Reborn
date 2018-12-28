@@ -1,0 +1,35 @@
+# County Title
+title = c_york
+
+# Settlements
+max_settlements = 6
+b_york = castle
+b_st_peters = temple
+b_richmond = castle
+#b_pontefract = castle
+
+b_scarborough = city
+#b_skipton = castle
+#b_conisbrough = castle
+#b_hull = castle
+
+# Misc
+culture = saxon
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_st_peters = tp_christian_church_1
+	b_st_peters = tp_christian_church_2
+	b_st_peters = tp_christian_church_3
+	b_st_peters = tp_barracks_1
+	b_st_peters = tp_wall_1
+	b_st_peters = tp_settlement_1
+	b_st_peters = tp_settlement_2
+	b_st_peters = tp_monastery_1
+	b_scarborough = ct_jewish_community_1
+}
+
+1100.11.11 = { culture = english }
+1187.1.1 = { b_pontefract = castle } 

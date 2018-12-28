@@ -1,0 +1,20 @@
+# 1075 - Wittenberg
+
+# County Title
+title = c_wittenberg
+
+# Settlements
+max_settlements = 4
+
+b_pretzsch = castle
+b_wittenberg = city
+#b_zinna = temple
+#b_juterbog = city
+#b_grafenhainichen = castle
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+ 

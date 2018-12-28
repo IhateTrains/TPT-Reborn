@@ -1,0 +1,27 @@
+# 1119 - Tusculum
+
+# County Title
+title = c_tusculum
+
+# Settlements
+max_settlements = 7
+
+b_castelgandolfolatium = castle
+b_anagni = city
+b_albano = castle
+b_tusculum = temple
+b_terracina = castle
+b_velletri = temple
+b_colonna = castle
+
+#b_alatri = city
+#b_nettuno = city
+#b_ceccano = city
+#b_frosinone = city
+
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History

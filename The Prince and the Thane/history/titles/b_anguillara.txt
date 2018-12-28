@@ -1,0 +1,24 @@
+800.1.1={
+	liege="c_viterbo"
+}
+1010.1.1={
+	holder=1191220 #Ramone degli Anguillara
+}
+1050.1.1={
+	holder=1191221 #Gherardo degli Anguillara
+}
+1114.1.1={
+	holder=1191222 #Giovanni degli Anguillara
+}
+1142.1.1={
+	holder=1191223 #Niccolò degli Anguillara
+}
+1180.1.1={
+	holder=1191224 #Pandolfo I degli Anguillara
+}
+1218.1.1={
+	holder=1191225 #Pandolfo II degli Anguillara
+}
+1275.1.1={
+	holder=1191226 #Orso degli Anguillara
+}

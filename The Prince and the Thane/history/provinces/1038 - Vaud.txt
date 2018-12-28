@@ -1,0 +1,22 @@
+# 1038 - Cheese
+
+# County Title
+title = c_cheese
+
+# Settlements
+max_settlements = 5
+
+b_lausanne = temple
+b_chateaudoex = castle
+b_payerne = city
+b_grandson = castle
+#b_aubonne = castle
+#b_orbe = castle
+#b_cossonay
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
+

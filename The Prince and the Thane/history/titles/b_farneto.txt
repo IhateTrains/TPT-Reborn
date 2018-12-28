@@ -1,0 +1,12 @@
+800.1.1={
+	liege="c_orvieto"
+}
+960.1.1={
+	holder=1191337 #Pietro I Farnese
+}
+1000.1.1={
+	holder=1191261 #Pietro II Farnese
+}
+1058.1.1={
+	holder=1191262 #Pietro III Farnese
+}

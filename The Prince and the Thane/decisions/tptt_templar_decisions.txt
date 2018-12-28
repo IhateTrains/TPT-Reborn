@@ -1,0 +1,58 @@
+decisions = {
+    
+	arrest_the_templars_france  = {
+		is_high_prio = yes
+		potential = {
+			NOT = { has_character_flag = arrest_the_templars }
+            NOT = { trait = templar }
+			independent = yes
+			NOT = { is_female = yes	}
+			year = 1300
+			is_title_active = d_knights_templar
+			OR = {
+				tier = KING
+				tier = EMPEROR 
+			}
+		}
+		allow = {
+			war = no
+			age = 14
+			prestige = 1500
+		}
+		effect = {
+			character_event = { id = templars.2 tooltip = "arrest_templars"}
+	    }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						wealth = 1000
+						scaled_wealth = 3.0
+						trait = zealous
+					}
+				}
+			}
+		}
+	}
+	
+	return_home = {
+		potential = {
+			trait = templar
+			is_ruler = yes
+			age = 35
+		}
+		allow = {
+			scaled_wealth = 2.0
+		}
+		effect = {
+            set_character_flag = retired_templar  
+            set_character_flag = going_home 
+            character_event = { id = templars.31 days = 730 tooltip = "book passage on the first ship to the homeland" }   
+		}
+		ai_will_do = {
+			factor = 0.1
+	    }
+	}
+}

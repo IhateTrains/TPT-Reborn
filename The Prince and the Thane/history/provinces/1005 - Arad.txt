@@ -1,0 +1,21 @@
+# 1005 - Arad
+
+# County Title
+title = c_arad
+
+# Settlements
+max_settlements = 4
+
+b_arad = castle
+b_jeno = temple
+b_zarandvar = castle
+
+#b_pankota = castle
+#b_csente = castle
+#b_desznyey = castle
+
+# Misc
+culture = hungarian
+religion = catholic
+
+# History

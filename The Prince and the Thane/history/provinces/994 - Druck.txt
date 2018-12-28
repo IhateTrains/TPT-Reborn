@@ -1,0 +1,18 @@
+# 994 - Druck
+
+# County Title
+title = c_druck
+
+# Settlements
+max_settlements = 4
+
+b_druck = castle
+b_borisow = city
+#b_teterin = temple
+#b_obolci = castle
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History

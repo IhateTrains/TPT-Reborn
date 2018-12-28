@@ -1,0 +1,27 @@
+# 936 - Amalfi
+
+# County Title
+title = c_amalfi
+
+# Settlements
+max_settlements = 5
+
+b_amalfi = city
+b_sorrento = castle
+b_positano = city
+b_sarno = castle
+#b_nocera = temple
+
+# Misc
+culture = langobardisch
+religion = catholic
+terrain = hills
+
+# History
+950.1.1 = { trade_post = b_damalfi }
+1073.1.1 = { 
+	capital = b_sorrento
+}
+1140.1.1 = { 
+    culture = neapolitan
+}

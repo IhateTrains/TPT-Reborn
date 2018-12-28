@@ -1,0 +1,15 @@
+# 1342 - Dakhila
+
+# County Title
+title = c_dakhila
+
+# Settlements
+max_settlements = 1
+b_dakhila = castle
+
+# Misc
+culture = bedouin_arabic
+religion = sunni
+
+# History
+

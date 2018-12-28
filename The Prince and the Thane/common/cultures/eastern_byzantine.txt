@@ -1,0 +1,48 @@
+
+eastern_byzantine = {
+
+	graphical_culture = easterngfx
+	georgian = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.6 0.3 0.8 }
+
+		male_names = {
+			Adarnase Aghsartan Aleksandre_Alexander Andronik_Andronicus Anzori Archili Ashot Bagrat Bakur Davit_David Demetre_Demetrius Demna Djavakhi Erekle_Heracles Gabrieli_Gabriel Gagiki_Gagik Giorgi_George Grigoli_Gregory Guaram Gubaz
+			Gurgen_Lupo Iese Ioane_John Iveri Jarji Kakhi Koba Konstantine_Constantine Kvarkvare Kvirike Levan_Leo Luarsab Malkhazi Mamia Merab Mikheil_Michael Mukhran Nerse Nikoloz_Nicholas Okhropir Orbeli
+			Padla Samoeli_Samuel Shota Simon_Simon Stepanoz_Stephen Sumbat Teimuraz Tornike Ushisha Vache Vakhtang Zurab Zviad
+		}
+		female_names = {
+			Ana_Anna Baia Bedisa Borena Chiora Chito Dali Dedika Duda Dzabuli Elene_Helen Eliso Endzela Gogutsa Gulchara Guliko Gulisa Gulvardi Guranduht Ia Judjuna
+			Kekela Ketevan Lamara Lamzira Lela Mariami Mathiko Mthvarisa Mzekhar Natia Nino Rusudan Sanatha Shorena Shukhia Suliko
+			Tamari Taplo Tinatini Tsiala Vardo
+		}
+		
+		from_dynasty_prefix = "ve "
+		
+		male_patronym = "shvili"
+		prefix = no
+
+		modifier = eastern_culture_modifier
+	}
+	armenian = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.5 0.2 0.5 }
+
+		male_names = {
+			Abas Aboughamr Aboulgharib Aleksandr_Alexander Artashes Artavazd Arsen Arshak Ashot Atrnerseh Avedis Bagrat Bedros_Peter Boghos_Paul Davit_David Eshkhan Gagik_Gagik Gevorg_George
+			Gosdantin_Constantine Grigor_Gregory Gurgen_Lupo Hagop Hethum Hovhannes_John Hovsep_Joseph Kapriel_Gabriel Khachik Khosrov Levon_Leo Malkhas Mamigon Manuel_Manuel Margos_Marcus Melek Mikayel_Michael Mleh Mushegh Mzhezh
+			Nerseh Oshin Roupen Sahag Sarkis Sevag Smbat Stepanos_Stephen Taniel_Daniel Tatoul Tigran Tornik Tovmas_Thomas Thoros_Theodore Trdat Vagharshak Vahag Vahan Vahram Varazdat Vassak Vesd
+		}
+		female_names = {
+			Aghavni Alitz_Alice Almasd Anahid Anna_Anna Anoush Arda Arevig Arin Baydzar Berjanoush Berjouhi Datevig Dalita Eliz_Eloise Gadar Gorandoukht Hasmig Houri Hranoush
+			Hripsimeh Keghanoush Keran Kohar Latavri Leyli Lousin Mara Margarid_Margaret Maria_Maria Mariyam Meghranoush Nane Nazani Ovsanna Pounig Razmouhi Rita Seta Siran Sirvart
+			Srpouhi Shoushanig Takouhi Tamar Vartanoush Vartouhi Vosgi Yeva Zabel Zmroukhd
+		}
+		
+		from_dynasty_prefix = "ve"
+		
+		modifier = eastern_culture_modifier
+	}
+}

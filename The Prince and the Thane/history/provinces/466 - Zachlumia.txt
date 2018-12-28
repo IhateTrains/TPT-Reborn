@@ -1,0 +1,28 @@
+# 466 - Zachlumia
+
+# County Title
+title = c_zachlumia
+
+# Settlements
+max_settlements = 4
+
+b_blagaj = castle
+#b_kljuc = castle
+#b_gabela = castle
+#b_stolac = castle
+#b_dbar = castle
+#b_konjic = city
+#b_gacko = city
+#b_kom = temple
+#b_nevesinje = city
+#b_konacpolje = city
+#b_rastani = temple
+#b_biskup = temple
+
+# Misc
+culture = croatian
+religion = catholic
+
+# History
+
+ 

@@ -1,0 +1,119 @@
+######################################
+#New southern_italian dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035431-1000035480
+######################################
+
+1000035432 = {
+name="Castriota" # not really italian
+ culture = southern_italian
+}
+
+1000035433 = {
+name="d'Amico"
+ culture = southern_italian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 120
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035434 = {
+name="de Monti"
+ culture = southern_italian
+}
+1000035435 = {
+name="Ligorio"
+ culture = southern_italian
+# coupé d'azur et d'or, au lion de l'un en l'autre
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 0
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 0
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  }
+}
+1000035436 = {
+name="Longo"
+ culture = southern_italian
+# d'azur à la fasce d'or, accompagnée de trois étoiles de même, deux en chef, une en pointe 
+}
+1000035437 = {
+name="Paladini"
+ culture = southern_italian
+# de gueules à la croix alésée d'argent, cantonnée de quatre fleurs de lis d'or 
+}
+1000035438 = {
+name="Pentasuglia"
+ culture = southern_italian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 196
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035439 = {
+name="Falluca"
+ culture = southern_italian
+}
+1000035440 = {
+name="Borrello"
+ culture = southern_italian
+# de gueules à la bande d'argent, chargée de trois huchets de gueules posés en bande 
+}
+1000035441 = {
+name="Pignatelli"
+ culture = southern_italian
+# d'or à trois chaudrons de sable
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 233
+          emblem = 0
+          color = 3
+          color = 0
+          color = 0
+      }
+  }
+}
+
+
+######################################
+#Generic dynasites
+#Range 1000035481-1000035500
+######################################
+
+
+
+

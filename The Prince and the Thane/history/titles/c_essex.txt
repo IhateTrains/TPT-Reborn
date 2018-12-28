@@ -1,0 +1,60 @@
+1066.1.1={
+	liege="d_kent"
+	holder=130 #Leofwine
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1066.10.14={
+	liege="k_england"
+}
+1066.10.14={
+	holder=140 #William the Conqueror
+}
+1087.9.9={
+	holder=146 #William II Rufus
+}
+1100.8.3={
+	holder=202992 #Henry I
+} 
+1135.12.2={
+	holder=205851 #Stephen
+}
+1140.5.1={
+	holder=204745 #Geoffrey de Mandeville
+}
+1144.10.1={
+	holder=129050 #Geoffrey de Mandeville
+}
+1166.1.1={
+	holder=204740 #William de Mandeville
+}
+1189.11.14={
+	holder=204510 #Richard I Lionheart
+}
+1199.4.6={
+	holder=129051 #Geoffrey FitzPeter
+}
+1213.10.14={
+	holder=129052 #"Geoffrey FitzGeoffrey"
+}
+1216.2.23={
+	holder=129053 #"William FitzGeoffrey"
+}
+1227.1.1={
+	holder=454522 #Henry III
+}
+1239.1.1={
+	holder=7462 #Humphrey de Bohun
+}
+1275.9.24={
+	holder=7463 #Humphrey de Bohun
+}
+1298.12.31={
+	holder=454561 #Humphrey de Bohun
+}
+1321.11.6={
+	holder=7464 #John of Bohun
+}
+1335.1.20={
+	holder=454560 #Humphrey de Bohun
+}

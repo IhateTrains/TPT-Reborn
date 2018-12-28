@@ -1,0 +1,22 @@
+# 1295 - Lahoysk
+
+# County Title
+title = c_lahoysk
+
+# Settlements
+max_settlements = 3
+
+b_lahoysk = castle
+b_budslau = temple
+
+#b_vileyka = city
+#b_miadziel = temple
+
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+

@@ -1,0 +1,22 @@
+# 803 - Quattara
+
+# County Title
+title = c_quattara
+
+# Settlements
+max_settlements = 2
+b_siwa = castle
+#b_quattara = city
+
+#b_qaretagnes = castle
+#b_abdannabi = castle
+#b_dayr = castle
+#b_alamelshwawish = castle
+#b_ziwaelbahari = castle
+
+# Misc
+culture = bedouin_arabic
+religion = sunni
+
+# History
+

@@ -1,0 +1,216 @@
+#################### 
+#
+# TITULAR EMPIRES
+#
+####################
+
+e_hungary = { #Hungary-Croatia
+	color={ 150 51 51 }
+	color2={ 255 255 255 }
+	
+	capital	= 444 # Esztergom
+
+    name_tier = king
+
+    culture = hungarian
+	
+	# Creation/usurpation trigger
+	allow = {
+		independent = yes
+		OR = { 
+			culture = hungarian
+			culture = croatian
+		}
+		religion_group = christian
+		AND = {
+			has_landed_title = k_hungary
+			has_landed_title = k_croatia
+		}
+	}
+}
+
+e_nordmannia = { #Viking Empire
+	color = { 6 42 127 }
+	color2={ 136 157 23 }
+	
+	capital = 266 # Sjaelland
+	culture = danish
+
+	title = "EN"
+	foa = "EN_FOA"
+	
+	short_name = yes
+	
+	catholic = 100 # Crusade target weight
+	
+	# Creation/usurpation trigger
+	allow = {
+		independent = yes
+		OR = { 
+            culture = gothic
+			culture = swedish 
+			culture = danish
+			culture = norwegian
+		}
+		religion_group = christian
+		AND = {
+			has_landed_title = k_denmark
+			has_landed_title = k_norway
+			has_landed_title = k_sweden
+		}
+	}
+}
+
+e_poland = { #Poland-Lithuania
+	color={ 179 0 45 }
+	color2={ 255 255 255 }
+	culture = polish
+     
+	title = "EP"
+	foa = "EP_FOA"
+	title_prefix = "EP_OF"
+	
+	# Creation/usurpation trigger
+	allow = {
+		independent = yes
+		OR = { 
+			culture = polish
+			culture = lithuanian
+		}
+		religion_group = christian
+		AND = {
+			has_landed_title = k_poland
+			has_landed_title = k_lithuania
+		}
+	}
+}
+
+
+e_russia = { #Empire of Rus
+	color={ 66 99 19 }
+	color2={ 255 255 255 }
+	
+	capital = 575 # Moscow
+	
+	culture = russian
+
+	allow = {
+		independent = yes
+		religion_group = christian
+		culture = russian
+	}	
+}
+
+e_italy = { #United Kingdom of Italy
+	color={ 51 124 91 }
+	color2={ 255 255 255 }
+
+    name_tier = king
+
+	capital = 235 # Lombardia        
+
+    culture = italian
+    allow = {
+		independent = yes
+        religion_group = christian
+		OR = {
+		    culture_group = italian_group
+			culture = sardinian
+			culture = sicilian
+			culture = neapolitan
+		}
+		AND = {
+		    has_landed_title = k_italy
+            has_landed_title = k_sicily
+		}
+	}
+}	
+
+e_france = { #United Kingdom of France
+	color={ 74 133 186 }
+	color2={ 255 255 255 }
+	
+	capital = 112 # Ile de France
+	
+	culture = frankish	
+        
+	title = "EF"
+	foa = "EF_FOA"
+	title_prefix = "EF_OF"
+	
+	# Creation/usurpation trigger
+	allow = {
+		independent = yes
+		OR = { 
+			culture = frankish
+			culture = breton
+			culture = occitan
+			culture = occitan
+			culture = norman
+			culture = francoprovençal
+		}
+		religion_group = christian
+		AND = {
+			has_landed_title = k_france
+			has_landed_title = k_burgundy                          
+			has_landed_title = c_ile_de_france
+			has_landed_title = d_brittany
+			has_landed_title = d_aquitaine
+		}
+	}
+}
+
+e_iberia = { #Spain
+	color={ 233 200 20 }
+	color2={ 255 255 255 }
+	
+	capital = 197 # Toledo
+	
+	culture = castillan
+	
+	# Creation/usurpation trigger
+	allow = {
+		independent = yes
+	    OR = {
+		    culture_group = iberian
+            culture = catalan
+		}
+		AND = {
+			has_landed_title = k_castille
+			has_landed_title = k_aragon       
+		}
+	}
+}
+
+e_albion = { #United Kingdom
+	color={ 191 16 16 }
+	color2={ 20 100 255 }
+	
+	capital = 32 # Middlesex
+	
+	allow = {
+		independent = yes
+		OR = {
+			culture = saxon
+			culture = scottish
+			culture = welsh
+			culture = norman		
+			culture = english 
+		}
+		religion_group = christian 
+		OR = {
+			AND = {
+				has_landed_title = k_england
+				has_landed_title = k_wales 
+			}
+			AND = {
+				has_landed_title = k_scotland
+				has_landed_title = k_wales
+			}
+			AND = {
+				has_landed_title = k_england
+				has_landed_title = k_scotland 
+			}
+		}
+	}
+}	

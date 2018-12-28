@@ -1,0 +1,26 @@
+# 252 - Ulm
+
+# County Title
+title = c_ulm
+
+# Settlements
+max_settlements = 4
+
+b_katzenstein = castle
+b_ulm = city
+b_leipheim = city
+#b_zwiefalten = temple
+#b_biberach = castle
+#b_memmingen = city
+#b_isny = castle
+#b_erbach = castle
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+1000.1.1 = { 
+	b_ulm = ct_jewish_community_1
+}
+

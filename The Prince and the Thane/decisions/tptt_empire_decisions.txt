@@ -1,0 +1,316 @@
+decisions = {
+
+create_commonwealth_poland = {
+	is_high_prio = yes
+		
+	potential = {
+	    has_landed_title = k_poland
+		OR = { 
+			culture = polish
+			culture = lithuanian
+		}
+		e_poland  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		AND = {
+			has_landed_title = k_poland
+			has_landed_title = k_lithuania
+		}
+		wealth = 500
+		prestige = 1500
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_poland = {
+			grant_title = ROOT
+			copy_title_laws = k_poland
+			copy_title_history = k_poland
+		}
+		k_poland = {
+			destroy_landed_title = THIS
+		}
+		k_lithuania = {
+			destroy_landed_title = THIS
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_commonwealth_hungary = {
+	is_high_prio = yes
+		
+	potential = {
+	    has_landed_title = k_hungary
+		OR = { 
+			culture = hungarian
+			culture = croatian
+		}
+		e_hungary  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		AND = {
+			has_landed_title = k_hungary
+			has_landed_title = k_croatia
+		}
+		wealth = 500
+		prestige = 1500
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_hungary = {
+			grant_title = ROOT
+			copy_title_laws = k_hungary
+			copy_title_history = k_hungary
+		}
+		k_hungary = {
+			destroy_landed_title = THIS
+		}
+		k_croatia = {
+			destroy_landed_title = THIS
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_viking_empire = {
+	is_high_prio = yes
+		
+	potential = {
+		OR = { 
+            culture = gothic
+			culture = swedish 
+			culture = danish
+			culture = norwegian
+		}
+		OR = {
+			has_landed_title = k_denmark
+			has_landed_title = k_norway
+			has_landed_title = k_sweden
+		}
+		e_nordmannia  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		AND = {
+			has_landed_title = k_denmark
+			has_landed_title = k_norway
+			has_landed_title = k_sweden
+		}
+		wealth = 500
+		prestige = 2000
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_nordmannia = {
+			grant_title = ROOT
+			copy_title_laws = k_denmark
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_russian_empire = {
+	is_high_prio = yes
+		
+	potential = {
+        culture = russian
+		higher_tier_than = DUKE
+		e_russia  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		has_landed_title = k_kiev
+		prestige = 1250
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_russia = {
+			grant_title = ROOT
+			copy_title_laws = k_kiev
+			copy_title_history = k_kiev
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_italian_kingdom = {
+	is_high_prio = yes
+		
+	potential = {
+		OR = {
+		    culture_group = italian_group
+			culture = sardinian
+			culture = sicilian
+			culture = neapolitan
+		}
+		has_landed_title = k_italy
+		e_italy  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		AND = {
+			has_landed_title = k_italy
+			has_landed_title = k_sicily
+		}
+		prestige = 1500
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_italy = {
+			grant_title = ROOT
+			copy_title_laws = k_italy
+			copy_title_history = k_italy
+		}
+		k_italy = {
+			destroy_landed_title = THIS
+		}
+		k_sicily = {
+			destroy_landed_title = THIS
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_french_kingdom = {
+	is_high_prio = yes
+		
+	potential = {
+		OR = { 
+			culture = frankish
+			culture = breton
+			culture = occitan
+			culture = occitan
+			culture = norman
+			culture = francoprovençal
+		}
+		has_landed_title = k_france
+		e_france  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		AND = {
+			has_landed_title = k_france
+			has_landed_title = k_burgundy                          
+			has_landed_title = c_ile_de_france
+			has_landed_title = d_brittany
+			has_landed_title = d_aquitaine
+		}
+		prestige = 1500
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_france = {
+			grant_title = ROOT
+			copy_title_laws = k_france
+			copy_title_history = k_france
+		}
+		k_france = {
+			destroy_landed_title = THIS
+		}
+		k_burgundy = {
+			destroy_landed_title = THIS
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_spanish_kingdom = {
+	is_high_prio = yes
+		
+	potential = {
+		OR = { 
+			culture_group = iberian
+			culture = catalan
+		}
+		has_landed_title = k_castille
+		e_iberia  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		AND = {
+			has_landed_title = k_castille
+			has_landed_title = k_aragon       
+		}
+		prestige = 1500
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_iberia = {
+			grant_title = ROOT
+			copy_title_laws = k_castille
+			copy_title_history = k_castille
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+create_united_kingdom = {
+	is_high_prio = yes
+		
+	potential = {
+		OR = {
+			culture = saxon
+			culture = scottish
+			culture = welsh
+			culture = norman		
+			culture = english 
+		}
+		has_landed_title = k_england
+		e_albion  = { has_holder = no }
+	}
+	allow = {
+		religion_group = christian
+		has_landed_title = k_england
+		OR = {
+			has_landed_title = k_scotland
+			has_landed_title = k_wales
+		}
+		wealth = 500
+		prestige = 1750
+	}
+	ai_will_do = {
+		factor = 1			
+	}
+	effect = {
+		e_albion = {
+			grant_title = ROOT
+			copy_title_laws = k_england
+			copy_title_history = k_england
+		}
+		wealth = -500
+		prestige = 500
+		piety = 150
+	}
+}
+
+}

@@ -1,0 +1,23 @@
+933.1.1={
+	holder=2220050 #Atto di Sorrento
+	holding_dynasty = 7183 # di Sorrento
+	liege="d_gaeta"
+}
+972.1.1={
+	holder=2220051 #Rodoald di Sorrento
+}
+1021.1.1={
+	holder=2220052 #Sico di Sorrento
+}
+1039.1.1={
+	holder=0
+}
+1045.1.1={
+	holder=2220053 #Alboin di Sorrento
+}
+1068.1.1={
+	holder=2220054 #Ado di Sorrento
+}
+1091.1.1={
+	holder=0
+}

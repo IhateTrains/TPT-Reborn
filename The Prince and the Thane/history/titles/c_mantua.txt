@@ -1,0 +1,26 @@
+980.1.1={
+	holder=1191184 #Adalberto Azzo di Canossa
+	liege="d_toscana"
+}
+988.1.1={
+	holder=7756 #Bonifacio di Canossa
+}
+1052.5.6={
+	holder=7758 #Federigo di Canossa
+}
+1055.7.1={
+	holder=7757 #Matilda di Canossa
+}
+1115.7.24={
+	liege="e_hre"
+	#comune after Matilda's death
+}
+1318.1.1={
+	holder=413024 #first Gonzaga
+}
+1319.1.1={
+	liege="0"
+}
+1328.1.1={
+	holder=413027
+}

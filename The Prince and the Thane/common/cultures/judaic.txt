@@ -1,0 +1,157 @@
+judaic = {
+	graphical_culture = muslimgfx
+
+	sephardic = {
+		graphical_culture = southerngfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		used_for_random = no
+		
+		color = { 0.4 0.6 0.3 }
+		male_names = {
+			"Ben Tsion" "Shem Tov" "Siman Tov" Abba_Abbas Abdallah_Abdullah 
+			Abel_Abel Abiezer Abitob Abner_Abner Abraham_Abraham Abshalom_Absolom
+			Abud_Abud Adam_Adam Addi Aharon_Aaron Akiva Allal Allouche Aluf Amar_Amr 
+			Amin_Amin Amnon Amon Amos Amram Ariel_Ariel Arie_Ariel Asher Aslan Ayush Azaria 
+			Aziz_Aziz Azoum_Azim Azran Azriel Barukh Barzilai Bekhor Benyamin_Benjamin 
+			Berekhia Betsalel Boaz Caleb_Kaleb Chebabe Chefatya Cherif Damam 
+			Daniel_Daniel Dan_Daniel David_David Efraim Elazar Eldad Elghali Elhanan 
+			Eliahu Eliakim Eliashiv Eliezer Elishama Elisha_Elias Elkana Eviatar 
+			Ezer Ezra Faradji Farid Fraji Gabriel_Gabriel Gad Gedalia Gershon 
+			Ghali_Ghalib Gideon Giora Habib Hagai Hai Haim Hakham_Hakim Halim 
+			Hallil_Halil Hananel Hanania Hani Hannoun Hanokh_Hanokh Haouali Hasdai 
+			Hassan_Hasan Hassin_Hasan Hillel Hizkia Ibrahim_Abraham Imanuel 
+			Ishmael_Ishmael Israel_Israel Itamar Iyad Jamil_Jamal Kaduri KaIifa 
+			Khaled_Khalid Khalfon Khalifa Khamus Levi Maatuk Makhluf Malakhi Mallah 
+			Manoah Mansur Marzuk Mashiah Masliah Matatia Matsliah Mebourakh Meir 
+			Meleh Menahem Menashe_Menashe Mendil Meshulam Messod Mevorakh Meyuhas 
+			Mikhael_Michael Mordekhai Moshe_Moses Naaman Naftali Nahman Nahshon 
+			Nahum Naim Natan Natanel Nehemia Nehorai Nisim_Nisim Noah Ohad Ovadia_Obadia 
+			Ozer Perahia Perets Pesah_Pesakh Petahia Pinhas Rabenu_Reuben Rafael Rahamim 
+			Reuben_Reuben Saadia Saadon Saad_Said Said Salem_Salim Sason_Samson Sevi Shabtai 
+			Shalev Shalom Shama Shaul Shealtiel Shemaria Shemaya Shimon_Simon 
+			Shimshon_Samson Shlomo Shmuel_Samuel Shukri Shushan Sid Simhon 
+			Suliman_Solomon Toubia Toufik Tsadik Tsadok Tsemah Tsion Ulad Uriel 
+			Uziel Yaakov_Jacob Yaish Yakir Yamin Yedidia Yefet Yehezkel Yehiel 
+			Yehoshua Yehuda_Yehuda Yekutiel Yerahmiel Yeshaya Yiftah Yihye Yirmiyahu 
+			Yisaskhar Yishmael_Ishmael Yisrael_Israel Yitshak_Isaac Yoav Yoel Yohanan Yom 
+			Tov Yona Yonathan Yosef_Joseph Zebouloun_Zebulon Zeev Zekharia_Zacharias Zerah 
+			Zerahia 
+		}
+		female_names = {
+			"Bat Sheva" Hasna'a Abigail Ada_Ada Adina_Adina Agar Aida Aisha_Aisha 
+			Alia Aliza_Alice Aljafa Amalia_Amelia Amina_Aamina Amira_Aamira Awali 
+			Badra_Badra Bahia Barucha Batia Bekhora Beya_Beyan Boulissa_Bulisa 
+			Brakha Bulisa_Bulisa Camuna Damtia Dana_Dana Debora Delisia Dina_Dinah 
+			Dudun Dulsae_Douce Edna Elisheva Ermoza Esther Estreya Fakima_Fatima 
+			Farida_Farida Freha Gemila Ghalia Ghezala Gmara Gulsum_Gulsum Habiba 
+			Hadassa Hanem Hanna_Hannah Hasiba_Habiba Hava Haya_Hayat Hnina Izza 
+			Jamila_Jamileh Jemima Johar Kabira Kaden Kamer Kamuna Khamissa 
+			Laila_Layla Lea Lulu Maatuka Malika_Malika Malka Marhaba Martha_Martha 
+			Maymona Mazal Menora Merkada_Merquada Merquada_Merquada Mesoda Mina_Mina 
+			Miriam_Maria Naama Nadjma Naomi Naziha Nehama Oruçeti Oumila Palomba 
+			Penina Presiada Rahel_Rachel Rahma Reyhan Rica Richetta_Ricarda Rivka 
+			Rumiya Ruth_Ruth Saada Sabatia Saida Salma_Salma Saphira Sara_Sarah Sedike 
+			Shoshana_Susana Sida Simha Simone_Simonis Sitbona Siti Sultana 
+			Susanna_Susana Tamar_Tamar Tama_Tamar Tamo Tova Tsipora Turkia Wardia 
+			Yael Yafa Yakot Yamna Yasmin_Yasmin Yehudit Yokheved Zahra_Zahra Zana 
+			Zinbul 
+		}
+
+		from_dynasty_prefix = ""
+		
+		male_patronym = "ben "
+		female_patronym = "bat "
+		prefix = yes
+
+		modifier = sephardic_culture_modifier
+
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 20
+		mother_name_chance = 20
+	}
+	
+	mizrahi = {
+		graphical_culture = muslimgfx
+		
+		color = { 0.5 0.5 0.3 }
+
+		male_names = {
+			Aaron_Aaron Abdallah Abir Abraham_Abraham Adonim Ali Allan_Alan Allun_Alan Amin Ammar Amram Antuh Arah Arus Asad Ata Awad Ayyash Azarya Azhar Aziza
+			Baha Bana Barakat Barhun Baruch Benaya Berakhot Berechiah Bishara Bishr Bundar Burayk Daniel_Daniel Daniyal_Daniel Daud_David David_David Dosa Durri
+			Efraim Elazar Eli Elijah_Elijah Ephraim Evyatar Ezar Ezekiel Ezer Fadl Farah Faraj Fashshat Fayruz Furat Futuh Gazal Ghalib Ghulayb Halfon Hananel
+			Hananya Harbonah Hasan Hasday Hassun Hatib Hayfa Hayyim Hesed Hezekiah Hiba Hillel Hisday Hotam Husayn Ibrahim_Abraham Imran Iran Isaac_Isaac Isaiah_Isaiah
+			Ishaq_Isaac Ismail_Ismail Israel Jabir Jacob_Jacob Japtheth Jarrah Jekuthiel Joseph_Joseph Joshiah Joshua_Joshua Judah_Judah Jurj_George Kammuna Khadir
+			Khalaf Kohen Kulayb Labrat Levi Maani Madmun Mahruz Makhluf Manasse Mansur Marduk Marwan Masliah Mawhub Mehullal Meir Meshullam Mevasser Mevorakh
+			Misgaviya Mishael_Michael Moses_Moses Muammar Mubarak Mufaddal Muhriz Muhsin Mukhtar Muqbil Musa_Moses Musafir Muwaffaq Nahman Nahray Nahum Nasr Nathan_Nathan
+			Nethanel Nissim Nufay Obadiah_Obadiah Paltiel Perahya Qasasa Rahma Rahmamin Raja Rashid Rayhan Rayyis Saada Saadya Sad Sadaqa Sadel Sadoq Sadr Safi
+			Sahl Sahlan Sahlawayh Said Salam Salama Salih Salman Salmuna Samuel_Samuel Sandal Sariyy Sason Sedaqa Semah Shabbat Shabbetay Shalom Shaman Shaul Shaya
+			Shekhanya Shela Shelah Shemarya Shemaya Shua Siba Sighmar Simha Solomon_Solomon Sulayman_Solomon Surur Tahir Tahor Tajin Tammam Tanim Tarib Tovia 
+			Ulla Umayra Usayd Wahb Yahya_John Yair Yaish Yakhin Yaqub_Jacob Yehiel Yekuthiel Yeshua Yihye Yukuthiel Yusha Yusuf_Joseph Zachariah_Zachary Zakarriyya_Zachary Zayn
+			}
+		female_names = {
+			Abla Afaf Akramiyya Alam Amaim Atika Aziza Bagdad Bahiyya Banat Banuqa Baqa Baqiyya Baraka Barra Berakha Bushr Cassia Dalal Dhahab Dhukhr Diya Esther_Esther
+			Fadla Fahda Faiza Fakhr Faraj Farajiyya Faras Furayja Ghaliya Ghunya Haritha Hasab Hasna Haya Hayfa Haziyya Hiba Hilala Husn Jamila Jawhara Jayyida
+			Karima Kassah Khafar Khalifa Khazariyya Khiba Khulla Kifa Kufu Labwa Layla Maani Mahfuza Malika Mawadda Mawlat Maymuna Milah Miriam_Maria Muammala 
+			Muazzaza Mubaraka Mudallila Muffadat Muluk Muna Munisa Naama Naba Nabila Nafisa Najiya Nasab Nasiya Nasr Nazar Nisaba Qurra Rafia Ramle Rashida
+			Rayyisa Rebekah Rivka Saada Sabah Sadah Salama Samra Sara_Sarah Sarwa Sayyida Sittan Sitthum Sittuna Sumr Surura Sutayt Talba Tawfiq Thamira Tujjar
+			Turayk Turfa Turkiyya Wad Wazira Wuhsha Yaman Yumm Zafira Zayn
+			}
+
+		from_dynasty_prefix = ""
+		
+		male_patronym = "ben "
+		female_patronym = "bat "
+		prefix = yes
+		
+		founder_named_dynasties = yes
+
+		modifier = sephardic_culture_modifier
+
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 20
+		mother_name_chance = 20	
+	}
+
+    ashkenazi = {
+		graphical_culture = westerngfx
+		
+		color = { 0.1 0.3 0.1 }
+		
+		used_for_random = no
+
+		male_names = {
+	        Avraham_Abraham Yosef_Joseph Shmiel_Samuel Moses_Moses David_David Judah_Yehuda Salomon_Salomon Saul_Peter Joseph_Joseph
+			Isaac_Isaac Jacob_Jacob Daniel_Daniel Michael_Michael Aaron_Aaron Benedict_Benedict Emmanuel_Emanuel Yom-Tov_Yom-Tov 
+			Chayym_Chayym Caleb_Caleb Ezrah_Ezrah Joshua_Joshua Nathan_Nathan Nahum Gershom_Gershom Asher_Asher Shimon_Simon Yonathan_Jonathan
+		}
+		female_names = {
+		    Simcha_Simcha Haya_Haya Esther_Esther Judith_Judith Sarah_Sarah Rivka_Rebecca Anna_Anna Simcha_Simcha Haya_Haya Myriam_Maria
+			Rebecca_Rebecca Guta Bona_Bonne Tziporah_Tziporah Leah_Leah Margaret_Margaret Joy_Joy Mirabel_Mirabel
+		}
+		
+		from_dynasty_prefix = ""
+		
+		male_patronym = "ben "
+		female_patronym = "bat "
+		prefix = yes
+
+		modifier = ashkenazi_culture_modifier
+
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 20
+		mother_name_chance = 20
+	}
+}

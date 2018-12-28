@@ -1,0 +1,22 @@
+860.1.1={
+    liege="e_hre"
+}
+1230.1.1={
+    liege=k_papal_state
+}
+1239.1.1={
+	holder=73595 #Malatesta I Malatesta
+}
+1290.1.1={
+	holder=73586 #Malatesta II Malatesta
+}
+1317.1.1={
+	holder=73597 #Pandolfo Malatesta
+}
+1326.1.1={
+	holder=73600 #Malatesta III Malatesta
+}
+
+
+
+

@@ -1,0 +1,21 @@
+# 239 - Geneve
+
+# County Title
+title = c_geneve
+
+# Settlements
+max_settlements = 4
+b_gex = castle
+b_geneve = temple
+b_faucigny = castle
+#b_nyon = city
+#b_annecy = city
+#b_ternier 
+#b_menthon 
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
+

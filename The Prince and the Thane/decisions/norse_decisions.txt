@@ -1,0 +1,80 @@
+decisions = {
+	nm_blot_decision = {
+		potential = {
+			is_ruler = yes
+			is_feudal = yes
+			religion = norse_pagan
+			prisoner = no
+			NOT = {
+				has_character_modifier = nm_holding_blot
+			}
+			NOT = {
+				has_character_modifier = nm_blot_timer
+			}
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			scaled_wealth = 2.0
+			prisoner = no
+		}
+		effect = {
+			scaled_wealth = -1.0
+			add_character_modifier = {
+				name = nm_holding_blot
+				duration = 60
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 310029
+					days = 60
+				}
+				character_event = {
+					id = 310031
+					days = 70
+				}
+				character_event = { id = 310002  }
+				character_event = { id = 310006  }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 4.5
+				}
+			}
+		}
+	}
+	nm_employ_volva = {
+		potential = {
+			religion = norse_pagan
+		}
+		allow = {
+			scaled_wealth = 0.1
+		}
+		effect = {
+			piety = -5
+			scaled_wealth = -0.1
+			create_random_priest = {
+				random_traits = yes
+				trait = nm_volva
+				dynasty = random
+				female = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

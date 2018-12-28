@@ -1,0 +1,868 @@
+city = {
+### Weaponsmiths  
+### Blacksmith's Workshop ###
+	ct_weaponsmith_1 = {
+		desc = ct_weaponsmith_desc
+		prerequisites = { ct_marketplace_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 } 
+		build_cost = 100
+		build_time = 365
+		HEAVY_INFANTRY_DEFENSIVE = 0.02
+		LIGHT_INFANTRY_DEFENSIVE = 0.02
+		ARCHERS_DEFENSIVE = 0.02
+		ai_creation_factor = 85
+		
+		start = {
+		}
+	}
+### Weaponsmith's Worksop ###
+	ct_weaponsmith_2 = {
+		desc = ct_weaponsmith_desc
+		prerequisites = { ct_marketplace_3 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_weaponsmith_1
+	    build_cost = 200
+		build_time = 730
+		HEAVY_INFANTRY_DEFENSIVE = 0.02
+		LIGHT_INFANTRY_DEFENSIVE = 0.02
+		ARCHERS_DEFENSIVE = 0.02
+		ai_creation_factor = 84
+
+		start = {
+		    year = 1150
+		}
+	}
+## City civics buildings ##
+##Local Court
+	ct_civics_1 = { 
+		desc = ct_civics_desc
+		build_cost = 75
+		build_time = 180 #6 months
+		local_revolt_risk = -0.005
+		ai_creation_factor = 85
+
+		start = {
+		}
+	}
+##Constable House
+	ct_civics_2 = { 
+		desc = ct_civics_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_civics_1
+		build_cost = 125
+		build_time = 270 #9 months
+		local_revolt_risk = -0.005
+		local_tax_modifier = 0.05
+		ai_creation_factor = 80
+
+		start = {
+		    year = 1066
+		}
+	}
+##Regional Court
+	ct_civics_3 = { 
+		desc = ct_civics_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_civics_2
+		build_cost = 250
+		build_time = 365 #1y
+		local_revolt_risk = -0.01
+		arrest_chance_modifier = 0.05
+		assassinate_chance_modifier = 0.02
+		ai_creation_factor = 75
+
+		start = {
+		    year = 1150
+		}
+	}
+### Marketplaces
+### Farmers Annual Market ###
+	ct_marketplace_1 = {
+		desc = ct_marketplace_1_desc
+		build_cost = 42
+		build_time = 365
+		tax_income = 0.25
+		local_tax_modifier = 0.025
+		ai_creation_factor = 89
+		
+		start = {
+		}
+	}
+### Local Seasonal Market ###	
+	ct_marketplace_2 = {
+		desc = ct_marketplace_2_desc
+		prerequisites = { ct_wall_1 }
+		upgrades_from = ct_marketplace_1
+		build_cost = 65
+		build_time = 547
+		tax_income = 0.50
+		local_tax_modifier = 0.025
+		ai_creation_factor = 88
+
+		start = {
+		    year = 1066
+		}
+	}
+### Town Square ###	
+	ct_marketplace_3 = {
+		desc = ct_marketplace_3_desc
+		prerequisites = { ct_wall_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }  
+		upgrades_from = ct_marketplace_2
+		build_cost = 80
+		build_time = 730
+		tax_income = 0.50
+		local_tax_modifier = 0.05
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1140
+		}
+	}
+### Market Porticos ###
+	ct_marketplace_4 = {
+		desc = ct_marketplace_4_desc
+		prerequisites = { ct_wall_3 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }  
+		upgrades_from = ct_marketplace_3
+		build_cost = 125
+		build_time = 1095
+		tax_income = 0.50
+		local_tax_modifier = 0.05
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1200
+		}
+	}
+### Merchants Guildhall ###
+	ct_marketplace_5 = {
+		desc = ct_marketplace_5_desc
+		prerequisites = { ct_wall_4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_marketplace_4
+		build_cost = 185
+		build_time = 2190
+		tax_income = 0.50
+		local_tax_modifier = 0.05
+		ai_creation_factor = 85
+
+		start = {
+		}
+	}
+### Mercantile Emporium ###	
+	ct_marketplace_7 = {
+		desc = ct_marketplace_6_desc
+		prerequisites = { ct_wall_5 ct_port_4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_marketplace_5
+		build_cost = 315
+		build_time = 2340
+		tax_income = 0.50
+		local_tax_modifier = 0.05
+		ai_creation_factor = 84
+
+		start = {
+		}
+	}
+
+### Administrative Buildings
+### Toll Booth ###
+	ct_administration_1 = {
+		desc = ct_admin_desc
+	    prerequisites = { ct_marketplace_2 }
+		trigger = { TECH_CITY_TAXES = 1 }
+		build_cost = 50
+		build_time = 365
+		local_tax_modifier = 0.025
+		ai_creation_factor = 86
+		
+		start = {
+		}
+	}
+### Stewards Office ###	
+	ct_administration_2 = {
+		desc = ct_admin_desc
+		prerequisites = { ct_marketplace_3 }
+		trigger = { TECH_CITY_TAXES = 2 }
+		upgrades_from = ct_administration_1
+		build_cost = 75
+		build_time = 365
+		local_revolt_risk = 0.01
+		local_tax_modifier = 0.05
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1066
+		}
+	}
+### Customs Office ###	
+	ct_administration_3 = {
+		desc = ct_admin_desc
+		prerequisites = { ct_marketplace_4 }
+		trigger = { TECH_CITY_TAXES = 3 }
+		upgrades_from = ct_administration_2
+		build_cost = 115
+		build_time = 730
+		local_tax_modifier = 0.05
+		ai_creation_factor = 85
+
+		start = {
+		    year = 1175
+		}
+	}	
+### Assey Court ###	
+	ct_administration_4 = {
+		desc = ct_admin_desc
+		prerequisites = { ct_marketplace_5 }
+		trigger = { TECH_CITY_TAXES = 4 }
+		upgrades_from = ct_administration_3
+		build_cost = 140
+		build_time = 730
+		local_revolt_risk = 0.01
+		pikemen = 15
+		local_tax_modifier = 0.05
+		ai_creation_factor = 84
+
+		start = {
+		}
+	}	
+### Chancery Hall ###	
+	ct_administration_5 = {
+		desc = ct_admin_desc
+		prerequisites = { ct_marketplace_5 }
+		trigger = { TECH_CITY_TAXES = 5 }
+		upgrades_from = ct_administration_4
+		build_cost = 205
+		build_time = 1095
+		local_revolt_risk = 0.01
+		local_tax_modifier = 0.075
+		ai_creation_factor = 83
+
+		start = {
+		    year = 1350
+		}
+	}	
+	
+ct_wall_q_1 = {
+		desc = ct_wall_q_1_desc
+		prerequisites = { ct_wall_1 }
+		build_cost = 50
+		build_time = 182
+		fort_level = 0.4
+		ai_creation_factor = 60
+		
+		start = {
+		}
+	}
+	ct_wall_q_2 = {
+		desc = ct_wall_q_2_desc
+		prerequisites = { ct_wall_2 }
+		upgrades_from = ct_wall_q_1
+		build_cost = 50
+		build_time = 182
+		fort_level = 0.4
+		ai_creation_factor = 59
+
+		start = {
+		    year = 1066
+		}
+	}	
+	ct_wall_q_3 = {
+		desc = ca_wall_q_3_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		upgrades_from = ct_wall_q_2
+		build_cost = 50
+		build_time = 182
+		fort_level = 0.5
+		ai_creation_factor = 58
+
+		start = {
+		    year = 1130
+		}
+	}
+	ct_wall_q_4 = {
+		desc = ca_wall_q_4_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
+		upgrades_from = ct_wall_q_3
+		build_cost = 100
+		build_time = 365
+		fort_level = 1
+		ai_creation_factor = 57
+
+		start = {
+		    year = 1180
+		}
+	}
+	ct_wall_q_5 = {
+		desc = ca_wall_q_5_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
+		upgrades_from = ct_wall_q_4
+		build_cost = 100
+		build_time = 365
+		fort_level = 1
+		ai_creation_factor = 56
+
+		start = {
+		    year = 1240
+		}
+	}
+
+	ct_wall_1 = {
+		desc = ca_wall_1_desc
+		build_cost = 50
+		build_time = 365
+		fort_level = 0.4
+		levy_size = 0.025
+		tax_income = 0.2
+		ai_creation_factor = 99
+		
+		start = {
+		}
+	}
+	ct_wall_2 = {
+		desc = ca_wall_2_desc
+		upgrades_from = ct_wall_1
+		build_cost = 50
+		build_time = 547
+		fort_level = 0.4
+		levy_size = 0.025
+		tax_income = 0.2
+		ai_creation_factor = 98
+
+		start = {
+		    year = 1066
+		}
+	}
+	ct_wall_3 = {
+		desc = ct_wall_3_desc
+		upgrades_from = ct_wall_2
+		build_cost = 100
+		build_time = 730
+		fort_level = 0.4
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 97
+
+		start = {
+		    year = 1150
+		}
+	}
+	ct_wall_4 = {
+		desc = ct_wall_4_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		upgrades_from = ct_wall_3
+		build_cost = 100
+		build_time = 1095
+		fort_level = 0.5
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 96
+
+		start = {
+		}
+	}
+	ct_wall_5 = {
+		desc = ct_wall_5_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 4 }
+		upgrades_from = ct_wall_4
+		build_cost = 150
+		build_time = 1460
+		fort_level = 1.0
+		levy_size = 0.075
+		tax_income = 0.5
+		ai_creation_factor = 95
+
+		start = {
+		}
+	}
+	
+	# Merchant Republic Arsenal
+	ct_rep_arsenal_1 = {
+		potential = {
+			FROM = { 
+				AND = {
+					capital_holding = {
+						title = FROMFROM
+					}
+					is_merchant_republic = yes
+				}
+			}
+		}
+		desc = ct_rep_arsenal_1_desc
+		build_cost = 200
+		build_time = 1460
+		fort_level = 1.0
+		garrison_size = 0.25
+		levy_size = 0.075
+		ai_creation_factor = 95
+
+		start = {
+		}
+	}
+	ct_rep_arsenal_2 = {
+		potential = {
+			FROM = { 
+				AND = {
+					capital_holding = {
+						title = FROMFROM
+					}
+					is_merchant_republic = yes
+				}
+			}
+		}
+		upgrades_from = ct_rep_arsenal_1
+		desc = ct_rep_arsenal_2_desc
+		build_cost = 400
+		build_time = 1460
+		fort_level = 1.5
+		garrison_size = 0.2
+		levy_size = 0.075
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1066
+		}
+	}
+	ct_rep_arsenal_3 = {
+		potential = {
+			FROM = { 
+				AND = {
+					capital_holding = {
+						title = FROMFROM
+					}
+					is_merchant_republic = yes
+				}
+			}
+		}
+		upgrades_from = ct_rep_arsenal_2
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		desc = ct_rep_arsenal_3_desc
+		build_cost = 600
+		build_time = 2190
+		fort_level = 2.0
+		garrison_size = 0.25
+		levy_size = 0.125
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1150
+		}
+	}
+	
+### City Militia barracks
+### Militia Muster Square ###
+	ct_militia_barracks_1 = {
+		desc = ct_barracks_1_desc
+	    prerequisites = { ct_marketplace_1 }
+		build_cost = 40
+		build_time = 365
+		light_infantry = 40
+		archers = 20
+		tax_income = -0.10
+		ai_creation_factor = 84
+		
+		start = {
+		}
+	}
+### Militia Drill Courtyard ###	
+	ct_militia_barracks_2 = {
+		desc = ct_barracks_2_desc
+		prerequisites = { ct_marketplace_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		upgrades_from = ct_militia_barracks_1
+		build_cost = 60
+		build_time = 547
+		light_infantry = 40
+		archers = 20
+		tax_income = -0.10
+		ai_creation_factor = 83
+
+		start = {
+		    year = 1066
+		}
+	}
+### Militia Barracks ###	
+	ct_militia_barracks_3 = {
+		desc = ct_barracks_2_desc
+		prerequisites = { ct_marketplace_4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_militia_barracks_2
+		build_cost = 100
+		build_time = 1095
+		light_infantry = 40
+		archers = 20
+		tax_income = -0.10
+		ai_creation_factor = 82
+
+		start = {
+		    year = 1150
+		}
+	}	
+### City Watch Quarters ###	
+	ct_militia_barracks_4 = {
+		desc = ct_barracks_2_desc
+		prerequisites = { ct_marketplace_5 }
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_militia_barracks_3
+		build_cost = 150
+		build_time = 1395
+		pikemen = 40 
+		light_infantry = 50
+		archers = 30
+		levy_size = 0.025
+		tax_income = -0.10
+		ai_creation_factor = 81
+
+		start = {
+		    year = 1200
+		}
+	}	
+### City Guard's Armoury ###	
+	ct_militia_barracks_5 = {
+		desc = ct_barracks_1_desc
+		prerequisites = { ct_marketplace_5 }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_militia_barracks_4
+		build_cost = 215
+		build_time = 1895
+		pikemen = 50
+		light_infantry = 70
+		archers = 60
+		levy_size = 0.05
+		tax_income = -0.10
+		ai_creation_factor = 80
+
+		start = {
+		}
+	}
+	
+### City Guard's Barracks ###	
+	ct_militia_barracks_6 = {
+		desc = ct_barracks_2_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		upgrades_from = ct_militia_barracks_5
+		build_cost = 245
+		build_time = 1895
+		pikemen = 65
+		light_infantry = 90
+		archers = 60
+		levy_size = 0.075
+		tax_income = -0.10
+		ai_creation_factor = 79
+
+		start = {
+		}
+	}	
+	
+	ct_training_grounds_1 = {
+		desc = ct_training_grounds_1_desc
+		build_cost = 150
+		build_time = 547
+		levy_size = 0.05
+		garrison_size = 0.05
+		ai_creation_factor = 98
+
+		start = {
+		}
+	}
+	ct_training_grounds_2 = {
+		desc = ct_training_grounds_1_desc
+		prerequisites = { ct_wall_1 }
+		upgrades_from = ct_training_grounds_1
+		build_cost = 200
+		build_time = 730
+		levy_size = 0.075
+		garrison_size = 0.1
+		ai_creation_factor = 97
+
+		start = {
+		    year = 1066
+		}
+	} 
+	ct_training_grounds_3 = {
+		desc = ct_training_grounds_1_desc
+		upgrades_from = ct_training_grounds_2
+		build_cost = 300
+		build_time = 1095
+		levy_size = 0.1
+		garrison_size = 0.15
+		ai_creation_factor = 96
+
+		start = {
+		    year = 1150
+		}
+	} 
+	ct_training_grounds_4 = {
+		desc = ct_training_grounds_1_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		upgrades_from = ct_training_grounds_3
+		build_cost = 400
+		build_time = 1460
+		levy_size = 0.125
+		garrison_size = 0.2
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1200
+		}
+	} 
+	ct_training_grounds_5 = {
+		desc = ct_training_grounds_1_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
+		upgrades_from = ct_training_grounds_4
+		build_cost = 500
+		build_time = 2190
+		levy_size = 0.15
+		garrison_size = 0.25
+		ai_creation_factor = 94
+
+		start = {
+		}
+	}
+	ct_training_grounds_6 = {
+		desc = ct_training_grounds_1_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
+		upgrades_from = ct_training_grounds_5
+		build_cost = 500
+		build_time = 2190
+		levy_size = 0.15
+		garrison_size = 0.25
+		ai_creation_factor = 93
+
+		start = {
+		}
+	}
+### Ports
+### Small Ferry ###
+	ct_port_1 = {
+		desc = ct_port_1_desc
+		potential = {
+			port = yes
+		}
+		build_cost = 100
+		build_time = 365
+		local_tax_modifier = 0.05
+		galleys = 1
+		ai_creation_factor = 89
+		
+		start = {
+		}
+	}
+### Local Harbour ###	
+	ct_port_2 = {
+		desc = ct_port_1_desc
+		potential = {
+			port = yes
+		}
+		prerequisites = { ct_marketplace_1 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		upgrades_from = ct_port_1
+		build_cost = 175
+		build_time = 730
+		tax_income = 0.25
+		local_tax_modifier = 0.05
+		tech_growth_modifier = 0.02
+		galleys = 2
+		ai_creation_factor = 88
+
+		start = {
+		    year = 1066
+		}
+	}
+### Civilian Harbour ###	
+	ct_port_3 = {
+		desc = ct_port_1_desc
+		potential = {
+			port = yes
+		}
+		prerequisites = { ct_marketplace_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_port_2
+		build_cost = 250
+		build_time = 850
+		tax_income = 0.50
+		local_tax_modifier = 0.05
+		tech_growth_modifier = 0.02
+		disease_defence = -0.01
+		galleys = 2
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1150
+		}
+	}
+### Trading Port ###	
+	ct_port_4 = {
+		desc = ct_port_1_desc
+		potential = {
+			port = yes
+		}
+		prerequisites = { ct_marketplace_3 }
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_port_3
+		build_cost = 350
+		build_time = 1095
+		tax_income = 0.50
+		local_tax_modifier = 0.05
+		tech_growth_modifier = 0.02
+		disease_defence = -0.01
+		galleys = 8
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1200
+		}
+	}
+### Large Regional Port ###	
+	ct_port_5 = {
+		desc = ct_port_1_desc
+		potential = {
+			port = yes
+		}
+		prerequisites = { ct_marketplace_5 }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_port_4
+		build_cost = 450
+		build_time = 2190
+		tax_income = 1.0
+		local_tax_modifier = 0.05
+		tech_growth_modifier = 0.02
+		disease_defence = -0.01
+		galleys = 10
+		ai_creation_factor = 85
+
+		start = {	
+		}
+	}
+### Naval District ###	
+	ct_port_6 = {
+		desc = ct_port_1_desc
+		potential = {
+			port = yes
+		}
+		prerequisites = { ct_marketplace_5 }
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		upgrades_from = ct_port_5
+		build_cost = 700
+		build_time = 3190
+		tax_income = 1.0
+		local_tax_modifier = 0.05
+		tech_growth_modifier = 0.02
+		disease_defence = -0.01
+		galleys = 3
+		ai_creation_factor = 84
+
+		start = {
+			OR = {
+				AND = {
+					FROM = { religion_group = christian }
+					year = 1300
+				}
+				AND = {
+					FROM = { culture_group = byzantine }
+					year = 1300
+				}
+				AND = {
+					FROM = { religion_group = muslim }
+					year = 1300
+				}
+			}	
+		}
+	}
+	
+	ct_guard_1 = {
+		desc = ct_guard_1_desc
+		build_cost = 100
+		build_time = 365
+		pikemen = 45
+		ai_creation_factor = 96
+		
+		start = {
+		}
+	}
+	ct_guard_2 = {
+		desc = ct_guard_1_desc
+		prerequisites = { ct_wall_1 }
+		upgrades_from = ct_guard_1
+		build_cost = 120
+		build_time = 547
+		pikemen = 55
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1066
+		}
+	}
+	ct_guard_3 = {
+		desc = ct_guard_1_desc
+		prerequisites = { ct_wall_2 }
+		upgrades_from = ct_guard_2
+		build_cost = 200
+		build_time = 730
+		pikemen = 65
+		ai_creation_factor = 94
+
+		start = {
+		    year = 1130
+		}
+	}
+	ct_guard_4 = {
+		desc = ct_guard_1_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_guard_3
+		build_cost = 300
+		build_time = 1095
+		pikemen = 75
+		ai_creation_factor = 93
+
+		start = {
+		    year = 1190
+		}
+	}
+	ct_guard_5 = {
+		desc = ct_guard_1_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_guard_4
+		build_cost = 400
+		build_time = 2190
+		pikemen = 85
+		ai_creation_factor = 92
+
+		start = {
+		}
+	}
+### Universities
+### Small University ###
+	ct_university_1 = {
+		desc = ct_university_1_desc
+		prerequisites = { ct_marketplace_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		build_cost = 500
+		build_time = 1095
+		tech_growth_modifier = 0.175
+		tax_income = -1.0
+		ai_creation_factor = 82
+
+		start = {
+		    year = 900
+		}
+	}
+### Regional University ###	
+	ct_university_2 = {
+		desc = ct_university_1_desc
+                potential = { is_capital = yes }
+		prerequisites = { ct_marketplace_4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_university_1
+		build_cost = 950
+		build_time = 3650
+		tech_growth_modifier = 0.25
+		tax_income = -1.0
+		ai_creation_factor = 81
+
+		start = {
+		    year = 1130
+		}
+	}	
+}	

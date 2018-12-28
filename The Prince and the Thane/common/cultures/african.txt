@@ -1,0 +1,217 @@
+west_african = {
+
+		graphical_culture = muslimgfx
+
+	manden = {
+		graphical_culture = africangfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		color = { 0.45 0.45 0.2 }
+
+		male_names = {
+			Bilali Bunama Lawalo Latal Nare-Maghan Sundjata Lahilatul Mari-djata Allakoi Musa Djigui Barmandana Kalabi Bomba Dauman Namadi Kani
+      Abubakari Akoi Alayaman Ali Ali-Fay
+			Badä Bamari Bannu Bassi Birama Bisi Biyu Bonga 
+			Cisse 
+			Dankaran Demba Daoud Diara Düru
+			Fädazu Faga-Laye Fatta Fuluku
+			Gane Gao
+			Kabayo Kalabi Kanafa Kambine Kassa Kaya Kayna Kinkin Kukuray Kusoy
+			Ishaq 
+			Lahiltoul 
+			M'Bali Manding-Bory Maghan Majan Mamadi Mamoudou Mari-Djata Musa 
+			Nintasanay
+			Ouali Ouati
+			Reidja 
+			Sakoura Salman Sandaki Soumaba Soumaoro Soundiata Sulayman 
+			Takoi Tib Tunka 
+			Watara
+      Yabaghte Yama Yasiboy
+			Zakoi Zenku
+		}
+		female_names = {
+			Kondolon Sané Sogolon
+      Tekhaye
+			Adja Alima Amita Aoua Aminata Aichata Aissata
+			Barakissa Bintou 
+			Deye Djeneba Djenly Djire
+			Fadima Fatim Fatoumata
+			Halima Hawa
+			Ina
+			Kadi Kilia Kolonkan 
+			Lorane 
+			Mariam Namandjé 
+			Nafissa Namiss Nana
+			Safiatou Salimata Sassouma Sidibé Siya Sogolon 			
+			Youma
+			Zeïnab
+		}
+
+		modifier = west_african_culture_modifier
+	}
+	soninke = {
+		graphical_culture = africangfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		color = { 0.35 0.35 0.2 }
+
+		male_names = {
+
+      Abubakar Akoi Alayaman 
+			Bérété Bathily Bomou Bilali Bunama Badä Bamari Bannu Birama Bisi Biyu 
+			Cissi 
+			Diobé Dabo Diakhaba Diawara Daffi Doucouri Dankaran Demba Daoud Diara
+			Fissourou Fadiga Fädazu Fuluku
+			Gane Gao
+			Kaba Kabayo Kalabi Kanafa Kambine Kassa Kaya Kayna Kinkin Kukuray Kusoy
+			Ishaq 
+			Marega M'Bali Maghan Majan Mamadi Mamoudou Mari-Djata Musa 
+			Niakhaté Nintasanay
+			Wague Wali Wati
+			Reidja 
+			Sy Sylla Sakho Soukhouna Sima Soumaré Sakoura Salman Sandaki Soumaba Soumaoro Soundiata Sulayman 
+			Tandian Tunka Tabouri Tounkara Touri Tandi Takoi Tib  
+			Yansané Yatabéri Yama Yasiboy
+			Zakoi Zenku
+		}
+		female_names = {
+			Tekhaye
+			Adja Alima Amita Aoua Aminata Aichata Aissata
+			Barakissa Bintou 
+			Deye Djeneba Djenly Djire
+			Fadima Fatim Fatoumata
+			Halima Hawa
+			Ina
+			Kondolon Kadi Kilia Kolonkan 
+			Lorane 
+			Mariam Namandjé 
+			Nafissa Namiss Nana
+			Sané Sogolon Safiatou Salimata Sidibé Siya 			
+			Youma
+			Zeïnab
+		}
+
+		modifier = african_culture_modifier
+	}
+	wolof = {
+		graphical_culture = africangfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		color = { 0.4 0.4 0.2 }
+
+		male_names = {
+      Abubakari Akoi Alayaman Ali Ali-Fay
+			Botale Badgie Buur Bamari Birama Bisi Biyu Bonga 
+			Diawdine DiopDiouf Daoud Diara
+			Fode Fatta Fuluku
+			Gane Gao
+			Kabayo Kanafa Kassa Kaya Kayna Kinkin Kukuray
+			Ishaq Isa 
+			Labi Lat Lamane
+			Maad Mahecor M'Bali Mamadi Mamoudou Musa 
+			Ndyabe Ndyay Ndyadyay
+			Ouali Ouati
+			Reidja 
+			Sinig Saloum Salman Sandaki Soumaba Sulayman 
+			Takoi Tib Tchialaw Tasmier 
+			War
+      Youssou Yama Yasiboy
+      Zakoi Zenku
+		}
+		female_names = {
+			Kondolon Sané Sogolon
+      Tekhaye
+			Adja Alima Amita Aoua Aminata Aichata Aissata
+			Barakissa Bintou 
+			Deye Djeneba Djenly Djire
+			Fadima Fatim Fatoumata
+			Halima Hawa
+			Ina
+			Kadi Kilia Kolonkan 
+			Lorane 
+			Mariam Namandjé 
+			Nafissa Namiss Nana
+			Safiatou Salimata Sassouma Sidibé Siya Sogolon 			
+			Youma
+			Zeïnab
+		}
+
+		modifier = african_culture_modifier
+	}
+}
+east_african = {
+	graphical_culture = muslimgfx
+
+	ethiopian = {
+		graphical_culture = africangfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		color = { 0.4 0.4 0.3 }
+
+		male_names = {
+			Amare Assefa Bekele Berhanu Berihun Dahnay Daniachew Dawit Demissie Desta Getachew Geteye Girma Hagos Hakim Iskinder Kaleb Kelile Lebna
+			Negasi Yonas Abai Abebe Afework Aman Assefa Atoberhan Azmera Bekele Benaim Berhanu Berhanua Berihun Berta Bworo Daniachew Dawit Demissie
+			Eremias Ezana Fasilidas Fethee Gabra Gebereal Gebre Gondar Hackeem Haeran Hagos Hakeem Hakiem Hakim Hakym Iskander_Alexander Iskinder_Alexander Iyasu Jima
+			Kafa Kaleb Kelile Kelyle Kifle Lebna Lema Loua Mamo Mekonnen Melaku Mengesha Merille Miruts Negash Negasi Negus Ogbae Ogbai Oromo Rahad
+			Selassie Semer Semere Sisay Tamirat Tariku Taye Tefere Teferi Teka Tekle Tengene Teruworq Tesfaye Tessema Tewodros Yacob Yohannas Yonas
+			Zula
+		}
+		female_names = {
+			Habesha Abeba Abrihet Adanech Adina Alaworld Alitash Amhara Ayana Bathsheba Bekele Belkis Berhane Berta Cheren China Debre Debtera Desse
+			Desta Dilla Falasha Falashina Fana Fannah Genat Hagos Jahzara Jazarah Kayla Kelile Kelyle Keren Kess Kifle Lishan Louama Magdala Maharene
+			Makda Makeda Mandera Melesse Mellesse Misrak Negasi Nishan Nyala Qwara Retta Seble Sela Selamawit Selassie Semhar Senalat Sheba Shinasha
+			Sisay Tavavich Teru Totit Tsage Wagaye Yehudit Zala Zauditu Zeina Zena Zenia
+		}
+
+		modifier = african_culture_modifier
+	}
+	
+	falashim = {
+		graphical_culture = africangfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		color = { 0.4 0.4 0.3 }
+		
+		used_for_random = no
+
+		male_names = {
+
+			Abreham_Abraham Adam_Adam Adamu_Adam Aron Benyam_Benjamin Caleb Dan_Daniel Gedeyon_Gedeon Goshen Joram Kabede Mulualem Rada Yacobe_Jacob Yieshak_Isaac Zalelew 
+		}
+		female_names = {
+			Abaynesh Aster_Esther Chamashwork Chekolech Mulualem Nikahywot Orit Rahel_Rachel Rut_Ruth Sara_Sarah Yehudit_Judith Yeuvmert Yodit_Judith 
+		}
+
+		modifier = african_culture_modifier
+	}
+
+    somali = {
+		graphical_culture = africangfx
+		second_graphical_culture = muslimgfx # Fallback type
+		
+		color = { 0.4 0.4 0.3 }
+
+		male_names = {
+			Abdul-Qadir_Abdul-Qadir Abdulle_Abdullah Abukar_AbuBakr Ali_Ali Maxamed_Muhammad Barkaale Bootaan Bucaale Beynax Bille Beyle Ayaanle Arbooshe 
+			Abroon Xassan_Hasan Husam Xuseen_Hussayn Ibrahim_Abraham Muqtar_Mukhtar Ismacil_Is'mail Cisse_Isa Axmed_Ahmed Warsame Cigaal Roble Rigle 
+			Maxamud_Mahmud Musse_Musa Faarax Shirdoon Sharmaake Abdul-Malik Guuleed Umar_Umar Osman Qaybdid Samakab Samatalis Samadon Libaan Shire 
+			Raage Waranle Saleban_Sulayman Yusuf_Yusuf Samatar Areys Artan Aideed Abtidon Diriye Geldon Geedi Kenadid Mire Mirale Nalaye Nageeye 
+
+		}
+		female_names = {
+			Habiba Layla Maryam Nafisa Yasmin Saynab_Zaynab Baxsan Beydan Barni Beegsan Kaaho Kaafiso Kiin Koos Kinsi Kaad
+			Samira Abyan Aragsan Ardo Ayan Batuulo Baydan Bilan Canbaro Cawrala Ceebla Dahabo Daynabo Farxiyo Habsan Idil Indhouroon Istaahil 
+			Ladan Luul Saxarla Shamso Shukriya Sureya Ubax Ugbad
+			
+		}
+		
+		male_patronym = "ina "
+		female_patronym = "ína "
+		prefix = yes
+
+        dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = african_culture_modifier
+	}
+}

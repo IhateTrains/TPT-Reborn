@@ -1,0 +1,191 @@
+###############################################################
+#
+# The Prince and the Thane realm modifiers - written by idib816
+#
+###############################################################
+
+officially_crowned = {
+        diplomacy = 2
+	icon = 7
+	general_opinion = 20
+	monthly_character_prestige = 0.50
+}
+
+caliph_tribute = {
+	monthly_character_prestige = -0.5
+	monthly_character_piety = -0.5
+	icon = 26
+}
+
+
+
+charter_of_the_forest = {
+	local_revolt_risk = -0.01
+	tech_growth_modifier_military = 0.05
+        local_tax_modifier = 0.075
+        monthly_character_prestige = -0.05
+	icon = 7
+}
+
+sicut_judaeis = {
+	monthly_character_piety = 0.15
+        local_revolt_risk = -0.005
+	icon = 8
+}
+
+royal_entry = {
+	monthly_character_prestige = 0.25
+        global_revolt_risk = -0.01
+	icon = 7
+}
+
+libertas_ecclesiae = {
+	monthly_character_piety = 0.25
+        global_revolt_risk = -0.005
+        monthly_character_prestige = 0.25
+        global_tax_modifier = -0.05
+        church_opinion = 15
+	icon = 8
+}
+
+refused_libertas_ecclesiae = {
+	monthly_character_piety = -0.25
+        global_revolt_risk = 0.005
+        monthly_character_prestige = 0.5
+        global_tax_modifier = 0.05
+        church_opinion = -15
+	icon = 26
+}
+
+ad_abolendam = {
+	monthly_character_piety = 0.75
+        global_revolt_risk = 0.015
+        monthly_character_prestige = -0.25
+        church_opinion = 30
+        diplomacy = -1
+        learning = 1
+	icon = 8
+}
+
+refused_ad_abolendam = {
+	monthly_character_piety = -0.5
+        global_revolt_risk = -0.01
+        monthly_character_prestige = 0.5
+        diplomacy = 1
+        learning = -1
+        church_opinion = -20
+	icon = 26
+}
+
+ad_extirpanda = {
+	monthly_character_piety = 1
+        global_revolt_risk = 0.01
+        global_tax_modifier = 0.05
+        monthly_character_prestige = -0.75
+        church_opinion = 15
+        diplomacy = -1
+        learning = 2
+	icon = 8
+}
+
+refused_ad_extirpanda = {
+	monthly_character_piety = -0.5
+        global_revolt_risk = -0.01
+        monthly_character_prestige = 0.75
+        diplomacy = 1
+        church_opinion = -20
+	icon = 26
+}
+
+unam_sanctam = {
+	monthly_character_piety = 0.75
+        global_revolt_risk = -0.01
+        monthly_character_prestige = -0.75
+        church_opinion = 25
+        learning = 1
+	icon = 8
+}
+
+refused_unam_sanctam = {
+	monthly_character_piety = -0.5
+        global_revolt_risk = 0.01
+        monthly_character_prestige = 0.75
+        church_opinion = -20
+	icon = 26
+}
+
+ius_primae_noctis = {
+	global_tax_modifier = -0.05
+        vassal_opinion = -5
+        church_opinion = -5
+        general_opinion = -5
+        global_revolt_risk = 0.025
+        monthly_character_prestige = 0.5
+        monthly_character_piety = -0.5
+	icon = 25
+}
+
+not_attending_jubilee = {
+        vassal_opinion = -5
+        church_opinion = -25
+        general_opinion = -5
+        global_revolt_risk = 0.025
+        monthly_character_piety = -1.0
+	icon = 26
+}
+
+attending_jubilee = {
+        vassal_opinion = 5
+        church_opinion = 25
+        general_opinion = 5
+        global_revolt_risk = -0.025
+        monthly_character_piety = 1.0
+	icon = 8
+}
+
+financing_crusade = {
+        vassal_opinion = 10
+        church_opinion = 35
+        general_opinion = 10        
+        city_levy_size = -0.15
+	castle_levy_size = -0.15
+	temple_levy_size = -0.15
+        global_revolt_risk = -0.025
+        monthly_character_piety = 0.5
+	icon = 8
+}
+
+not_financing_crusade = {
+        vassal_opinion = -5
+        church_opinion = -25
+        general_opinion = -5        
+        monthly_character_piety = -0.5
+	icon = 8
+}
+
+financing_jihad = {
+        vassal_opinion = 10
+        church_opinion = 35
+        general_opinion = 10        
+        city_levy_size = -0.15
+	    castle_levy_size = -0.15
+	    temple_levy_size = -0.15
+	    global_revolt_risk = 0.05    
+        global_revolt_risk = -0.025
+        monthly_character_piety = 0.5
+	icon = 8
+}
+
+not_financing_jihad = {
+        vassal_opinion = -5
+        church_opinion = -25
+        general_opinion = -5  
+	    global_revolt_risk = 0.05      
+        monthly_character_piety = -0.5
+	icon = 8
+}
+
+peasant_obstructionism = {
+	local_revolt_risk = 0.05
+	icon = 32
+}

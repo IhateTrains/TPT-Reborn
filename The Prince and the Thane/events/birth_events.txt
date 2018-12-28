@@ -1,0 +1,1638 @@
+#############################################
+#
+# EVENTS FOR LOVE, PREGNANCY AND BIRTH
+#
+#############################################
+# by Henrik Fåhraeus
+#############################################
+
+#############################################
+# EVENTS LEADING UP TO BASTARD PREGNANCY 
+# (Attraction grows between the male ruler and a female courtier)
+#############################################
+
+# A courtier initiates romance with their liege
+character_event = {
+	id = 450
+	desc = EVTDESC450
+	picture = GFX_evt_lovers
+	is_triggered_only = yes
+	
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			is_ruler = no
+			liege = {
+				at_location = ROOT
+			}
+		}
+		age = 14
+		NOT = { age = 40 }
+		liege = {
+			NOT = { character = ROOT }
+			demesne_size = 1
+			OR = {
+				trait = lustful
+				ROOT = { trait = lustful }				
+				NOT = { is_close_relative = ROOT }
+			}
+			OR = {
+				AND = {
+					NOT = { trait = homosexual }
+					ROOT = { NOT = { trait = homosexual } }
+					is_female = no
+					ROOT = { is_female = yes }
+				}
+				AND = {
+					NOT = { trait = homosexual }
+					ROOT = { NOT = { trait = homosexual } }
+					is_female = yes
+					ROOT = { is_female = no }
+				}
+				AND = {
+					trait = homosexual
+					is_female = yes
+					ROOT = { is_female = yes }
+				}
+				AND = {
+					trait = homosexual
+					is_female = no
+					ROOT = { is_female = no }
+				}				
+			}
+			has_lover = no
+			is_pregnant = no
+			prisoner = no
+			age = 14
+			NOT = {
+				has_character_modifier = lustful_affair_timer
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_former_lover
+				}
+			}
+			NOT = { trait = infirm }
+			NOT = { trait = incapable }
+			NOT = { trait = celibate }
+			NOT = { trait = eunuch }
+			NOT = { any_spouse = { character = ROOT } }
+			opinion = { who = ROOT value = -20 }
+			reverse_opinion = { who = ROOT value = -20 }
+			OR = {
+				is_married = no
+				NOT = { trait = chaste }
+			}
+		}	
+		has_lover = no
+		is_pregnant = no
+		prisoner = no
+		NOT = { trait = infirm }
+		NOT = { trait = incapable }
+		NOT = { trait = celibate }
+		NOT = { trait = eunuch }
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.1 #make it possible (but unlikely) for a courtier to 'come out of the closet' to make a pass at the liege
+			OR = {
+				AND = {
+					NOT = { trait = homosexual }
+					liege = { trait = homosexual }
+					is_female = yes
+					ROOT = { is_female = yes }
+				}
+				AND = {
+					NOT = { trait = homosexual }
+					liege = { trait = homosexual }
+					is_female = no
+					ROOT = { is_female = no }
+				}				
+			}
+		}
+		modifier = {
+			factor = 3.0
+			trait = homosexual #to balance for fewer potential lovers
+		}	
+		modifier = {
+			factor = 3.0
+			has_character_flag = debutante
+			NOT = {
+				had_character_flag = {
+					flag = debutante
+					days = 730
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { age = 20 }
+		}
+		modifier = {
+			factor = 0.33
+			liege = {
+				is_close_relative = ROOT
+				NOT = { trait = hedonist }
+				NOT = { ROOT = { trait = hedonist } }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			age = 30
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			liege = { trait = hedonist }
+		}		
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			liege = { trait = lustful }
+		}
+		modifier = {
+			factor = 2.0
+			trait = fair
+		}
+		modifier = {
+			factor = 2.0
+			liege = { trait = fair }
+		}	
+		modifier = {
+			factor = 0.5
+			trait = ugly
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = ugly }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { opinion = { who = liege value = 0 } }
+		}	
+		modifier = {
+			factor = 0.5
+			NOT = { reverse_opinion = { who = liege value = 0 } }
+		}			
+		modifier = {
+			factor = 0.75
+			NOT = { opinion = { who = liege value = 25 } }
+		}	
+		modifier = {
+			factor = 0.75
+			NOT = { reverse_opinion = { who = liege value = 25 } }
+		}			
+		modifier = {
+			factor = 1.25
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 1.25
+			reverse_opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 1.25
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 1.25
+			reverse_opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.1
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.1
+			liege = { trait = chaste }
+		}
+		modifier = {
+			factor = 0.5
+			liege = { any_child = { trait = bastard } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA450"
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { trait = homosexual }
+						liege = { trait = homosexual }
+						is_female = yes
+						ROOT = { is_female = yes }
+					}
+					AND = {
+						NOT = { trait = homosexual }
+						liege = { trait = homosexual }
+						is_female = no
+						ROOT = { is_female = no }
+					}				
+				}
+			}
+			add_trait = homosexual
+		}
+		liege = { 
+			add_character_modifier = {
+				name = lustful_affair_timer
+				duration = 365
+				hidden = yes
+			}		
+			character_event = { id = 451 days = 7 tooltip = EVTTOOLTIP451 } 
+		}
+	}
+}
+
+# The liege responds to his/her advances
+character_event = {
+	id = 451
+	desc = EVTDESC451
+	picture = GFX_evt_lovers
+
+	is_triggered_only = yes 
+	option = {
+		name = EVTOPTA451
+		ai_chance = { factor = 90 }
+		FROM = { character_event = { id = 452 days = 7 tooltip = EVTTOOLTIP452 } }
+		change_variable = { which = "lifestyle_hedonist" value = 1 }
+	}
+	
+	option = {
+		name = EVTOPTB451
+		trigger = {
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = temperate
+			}	
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 10
+				is_close_relative = FROM
+			}		
+		}
+	}
+}
+
+# The courtier accepts or spurns the liege lord
+character_event = {
+	id = 452
+	desc = EVTDESC452
+	picture = GFX_evt_lovers
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = EVTOPTA452
+		ai_chance = { factor = 90 }
+		trigger = {
+			fertility = 0.33
+			FROM = { fertility = 0.33 }
+		}		
+		if = {
+			limit = {
+				is_female = yes
+				NOT = { age = 45 }
+				FROM = { is_female = no }
+				is_married = yes
+			}
+			random = {
+				chance = 50
+				cuckoo_impregnate = FROM
+			}
+		}
+		if = {
+			limit = {
+				is_female = yes
+				NOT = { age = 45 }
+				FROM = { is_female = no }
+				is_married = no
+			}
+			random = {
+				chance = 50
+				impregnate = FROM
+			}
+		}
+		if = {
+			limit = {
+				is_female = no
+				FROM = { 
+					NOT = { age = 45 } 
+					is_female = yes 
+					is_married = yes
+				}
+			}
+			random = {
+				chance = 50
+				FROM = { cuckoo_impregnate = ROOT }
+			}
+		}
+		if = {
+			limit = {
+				is_female = no
+				FROM = { 
+					NOT = { age = 45 } 
+					is_female = yes 
+					is_married = no
+				}
+			}
+			random = {
+				chance = 50
+				FROM = { impregnate = ROOT }
+			}
+		}				
+		change_variable = { which = "lifestyle_hedonist" value = 1 }
+		add_lover = FROM
+		FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+	}
+	option = {
+		name = "EVTOPTA452"
+		ai_chance = { factor = 90 }
+		trigger = {
+			OR = {
+				NOT = { fertility = 0.33 }
+				NOT = { FROM = { fertility = 0.33 } }
+			}
+		}
+		change_variable = { which = "lifestyle_hedonist" value = 1 }
+		add_lover = FROM
+		FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+	}
+	
+	option = {
+		name = "EVTOPTB452"
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_female = no }
+				is_female = yes
+			}			
+			modifier = {
+				factor = 2
+				trait = temperate
+			}	
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 10
+				is_close_relative = FROM
+			}			
+		}
+		trigger = {
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		FROM = { character_event = { id = 454 tooltip = EVTTOOLTIP454 } }
+	}
+	
+	option = {
+		name = "EVTOPTC452"
+		trigger = {
+			FROM = { is_female = no }
+			is_female = yes
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }			
+		}	
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = temperate
+			}	
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 10
+				is_close_relative = FROM
+			}			
+		}
+		FROM = { character_event = { id = 455 tooltip = EVTTOOLTIP455 } }
+	}
+}
+
+# The ruler becomes his/her lover
+character_event = {
+	id = 453
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC453
+	picture = GFX_evt_lovers
+	
+	option = {
+		name = EVTOPTA453
+		add_lover = FROM
+	}
+}
+
+# The ruler is spurned and disappointed
+character_event = {
+	id = 454
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC454
+	
+	option = {
+		name = EVTOPTA454
+		opinion = {
+			who = FROM
+			modifier = opinion_spurned
+			years = 5
+		}
+	}
+}
+
+# The ruler is spurned and embarrassed
+character_event = {
+	id = 455
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC455
+	
+	option = {
+		name = EVTOPTA455
+		opinion = {
+			who = FROM
+			modifier = opinion_embarrassed
+			years = 5
+		}
+	}
+}
+
+#############################################
+# PREGNANCY STARTS SHOWING EVENTS
+#############################################
+
+# On-action event: Pregnancy starts showing
+character_event = {
+	id = 400
+	desc = EVTDESC400
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		father_of_unborn = {
+			any_spouse = {
+				character = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "OK"
+		add_trait = pregnant
+		prestige = 10
+		
+		# Mark father's location
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { spouse = { at_location = ROOT } } }
+				set_character_flag = flag_mysterious_conception_mother
+			}
+		}
+		
+		if = {
+			limit = {
+				father_of_unborn = {
+					is_alive = yes
+				}
+			}
+			father_of_unborn = { character_event = { id = 403 tooltip = EVTTOOLTIP403 } }
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+
+# On-action event: Pregnancy out of wedlock!
+character_event = {
+	id = 401
+	desc = EVTDESC401
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_married = no
+		father_of_unborn = {
+			NOT = {
+				any_spouse = {
+					character = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		
+		piety = -25
+		prestige = -25		
+	}
+}
+
+# On-action event: Pregnancy in matrimony, with another father!
+character_event = {
+	id = 402
+	desc = EVTDESC402
+	picture = "GFX_evt_pregnancy"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_married = yes
+		father_of_unborn = {
+			NOT = {
+				any_spouse = {
+					character = ROOT
+				}
+			}
+		}
+	}
+	
+	# Option 1 - Come Clean
+	option = {
+		name = "EVTOPTA402"
+		add_trait = pregnant
+		if = {
+			limit = { father_of_unborn_known = no }
+			set_character_flag = flag_no_cuckoo
+			father_of_unborn = { character_event = { id = 405 tooltip = EVTTOOLTIP405 } }
+		}
+		
+		spouse = { character_event = { id = 404 tooltip = EVTTOOLTIP404 } }
+		
+		ai_chance = {
+			factor = 33
+			
+			# Opinion of Spouse
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 90 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 80 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 70 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 40 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 30 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 20 } }
+			}
+			modifier = {
+				factor = 1.25
+				spouse = { reverse_opinion = { who = ROOT value = 10 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -9 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -19 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -29 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -39 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -49 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -59 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -69 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -79 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -89 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { spouse = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+			
+			# Spouse's Personality Effects
+			modifier = {
+				factor = 0.5
+				spouse = { trait = wroth }
+			}
+			modifier = {
+				factor = 2
+				spouse = { trait = patient }
+			}
+			modifier = {
+				factor = 0.5
+				spouse = { trait = cruel }
+			}
+			modifier = {
+				factor = 0.5
+				spouse = { trait = envious }
+			}
+			modifier = {
+				factor = 2
+				spouse = { trait = kind }
+			}
+			modifier = {
+				factor = 0.5
+				spouse = { trait = proud }
+			}
+			modifier = {
+				factor = 2
+				spouse = { trait = humble }
+			}
+		}
+	}
+	
+	# Option 3 - Pass Child Off as Legitimate
+	option = {
+		trigger = { father_of_unborn_known = no }
+		name = "No one will ever know"
+		add_trait = pregnant
+		spouse = { character_event = { id = 403 tooltip = "EVTTOOLTIP403" } }
+		hidden_tooltip = { father_of_unborn = { character_event = { id = 407 } } }
+		
+		# Mark father's location
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { spouse = { at_location = ROOT } } }
+				set_character_flag = flag_mysterious_conception_mother
+			}
+		}
+		
+		# Stillbirths, potentially
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 10 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 9 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 8 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 7 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 6 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 5 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 4 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 3 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 2 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = flag_stillbirth }
+					NOT = { health = 1 }
+				}
+				random = {
+					chance = 5
+					set_character_flag = flag_stillbirth
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 33
+			
+			# Personality Modifiers
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = honest
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			
+			# Already have secret bastard children
+			modifier = {
+				factor = 5
+				any_child = { has_character_flag = flag_secret_bastard }
+			}
+		}
+	}
+}
+
+# The husband is a proud father!
+character_event = {
+	id = 403
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC403
+
+	option = {
+		name = OK
+		prestige = 5
+	}
+}
+
+# The husband suspects something ain't right
+character_event = {
+	id = 404
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC404
+
+	option = {
+		name = EVTOPTA404
+		opinion = {
+			who = FROM
+			modifier = opinion_potential_cuckold
+			months = 7
+		}
+		FROM = { father_of_unborn = { reverse_opinion = { who = FROM modifier = cuckolded months = 7 } } }
+	}
+}
+
+# Your lover comes clean about your affair
+character_event = {
+	id = 405
+	picture = GFX_evt_scandal
+	is_triggered_only = yes
+	desc = "EVTDESC405"
+	option = {
+		name = "EVTOPTA405"
+		character_event = { id = 64045 tooltip = "EVTTOOLTIP64045" }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = pious_man
+			}
+			modifier = {
+				factor = 0.5
+				trait = honest
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 100 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 90 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 80 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 70 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 60 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 50 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 30 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 20 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 10 }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -9 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -19 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -29 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -39 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -49 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -59 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -69 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -79 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -89 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB405"
+		ai_chance = { factor = 50 }
+	}
+}
+
+# Your lover has chosen to pass your child off as her husband's
+character_event = {
+	id = 407
+	desc = "EVTDESC407"
+	picture = GFX_evt_scandal
+	is_triggered_only = yes
+	
+	option = { name = "EVTOPTA407" }
+}
+
+#############################################
+# EVENTS ON THE BIRTH OF A BASTARD CHILD
+#############################################
+
+# On-action event: A child is born out of wedlock
+character_event = {
+	id = 300
+	desc = EVTDESC300
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { mother = { has_character_flag = flag_stillbirth } }
+		was_conceived_a_bastard = yes
+		OR = {
+			NOT = { real_father = { always = yes } } # There is no 'real_father' set, i.e. this is not a hidden, cuckoo bastard
+			mother = { has_character_flag = flag_no_cuckoo } # The mother has decided to tell her husband about the affair
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { mother = { has_character_flag = flag_no_cuckoo } }
+			mother = { clr_character_flag = flag_no_cuckoo }
+			real_father = { ROOT = { set_father = PREV } }
+		}
+	}
+
+	option = {
+		name = OK
+		father = {
+			character_event = { id = 301 days = 1 } # The father's reaction
+		}
+	}
+}
+
+# The father reacts to the bastard birth
+character_event = {
+	id = 301
+	desc = EVTDESC301
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA301 # Legitimize the child
+		piety = -10
+		FROM = {
+			character_event = { id = 302 tooltip = EVTTOOLTIP302 } # The child gets the father's dynasty
+			mother = {
+				character_event = { id = 303 tooltip = EVTTOOLTIP303 } # The child's mother is very pleased
+				spouse = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's husband is pissed off
+				}
+			}
+		}
+		any_child = {
+			limit = {
+				NOT = { character = FROM }
+				dynasty = ROOT
+				NOT = { trait = bastard }
+			}
+			opinion = {
+				who = ROOT
+				modifier = legitimized_bastard
+				months = 60
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB301 # Acknowledge the child
+		piety = -10
+		trigger = {
+			FROM = {
+				is_female = no
+			}
+		}
+		FROM = {
+			character_event = { id = 306 tooltip = EVTTOOLTIP306 } # The child gets the father's dynasty, but is not legitimized.
+			mother = {
+				character_event = { id = 307 tooltip = EVTTOOLTIP307 } # The child's mother is pleased
+				spouse = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's husband is pissed off
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC301 # Denounce the child
+		piety = -10
+		
+		FROM = {
+			character_event = { id = 309 tooltip = EVTTOOLTIP309 } #  The child founds a new bastard dynasty
+			mother = {
+				character_event = { id = 310 tooltip = EVTTOOLTIP310 } # The child's mother is dishonoured
+				spouse = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's husband is pissed off
+				}
+			}
+		}
+	}
+}
+
+# The child gets the father's dynasty
+character_event = {
+	id = 302
+	
+	is_triggered_only = yes 
+	desc = EVTDESC302
+	picture = GFX_evt_birth
+
+	option = {
+		name = OK
+		dynasty = FROM
+		remove_trait = bastard
+		add_trait = legit_bastard
+		
+		father = {
+			spouse = {
+				character_event = { id = 305 tooltip = EVTTOOLTIP305 } # The father's wife is enraged
+			}
+		}
+	}
+}
+
+# The child's mother is very pleased
+character_event = {
+	id = 303
+	
+	is_triggered_only = yes 
+	desc = EVTDESC303
+	picture = GFX_evt_birth
+
+	option = {
+		name = EVTOPTA303
+		opinion = {
+			who = FROM
+			modifier = legitimized_child
+			years = 10
+		}
+	}
+}
+
+# The child's mother's husband is pissed off
+character_event = {
+	id = 304
+	picture = GFX_evt_quarrel
+	desc = EVTDESC304
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = EVTOPTA304
+		opinion = {
+			who = FROM
+			modifier = cuckolded
+			years = 10
+		}
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = unfaithful
+				years = 10
+			}
+		}
+	}
+}
+
+# The father's wife is enraged
+character_event = {
+	id = 305
+	desc = EVTDESC305
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = EVTOPTA305
+		FROM = {
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = slut_seductress
+					years = 20
+				}
+			}
+		}
+		
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = legitimized_bastard
+				years = 20
+			}
+		}
+	}
+}
+
+# The child founds a new bastard dynasty
+character_event = {
+	id = 306
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC306
+	picture = GFX_evt_birth
+
+	option = {
+		name = OK
+		dynasty = FROM
+		add_trait = bastard
+		father = {
+			spouse = {
+				character_event = { id = 308 tooltip = EVTTOOLTIP308 } # The father's wife is angered
+			}
+		}
+	}
+}
+
+# The child's mother is pleased
+character_event = {
+	id = 307
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC307
+	picture = GFX_evt_birth
+
+	option = {
+		name = EVTOPTA307
+		opinion = {
+			who = FROM
+			modifier = acknowledged_child
+			years = 10
+		}
+	}
+}
+
+# The father's wife is angered
+character_event = {
+	id = 308
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC308
+
+	option = {
+		name = EVTOPTA308
+		FROM = {
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = slut_seductress
+					years = 20
+				}
+			}
+		}
+		
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = acknowledged_bastard
+				years = 10
+			}
+		}
+	}
+}
+
+# The child is denounced
+character_event = {
+	id = 309
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC309
+	picture = GFX_evt_birth
+
+	option = {
+		name = OK
+		father = {
+			spouse = {
+				character_event = { id = 311 } # The father's wife is displeased
+			}
+		}
+	}
+}
+
+# The child's mother is dishonoured
+character_event = {
+	id = 310
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC310
+
+	option = {
+		name = EVTOPTA310
+		opinion = {
+			who = FROM
+			modifier = denounced_child
+			years = 10
+		}
+	}
+}
+
+# The father's wife is displeased
+character_event = {
+	id = 311
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC311
+
+	option = {
+		name = EVTOPTA311
+		FROM = {
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = slut_seductress
+					years = 20
+				}
+			}
+		}
+		
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = unfaithful
+				years = 5
+			}
+		}
+	}
+}
+
+# On-action event: A bastard child is born, but is not recognized as such by the spouse of the mother
+character_event = {
+	id = 318
+	desc = "EVTDESC318"
+	picture = "GFX_evt_birth"
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		real_father = {
+			is_alive = yes
+			ROOT = {
+				father = {
+					NOT = { character = PREVPREV }
+				}
+			}
+		}
+		mother = { NOT = { has_character_flag = flag_no_cuckoo } }
+	}
+
+	option = {
+		name = "OK"
+		real_father = {
+			character_event = { id = 319 } # The real father is notified
+		}
+	}
+}
+
+character_event = {
+	id = 319
+	desc = "EVTDESC319"
+	picture = "GFX_evt_birth"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "EVTOPTA319"
+		piety = -1
+	}
+}
+
+# A courtier initiates romance with another courtier
+character_event = {
+	id = 312
+	desc = "EVTDESC450"
+	picture = "GFX_evt_lovers"
+	is_triggered_only = yes
+	
+	capable_only = yes
+	
+	trigger = {
+		is_ruler = no
+		age = 14
+		NOT = { age = 35 }
+		liege = {
+			demesne_size = 1
+			any_courtier = {
+				is_ruler = no
+				OR = {
+					trait = lustful
+					ROOT = { trait = lustful }
+					#trait = divine_blood
+					#ROOT = { trait = divine_blood }
+					NOT = { is_close_relative = ROOT }
+				}
+				OR = {
+					AND = {
+						NOT = { trait = homosexual }
+						ROOT = { NOT = { trait = homosexual } }
+						is_female = no
+						ROOT = { is_female = yes }
+					}
+					AND = {
+						NOT = { trait = homosexual }
+						ROOT = { NOT = { trait = homosexual } }
+						is_female = yes
+						ROOT = { is_female = no }
+					}
+					AND = {
+						trait = homosexual
+						ROOT = { trait = homosexual }
+						is_female = yes
+						ROOT = { is_female = yes }
+					}
+					AND = {
+						trait = homosexual
+						ROOT = { trait = homosexual }
+						is_female = no
+						ROOT = { is_female = no }
+					}				
+				}
+				has_lover = no
+				is_pregnant = no
+				prisoner = no
+				age = 14
+				NOT = {
+					has_character_modifier = lustful_affair_timer
+				}
+				NOT = { trait = infirm }
+				NOT = { trait = incapable }
+				NOT = { trait = celibate }
+				NOT = { trait = eunuch }
+				NOT = { trait = chaste }
+				NOT = { spouse = { character = ROOT } }
+				opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 0 }
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_former_lover
+					}
+				}				
+			}
+		}	
+		has_lover = no
+		is_pregnant = no
+		prisoner = no
+		NOT = { trait = chaste }		
+		NOT = { trait = infirm }
+		NOT = { trait = incapable }
+		NOT = { trait = celibate }
+		NOT = { trait = eunuch }
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 1.5
+			spouse = { is_ruler = yes }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { age = 30 }
+			spouse = { age = 40 }
+		}		
+		modifier = {
+			factor = 3.0
+			trait = homosexual #to balance for fewer potential lovers
+		}	
+		modifier = {
+			factor = 1.5
+			NOT = { age = 20 }
+		}
+		modifier = {
+			factor = 0.5
+			age = 30
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}	
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+	}
+
+	option = {
+		name = "EVTOPTA450"
+		liege = { 
+			random_courtier = {
+				limit = {
+					is_ruler = no
+					NOT = { is_close_relative = ROOT }
+					OR = {
+						AND = {
+							NOT = { trait = homosexual }
+							ROOT = { NOT = { trait = homosexual } }
+							is_female = no
+							ROOT = { is_female = yes }
+						}
+						AND = {
+							NOT = { trait = homosexual }
+							ROOT = { NOT = { trait = homosexual } }
+							is_female = yes
+							ROOT = { is_female = no }
+						}
+						AND = {
+							trait = homosexual
+							ROOT = { trait = homosexual }
+							is_female = yes
+							ROOT = { is_female = yes }
+						}
+						AND = {
+							trait = homosexual
+							ROOT = { trait = homosexual }
+							is_female = no
+							ROOT = { is_female = no }
+						}				
+					}
+					has_lover = no
+					is_pregnant = no
+					prisoner = no
+					age = 14
+					NOT = {
+						has_character_modifier = lustful_affair_timer
+					}
+					NOT = { trait = infirm }
+					NOT = { trait = incapable }
+					NOT = { trait = celibate }
+					NOT = { trait = eunuch }
+					NOT = { trait = chaste }
+					NOT = { spouse = { character = ROOT } }
+					opinion = { who = ROOT value = 0 }
+					reverse_opinion = { who = ROOT value = 0 }
+					NOT = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_former_lover
+						}
+					}
+				}
+				add_character_modifier = {
+					name = lustful_affair_timer
+					duration = 365
+					hidden = yes
+				}		
+				character_event = { id = 451 days = 7 tooltip = EVTTOOLTIP451 } 				
+			}		
+		}
+	}
+}

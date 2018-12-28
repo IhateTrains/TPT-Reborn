@@ -1,0 +1,23 @@
+# 1122 - Frignano
+
+# County Title
+title = c_frignano
+
+# Settlements
+max_settlements = 5
+
+b_frignanomodena = castle
+b_montebonello = city
+b_renno = temple
+#b_montecuccolo = castle
+#b_olina = castle
+#b_pievepelago = temple
+#b_montegarullo = castle
+
+
+# Misc
+culture = italian
+religion = catholic
+
+# History
+1110.1.1 = { b_montecuccolo = castle }

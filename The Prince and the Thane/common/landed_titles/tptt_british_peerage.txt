@@ -1,0 +1,240 @@
+#################### 
+#
+# BRITISH PEERAGE
+#
+####################
+
+##Duke of York is in landed titles, second son of the Monarch
+
+##Duke of Cornwall is in landed titles, second son of the Monarch together with Prince of Wales
+
+d_earldom_march = { #Earl of March - Powerful landholder in the Marches
+		color={ 201 0 22 }
+		color2={ 255 255 255 }
+		capital = 52 # Northumberland
+		
+		title = "Earl"
+	    foa = "EARLDOM_FOA"
+	    title_prefix = "EARLDOM_OF"
+
+        dignity = 100 # Never want the Republic of Genoa to change primary title	     
+	    
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+	
+d_earldom_arundel = { #Earl of Arundel - Premier Earl, Duke of Norfolk or heir apparent to Duke of Norfolk
+		color={ 201 0 22 }
+		color2={ 255 255 255 }
+		capital = 52 # Northumberland
+		
+		title = "Earl"
+	    foa = "EARLDOM_FOA"
+	    title_prefix = "EARLDOM_OF"
+
+        dignity = 100 # Never want the Republic of Genoa to change primary title	     
+	    
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+	
+d_earldom_warwick = { #Earl of Warwick - Possessor of Warwick
+		color={ 201 0 22 }
+		color2={ 255 255 255 }
+		capital = 67 # Warwick
+		
+		title = "Earl"
+	    foa = "EARLDOM_FOA"
+	    title_prefix = "EARLDOM_OF"
+
+        dignity = 100 # Never want the Republic of Genoa to change primary title	     
+	    
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+	
+d_buckingham = { #Earl of Buckingham - Powerful Buckingham vassal
+		color={ 135 129 89 }
+		color2={ 255 255 255 }
+		capital = 974 # Buckinghamshire
+		
+		title = "Earl"
+	    foa = "EARLDOM_FOA"
+	    title_prefix = "EARLDOM_OF"
+
+		dignity = 100
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+	
+d_surrey = { #Earldom of Surrey - Possessor of Surrey
+		color={ 85 149 59 }
+		color2={ 255 255 255 }
+		capital = 24 # Surrey
+		
+		title = "Earl"
+	    foa = "EARLDOM_FOA"
+	    title_prefix = "EARLDOM_OF"
+
+		dignity = 100
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+	
+d_wales = { #Prince of Wales - First son/heir of the Monarch
+		color={ 145 99 39 }
+		color2={ 255 255 255 }
+		capital = 64 # Gwynedd
+
+		dignity = 200
+		title = "Prince"	
+		allow = {
+		OR = {
+		    culture = english
+		    culture = norman
+		}
+		    father = {
+			has_landed_title = k_england
+			}
+		is_primary_heir = yes
+		}
+	}
+
+d_lancaster = { #Duke of Lancaster - Family member owning in Lancaster
+		color={ 85 199 29 }
+		color2={ 255 255 255 }
+		capital = 58 # Lancaster
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+
+d_gloucester = { #Duke of Gloucester - Junior son of the Monarch
+		color={ 235 189 89 }
+		color2={ 255 255 255 }
+		capital = 21 # Gloucester
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+
+d_aumale = { #Duke of Aumale - Powerful Norman under English crown
+		color={ 175 89 29 }
+		color2={ 255 255 255 }
+		capital = 96 # Eu
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+
+d_exeter = { #Duke of Exeter - Half Brother of the King/Powerful Noble
+		color={ 75 179 79 }
+		color2={ 255 255 255 }
+		capital = 29 # Devon
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+
+d_norfolk = { #Duke of Norfolk - Premier Duke, oldest brother of the Monarch
+		color={ 35 189 129 }
+		color2={ 255 255 255 }
+		capital = 70 # Norfolk
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+
+d_bedford = { #Duke of Bedford - Third son of the monarch
+		color={ 65 149 199 }
+		color2={ 255 255 255 }
+		capital = 69 # Bedford
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}
+	
+d_clarence = { #Duke of Clarence - Junior son of the monarch
+		color={ 65 149 199 }
+		color2={ 255 255 255 }
+		capital = 32 # Middlesex
+
+		dignity = 200
+	
+		allow = {
+		    OR = {
+		        culture = english
+		        culture = norman
+		    }
+			has_landed_title = k_england
+		}
+	}

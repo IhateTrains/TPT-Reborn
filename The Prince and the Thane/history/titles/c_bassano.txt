@@ -1,0 +1,27 @@
+1030.1.1={
+	liege="d_verona"
+	holder=1191075 #Arpone I Ezzelini
+}
+1050.1.1={
+	holder=1191076 #Ecelo I Ezzelini
+}
+1095.1.1={
+	liege="e_hre"
+	holder=1191078 #Alberico I Ezzelini
+}
+1140.1.1={
+	holder=1191079 #Ezzelino I Ezzelini
+}
+1185.1.1={
+	holder=1191081 #Ezzelino II Ezzelini
+}
+1230.1.1={
+	holder=1191082 #Ezzelino III Ezzelini
+}
+1259.1.1={
+	holder=0 #Free Commune
+	liege=0
+}
+1305.1.1={
+	liege="d_verona"
+}

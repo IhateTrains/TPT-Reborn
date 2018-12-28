@@ -1,0 +1,4136 @@
+# Demesne type (de facto) laws (set for the PRIMARY title in a demesne but affects the whole demesne)
+
+laws = {
+
+	# FEUDAL VASSAL LEVY SIZE LAWS
+	##############################
+	
+	feudal_contract_0 = {
+		group = feudal_contract
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_contract_1
+			revoke_law = feudal_contract_2
+			revoke_law = feudal_contract_3
+			revoke_law = feudal_contract_4
+		}
+
+		castle_vassal_max_levy = -0.6
+
+	}
+	
+	feudal_contract_1 = {
+		group = feudal_contract
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			OR = {
+				has_crown_law_title = no
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_contract_0
+			revoke_law = feudal_contract_2
+			revoke_law = feudal_contract_3
+			revoke_law = feudal_contract_4
+		}
+		
+		castle_vassal_max_levy = -0.3
+		castle_vassal_min_levy = 0.05
+	}
+	
+	feudal_contract_2 = {
+		group = feudal_contract
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0			
+		}
+		effect = {
+			revoke_law = feudal_contract_0
+			revoke_law = feudal_contract_1
+			revoke_law = feudal_contract_3
+			revoke_law = feudal_contract_4
+		}
+		
+		castle_vassal_min_levy = 0.1
+		castle_vassal_max_levy = -0.15
+	}
+	
+	feudal_contract_3 = {
+		group = feudal_contract
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_contract_0
+			revoke_law = feudal_contract_1
+			revoke_law = feudal_contract_2
+			revoke_law = feudal_contract_4
+		}
+
+		castle_vassal_max_levy = -0.05
+		castle_vassal_min_levy = 0.15
+	}
+	
+	feudal_contract_4 = {
+		group = feudal_contract
+		feudal_opinion = -20
+		
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			crownlaw_title = { has_law = centralization_4 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_contract_0
+			revoke_law = feudal_contract_1
+			revoke_law = feudal_contract_2
+			revoke_law = feudal_contract_3
+		}
+		
+		castle_vassal_min_levy = 0.3
+	}	
+	
+	
+	# FEUDAL VASSAL TAX SIZE LAWS
+	##############################
+	
+	feudal_tax_0 = {
+		group = feudal_tax
+		feudal_opinion = 0
+		default = yes
+			
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_law = feudal_tax_1 }
+			}			
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = charitable } }
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_tax_1
+			revoke_law = feudal_tax_2
+			revoke_law = feudal_tax_3
+			revoke_law = feudal_tax_4
+		}
+		castle_vassal_tax_modifier = 0.05
+	}
+
+	feudal_tax_1 = {
+		group = feudal_tax
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                        religion_group = other_pagan_group
+                religion_group = african_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }			
+			OR = {
+				has_crown_law_title = no
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_law = feudal_tax_0 }
+				NOT = { has_law = feudal_tax_2 }
+			}
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = greedy } }
+				has_law = feudal_tax_0
+			}			
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = charitable } }
+				has_law = feudal_tax_2
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_tax_0
+			revoke_law = feudal_tax_2
+			revoke_law = feudal_tax_3
+			revoke_law = feudal_tax_4
+		}
+		
+		castle_vassal_tax_modifier = 0.1
+	}
+	
+	feudal_tax_2 = {
+		group = feudal_tax
+		feudal_opinion = -20
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_law = feudal_tax_1 }
+			}			
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = greedy } }
+			}			
+			modifier = {
+				factor = 0
+				has_law = feudal_tax_2
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_tax_0
+			revoke_law = feudal_tax_1
+			revoke_law = feudal_tax_3
+			revoke_law = feudal_tax_4
+		}
+		castle_vassal_tax_modifier = 0.15
+	}
+	
+	feudal_tax_3 = {
+		group = feudal_tax
+		feudal_opinion = -30
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_tax_0
+			revoke_law = feudal_tax_1
+			revoke_law = feudal_tax_2
+			revoke_law = feudal_tax_4
+		}
+		
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	feudal_tax_4 = {
+		group = feudal_tax
+		feudal_opinion = -40
+		potential = {
+			NOT = { tier = baron }
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			crownlaw_title = { has_law = centralization_4 }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = feudal_tax_0
+			revoke_law = feudal_tax_1
+			revoke_law = feudal_tax_2
+			revoke_law = feudal_tax_3
+		}
+		
+		castle_vassal_tax_modifier = 0.25
+	}	
+	
+	# CITY VASSAL LEVY SIZE LAWS
+	##############################
+	
+	city_contract_0 = {
+		group = city_contract
+		city_opinion = 0
+		default = yes
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_law = city_contract_0
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_contract_1
+			revoke_law = city_contract_2
+			revoke_law = city_contract_3
+			revoke_law = city_contract_4
+		}
+
+		city_vassal_max_levy = -0.5
+
+	}
+
+	city_contract_1 = {
+		group = city_contract
+		city_opinion = -5
+
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			OR = {
+				has_crown_law_title = no
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_contract_0
+			revoke_law = city_contract_2
+			revoke_law = city_contract_3
+			revoke_law = city_contract_4
+		}
+		
+		city_vassal_max_levy = -0.3
+		city_vassal_min_levy = 0.05
+	}
+	
+	city_contract_2 = {
+		group = city_contract
+		city_opinion = -10
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_contract_0
+			revoke_law = city_contract_1
+			revoke_law = city_contract_3
+			revoke_law = city_contract_4
+		}
+		
+		city_vassal_max_levy = -0.2
+		city_vassal_min_levy = 0.1
+	}
+	
+	city_contract_3 = {
+		group = city_contract
+		city_opinion = -15
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_contract_0
+			revoke_law = city_contract_1
+			revoke_law = city_contract_2
+			revoke_law = city_contract_4
+		}
+		
+		city_vassal_max_levy = -0.1
+		city_vassal_min_levy = 0.15
+	}
+	
+	city_contract_4 = {
+		group = city_contract
+		city_opinion = -20
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			crownlaw_title = { has_law = centralization_4 }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_contract_0
+			revoke_law = city_contract_1
+			revoke_law = city_contract_2
+			revoke_law = city_contract_3
+		}
+		
+		city_vassal_min_levy = 0.2
+	}	
+	
+	
+	# CITY VASSAL TAX SIZE LAWS
+	##############################
+	
+	city_tax_0 = {
+		group = city_tax
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_tax_1
+			revoke_law = city_tax_2
+			revoke_law = city_tax_3
+			revoke_law = city_tax_4
+		}
+		
+		city_vassal_tax_modifier = 0.1
+	}
+
+	city_tax_1 = {
+		group = city_tax
+		city_opinion = -10
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }		
+			OR = {
+				has_crown_law_title = no
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				holder_scope = { trait = charitable }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_law = city_tax_2
+					has_law = city_tax_3
+				}
+			}
+			modifier = {
+				factor = 0
+				has_law = city_tax_1
+			}				
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_tax_0
+			revoke_law = city_tax_2
+			revoke_law = city_tax_3
+			revoke_law = city_tax_4
+		}
+		
+		city_vassal_tax_modifier = 0.2
+	}
+	
+	city_tax_2 = {
+		group = city_tax
+		city_opinion = -20
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				holder_scope = { trait = charitable }
+				NOT = { has_law = city_tax_3 }				
+			}
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = charitable } }
+				has_law = city_tax_3
+			}	
+			modifier = {
+				factor = 0
+				has_law = city_tax_2
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_tax_0
+			revoke_law = city_tax_1
+			revoke_law = city_tax_3
+			revoke_law = city_tax_4
+		}
+		city_vassal_tax_modifier = 0.3
+	}
+	
+	city_tax_3 = {
+		group = city_tax
+		city_opinion = -30
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = greedy } }
+			}
+			modifier = {
+				factor = 0
+				has_law = city_tax_3
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_tax_0
+			revoke_law = city_tax_1
+			revoke_law = city_tax_2
+			revoke_law = city_tax_4
+		}
+		
+		city_vassal_tax_modifier = 0.4
+	}
+	
+	city_tax_4 = {
+		group = city_tax
+		city_opinion = -40
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			crownlaw_title = { has_law = centralization_4 }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = city_tax_0
+			revoke_law = city_tax_1
+			revoke_law = city_tax_2
+			revoke_law = city_tax_3
+		}
+		
+		city_vassal_tax_modifier = 0.5
+	}	
+	
+	# TEMPLE VASSAL LEVY SIZE LAWS
+	##############################
+	
+	temple_contract_0 = {
+		group = temple_contract
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_law = temple_contract_0
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_contract_1
+			revoke_law = temple_contract_2
+			revoke_law = temple_contract_3
+			revoke_law = temple_contract_4
+		}	
+
+		temple_vassal_max_levy = -0.5
+	}
+
+	temple_contract_1 = {
+		group = temple_contract
+		temple_opinion = -5
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			OR = {
+				has_crown_law_title = no
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_contract_0
+			revoke_law = temple_contract_2
+			revoke_law = temple_contract_3
+			revoke_law = temple_contract_4
+		}	
+
+		temple_vassal_max_levy = -0.3
+		temple_vassal_min_levy = 0.05
+	}
+	
+	temple_contract_2 = {
+		group = temple_contract
+		temple_opinion = -10
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_contract_0
+			revoke_law = temple_contract_1
+			revoke_law = temple_contract_3
+			revoke_law = temple_contract_4
+		}	
+
+		temple_vassal_max_levy = -0.2
+		temple_vassal_min_levy = 0.1
+	}
+	
+	temple_contract_3 = {
+		group = temple_contract
+		temple_opinion = -15
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_contract_0
+			revoke_law = temple_contract_1
+			revoke_law = temple_contract_2
+			revoke_law = temple_contract_4
+		}	
+
+		temple_vassal_max_levy = -0.1
+		temple_vassal_min_levy = 0.15
+	}
+	
+	temple_contract_4 = {
+		group = temple_contract
+		temple_opinion = -20
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			crownlaw_title = { has_law = centralization_4 }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_contract_0
+			revoke_law = temple_contract_1
+			revoke_law = temple_contract_2
+			revoke_law = temple_contract_3
+		}	
+
+		temple_vassal_min_levy = 0.2
+	}	
+	
+	# TEMPLE VASSAL TAX SIZE LAWS
+	##############################
+	
+	temple_tax_0 = {
+		group = temple_tax
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_tax_1
+			revoke_law = temple_tax_2
+			revoke_law = temple_tax_3
+			revoke_law = temple_tax_4
+		}
+		
+		temple_vassal_tax_modifier = 0.1
+	}
+
+	temple_tax_1 = {
+		group = temple_tax
+		temple_opinion = -10
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }			
+			OR = {
+				has_crown_law_title = no
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				holder_scope = { trait = charitable }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_law = temple_tax_2
+					has_law = temple_tax_3
+				}
+			}
+			modifier = {
+				factor = 0
+				has_law = temple_tax_1
+			}				
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_tax_0
+			revoke_law = temple_tax_2
+			revoke_law = temple_tax_3
+			revoke_law = temple_tax_4
+		}
+		temple_vassal_tax_modifier = 0.2
+	}
+	
+	temple_tax_2 = {
+		group = temple_tax
+		temple_opinion = -20
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				holder_scope = { trait = charitable }
+				NOT = { has_law = temple_tax_3 }				
+			}
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = charitable } }
+				has_law = temple_tax_3
+			}
+			modifier = {
+				factor = 0
+				has_law = temple_tax_2
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_tax_0
+			revoke_law = temple_tax_1
+			revoke_law = temple_tax_3
+			revoke_law = temple_tax_4
+		}
+		temple_vassal_tax_modifier = 0.3
+	}
+	
+	temple_tax_3 = {
+		group = temple_tax
+		temple_opinion = -30
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = greedy } }
+			}
+			modifier = {
+				factor = 0
+				has_law = temple_tax_3
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_tax_0
+			revoke_law = temple_tax_1
+			revoke_law = temple_tax_2
+			revoke_law = temple_tax_4
+		}
+		temple_vassal_tax_modifier = 0.4
+	}
+	
+	temple_tax_4 = {
+		group = temple_tax
+		temple_opinion = -40
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			NOT = { holder_scope = { religion_group = muslim } }
+			NOT = { holder_scope = { OR = {
+                        religion_group = pagan_group 
+                        religion_group = baltic_pagan_group
+                religion_group = african_pagan_group
+                        religion_group = other_pagan_group
+                        culture = mongol
+                        culture_group = celtic } } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			crownlaw_title = { has_law = centralization_4 }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0		
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = temple_tax_0
+			revoke_law = temple_tax_1
+			revoke_law = temple_tax_2
+			revoke_law = temple_tax_3
+		}
+		temple_vassal_tax_modifier = 0.5
+	}
+	
+	##############################
+	# MUSLIM FEUDAL LAWS
+	##############################
+	
+	iqta_contract_0 = {
+		group = iqta_contract
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_contract_1
+			revoke_law = iqta_contract_2
+			revoke_law = iqta_contract_3
+			revoke_law = iqta_contract_4
+		}
+
+		castle_vassal_max_levy = -0.35
+
+	}
+	
+	iqta_contract_1 = {
+		group = iqta_contract
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_contract_0
+			revoke_law = iqta_contract_2
+			revoke_law = iqta_contract_3
+			revoke_law = iqta_contract_4
+		}
+		
+		castle_vassal_max_levy = -0.25
+		castle_vassal_min_levy = 0.1
+	}
+	
+	iqta_contract_2 = {
+		group = iqta_contract
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0			
+		}
+		effect = {
+			revoke_law = iqta_contract_0
+			revoke_law = iqta_contract_1
+			revoke_law = iqta_contract_3
+			revoke_law = iqta_contract_4
+		}
+		
+		castle_vassal_max_levy = -0.2
+		castle_vassal_min_levy = 0.15
+	}
+	
+	iqta_contract_3 = {
+		group = iqta_contract
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_contract_0
+			revoke_law = iqta_contract_1
+			revoke_law = iqta_contract_2
+			revoke_law = iqta_contract_4
+		}
+		
+		castle_vassal_max_levy = -0.15
+		castle_vassal_min_levy = 0.15
+	}
+	
+	iqta_contract_4 = {
+		group = iqta_contract
+		feudal_opinion = -20
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}		
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_contract_0
+			revoke_law = iqta_contract_1
+			revoke_law = iqta_contract_2
+			revoke_law = iqta_contract_3
+		}
+		
+		castle_vassal_min_levy = 0.25
+	}	
+	
+	
+	# FEUDAL VASSAL TAX SIZE LAWS
+	##############################
+	
+	iqta_tax_0 = {
+		group = iqta_tax
+		feudal_opinion = 0
+		default = yes
+			
+		potential = {
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}
+		allow = {	
+			holder_scope = { war = no }			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_law = iqta_tax_1 }
+			}			
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = charitable } }
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_tax_1
+			revoke_law = iqta_tax_2
+			revoke_law = iqta_tax_3
+			revoke_law = iqta_tax_4
+		}
+		castle_vassal_tax_modifier = 0.1
+	}
+
+	iqta_tax_1 = {
+		group = iqta_tax
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}
+		allow = {	
+			holder_scope = { war = no }			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_law = iqta_tax_0 }
+				NOT = { has_law = iqta_tax_2 }
+			}
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = greedy } }
+				has_law = iqta_tax_0
+			}			
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = charitable } }
+				has_law = iqta_tax_2
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_tax_0
+			revoke_law = iqta_tax_2
+			revoke_law = iqta_tax_3
+			revoke_law = iqta_tax_4
+		}
+		
+		castle_vassal_tax_modifier = 0.15
+	}
+	
+	iqta_tax_2 = {
+		group = iqta_tax
+		feudal_opinion = -20
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_1 }
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_law = iqta_tax_1 }
+			}			
+			modifier = {
+				factor = 0
+				holder_scope = { NOT = { trait = greedy } }
+			}			
+			modifier = {
+				factor = 0
+				has_law = iqta_tax_2
+			}			
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_tax_0
+			revoke_law = iqta_tax_1
+			revoke_law = iqta_tax_3
+			revoke_law = iqta_tax_4
+		}
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	iqta_tax_3 = {
+		group = iqta_tax
+		feudal_opinion = -30
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_2 }
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_tax_0
+			revoke_law = iqta_tax_1
+			revoke_law = iqta_tax_2
+			revoke_law = iqta_tax_4
+		}
+		
+		castle_vassal_tax_modifier = 0.25
+	}
+	
+	iqta_tax_4 = {
+		group = iqta_tax
+		feudal_opinion = -40
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = muslim }
+			NOT = { holder_scope = {  culture = mongol } }
+			NOT = { holder_scope = {  culture_group = celtic } }
+		}
+		allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+			OR = {
+				crownlaw_title = { has_law = centralization_3 }
+				crownlaw_title = { has_law = centralization_4 }
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = iqta_tax_0
+			revoke_law = iqta_tax_1
+			revoke_law = iqta_tax_2
+			revoke_law = iqta_tax_3
+		}
+		
+		castle_vassal_tax_modifier = 0.3
+	}	
+
+	##############################
+	# NORDIC PAGAN LAWS
+	##############################
+
+	nm_castle_control_0 = {
+		group = nm_castle_control
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_castle_control_1
+				revoke_law = nm_castle_control_2
+				revoke_law = nm_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.7
+		castle_vassal_tax_modifier = 0.0
+	}
+	
+	nm_castle_control_1 = {
+		group = nm_castle_control
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_castle_control_0
+				revoke_law = nm_castle_control_2
+				revoke_law = nm_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.5
+		castle_vassal_min_levy = 0.2
+		castle_vassal_tax_modifier = 0.1
+	}
+	
+	nm_castle_control_2 = {
+		group = nm_castle_control
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_castle_control_0
+				revoke_law = nm_castle_control_1
+				revoke_law = nm_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.3
+		castle_vassal_min_levy = 0.4
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	nm_castle_control_3 = {
+		group = nm_castle_control
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 2000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_castle_control_0
+				revoke_law = nm_castle_control_1
+				revoke_law = nm_castle_control_2
+			}
+		}
+		castle_vassal_max_levy = -0.1
+		castle_vassal_min_levy = 0.6
+		castle_vassal_tax_modifier = 0.3
+	}
+
+	nm_city_control_0 = {
+		group = nm_city_control
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_city_control_1
+				revoke_law = nm_city_control_2
+				revoke_law = nm_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.8
+		city_vassal_tax_modifier = 0.05
+	}
+	
+	nm_city_control_1 = {
+		group = nm_city_control
+		city_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_city_control_0
+				revoke_law = nm_city_control_2
+				revoke_law = nm_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.6
+		city_vassal_min_levy = 0.1
+		city_vassal_tax_modifier = 0.2
+	}
+	
+	nm_city_control_2 = {
+		group = nm_city_control
+		city_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_city_control_0
+				revoke_law = nm_city_control_1
+				revoke_law = nm_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.5
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.4
+	}
+	
+	nm_city_control_3 = {
+		group = nm_city_control
+		city_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 2000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_city_control_0
+				revoke_law = nm_city_control_1
+				revoke_law = nm_city_control_2
+			}
+		}
+		city_vassal_max_levy = -0.4
+		city_vassal_min_levy = 0.3
+		city_vassal_tax_modifier = 0.6
+	}
+
+	nm_temple_control_0 = {
+		group = nm_temple_control
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_temple_control_1
+				revoke_law = nm_temple_control_2
+				revoke_law = nm_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.7
+		temple_vassal_tax_modifier = 0.0
+	}
+	
+	nm_temple_control_1 = {
+		group = nm_temple_control
+		temple_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }
+			holder_scope = { piety = 250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_temple_control_0
+				revoke_law = nm_temple_control_2
+				revoke_law = nm_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.6
+		temple_vassal_min_levy = 0.15
+		temple_vassal_tax_modifier = 0.15
+	}
+	
+	nm_temple_control_2 = {
+		group = nm_temple_control
+		temple_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }
+			holder_scope = { piety = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_temple_control_0
+				revoke_law = nm_temple_control_1
+				revoke_law = nm_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.5
+		temple_vassal_min_levy = 0.3
+		temple_vassal_tax_modifier = 0.3
+	}
+	
+	nm_temple_control_3 = {
+		group = nm_temple_control
+		temple_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 2000 }
+			holder_scope = { piety = 750 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = nm_temple_control_0
+				revoke_law = nm_temple_control_1
+				revoke_law = nm_temple_control_2
+			}
+		}
+		temple_vassal_max_levy = -0.35
+		temple_vassal_min_levy = 0.45
+		temple_vassal_tax_modifier = 0.45
+	}
+        ##############################
+	# BALTIC PAGAN LAWS
+	##############################
+
+	baltic_castle_control_0 = {
+		group = baltic_castle_control
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+		holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_castle_control_1
+				revoke_law = baltic_castle_control_2
+				revoke_law = baltic_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.5
+		castle_vassal_tax_modifier = 0.0
+	}
+	
+	baltic_castle_control_1 = {
+		group = baltic_castle_control
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 400 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_castle_control_0
+				revoke_law = baltic_castle_control_2
+				revoke_law = baltic_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.8
+		castle_vassal_min_levy = 0.2
+		castle_vassal_tax_modifier = 0.1
+	}
+	
+	baltic_castle_control_2 = {
+		group = baltic_castle_control
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 750 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_castle_control_0
+				revoke_law = baltic_castle_control_1
+				revoke_law = baltic_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.4
+		castle_vassal_min_levy = 0.4
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	baltic_castle_control_3 = {
+		group = baltic_castle_control
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 1250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_castle_control_0
+				revoke_law = baltic_castle_control_1
+				revoke_law = baltic_castle_control_2
+			}
+		}
+		castle_vassal_max_levy = -0.2
+		castle_vassal_min_levy = 0.6
+		castle_vassal_tax_modifier = 0.3
+	}
+
+	baltic_city_control_0 = {
+		group = baltic_city_control
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_city_control_1
+				revoke_law = baltic_city_control_2
+				revoke_law = baltic_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.6
+		city_vassal_tax_modifier = 0.05
+	}
+	
+	baltic_city_control_1 = {
+		group = baltic_city_control
+		city_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 300 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_city_control_0
+				revoke_law = baltic_city_control_2
+				revoke_law = baltic_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.4
+		city_vassal_min_levy = 0.1
+		city_vassal_tax_modifier = 0.2
+	}
+	
+	baltic_city_control_2 = {
+		group = baltic_city_control
+		city_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 750 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_city_control_0
+				revoke_law = baltic_city_control_1
+				revoke_law = baltic_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.3
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.4
+	}
+	
+	baltic_city_control_3 = {
+		group = baltic_city_control
+		city_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 1250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_city_control_0
+				revoke_law = baltic_city_control_1
+				revoke_law = baltic_city_control_2
+			}
+		}
+		city_vassal_max_levy = -0.2
+		city_vassal_min_levy = 0.3
+		city_vassal_tax_modifier = 0.6
+	}
+
+	baltic_temple_control_0 = {
+		group = baltic_temple_control
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_temple_control_1
+				revoke_law = baltic_temple_control_2
+				revoke_law = baltic_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -1.0
+		temple_vassal_tax_modifier = 0.0
+	}
+	
+	baltic_temple_control_1 = {
+		group = baltic_temple_control
+		temple_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 300 }
+			holder_scope = { piety = 150 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_temple_control_0
+				revoke_law = baltic_temple_control_2
+				revoke_law = baltic_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.7
+		temple_vassal_min_levy = 0.15
+		temple_vassal_tax_modifier = 0.15
+	}
+	
+	baltic_temple_control_2 = {
+		group = baltic_temple_control
+		temple_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 700 }
+			holder_scope = { piety = 400 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_temple_control_0
+				revoke_law = baltic_temple_control_1
+				revoke_law = baltic_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.5
+		temple_vassal_min_levy = 0.3
+		temple_vassal_tax_modifier = 0.3
+	}
+	
+	baltic_temple_control_3 = {
+		group = baltic_temple_control
+		temple_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+			OR = {
+                religion_group = african_pagan_group
+				religion_group = baltic_pagan_group 
+				}
+			}
+		}
+                allow = {		
+			holder_scope = { prestige = 1250 }
+			holder_scope = { piety = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = baltic_temple_control_0
+				revoke_law = baltic_temple_control_1
+				revoke_law = baltic_temple_control_2
+			}
+		}
+		temple_vassal_max_levy = -0.3
+		temple_vassal_min_levy = 0.45
+		temple_vassal_tax_modifier = 0.45
+	}
+
+        ##############################
+	# TENGRI PAGAN LAWS
+	##############################
+
+	tengri_castle_control_0 = {
+		group = tengri_castle_control
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_castle_control_1
+				revoke_law = tengri_castle_control_2
+				revoke_law = tengri_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.7
+		castle_vassal_tax_modifier = 0.0
+	}
+	
+	tengri_castle_control_1 = {
+		group = tengri_castle_control
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_castle_control_0
+				revoke_law = tengri_castle_control_2
+				revoke_law = tengri_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.5
+		castle_vassal_min_levy = 0.1
+		castle_vassal_tax_modifier = 0.1
+	}
+	
+	tengri_castle_control_2 = {
+		group = tengri_castle_control
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_castle_control_0
+				revoke_law = tengri_castle_control_1
+				revoke_law = tengri_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.25
+		castle_vassal_min_levy = 0.3
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	tengri_castle_control_3 = {
+		group = tengri_castle_control
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_castle_control_0
+				revoke_law = tengri_castle_control_1
+				revoke_law = tengri_castle_control_2
+			}
+		}
+		castle_vassal_max_levy = -0.15
+		castle_vassal_min_levy = 0.4
+		castle_vassal_tax_modifier = 0.3
+	}
+
+	tengri_city_control_0 = {
+		group = tengri_city_control
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_city_control_1
+				revoke_law = tengri_city_control_2
+				revoke_law = tengri_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.5
+		city_vassal_tax_modifier = 0.05
+	}
+	
+	tengri_city_control_1 = {
+		group = tengri_city_control
+		city_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_city_control_0
+				revoke_law = tengri_city_control_2
+				revoke_law = tengri_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.35
+		city_vassal_min_levy = 0.1
+		city_vassal_tax_modifier = 0.2
+	}
+	
+	tengri_city_control_2 = {
+		group = tengri_city_control
+		city_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_city_control_0
+				revoke_law = tengri_city_control_1
+				revoke_law = tengri_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.3
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.3
+	}
+	
+	tengri_city_control_3 = {
+		group = tengri_city_control
+		city_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_city_control_0
+				revoke_law = tengri_city_control_1
+				revoke_law = tengri_city_control_2
+			}
+		}
+		city_vassal_max_levy = -0.2
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.4
+	}
+
+	tengri_temple_control_0 = {
+		group = tengri_temple_control
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_temple_control_1
+				revoke_law = tengri_temple_control_2
+				revoke_law = tengri_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = 0.7
+		temple_vassal_tax_modifier = 0.0
+	}
+	
+	tengri_temple_control_1 = {
+		group = tengri_temple_control
+		temple_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 250 }
+			holder_scope = { piety = 100 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_temple_control_0
+				revoke_law = tengri_temple_control_2
+				revoke_law = tengri_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.5
+		temple_vassal_min_levy = 0.15
+		temple_vassal_tax_modifier = 0.15
+	}
+	
+	tengri_temple_control_2 = {
+		group = tengri_temple_control
+		temple_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }
+			holder_scope = { piety = 200 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_temple_control_0
+				revoke_law = tengri_temple_control_1
+				revoke_law = tengri_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.4
+		temple_vassal_min_levy = 0.2
+		temple_vassal_tax_modifier = 0.2
+	}
+	
+	tengri_temple_control_3 = {
+		group = tengri_temple_control
+		temple_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }
+			holder_scope = { piety = 350 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tengri_temple_control_0
+				revoke_law = tengri_temple_control_1
+				revoke_law = tengri_temple_control_2
+			}
+		}
+		temple_vassal_max_levy = -0.2
+		temple_vassal_min_levy = 0.35
+		temple_vassal_tax_modifier = 0.35
+	}
+
+        ##############################
+	# MONGOL LAWS
+	##############################
+
+	mongol_castle_control_0 = {
+		group = mongol_castle_control
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_castle_control_1
+				revoke_law = mongol_castle_control_2
+				revoke_law = mongol_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.7
+		castle_vassal_tax_modifier = 0.0
+	}
+	
+	mongol_castle_control_1 = {
+		group = mongol_castle_control
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { religion_group = other_pagan_group }
+		}
+                allow = {		
+			holder_scope = { prestige = 250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_castle_control_0
+				revoke_law = mongol_castle_control_2
+				revoke_law = mongol_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.5
+		castle_vassal_min_levy = 0.1
+		castle_vassal_tax_modifier = 0.1
+	}
+	
+	mongol_castle_control_2 = {
+		group = mongol_castle_control
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_castle_control_0
+				revoke_law = mongol_castle_control_1
+				revoke_law = mongol_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.25
+		castle_vassal_min_levy = 0.3
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	mongol_castle_control_3 = {
+		group = mongol_castle_control
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_castle_control_0
+				revoke_law = mongol_castle_control_1
+				revoke_law = mongol_castle_control_2
+			}
+		}
+		castle_vassal_max_levy = -0.15
+		castle_vassal_min_levy = 0.4
+		castle_vassal_tax_modifier = 0.3
+	}
+
+	mongol_city_control_0 = {
+		group = mongol_city_control
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_city_control_1
+				revoke_law = mongol_city_control_2
+				revoke_law = mongol_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.5
+		city_vassal_tax_modifier = 0.05
+	}
+	
+	mongol_city_control_1 = {
+		group = mongol_city_control
+		city_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 250 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_city_control_0
+				revoke_law = mongol_city_control_2
+				revoke_law = mongol_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.35
+		city_vassal_min_levy = 0.1
+		city_vassal_tax_modifier = 0.2
+	}
+	
+	mongol_city_control_2 = {
+		group = mongol_city_control
+		city_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_city_control_0
+				revoke_law = mongol_city_control_1
+				revoke_law = mongol_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.3
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.3
+	}
+	
+	mongol_city_control_3 = {
+		group = mongol_city_control
+		city_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_city_control_0
+				revoke_law = mongol_city_control_1
+				revoke_law = mongol_city_control_2
+			}
+		}
+		city_vassal_max_levy = -0.2
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.4
+	}
+
+	mongol_temple_control_0 = {
+		group = mongol_temple_control
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_temple_control_1
+				revoke_law = mongol_temple_control_2
+				revoke_law = mongol_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = 0.7
+		temple_vassal_tax_modifier = 0.0
+	}
+	
+	mongol_temple_control_1 = {
+		group = mongol_temple_control
+		temple_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 250 }
+			holder_scope = { piety = 100 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_temple_control_0
+				revoke_law = mongol_temple_control_2
+				revoke_law = mongol_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.5
+		temple_vassal_min_levy = 0.15
+		temple_vassal_tax_modifier = 0.15
+	}
+	
+	mongol_temple_control_2 = {
+		group = mongol_temple_control
+		temple_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 500 }
+			holder_scope = { piety = 200 }	
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_temple_control_0
+				revoke_law = mongol_temple_control_1
+				revoke_law = mongol_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.4
+		temple_vassal_min_levy = 0.2
+		temple_vassal_tax_modifier = 0.2
+	}
+	
+	mongol_temple_control_3 = {
+		group = mongol_temple_control
+		temple_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture = mongol }
+		}
+                allow = {		
+			holder_scope = { prestige = 1000 }
+			holder_scope = { piety = 350 }	
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mongol_temple_control_0
+				revoke_law = mongol_temple_control_1
+				revoke_law = mongol_temple_control_2
+			}
+		}
+		temple_vassal_max_levy = -0.2
+		temple_vassal_min_levy = 0.35
+		temple_vassal_tax_modifier = 0.35
+	}
+
+        ##############################
+	# GAELIC FEUDAL LAWS
+	##############################
+
+	gaelic_castle_control_0 = {
+		group = gaelic_castle_control
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_castle_control_1
+				revoke_law = gaelic_castle_control_2
+				revoke_law = gaelic_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.7
+		castle_vassal_tax_modifier = 0.0
+	}
+	
+	gaelic_castle_control_1 = {
+		group = gaelic_castle_control
+		feudal_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_castle_control_0
+				revoke_law = gaelic_castle_control_2
+				revoke_law = gaelic_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.5
+		castle_vassal_min_levy = 0.1
+		castle_vassal_tax_modifier = 0.1
+	}
+	
+	gaelic_castle_control_2 = {
+		group = gaelic_castle_control
+		feudal_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+                allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_castle_control_0
+				revoke_law = gaelic_castle_control_1
+				revoke_law = gaelic_castle_control_3
+			}
+		}
+		castle_vassal_max_levy = -0.25
+		castle_vassal_min_levy = 0.3
+		castle_vassal_tax_modifier = 0.2
+	}
+	
+	gaelic_castle_control_3 = {
+		group = gaelic_castle_control
+		feudal_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+                allow = {	
+                        prestige = 1000
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_castle_control_0
+				revoke_law = gaelic_castle_control_1
+				revoke_law = gaelic_castle_control_2
+			}
+		}
+		castle_vassal_max_levy = -0.15
+		castle_vassal_min_levy = 0.4
+		castle_vassal_tax_modifier = 0.3
+	}
+
+	gaelic_city_control_0 = {
+		group = gaelic_city_control
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_city_control_1
+				revoke_law = gaelic_city_control_2
+				revoke_law = gaelic_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.5
+		city_vassal_tax_modifier = 0.05
+	}
+	
+	gaelic_city_control_1 = {
+		group = gaelic_city_control
+		city_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_city_control_0
+				revoke_law = gaelic_city_control_2
+				revoke_law = gaelic_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.35
+		city_vassal_min_levy = 0.1
+		city_vassal_tax_modifier = 0.1
+	}
+	
+	gaelic_city_control_2 = {
+		group = gaelic_city_control
+		city_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+                allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_city_control_0
+				revoke_law = gaelic_city_control_1
+				revoke_law = gaelic_city_control_3
+			}
+		}
+		city_vassal_max_levy = -0.3
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.2
+	}
+	
+	gaelic_city_control_3 = {
+		group = gaelic_city_control
+		city_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+                allow = {	
+                        prestige = 1000
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_city_control_0
+				revoke_law = gaelic_city_control_1
+				revoke_law = gaelic_city_control_2
+			}
+		}
+		city_vassal_max_levy = -0.2
+		city_vassal_min_levy = 0.2
+		city_vassal_tax_modifier = 0.4
+	}
+
+	gaelic_temple_control_0 = {
+		group = gaelic_temple_control
+		temple_opinion = 0
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_temple_control_1
+				revoke_law = gaelic_temple_control_2
+				revoke_law = gaelic_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.7
+		temple_vassal_tax_modifier = 0.0
+	}
+	
+	gaelic_temple_control_1 = {
+		group = gaelic_temple_control
+		temple_opinion = -5
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_temple_control_0
+				revoke_law = gaelic_temple_control_2
+				revoke_law = gaelic_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.5
+		temple_vassal_min_levy = 0.15
+		temple_vassal_tax_modifier = 0.15
+	}
+	
+	gaelic_temple_control_2 = {
+		group = gaelic_temple_control
+		temple_opinion = -10
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+                allow = {	
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_temple_control_0
+				revoke_law = gaelic_temple_control_1
+				revoke_law = gaelic_temple_control_3
+			}
+		}
+		temple_vassal_max_levy = -0.4
+		temple_vassal_min_levy = 0.2
+		temple_vassal_tax_modifier = 0.2
+	}
+	
+	gaelic_temple_control_3 = {
+		group = gaelic_temple_control
+		temple_opinion = -15
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { culture_group = celtic }
+		}
+                allow = {	
+                        prestige = 1000
+			holder_scope = { war = no }
+			has_crown_law_title = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = gaelic_temple_control_0
+				revoke_law = gaelic_temple_control_1
+				revoke_law = gaelic_temple_control_2
+			}
+		}
+		temple_vassal_max_levy = -0.2
+		temple_vassal_min_levy = 0.35
+		temple_vassal_tax_modifier = 0.35
+	}
+
+        ##############################
+	# SPECIAL LAWS
+	##############################
+
+
+    merchet_0 = {
+		group = merchet
+		show_as_title = yes
+		city_opinion = 10
+		feudal_opinion = -10
+		temple_opinion = 10
+		default = yes
+		
+		potential = {
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+        allow = {
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = merchet_1
+			}
+		}
+		castle_vassal_tax_modifier = -0.15
+        global_revolt_risk = -0.025
+	}
+	
+	merchet_1 = {
+		group = merchet
+		show_as_title = yes
+		city_opinion = -10
+		feudal_opinion = 10
+		temple_opinion = -10
+		
+		potential = {
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+        allow = {
+			has_law = merchet_0
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0.5
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = merchet_0
+			}
+		}
+		city_vassal_tax_modifier = 0.05
+		castle_vassal_tax_modifier = 0.15 
+        global_revolt_risk = 0.05
+	}
+
+    quit_rent_0 = {
+ 		show_as_title = yes
+		group = quit_rent
+		default = yes
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+				        culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+
+        city_opinion = -15
+		feudal_opinion = 5
+		temple_opinion = 10
+		
+		allow = {
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.25
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = quit_rent_1
+			}
+		}
+
+        global_revolt_risk = 0.025
+		castle_levy_size = 0.05
+        castle_vassal_min_levy = 0.125
+        castle_vassal_max_levy = 0.125
+        land_organization = 0.1
+                
+	}
+	
+	quit_rent_1 = {
+		show_as_title = yes
+		group = quit_rent
+		
+		potential = {
+			NOT = { tier = baron }
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+				        culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+		
+        city_opinion = 20
+		feudal_opinion = -10
+		temple_opinion = -5
+		
+		allow = {
+			has_law = quit_rent_0
+                        holder_scope = {
+                        prestige = 1000
+                        stewardship = 14 }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0.5
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = quit_rent_0
+			}
+		}
+
+        global_revolt_risk = -0.025
+        land_morale = 0.1
+		castle_levy_size = -0.15
+        city_levy_size = 0.1
+        global_tax_modifier = 0.25
+	}
+
+    tenure_0 = {
+ 		show_as_title = yes
+		group = tenure
+		default = yes
+		
+		potential = {
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+
+        city_opinion = -15
+		feudal_opinion = 10
+		temple_opinion = -5
+		
+		allow = { 
+		    OR = {
+			    has_law = tenure_1
+			    has_law = tenure_2 
+			}
+            holder_scope = {
+                prestige = 1000
+                stewardship = 14 
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tenure_1
+				revoke_law = tenure_2
+			}
+		}
+
+        global_revolt_risk = 0.025
+		castle_levy_size = 0.15
+		temple_levy_size = 0.05
+		city_levy_size = -0.05
+        land_morale = 0.05
+        global_tax_modifier = -0.15
+                
+	}
+	
+	tenure_1 = {
+		show_as_title = yes
+		group = tenure
+		
+		potential = {
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+		
+        city_opinion = 5
+		feudal_opinion = 5
+		temple_opinion = 5
+		
+		allow = {
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0.25
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tenure_0
+				revoke_law = tenure_2
+			}
+		}
+
+        global_revolt_risk = -0.05
+		castle_levy_size = 0.075
+		temple_levy_size = 0.025
+		city_levy_size = -0.075
+        land_morale = 0.05
+        global_tax_modifier = 0.05
+	}
+
+    tenure_2 = {
+		show_as_title = yes
+		group = tenure
+		
+		potential = {
+			holder_scope = { 
+                religion_group = christian
+                NOT = { 
+				    OR = { 
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				} 
+			}
+		}
+
+        city_opinion = 20
+		feudal_opinion = -10
+		temple_opinion = 5
+		
+		
+		allow = { 
+		    OR = {
+			    has_law = tenure_0 
+			    has_law = tenure_1
+			}
+            holder_scope = {
+                prestige = 1000
+                stewardship = 14 
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0.25
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = tenure_0
+				revoke_law = tenure_1
+			}
+		}
+
+        global_revolt_risk = -0.025
+		castle_levy_size = -0.15
+		temple_levy_size = -0.1
+		city_levy_size = 0.15
+        land_morale = -0.05
+        global_tax_modifier = 0.25
+	}
+}

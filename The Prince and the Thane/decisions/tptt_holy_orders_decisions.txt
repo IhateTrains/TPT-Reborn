@@ -1,0 +1,755 @@
+decisions = {
+	
+	found_order_santiago = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			year = 1090
+			prisoner = no
+			NOT = { trait = incapable }
+			completely_controls = c_santiago
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_santiago
+					d_order_santiago = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			higher_tier_than = DUKE
+			religion = catholic
+			
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_santiago
+					has_global_flag = order_of_santiago
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_santiago
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_santiago
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_alcantara = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			year = 1090
+			religion = catholic
+			completely_controls = c_alcantara
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_alcantara
+					d_order_alcantara = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_alcantara
+					has_global_flag = order_of_alcantara
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_alcantara
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_alcantara
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_calatrava = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			year = 1090
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_calatrava
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_calatrava
+					d_order_calatrava = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_calatrava
+					has_global_flag = order_of_calatrava
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_calatrava
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_calatrava
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_saint_james = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			year = 1090
+			higher_tier_than = DUKE
+			completely_controls = c_lucca
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_saint_james
+					d_order_saint_james = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			religion = catholic
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_saint_james
+					has_global_flag = order_of_saint_james
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_lucca
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_saint_james
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_aviz = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			year = 1090
+			higher_tier_than = DUKE
+			completely_controls = c_castelo_branco
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_aviz
+					d_order_aviz = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			religion = catholic
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_aviz
+					has_global_flag = order_of_aviz
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_castelo_branco
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_aviz
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_livonian = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_riga
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_livonian
+					d_order_livonian = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			year = 1090
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_livonian
+					has_global_flag = order_of_livonian
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_riga
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_livonian
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_dobrzyn = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			year = 1090
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_kujawy
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_dobrzyn
+					d_order_dobrzyn = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_dobrzyn
+					has_global_flag = order_of_dobrzyn
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_kujawy
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_dobrzyn
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_redstar = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			year = 1090
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_praha
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_redstar
+					d_order_redstar = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_redstar
+					has_global_flag = order_of_redstar
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_praha
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_redstar
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_montesa = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			year = 1090
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_valencia
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_montesa
+					d_order_montesa = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_montesa
+					has_global_flag = order_of_montesa
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_valencia
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_montesa
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_sepulchre = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			year = 1090
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_roma
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_sepulchre
+					d_order_sepulchre = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_sepulchre
+					has_global_flag = order_of_sepulchre
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_roma
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_sepulchre
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_virgin = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			year = 1090
+			religion = catholic
+			completely_controls = c_barcelona
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_virgin
+					d_order_virgin = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_virgin
+					has_global_flag = order_of_virgin
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_barcelona
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_virgin
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_thomas = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_acre
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_thomas
+					d_order_thomas = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			year = 1090
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_thomas
+					has_global_flag = order_of_thomas
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_acre
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_thomas
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_jordi = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			year = 1090
+			completely_controls = c_empuries
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_jordi
+					d_order_jordi = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_jordi
+					has_global_flag = order_of_jordi
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_empuries
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_jordi
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_jesus = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			year = 1090
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+			religion = catholic
+			completely_controls = c_toulouse
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_jesus
+					d_order_jesus = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_jesus
+					has_global_flag = order_of_jesus
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_toulouse
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_jesus
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_mountjoy = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			NOT = { trait = incapable }
+			year = 1090
+			completely_controls = c_ascalon
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_mountjoy
+					d_order_mountjoy = { has_holder = yes }
+				}
+			}
+			
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			higher_tier_than = DUKE
+			religion = catholic
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_mountjoy
+					has_global_flag = order_of_jesus
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_ascalon
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_mountjoy
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_order_lazarus = {
+		is_high_prio = yes
+		potential = {
+			demesne_size = 2
+			age = 14
+			prisoner = no
+			year = 1090
+			NOT = { trait = incapable }
+			higher_tier_than = DUKE
+		    NOT = { has_character_flag = founded_holy_order }
+		    NOT = { has_character_flag = founding_order }
+			completely_controls = c_jerusalem
+			
+			NOT = { 
+			    OR = {
+				    is_title_active = d_order_lazarus
+					d_order_lazarus = { has_holder = yes }
+				}
+			}
+			
+			religion = catholic
+			NOT = {
+			    OR = {
+				    has_character_flag = order_of_lazarus
+					has_global_flag = order_of_lazarus
+				}
+			}
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = c_jerusalem
+		    scaled_wealth = 2
+		}
+		effect = {
+			k_papal_state = { 
+			    holder_scope = { 
+			        letter_event = { id = holy_orders.1 tooltip = "EVTTOOLTIPholy_orders.1" }
+				}
+			}
+			set_character_flag = order_of_lazarus
+			set_character_flag = founding_order
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

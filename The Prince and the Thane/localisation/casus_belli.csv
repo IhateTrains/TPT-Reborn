@@ -1,0 +1,62 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+CB_NAME_INVESTITURE_CONFLICT;Investiture Contest for [Title.GetName];;;;;;;;;;;;;x
+WAR_NAME_INVESTITURE_CONFLICT;$ORDER$$SECOND_ADJ$ Civil war for the Investiture Contest;;;;;;;;;;;;;x
+CB_NAME_CAPTURE;Capture Plotters;;;;;;;;;;;;;x
+WAR_NAME_CAPTURE;$ORDER$$FIRST_ADJ$ War to Capture Plotters;;;;;;;;;;;;;x
+CB_NAME_RESTORE_PAPACY;Restore the Papacy;;;;;;;;;;;;;x
+WAR_NAME_RESTORE_PAPACY;$ORDER$$FIRST_ADJ$ War to Restore the Papacy;;;;;;;;;;;;;x
+restore_papacy_desc;§Y$CLAIMANT$§! can use this Casus Belli to restore the Papacy to its rightful place in Rome.;;;;;;;;;;;;;x
+investiture_conflict;Investiture Contest;;;;;;;;;;;;;x
+investiture_conflict_desc;War for the Investiture Contest between the Pope and the Holy Roman Emperor.;;;;;;;;;;;;;x
+holy_war;Holy War;;;;;;;;;;;;;x
+NM_CB_NAME_VIKING_RAID;Viking Raid;;;;;;;;;;;;;x
+NM_WAR_NAME_VIKING_RAID;$ORDER$$FIRST_ADJ$ Raid of $SECOND_ADJ$ Lands;;;;;;;;;;;;;x
+nm_viking_raid_cb_desc;Slaughter their soldiers, rape their women and plunder their riches! It is time to raid!;;;;;;;;;;;;;x
+capture;Capture Plotters;;;;;;;;;;;;;x
+capture_desc;War to Capture all the Plotters in the enemy realm;;;;;;;;;;;;;x
+baltic_religious;Religious Invasion;;;;;;;;;;;;;x
+baltic_religious_desc;Religious Invasion in the name of the Baltic Pagan Gods;;;;;;;;;;;;;x
+nm_religious;Religious Invasion;;;;;;;;;;;;;x
+nm_religious_desc;Religious Invasion in the name of the Old Gods;;;;;;;;;;;;;x
+nm_viking_raid_cb;Viking Raid;;;;;;;;;;;;;x
+nm_prestige_revolt;Prestige Revolt;;;;;;;;;;;;;x
+nm_prestige_revolt_desc;Revolt against a weak ruler;;;;;;;;;;;;;x
+tengri_religious;Religious Invasion;;;;;;;;;;;;;x
+tengri_religious_desc;Religious Invasion in the name of the Tengri Gods;;;;;;;;;;;;;x
+CB_NAME_INVASION_NEW;Decadence Invasion;;;;;;;;;;;;;x
+WAR_NAME_DEC_INVASION_NEW;Decadence Invasion;;;;;;;;;;;;;x
+holy_war_desc;Holy War against the Heathens!;;;;;;;;;;;;;x
+restore_papacy_desc;§Y$CLAIMANT$§! can use this Casus Belli to restore the Papacy to its rightful place in Rome.;§Y$CLAIMANT$§! peut utilsier ce Casus Belli pour restaurer le Pape à sa place légitime, Rome. ;§Y$CLAIMANT$§! kann diesen Casus Belli nutzen, um das Papsttum in Rom wieder herzustellen.;;;;;;;;;;;x
+CB_NAME_RESTORE_PAPACY;Restore the Papacy;Restaurer la papauté;Das Papsttum wiederherstellen;;;;;;;;;;;x
+WAR_NAME_RESTORE_PAPACY;$ORDER$$FIRST_ADJ$ War to Restore the Papacy;$ORDER$$FIRST_ADJ$ Guerre pour restaurer la Papauté;$ORDER$$FIRST_ADJ$er Krieg zur Wiederherstellung des Papsttums;;;;;;;;;;;x
+restore_byzantium_desc;This Casus Belli can used to seize Thrace and restore the Byzantine Empire.;;;;;;;;;;;;;x
+CB_NAME_RESTOREBYZANTIUM;Restore Byzantium;;;;;;;;;;;;;x
+WAR_NAME_RESTOREBYZANTIUM;$ORDER$$FIRST_ADJ$ War to Restore the Byzantine Empire;;;;;;;;;;;;;x
+guelphs_vs_ghibellines;Guelphs vs. Ghibellines;;;;;;;;;;;;;x
+guelphs_vs_ghibellines_desc;War for the control of the Italian cities and feudal lands between the supporters of the influence of the Pope (Guelphs) and the ones of the Holy Roman Emperor's (Ghibellines).;;;;;;;;;;;;;x
+CB_NAME_GUELPHS_GHIBELLINES;Guelphs versus Ghibellines struggle for [Title.GetName];;;;;;;;;;;;;x
+WAR_NAME_GUELPHS_GHIBELLINES;Guelphs versus Ghibellines struggle for $OTHER_TITLE$;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

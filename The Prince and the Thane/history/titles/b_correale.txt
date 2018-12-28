@@ -1,0 +1,21 @@
+954.1.1={
+	holder=2220015 #Giovanni Correale
+	holding_dynasty = 8001000 # Correale
+	liege="d_amalfi"
+}
+
+990.1.1={
+	holder=2220016 #Guglielmo Correale
+}
+
+1030.1.1={
+	holder=2220017 #Ezio Correale
+}
+
+1060.1.1={
+	holder=2220018 #Tommaso Correale
+}
+
+1073.1.1={
+	holder=0
+}

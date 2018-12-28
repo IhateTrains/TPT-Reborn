@@ -1,0 +1,66 @@
+
+785.1.1={
+	holder=1191114 #Ilprando Aldobrandeschi
+	liege=d_maremma
+}
+803.1.1={
+	holder=1191115 #Aliperto II Aldobrandeschi
+}
+840.1.1={
+	holder=1191116 #Ildeprando I Aldobrandeschi
+}
+850.1.1={
+	holder=1191117 #Eriprando I Aldobrandeschi
+}
+870.1.1={
+	holder=1191118 #Eriprando II Aldobrandeschi
+}
+920.1.1={
+	holder=1191138 #Ildeprando II Aldobrandeschi
+}
+950.1.1={
+	holder=1191139 #Rodolfo I Aldobrandeschi
+}
+960.1.1={
+	holder=1191140 #Rodolfo II Aldobrandeschi
+}
+989.1.1={
+	holder=1191141 #Ildeprando III Aldobrandeschi
+}
+1015.1.1={
+	holder=1191142 #Ildeprando IV Aldobrandeschi
+}
+1025.1.1={
+	holder=1191143 #Oberto Aldobrandeschi
+}
+1035.1.1={
+	holder=1191144 #Ildeprando V Aldobrandeschi
+}
+1070.1.1={
+	holder=1191145 #Raniero Aldobrandeschi
+}
+1090.1.1={
+	holder=1191146 #Uguccione Aldobrandeschi
+}
+1115.1.1={
+	holder=1191147 #Ildebrandino Novello Aldobrandeschi
+}
+1160.1.1={
+	holder=1191148 #Ildebrandino VII Aldobrandeschi
+}
+1170.1.1={
+	holder=1191149 #Ildebrandino VIII Aldobrandeschi
+}
+1195.1.1={
+	holder=1191150 #Ildebrandino IX Aldobrandeschi
+}
+1220.1.1={
+	holder=1191151 #Guglielmo I Aldobrandeschi "Il Gran Tosco"
+}
+1259.1.1={
+	holder=1191156 #Ildebrandino "il Rosso" Aldobrandeschi
+}
+1283.1.1={
+	holder=0 #Counts of Sovana
+	liege=e_hre
+}

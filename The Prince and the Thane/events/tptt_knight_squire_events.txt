@@ -1,0 +1,618 @@
+##############################################################################################
+#
+# The Prince and the Thane knighting and squiring events - written by idib816 and the GOT team
+#
+##############################################################################################
+
+namespace = knight
+
+#knight.0 - Offered to be Knighted.
+character_event = {
+	id = knight.0
+	desc = "EVTDESCknight.0" #Offered to be a knight
+	picture = "GFX_evt_knight1"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	min_age = 14
+	max_age = 20
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+        is_female = no
+		OR = {
+		    religion = catholic
+			is_heresy_of = catholic
+		}
+		trait = squire
+		NOT = { trait = knight }
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+		
+		###good modifiers###
+		modifier = {
+			factor = 10
+			trait = strong
+		}
+		
+		modifier = {
+			factor = 3.5
+			OR = {
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+				trait = impaler
+				trait = duelist
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			trait = brave
+		}	
+		
+		modifier = {
+			factor = 2
+			martial = 5
+		}		
+		
+		modifier = {
+			factor = 2
+			martial = 10
+		}		
+		
+		modifier = {
+			factor = 2
+			martial = 15
+		}		
+		
+		modifier = {
+			factor = 2
+			martial = 20
+		}		
+		
+		modifier = {
+			factor = 2
+			age = 16
+		}		
+		
+		modifier = {
+			factor = 2
+			age = 18
+		}			
+		
+		modifier = {
+			factor = 2
+			age = 20
+		}		
+		
+		modifier = {
+			factor = 2.5
+			OR = {
+				trait = skilled_tactician
+				trait = brilliant_strategist
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				trait = genius
+				trait = quick
+				trait = diligent
+			}
+		}
+		
+		###bad modifiers###
+		modifier = {
+			factor = 0.25
+			OR = {
+				trait = clubfooted
+				trait = hunchback
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			OR = {
+				trait = scholar
+				trait = gardener
+				trait = poet
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAknight.0" #Accept - Normal
+		ai_chance = {factor = 1}
+		prestige = 100
+		piety = 100
+		add_trait = "knight"
+		give_minor_title = title_ser
+		change_martial=1
+		remove_trait = "squire"
+		
+		if = {
+			limit = {trait = strong}
+			prestige = 50
+		}
+		if = {
+			limit = {trait = brave}
+			prestige = 50
+		}
+		if = {
+			limit = {trait = fair}
+			prestige = 50
+		}
+
+	}
+	
+	option = {
+		name = "EVTOPTBknight.0" #Decline - Normal
+		ai_chance = {factor = 0.25}
+		prestige = 100
+	}
+	
+	option = {
+		name = "EVTOPTCknight.0" #Accept - Zealous
+		trigger = { trait = zealous }
+		ai_chance = {factor = 5}
+		prestige = 100
+		piety = 200
+		
+		if = {
+			limit = {trait = strong}
+			prestige = 50
+		}
+		if = {
+			limit = {trait = brave}
+			prestige = 50
+		}
+		if = {
+			limit = {trait = fair}
+			prestige = 50
+		}
+		
+	}
+}
+
+#knight.1 - Child wants to become a squire.
+character_event = {
+	id = knight.1
+	desc = "EVTDESCknight.1" #Child has an opportunity to squire for his guardian.
+	picture = "GFX_evt_squire"
+	
+	min_age = 6
+	max_age = 12
+	only_men = yes
+	
+	is_triggered_only=yes
+	trigger = {
+        OR = {
+            is_heresy_of = catholic
+            religion = catholic 
+		}
+		has_epidemic = no
+		is_ill = no
+		NOT = { trait = dwarf }
+		NOT = { trait = weak }
+		has_guardian = yes
+		NOT = {	guardian = { NOT = {trait = knight} } }
+		NOT = {	guardian = { is_female = yes } }
+		NOT = {	health_traits = 1 }
+		NOT = {trait = squire}
+		NOT = {has_character_flag = squiring_refused}
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+		
+		###good modifiers###
+		modifier = {
+			factor = 10
+			trait = strong
+		}		
+		
+		modifier = {
+			factor = 5
+			trait = brave
+		}
+		
+		###bad modifiers###
+		modifier = {
+			factor = 0.25
+			OR = {
+				trait = clubfooted
+				trait = hunchback
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}
+		
+	}
+	
+	option = {
+		name = "I shall be a famous knight!"
+		hidden_tooltip = {
+			guardian = {character_event = {id = knight.2}}
+		}
+	}
+	
+}
+
+#knight.2 - Guardian, Child wants to squire for you.
+character_event = {
+	id = knight.2
+	desc = "EVTDESCknight.2" #Child wants to squire for you.
+	picture = "GFX_evt_squire"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAknight.2" #Accept
+		
+		ai_chance = {factor = 1.2}
+		
+		if = {
+			limit = {
+			    OR = { 
+				    trait = master_warrior
+					trait = diligent
+					trait = duelist
+					trait = brave
+				}
+		    }
+			FROM = {hidden_tooltip = {character_event = { id = knight.7 days = 365}} }
+		}
+		
+		if = {
+			limit = {trait = proud}
+			prestige = 10
+		}
+		
+		FROM = {
+			add_trait = squire
+			hidden_tooltip = {character_event = { id = knight.15 } }
+			opinion = {
+				modifier = opinion_happy_with_guardian
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBknight.2" #Decline.
+		ai_chance = {factor = 0.1}
+		prestige = -10
+		
+		random_list = {
+			20 = {}
+			40 = {FROM =  {add_trait="shy"}}
+			40 = {FROM =  {add_trait="wroth"}}
+			40 = {FROM =  {add_trait="humble"}}
+		}
+		
+		FROM = {
+			set_character_flag = squiring_refused
+			
+			hidden_tooltip = {
+				character_event = { id = knight.6 }
+			}
+		}
+	}
+}
+
+#knight.3 - Too old to be a squire.
+character_event = {
+	id = knight.3
+	desc = "EVTDESCknight.3" #Getting too old to be a squire
+	picture = "GFX_evt_squire"
+	
+	min_age = 20
+	only_men = yes
+	capable_only = yes
+	
+	trigger = { trait = squire }
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "EVTOPTAknight.3" #Bloody assholes wont knight me.
+		random = { 
+		    chance = 15
+		    add_trait = depressed 
+		}
+		remove_trait = squire
+		prestige = -25
+	}
+}
+
+#knight.4 - Battelfield Promotion (battle).
+character_event = {
+	id = knight.5
+	desc = "EVTDESCknight.5" #Battlefield Promotion
+	picture = "GFX_evt_battle_promotion"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	max_age = 30
+	only_men = yes
+	capable_only = yes
+	
+	trigger = {
+        OR = {
+            is_heresy_of = catholic
+            religion = catholic 
+		}
+		OR = {
+		    trait = misguided_warrior
+		    trait = tough_soldier
+		    trait = skilled_tactician
+			trait = brilliant_strategist
+			trait = martial_cleric
+		}
+		has_epidemic = no
+		is_ill = no
+		NOT = { trait = dwarf }
+		NOT = { trait = weak }
+		NOT = { trait = knight }
+	}
+
+	mean_time_to_happen = {
+		days = 15
+		
+		###good modifiers###
+		modifier = {
+			factor = 10
+			trait = strong
+		}
+		
+		modifier = {
+			factor = 2.5
+			OR = {
+				trait = poor_warrior
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+				trait = impaler
+				trait = duelist
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			trait = brave
+		}		
+		
+		modifier = {
+			factor = 1.25
+			martial = 10
+		}			
+		
+		modifier = {
+			factor = 1.25
+			martial = 12
+		}		
+		
+		modifier = {
+			factor = 1.25
+			martial = 14
+		}		
+		
+		modifier = {
+			factor = 1.25
+			martial = 16
+		}	
+			
+		modifier = {
+			factor = 1.25
+			martial = 18
+		}	
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				trait = skilled_tactician
+				trait = brilliant_strategist
+			}
+		}
+		
+		modifier = {
+			factor = 1.2
+			OR = {
+				trait = genius
+				trait = quick
+				trait = diligent
+			}
+		}
+		
+		###bad modifiers###
+		modifier = {
+			factor = 0.25
+			OR = {
+				trait = clubfooted
+				trait = hunchback
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = slothful
+				trait = craven
+			}
+		}
+		
+		modifier = {
+			factor = 0.4
+			OR = {
+				trait = detached_priest
+				trait = martial_cleric
+				trait = scholarly_theologian
+				trait = mastermind_theologian
+				trait = scholar
+				trait = gardener
+				trait = poet
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAknight.0" #Accept - Normal
+		ai_chance = {factor = 1}
+		prestige = 100
+		piety = 100
+		add_trait = "knight"
+		give_minor_title = title_ser
+		change_diplomacy=1
+		remove_trait = "squire"
+		
+		if = {
+			limit = {trait = strong}
+			prestige = 50
+		}
+		if = {
+			limit = {trait = brave}
+			prestige = 50
+		}
+		if = {
+			limit = {trait = fair}
+			prestige = 50
+		}
+
+	}
+	
+	option = {
+		name = "EVTOPTBknight.0" #Decline - Normal
+		ai_chance = {factor = 0.25}
+		prestige = 100
+	}
+	
+}
+
+#knight.6 - Child notification, refused to be a squire.
+character_event = {
+	id = knight.6
+	desc = "EVTDESCknight.6" 	#THE SHAME!!!!
+	picture = "GFX_evt_squire" 	#Should change, but too lazy atm.
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Damn!!" #Disapointment - should be generic unless some assholes messed with my localisations files.
+	}
+}
+
+#knight.7 - Squire Training Events.
+character_event = {
+	id = knight.7
+	desc = "EVTDESCknight.7" #Getting Drilled.
+	picture = "GFX_evt_knight"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Argh..."
+		
+		random_list = {
+			40 = {}
+			40 = {change_martial = 1}
+			20 = {change_martial = 2}
+		}
+	}
+}
+
+#knight.15 - Accepted Knighthood (Ward Notification)
+character_event = {
+	id = knight.15
+	desc = "EVTDESCknight.15"
+	picture = "GFX_evt_squire"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = { name = "Ok" }
+}
+
+#knight.16 - Sering.
+character_event = {
+	id = knight.16
+	desc = "EVTDESCknight.16"
+	picture = "GFX_evt_knight1"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		trait = knight
+		NOT = { has_minor_title = title_ser }
+		NOT = { has_character_flag = serred }
+	}
+	
+	mean_time_to_happen = { 
+		years = 10
+	}
+	
+	option = { 
+		name = "Ok"
+		give_minor_title = title_ser
+		set_character_flag = serred
+	}
+	
+}
+
+# Manteinance
+character_event = {
+	id = knight.17
+	desc = "I'm not supposed to have this trait"
+	picture = GFX_evt_knight1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+            trait = knight
+            trait = squire
+		}
+        OR = {
+            NOT = { religion = catholic }
+            NOT = { is_heresy_of = catholic }
+            is_female = yes
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "That's right"
+		remove_trait = squire
+        remove_trait = knight
+	}
+}

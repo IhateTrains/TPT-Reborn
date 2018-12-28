@@ -1,0 +1,152 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+obj_independent_title;Become Independent;;;;;;;;;;;;;x
+obj_independent_desc;This character's current aim is to become independent from his current liege;;;;;;;;;;;;;x
+obj_become_duke_title;Become Duke;;;;;;;;;;;;;x
+obj_become_duke_desc;This character's current aim is to become a Duke;;;;;;;;;;;;;x
+obj_become_king_title;Become King;;;;;;;;;;;;;x
+obj_become_king_desc;This character's current aim is to become a King;;;;;;;;;;;;;x
+obj_independent_duke_desc;This character's current aim is to break free of his liege and acquire a duchy at the same time.;;;;;;;;;;;;;x
+obj_independent_duke_title;Become independent and acquire a duchy;;;;;;;;;;;;;x
+obj_ecclesiastical;Ecclesiastical Jurisdiction;;;;;;;;;;;;;x
+obj_ecclesiastical_desc;Gain the Pope's recognition of your realm's church jurisdiction;;;;;;;;;;;;;x
+obj_ecclesiastical_title;Obtain Ecclesiastical Jurisdiction;;;;;;;;;;;;;x
+obj_beatified_dynasty_member_title;Have a dynasty member beatified;;;;;;;;;;;;;x  
+obj_beatified_dynasty_member_desc;This character is aming on having a dynasty member beatified.;;;;;;;;;;;;;x       
+obj_increase_demesne_1_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_1_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_2_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_2_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_3_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_3_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_4_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_4_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_5_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_5_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_6_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_6_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_7_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_7_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_8_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_8_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_increase_demesne_9_title;Increase Size of Demesne;;;;;;;;;;;;;x
+obj_increase_demesne_9_desc;[This.GetTitledFirstName] is not satisfied with the size of [This.GetHerHis] lands.;;;;;;;;;;;;;x
+obj_become_duke_title;Gain a Duchy;;;;;;;;;;;;;x
+obj_become_duke_desc;[This.GetTitledFirstName] is not satisfied with being a mere Count.;;;;;;;;;;;;;x
+obj_go_crusade_title;Take the Cross;;;;;;;;;;;;;x
+obj_go_crusade_desc;[This.GetTitledFirstName] wants to join the Crusade against the infidels.;;;;;;;;;;;;;x
+obj_five_children_title;Have Five Children;;;;;;;;;;;;;x
+obj_five_children_desc;[This.GetTitledFirstName] wants a large family and many children to carry on [This.GetHerHis] legacy.;;;;;;;;;;;;;x
+obj_ten_children_title;Have Ten Children;;;;;;;;;;;;;x
+obj_ten_children_desc;[This.GetTitledFirstName] wants a large family and many children to carry on [This.GetHerHis] legacy.;;;;;;;;;;;;;x
+obj_find_lover_title;Get a Lover;;;;;;;;;;;;;x
+obj_find_lover_desc;[This.GetTitledFirstName] desires the romance and passion of a love affair.;;;;;;;;;;;;;x
+obj_become_independent_title;Become Independent;;;;;;;;;;;;;x
+obj_become_independent_desc;[This.GetTitledFirstName] desires independence from [This.GetHerHis] tyrannical liege.;;;;;;;;;;;;;x
+obj_become_old_60_title;Grow Older;;;;;;;;;;;;;x
+obj_become_old_60_desc;[This.GetTitledFirstName] is getting old, but [This.GetSheHe] wants to live until he is at least 60.;;;;;;;;;;;;;x
+obj_become_old_70_title;Grow Older;;;;;;;;;;;;;x
+obj_become_old_70_desc;[This.GetTitledFirstName] is getting older, but [This.GetSheHe] wants to live until he is at least 70.;;;;;;;;;;;;;x
+obj_become_old_80_title;Grow Older;;;;;;;;;;;;;x
+obj_become_old_80_desc;[This.GetTitledFirstName] is old, but [This.GetSheHe] wants to live until he is at least 80.;;;;;;;;;;;;;x
+obj_become_old_90_title;Grow Older;;;;;;;;;;;;;x
+obj_become_old_90_desc;[This.GetTitledFirstName] is a living legend, but [This.GetSheHe] wants to live until he is at least 90.;;;;;;;;;;;;;x
+obj_become_old_100_title;Grow Older;;;;;;;;;;;;;x
+obj_become_old_100_desc;To walk a century on this earth. Alas! Tempus fugit...;;;;;;;;;;;;;x
+obj_survive_illness_title;Survive Illness;;;;;;;;;;;;;x
+obj_survive_illness_desc;[This.GetTitledFirstName] is terribly sick. But there is so much more to do on earth...;;;;;;;;;;;;;x
+obj_become_legitimized_title;Become Legitimized;;;;;;;;;;;;;x
+obj_become_legitimized_desc;[This.GetTitledFirstName] wants to become a legitimized offspring.;;;;;;;;;;;;;x
+obj_become_paragon_of_virtue_2_title;Become Paragon of Virtue;;;;;;;;;;;;;x
+obj_become_paragon_of_virtue_2_desc;[This.GetTitledFirstName] strives to become a beacon of chivalry and honour - a paragon of virtue.;;;;;;;;;;;;;x
+obj_become_exalted_2_title;Become Exalted among Men;;;;;;;;;;;;;x
+obj_become_exalted_2_desc;[This.GetTitledFirstName] wants [This.GetObjectPronoun] name to live forever in the annals of history.;;;;;;;;;;;;;x
+obj_become_paragon_of_virtue_3_title;Become Paragon of Virtue;;;;;;;;;;;;;x
+obj_become_paragon_of_virtue_3_desc;[This.GetTitledFirstName] strives to become a beacon of chivalry and honour - a paragon of virtue.;;;;;;;;;;;;;x
+obj_become_exalted_3_title;Become Exalted among Men;;;;;;;;;;;;;x
+obj_become_exalted_3_desc;[This.GetTitledFirstName] wants [This.GetObjectPronoun] name to live forever in the annals of history.;;;;;;;;;;;;;x
+obj_become_paragon_of_virtue_4_title;Become Paragon of Virtue;;;;;;;;;;;;;x
+obj_become_paragon_of_virtue_4_desc;[This.GetTitledFirstName] strives to become a beacon of chivalry and honour - a paragon of virtue.;;;;;;;;;;;;;x
+obj_become_exalted_4_title;Become Exalted among Men;;;;;;;;;;;;;x
+obj_become_exalted_4_desc;[This.GetTitledFirstName] wants [This.GetObjectPronoun] name to live forever in the annals of history.;;;;;;;;;;;;;x
+obj_become_independent_desc;[This.GetTitledFirstName] no longer desires to owe fealty to any man.  We shall stand on our own!;;;;;;;;;;;;;x
+obj_form_duchy_title;Form a Duchy;;;;;;;;;;;;;x
+obj_form_duchy_desc;[This.GetTitledFirstName] demands the prestige of a higher title!;;;;;;;;;;;;;x
+obj_form_kingdom_title;Form a Kingdom;;;;;;;;;;;;;x
+obj_form_kingdom_desc;[This.GetTitledFirstName] will be known as a proper monarch!;;;;;;;;;;;;;x
+obj_bloodline_byzantine_title;See Our House on the Byzantine Throne;;;;;;;;;;;;;x
+obj_bloodline_byzantine_desc;It is not enough for the [This.GetOnlyDynastyName] Dynasty to rule only these lands.  It must spread and flourish - and there are few seats more esteemed than that of the Byzantine Emperor.  [This.GetTitledFirstName] will see to it that a member of [This.GetHerHis] house occupies that throne.;;;;;;;;;;;;;x
+obj_bloodline_hre_title;See Our House on the Imperial Throne;;;;;;;;;;;;;x
+obj_bloodline_hre_desc;It is not enough for the [This.GetOnlyDynastyName] Dynasty to rule only these lands.  It must spread and flourish - and there are few seats more esteemed than that of the Holy Roman Emperor.  [This.GetTitledFirstName] will see to it that a member of [This.GetHerHis] house occupies that throne.;;;;;;;;;;;;;x
+obj_bloodline_pope_title;See Our Dynasty in the Holy See;;;;;;;;;;;;;x
+obj_bloodline_pope_desc;Quite apart from any religious concerns, none could deny that the Pope occupies a position of great political significance.  Even if [This.GetTitledFirstName] cannot occupy it [This.GetHerHim]self, it still might be possible to see a loyal member of [This.GetHerHis] dynasty installed in that position...;;;;;;;;;;;;;x
+obj_landed_kids_title;Provide Land For My Children;;;;;;;;;;;;;x
+obj_landed_kids_desc;My children are ready to be provided with positions of real power, as surely they deserve.  If I can ensure that each of them has a county of their own, or at least is married to a ruler of significance, it would both provide them with practice at rulership and hopefully ameliorate any petty squabbles when I should pass.;;;;;;;;;;;;;x
+obj_marital_bliss_title;Achieve Marital Bliss;;;;;;;;;;;;;x
+obj_marital_bliss_desc;Marriage is primarily a strategic affair, of course.  But all the same, [This.GetTitledFirstName] holds out hope that [This.GetSheHe] might achieve with [This.Spouse.GetTitledFirstName] the kind of love and romance about which bards sing such foolish, dreamy songs.;;;;;;;;;;;;;x
+obj_unite_kingdoms_title;Unite Two Kingdoms;;;;;;;;;;;;;x
+obj_unite_kingdoms_desc;At times, a ring is more effective a weapon than a thousand men-at-arms.  [This.GetTitledFirstName] wishes to bring two kingdoms together in a marriage, to produce a single, blessed heir.  Of [This.GetHerHis] dynasty, of course.;;;;;;;;;;;;;x
+obj_break_out_of_prison_title;Get Out of Prison;;;;;;;;;;;;;x
+obj_break_out_of_prison_desc;[This.GetTitledFirstName] wants to taste the sweet air of freedom.;;;;;;;;;;;;;x
+obj_go_jihad_title;Join the Jihad;;;;;;;;;;;;;x
+obj_go_jihad_desc;[This.GetTitledFirstName] wants to join the Jihad against the infidels.;;;;;;;;;;;;;x
+obj_fifteen_children_title;Have Fifteen Children;;;;;;;;;;;;;x
+obj_fifteen_children_desc;[This.GetTitledFirstName] wants a large family and many children to carry on [This.GetHerHis] legacy.;;;;;;;;;;;;;x
+obj_twenty_children_title;Have Twenty Children;;;;;;;;;;;;;x
+obj_twenty_children_desc;[This.GetTitledFirstName] wants a large family and many children to carry on [This.GetHerHis] legacy.;;;;;;;;;;;;;x
+obj_adopt_a_lifestyle_title;Adopt a Lifestyle;;;;;;;;;;;;;x
+obj_adopt_a_lifestyle_desc;[This.GetTitledFirstName] wants an exciting hobby to pursue.;;;;;;;;;;;;;x
+obj_convert_a_province_title;Convert a Province;;;;;;;;;;;;;x
+obj_convert_a_province_desc;[This.GetTitledFirstName] wants to bring the true faith to the heathens of the realm.;;;;;;;;;;;;;x
+obj_become_king_desc;[This.GetTitledFirstName] desires a King's crown.;;;;;;;;;;;;;x
+obj_become_emperor_title;Become Emperor;;;;;;;;;;;;;x
+obj_become_emperor_desc;[This.GetTitledFirstName] aspires to the lofty heights of an Emperorship.;;;;;;;;;;;;;x
+obj_gain_honorary_title_title;Gain Honorary Title;;;;;;;;;;;;;x
+obj_gain_honorary_title_desc;[This.GetTitledFirstName] wants recognition for [This.GetHerHis] loyal service by being appointed to an honorary office.;;;;;;;;;;;;;x
+obj_amass_wealth_1_title;Amass Wealth;;;;;;;;;;;;;x
+obj_amass_wealth_1_desc;[This.GetTitledFirstName] wants to amass a substantial amount of wealth;;;;;;;;;;;;;x
+obj_amass_wealth_2_title;Amass Wealth;;;;;;;;;;;;;x
+obj_amass_wealth_2_desc;[This.GetTitledFirstName] wants to amass a substantial amount of wealth;;;;;;;;;;;;;x
+obj_amass_wealth_3_title;Amass Wealth;;;;;;;;;;;;;x
+obj_amass_wealth_3_desc;[This.GetTitledFirstName] wants to amass a substantial amount of wealth;;;;;;;;;;;;;x
+obj_amass_wealth_4_title;Amass Wealth;;;;;;;;;;;;;x
+obj_amass_wealth_4_desc;[This.GetTitledFirstName] wants to amass a substantial amount of wealth;;;;;;;;;;;;;x
+obj_break_out_of_prison_desc;[This.GetTitledFirstName] wants [This.GetHerHis] freedom back.;;;;;;;;;;;;;x
+obj_gain_iron_crown_title;Secure the Iron Crown;;;;;;;;;;;;;x
+obj_gain_iron_crown_desc;[This.GetTitledFirstName] wants to secure the Iron Crown of the Kingdom of Lombardia;;;;;;;;;;;;;x
+obj_form_lombard_league_title;Form the Lombard League;;;;;;;;;;;;;x
+obj_form_lombard_league_desc;[This.GetTitledFirstName] wants to form the Guelph Lombard League in northern Italy.;;;;;;;;;;;;;x
+weaken_vassal_plot_desc;Weaken vassal plot;;;;;;;;;;;;;x
+obj_befriend_liege_title;Become a friend to your liege.;;;;;;;;;;;;;x
+obj_befriend_liege_desc;[This.GetTitledFirstName] desires to befried their liege.;;;;;;;;;;;;;x
+obj_become_a_knight_title;Become a Knight.;;;;;;;;;;;;;x
+obj_become_a_knight_desc;[This.GetTitledFirstName] desires to become a Knight.;;;;;;;;;;;;;x
+obj_become_a_formidable_fighter_title;Become a formidable fighter.;;;;;;;;;;;;;x
+obj_become_a_formidable_fighter_desc;[This.GetTitledFirstName] desires to become a formidable fighter.;;;;;;;;;;;;;x
+obj_win_the_war_title;Win the war.;;;;;;;;;;;;;x
+obj_win_the_war_desc;[This.GetTitledFirstName] desires to win the war.;;;;;;;;;;;;;x
+obj_break_out_of_prison_title;Break out of prison.;;;;;;;;;;;;;x
+obj_break_out_of_prison_desc;[This.GetTitledFirstName] desires to break out of prison.;;;;;;;;;;;;;x
+plot_kill_sneaky_vassal_title;Kill the treasonous [This.GetBestName];;;;;;;;;;;;;x
+plot_kill_sneaky_vassal_desc;[From.GetTitledFirstName] wants to kill [This.GetTitledFirstName] in order to avenge a treason.;;;;;;;;;;;;;x
+plot_liege_conspiracy_title;Conspire to gain the [This.GetFullBaseName];;;;;;;;;;;;;x
+plot_liege_conspiracy_desc;Plot to gain support amongst the subjects of [This.Holder.GetTitledName] in a conspiracy to overthrow [This.Holder.GetTitledName] and be the new ruler of the [This.GetFullBaseName].;;;;;;;;;;;;;x
+plot_discredit_councillor_title;Discredit [This.GetTitledFirstName];Discréditer [This.GetTitledFirstName];[This.GetTitledFirstName] diskreditieren;;;;;;;;;;;x
+plot_discredit_councillor_desc;[From.GetTitledFirstName] wants [From.Liege.GetTitledFirstName] to realize that [This.GetTitledFirstName] does not deserve [This.GetHerHis] position on the council.;[From.GetTitledFirstName] veut que [From.Liege.GetTitledFirstName] réalise que [This.GetTitledFirstName] ne mérite pas sa position au conseil.;[From.GetTitledFirstName] wants [From.Liege.GetTitledFirstName] to realize that [This.GetTitledFirstName] does not deserve [This.GetHerHis] position on the council.;;;;;;;;;;;x
+plot_embezzle_from_liege_title;Embezzle From [This.GetTitledFirstName];Abus de pouvoir de [This.GetTitledFirstName];Embezzle From [This.GetTitledFirstName];;;;;;;;;;;x
+plot_embezzle_from_liege_desc;[From.GetTitledFirstName] wants to help [From.GetHerHim]self to an adequate reward for [From.GetHerHis] service to [This.GetTitledFirstName].;[From.GetTitledFirstName] veut une récompense appropriée pour ses services à [This.GetTitledFirstName].;[From.GetTitledFirstName] wants to help [From.GetHerHim]self to an adequate reward for [From.GetHerHis] service to [This.GetTitledFirstName].;;;;;;;;;;;x
+plot_kidnap_character_title;Kidnap [This.GetTitledFirstName];Kidnapper [This.GetTitledFirstName];[This.GetTitledFirstName] entführen;;;;;;;;;;;x
+plot_kidnap_character_desc;[From.GetTitledFirstName] wants to see [This.GetTitledFirstName] brought in chains before [From.GetHerHim].;[From.GetTitledFirstName] veut voir [This.GetTitledFirstName] enchaîné devant [From.GetHerHim].;[From.GetTitledFirstName] wants to see [This.GetTitledFirstName] brought in chains before [From.GetHerHim].;;;;;;;;;;;x
+plot_instigate_revolt_title;Incite [This.GetTitledFirstName] to Revolt;Inciter [This.GetTitledFirstName] à se révolter;[This.GetTitledFirstName] zur Revolte anstacheln;;;;;;;;;;;x
+plot_instigate_revolt_desc;[From.GetTitledFirstName] wants to see [This.GetTitledFirstName] at war with [This.Liege.GetTitledFirstName].;[From.GetTitledFirstName] veut voir [This.GetTitledFirstName] en guerre avec [This.Liege.GetTitledFirstName].;[From.GetTitledFirstName] wants to see [This.GetTitledFirstName] at war with [This.Liege.GetTitledFirstName].;;;;;;;;;;;x
+plot_fabricate_treason_title;Fabricate Evidence of [This.GetTitledFirstName]'s Treason;Fabriquer des preuves de la trahison de [This.GetTitledFirstName];Fabricate Evidence of [This.GetTitledFirstName]'s Treason;;;;;;;;;;;x
+plot_fabricate_treason_desc;[From.GetTitledFirstName] wants to convince the realm that [This.GetTitledFirstName] is a traitor.;[From.GetTitledFirstName] veut convaincre le royaume que [This.GetTitledFirstName] est un traitre.;[From.GetTitledFirstName] wants to convince the realm that [This.GetTitledFirstName] is a traitor.;;;;;;;;;;;x
+plot_fabricate_heresy_title;Accuse [This.GetTitledFirstName] of Heresy;Accuser [This.GetTitledFirstName] d'hérésie;[This.GetTitledFirstName] der Häresie beschuldigen;;;;;;;;;;;x
+plot_fabricate_heresy_desc;[From.GetTitledFirstName] wants to convince [This.RelHead.GetTitledFirstName] that [This.GetTitledFirstName] is a heretic.;[From.GetTitledFirstName] veut convaincre [This.RelHead.GetTitledFirstName] que [This.GetTitledFirstName] est un hérétique.;[From.GetTitledFirstName] wants to convince [This.RelHead.GetTitledFirstName] that [This.GetTitledFirstName] is a heretic.;;;;;;;;;;;x
+plot_take_revenge_title;Take revenge against [This.GetTitledFirstName];;;;;;;;;;;;;x
+plot_take_revenge_desc;Plot to take revenge against [This.GetTitledFirstName] for [This.GetHerHis] treacherous acts. Revenge is a dish best served cold, after all..;;;;;;;;;;;;;x
+faction_guelphs;Guelphs;;;;;;;;;;;;;x
+faction_guelphs_desc;The Guelphs are aiming at restoring Papal investiture in the Holy Roman Emperor, even with the means of scheming and fighting for a new accondescending ruler if need be.;;;;;;;;;;;;;x
+faction_ghibellines;Ghibellines;;;;;;;;;;;;;x
+faction_ghibellines_desc;The Guelphs are aiming at restoring free investiture in the Holy Roman Emperor, even with the means of scheming and fighting for a new accondescending ruler if need be.;;;;;;;;;;;;;x
+faction_liege_loyalist_title;Liege Loyalists;;;;;;;;;;;;;x
+faction_liege_loyalist_desc;This faction is composed of vassals that are loyal to their liege, and that will (or should) support their ruler in any internal war.;;;;;;;;;;;;;x

@@ -1,0 +1,39 @@
+# 446 - Znojmo
+
+# County Title
+title = c_znojmo
+# Settlements 
+max_settlements = 4
+
+b_znojmo = castle
+b_jihlava = city
+b_trebic = temple
+#b_vranov = castle
+#b_bitov = castle
+#b_jemnice = city
+#b_louka = temple
+
+# Misc
+culture = moravian
+religion = catholic
+
+
+900.1.1 = { 
+	b_jihlava = ct_jewish_community_1
+	b_jihlava = ct_jewish_community_2
+}
+
+# History
+
+#german colonization of southern parts
+1160.1.1 = { culture = german }
+
+#shift of power in the area
+1197.1.1 = {
+	b_vranov = castle
+	capital = b_vranov
+	remove_settlement = b_znojmo 
+}
+
+1277.1.1 = { b_jemnice = city }
+

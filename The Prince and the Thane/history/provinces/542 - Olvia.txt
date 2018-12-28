@@ -1,0 +1,27 @@
+# 542 - Olvia
+
+# County Title
+title = c_olvia
+
+# Settlements
+max_settlements = 4
+b_olvia = castle
+b_cetateaalba = city
+b_ophusia = temple
+
+#b_cainari = castle
+#b_alibei = castle
+#b_basarabeasca = castle
+
+# Misc
+culture = pecheneg
+religion = tengri_pagan
+
+# History
+
+900.1.1 = { 
+	b_cetateaalba = ct_jewish_community_1
+}
+1171.1.1 = { culture = cuman }
+1238.1.1 = { culture = romanian } 
+1238.1.1 = { religion = orthodox } 

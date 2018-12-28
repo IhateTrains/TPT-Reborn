@@ -1,0 +1,68 @@
+# 112 - Ile de France
+
+# County Title
+title = c_ile_de_france
+
+# Settlements
+max_settlements = 7
+b_melun = castle
+b_paris = city
+b_stdenis = temple
+b_rambouillet = castle
+b_compiegne = city
+b_chevreuse = castle
+#b_maurepas = castle
+#b_beynes = castle
+#b_etampes = castle
+#b_montlhery = castle
+
+culture = frankish
+religion = catholic
+
+# History
+
+800.1.1 = { 
+	b_paris = ct_wall_1
+	b_paris = ct_jewish_community_1
+	b_paris = ct_jewish_community_2
+	b_paris = ct_wall_2
+	b_paris = ct_wall_q_1
+	b_paris = ct_marketplace_1
+	b_paris = ct_marketplace_2
+	b_paris = ct_militia_barracks_1
+	b_paris = ct_militia_barracks_2
+	b_paris = ct_militia_barracks_3
+	b_paris = ct_civics_1
+	b_paris = ct_civics_2
+	b_paris = ct_university_1
+	b_paris = ct_university_2
+	b_paris = ct_administration_1
+	
+	b_melun = ca_keep_1
+	b_melun = ca_keep_2
+	b_melun = ca_stable_1
+	b_melun = ca_heavy_barracks_1
+	b_melun = ca_heavy_barracks_2
+	b_melun = ca_light_barracks_1
+	b_melun = ca_light_barracks_2
+	b_melun = ca_wall_1
+	b_melun = ca_wall_2
+	b_melun = ca_wall_3
+	b_melun = ca_wall_q_1
+	b_melun = ca_town_1
+	b_melun = ca_town_2
+	
+	b_chevreuse = ca_heavy_barracks_1
+	b_chevreuse = ca_heavy_barracks_2
+	b_chevreuse = ca_light_barracks_1
+	b_chevreuse = ca_light_barracks_2
+	
+	b_rambouillet = ca_heavy_barracks_1
+	b_rambouillet = ca_heavy_barracks_2
+	b_rambouillet = ca_light_barracks_1
+	b_rambouillet = ca_light_barracks_2
+}
+
+1123.1.1  = { b_etampes = castle }
+#1153.1.1  = { b_compiegne = city }
+

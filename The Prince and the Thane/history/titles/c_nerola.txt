@@ -1,0 +1,68 @@
+#Crescenzi family built the castle at Nerola in IX century and ruled the surrounding lands until 1235
+867.1.1=
+{
+liege="k_papal_state"
+holder=1191172 #Crescenzio Crescenzi, dynasty head
+}
+910.1.1=
+{
+holder=1191173 #Giovanni I Crescenzi
+}
+950.1.1=
+{
+holder=1191175 #Crescenzio II Crescenzi
+}
+980.1.1=
+{
+holder=1191176 #Giovanni III Crescenzi
+}
+1020.1.1=
+{
+holder=1191177 #Ottone I Crescenzi
+}
+1070.1.1=
+{
+holder=1191178 #Gregorio Crescenzi
+}
+1090.1.1=
+{
+holder=1191179 #Ottone II Crescenzi
+}
+1108.1.1=
+{
+holder=1191180 #Ottaviano I Crescenzi
+}
+1130.1.1=
+{
+holder=1191181 #Ottone III Crescenzi
+}
+1160.1.1=
+{
+holder=1191182 #Ottaviano II Crescenzi
+}
+1190.1.1=
+{
+holder=1191183 #Crescenzio III Crescenzi
+}
+
+#To the Orsini in 1235
+1235.4.12=
+{
+holder=70846
+}
+1246.10.13=
+{
+holder=70850
+}
+1246.11.15=
+{
+holder=70855
+}
+1319.1.1=
+{
+holder=70862
+}
+1327.1.1=
+{
+holder=70864
+}

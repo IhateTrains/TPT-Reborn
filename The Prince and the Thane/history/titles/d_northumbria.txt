@@ -1,0 +1,28 @@
+
+963.1.1={
+	holder=186 #Waltheof
+}
+
+1006.1.1={
+	holder=188 #Uthred the Bold
+}
+1031.1.1={
+	holder=196 #Siward
+}
+
+1055.1.1={
+	holder=124 #Tostig
+}
+
+1066.1.1={
+	liege="k_england"
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1066.1.1={
+	holder=5660 #Morcar of Hwicce
+}
+1066.10.14=
+{
+        holder=0
+}

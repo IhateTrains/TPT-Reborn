@@ -1,0 +1,101 @@
+600.1.1={
+	liege="k_england"
+	succession=catholic_bishopric
+    law="succ_catholic_bishopric"
+}
+735.1.1={
+	holder=1901032 #Ecgbert
+}
+766.1.1={
+	holder=1901033 #Æthelbert
+}
+780.1.1={
+	holder=1901034 #Eanbald I
+}
+796.1.1={
+	holder=1901035 #Eanbald II
+}
+808.1.1={
+	holder=1901036 #Wulfsige 
+}
+834.1.1={
+	holder=1901037 #Wigmund 
+}
+854.1.1={
+	holder=1901038 #Wulfhere 
+}
+900.1.1={
+	holder=1901039 #Æthebald 
+}
+916.1.1={
+	holder=1901040 #Lodeward 
+}
+931.1.1={
+	holder=1901041 #Wulfstan I
+}
+956.1.1={
+	holder=1901042 #Oscytel 
+}
+971.1.1={
+	holder=1901043 #Oswald of Worchester 
+}
+995.1.1={
+	holder=1901044 #Ealdwulf
+}
+1002.1.1={
+	holder=1901045 #Wulfstan II
+}
+1023.1.1={
+	holder=1901046 #Ælfric Puttoc
+}
+1051.1.1={
+	holder=1901047 #Cynesige
+}
+1061.1.1={
+	holder=1901016 #Ealdred
+}
+1069.9.11={
+	holder=1901017 #Thomas of Bayeux
+}
+1100.11.18={
+	holder=1901018 #Gerard
+}
+1108.5.21={
+	holder=1901019 #Thomas
+}
+1114.2.24={
+	holder=1901020 #Thurstan of Bayeux
+}
+1140.2.6={
+	holder=1901021 #William FitzHerbert
+}
+1154.6.8={
+	holder=1901022 #Roger de Pont L'Évêque
+}
+1181.1.1={
+	holder=1901023 #Geoffrey Plantagenet
+}
+1212.12.12={
+	holder=1901024 #Walter de Gray
+}
+1255.5.11={
+	holder=1901025 #Godfrey Ludham
+}
+1265.1.1={
+	holder=1901026 #Walter Giffard
+}
+1279.4.1={
+	holder=1901027 #William de Wickwane
+}
+1285.1.1={
+	holder=1901028 #John le Romeyn
+}
+1296.1.1={
+	holder=1901029 #Thomas Corbridge
+}
+1304.1.1={
+	holder=1901030 #William Greenfield
+}
+1315.12.6={
+	holder=1901031 #William Melton
+}

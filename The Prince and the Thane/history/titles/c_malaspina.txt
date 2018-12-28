@@ -1,0 +1,45 @@
+950.1.1={
+	holder=70630
+    liege="e_hre"
+}
+975.1.1={
+	holder=70629
+}
+1013.1.1={
+	holder=70633
+}
+1034.1.1={
+	holder=70634
+}
+1084.1.1={
+	holder=1191021 #Adalberto Obertenghi (last)
+}
+1120.1.1={
+	holder=1191022 #Alberto Malaspina
+}
+1140.1.1={
+	holder=1191023 #Obizzo I il Grande
+}
+1164.1.1=
+{
+}
+1185.1.1=
+{
+holder=1191024 #Corrado l'Antico
+}
+1254.1.1=
+{
+holder=1191025 #Moroello Malaspina
+}
+1284.1.1=
+{
+holder=1191053 #Azzolino Malaspina
+}
+1320.1.1=
+{
+holder=1191055 #Spinetta il Grande
+}
+1329.3.1=
+{
+liege=0
+}

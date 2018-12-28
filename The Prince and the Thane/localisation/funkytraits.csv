@@ -1,0 +1,150 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+trait_cardinal;Cardinal;;;;;;;;;;;;;x
+trait_cardinal_desc;This character is a Cardinal of the Holy Roman Church. He has been nominated by the Pope himself and enjoys a large level of importance and recognition within the Catholic world.;;;;;;;;;;;;;x
+beatified;Blessed;;;;;;;;;;;;;x
+beatified_desc;His Holyness the Pope has recognized this character as Blessed within the Holy Roman Church. Local cult is now permitted and his dynasty can benefit from increased prestige.;;;;;;;;;;;;;x
+crowned_by_pope;Crowned by the Pope;;;;;;;;;;;;;x
+crowned_by_pope_desc;Being crowned by the Pope and having received the Imperial Regalia symbolises the blessing of the Pope and official recognised status as the Most Pious Emperor of your Serene Realm;;;;;;;;;;;;;x
+clerical_envoy;Clerical Envoy;;;;;;;;;;;;;x
+clerical_envoy_desc;This character is well known for being particularly at ease with religious diplomacy, plots and the great courts of his time. The spiritual leader approves.;;;;;;;;;;;;;x
+philosopher;Philosopher;;;;;;;;;;;;;x
+philosopher_desc;Fatti non foste a viver come bruti, ma per seguir virtute e conoscenza' (Dante, Divine Comedy – Inferno, Canto XXVI). This character possesses one of the keenest and most inquisitive minds of his time. The Church might not approve...;;;;;;;;;;;;;x
+antisemite;Antisemite;;;;;;;;;;;;;x
+antisemite_desc;This character greatly hates Jews and cannot see beyond the “One True Faith”;;;;;;;;;;;;;x
+bank_sponsor;Early Bank Sponsor;;;;;;;;;;;;;x
+bank_sponsor_desc;This character is an early sponsor of banking and would apply an interest rate even on his or her children's age;;;;;;;;;;;;;x
+machiavellian;Pragmatist;;;;;;;;;;;;;x
+machiavellian_desc;The end justifies the means. This character's ability with scheming and plotting is great and refined, but such political prowess does not leave much time for martial or holy matters.;;;;;;;;;;;;;x
+uneducated;Uneducated;;;;;;;;;;;;;x
+uneducated_desc;This character lacks a proper nobleman's education, and is not interested in getting one – maybe not the wisest choice for a ruler;;;;;;;;;;;;;x
+pious_man;Tales of the Grail;;;;;;;;;;;;;x
+pious_man_desc;This character is a true son of his age and has devoted his or her entire life to the liberation of the Promised land and the recovery of the sacred artefacts of Christianity.;;;;;;;;;;;;;x
+reformer;Reformer;;;;;;;;;;;;;x
+reformer_desc;This character has the mind of a great reformer and sees ahead of his time, but is often misunderstood. Rome is not amused, and nor are the vassals.;;;;;;;;;;;;;x
+relic_hunter;Relic Hunter;;;;;;;;;;;;;x
+relic_hunter_desc;This character is the Indiana Jones of his time, and while collecting and selling is not seen as the most honourable activity on coasts of the Mare Nostrum, it certainly proves to be quite profitable.;;;;;;;;;;;;;x
+charlatan;Charlatan;;;;;;;;;;;;;x
+charlatan_desc;This character is on the darker side of business and resorts to quackery and knowingly employed bogus means of impressing people in order to swindle his victims.;;;;;;;;;;;;;x
+lady_macbeth;Crazed Plotter;;;;;;;;;;;;;x
+lady_macbeth_desc;'Here's the smell of the blood still: all the perfumes of Arabia will not sweeten this little hand. Oh, oh, oh!' (Macbeth – Act V). Scheming and plotting can sometimes break the strongest of minds.;;;;;;;;;;;;;x
+war_hero;Victorious Warrior;;;;;;;;;;;;;x
+war_hero_desc;This character has shown his genius and great courage in many battles, and is now considered a beacon of hope and honour.;;;;;;;;;;;;;x
+conservative;Conservative;;;;;;;;;;;;;x
+conservative_desc;This character does not like change and is perfectly happy with the Status Quo. The Enlightenment is far, far away, but your peers appreciate.;;;;;;;;;;;;;x
+tolerant;Tolerant;;;;;;;;;;;;;x
+tolerant_desc;This character is tolerant towards the other confessions, and does not believe in religious superiority.;;;;;;;;;;;;;x
+alchemist;Alchemist;;;;;;;;;;;;;x
+alchemist_desc;This character is interested in alchemy and is busy in the perpetual search for the philosopher's stone.;;;;;;;;;;;;;x
+musician;Musician;;;;;;;;;;;;;x
+musician_desc;This character is a talented musician, and is keen on showing everyone how good he is.;;;;;;;;;;;;;x
+mecenate;Maecenate;;;;;;;;;;;;;x
+mecenate_desc;'Illa maximi medicorum exclamatio est, Vitam brevem esse, longam artem.' (Seneca - De Brevitate Vitae). This character is a  generous and enlightened patron of the arts and sciences.;;;;;;;;;;;;;x
+parvenu;Parvenu;;;;;;;;;;;;;x
+parvenu_desc;The reasons for this character's sudden appearance at court are unknown to most. The main gossip is that it has nothing to do with ''conventional'' skills...;;;;;;;;;;;;;x
+guelph;Guelph;;;;;;;;;;;;;x
+guelph_desc;This character has decided to side with the Pope in the Investiture Contest.;;;;;;;;;;;;;x
+ghibelline;Ghibelline;;;;;;;;;;;;;x
+ghibelline_desc;This character has decided to side with the Holy Roman Emperor in the Investiture Contest.;;;;;;;;;;;;;x
+syphilitic;Gonorrhea;;;;;;;;;;;;;x
+syphilitic_desc;This character suffers from the painful venereal plague known as Gonorrhea.;;;;;;;;;;;;;x
+tall;Tall;;;;;;;;;;;;;x
+tall_desc;This character is very tall for his time's standards.;;;;;;;;;;;;;x
+slow;Dull;;;;;;;;;;;;;x
+quick;Smart;;;;;;;;;;;;;x
+poor_warrior;Poor Fighter;;;;;;;;;;;;;x
+trained_warrior;Trained Fighter;;;;;;;;;;;;;x
+skilled_warrior;Skilled Fighter;;;;;;;;;;;;;x
+master_warrior;Formidable Fighter;;;;;;;;;;;;;x
+poor_warrior_desc;This character understands the basics of combat, but is sloppy, overconfident, and inexperienced.;;;;;;;;;;;;;x
+trained_warrior_desc;This character has received training in the art of combat. While no master, they can hold their own in a fight.;;;;;;;;;;;;;x
+skilled_warrior_desc;This character possesses a certain talent for battle and swordplay.;;;;;;;;;;;;;x
+master_warrior_desc;This character is one of the greatest warriors of its era, favored by the gods and dreaded on the battlefield.;;;;;;;;;;;;;x
+knight;Knight;;;;;;;;;;;;;x
+knight_desc;This character has been knighted for his courage and honour or for his service as a squire by a lord or by his liege, and can now call himself a true knight.;;;;;;;;;;;;;x
+squire;Squire;;;;;;;;;;;;;x
+squire_desc;This character is a squire in the service of a knight. Squires cannot marry until they are knighted.;;;;;;;;;;;;;x
+templar;Templar;;;;;;;;;;;;;x
+templar_desc;This character is a member of the Knights Templar. Templars cannot marry while they are in active service for the Order.;;;;;;;;;;;;;x
+celibate;Celibate;;;;;;;;;;;;;x
+celibate_desc;This character is leading an ascetic and celibate way of life, and is able to resist almost any earthly temptation.;;;;;;;;;;;;;x
+arbitrary;Ruthless;;;;;;;;;;;;;x
+templar_leader;Templar;;;;;;;;;;;;;x
+templar_leader_desc;This character is a member of the Knights Templar.;;;;;;;;;;;;;x
+nm_seidmann;Seidmann;;;;;;;;;;;;;x
+nm_seidmann_desc;This man is a Seidmann, wise in the ways of sorcery, the healing arts and the gods. Men using Seid are looked down upon.;;;;;;;;;;;;;x
+nm_volva;Volva;;;;;;;;;;;;;x
+nm_volva_desc;This woman is a Volva, wise in the ways of sorcery, the healing arts and the gods.;;;;;;;;;;;;;x
+turncloak;Oathbreaker;;;;;;;;;;;;;x
+turncloak_desc;This character is a turncloak and an oathbreaker, having forsaken all honor by breaking the oath of fealty sworn to his liege.;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

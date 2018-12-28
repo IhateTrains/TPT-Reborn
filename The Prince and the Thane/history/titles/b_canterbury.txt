@@ -1,0 +1,101 @@
+600.1.1={
+	liege="d_canterbury"
+	succession=catholic_bishopric
+    law="succ_catholic_bishopric"
+}
+833.1.1={
+	holder=1901048 #Ceolnoth
+}
+870.1.1={
+	holder=1901049 #Æthelred
+}
+888.1.1={
+	holder=1901050 #Plegmund
+}
+923.1.1={
+	holder=1901051 #Wulfhelm
+}
+941.1.1={
+	holder=1901052 #Oda
+}
+958.1.1={
+	holder=1901053 #Dunstan
+}
+988.1.1={
+	holder=1901054 #Æthelgar
+}
+990.1.1={
+	holder=1901055 #Sigeric
+}
+994.1.1={
+	holder=1901056 #Ælfric of Wessex
+}
+1005.1.1={
+	holder=1901057 #Ælfheah
+}
+1012.1.1={
+	holder=1901058 #Lyfing 
+}
+1020.1.1={
+	holder=1901059 #Æthelnoth 
+}
+1038.1.1={
+	holder=1901060 #Eadsige 
+}
+1052.1.1={
+	holder=5604 #Stigand
+}
+1070.4.11={
+	holder=1901000 #Lanfranc
+}
+1089.4.11={
+	holder=1901001 #Anselm
+}
+1109.4.21={
+	holder=1901002 #Ralph d'Escures
+}
+1122.10.2={
+	holder=1901003 #William de Corbeil
+}
+1136.1.1={
+    holder=1901004 #Theobald of Bec
+}
+1161.4.18={
+    holder=1901005 #Thomas Becket
+}
+1170.12.29={
+    holder=1901006 #Richard of Dover
+}
+1184.1.1={
+    holder=1901007 #Baldwin of Ford
+}
+1190.10.19={
+    holder=83375 #Hubert Walter
+}
+1205.1.1={
+    holder=1901008 #Stephen Langton
+}
+1228.7.9={
+    holder=1901009 #Edmund Rich
+}
+1240.1.1={
+    holder=1901010 #Boniface of Savoy
+}
+1270.7.18={
+    holder=1901011 #Robert Kilwardby
+}
+1279.9.11={
+    holder=1901012 #John Peckham
+}
+1292.12.8={
+    holder=1901013 #Robert Winchelsey
+}
+1313.1.1 ={
+    holder=1901014 #Walter Reynolds
+}
+1327.1.1 ={
+    holder=1901015 #Simon Mepham
+}
+1333.1.1 ={
+    holder=155259 #John de Stratford
+}

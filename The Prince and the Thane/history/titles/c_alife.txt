@@ -1,0 +1,32 @@
+1066.1.1={
+	liege="d_capua"
+	holder=190000 #Rainulf Drengot (brother of Richard I of Capua)
+}
+1087.1.1={
+	holder=190002 #Robert Drengot
+}
+1115.1.1={
+	holder=1000167006 #Rainulf (Ranulf) II, Count of Alife (Drengot)
+}
+1135.1.1={
+	liege="k_sicily"
+}
+1139.4.30={
+	#CJL78 - End Edits
+	holder = 1000167007 #Richard of Alife
+}
+1150.1.1={
+	holder = 1000167008 #Andrew of Alife
+}
+1169.1.1={
+	holder = 1000167009 #Roger of Alife
+}
+1191.1.1={
+	holder = 90167010 #John of Alife
+}
+1198.1.1={
+	holder = 0 
+}
+1220.1.1={
+	liege = e_hre
+}

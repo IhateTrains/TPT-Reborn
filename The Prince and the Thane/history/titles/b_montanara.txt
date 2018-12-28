@@ -1,0 +1,30 @@
+850.1.1={
+	liege="c_mantua"
+}
+1030.1.1={
+	holder=1191061 #Guecello da Camino
+}
+1090.1.1={
+	holder=1191062 #Guidone da Camino
+}
+1105.1.1={
+	holder=1191067 #Guecellone da Camino
+}
+1125.1.1={
+	holder=1191069 #Gabriele I da Camino
+}
+1170.1.1={
+	holder=1191070 #Guecellone II da Camino
+}
+1190.1.1={
+	holder=1191071 #Gabriele II da Camino
+}
+1210.1.1={
+	holder=1191072 #Guecellone III da Camino
+}
+1250.1.1={
+	holder=1191073 #Bianchino II da Camino
+}
+1290.1.1={
+	holder=1191074 #Serravalle da Camino 
+}

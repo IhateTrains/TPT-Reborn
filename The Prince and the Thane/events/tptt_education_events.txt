@@ -1,0 +1,1834 @@
+###########################################################################################
+#
+# The Prince and the Thane education system events - written by idib816, Wiz and Ran Miller
+#
+###########################################################################################
+
+namespace = education
+
+#Assigning education traits 
+character_event = {
+	id = education.0
+	picture = "GFX_evt_child_reading"
+		
+	desc = "EVTDESCeducation.0"
+	
+	min_age = 13
+	max_age = 14
+	
+	trigger = {
+		NOT = { has_character_flag = education_trait_given }
+	}
+	
+	immediate = {
+		#intrigue education
+		#guardian is amateurish_plotter or flamboyant_schemer
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = amateurish_plotter 
+						trait = flamboyant_schemer
+					}
+				}
+			}
+			#excellent intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					intrigue = 7
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					25 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					25 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					25 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}
+			#good intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					intrigue = 5
+					NOT = { intrigue = 7 }
+				}
+				random_list = {
+					35 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					30 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					20 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					15 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}			
+			#mediocre intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					intrigue = 3
+					NOT = { intrigue = 5 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					35 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					20 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					5 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}	
+			#bad intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { intrigue = 3 }
+				}
+				random_list = {
+					50 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					40 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					10 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }	
+				}
+			}			
+		}		
+		#guardian is intricate_webweaver or elusive_shadow
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = intricate_webweaver 
+						trait = elusive_shadow
+					}
+				}
+			}
+			#excellent intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					intrigue = 7
+				}
+				random_list = {
+					10 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					20 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					30 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					40 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}
+			#good intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					intrigue = 5
+					NOT = { intrigue = 7 }
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					25 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					25 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					20 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}			
+			#mediocre intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					intrigue = 3
+					NOT = { intrigue = 5 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					30 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					20 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					10 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}	
+			#bad intrigue
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { intrigue = 3 }
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = amateurish_plotter }
+					35 = { set_character_flag = education_trait_given add_trait = flamboyant_schemer }
+					20 = { set_character_flag = education_trait_given add_trait = intricate_webweaver }
+					5 = { set_character_flag = education_trait_given add_trait = elusive_shadow }
+				}
+			}			
+		}
+		#stewardship education
+		#guardian is indulgent_wastrel or thrifty_clerk
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = indulgent_wastrel 
+						trait = thrifty_clerk
+					}
+				}
+			}
+			#excellent stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					stewardship = 7
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					25 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					25 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					25 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}
+			#good stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					stewardship = 5
+					NOT = { stewardship = 7 }
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					35 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					25 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					15 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}			
+			#mediocre stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					stewardship = 3
+					NOT = { stewardship = 5 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					30 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					20 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					10 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}	
+			#bad stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { stewardship = 3 }
+				}
+				random_list = {
+					50 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					40 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					10 = { set_character_flag = education_trait_given add_trait = fortune_builder }	
+				}
+			}			
+		}		
+		#guardian is fortune_builder or midas_touched
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = fortune_builder 
+						trait = midas_touched
+					}
+				}
+			}
+			#excellent stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					stewardship = 7
+				}
+				random_list = {
+					10 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					20 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					30 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					40 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}
+			#good stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					stewardship = 5
+					NOT = { stewardship = 7 }
+				}
+				random_list = {
+					20 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					25 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					30 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					15 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}			
+			#mediocre stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					stewardship = 3
+					NOT = { stewardship = 5 }
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					30 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					20 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					20 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}	
+			#bad stewardship
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { stewardship = 3 }
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = indulgent_wastrel }
+					35 = { set_character_flag = education_trait_given add_trait = thrifty_clerk }
+					20 = { set_character_flag = education_trait_given add_trait = fortune_builder }
+					5 = { set_character_flag = education_trait_given add_trait = midas_touched }
+				}
+			}			
+		}
+		#diplomacy education
+		#guardian is naive_appeaser or underhanded_rogue
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = naive_appeaser 
+						trait = underhanded_rogue
+					}
+				}
+			}
+			#excellent diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 7
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					25 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					25 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					25 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}
+			#good diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 5
+					NOT = { diplomacy = 7 }
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					30 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					25 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					15 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}			
+			#mediocre diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 3
+					NOT = { diplomacy = 5 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					30 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					20 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					10 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}	
+			#bad diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { diplomacy = 3 }
+				}
+				random_list = {
+					50 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					40 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					10 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }	
+				}
+			}			
+		}		
+		#guardian is charismatic_negotiator or grey_eminence
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = charismatic_negotiator 
+						trait = grey_eminence
+					}
+				}
+			}
+			#excellent diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 7
+				}
+				random_list = {
+					10 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					20 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					30 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					40 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}
+			#good diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 5
+					NOT = { diplomacy = 7 }
+				}
+				random_list = {
+					20 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					25 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					30 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					15 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}			
+			#mediocre diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 3
+					NOT = { diplomacy = 5 }
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					30 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					25 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					10 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}	
+			#bad diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { diplomacy = 3 }
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					35 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					20 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					5 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}			
+		}
+		#martial education
+		#guardian is misguided_warrior or tough_soldier
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = misguided_warrior 
+						trait = tough_soldier
+					}
+				}
+			}
+			#excellent martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					martial = 7
+					is_female = no
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					25 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					25 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					25 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}
+			#good martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					martial = 5
+					is_female = no
+					NOT = { martial = 7 }
+				}
+				random_list = {
+					35 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					25 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					30 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					15 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}			
+			#mediocre martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					martial = 3
+					is_female = no
+					NOT = { martial = 5 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					30 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					20 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					10 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}	
+			#bad martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { martial = 3 }
+					is_female = no
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					40 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					20 = { set_character_flag = education_trait_given add_trait = skilled_tactician }	
+				}
+			}	
+            #excellent diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 7
+					is_female = yes
+				}
+				random_list = {
+					20 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					20 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					30 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					40 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}
+			#good diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 5
+					NOT = { diplomacy = 7 }
+					is_female = yes
+				}
+				random_list = {
+					30 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					30 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					25 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					15 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}			
+			#mediocre diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 3
+					NOT = { diplomacy = 5 }
+					is_female = yes
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					35 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					15 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					10 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}	
+			#bad diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { diplomacy = 3 }
+					is_female = yes
+				}
+				random_list = {
+					50 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					40 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					10 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }	
+				}
+			}			
+		}		
+		#guardian is skilled_tactician or brilliant_strategist
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = skilled_tactician 
+						trait = brilliant_strategist
+					}
+				}
+			}
+			#excellent martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					martial = 7
+					is_female = no
+				}
+				random_list = {
+					10 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					20 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					30 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					40 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}
+			#good martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					martial = 5
+					NOT = { martial = 7 }
+					is_female = no
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					25 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					25 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					25 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}			
+			#mediocre martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					martial = 3
+					NOT = { martial = 5 }
+					is_female = no
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					30 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					25 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					10 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}	
+			#bad martial
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { martial = 3 }
+					is_female = no
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = misguided_warrior }
+					30 = { set_character_flag = education_trait_given add_trait = tough_soldier }
+					20 = { set_character_flag = education_trait_given add_trait = skilled_tactician }
+					10 = { set_character_flag = education_trait_given add_trait = brilliant_strategist }
+				}
+			}
+            #excellent diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 7
+					is_female = yes
+				}
+				random_list = {
+					10 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					20 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					30 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					40 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}
+			#good diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 5
+					NOT = { diplomacy = 7 }
+					is_female = yes
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					25 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					25 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					25 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}			
+			#mediocre diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					diplomacy = 3
+					NOT = { diplomacy = 5 }
+					is_female = yes
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					30 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					25 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					10 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}	
+			#bad diplomacy
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { diplomacy = 3 }
+					is_female = yes
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = naive_appeaser }
+					30 = { set_character_flag = education_trait_given add_trait = underhanded_rogue }
+					20 = { set_character_flag = education_trait_given add_trait = charismatic_negotiator }
+					10 = { set_character_flag = education_trait_given add_trait = grey_eminence }
+				}
+			}			
+		}
+		#learning education
+		#guardian is detached_priest or martial_cleric
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = detached_priest 
+						trait = martial_cleric
+					}
+				}
+			}
+			#excellent learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					learning = 7
+				}
+				random_list = {
+					35 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					25 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					25 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					15 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}
+			#good learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					learning = 5
+					NOT = { learning = 7 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					30 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					20 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					10 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}			
+			#mediocre learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					learning = 3
+					NOT = { learning = 5 }
+				}
+				random_list = {
+					45 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					35 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					15 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					5 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}	
+			#bad learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { learning = 3 }
+				}
+				random_list = {
+					50 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					40 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					10 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }	
+				}
+			}			
+		}		
+		#guardian is scholarly_theologian or mastermind_theologian
+		if = {
+			limit = {
+				guardian = { 
+					OR = {
+						trait = scholarly_theologian 
+						trait = mastermind_theologian
+					}
+				}
+			}
+			#excellent learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					learning = 7
+				}
+				random_list = {
+					10 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					20 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					30 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					40 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}
+			#good learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					learning = 5
+					NOT = { learning = 7 }
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					25 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					25 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					25 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}			
+			#mediocre learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					learning = 3
+					NOT = { learning = 5 }
+				}
+				random_list = {
+					25 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					30 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					25 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					10 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}	
+			#bad learning
+			if = {
+				limit = {
+					NOT = { has_character_flag = education_trait_given }
+					NOT = { learning = 3 }
+				}
+				random_list = {
+					40 = { set_character_flag = education_trait_given add_trait = detached_priest }
+					30 = { set_character_flag = education_trait_given add_trait = martial_cleric }
+					20 = { set_character_flag = education_trait_given add_trait = scholarly_theologian }
+					10 = { set_character_flag = education_trait_given add_trait = mastermind_theologian }
+				}
+			}			
+		}		
+		#no guardian: randomize, favor bad traits
+		if = {
+			limit = { NOT = { has_character_flag = education_trait_given } }
+			random_list = {
+				50 = { add_trait = amateurish_plotter }
+				30 = { add_trait = flamboyant_schemer }
+				20 = { add_trait = intricate_webweaver }
+				50 = { add_trait = naive_appeaser }
+				30 = { add_trait = underhanded_rogue }
+				20 = { add_trait = charismatic_negotiator }
+				50 = { add_trait = indulgent_wastrel }
+				30 = { add_trait = thrifty_clerk }
+				20 = { add_trait = fortune_builder }
+				50 = { add_trait = misguided_warrior }
+				30 = { add_trait = tough_soldier }
+				20 = { add_trait = skilled_tactician }
+				50 = { add_trait = detached_priest }
+				30 = { add_trait = martial_cleric }
+				20 = { add_trait = scholarly_theologian }				
+			}
+			set_character_flag = education_trait_given
+		}		
+	}
+	
+	mean_time_to_happen = {
+		days = 1		
+	}
+
+	option = {
+		name = "EVTOPTAeducation.0"
+		trigger = {
+			trait = amateurish_plotter
+		}
+		tooltip = { add_trait = amateurish_plotter }
+	}
+	option = {
+		name = "EVTOPTBeducation.0"
+		trigger = {
+			trait = flamboyant_schemer
+		}
+		tooltip = { add_trait = flamboyant_schemer }
+	}
+	option = {
+		name = "EVTOPTCeducation.0"
+		trigger = {
+			trait = intricate_webweaver
+		}
+		tooltip = { add_trait = intricate_webweaver }
+	}
+	option = {
+		name = "EVTOPTDeducation.0"
+		trigger = {
+			trait = elusive_shadow
+		}
+		tooltip = { add_trait = elusive_shadow }
+	}
+	option = {
+		name = "EVTOPTEeducation.0"
+		trigger = {
+			trait = naive_appeaser
+		}
+		tooltip = { add_trait = naive_appeaser }
+	}
+	option = {
+		name = "EVTOPTFeducation.0"
+		trigger = {
+			trait = underhanded_rogue
+		}
+		tooltip = { add_trait = underhanded_rogue }
+	}
+	option = {
+		name = "EVTOPTGeducation.0"
+		trigger = {
+			trait = charismatic_negotiator
+		}
+		tooltip = { add_trait = charismatic_negotiator }
+	}
+	option = {
+		name = "EVTOPTHeducation.0"
+		trigger = {
+			trait = grey_eminence
+		}
+		tooltip = { add_trait = grey_eminence }
+	}
+	option = {
+		name = "EVTOPTIeducation.0"
+		trigger = {
+			trait = indulgent_wastrel
+		}
+		tooltip = { add_trait = indulgent_wastrel }
+	}
+	option = {
+		name = "EVTOPTJeducation.0"
+		trigger = {
+			trait = thrifty_clerk
+		}
+		tooltip = { add_trait = thrifty_clerk }
+	}
+	option = {
+		name = "EVTOPTKeducation.0"
+		trigger = {
+			trait = fortune_builder
+		}
+		tooltip = { add_trait = fortune_builder }
+	}
+	option = {
+		name = "EVTOPTLeducation.0"
+		trigger = {
+			trait = midas_touched
+		}
+		tooltip = { add_trait = midas_touched }
+	}
+	option = {
+		name = "EVTOPTMeducation.0"
+		trigger = {
+			trait = misguided_warrior
+		}		
+		tooltip = { add_trait = misguided_warrior }
+	}
+	option = {
+		name = "EVTOPTNeducation.0"
+		trigger = {
+			trait = tough_soldier
+		}		
+		tooltip = { add_trait = tough_soldier }
+	}
+	option = {
+		name = "EVTOPTOeducation.0"
+		trigger = {
+			trait = skilled_tactician
+		}		
+		tooltip = { add_trait = skilled_tactician }
+	}
+	option = {
+		name = "EVTOPTPeducation.0"
+		trigger = {
+			trait = brilliant_strategist
+		}		
+		tooltip = { add_trait = brilliant_strategist }
+	}
+	option = {
+		name = "EVTOPTQeducation.0"
+		trigger = {
+			trait = detached_priest
+		}
+		tooltip = { add_trait = detached_priest }
+	}
+	option = {
+		name = "EVTOPTReducation.0"
+		trigger = {
+			trait = martial_cleric
+		}
+		tooltip = { add_trait = martial_cleric }
+	}
+	option = {
+		name = "EVTOPTSeducation.0"
+		trigger = {
+			trait = scholarly_theologian
+		}
+		tooltip = { add_trait = scholarly_theologian }
+	}
+	option = {
+		name = "EVTOPTTeducation.0"
+		trigger = {
+			trait = mastermind_theologian
+		}
+		tooltip = { add_trait = mastermind_theologian }
+	}
+}
+
+character_event = {
+	id = education.1
+		
+	desc = "EVTDESCeducation.1"
+	
+	min_age = 14
+	max_age = 15
+	trigger = {
+		has_character_flag = education_trait_given
+		NOT = { has_character_flag = education_trait_notified }
+	}
+	
+	mean_time_to_happen = {
+		days = 1		
+	}
+
+	option = {
+		name = "OK"
+		set_character_flag = education_trait_notified	
+		hidden_tooltip = {
+			if = { 
+				limit = {
+					any_liege = { 
+						ai = no
+						is_close_relative = ROOT 
+					}
+				}
+				any_liege = {
+					limit = { 
+						ai = no 
+						is_close_relative = ROOT 
+					}
+					character_event = { id = education.2 }
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = education.2
+	is_triggered_only = yes
+		
+	desc = "EVTDESCeducation.2"
+
+	option = {
+		name = "EVTOPTAeducation.2"
+		trigger = {
+			FROM = { trait = amateurish_plotter }
+		}
+		tooltip = { FROM = { add_trait = amateurish_plotter } }
+	}
+	option = {
+		name = "EVTOPTBeducation.2"
+		trigger = {
+			FROM = { trait = flamboyant_schemer }
+		}
+		tooltip = { FROM = { add_trait = flamboyant_schemer } }
+	}
+	option = {
+		name = "EVTOPTCeducation.2"
+		trigger = {
+			FROM = { trait = intricate_webweaver }
+		}
+		tooltip = { FROM = { add_trait = intricate_webweaver } }
+	}
+	option = {
+		name = "EVTOPTDeducation.2"
+		trigger = {
+			FROM = { trait = elusive_shadow }
+		}
+		tooltip = { FROM = { add_trait = elusive_shadow } }
+	}
+	option = {
+		name = "EVTOPTEeducation.2"
+		trigger = {
+			FROM = { trait = naive_appeaser }
+		}
+		tooltip = { FROM = { add_trait = naive_appeaser } }
+	}
+	option = {
+		name = "EVTOPTFeducation.2"
+		trigger = {
+			FROM = { trait = underhanded_rogue }
+		}
+		tooltip = { FROM = { add_trait = underhanded_rogue } }
+	}
+	option = {
+		name = "EVTOPTGeducation.2"
+		trigger = {
+			FROM = { trait = charismatic_negotiator }
+		}
+		tooltip = { FROM = { add_trait = charismatic_negotiator } }
+	}
+	option = {
+		name = "EVTOPTHeducation.2"
+		trigger = {
+			FROM = { trait = grey_eminence }
+		}
+		tooltip = { FROM = { add_trait = grey_eminence } }
+	}
+	option = {
+		name = "EVTOPTIeducation.2"
+		trigger = {
+			FROM = { trait = indulgent_wastrel }
+		}
+		tooltip = { FROM = { add_trait = indulgent_wastrel } }
+	}
+	option = {
+		name = "EVTOPTJeducation.2"
+		trigger = {
+			FROM = { trait = thrifty_clerk }
+		}
+		tooltip = { FROM = { add_trait = thrifty_clerk } }
+	}
+	option = {
+		name = "EVTOPTKeducation.2"
+		trigger = {
+			FROM = { trait = fortune_builder }
+		}
+		tooltip = { FROM = { add_trait = fortune_builder } }
+	}
+	option = {
+		name = "EVTOPTLeducation.2"
+		trigger = {
+			FROM = { trait = midas_touched }
+		}
+		tooltip = { FROM = { add_trait = midas_touched } }
+	}
+	option = {
+		name = "EVTOPTMeducation.2"
+		trigger = {
+			FROM = { trait = misguided_warrior }
+		}		
+		tooltip = { FROM = { add_trait = misguided_warrior } }
+	}
+	option = {
+		name = "EVTOPTNeducation.2"
+		trigger = {
+			FROM = { trait = tough_soldier }
+		}
+		tooltip = { FROM = { add_trait = tough_soldier } }
+	}
+	option = {
+		name = "EVTOPTOeducation.2"
+		trigger = {
+			FROM = { trait = skilled_tactician }
+		}		
+		tooltip = { FROM = { add_trait = skilled_tactician } }
+	}
+	option = {
+		name = "EVTOPTPeducation.2"
+		trigger = {
+			FROM = { trait = brilliant_strategist }
+		}		
+		tooltip = { FROM = { add_trait = brilliant_strategist } }
+	}
+	option = {
+		name = "EVTOPTQeducation.2"
+		trigger = {
+			FROM = { trait = detached_priest }
+		}		
+		tooltip = { FROM = { add_trait = detached_priest } }
+	}
+	option = {
+		name = "EVTOPTReducation.2"
+		trigger = {
+			FROM = { trait = martial_cleric }
+		}
+		tooltip = { FROM = { add_trait = martial_cleric } }
+	}
+	option = {
+		name = "EVTOPTSeducation.2"
+		trigger = {
+			FROM = { trait = scholarly_theologian }
+		}
+		tooltip = { FROM = { add_trait = scholarly_theologian } }
+	}
+	option = {
+		name = "EVTOPTTeducation.2"
+		trigger = {
+			FROM = { trait = mastermind_theologian }
+		}
+		tooltip = { FROM = { add_trait = mastermind_theologian } }
+	}
+}
+
+#Grew up together.
+character_event = {
+	id = education.3
+	desc = "EVTDESCeducation.3" 
+	picture = "GFX_evt_knight_and_king"
+	
+	min_age = 6
+	max_age = 13
+	
+	trigger = {
+		any_realm_character = {
+			at_location = ROOT
+			prisoner = no
+			age = 6
+			NOT = { age = 16 }
+			NOT = { character = ROOT }
+			NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_grew_up_together } }
+			NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_grew_up_together } }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+	}
+	
+	option = {
+		name = "Ok" #I grew up with them!
+		any_realm_character = {
+			limit = {
+				NOT = {character = ROOT}
+				prisoner = no
+				at_location = ROOT
+				age = 6
+				NOT = { age = 16 }
+				NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_grew_up_together } }
+				NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_grew_up_together } }
+				NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_rival } }
+				NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rival } }
+			}
+			opinion = {
+				modifier = opinion_grew_up_together
+				who = ROOT
+				years = 100
+			}
+			reverse_opinion = {
+				modifier = opinion_grew_up_together
+				who = ROOT
+				years = 100
+			}
+			hidden_tooltip = {
+				character_event = { id = education.4 } #Notitification.
+			}
+		}
+	}
+}
+
+#Grew up together. (Notification)
+character_event = {
+	id = education.4
+	desc = "EVTDESCeducation.4"  
+	picture = "GFX_evt_knight_and_king"
+	
+	is_triggered_only = yes
+	
+	option = { name = "Ok"}
+}
+
+namespace = wards
+
+
+#wards.0 - Ward - Norman fighter (Martial)
+character_event = {
+	id = wards.0
+	desc = "EVTDESCwards.0" 	#I hear rumors about Normans...
+	picture = "GFX_melee"
+	
+	is_triggered_only = yes
+	
+	min_age = 9
+	max_age = 13
+	
+	trigger = {
+		has_epidemic = no
+		is_ill = no
+		NOT = {	health_traits = 1 }
+		NOT = {trait = dwarf}
+		NOT = {trait = weak}
+		OR = { 
+			father = { 
+				OR = {
+					#tier = duke
+					tier = king 
+					tier = emperor
+				}
+			} 
+			mother = { 
+				OR = {
+					#tier = duke
+					tier = king 
+					tier = emperor
+				}
+			}
+			guardian = {
+				OR = {
+					#tier = duke
+					tier = king 
+					tier = emperor
+				}
+			}
+			#tier = duke
+			tier = king
+			tier = emperor
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+		#Good
+		modifier = {
+			factor = 2
+			OR = {
+				trait = strong
+				trait = wroth
+				trait = brave
+			}
+		}
+		
+		#Bad
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = gluttonous
+				trait = slothful
+				trait = craven
+				is_female = yes
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+		hidden_tooltip = { guardian = { character_event = {id = wards.1} } }
+	}
+}
+
+#wards.1 - Guardian - Norman (Martial).
+character_event = {
+	id = wards.1
+	desc = "EVTDESCwards.1" 	#To hire or not ot hire... that is the question.
+	picture = "GFX_melee"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwards.1" #Refuse
+		
+		prestige = 15
+		add_trait = proud
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					trait = proud
+					trait = greedy
+					trait = zealous
+				}
+			}
+		}
+		
+		FROM = { hidden_tooltip = { character_event = { id = wards.2 } } }
+	}
+	
+	option = {
+		name = "EVTOPTBwards.1" # I will pay
+		
+		scaled_wealth = -0.2
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 5
+				OR = {
+					trait = duelist
+					trait = ambitious
+				}
+			}
+		}
+		
+		create_character = {
+			female = no
+			age = 30
+                        dynasty = random
+			trait = brave
+			trait = duelist
+			trait = tough_soldier
+			trait = proud
+			trait = skilled_warrior
+			religion = catholic
+			culture = norman
+			attributes = {martial = 7}
+		}
+		
+		new_character = {
+			opinion = {
+				modifier = opinion_mentor	
+				who = ROOT
+				years = 25
+			}
+		}
+		
+		random_list = {
+			20 = {}
+			30 = {FROM =  {change_martial = 1}}
+			30 = {FROM =  {change_martial = 2}}
+			20 = {FROM =  {change_martial = 3}}
+		}
+		
+		random_list = {
+			70 = {}
+			30 = {FROM =  {add_trait=brave}}
+		}
+		
+		random_list = {
+			45 = {}
+			55 = {FROM =  {add_trait=duelist}}
+		}
+
+		FROM = {
+			hidden_tooltip = {character_event = { id = wards.3 }} #Notification
+			hidden_tooltip = {character_event = { id = wards.9 days=90 }} #Training
+			opinion = {
+				modifier = opinion_happy_with_guardian
+				who = ROOT
+				years = 5
+			}
+		}
+   	}
+}
+
+#wards.2 - Ward notification - Refused.
+character_event = {
+	id = wards.2
+	desc = "EVTDESCwards.2" 	# Guardian didn't wanna pay.
+	picture = "GFX_evt_melee"
+	
+	is_triggered_only = yes
+	
+	option = { name = "OK" }
+}
+
+#wards.3 - Ward notification - Accepted.
+character_event = {
+	id = wards.3
+	desc = "EVTDESCwards.3" # Guardian did pay.
+	picture = "GFX_evt_melee"
+	
+	is_triggered_only = yes
+	
+	option = { name = "Ok" }
+}
+
+#wards.4 - Ward - Jew (Stewardship).
+character_event = {
+	id = wards.4
+	desc = "EVTDESCwards.4" #Jew (Stewardship)
+	picture = "GFX_evt_jewish_banker"
+	
+	is_triggered_only = yes
+	
+	min_age = 6
+	max_age = 13
+	
+	trigger = {
+		has_epidemic = no
+		is_ill = no
+		NOT = {	health_traits = 1 }
+		NOT = {trait = slow}
+		NOT = {trait = imbecile}
+		NOT = {trait = inbred}
+		NOT = {trait = charitable}
+		OR = { 
+			father = { 
+				OR = {
+					tier = KING 
+					tier = EMPEROR
+				}
+			} 
+			mother = { 
+				OR = {
+					tier = KING 
+					tier = EMPEROR
+				}
+			}
+			guardian = {
+				OR = {
+					tier = KING 
+					tier = EMPEROR
+				}
+			}
+			tier = KING
+			tier = EMPEROR
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+		#Good
+		modifier = {
+			factor = 2
+			OR = {
+				trait = gluttonous
+				trait = greedy
+				trait = envious
+				trait = arbitrary
+			}
+		}
+		
+		#Bad
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = slothful
+				trait = temperate
+				trait = charitable
+				trait = shy
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+		hidden_tooltip = { guardian = { character_event = {id = wards.5} } }
+	}
+}
+
+#wards.5 - Guardian - Jew (Stewardship).
+character_event = {
+	id = wards.5
+	desc = "EVTDESCwards.5" #To hire or not ot hire... that is the question.
+	picture = "GFX_evt_jewish_banker"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwards.1" #Refuse - bloody forgeiner schum!
+		
+		prestige = 15
+		add_trait = proud
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					trait = proud
+					trait = greedy
+					trait = zealous
+					trait = temperate
+				}
+			}
+		}
+		
+		FROM = { hidden_tooltip = { character_event = { id = wards.2 } } }
+		
+	}
+	
+	option = {
+		name = "EVTOPTBwards.1" # Accept (Pay)
+		
+		scaled_wealth = -0.2
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					trait = indulgent_wastrel
+					trait = thrifty_clerk
+					trait = fortune_builder
+					trait = midas_touched
+					trait = ambitious
+					trait = gluttonous
+				}
+			}
+		}
+
+		create_character = {
+			female = no
+			age = 50
+			trait = midas_touched
+			trait = proud
+			trait = greedy
+			trait = bank_sponsor
+			religion = jewish
+            dynasty = random
+			culture = sephardic
+			
+			attributes = {
+				martial = 2
+				stewardship = 7
+			}
+		}
+		
+		new_character = {		
+			
+			opinion = {
+				modifier = opinion_mentor	
+				who = ROOT
+				years = 25
+			}
+		}
+
+		random_list = {
+			20 = {}
+			30 = {FROM =  {change_stewardship = 1}}
+			30 = {FROM =  {change_stewardship = 2}}
+			20 = {FROM =  {change_stewardship = 3}}
+		}
+		
+		random_list = {
+			30 = {FROM = {add_trait="greedy"}}
+			70 = {}
+		}
+			
+		random_list = {
+			30 = {FROM = {add_trait="gluttonous"}}
+			70 = {}
+		}
+	
+		FROM = {
+			hidden_tooltip = {character_event = { id = wards.3 } }
+			opinion = {
+				modifier = opinion_happy_with_guardian
+				who = ROOT
+				years = 5
+			}
+		}
+   	}
+}
+
+#wards.7 - Ward - Muslim (Diplomacy).
+# On-action: on_yearly_childhood_pulse (80)
+character_event = {
+	id = wards.7
+	desc = "EVTDESCwards.7" #I hear roumors about Muslim
+	picture = "GFX_evt_reformer2"
+	
+	is_triggered_only = yes
+	
+	min_age = 6
+	max_age = 13
+	
+	trigger = {
+		has_epidemic = no
+		is_ill = no
+		NOT = { health_traits = 1 }
+		NOT = {trait = wroth}
+		OR = { 
+			father = { 
+				OR = {
+					#tier = duke
+					tier = king 
+					tier = emperor
+				}
+			} 
+			mother = { 
+				OR = {
+					#tier = duke
+					tier = king 
+					tier = emperor
+				}
+			}
+			guardian = {
+				OR = {
+					#tier = duke
+					tier = king 
+					tier = emperor
+				}
+			}
+			#tier = duke
+			tier = king
+			tier = emperor
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+		#Good
+		modifier = {
+			factor = 2
+			OR = {
+				trait = harelip
+				trait = hunchback
+				trait = lisp
+				trait = stutter
+				trait = fair
+				trait = ugly
+				trait = dwarf
+			}
+		}
+		
+		#Bad
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = slow
+				trait = imbecile
+				trait = slothful
+				trait = shy
+			}
+		}
+	}
+
+	option = {
+		name = "OK" 
+		hidden_tooltip = { guardian = { character_event = {id = wards.8} } } 
+	}
+
+}
+
+#wards.8 - Guardian - Muslim (Diplomacy).
+character_event = {
+	id = wards.8
+	desc = "EVTDESCwards.8" #To hire or not ot hire... that is the question.
+	picture = "GFX_evt_reformer2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwards.1" #Refuse
+		
+		prestige = 15
+		add_trait = proud
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					trait = proud
+					trait = greedy
+					trait = zealous
+				}
+			}
+		}
+		
+		FROM = { hidden_tooltip = { character_event = { id = wards.2 } } }
+	}
+	
+	option = {
+		name = "EVTOPTBwards.1" # I will pay
+		
+		scaled_wealth = -0.2
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 5
+				OR = {
+					trait = poet
+					trait = ambitious
+				}
+			}
+		}
+
+		create_character = {
+			female = no
+			age = 30
+			trait = grey_eminence
+			trait = patient
+			trait = gregarious
+			trait = poet
+			trait = deceitful
+			trait = ambitious
+			religion = sunni
+            dynasty = random
+			culture = levantine_arabic
+			
+			attributes = {
+				martial = 4
+				diplomacy = 7
+			}
+		}
+		
+		new_character = {		
+			
+			opinion = {
+				modifier = opinion_mentor	
+				who = ROOT
+				years = 25
+			}
+		}
+
+		random_list = {
+			20 = {}
+			30 = {FROM =  {change_diplomacy = 1}}
+			30 = {FROM =  {change_diplomacy = 2}}
+			20 = {FROM =  {change_diplomacy = 3}}
+		}
+		
+		random_list = {
+			60 = {FROM = {add_trait="gregarious"}}
+			40 = {}
+		}
+
+		random_list = {
+			75 = {FROM = {add_trait="poet"}}
+			25 = {}
+		}
+	
+		FROM = {
+			hidden_tooltip = {character_event = { id = wards.3 } }
+			opinion = {
+				modifier = opinion_happy_with_guardian
+				who = ROOT
+				years = 2
+			}
+			remove_trait="shy"
+		}
+   	}
+}
+
+#wards.9 - Norman Traning
+character_event = {
+	id = wards.9
+	desc = "EVTDESCwards.9" 	
+	picture = "GFX_evt_melee"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"
+		if = {
+			limit = { trait = skilled_warrior }
+			random_list	= {
+				60 = { add_trait = master_warrior }
+				40 = {}
+			}
+		}
+		if = {
+			limit = { trait = trained_warrior }
+			random_list	= {
+				60 = { add_trait = skilled_warrior }
+				40 = {}
+			}
+		}
+		if = {
+			limit = { trait = poor_warrior }
+			random_list	= {
+				60 = { add_trait = trained_warrior }
+				40 = {}
+			}
+		}
+		if = {
+			limit = {
+				not = { trait = poor_warrior } 
+				not = { trait = trained_warrior } 
+				not = { trait = skilled_warrior } 
+				not = { trait = master_warrior } 
+			}
+			random_list	= {
+				60 = { add_trait = poor_warrior }
+				40 = {}
+			}
+		}
+	}
+	
+}

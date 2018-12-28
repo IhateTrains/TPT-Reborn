@@ -1,0 +1,779 @@
+castle = {
+## Castle Markets ##
+## Small Annual Market
+	ca_marketplace_1 = {
+		desc = ca_marketplace_1_desc
+        prerequisites = { ca_town_2 }	
+		build_cost = 100
+		build_time = 365
+		tax_income = 0.75
+		ai_creation_factor = 110
+		
+		start = {
+		    year = 1066
+		}
+	}
+##Large Annual Market	
+	ca_marketplace_2 = {
+		desc = ca_marketplace_2_desc
+	    prerequisites = { ca_town_3 }
+		upgrades_from = ca_marketplace_1
+		build_cost = 140
+		build_time = 547
+		tax_income = 1.0
+		ai_creation_factor = 109
+		
+		start = {
+		    year = 1090
+		}
+	}
+##Permanent Local Market
+	ca_marketplace_3 = {
+		desc = ca_marketplace_3_desc
+	    prerequisites = { ca_town_4 }
+		upgrades_from = ca_marketplace_2
+		build_cost = 245
+		build_time = 730
+		tax_income = 1.5
+                disease_defence = -0.01
+		ai_creation_factor = 101
+		
+		start = {
+		    year = 1130
+		}
+	}
+## Common Houses and Inns	
+## Public House
+ca_pub_1 = {
+		desc = ca_pub_1_desc
+		build_cost = 45
+		build_time = 197
+		tax_income = 0.75
+		ai_creation_factor = 84
+		
+		start = {
+		    year = 1066
+		}
+	}
+## Common House
+ca_pub_2 = {
+		desc = ca_pub_2_desc
+		upgrades_from = ca_pub_1
+		build_cost = 75
+		build_time = 210
+		tax_income = 1.0
+		local_revolt_risk = -0.005
+		levy_reinforce_rate = -0.005
+		ai_creation_factor = 82
+		
+		start = {
+		    year = 1090
+		}
+     } 	
+## Inn
+ca_pub_3 = {
+		desc = ca_pub_3_desc
+		upgrades_from = ca_pub_2
+		build_cost = 125
+		build_time = 245
+		tax_income = 1.5
+		local_revolt_risk = -0.01
+		levy_reinforce_rate = -0.01
+		ai_creation_factor = 82
+		
+		start = {
+		    year = 1130
+		}
+	}
+	
+#Keeps, gives levy and garrison size
+	ca_keep_1 = {
+		desc = ca_keep_1_desc
+		build_cost = 150
+		build_time = 547 #1.5y
+		levy_size = 0.05
+		garrison_size = 0.05
+		ai_creation_factor = 102
+		
+		start = {
+		    year = 1066
+		}
+	}
+	ca_keep_2 = {
+		desc = ca_keep_1_desc
+		prerequisites = { ca_wall_1 }
+		upgrades_from = ca_keep_1
+		build_cost = 200
+		build_time = 730 #2y
+		levy_size = 0.1
+		garrison_size = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+		    year = 1090
+		}
+	}
+	ca_keep_3 = {
+		desc = ca_keep_1_desc
+		prerequisites = { ca_wall_2 }
+		upgrades_from = ca_keep_2
+		build_cost = 300
+		build_time = 1095 #3y
+		levy_size = 0.15
+		garrison_size = 0.15
+		ai_creation_factor = 100
+		
+		start = {
+		    year = 1130
+		}
+	}
+	ca_keep_4 = {	
+		desc = ca_keep_1_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		upgrades_from = ca_keep_3
+		build_cost = 400
+		build_time = 1460 #4y
+		levy_size = 0.2
+		garrison_size = 0.2
+		ai_creation_factor = 99
+		
+		start = {
+		    year = 1165
+		}
+	}
+	ca_keep_5 = {
+		desc = ca_keep_1_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
+		upgrades_from = ca_keep_4
+		build_cost = 500
+		build_time = 2190 #6y
+		levy_size = 0.25
+		garrison_size = 0.2
+		ai_creation_factor = 98
+		
+		start = {
+		    year = 1200
+		}
+	}
+	ca_keep_6 = {
+		desc = ca_keep_1_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
+		upgrades_from = ca_keep_5
+		build_cost = 500
+		build_time = 2190 #6y
+		levy_size = 0.3
+		garrison_size = 0.2
+		ai_creation_factor = 97
+		
+		start = {
+		    year = 1245
+		}
+	}
+
+### Castle towns
+### Serf Hamlet ###
+	ca_town_1 = {
+		desc = ca_town_1_desc
+		prerequisites = { ca_keep_1 }
+		build_cost = 40
+		build_time = 365
+		tax_income = 0.50
+		ai_creation_factor = 88
+		
+		start = {
+		    year = 1066
+		}
+    }
+### Peasant Commune ### 	
+	ca_town_2 = {
+		desc = ca_town_2_desc
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_town_1
+		build_cost = 90
+		build_time = 547
+		tax_income = 0.75
+		ai_creation_factor = 87
+		
+		start = {
+		    year = 1090
+		}
+    }
+### Baronial Village ###	
+	ca_town_3 = {
+		desc = ca_town_3_desc
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_town_2
+		build_cost = 140
+		build_time = 730
+		tax_income = 0.75
+                disease_defence = -0.01
+		ai_creation_factor = 85
+		
+		start = {
+		    year = 1130
+		}
+    }
+### Market Town ###	
+	ca_town_4 = {
+		desc = ca_town_4_desc
+	    prerequisites = { ca_keep_4 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_town_3
+		build_cost = 210
+		build_time = 1095
+		tax_income = 0.75
+		disease_defence = -0.01
+		ai_creation_factor = 84
+		
+		start = {
+		    year = 1175
+		}
+    }
+### Chartered Borough ###	
+	ca_town_5 = {
+		desc = ca_town_5_desc
+		prerequisites = { ca_keep_5 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }	
+		upgrades_from = ca_town_4
+		build_cost = 285
+		build_time = 2160
+		tax_income = 0.75
+		disease_defence = -0.01
+		ai_creation_factor = 83
+		
+		start = {
+		    year = 1200
+		}
+	}	
+### Free City ###	
+	ca_town_6 = {
+		desc = ca_town_6_desc
+		prerequisites = { ca_keep_6 } 
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_town_5
+		build_cost = 400
+		build_time = 2250
+		tax_income = 1.0
+		disease_defence = -0.01
+		ai_creation_factor = 80
+		
+		start = {
+		    year = 1240
+		}
+	}	
+	
+# Wall quality, gives fortlevel
+	ca_wall_q_1 = {
+		desc = ca_wall_q_1_desc
+		prerequisites = { ca_wall_1 }
+		build_cost = 50
+		build_time = 182
+		fort_level = 0.5
+		ai_creation_factor = 80
+		
+		start = {
+		    year = 1066
+		}
+	}
+	ca_wall_q_2 = {
+		desc = ca_wall_q_2_desc
+		upgrades_from = ca_wall_q_1
+		prerequisites = { ca_wall_2 }
+		build_cost = 50
+		build_time = 182
+		fort_level = 0.5
+		ai_creation_factor = 79
+		
+		start = {
+		    year = 1090
+		}
+	}
+	ca_wall_q_3 = {
+		desc = ca_wall_q_3_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		upgrades_from = ca_wall_q_2
+		build_cost = 50
+		build_time = 182
+		fort_level = 0.5
+		ai_creation_factor = 78
+		
+		start = {
+		    year = 1130
+		}
+	}
+	ca_wall_q_4 = {
+		desc = ca_wall_q_4_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
+		upgrades_from = ca_wall_q_3
+		build_cost = 100
+		build_time = 365
+		fort_level = 1.0
+		ai_creation_factor = 77
+		
+		start = {
+		    year = 1175
+		}
+	}
+	ca_wall_q_5 = {
+		desc = ca_wall_q_5_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
+		upgrades_from = ca_wall_q_4
+		build_cost = 100
+		build_time = 365
+		fort_level = 1.0
+		ai_creation_factor = 76
+		
+		start = {
+		    year = 1220
+		}
+	}
+	
+	#Walls, gives fortlevel, levysize and income
+	ca_wall_1 = {
+		desc = ca_wall_1_desc
+		build_cost = 50
+		build_time = 365
+		fort_level = 0.5
+		levy_size = 0.025
+		tax_income = 0.2
+		ai_creation_factor = 90
+		
+		start = {
+		    year = 1066
+		}
+	}
+	ca_wall_2 = {
+		desc = ca_wall_2_desc
+		upgrades_from = ca_wall_1
+		build_cost = 50
+		build_time = 547 #1.5y
+		fort_level = 0.5
+		levy_size = 0.025
+		tax_income = 0.2
+		ai_creation_factor = 89
+		
+		start = {
+		    year = 1100
+		}
+	}
+	ca_wall_3 = {
+		desc = ca_wall_3_desc
+		upgrades_from = ca_wall_2
+		build_cost = 100
+		build_time = 730 #2y
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 88
+		
+		start = {
+		    year = 1140
+		}
+	}
+	ca_wall_4 = {
+		desc = ca_wall_4_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		upgrades_from = ca_wall_3
+		build_cost = 150
+		build_time = 1095 #3y
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 87
+		
+		start = {
+		    year = 1180
+		}
+	}
+	ca_wall_5 = {
+		desc = ca_wall_5_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 4 }
+		upgrades_from = ca_wall_4
+		build_cost = 150
+		build_time = 1460 #4y
+		fort_level = 1.5
+		levy_size = 0.1
+		tax_income = 0.5
+		ai_creation_factor = 86
+		
+		start = {
+		    year = 1230
+		}
+	}
+	ca_con_wall_6 = { # Theodosian Walls
+		potential = {
+			FROMFROM = { title = b_constantinople }
+		}
+		desc = ca_con_wall_6_desc
+		upgrades_from = ca_wall_5
+		build_cost = 150
+		build_time = 1460 #4y
+		fort_level = 4.0
+		ai_creation_factor = 86
+
+		start = {
+			year = 1066
+		}
+	}
+
+
+### Heavy Infantry Barracks
+### Guard Quarters ###
+	ca_heavy_barracks_1 = {
+		desc = ca_barracks_1_desc
+	    prerequisites = { ca_keep_1 }
+		build_cost = 45
+		build_time = 365
+		heavy_infantry = 30
+		tax_income = -0.10
+		ai_creation_factor = 89
+		
+		start = {
+		    year = 1100
+        }
+	}
+### Muster Hall ###	
+	ca_heavy_barracks_2 = {
+		desc = ca_barracks_1_desc
+		prerequisites = { ca_keep_1 }
+		upgrades_from = ca_heavy_barracks_1
+		build_cost = 60
+		build_time = 547
+		heavy_infantry = 35
+		tax_income = -0.10
+		ai_creation_factor = 88
+		
+		start = {
+		    year = 1150
+        }
+	}
+### Garrison Tower ###	
+	ca_heavy_barracks_3 = {
+		desc = ca_barracks_1_desc
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_heavy_barracks_2
+		build_cost = 95
+		build_time = 730
+		heavy_infantry = 40
+		levy_size = 0.05
+		tax_income = -0.10
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1180
+        }
+	}
+### Drill Courtyard ###	
+	ca_heavy_barracks_4 = {
+		desc = ca_barracks_1_desc
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_heavy_barracks_3
+		build_cost = 115
+		build_time = 1095
+		heavy_infantry = 45
+		tax_income = -0.10
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1250
+        }
+	}
+### Large Garrison Quarters ###	
+	ca_heavy_barracks_5 = {
+		desc = ca_barracks_1_desc
+		prerequisites = { ca_keep_4 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_heavy_barracks_4
+		build_cost = 180
+		build_time = 2190
+		heavy_infantry = 50
+		levy_size = 0.025
+		land_morale = 0.025
+		levy_reinforce_rate = 0.025
+		tax_income = -0.10
+		ai_creation_factor = 85
+
+		start = {
+		    year = 1300
+        }
+	}
+### Large Barracks ###	
+	ca_heavy_barracks_6 = {
+		desc = ca_barracks_1_desc
+		prerequisites = { ca_keep_5 }
+	   	trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_heavy_barracks_5
+		build_cost = 215
+		build_time = 2190
+		heavy_infantry = 55
+		levy_size = 0.05
+		land_morale = 0.025
+		levy_reinforce_rate = 0.025
+		tax_income = -0.10
+		ai_creation_factor = 84
+
+		start = {
+		    year = 1350
+        }
+	}
+
+### Light Barracks
+
+### Militia Muster Grounds ###
+	ca_light_barracks_1 = {
+		desc = ca_militia_barracks_1_desc
+	    prerequisites = { ca_keep_1 }
+		build_cost = 40
+		build_time = 365
+		light_infantry = 30
+		archers = 20
+		tax_income = -0.10
+		ai_creation_factor = 88
+		
+		start = {
+		    year = 1066
+		}
+	}
+### Militia Training Grounds ###	
+	ca_light_barracks_2 = {
+		desc = ca_militia_barracks_2_desc
+		prerequisites = { ca_keep_2 }
+		upgrades_from = ca_light_barracks_1
+		build_cost = 55
+		build_time = 547
+		light_infantry = 35
+		archers = 25
+		tax_income = -0.10
+		ai_creation_factor = 87
+
+		start = { year = 1100
+ }
+	}
+### Militia Muster Hall ###	
+	ca_light_barracks_3 = {
+		desc = ca_militia_barracks_3_desc
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_light_barracks_2
+		build_cost = 90
+		build_time = 1095
+		light_infantry = 40
+		archers = 30
+		tax_income = -0.10
+		ai_creation_factor = 86
+
+		start = {
+ year = 1150 }
+	}
+### Militia Drill Courtyard ###	
+	ca_light_barracks_4 = {
+		desc = ca_militia_barracks_4_desc
+		prerequisites = { ca_keep_4 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_light_barracks_3
+		build_cost = 105
+		build_time = 1395
+		light_infantry = 45
+		archers = 35
+		tax_income = -0.10
+		ai_creation_factor = 85
+
+		start = { year = 1200
+ }
+	}
+### Militia Barracks ###	
+	ca_light_barracks_5 = {
+		desc = ca_militia_barracks_5_desc
+		prerequisites = { ca_keep_6 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_light_barracks_4
+		build_cost = 195
+		build_time = 1895
+		light_infantry = 50
+		archers = 40
+		levy_reinforce_rate = 0.025
+		tax_income = -0.10
+		ai_creation_factor = 84
+
+		start = { year = 1250
+ }
+	}
+
+### Stables
+### Equine Pasture ###
+	ca_stable_1 = {
+		desc = ca_stable_1_desc
+	    prerequisites = { ca_keep_1 }
+		build_cost = 45
+		build_time = 365
+		light_cavalry = 15
+		tax_income = -0.10
+		ai_creation_factor = 88
+		
+		start = {
+		    year = 1066
+		}
+ }
+### Equine Paddock ###	
+	ca_stable_2 = {
+		desc = ca_stable_1_desc
+		prerequisites = { ca_keep_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_stable_1
+		build_cost = 85
+		build_time = 547
+		light_cavalry = 20
+		tax_income = -0.10
+		ai_creation_factor = 87
+
+		start = {
+ year = 1100}
+	}	
+### Large Stables ###	
+	ca_stable_3 = {
+		desc = ca_stable_1_desc
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_stable_2
+		build_cost = 135
+		build_time = 730
+		light_cavalry = 25
+		knights = 5
+		tax_income = -0.10
+		ai_creation_factor = 86
+
+		start = {
+ year = 1150 }
+	}
+### Livery Yard ###	
+	ca_stable_4 = {
+		desc = ca_stable_1_desc
+	    prerequisites = { ca_keep_4 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_stable_3
+		build_cost = 205
+		build_time = 1095
+		light_cavalry = 30
+		knights = 10
+		tax_income = -0.10
+		ai_creation_factor = 85
+
+		start = {
+ year = 1200 }
+	}
+### Manege Militaire ###
+	ca_stable_5 = {
+		desc = ca_stable_1_desc
+	    prerequisites = { ca_town_5 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_stable_4
+		build_cost = 315
+		build_time = 1550
+		light_cavalry = 35
+		knights = 20
+		tax_income = -0.10
+		ai_creation_factor = 83
+
+		start = { year = 1066
+ }
+	}
+### Smiths
+### Blacksmith's Kiln ###
+	ca_smith_1 = {
+		desc = ca_smith_1_desc
+	    prerequisites = { ca_keep_1 }
+		build_cost = 20
+		build_time = 365
+		HEAVY_INFANTRY_DEFENSIVE = 0.02
+		LIGHT_INFANTRY_DEFENSIVE = 0.02
+		ARCHERS_DEFENSIVE = 0.02
+		tax_income = -0.10
+		ai_creation_factor = 88
+		
+		start = {
+		    year = 1100
+        }
+	}
+### Farrier's Forge ###	
+	ca_smith_2 = {
+		prerequisites = { ca_stable_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_smith_1
+		build_cost = 40
+		build_time = 547
+		HEAVY_INFANTRY_DEFENSIVE = 0.02
+		LIGHT_INFANTRY_DEFENSIVE = 0.02
+		ARCHERS_DEFENSIVE = 0.02
+		tax_income = -0.10
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1150
+        }
+	}
+### Mailsmith's Furnace ###	
+	ca_smith_3 = {
+		prerequisites = { ca_keep_3 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_smith_2
+		build_cost = 80
+		build_time = 695
+		HEAVY_INFANTRY_DEFENSIVE = 0.02
+		LIGHT_INFANTRY_DEFENSIVE = 0.02
+		ARCHERS_DEFENSIVE = 0.02
+		HEAVY_INFANTRY_OFFENSIVE = 0.02
+		LIGHT_INFANTRY_OFFENSIVE = 0.02
+		ARCHERS_OFFENSIVE = 0.02
+		tax_income = -0.10
+		ai_creation_factor = 86
+
+		start = {
+		    year = 1175
+        }
+	}
+### Armourer's Smithy ###	
+	ca_smith_4 = {
+		prerequisites = { ca_keep_4 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_smith_3
+		build_cost = 110
+		build_time = 1005
+		HEAVY_INFANTRY_DEFENSIVE = 0.02
+		LIGHT_INFANTRY_DEFENSIVE = 0.02
+		ARCHERS_DEFENSIVE = 0.02
+		HEAVY_INFANTRY_OFFENSIVE = 0.02
+		LIGHT_INFANTRY_OFFENSIVE = 0.02
+		ARCHERS_OFFENSIVE = 0.02
+		tax_income = -0.10
+		ai_creation_factor = 85
+
+		start = {
+			year = 1210
+		}
+	}
+### Arsenal Foundry ###	
+	ca_smith_5 = {
+		prerequisites = { ca_keep_6 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_smith_4
+		build_cost = 225
+		build_time = 1250
+		HEAVY_INFANTRY_DEFENSIVE = 0.05
+		LIGHT_INFANTRY_DEFENSIVE = 0.05
+		ARCHERS_DEFENSIVE = 0.05
+		HEAVY_INFANTRY_OFFENSIVE = 0.05
+		LIGHT_INFANTRY_OFFENSIVE = 0.05
+		ARCHERS_OFFENSIVE = 0.05
+		land_morale = 0.05
+		tax_income = -0.10
+		ai_creation_factor = 81
+
+		start = {
+		    year = 1250
+		}
+	}	
+}

@@ -1,0 +1,33 @@
+1000.1.1={
+	holder=2220092 #Conone Giorgi
+	holding_dynasty = 8001008 # Giorgi
+	liege="d_ragusa"
+}
+
+1044.1.1={
+	holder=2220093 #Gentile Giorgi
+}
+
+1104.1.1={
+	holder=2220094 #Antonio Giorgi
+}
+
+1144.1.1={
+	holder=2220095 #Valentino Giorgi
+}
+
+1184.1.1={
+	holder=2220096 #Conone Giorgi
+}
+
+1224.1.1={
+	holder=2220097 #Gentile Giorgi
+}
+
+1264.1.1={
+	holder=2220098 #Carlo Giorgi
+}
+
+1304.1.1={
+	holder=2220099 #Matteo Giorgi
+}

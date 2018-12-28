@@ -1,0 +1,1487 @@
+######################################################################
+#
+# The Prince and the Thane military orders events - written by idib816
+#
+######################################################################
+
+namespace = holy_orders
+
+#Papal response to holy order foundation
+letter_event = {
+	id = holy_orders.1
+	desc = "EVTDESCholy_orders.1"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "No way"
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_spouse
+					}
+				}
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_child
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_vassal
+					}
+				}
+			}			
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -20
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -40
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -60
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -80
+						}
+					}
+				}
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = cruel }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = wroth }
+			}
+            modifier = {
+				factor = 0.25
+				FROM = { trait = just }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = honest }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = kind }
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = deceitful }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = lady_macbeth }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { trait = conservative }
+			}
+            modifier = {
+				factor = 1.25
+				FROM = { NOT = { diplomacy = 10 } }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					NOT = {
+						opinion = {
+							who = FROM
+							value = -99
+						}
+					}
+				}
+			}
+		}
+	    FROM = { letter_event = { id = holy_orders.2 days = 90 } }	
+	}
+	
+	option = { 
+		name = "Okay"
+		ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 0.5
+				FROM = { trait = cruel }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = just }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { piety = 250 }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = clerical_envoy }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { martial = 14 }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = master_warrior }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = honest }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { trait = kind }
+			}
+            modifier = {
+				factor = 2
+				FROM = { trait = gregarious }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { diplomacy = 10 }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = deceitful }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { trait = impaler }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 1250 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 1500 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 1750 }
+			}
+            modifier = {
+				factor = 1.2
+				FROM = { prestige = 2000 }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+		FROM = { 
+		    letter_event = { id = holy_orders.3 days = 90 }
+		}
+	}
+}
+
+#Papal response - bad outcome
+letter_event = {
+	id = holy_orders.2
+	desc = "EVTDESCholy_orders.2"
+	border = GFX_event_letter_frame_religion
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Damn!"
+		clr_character_flag = founding_order
+		prestige = -250
+		piety = -100
+		opinion = {
+			modifier = opinion_angry
+			who = FROM
+			months = 120
+		}
+	}
+}
+
+#Papal response - good outcome
+letter_event = {
+	id = holy_orders.3
+	desc = "EVTDESCholy_orders.3"
+	border = GFX_event_letter_frame_religion
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Gloria"
+		opinion = {
+			modifier = opinion_delighted
+			who = FROM
+			months = 120
+		}
+	    if = { limit = { has_character_flag = order_of_santiago }
+            narrative_event = { id = holy_orders.4 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_alcantara }
+            narrative_event = { id = holy_orders.6 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+    	if = { limit = { has_character_flag = order_of_calatrava }
+            narrative_event = { id = holy_orders.8 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+    	if = { limit = { has_character_flag = order_of_saint_james }
+            narrative_event = { id = holy_orders.10 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+    	if = { limit = { has_character_flag = order_of_aviz }
+            narrative_event = { id = holy_orders.12 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+    	if = { limit = { has_character_flag = order_of_livonian }
+            narrative_event = { id = holy_orders.14 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+    	if = { limit = { has_character_flag = order_of_dobrzyn }
+            narrative_event = { id = holy_orders.16 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_redstar }
+            narrative_event = { id = holy_orders.18 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_montesa }
+            narrative_event = { id = holy_orders.20 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_sepulchre }
+            narrative_event = { id = holy_orders.22 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_virgin }
+            narrative_event = { id = holy_orders.24 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_thomas }
+            narrative_event = { id = holy_orders.26 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_jordi }
+            narrative_event = { id = holy_orders.28 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_jesus }
+            narrative_event = { id = holy_orders.30 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_mountjoy }
+            narrative_event = { id = holy_orders.32 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	    if = { limit = { has_character_flag = order_of_lazarus }
+            narrative_event = { id = holy_orders.34 tooltip = EVTTOOLTIPholy_orders.4 days = 30 }
+	    }
+	}
+}
+
+# The Founding of the Order of Santiago
+narrative_event = {
+	id = holy_orders.4
+	title = "The Order of Santiago"
+	desc = "EVTDESCholy_orders.4"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_santiago
+		clr_character_flag = order_of_santiago
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+	        activate_title = { title = d_order_santiago status = yes }
+			
+	        create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+		    	age = 35
+		    	religion = ROOT
+		    	culture = ROOT
+		    	trait = brilliant_strategist
+		    	trait = knight
+		     	trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_santiago = { grant_title = PREV }
+			    c_santiago = { grant_title = PREV }
+			    b_santiago = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+		    any_playable_ruler = {
+			    limit = { ai = no }
+				narrative_event = { id = holy_orders.5 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Santiago notification
+narrative_event = {
+	id = holy_orders.5
+	title = "The Order of Santiago"
+	desc = "EVTDESCholy_orders.5"
+	picture = "GFX_evt_jerusalem"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Alcantara
+narrative_event = {
+	id = holy_orders.6
+	title = "The Order of Alcantara"
+	desc = "EVTDESCholy_orders.6"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_alcantara
+		clr_character_flag = order_of_alcantara
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_alcantara status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+			
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_alcantara = { grant_title = PREV }
+			    c_alcantara = { grant_title = PREV }
+			    b_alcantara = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.7 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Alcantara notification
+narrative_event = {
+	id = holy_orders.7
+	title = "The Order of Alcantara"
+	desc = "EVTDESCholy_orders.7"
+	picture = "GFX_evt_jerusalem"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Calatrava
+narrative_event = {
+	id = holy_orders.8
+	title = "The Order of Calatrava"
+	desc = "EVTDESCholy_orders.8"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_calatrava
+		clr_character_flag = order_of_calatrava
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_calatrava status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+		    	religion = ROOT
+		    	culture = ROOT
+		    	trait = brilliant_strategist
+		    	trait = knight
+		    	trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+			    	modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			     }
+			    d_order_calatrava = { grant_title = PREV }
+		    	c_calatrava = { grant_title = PREV }
+			    b_calatrava = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.9 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Calatrava notification
+narrative_event = {
+	id = holy_orders.9
+	title = "The Order of Calatrava"
+	desc = "EVTDESCholy_orders.9"
+	picture = "GFX_evt_crusade_siege"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Saint James
+narrative_event = {
+	id = holy_orders.10
+	title = "The Order of Saint James"
+	desc = "EVTDESCholy_orders.10"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_saint_james
+		clr_character_flag = order_of_saint_james
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_saint_james status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+		    	dynasty = random
+			    female = no
+		    	age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		      	    months = 1200
+			    }
+			    d_order_saint_james = { grant_title = PREV }
+			    c_lucca = { grant_title = PREV }
+			    b_altopascio = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.11 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Saint James notification
+narrative_event = {
+	id = holy_orders.11
+	title = "The Order of Saint James"
+	desc = "EVTDESCholy_orders.11"
+	picture = "GFX_evt_crusader_battle"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Aviz
+narrative_event = {
+	id = holy_orders.12
+	title = "The Order of Aviz"
+	desc = "EVTDESCholy_orders.12"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_aviz
+		clr_character_flag = order_of_aviz
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_aviz status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_aviz = { grant_title = PREV }
+			    c_castelo_branco = { grant_title = PREV }
+			    b_castelobranco = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.13 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Aviz notification
+narrative_event = {
+	id = holy_orders.13
+	title = "The Order of Aviz"
+	desc = "EVTDESCholy_orders.13"
+	picture = "GFX_evt_crusade_siege"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Livonian Order
+narrative_event = {
+	id = holy_orders.14
+	title = "The Livonian Brothers of the Sword"
+	desc = "EVTDESCholy_orders.14"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_livonian
+		clr_character_flag = order_of_livonian
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_livonian status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_livonian = { grant_title = PREV }
+			    c_riga = { grant_title = PREV }
+			    b_jelgava = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.15 days = 5 }
+			}
+		}
+	}	
+}
+
+#Livonian Order notification
+narrative_event = {
+	id = holy_orders.15
+	title = "The Livonian Brothers of the Sword"
+	desc = "EVTDESCholy_orders.15"
+	picture = "GFX_evt_jerusalem"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Dobrzyn
+narrative_event = {
+	id = holy_orders.16
+	title = "The Order of Dobrzyn"
+	desc = "EVTDESCholy_orders.16"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_dobrzyn
+		clr_character_flag = order_of_dobrzyn
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_dobrzyn status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_dobrzyn = { grant_title = PREV }
+			    c_kujawy = { grant_title = PREV }
+		    	b_dobrzyn = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.17 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Dobrzyn notification
+narrative_event = {
+	id = holy_orders.17
+	title = "The Order of Dobrzyn"
+	desc = "EVTDESCholy_orders.17"
+	picture = "GFX_evt_crusade_siege"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Redstar
+narrative_event = {
+	id = holy_orders.18
+	title = "The Knights of the Cross with the Red Star"
+	desc = "EVTDESCholy_orders.18"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_redstar
+		clr_character_flag = order_of_redstar
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_redstar status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_redstar = { grant_title = PREV }
+			    b_boleslav = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.19 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Redstar notification
+narrative_event = {
+	id = holy_orders.19
+	title = "The Knights of the Cross"
+	desc = "EVTDESCholy_orders.19"
+	picture = "GFX_evt_crusader_battle"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Montesa
+narrative_event = {
+	id = holy_orders.20
+	title = "The Order of Montesa"
+	desc = "EVTDESCholy_orders.20"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_montesa
+		clr_character_flag = order_of_montesa
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_montesa status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_montesa = { grant_title = PREV }
+			    b_alacuas = { grant_title = PREV }
+			    b_alacuas = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.21 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Montesa notification
+narrative_event = {
+	id = holy_orders.21
+	title = "The Order of Montesa"
+	desc = "EVTDESCholy_orders.21"
+	picture = "GFX_evt_jerusalem"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Sepulchre
+narrative_event = {
+	id = holy_orders.22
+	title = "The Order of the Holy Sepulchre"
+	desc = "EVTDESCholy_orders.22"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_sepulchre
+		clr_character_flag = order_of_sepulchre
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_sepulchre status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_sepulchre = { grant_title = PREV }
+		    	b_castelsantangelo = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = {
+					ai = no
+				}
+				narrative_event = { id = holy_orders.23 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Sepulchre notification
+narrative_event = {
+	id = holy_orders.23
+	title = "The Order of the Holy Sepulchre"
+	desc = "EVTDESCholy_orders.23"
+	picture = "GFX_evt_rome"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Virgin
+narrative_event = {
+	id = holy_orders.24
+	title = "The Order of the Blessed Virgin Mary of Mercy"
+	desc = "EVTDESCholy_orders.24"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_virgin
+		clr_character_flag = order_of_virgin
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_virgin status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_virgin = { grant_title = PREV }
+			    b_osona = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.25 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Virgin notification
+narrative_event = {
+	id = holy_orders.25
+	title = "The Order of the Blessed Virgin Mary of Mercy"
+	desc = "EVTDESCholy_orders.25"
+	picture = "GFX_evt_rome"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Thomas
+narrative_event = {
+	id = holy_orders.26
+	title = "The Knights of St. Thomas"
+	desc = "EVTDESCholy_orders.26"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_thomas
+		clr_character_flag = order_of_thomas
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_thomas status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_thomas = { grant_title = PREV }
+			    b_scandelon = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.27 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Thomas notification
+narrative_event = {
+	id = holy_orders.27
+	title = "The Knights of St. Thomas"
+	desc = "EVTDESCholy_orders.27"
+	picture = "GFX_evt_jerusalem"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Jordi
+narrative_event = {
+	id = holy_orders.28
+	title = "The Knights of St. George"
+	desc = "EVTDESCholy_orders.28"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_jordi
+		clr_character_flag = order_of_jordi
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_jordi status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_jordi = { grant_title = PREV }
+			    b_peralada = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.29 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Jordi notification
+narrative_event = {
+	id = holy_orders.29
+	title = "The Knights of St. George"
+	desc = "EVTDESCholy_orders.29"
+	picture = "GFX_evt_crusader_battle"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Jesus
+narrative_event = {
+	id = holy_orders.30
+	title = "The Order of the Faith of Jesus Christ"
+	desc = "EVTDESCholy_orders.30"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_jesus
+		clr_character_flag = order_of_jesus
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_jesus status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+		    	d_order_jesus = { grant_title = PREV }
+			    b_muret = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.31 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Jesus notification
+narrative_event = {
+	id = holy_orders.31
+	title = "The Order of the Faith of Jesus Christ"
+	desc = "EVTDESCholy_orders.31"
+	picture = "GFX_evt_crusader_battle"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Mountjoy
+narrative_event = {
+	id = holy_orders.32
+	title = "The Order of Mountjoy"
+	desc = "EVTDESCholy_orders.32"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_mountjoy
+		clr_character_flag = order_of_mountjoy
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_mountjoy status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_mountjoy = { grant_title = PREV }
+			    b_laforbie = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.33 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Mountjoy notification
+narrative_event = {
+	id = holy_orders.33
+	title = "The Order of Mountjoy"
+	desc = "EVTDESCholy_orders.33"
+	picture = "GFX_evt_crusade_siege"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+# The Founding of the Order of Lazarus
+narrative_event = {
+	id = holy_orders.34
+	title = "The Knights of St. Lazarus"
+	desc = "EVTDESCholy_orders.34"
+	
+	picture = "GFX_evt_jerusalem"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is a grand day"
+		set_global_flag = order_of_lazarus
+		clr_character_flag = order_of_lazarus
+		set_character_flag = founded_holy_order
+		scaled_wealth = -2
+		prestige = 200
+		piety = 75
+		random = { chance = 15
+		give_nickname = nick_the_founder }
+		hidden_tooltip = {
+		
+			activate_title = { title = d_order_lazarus status = yes }
+			
+		    create_random_soldier = {
+			    random_traits = no
+			    dynasty = random
+			    female = no
+			    age = 35
+			    religion = ROOT
+			    culture = ROOT
+			    trait = brilliant_strategist
+			    trait = knight
+			    trait = brave
+		    }
+		    new_character = {
+			    opinion = {
+				    modifier = opinion_loyal_servant
+				    who = ROOT
+		     	    months = 1200
+			    }
+			    d_order_lazarus = { grant_title = PREV }
+			    b_saintsamuel = { grant_title = PREV }
+			    set_defacto_liege = ROOT
+		    }
+			any_playable_ruler = {
+				limit = { ai = no }
+				narrative_event = { id = holy_orders.35 days = 5 }
+			}
+		}
+	}	
+}
+
+#Order of Lazarus notification
+narrative_event = {
+	id = holy_orders.35
+	title = "The Knights of St. Lazarus"
+	desc = "EVTDESCholy_orders.35"
+	picture = "GFX_evt_jerusalem"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The infidels shall fear!"
+	}
+}
+
+
+# Holy Orders Manteinance
+character_event = {
+	id = holy_orders.36
+	picture = "GFX_evt_jerusalem"
+		
+	desc = "AI_EVENT"
+	
+	trigger = {
+	    has_landed_title = e_rebels
+		NOT = { has_global_flag = holy_orders_startup }
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	# Myself
+	option = {
+	    activate_title = { title = d_order_santiago status = no }
+	    activate_title = { title = d_order_alcantara status = no }
+	    activate_title = { title = d_order_calatrava status = no }
+	    activate_title = { title = d_order_saint_james status = no }
+	    activate_title = { title = d_order_aviz status = no }
+	    activate_title = { title = d_order_livonian status = no }
+	    activate_title = { title = d_order_dobrzyn status = no }
+	    activate_title = { title = d_order_redstar status = no }
+	    activate_title = { title = d_order_montesa status = no }
+	    activate_title = { title = d_order_sepulchre status = no }
+	    activate_title = { title = d_order_virgin status = no }
+	    activate_title = { title = d_order_thomas status = no }
+	    activate_title = { title = d_order_jordi status = no }
+	    activate_title = { title = d_order_jesus status = no }	
+	    activate_title = { title = d_order_mountjoy status = no }	
+	    activate_title = { title = d_order_lazarus status = no }	
+	    activate_title = { title = d_cohen_hagadol status = no }	
+	    activate_title = { title = d_bogomilist status = no }	
+	    activate_title = { title = k_cathar_papal_state status = no }	
+	    activate_title = { title = k_fraticelli_papal_state status = no }	
+	    activate_title = { title = k_waldensian_papal_state status = no }	
+	    activate_title = { title = k_lollard_papal_state status = no }	
+		set_global_flag = holy_orders_startup
+	}	
+}

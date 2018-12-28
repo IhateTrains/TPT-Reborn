@@ -1,0 +1,45 @@
+nm_seidmann = {
+	lifestyle = yes
+
+	potential = {
+		religion_group = pagan_group
+	}
+
+	opposites =  {
+		nm_volva
+	}
+
+	learning = 4
+	intrigue = 2
+	customizer = no
+	
+	monthly_character_prestige = -0.25
+	monthly_character_piety = 0.1
+	same_opinion = 25
+	opposite_opinion = 25
+
+	ai_zeal = 10
+	ai_rationality = 20
+}
+nm_volva = {
+	lifestyle = yes
+
+	potential = {
+		religion_group = pagan_group
+	}
+
+	opposites =  {
+		nm_seidmann
+	}
+
+	learning = 4
+	intrigue = 2
+	customizer = no
+
+	monthly_character_piety = 0.1
+	same_opinion = 25
+	opposite_opinion = 25
+
+	ai_zeal = 10
+	ai_rationality = 20
+}

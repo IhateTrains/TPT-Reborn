@@ -1,0 +1,19 @@
+# 1065 - Nordalbingen
+
+# County Title
+title = c_nordalbingen
+
+# Settlements
+max_settlements = 2
+
+
+b_meldorf = city
+#b_heide = city
+
+# Misc
+culture = frisian
+religion = catholic
+
+# History
+1106.1.1 = { culture = german } 
+1264.1.1 = { trade_post = b_vorrade }

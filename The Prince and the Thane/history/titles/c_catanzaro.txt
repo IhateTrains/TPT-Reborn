@@ -1,0 +1,47 @@
+950.1.1={
+	holder = 1191108 #Pietro Ruffo
+	liege=d_calabria
+}
+970.1.1={
+	liege=d_calabria
+}
+1000.1.1={
+	holder = 1191109 #Costanzo Ruffo
+}
+1045.1.1={
+	holder = 1191110 #Pietro Ruffo
+}
+1075.1.1={
+	holder = 1191111 #Filippo Ruffo
+}
+1071.1.1={
+liege="d_sicily"
+}
+1130.1.1={
+	holder=1191112 #Pietro Ruffo
+	liege="d_calabria"
+}
+1178.1.1={
+	holder=32548 #Giordano Ruffo
+}
+1220.1.1={
+	holder=32549 #Pietro Ruffo
+}
+1257.1.1={
+	holder=32559 #Fulcone I Ruffo
+}
+1266.1.1={
+	holder=32561 #Giordano I Ruffo
+}
+1287.1.1={
+	holder=32563 #Enrico I Ruffo
+}
+1309.1.1={
+	holder=32567 #Pietro I Ruffo
+}
+1310.1.1={
+	holder=32571 #Pietro II Ruffo
+}
+1332.1.1={
+	holder=32570 #Guglielmo I Ruffo
+}

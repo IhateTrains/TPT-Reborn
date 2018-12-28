@@ -1,0 +1,18 @@
+# 975 - Mide
+
+# County Title
+title = c_mide
+
+# Settlements
+max_settlements = 3
+
+b_morgallion = castle
+b_kells = city
+#b_ratoath = city
+
+
+# Misc
+culture = irish
+religion = catholic
+
+# History

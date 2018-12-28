@@ -1,0 +1,19 @@
+# 364 - Lausitz
+
+# County Title
+title = c_lausitz
+
+# Settlements
+max_settlements = 3
+
+b_gorlitz = castle
+#b_raothenburg = castle
+#b_bautzen = city 
+#b_zittau = castle
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+

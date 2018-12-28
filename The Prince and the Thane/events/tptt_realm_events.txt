@@ -1,0 +1,915 @@
+################################################################################
+#
+# The Prince and the Thane realm events - written by idib816, Van Diemen and Wiz
+#
+################################################################################
+
+namespace = coronation
+
+# Coronation inform Emperor
+character_event = {
+	id = coronation.1
+	desc = "EVTDESCcoronation.1"
+	picture = "GFX_evt_coronation"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes # decision coronation
+	
+	option = {
+		name = "EVTOPTAcoronation.1" # I will ask the pope
+		hidden_tooltip = {
+			rightful_religious_head_scope = {
+				letter_event = { id = coronation.2 }
+			}
+		}
+	}
+}
+
+# Asking the pope for coronation
+letter_event = {
+	id = coronation.2
+	desc = "EVTDESCcoronation.2"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.2"	# Accept
+		wealth = 100
+		FROM = {
+			letter_event = { id = coronation.3 }
+		}
+		ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = zealous }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = crusader }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 400 }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 600 }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 800 }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 1000 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTAcoronation.2"	# Reject
+		FROM = {
+			letter_event = { id = coronation.4 }
+		}
+		ROOT = {
+			opinion = {
+				modifier = coronation_rejected # should maybe be a new opinion called "Crowned by Pope"
+				who = FROM
+				years = 50
+			}
+		}
+		ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 2.0
+				FROM = { not = { piety = 400 } }
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+				    NOT = {
+					    opinion = {
+						    who = FROM
+						    value = 0
+					    }
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+				    NOT = {
+					    opinion = {
+						    who = FROM
+						    value = -20
+					    }
+					}
+				}
+			}
+			modifier = {
+				factor = 1.75
+				ROOT = {
+				    NOT = {
+					    opinion = {
+						    who = FROM
+						    value = -30
+					    }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				ROOT = {
+				    NOT = {
+					    opinion = {
+						    who = FROM
+						    value = -50
+					    }
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				ROOT = {
+				    NOT = {
+					    opinion = {
+						    who = FROM
+						    value = -75
+					    }
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = kinslayer }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = cynical }
+			}
+		}
+	}
+}
+
+# Inform Emperor Pope accepts coronation + send out the invites to realm lords
+letter_event = {
+	id = coronation.3
+	desc = "EVTDESCcoronation.3"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.3"	# Excellent, now invite all the lords
+		hidden_tooltip = {
+            character_event = { id = coronation.7 days = 30 }
+			any_vassal = {
+				limit = {
+					age = 14
+					or = {
+						tier = COUNT
+						tier = DUKE
+						tier = KING
+					}
+					not = { trait = excommunicated }
+					religion_group = christian
+					NOT = { is_heretic = yes }
+					NOT = { trait = incapable }
+					prisoner = no
+					NOT = { is_female = yes	}
+				}
+                                letter_event = { id = coronation.5 }
+			}
+		}
+	}
+}
+
+# Inform Emperor pope rejects coronation
+letter_event = {
+	id = coronation.4
+	desc = "EVTDESCcoronation.4"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.4"	# Maybe we should try again later
+		prestige = -250
+		ROOT = {
+			opinion = {
+				modifier = coronation_rejected # should maybe be a new opinion called "Crowned by Pope"
+				who = FROM
+				years = 50
+			}
+		}
+		clr_character_flag = wants_coronation
+	}
+}
+
+# Coronation invites to realm lords
+letter_event = {
+	id = coronation.5
+	desc = "EVTDESCcoronation.5"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.5"	# I will attend the ceremony
+		set_character_flag = attend_coronation
+		ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBcoronation.5"	# I have more important things to do
+		ROOT = {
+			opinion = {
+				modifier = insulted
+				who = FROM
+				months = 60
+			}
+		}
+		FROM = {
+			letter_event = { id = coronation.6 }
+		}
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_spouse
+					}
+				}
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_child
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_vassal
+					}
+				}
+			}			
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -20
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -40
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -60
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -80
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -99
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Inform Emperor of not attending ceremony
+letter_event = {
+	id = coronation.6
+	desc = "EVTDESCcoronation.6"
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.6"	# I have no words for such dishonour
+		ROOT = {
+			opinion = {
+				modifier = insulted
+				who = FROM
+				months = 60
+			}
+		}
+	}
+}
+
+# Emperor crowned by pope
+character_event = {
+	id = coronation.7
+	title = "EVTNAMEcoronation.7"
+	border = "GFX_event_normal_frame_diplomacy"
+	desc = "EVTDESCcoronation.7"
+	picture = "GFX_evt_coronation_two"
+	sound = church_bells
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.7"	# This is the happiest day of my life
+		add_trait = crowned_by_pope
+		prestige = 200
+        piety = 150
+		hidden_tooltip = {
+			rightful_religious_head_scope = {
+				reverse_opinion = {
+					modifier = opinion_grateful
+					who = ROOT
+					months = 60
+				}
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = attend_coronation
+				}
+				character_event = { id = coronation.8 }
+				opinion = {
+					modifier = opinion_attended_ceremony # should maybe be a new opinion called "Crowned by Pope"
+					who = ROOT
+					years = 5
+				}
+			}
+			any_vassal = {
+				limit = {
+					not = { has_character_flag = attend_coronation }
+				}
+				letter_event = { id = coronation.9 }
+			}
+			clr_character_flag = wants_coronation
+			narrative_event = { id = coronation.10 }
+		}
+	}
+}
+
+# Emperor crowned by pope - attended realm lord inform ceremony
+character_event = {
+	id = coronation.8
+	desc = "EVTDESCcoronation.8"
+	picture = "GFX_evt_coronation_two"
+	border = "GFX_event_normal_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.8"	# The coronation was beautiful
+		prestige = 20
+		clr_character_flag = attend_coronation
+	}
+}
+
+# Emperor crowned by pope - non-attended realm lord inform
+letter_event = {
+	id = coronation.9
+	border = "GFX_event_letter_frame_diplomacy"
+	desc = "EVTDESCcoronation.9"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.9"	# Ok
+	}
+}
+
+#Coronation inform
+narrative_event = {
+	id = coronation.10
+	title = "EVTNAMEcoronation.10"
+	desc = "EVTDESCcoronation.10"
+	picture = "GFX_evt_holy_emperor"
+	border = "GFX_event_narrative_frame_religion"
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcoronation.9"	# This is the happiest day of my life
+	}
+}
+
+# Written by idib816
+
+namespace = edicts
+
+character_event = {
+	id = edicts.1
+	title = "EVTNAMEedicts.1"
+	desc = "EVTDESCedicts.1"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.1"
+        piety = -75
+        prestige = 150
+        scaled_wealth = -2.0
+        add_trait = just
+		hidden_tooltip = {
+			character_event = { id = 38267 }
+		}
+		set_global_flag = exchequer_of_pleas
+     }
+}
+
+character_event = {
+	id = edicts.2
+	title = "EVTNAMEedicts.2"
+	desc = "EVTDESCedicts.2"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.2"
+        piety = -50
+        prestige = 100
+        scaled_wealth = -2.5
+        add_trait = just
+		hidden_tooltip = {
+			character_event = { id = 38267 }
+		}
+		set_global_flag = court_of_common_pleas
+     }
+}
+
+character_event = {
+	id = edicts.3
+	title = "EVTNAMEedicts.3"
+	desc = "EVTDESCedicts.3"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.3"
+        piety = 150
+        prestige = -100
+        scaled_wealth = -1
+        add_trait = kind
+		hidden_tooltip = {
+			character_event = { id = 38268 }
+		}
+        add_trait = reformer
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.67 }
+		}
+        set_character_flag = forest_charter_enacted
+        any_demesne_title = { 
+		    location = { 
+		        add_province_modifier = {
+			        name = charter_of_the_forest
+			        duration = -1
+	            }
+            }
+		}
+    }
+}
+
+character_event = {
+	id = edicts.4
+	title = "EVTNAMEedicts.4"
+	desc = "EVTDESCedicts.4"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.4"
+        piety = 75
+        prestige = -50
+        scaled_wealth = 1.5
+        add_trait = reformer
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.67 }
+		}
+        add_trait = content
+		hidden_tooltip = {
+			character_event = { id = 38279 }
+		}
+		set_global_flag = magna_carta
+     }
+}
+
+character_event = {
+	id = edicts.5
+	title = "EVTNAMEedicts.5"
+	desc = "EVTDESCedicts.5"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.5"
+        piety = -75
+        prestige = 50
+        scaled_wealth = 1.0
+        add_trait = just
+		hidden_tooltip = {
+			character_event = { id = 38267 }
+		}
+		set_global_flag = exchequer_of_the_jews
+     }
+}
+
+character_event = {
+	id = edicts.6
+	title = "EVTNAMEedicts.6"
+	desc = "EVTDESCedicts.6"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	trigger = { age = 14 }
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.6"
+        piety = 25
+        prestige = 150
+        scaled_wealth = -3.5
+        add_trait = just
+		hidden_tooltip = {
+			character_event = { id = 38267 }
+		}
+        add_trait = reformer
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.67 }
+		}
+		set_global_flag = statute_of_merton
+     }
+}
+
+character_event = {
+	id = edicts.7
+	title = "EVTNAMEedicts.7"
+	desc = "EVTDESCedicts.7"
+	picture = "GFX_evt_emissary"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	trigger = { age = 14 }
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPTAedicts.6"
+        piety = 25
+        prestige = 150
+        scaled_wealth = -3.5
+        add_trait = just
+		hidden_tooltip = {
+			character_event = { id = 38267 }
+		}
+        add_trait = reformer
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.67 }
+		}
+		set_global_flag = quia_emptores
+     }
+}
+
+#Abdication
+
+namespace = abdication
+
+character_event = {
+	id = abdication.1
+	desc = "EVTDESCabdication.1"
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAabdication.1"
+		inherit = FROM
+	}
+}
+
+namespace = pagan_reformation
+
+#Cultural Reformation
+
+character_event = {
+	id = pagan_reformation.1
+	desc = "EVTDESCpagan_reformation.1"
+	picture = GFX_evt_ting
+	border = "GFX_event_normal_frame_diplomacy"
+
+	is_triggered_only = yes
+	
+	immediate = {
+	    if = { 
+		    limit = {
+			    religion_group = other_pagan_group 
+			}
+			set_global_flag = tengri_reformation
+			any_playable_ruler = { 
+			    limit = { 
+				    NOT = { character = ROOT } 
+				}
+			    narrative_event = { id = pagan_reformation.2 } 
+			}
+		}
+	    if = { 
+		    limit = {
+			    religion_group = pagan_group 
+			}
+			set_global_flag = pagan_reformation
+			any_playable_ruler = {  
+			    limit = { 
+				    NOT = { character = ROOT } 
+				}
+				narrative_event = { id = pagan_reformation.3 } 
+			}
+		}
+	    if = { 
+		    limit = {
+			    religion_group = baltic_pagan_group 
+			}
+			set_global_flag = baltic_pagan_reformation
+			any_playable_ruler = {  
+			    limit = { 
+				    NOT = { character = ROOT } 
+				}
+				narrative_event = { id = pagan_reformation.4 } 
+			}
+		}
+	    if = { 
+		    limit = {
+			    culture_group = celtic
+			}
+			set_global_flag = celtic_reformation
+			any_playable_ruler = {  
+			    limit = { 
+				    NOT = { character = ROOT } 
+				}
+			narrative_event = { id = pagan_reformation.5 } 
+			}
+		}
+	}
+
+	option = {
+		name = "My name will go down in history"
+		add_trait = reformer
+		hidden_tooltip = {
+			character_event = { id = tptt_traits.67 }
+		}
+		prestige = 250
+		piety = -100
+		custom_tooltip = "Be careful, your vassals might favor or oppose your reform!"
+		hidden_tooltip = { 
+		    any_vassal = { 
+		        random_list = {
+			        50 = { 
+				        opinion = {
+			                modifier = opposing_reform
+			                who = ROOT
+			                months = 300
+				    	}
+			    	}
+				    50 = { 
+				        opinion = {
+			                modifier = favoring_reform
+			                who = ROOT
+			                months = 300
+				    	}
+			    	}
+		    	}
+	    	}
+		}
+	}
+}
+
+#Cultural Reformation - Tengri Notification
+
+narrative_event = {
+	id = pagan_reformation.2
+	desc = "EVTDESCpagan_reformation.2"
+	title = "The Tengri Reformation"
+	picture = GFX_evt_ting
+	border = "GFX_event_narrative_frame_diplomacy"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+#Cultural Reformation - Nordic Notification
+
+narrative_event = {
+	id = pagan_reformation.3
+	desc = "EVTDESCpagan_reformation.3"
+	title = "The Pagan Reformation"
+	picture = GFX_evt_ting
+	border = "GFX_event_narrative_frame_diplomacy"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+#Cultural Reformation - Nordic Notification
+
+narrative_event = {
+	id = pagan_reformation.4
+	desc = "EVTDESCpagan_reformation.4"
+	title = "The Baltic Reformation"
+	picture = GFX_evt_ting
+	border = "GFX_event_narrative_frame_diplomacy"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+#Cultural Reformation - Nordic Notification
+
+narrative_event = {
+	id = pagan_reformation.5
+	desc = "EVTDESCpagan_reformation.5"
+	title = "The Celtic Reformation"
+	picture = GFX_evt_ting
+	border = "GFX_event_narrative_frame_diplomacy"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}

@@ -1,0 +1,574 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+iqta_tax_0;Minimal Iqta Taxes;Impôts féodaux minimum;Minimale Iqta-Steuer;;;;;;;;;;;x
+iqta_tax_0_option;Min;Minimum;Minimal;;;;;;;;;;;x
+iqta_tax_0_desc;Vassal lords are expected to make a minimal financial contribution to the greater good of the realm.;;Feudale Fürsten müssen für das allgemeine Wohl des Reichs einen geringen finanziellen Beitrag leisten.;;;;;;;;;;;x
+iqta_tax_1;Small Iqta Taxes;;Kleine Iqta-Steuer;;;;;;;;;;;x
+iqta_tax_1_option;Small;Faibles;Klein;;;;;;;;;;;x
+iqta_tax_1_desc;Vassal lords are expected to make a small financial contribution to the greater good of the realm.;;Feudale Fürsten müssen für das allgemeine Wohl des Reichs einen geringen finanziellen Beitrag leisten.;;;;;;;;;;;x
+iqta_tax_2;Medium Iqta Taxes;;Mittlere Iqta-Steuer;;;;;;;;;;;x
+iqta_tax_2_option;Medium;Normaux;Mittel;;;;;;;;;;;x
+iqta_tax_2_desc;Vassal lords are expected to make a moderate financial contribution to the greater good of the realm.;;Feudale Fürsten müssen für das allgemeine Wohl des Reichs einen bescheidenen finanziellen Beitrag leisten.;;;;;;;;;;;x
+iqta_tax_3;Large Iqta Tax;;Hohe Iqta-Steuer;;;;;;;;;;;x
+iqta_tax_3_option;Large;Importants;Hoch;;;;;;;;;;;x
+iqta_tax_3_desc;Vassal lords are expected to make a substantial financial contribution to the greater good of the realm.;;Feudale Fürsten müssen für das allgemeine Wohl des Reichs einen reichlichen finanziellen Beitrag leisten.;;;;;;;;;;;x
+iqta_tax_4;Harsh Iqta Tax;;Strenge Iqta-Steuer;;;;;;;;;;;x
+iqta_tax_4_option;Harsh;Lourds;Streng;;;;;;;;;;;x
+iqta_tax_4_desc;Vassal lords are expected to make a large financial contribution to the greater good of the realm.;;Feudale Fürsten müssen für das allgemeine Wohl des Reichs einen großen finanziellen Beitrag leisten.;;;;;;;;;;;x
+iqta_contract_0;Minimal Iqta Levies;;Minimale Iqta-Aushebung;;;;;;;;;;;x
+iqta_contract_0_option;Min;Minimum;Minimal;;;;;;;;;;;x
+iqta_contract_0_desc;Vassal lords may retain their entire levies for themselves.;;;;;;;;;;;;;x
+iqta_contract_1;Small Iqta Levies;;Kleine Iqta-Aushebung;;;;;;;;;;;x
+iqta_contract_1_option;Small;Faible;Klein;;;;;;;;;;;x
+iqta_contract_1_desc;Vassal lords may retain almost their entire levies for themselves.;;Vasallenfürsten behalten alle ihrer Wehrpflichtigen für sich selbst.;;;;;;;;;;;x
+iqta_contract_2;Medium Iqta Levies;;Mittlere Iqta-Aushebung;;;;;;;;;;;x
+iqta_contract_2_option;Medium;Nomales;Mittel;;;;;;;;;;;x
+iqta_contract_2_desc;Vassal lords may retain the majority of their levies for themselves.;;Vasallenfürsten behalten einen Großteil ihrer Wehrpflichtigen für sich selbst.;;;;;;;;;;;x
+iqta_contract_3;Large Iqta Levies;;Große Iqta-Aushebung;;;;;;;;;;;x
+iqta_contract_3_option;Large;Importantes;Hoch;;;;;;;;;;;x
+iqta_contract_3_desc;Vassal lords may retain a significant portion of their levies for themselves.;;Vasallenfürsten behalten einen reichlichen Anzahl ihrer Wehrpflichtigen für sich selbst.;;;;;;;;;;;x
+iqta_contract_4;Maximum Iqta Levies;;Maximale Iqta-Aushebung;;;;;;;;;;;x
+iqta_contract_4_option;Max;Maximales;Maximal;;;;;;;;;;;x
+iqta_contract_4_desc;Vassal lords are obliged to provide a large portion of their levy.;;Vasallenfürsten sind verpflichtet, einen Großteil ihrer Wehrpflictinge bereitzustellen.;;;;;;;;;;;x
+temple_tax_0;Minimal Church Taxes;Taxes de l'Eglise Minimales;Minimale Kirchensteuern;;Minimal Church Taxes;;;;;;;;;x
+temple_tax_0_option;Min;Minimum;Minimal;;.;;;;;;;;;x
+temple_tax_0_desc;Landed Priests are expected to make a minimal financial contribution to the greater good of the realm.;On attend une contribution financière minimale de la part des Seigneurs ecclésiastiques pour le plus grand bien du Royaume.;Wie man erwartet, leisten Landpriester einen minimalen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+temple_tax_1;Small Church Taxes;Impôts de l'Eglise Faibles;Kleine Kirchensteuern;;;;;;;;;;;x
+temple_tax_1_option;Small;Faibles;Klein;;Small.;;;;;;;;;x
+temple_tax_1_desc;Landed Priests are expected to make a small financial contribution to the greater good of the realm.;On attend une faible contribution financière de la part des Seigneurs ecclésiastiques pour le plus grand bien du Royaume.;Wie man erwartet, leisten Landpriester einen kleinen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+temple_tax_2;Medium Church Taxes;Impôts de l'Eglise Normaux;Mittlere Kirchensteuern;;;;;;;;;;;x
+temple_tax_2_option;Medium;Normaux;Mittel;;;;;;;;;;;x
+temple_tax_2_desc;Landed Priests are expected to make a moderate financial contribution to the greater good of the realm.;On attend une contribution financière normale de la part des Seigneurs ecclésiastiques pour le plus grand bien du Royaume.;Wie man erwartet, leisten Landpriester einen gemäßigten Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+temple_tax_3;Large Church Tax;Impôts de l'Eglise importants;Hohe Kirchensteuern;;;;;;;;;;;x
+temple_tax_3_option;Large;Importants;Hoch;;;;;;;;;;;x
+temple_tax_3_desc;Landed Priests are expected to make a substantial financial contribution to the greater good of the realm.;On attend une contribution financière substantielle de la part des Seigneurs ecclésiastiques pour le plus grand bien du Royaume.;Wie man erwartet, leisten Landpriester einen wesentlichen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+temple_tax_4;Harsh Church Tax;Impôts de l'Eglise lourds;Strenge Kirchensteuern;;;;;;;;;;;x
+temple_tax_4_option;Harsh;Lourds;Streng;;;;;;;;;;;x
+temple_tax_4_desc;Landed Priests are expected to make a large financial contribution to the greater good of the realm.;On attend une contribution financière importante de la part des Seigneurs ecclésiastiques pour le plus grand bien du Royaume.;Wie man erwartet, leisten Landpriester einen großen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+city_tax_0;Minimal City Taxes;Impôts des villes minimum;Minimale Stadtsteuern;;;;;;;;;;;x
+city_tax_0_option;Min;Minimum;Minimal;;.;;;;;;;;;x
+city_tax_0_desc;The Burghers are expected to make a minimal financial contribution to the greater good of the realm.;On attend une contribution financière minimale de la part des Bourgeois pour le bien du Royaume.;Wie man erwartet, leisten die Bürger einen minimalen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+city_tax_1;Small City Taxes;impôts des villes faibles;Kleine Stadtsteuern;;;;;;;;;;;x
+city_tax_1_option;Small;Faibles;Klein;;;;;;;;;;;x
+city_tax_1_desc;The Burghers are expected to make a small financial contribution to the greater good of the realm.;On attend une faible contribution financière minmale de la part des Bourgeois pour le bien du Royaume.;Wie man erwartet, leisten die Bürger einen kleinen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+city_tax_2;Medium City Taxes;Impôts des villes normaux;Mittlere Stadtsteuern;;;;;;;;;;;x
+city_tax_2_option;Medium;Normaux;Mittel;;;;;;;;;;;x
+city_tax_2_desc;The Burghers are expected to make a moderate financial contribution to the greater good of the realm.;On attend une contribution financière normale de la part des Bourgeois pour le bien du Royaume.;Wie man erwartet, leisten die Bürger einen gemäßigten Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+city_tax_3;Large City Tax;Impôts des villes importants.;Hohe Stadtsteuern;;;;;;;;;;;x
+city_tax_3_option;Large;Importants;Hoch;;;;;;;;;;;x
+city_tax_3_desc;The Burghers are expected to make a substantial financial contribution to the greater good of the realm.;On attend une contribution financière substantielle de la part des Bourgeois pour le bien du Royaume.;Wie man erwartet, leisten die Bürger einen wesentlichen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+city_tax_4;Harsh City Tax;Impôts des villes lourds;Strenge Stadtsteuern;;;;;;;;;;;x
+city_tax_4_option;Harsh;Lourds;Streng;;;;;;;;;;;x
+city_tax_4_desc;The Burghers are expected to make a large financial contribution to the greater good of the realm.;On attend une contribution financière importante de la part des Bourgeois pour le bien du Royaume.;Die Bürger müssen für das allgemeine Wohl des Reichs einen großen finanziellen Beitrag leisten.;;;;;;;;;;;x
+feudal_tax_0;Minimal Feudal Taxes;Impôts féodaux minimum;Minimale Feudalsteuern;;;;;;;;;;;x
+feudal_tax_0_option;Min;Minimum;Minimal;;;;;;;;;;;x
+feudal_tax_0_desc;Feudal Lords expected to make a minimal financial contribution to the greater good of the realm.;Feudal Lords expected to make a minimal financial contribution to the greater good of the realm.;Feudal Lords expected to make a minimal financial contribution to the greater good of the realm.;;;;;;;;;;;x
+feudal_tax_1;Small Feudal Taxes;Impôts féodaux faibles;Kleine Feudalsteuern;;;;;;;;;;;x
+feudal_tax_1_option;Small;Faibles;Klein;;;;;;;;;;;x
+feudal_tax_1_desc;Feudal Lords are expected to make a small financial contribution to the greater good of the realm.;On attend une faible contribution financière de la part des Seigneurs féodaux pour le bien du Royaume.;Wie man erwartet, leisten Feudalherren einen kleinen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+feudal_tax_2;Medium Feudal Taxes;Impôts féodaux normaux;Mittlere Feudalsteuern;;;;;;;;;;;x
+feudal_tax_2_option;Medium;Normaux;Mittel;;;;;;;;;;;x
+feudal_tax_2_desc;Feudal Lords are expected to make a moderate financial contribution to the greater good of the realm.;On attend une contribution financière normale de la part des Seigneurs féodaux pour le bien du Royaume.;Wie man erwartet, leisten Feudalherren einen gemäßigten Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+feudal_tax_3;Large Feudal Tax;Impôts féodaux importants;Hohe Feudalsteuern;;;;;;;;;;;x
+feudal_tax_3_option;Large;Importants;Hoch;;;;;;;;;;;x
+feudal_tax_3_desc;Feudal Lords are expected to make a substantial financial contribution to the greater good of the realm.;On attend une contribution financière substantielle de la part des Seigneurs féodaux pour le bien du Royaume.;Wie man erwartet, leisten Feudalherren einen wesentlichen Finanzbeitrag zum größeren Nutzen des Bereichs.;;;;;;;;;;;x
+feudal_tax_4;Harsh Feudal Tax;Impôts féodaux lourds;Strenge Feudalsteuern;;;;;;;;;;;x
+feudal_tax_4_option;Harsh;Lourds;Streng;;;;;;;;;;;x
+feudal_tax_4_desc;Feudal Lords are expected to make a large financial contribution to the greater good of the realm.;On attend une contribution financière importante de la part des Seigneurs féodaux pour le bien du Royaume.;Die Bürger müssen für das allgemeine Wohl des Reichs einen großen finanziellen Beitrag leisten.;;;;;;;;;;;x
+feudal_contract_0;Minimal Feudal Levies;Impôts féodaux minimum;Minimale Feudalaushebungen;;;;;;;;;;;x
+feudal_contract_0_option;Min;Minimum;Minimal;;;;;;;;;;;x
+feudal_contract_0_desc;Feudal Lords may retain their entire levies for themselves.;Les Seigneurs féodaux peuvent conserver l'intégralité de leurs levées pour eux-mêmes.;Feudalherren können ihre kompletten Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+feudal_contract_1;Small Feudal Levies;Levées féodales faibles;Kleine Feudalaushebungen;;;;;;;;;;;x
+feudal_contract_1_option;Small;Faible;Klein;;;;;;;;;;;x
+feudal_contract_1_desc;Feudal Lords may retain almost their entire levies for themselves.;Les Seigneurs féodaux peuvent conserver presque l'intégralité de leurs levées pour eux-mêmes.;Feudalherren können fast ihre kompletten Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+feudal_contract_2;Medium Feudal Levies;Levées féodales normales;Mittlere Feudalaushebungen;;;;;;;;;;;x
+feudal_contract_2_option;Medium;Nomales;Mittel;;;;;;;;;;;x
+feudal_contract_2_desc;Feudal Lords may retain the majority of their levies for themselves.;Les Seigneurs féodaux peuvent conserver la majorité de leurs levées pour eux-mêmes.;Feudalherren können die Mehrheit ihrer Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+feudal_contract_3;Large Feudal Levies;Levées féodales importantes;Hohe Feudalaushebungen;;;;;;;;;;;x
+feudal_contract_3_option;Large;Importantes;Hoch;;;;;;;;;;;x
+feudal_contract_3_desc;Feudal Lords may retain a significant portion of their levies for themselves.;Les Seigneurs féodaux peuvent conserver une portion significative de leurs levées pour eux-mêmes.;Feudalherren können einen bedeutenden Teil ihrer Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+feudal_contract_4;Maximum Feudal Levies;Levées féodales maximales;Maximale Feudalaushebungen;;;;;;;;;;;x
+feudal_contract_4_option;Max;Maximales;Maximal;;;;;;;;;;;x
+feudal_contract_4_desc;Feudal Lords are obliged to provide a large portion of their levy.;Les Seigneurs féodaux sont obligés de fournir une importante portion de leurs levées.;Feudalherren sind verpflichtet, einen großen Teil ihrer Aushebung zur Verfügung zu stellen.;;;;;;;;;;;x
+city_contract_0;Minimal City Levies;Troupes des villes minimales;Minimale Stadtaushebungen;;;;;;;;;;;x
+city_contract_0_option;Min;Minimales;Minimal;;;;;;;;;;;x
+city_contract_0_desc;The Burghers may retain their entire levies for themselves.;Les Bourgeois peuvent conserver l'intégralité de leurs levées pour eux-mêmes. ;Die Bürger können ihre kompletten Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+city_contract_1;Small City Levies;Troupes des villes faibles;Kleine Stadtaushebungen;;;;;;;;;;;x
+city_contract_1_option;Small;Faibles;Klein;;;;;;;;;;;x
+city_contract_1_desc;The Burghers may retain almost their entire levies for themselves.;Les Bourgeois peuvent conserver presque l'intégralité de leurs levées pour eux-mêmes. ;Die Bürger können fast ihre kompletten Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+city_contract_2;Medium City Levies;Troupes des villes normales;Mittlere Stadtaushebungen;;;;;;;;;;;x
+city_contract_2_option;Medium;Normales;Mittel;;;;;;;;;;;x
+city_contract_2_desc;The Burghers may retain the majority of their levies for themselves.;Les Bourgeois peuvent conserver la majorité de leurs levées pour eux-mêmes. ;Die Bürger können die Mehrheit ihrer Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+city_contract_3;Large City Levies;Troupes des villes importantes;Hohe Stadtaushebungen;;;;;;;;;;;x
+city_contract_3_option;Large;Importantes;Hoch;;;;;;;;;;;x
+city_contract_3_desc;The Burghers may retain a significant portion of their levies for themselves.;Les Bourgeois peuvent conserver une portion significative de leurs levées pour eux-mêmes. ;Die Bürger können einen bedeutenden Teil ihrer Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+city_contract_4;Maximum City Levies;Troupes des villes maximales;Maximale Stadtaushebungen;;;;;;;;;;;x
+city_contract_4_option;Max;Maximales;Maximal;;;;;;;;;;;x
+city_contract_4_desc;The Burghers are obliged to provide a large portion of their levy.;Les Bourgeois sont obligés de fournir une importante portion de leurs levées.;Die Bürger sind verpflichtet, einen großen Teil ihrer Aushebung zur Verfügung zu stellen.;;;;;;;;;;;x
+temple_contract_0;Minimal Church Levies;Troupes de l'Eglise minimales;Minimale Kirchaushebungen;;;;;;;;;;;x
+temple_contract_0_option;Min;Minimales;Minimal;;;;;;;;;;;x
+temple_contract_0_desc;Landed Priests may retain their entire levies for themselves.;Les Seigneurs ecclésiastiques peuvent conserver l'intégralité de leurs levées pour eux-mêmes. ;Landpriester können ihre kompletten Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+temple_contract_1;Small Church Levies;Troupes de l'Eglises faibles;Kleine Kirchaushebungen;;;;;;;;;;;x
+temple_contract_1_option;Small;Faibles;Klein;;;;;;;;;;;x
+temple_contract_1_desc;Landed Priests may retain almost their entire levies for themselves.;Les Seigneurs ecclésiastiques peuvent conserver presque l'intégralité de leurs levées pour eux-mêmes. ;Landpriester können fast ihre kompletten Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+temple_contract_2;Medium Church Levies;Troupes de l'Eglise normales;Mittlere Kircherhebungen;;;;;;;;;;;x
+temple_contract_2_option;Medium;Normales;Mittel;;;;;;;;;;;x
+temple_contract_2_desc;Landed Priests may retain the majority of their levies for themselves.;Les Seigneurs ecclésiastiques peuvent conserverla majorité de leurs levées pour eux-mêmes. ;Landpriester können die Mehrheit ihrer Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+temple_contract_3;Large Church Levies;troupes de l'Eglsies importantes;Hohe Kirchaushebungen;;;;;;;;;;;x
+temple_contract_3_option;Large;Importantes;Hoch;;;;;;;;;;;x
+temple_contract_3_desc;Landed Priests may retain a significant portion of their levies for themselves.;Les Seigneurs ecclésiastiques peuvent conserver une portion importante de leurs levées pour eux-mêmes. ;Landpriester können einen bedeutenden Teil ihrer Aushebungen für sich selbst behalten.;;;;;;;;;;;x
+temple_contract_4;Maximum Church Levies;troupes de l'Eglise maximales;Maximale Kirchaushebungen;;;;;;;;;;;x
+temple_contract_4_option;Max;Maximales;Maximal;;;;;;;;;;;x
+temple_contract_4_desc;Landed Priests are obliged to provide a large portion of their levy.;Les Seigneurs ecclésiastiques sont obligés de fournir une importante portion de leurs levées.;Landpriester sind verpflichtet, einen großen Teil ihrer Aushebung zur Verfügung zu stellen.;;;;;;;;;;;x
+centralization_0;Autonomous Vassals;Vassaux autonomes;Autonome Vasallen;;Vasallos independientes;;;;;;;;;x
+centralization_0_option;Min;Minimum;Minimal;;Mín.;;;;;;;;;x
+centralization_0_desc;Vassals are a law unto themselves, ruling their fiefs like petty kingdoms.;Les vassaux imposent leur loi et dirigent leurs fiefs comme s’il s’agissait de petits royaumes. Leurs obligations envers leur suzerain sont minimum.;Vasallen sind ihre eigenen Gesetzgeber und beherrschen ihre Lehen wie kleine Königreiche. Ihre Verpflichtungen ihrem Lehnsherrn gegenüber sind minimal.;;Los vasallos tienen sus propias leyes y gobiernan sus feudos como si fueran pequeños reinos. Sus obligaciones hacia su señor son mínimas.;;;;;;;;;x
+centralization_1;Limited Crown Authority;Autorité de la couronne minimum;Einschränkte Kronautorität;;Autoridad de la Corona limitada;;;;;;;;;x
+centralization_1_option;Low;Faible;Gering;;Baja;;;;;;;;;x
+centralization_1_desc;Vassals enjoy a very large degree of autonomy.;Les vassaux jouissent d’une très grande autonomie, mais doivent fournir à leur suzerain un grand nombre de troupes.;Vasallen erfreuen sich sehr großer Autonomie, müssen ihrem Lehnsherrn aber ein ziemlich beträchtliches Wehrpflichtigenkontingent zur Verfügung stellen.;;Los vasallos gozan de bastante autonomía, pero tienen que proporcionar levas suficientes a su señor.;;;;;;;;;x
+centralization_2;Medium Crown Authority;Autorité de la couronne intermédiaire;Moderate Kronautorität;;Autoridad de la Corona media;;;;;;;;;x
+centralization_2_option;Medium;Intermédiaire;Moderat;;Media;;;;;;;;;x
+centralization_2_desc;The powers of the nobility and the monarch are in precarious balance. Vassals can no longer wage private wars within the realm.;Les pouvoirs de la noblesse et du monarque répondent à un équilibre précaire. Les vassaux ne peuvent plus livrer de guerres privées au sein du royaume.;Die Macht des Adels und des Monarchen liegen in einem prekären Gleichgewicht. Vasallen können keine Privatkriege innerhalb des Reichs führen.;;El poder de la nobleza está peligrosamente igualado al del monarca. Los vasallos ya no podrán declarar guerras en el reino.;;;;;;;;;x
+centralization_3;High Crown Authority;Haute autorité de la couronne;Hohe Kronautorität;;Autoridad de la Corona alta;;;;;;;;;x
+centralization_3_option;High;Haute;Hoch;;Alta;;;;;;;;;x
+centralization_3_desc;The monarch has curbed the rights of the high nobility, relying instead on a budding bureaucracy led by the lesser nobility.;Le monarque a limité les droits de la haute noblesse, préférant s’appuyer sur une bureaucratie aux mains d’une moindre noblesse.;Der Monarch hat die Rechte des Hochadels beschränkt und verlässt sich mehr auf die aufkeimende, vom niederen Adel geführte Bürokratie.;;El monarca ha reprimido los derechos de la alta nobleza y, en su lugar, confía en una burocracia en ciernes dirigida por la baja nobleza.;;;;;;;;;x
+centralization_4;Absolute Crown Authority;Autorité de la couronne absolue;Absolute Kronautorität;;Autoridad de la Corona absoluta;;;;;;;;;x
+centralization_4_option;Max;Maximum;Maximal;;Máx.;;;;;;;;;x
+centralization_4_desc;The Lords of the Realm are chafing under the unrestricted powers of the absolute monarch.;Les seigneurs du royaume doivent se plier aux pouvoirs illimités du monarque absolu.;Die Fürsten des Reichs haben gegen die uneingeschränkte Macht des absoluten Monarchen keine Chance.;;Los señores del reino están molestos con los poderes ilimitados del monarca absolutista.;;;;;;;;;x
+nm_temple_control;Godi Respect;;;;;;;;;;;;;x
+nm_temple_control_desc;Godi Respect controls the proportion of their men and how much tribute Godis provide to their lord.;;;;;;;;;;;;;x
+nm_temple_control_0;No Respect;;;;;;;;;;;;;x
+nm_temple_control_0_option;None;;;;;;;;;;;;;x
+nm_temple_control_0_desc;The individual Godis do not respect their lord and provide no tribute or men.;;;;;;;;;;;;;x
+nm_temple_control_1;Some Respect;;;;;;;;;;;;;x
+nm_temple_control_1_option;Some;;;;;;;;;;;;;x
+nm_temple_control_1_desc;The individual Godis have some respect for their chief and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+nm_temple_control_2;Very Respected;;;;;;;;;;;;;x
+nm_temple_control_2_option;Very;;;;;;;;;;;;;x
+nm_temple_control_2_desc;The individual Godis respect their lord and provide decent tribute and men.;;;;;;;;;;;;;x
+nm_temple_control_3;Great Respect;;;;;;;;;;;;;x
+nm_temple_control_3_option;Great;;;;;;;;;;;;;x
+nm_temple_control_3_desc;The individual Godis have enormous respect for their lord and provide tribute and a large number of men.;;;;;;;;;;;;;x
+nm_castle_control;Chieftain Respect;;;;;;;;;;;;;x
+nm_castle_control_desc;Chieftain Respect controls the proportion of their hird and how much tribute that subject Chieftains provide to their lord.;;;;;;;;;;;;;x
+nm_castle_control_0;No Respect;;;;;;;;;;;;;x
+nm_castle_control_0_option;None;;;;;;;;;;;;;x
+nm_castle_control_0_desc;The individual Høvdings and Jarls do not respect their liege and provide no tribute or men.;;;;;;;;;;;;;x
+nm_castle_control_1;Some Respect;;;;;;;;;;;;;x
+nm_castle_control_1_option;Some;;;;;;;;;;;;;x
+nm_castle_control_1_desc;The individual Høvdings and Jarls have some respect for their chief and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+nm_castle_control_2;Very Respected;;;;;;;;;;;;;x
+nm_castle_control_2_option;Very;;;;;;;;;;;;;x
+nm_castle_control_2_desc;The individual Høvdings and Jarls respect their liege and provide decent tribute and men.;;;;;;;;;;;;;x
+nm_castle_control_3;Great Respect;;;;;;;;;;;;;x
+nm_castle_control_3_option;Great;;;;;;;;;;;;;x
+nm_castle_control_3_desc;The individual Høvdings and Jarls have enormous respect for their liege and provide tribute and a large number of men.;;;;;;;;;;;;;x
+nm_city_control;Town Respect;;;;;;;;;;;;;x
+nm_city_control_desc;Town Respect controls the proportion of their guard and the taxes that towns provide to their lord.;;;;;;;;;;;;;x
+nm_city_control_0;No Respect;;;;;;;;;;;;;x
+nm_city_control_0_option;None;;;;;;;;;;;;;x
+nm_city_control_0_desc;The individual Towns and Cities do not respect their lord and provide no tax nor men.;;;;;;;;;;;;;x
+nm_city_control_1;Some Respect;;;;;;;;;;;;;x
+nm_city_control_1_option;Some;;;;;;;;;;;;;x
+nm_city_control_1_desc;The individual Towns and Cities have some respect for their chief and provide a paltry tax and some men.;;;;;;;;;;;;;x
+nm_city_control_2;Very Respected;;;;;;;;;;;;;x
+nm_city_control_2_option;Very;;;;;;;;;;;;;x
+nm_city_control_2_desc;The individual Towns and Cities respect their lord and provide a large tax and men.;;;;;;;;;;;;;x
+nm_city_control_3;Great Respect;;;;;;;;;;;;;x
+nm_city_control_3_option;Great;;;;;;;;;;;;;x
+nm_city_control_3_desc;The individual Towns and Cities have enormous respect for their lord and provide much tax and a decent sized number of men.;;;;;;;;;;;;;x
+nm_centralization;Central Authority;;;;;;;;;;;;;x
+nm_centralization_desc;While the Norse hierarchy is rather loose, there is still a dilemma in how much authority the King should have… a prestigious king may force through centralization at the cost of upsetting everyone else.;;;;;;;;;;;;;x
+nm_centralization_0;Traditional;;;;;;;;;;;;;x
+nm_centralization_0_option;Min;;;;;;;;;;;;;x
+nm_centralization_0_desc;Høvdings and Jarls rule their own laws as they always have, with minimal input from whoever is King at the moment.;;;;;;;;;;;;;x
+nm_centralization_1;Sparse Centralization;;;;;;;;;;;;;x
+nm_centralization_1_option;Sparse;;;;;;;;;;;;;x
+nm_centralization_1_desc;Nothing has changed among the Høvdings, Godis and Jarls, but the Monarch can now freely take the lands of the followers of other Gods.;;;;;;;;;;;;;x
+nm_centralization_2;Medium Centralization;;;;;;;;;;;;;x
+nm_centralization_2_option;Medium;;;;;;;;;;;;;x
+nm_centralization_2_desc;The chiefs' lands cannot pass outside theHigh Chieftain's protection through inheritance.;;;;;;;;;;;;;x
+nm_centralization_3;High Centralization;;;;;;;;;;;;;x
+nm_centralization_3_option;High;;;;;;;;;;;;;x
+nm_centralization_3_desc;The lords can now revoke the titles of their lessers, and a more strict hierarchy is appearing with a Monarch at the top.;;;;;;;;;;;;;x
+nm_centralization_4;Centralized State;;;;;;;;;;;;;x
+nm_centralization_4_option;Max;;;;;;;;;;;;;x
+nm_centralization_4_desc;The High Chief now rules a true state.. Or as much as possible without the aid of an ecclesiastical hierarchy. The High Chief can now force the Jarls, Chiefs and Godis to leave their place on the battlefield.;;;;;;;;;;;;;x
+baltic_centralization_0;Local Tribes;;;;;;;;;;;;;x
+baltic_centralization_0_option;Local;;;;;;;;;;;;;x
+baltic_centralization_0_desc;Tribe chiefs rule their own laws as they always have, with minimal input from whoever is High Chief at the moment.;;;;;;;;;;;;;x
+baltic_centralization_1;Sparsely Organized Tribes;;;;;;;;;;;;;x
+baltic_centralization_1_option;Sparse;;;;;;;;;;;;;x
+baltic_centralization_1_desc;Nothing has changed among the Chieftains, but the High Chief can now freely take the lands of the followers of other Gods.;;;;;;;;;;;;;x
+baltic_centralization_2;Organized Tribes;;;;;;;;;;;;;x
+baltic_centralization_2_option;Organized;;;;;;;;;;;;;x
+baltic_centralization_2_desc;The chiefs lands cannot pass outside the High Chief's protection through inheritance. The High Chief can now force the Tribe Chiefs to leave their place on the battlefield.;;;;;;;;;;;;;x
+baltic_centralization_3;Highly Organized Tribes;;;;;;;;;;;;;x
+baltic_centralization_3_option;High;;;;;;;;;;;;;x
+baltic_centralization_3_desc;The Chiefs can now revoke the titles of their lessers, and a more strict hierarchy is appearing with the High Chief at the top. The High Chief can now force the Tribe Chiefs to leave their place on the battlefield.;;;;;;;;;;;;;x
+baltic_centralization_4;United Tribes;;;;;;;;;;;;;x
+baltic_centralization_4_option;United;;;;;;;;;;;;;x
+baltic_centralization_4_desc;The High Chief now rules a true state.. Or as much as  possible without the aid of an ecclesiastical hierarchy. The High Chief can now force the Tribe Chiefs to leave their place on the battlefield.;;;;;;;;;;;;;x
+baltic_temple_control;Religious Respect;;;;;;;;;;;;;x
+baltic_temple_control_desc;Religious Respect controls the proportion of their men and how much tribute the Diviners provide to their lord.;;;;;;;;;;;;;x
+baltic_temple_control_0;No Respect;;;;;;;;;;;;;x
+baltic_temple_control_0_option;None;;;;;;;;;;;;;x
+baltic_temple_control_0_desc;The individual Diviners do not respect their High Chief and provide no tribute or men.;;;;;;;;;;;;;x
+baltic_temple_control_1;Some Respect;;;;;;;;;;;;;x
+baltic_temple_control_1_option;Some;;;;;;;;;;;;;x
+baltic_temple_control_1_desc;The individual Diviners have some respect for their High Chief and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+baltic_temple_control_2;Very Respected;;;;;;;;;;;;;x
+baltic_temple_control_2_option;Very;;;;;;;;;;;;;x
+baltic_temple_control_2_desc;The individual Diviners respect their High Chief and provide decent tribute and men.;;;;;;;;;;;;;x
+baltic_temple_control_3;Great Respect;;;;;;;;;;;;;x
+baltic_temple_control_3_option;Great;;;;;;;;;;;;;x
+baltic_temple_control_3_desc;The individual Diviners have enormous respect for their High Chief and provide tribute and a large number of men.;;;;;;;;;;;;;x
+baltic_castle_control;Chieftain Respect;;;;;;;;;;;;;x
+baltic_castle_control_desc;Chieftain Respect controls the proportion of their men and how much tribute the individual Chieftains provide to their High Chief.;;;;;;;;;;;;;x
+baltic_castle_control_0;No Respect;;;;;;;;;;;;;x
+baltic_castle_control_0_option;None;;;;;;;;;;;;;x
+baltic_castle_control_0_desc;The individual Tribe Chiefs do not respect their High Chief and provide no tribute or men.;;;;;;;;;;;;;x
+baltic_castle_control_1;Some Respect;;;;;;;;;;;;;x
+baltic_castle_control_1_option;Some;;;;;;;;;;;;;x
+baltic_castle_control_1_desc;The individual Tribe Chiefs have some respect for their High Chief and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+baltic_castle_control_2;Very Respected;;;;;;;;;;;;;x
+baltic_castle_control_2_option;Very;;;;;;;;;;;;;x
+baltic_castle_control_2_desc;The individual Tribe Chiefs respect their High Chief and provide decent tribute and men.;;;;;;;;;;;;;x
+baltic_castle_control_3;Great Respect;;;;;;;;;;;;;x
+baltic_castle_control_3_option;Great;;;;;;;;;;;;;x
+baltic_castle_control_3_desc;The individual Tribe Chiefs have enormous respect for their liege and provide tribute and a large number of men.;;;;;;;;;;;;;x
+baltic_city_control;Town Respect;;;;;;;;;;;;;x
+baltic_city_control_desc;Town Respect controls the proportion of their guard and the taxes that towns provide to their High Chief.;;;;;;;;;;;;;x
+baltic_city_control_0;No Respect;;;;;;;;;;;;;x
+baltic_city_control_0_option;None;;;;;;;;;;;;;x
+baltic_city_control_0_desc;The individual Towns and Cities do not respect their High Chief and provide no tax nor men.;;;;;;;;;;;;;x
+baltic_city_control_1;Some Respect;;;;;;;;;;;;;x
+baltic_city_control_1_option;Some;;;;;;;;;;;;;x
+baltic_city_control_1_desc;The individual Towns and Cities have some respect for their High Chief and provide a paltry tax and some men.;;;;;;;;;;;;;x
+baltic_city_control_2;Very Respected;;;;;;;;;;;;;x
+baltic_city_control_2_option;Very;;;;;;;;;;;;;x
+baltic_city_control_2_desc;The individual Towns and Cities respect their High Chief and provide a large tax and men.;;;;;;;;;;;;;x
+baltic_city_control_3;Great Respect;;;;;;;;;;;;;x
+baltic_city_control_3_option;Great;;;;;;;;;;;;;x
+baltic_city_control_3_desc;The individual Towns and Cities have enormous respect for their lord and provide much tax and a decent sized number of men.;;;;;;;;;;;;;x
+tengri_centralization_0;Local Tribes;;;;;;;;;;;;;x
+tengri_centralization_0_option;Local;;;;;;;;;;;;;x
+tengri_centralization_0_desc;Tribe Chiefs rule their own laws as they always have, with minimal input from whoever is High Chief at the moment.;;;;;;;;;;;;;x
+tengri_centralization_1;Sparsely Organized Tribes;;;;;;;;;;;;;x
+tengri_centralization_1_option;Sparse;;;;;;;;;;;;;x
+tengri_centralization_1_desc;Nothing has changed among the Chieftains, but the High Chief can now freely take the lands of the followers of other Gods.;;;;;;;;;;;;;x
+tengri_centralization_2;Organized Tribes;;;;;;;;;;;;;x
+tengri_centralization_2_option;Organized;;;;;;;;;;;;;x
+tengri_centralization_2_desc;The Chiefs' lands cannot pass outside the High Chief's protection through inheritance. The High Chief can now force the Tribe Chiefs to leave their place on the battlefield.;;;;;;;;;;;;;x
+tengri_centralization_3;Highly Organized Tribes;;;;;;;;;;;;;x
+tengri_centralization_3_option;High;;;;;;;;;;;;;x
+tengri_centralization_3_desc;The Chiefs can now revoke the titles of their lessers, and a more strict hierarchy is appearing with the High Chief at the top. The High Chief can now force the Tribe Chiefs to leave their place on the battlefield.;;;;;;;;;;;;;x
+tengri_centralization_4;United Tribes;;;;;;;;;;;;;x
+tengri_centralization_4_option;United;;;;;;;;;;;;;x
+tengri_centralization_4_desc;The High Chief now rules a true state.. Or as much as  possible without the aid of an ecclesiastical hierarchy. The High Chief can now force the Tribe Chiefs to leave their place on the battlefield.;;;;;;;;;;;;;x
+mongol_centralization_0;Disorganized Khanate;;;;;;;;;;;;;x
+mongol_centralization_0_option;Disorganized;;;;;;;;;;;;;x
+mongol_centralization_0_desc;Tribe chiefs and Ilkhans rule their own laws as they always have, with minimal input from whoever is Khan at the moment.;;;;;;;;;;;;;x
+mongol_centralization_1;Sparsely Organized Khanate;;;;;;;;;;;;;x
+mongol_centralization_1_option;Sparse;;;;;;;;;;;;;x
+mongol_centralization_1_desc;The Chiefs' and Ilhkans' lands cannot pass outside the Khan's protection through inheritance, and the Khan can now freely take the lands of the followers of other Gods and force its subjects to leave their place at the battlefield.;;;;;;;;;;;;;x
+mongol_centralization_2;Organized Khanate;;;;;;;;;;;;;x
+mongol_centralization_2_option;Organized;;;;;;;;;;;;;x
+mongol_centralization_2_desc;The Chiefs and Ilkhans can now revoke the titles of their lessers, and the Khan can force the Tribe Chiefs and the Ilkhans to leave their place on the battlefield.;;;;;;;;;;;;;x
+mongol_centralization_3;Highly Organized Khanate;;;;;;;;;;;;;x
+mongol_centralization_3_option;High;;;;;;;;;;;;;x
+mongol_centralization_3_desc;The Chiefs and Ilkhans can revoke the titles of their lessers, and a more strict hierarchy is appearing with the Khan at the top. The Khan can force the Tribe Chiefs and Ilkhans to leave their place on the battlefield.;;;;;;;;;;;;;x
+mongol_centralization_4;Centralized Khanate;;;;;;;;;;;;;x
+mongol_centralization_4_option;Max;;;;;;;;;;;;;x
+mongol_centralization_4_desc;The Khan now rules a true state.. Or as much as  possible without the aid of an ecclesiastical hierarchy. The Khan can force the Tribe Chiefs and Ilkhans to leave their place on the battlefield.;;;;;;;;;;;;;x
+baltic_centralization;Tribal Organization;;;;;;;;;;;;;x
+baltic_centralization_desc;While the Baltic Pagan hierarchy is rather loose, there is still a dilemma in how much authority the High Chief should have… A prestigious High Chief may force through centralization at the cost of upsetting everyone else.;;;;;;;;;;;;;x
+tengri_centralization;Tribal Organization;;;;;;;;;;;;;x
+tengri_centralization_desc;While the Tengric hierarchy is rather loose, there is still a dilemma in how much authority the High Chief should have… A prestigious High Chief may force through centralization at the cost of upsetting everyone else.;;;;;;;;;;;;;x
+mongol_centralization;Khanate Authority;;;;;;;;;;;;;x
+mongol_centralization_desc;While the Mongol originary hierarchy is rather loose, the Khan is strongly intentioned in increasing it and organizing the Khanate in a more efficient manner… A strong Khan may force through centralization at the cost of upsetting some of its Chieftains.;;;;;;;;;;;;;x
+tengri_temple_control;Religious Respect;;;;;;;;;;;;;x
+tengri_temple_control_desc;Religious Respect controls the proportion of their men and how much tribute the Diviners provide to their High Chief.;;;;;;;;;;;;;x
+tengri_temple_control_0;No Respect;;;;;;;;;;;;;x
+tengri_temple_control_0_option;None;;;;;;;;;;;;;x
+tengri_temple_control_0_desc;The individual Diviners do not respect their High Chief and provide no tribute or men.;;;;;;;;;;;;;x
+tengri_temple_control_1;Some Respect;;;;;;;;;;;;;x
+tengri_temple_control_1_option;Some;;;;;;;;;;;;;x
+tengri_temple_control_1_desc;The individual Diviners have some respect for their High Chief and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+tengri_temple_control_2;Very Respected;;;;;;;;;;;;;x
+tengri_temple_control_2_option;Very;;;;;;;;;;;;;x
+tengri_temple_control_2_desc;The individual Diviners respect their High Chief and provide decent tribute and men.;;;;;;;;;;;;;x
+tengri_temple_control_3;Great Respect;;;;;;;;;;;;;x
+tengri_temple_control_3_option;Great;;;;;;;;;;;;;x
+tengri_temple_control_3_desc;The individual Diviners have enormous respect for their High Chief and provide tribute and a large number of men.;;;;;;;;;;;;;x
+tengri_castle_control;Chieftain Respect;;;;;;;;;;;;;x
+tengri_castle_control_desc;Chieftain Respect controls the proportion of their men and how much tribute the Chieftains provide to their lord.;;;;;;;;;;;;;x
+tengri_castle_control_0;No Respect;;;;;;;;;;;;;x
+tengri_castle_control_0_option;None;;;;;;;;;;;;;x
+tengri_castle_control_0_desc;The individual Tribe Chiefs do not respect their High Chief and provide no tribute or men.;;;;;;;;;;;;;x
+tengri_castle_control_1;Some Respect;;;;;;;;;;;;;x
+tengri_castle_control_1_option;Some;;;;;;;;;;;;;x
+tengri_castle_control_1_desc;The individual Tribe Chiefs have some respect for their High Chief and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+tengri_castle_control_2;Very Respected;;;;;;;;;;;;;x
+tengri_castle_control_2_option;Very;;;;;;;;;;;;;x
+tengri_castle_control_2_desc;The individual Tribe Chiefs respect their High Chief and provide decent tribute and men.;;;;;;;;;;;;;x
+tengri_castle_control_3;Great Respect;;;;;;;;;;;;;x
+tengri_castle_control_3_option;Great;;;;;;;;;;;;;x
+tengri_castle_control_3_desc;The individual Tribe Chiefs have enormous respect for their High Chief and provide tribute and a large number of men.;;;;;;;;;;;;;x
+tengri_city_control;Town Respect;;;;;;;;;;;;;x
+tengri_city_control_desc;Town Respect controls the proportion of their guard and the taxes that towns provide to their Chief.;;;;;;;;;;;;;x
+tengri_city_control_0;No Respect;;;;;;;;;;;;;x
+tengri_city_control_0_option;None;;;;;;;;;;;;;x
+tengri_city_control_0_desc;The individual Towns and Cities do not respect their lord and provide no tax nor men.;;;;;;;;;;;;;x
+tengri_city_control_1;Some Respect;;;;;;;;;;;;;x
+tengri_city_control_1_option;Some;;;;;;;;;;;;;x
+tengri_city_control_1_desc;The individual Towns and Cities have some respect for their Chief and provide a paltry tax and some men.;;;;;;;;;;;;;x
+tengri_city_control_2;Very Respected;;;;;;;;;;;;;x
+tengri_city_control_2_option;Very;;;;;;;;;;;;;x
+tengri_city_control_2_desc;The individual Towns and Cities respect their Chief and provide a large tax and men.;;;;;;;;;;;;;x
+tengri_city_control_3;Great Respect;;;;;;;;;;;;;x
+tengri_city_control_3_option;Great;;;;;;;;;;;;;x
+tengri_city_control_3_desc;The individual Towns and Cities have enormous respect for their lord and provide much tax and a decent sized number of men.;;;;;;;;;;;;;x
+mongol_temple_control;Religious Respect;;;;;;;;;;;;;x
+mongol_temple_control_desc;Religious Respect controls the proportion of their men and how much tribute the Priests or Diviners provide to their Khans and Khagan.;;;;;;;;;;;;;x
+mongol_temple_control_0;No Respect;;;;;;;;;;;;;x
+mongol_temple_control_0_option;None;;;;;;;;;;;;;x
+mongol_temple_control_0_desc;The individual Priests or Diviners do not respect their Khans and Khagan and provide no tribute or men.;;;;;;;;;;;;;x
+mongol_temple_control_1;Some Respect;;;;;;;;;;;;;x
+mongol_temple_control_1_option;Some;;;;;;;;;;;;;x
+mongol_temple_control_1_desc;The individual Priests or Diviners have some respect for their Khans and Khagan and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+mongol_temple_control_2;Very Respected;;;;;;;;;;;;;x
+mongol_temple_control_2_option;Very;;;;;;;;;;;;;x
+mongol_temple_control_2_desc;The individual Priests or Diviners respect their Khans and Khagan and provide decent tribute and men.;;;;;;;;;;;;;x
+mongol_temple_control_3;Great Respect;;;;;;;;;;;;;x
+mongol_temple_control_3_option;Great;;;;;;;;;;;;;x
+mongol_temple_control_3_desc;The individual Priests or Diviners have enormous respect for their Khans and Khagan and provide tribute and a large number of men.;;;;;;;;;;;;;x
+mongol_castle_control;Chieftain Respect;;;;;;;;;;;;;x
+mongol_castle_control_desc;Chieftain Respect controls the proportion of their men and how much tribute the Chieftains provide to their Khans and Khagan.;;;;;;;;;;;;;x
+mongol_castle_control_0;No Respect;;;;;;;;;;;;;x
+mongol_castle_control_0_option;None;;;;;;;;;;;;;x
+mongol_castle_control_0_desc;The individual Tribe Chiefs do not respect their Khans and Khagan and provide no tribute or men.;;;;;;;;;;;;;x
+mongol_castle_control_1;Some Respect;;;;;;;;;;;;;x
+mongol_castle_control_1_option;Some;;;;;;;;;;;;;x
+mongol_castle_control_1_desc;The individual Tribe Chiefs have some respect for their Khans and Khagan and provide a paltry tribute and some men.;;;;;;;;;;;;;x
+mongol_castle_control_2;Very Respected;;;;;;;;;;;;;x
+mongol_castle_control_2_option;Very;;;;;;;;;;;;;x
+mongol_castle_control_2_desc;The individual Tribe Chiefs respect their Khans and Khagan and provide decent tribute and men.;;;;;;;;;;;;;x
+mongol_castle_control_3;Great Respect;;;;;;;;;;;;;x
+mongol_castle_control_3_option;Great;;;;;;;;;;;;;x
+mongol_castle_control_3_desc;The individual Tribe Chiefs have enormous respect for their Khans and Khagan and provide tribute and a large number of men.;;;;;;;;;;;;;x
+mongol_city_control;Town Respect;;;;;;;;;;;;;x
+mongol_city_control_desc;Town Respect controls the proportion of their guard and the taxes that towns provide to their Khans and Khagan.;;;;;;;;;;;;;x
+mongol_city_control_0;No Respect;;;;;;;;;;;;;x
+mongol_city_control_0_option;None;;;;;;;;;;;;;x
+mongol_city_control_0_desc;The individual Towns and Cities do not respect their Khans and Khagan and provide no tax nor men.;;;;;;;;;;;;;x
+mongol_city_control_1;Some Respect;;;;;;;;;;;;;x
+mongol_city_control_1_option;Some;;;;;;;;;;;;;x
+mongol_city_control_1_desc;The individual Towns and Cities have some respect for their Khans and Khagan and provide a paltry tax and some men.;;;;;;;;;;;;;x
+mongol_city_control_2;Very Respected;;;;;;;;;;;;;x
+mongol_city_control_2_option;Very;;;;;;;;;;;;;x
+mongol_city_control_2_desc;The individual Towns and Cities respect their Khans and Khagan and provide a large tax and men.;;;;;;;;;;;;;x
+mongol_city_control_3;Great Respect;;;;;;;;;;;;;x
+mongol_city_control_3_option;Great;;;;;;;;;;;;;x
+mongol_city_control_3_desc;The individual Towns and Cities have enormous respect for their Khans and Khagan and provide much tax and a decent sized number of men.;;;;;;;;;;;;;x
+gaelic_centralization;Monarch's Authority;;;;;;;;;;;;;x
+gaelic_centralization_desc;While the Gaelic hierarchy is historically loose, a strong High King could succesfully unite the Gaelic lands under a more centralized authority. The clans would be upset, but a prestigious Monarch could succeed in what many else failed.;;;;;;;;;;;;;x
+gaelic_centralization_0;Very Strong Clans;;;;;;;;;;;;;x
+gaelic_centralization_0_option;Min;;;;;;;;;;;;;x
+gaelic_centralization_0_desc;Each Clan rules its own laws and lands as they always have, with minimal input from whoever is Monarch at the moment.;;;;;;;;;;;;;x
+gaelic_centralization_1;Strong Clans;;;;;;;;;;;;;x
+gaelic_centralization_1_option;Initial;;;;;;;;;;;;;x
+gaelic_centralization_1_desc;Nothing has changed among the Clans power balance, but the Monarch can now freely take the lands of the followers of other Gods.;;;;;;;;;;;;;x
+gaelic_centralization_2;Weakened Clans;;;;;;;;;;;;;x
+gaelic_centralization_2_option;Average;;;;;;;;;;;;;x
+gaelic_centralization_2_desc;The Clans are weakened from a more centralized authority, but they still hold many of their traditional rights.;;;;;;;;;;;;;x
+gaelic_centralization_3;Loose Clans;;;;;;;;;;;;;x
+gaelic_centralization_3_option;High;;;;;;;;;;;;;x
+gaelic_centralization_3_desc;The Monarch and his subject Clans can now revoke the titles of their lessers, and a strict authority is appearing in the originally scarsely centralized Gaelic society.;;;;;;;;;;;;;x
+gaelic_centralization_4;Clanless State;;;;;;;;;;;;;x
+gaelic_centralization_4_option;Absolute;;;;;;;;;;;;;x
+gaelic_centralization_4_desc;The King or High King now rules a true state, and the power of each Clan is at its minimum. The Monarch can also force the Clan members to leave their place on the battlefield, and can also revoke their titles, and them the titles of their lessers.;;;;;;;;;;;;;x
+gaelic_temple_control;Church Control;;;;;;;;;;;;;x
+gaelic_temple_control_desc;Church Control defines how much tribute and how many men the local priests and bishops provide to their liege.;;;;;;;;;;;;;x
+gaelic_temple_control_0;No Control;;;;;;;;;;;;;x
+gaelic_temple_control_0_option;None;;;;;;;;;;;;;x
+gaelic_temple_control_0_desc;The liege has no control on the priests and bishops whatsoever.;;;;;;;;;;;;;x
+gaelic_temple_control_1;Some Control;;;;;;;;;;;;;x
+gaelic_temple_control_1_option;Some;;;;;;;;;;;;;x
+gaelic_temple_control_1_desc;The liege has some control over priests and bishops who now provide a paltry tribute and some men.;;;;;;;;;;;;;x
+gaelic_temple_control_2;Strong Control;;;;;;;;;;;;;x
+gaelic_temple_control_2_option;Strong;;;;;;;;;;;;;x
+gaelic_temple_control_2_desc;The liege has a strong control over priests and bishops who now provide decent tribute and more men.;;;;;;;;;;;;;x
+gaelic_temple_control_3;Total Control;;;;;;;;;;;;;x
+gaelic_temple_control_3_option;Total;;;;;;;;;;;;;x
+gaelic_temple_control_3_desc;The liege enjoys a total control over the priests and bishops of the realm, who now provide a large tribute and many men.;;;;;;;;;;;;;x
+gaelic_castle_control;Clan Control;;;;;;;;;;;;;x
+gaelic_castle_control_desc;Clan Control defines how much tribute and how many its subject nobles and their clan members provide to their liege.;;;;;;;;;;;;;x
+gaelic_castle_control_0;No Control;;;;;;;;;;;;;x
+gaelic_castle_control_0_option;None;;;;;;;;;;;;;x
+gaelic_castle_control_0_desc;The liege has no control over the noblemen and their clan members members whatsoever.;;;;;;;;;;;;;x
+gaelic_castle_control_1;Some Control;;;;;;;;;;;;;x
+gaelic_castle_control_1_option;Some;;;;;;;;;;;;;x
+gaelic_castle_control_1_desc;The liege has some control over the noblemen and their clan members who now provide a paltry tribute and some men.;;;;;;;;;;;;;x
+gaelic_castle_control_2;Strong Control;;;;;;;;;;;;;x
+gaelic_castle_control_2_option;Strong;;;;;;;;;;;;;x
+gaelic_castle_control_2_desc;The liege has a strong control over the noblemen and their clan members who now provide decent tribute and more men.;;;;;;;;;;;;;x
+gaelic_castle_control_3;Total Control;;;;;;;;;;;;;x
+gaelic_castle_control_3_option;Total;;;;;;;;;;;;;x
+gaelic_castle_control_3_desc;The liege enjoys a total control over the noblemen and their clan members, who now provide a large tribute and many men.;;;;;;;;;;;;;x
+gaelic_city_control;City Control;;;;;;;;;;;;;x
+gaelic_city_control_desc;City Control defines how much tribute and how many men the city bailiffs provide to their liege.;;;;;;;;;;;;;x
+gaelic_city_control_0;No Control;;;;;;;;;;;;;x
+gaelic_city_control_0_option;None;;;;;;;;;;;;;x
+gaelic_city_control_0_desc;The liege has no control on the bailiffs whatsoever.;;;;;;;;;;;;;x
+gaelic_city_control_1;Some Control;;;;;;;;;;;;;x
+gaelic_city_control_1_option;Some;;;;;;;;;;;;;x
+gaelic_city_control_1_desc;The liege has some control over the bailiffs who now provide a paltry tribute and some men.;;;;;;;;;;;;;x
+gaelic_city_control_2;Strong Control;;;;;;;;;;;;;x
+gaelic_city_control_2_option;Strong;;;;;;;;;;;;;x
+gaelic_city_control_2_desc;The liege has a strong control over the bailiffs who now provide decent tribute and more men.;;;;;;;;;;;;;x
+gaelic_city_control_3;Total Control;;;;;;;;;;;;;x
+gaelic_city_control_3_option;Total;;;;;;;;;;;;;x
+gaelic_city_control_3_desc;The liege enjoys a total control over the bailiffs of the realm, who now provide a large tribute and many men.;;;;;;;;;;;;;x
+clientship;Clientship;;;;;;;;;;;;;x
+clientship_desc;Medieval Clientship was a system where the Lord made his client a grant of property for a fixed period of time. The client owed service to his lord, and at the end of the grant period returned the grant with interest. Any increase beyond the agreed interest was his to keep, and a man could be a base client to several lords simultaneously, and a smart client could rise to the rank of lord by accumulating riches.;;;;;;;;;;;;;x
+clientship_0;No Clientship;;;;;;;;;;;;;x
+clientship_0_option;Forbidden;;;;;;;;;;;;;x
+clientship_0_desc;The liege has forbidden the custom of clientship in the demesne.;;;;;;;;;;;;;x
+clientship_1;Clientship Allowed;;;;;;;;;;;;;x
+clientship_1_option;Allowed;;;;;;;;;;;;;x
+clientship_1_desc;The liege has allowed the custom of clientship in the demesne.;;;;;;;;;;;;;x
+army_decimation;Army Decimal System;;;;;;;;;;;;;x
+army_decimation_desc;Turkic and Mongol peoples, originally tribes, started to organize their army in decimal units, which included all males in a fighting age, which were recursively built from groups of 10 (Arav), 100 (Zuut), 1,000 (Minghan), and 10,000 (Tumen). ;;;;;;;;;;;;;x
+army_decimation_0;No Decimal System;;;;;;;;;;;;;x
+army_decimation_0_option;Not Enacted;;;;;;;;;;;;;x
+army_decimation_0_desc;The decimal army organization system is not enacted.;;;;;;;;;;;;;x
+army_decimation_1;Decimal System;;;;;;;;;;;;;x
+army_decimation_1_option;The decimal army organization system is enacted.;;;;;;;;;;;;;x
+army_decimation_1_desc;The liege has allowed the custom of clientship in the demesne.;;;;;;;;;;;;;x
+subinfeudation;Subinfeudation;;;;;;;;;;;;;x
+subinfeudation_desc;Subinfeudation is the practice by which tenants, holding land under the king or other superior lord, carved out new and distinct tenures in their turn by sub-letting or alienating a part of their lands to third parties.;;;;;;;;;;;;;x
+subinfeudation_0;Subinfeudation Practice;;;;;;;;;;;;;x
+subinfeudation_0_option;Allowed;;;;;;;;;;;;;x
+subinfeudation_0_desc;Subinfeudation is an allowed practice in the realm.;;;;;;;;;;;;;x
+subinfeudation_1;Forbiddance of Subinfeudation;;;;;;;;;;;;;x
+subinfeudation_1_option;Forbidden;;;;;;;;;;;;;x
+subinfeudation_1_desc;The practice of subinfeudation is forbidden in the realm.;;;;;;;;;;;;;x
+tithing;Tithing;;;;;;;;;;;;;x
+tithing_desc;A tithing is a self-legal system where people are divided in groups of ten, of which all are males and all are at or over the age of twelve. Each person within the tithing (name of the group of ten) is responsible for the other members' actions and behaviour, and to provide compensations for a member's crimes or torts if need be.;;;;;;;;;;;;;x
+tithing_0;No Tithing;;;;;;;;;;;;;x
+tithing_0_option;Not Enacted;;;;;;;;;;;;;x
+tithing_0_desc;The tithing system is not enacted in the realm.;;;;;;;;;;;;;x
+tithing_1;Tithing system;;;;;;;;;;;;;x
+tithing_1_option;Enacted;;;;;;;;;;;;;x
+tithing_1_desc;A tithing system is currently present in the realm.;;;;;;;;;;;;;x
+merchet;Merchet;;;;;;;;;;;;;x
+merchet_desc;A merchet is a tax paid by a peasant or a subject to his lord upon the marriage of a woman. It is customary that the bride's father should pay, as buying the right to give his daughter away, and as a justification for taking a soldier off the lord.;;;;;;;;;;;;;x
+merchet_0;No Merchet Duty;;;;;;;;;;;;;x
+merchet_0_option;Not Collected;;;;;;;;;;;;;x
+merchet_0_desc;The demesne's subjects do not have to pay a merchet to their lord updon the marriage of their daughters.;;;;;;;;;;;;;x
+merchet_1;Merchet Duty;;;;;;;;;;;;;x
+merchet_1_option;Collected;;;;;;;;;;;;;x
+merchet_1_desc;The demesne's subjects now have to pay a merchet to their lord updon the marriage of their daughters.;;;;;;;;;;;;;x
+frankpledge;Frankpledge;;;;;;;;;;;;;x
+frankpledge_desc;A frankpledge is a self-legal system where people are divided in groups of ten by kinship or some other kind of tie such as an oath of fealty to a lord or knight, of which all are males and at or over the age of twelve. Each person within the group is responsible for the other members' actions and behaviour, and to provide compensations for a member's crimes or torts if need be.;;;;;;;;;;;;;x
+frankpledge_0;No Frankpledge;;;;;;;;;;;;;x
+frankpledge_0_option;Not Enacted;;;;;;;;;;;;;x
+frankpledge_0_desc;The frankpledge system is not enacted in the realm.;;;;;;;;;;;;;x
+frankpledge_1;Frankpledge Institution;;;;;;;;;;;;;x
+frankpledge_1_option;Enacted;;;;;;;;;;;;;x
+frankpledge_1_desc;A frankpledge system is currently present in the realm.;;;;;;;;;;;;;x
+comhdhail;Comhdhail;;;;;;;;;;;;;x
+comhdhail_desc;A comhdhail is a self-legal system where people are divided into small groups, of which all are males and all are at or over the age of twelve. Each person within the group is responsible for the other members' actions and behaviour, and to provide compensations for a member's crimes or torts if need be.;;;;;;;;;;;;;x
+comhdhail_0;No Comhdhail;;;;;;;;;;;;;x
+comhdhail_0_option;Not Enacted;;;;;;;;;;;;;x
+comhdhail_0_desc;The comhdhail system is not enacted in the realm.;;;;;;;;;;;;;x
+comhdhail_1;Comhdhail Institution;;;;;;;;;;;;;x
+comhdhail_1_option;Enacted;;;;;;;;;;;;;x
+comhdhail_1_desc;A comhdhail system is currently present in the realm.;;;;;;;;;;;;;x
+leidang;Leidang Institution;;;;;;;;;;;;;x
+leidang_desc;The leidang is an institution concerning the presence of a conscripted public levy of free farmers, who takes part in the organization of fleets for seasonal excursions and in defence of the realm.;;;;;;;;;;;;;x
+leidang_0;No Leidang;;;;;;;;;;;;;x
+leidang_0_option;Not Enacted;;;;;;;;;;;;;x
+leidang_0_desc;The leidang levy system is not enacted in the realm.;;;;;;;;;;;;;x
+leidang_1;Leidang Enacted;;;;;;;;;;;;;x
+leidang_1_option;Enacted;;;;;;;;;;;;;x
+leidang_1_desc;A leidang levy system is currently present in the realm.;;;;;;;;;;;;;x
+fyrd;Fyrd;;;;;;;;;;;;;x
+fyrd_desc;The fyrd is an institution concerning the presence of a conscripted levy militia made up of commoners and devided by districts, who takes part in the defence of the realm when needed.;;;;;;;;;;;;;x
+fyrd_0;No Fyrd;;;;;;;;;;;;;x
+fyrd_0_option;Not Enacted;;;;;;;;;;;;;x
+fyrd_0_desc;The fyrd levy system is not enacted in the realm.;;;;;;;;;;;;;x
+fyrd_1;Fyrd Institution;;;;;;;;;;;;;x
+fyrd_1_option;Enacted;;;;;;;;;;;;;x
+fyrd_1_desc;A fyrd levy system is currently present and enacted in the realm.;;;;;;;;;;;;;x
+housecarls;Huscarl Guard;;;;;;;;;;;;;x
+housecarls_desc;The huscarls were either non-servile manservants, or household troops in personal service of someone, equivalent to a bodyguard to lords and kings. They held both a military and an administrative role, often clashing with the interest of other nobles.;;;;;;;;;;;;;x
+housecarls_0;No Huscarl Guards;;;;;;;;;;;;;x
+housecarls_0_option;Prohibited;;;;;;;;;;;;;x
+housecarls_0_desc;The huscarls formed bodyguard institution is prohibited in the realm.;;;;;;;;;;;;;x
+housecarls_1;Huscarl Guard ;;;;;;;;;;;;;x
+housecarls_1_option;Customary;;;;;;;;;;;;;x
+housecarls_1_desc;A huscarls formed bodyguard institution is customary in the realm.;;;;;;;;;;;;;x
+druzhina;Druzhina Retinue;;;;;;;;;;;;;x
+druzhina_desc;The members of a druzhina retinue were either non-servile manservants, or household troops in personal service of someone, equivalent to a bodyguard to lords and kings. They held both a military and an administrative role, often clashing with the interest of other nobles.;;;;;;;;;;;;;x
+druzhina_0;No Druzina Retinues;;;;;;;;;;;;;x
+druzhina_0_option;Prohibited;;;;;;;;;;;;;x
+druzhina_0_desc;The druzhina retinue institution is prohibited in the realm.;;;;;;;;;;;;;x
+druzhina_1;Druzhina Retinues;;;;;;;;;;;;;x
+druzhina_1_option;Customary;;;;;;;;;;;;;x
+druzhina_1_desc;A druzhina retinue institution is customary in the realm.;;;;;;;;;;;;;x
+knight_service;Knight Service Tenure;;;;;;;;;;;;;x
+knight_service_desc;Knight-service is a form of feudal land tenure under which a knight holds a fief or estate of land termed a knight's fee (fee being synonymous with fief) from an overlord conditional on him as tenant performing military service for his overlord. A scutage could be set to be paid in order to avoid performing such services and duties.;;;;;;;;;;;;;x
+knight_service_0;Knight-Fee and Scutage;;;;;;;;;;;;;x
+knight_service_0_option;Scutage;;;;;;;;;;;;;x
+knight_service_0_desc;A scutage can be paid instead of performing the knight service tenure in the realm.;;;;;;;;;;;;;x
+knight_service_1;Knight-Fee ;;;;;;;;;;;;;x
+knight_service_1_option;Duty;;;;;;;;;;;;;x
+knight_service_1_desc;A knight-fee based knight service tenure is present in the realm.;;;;;;;;;;;;;x
+quit_rent;Quit Rent Tenure;;;;;;;;;;;;;x
+quit_rent_desc;The payment of a quit rent frees the tenant of a holding from the obligation to perform such other services as are obligatory under feudal tenure, or frees the occupier of the land from the burden of having others use their own rights on the tenant's land.;;;;;;;;;;;;;x
+quit_rent_0;No Quit Rent Tenure;;;;;;;;;;;;;x
+quit_rent_0_option;Not Present;;;;;;;;;;;;;x
+quit_rent_0_desc;There is no possibility of paying a quit rent for tenure in the demesne.;;;;;;;;;;;;;x
+quit_rent_1;Quit Rent Tenure;;;;;;;;;;;;;x
+quit_rent_1_option;Allowed;;;;;;;;;;;;;x
+quit_rent_1_desc;A quit rent for tenure can be paid in the demesne to avoid feudal obligations.;;;;;;;;;;;;;x
+tenure;Land Tenure Contract;;;;;;;;;;;;;x
+tenure_desc;Under the feudal system several different forms of land tenure could be in place, each effectively setting a contract with differing rights and duties attached thereto.;;;;;;;;;;;;;x
+tenure_0;Tenure by Serjeanty;;;;;;;;;;;;;x
+tenure_0_option;Serjeanty;;;;;;;;;;;;;x
+tenure_0_desc;Land tenure in the demesne is paid with a serjeanty system, a method where land is given to subjects on condition of the performance of a certain duty other than knight-service, usually the discharge of duties in the household of king or noble.;;;;;;;;;;;;;x
+tenure_1;Tenure by Socage and Serjeanty;;;;;;;;;;;;;x
+tenure_1_option;Mixed;;;;;;;;;;;;;x
+tenure_1_desc;Land tenure in the demesne is paid with a mixed socage and serjeanty system, a method where subjects hold the land in exchange for both a clearly defined, fixed payment to be made at specified intervals to their feudal lord, or for the performance of a certain duty other than knight-service.;;;;;;;;;;;;;x
+tenure_2;Tenure by Socage;;;;;;;;;;;;;x
+tenure_2_option;Socage;;;;;;;;;;;;;x
+tenure_2_desc;Land tenure in the demesne is paid with a socage system, a method where subjects hold the land in exchange for a clearly defined, fixed payment to be made at specified intervals to their feudal lord, who in turn has to upkeep his own feudal obligations.;;;;;;;;;;;;;x
+tenure_protection;Land Tenancy Rights;;;;;;;;;;;;;x
+tenure_protection_desc;Land tenancy rights can be divided into three main categories in the feudal system: the early villeinage method, and the latter copyhold method, subdivided into copyhold for lives and copyhold of inheritance.;;;;;;;;;;;;;x
+tenure_protection_0;Tenancy by Villeinage;;;;;;;;;;;;;x
+tenure_protection_0_option;Villeinage;;;;;;;;;;;;;x
+tenure_protection_0_desc;The traditional villeinage system with little to none tenancy security is present in the realm. As part of the contract with the landlord, the lord of the manor, the tenants are expected to spend some of their time working on the lord's fields.;;;;;;;;;;;;;x
+tenure_protection_1;Tenancy by Copyhold for Lives;;;;;;;;;;;;;x
+tenure_protection_1_option;Lives;;;;;;;;;;;;;x
+tenure_protection_1_desc;In the copyhold for lives three named persons are nominated, the first-named is the holder tenant and held for the duration of their life. The other two are said to be 'in reversion and remainder' and effectively form a queue. When the first life dies, the second-named inherits the property and nominats a new third life for the end of the new queue.;;;;;;;;;;;;;x
+tenure_protection_2;Inheritance;;;;;;;;;;;;;x
+tenure_protection_2_option;Tenancy by Inheritance Copyhold;;;;;;;;;;;;;x
+tenure_protection_2_desc;In the copyhold of inheritance one main tenant landholder is present, a subject who pais rent and undertakes duties to the Lord. When the tenant dies, the holding passes to their next heir, who is chosen depending upon the custom of the realm.;;;;;;;;;;;;;x
+military_tenure;Military Tenure;;;;;;;;;;;;;x
+military_tenure_desc;As the main form of military tenure, the castle-guard duty is an arrangement by which the duty of finding knights to guard royal castles is imposed on certain manors, knight's fees or baronies. A particular rent could also be allowed to be in place and set to be paid in order to get exempted from castle-guard duty obligations.;;;;;;;;;;;;;x
+military_tenure_0;Military tenure by Castle-Guard Duty;;;;;;;;;;;;;x
+military_tenure_0_option;Duty;;;;;;;;;;;;;x
+military_tenure_0_desc;The castle-guard duty is an arrangement by which the duty of finding knights to guard royal castles is imposed on certain manors, knight's fees or baronies. The greater lords provide for the guard of their castles by exacting a similar duty from their sub-enfeoffed knights, and no rent can be paid to avoid such obligations.;;;;;;;;;;;;;x
+military_tenure_1;Military tenure by Castle-Guard Rent and Duty;;;;;;;;;;;;;x
+military_tenure_1_option;Military tenure by Rent and Duty;;;;;;;;;;;;;x
+military_tenure_1_desc;Even if a castle-guard duty is still present in the realm, a rent can now be paid to avoid castle-guard duty obligations.;;;;;;;;;;;;;x
+frankalmoin;Frankalmoin Privilege;;;;;;;;;;;;;x
+frankalmoin_desc;By the frankalmoin privilege, an ecclesiastical body holds land free of military service such as knight service or other secular or religious service, but sometimes in return for the religious service of saying prayers and masses for the soul of the grantor.;;;;;;;;;;;;;x
+frankalmoin_0;Frankalmoin Privilege;;;;;;;;;;;;;x
+frankalmoin_0_option;Conceded;;;;;;;;;;;;;x
+frankalmoin_0_desc;The frankalmoin privilege is conceded to the Church in the realm.;;;;;;;;;;;;;x
+frankalmoin_1;No Frankalmoin Privilege;;;;;;;;;;;;;x
+frankalmoin_1_option;Not Conceded;;;;;;;;;;;;;x
+frankalmoin_1_desc;No frankalmoin privilege is conceded to the Church in the realm, thus making it abide by the regular feudal land tenure obligations.;;;;;;;;;;;;;x
+LAW_PASSED_LOG;§Y$LAW$§! has been approved by the majority of the lords of §Y$TITLE$§! and is now effective in the realm.;;;;;;;;;;;;;x

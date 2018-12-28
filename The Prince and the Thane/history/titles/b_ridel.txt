@@ -1,0 +1,31 @@
+933.1.1={
+	holder=2220047 #Roger Ridel
+	holding_dynasty = 7182 # Ridel
+	liege="d_gaeta"
+}
+
+975.1.1={
+	holder=2220048 #William Ridel
+}
+
+1025.1.1={
+	holder=2220049 #Guy Ridel
+}
+
+1039.1.1={
+	holder=0
+}
+
+1045.1.1={
+	holder=1000167000 #Geoffrey Ridel
+}
+1086.1.1={
+	holder=1000167001 #Reginald Ridel
+}
+1090.1.1={
+	holder=1000167002 #Gualganus Ridel
+}
+
+1091.1.1={
+	holder=0
+}

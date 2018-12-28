@@ -1,0 +1,1750 @@
+######################################################################
+#
+# The Prince and the Thane templar events - written by idib816 and Wiz
+#
+######################################################################
+
+namespace = templars
+
+# Joining the templars
+character_event = {
+	id = templars.1
+	desc = "EVTDESCtemplars.1"
+	picture = GFX_evt_templar_knight
+	border = GFX_event_normal_frame_religion
+        
+    only_men = yes
+    max_age = 45
+	
+	trigger = {
+        religion = catholic
+        NOT = { 
+		    OR = { 
+			    trait = templar
+                trait = templar_leader
+                trait = homosexual
+                trait = slothful
+                is_female = yes 
+			} 
+		}
+        martial = 12
+		age = 14
+        piety = 100
+		d_knights_templar = { has_holder = yes }
+		year = 1100
+        NOT  = { has_character_flag = refused_templars }
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+        modifier = {
+			factor = 1.5
+			trait = tolerant
+		}
+        modifier = {
+			factor = 2.5
+			trait = cynical
+		}
+        modifier = {
+			factor = 1.5
+			trait = lustful
+		}
+        modifier = {
+			factor = 2.5
+			trait = slothful
+		}
+        modifier = {
+			factor = 2.5
+			trait = content
+		}
+        modifier = {
+			factor = 1.5
+			trait = humble
+		}
+        modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.5
+			martial = 16
+		}
+        modifier = {
+			factor = 5
+			is_primary_heir = yes
+		}
+        modifier = {
+			factor = 2.5
+			is_landed = yes
+		}
+        modifier = {
+			factor = 0.25
+			trait = brilliant_strategist
+		}
+        modifier = {
+			factor = 0.25
+			trait = master_warrior
+		}
+        modifier = {
+			factor = 0.5
+			piety = 300
+		}
+        modifier = {
+			factor = 0.5
+			trait = crusader
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.1"
+		add_trait = templar 
+        scaled_wealth = -2.0
+        piety = 50
+        prestige = 100			
+	}
+
+    option = {
+		name = "I hate crosses"
+		piety = -20
+        prestige = -50
+        set_character_flag = refused_templars	
+	}
+}
+
+# Arrest the Templars
+character_event = {
+	id = templars.2
+	title = "EVTNAMEtemplars.2"
+	desc = "EVTDESCtemplars.2"
+	picture = "GFX_evt_templar_knight"
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAtemplars.2"
+		piety = -500
+		prestige = 100
+		wealth = 1000
+		random = {
+			chance = 25
+			add_trait = excommunicated
+		}
+		set_character_flag = arrest_the_templars
+		hidden_tooltip = {
+			character_event = { id = templars.3 days = 5 } # Arrest of Templars - France
+			any_realm_character = { 
+				limit = {
+					NOT = { has_character_flag = arrest_the_templars }
+		        	religion = catholic
+		        	OR = {
+		          		trait = templar 
+		          		trait = templar_leader 
+		         	}
+		         }
+                 random_list = {
+                    70 = { prisoner = yes }
+                    30 = { banish = yes } 
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBtemplars.2"
+	}
+}	
+
+# Arrest of the Templars
+character_event = {
+	id = templars.3
+	title = "EVTNAMEtemplars.3"
+	desc = "EVTDESCtemplars.3"
+	picture = "GFX_evt_templar_knight"
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtemplars.3"
+	}
+}
+
+#Templar deals with clashing interest between the knights and his realm
+character_event = {
+	id = templars.0
+	picture = "GFX_evt_crusader_battle"
+	desc = "EVTDESCtemplars.0"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		trait = templar
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "The realm's best interest comes before our own"
+        piety = -15
+        liege = { 
+		    prestige = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+		random = { 
+		    chance = 20
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.75
+				trait = tolerant
+			}
+            modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+
+    option = {
+		name = "I am a Knight Templar!"
+            prestige = 20
+            piety = 15
+            liege = { 
+			    piety = -15
+                add_character_modifier = { name = vulnerable_to_attempts duration = 730 }
+                opinion = {
+				    modifier = opinion_angry
+				    who = ROOT
+				    years = 5
+			    } 
+            }
+            random = { 
+			    chance = 15
+                add_trait = zealous 
+				hidden_tooltip = {
+					character_event = { id = 38269 }
+				}
+			}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 1.6
+				trait = diligent
+			}
+            modifier = {
+				factor = 0
+				trait = arbitrary
+			}
+		}
+	}	
+
+    option = {
+		name = "We learned some interesting economic matters in the Holy land my lord"
+        trigger = { stewardship = 14 }
+        prestige = 20
+        wealth = 100
+        piety = -10
+        liege = { 
+		    prestige = 25
+            scaled_wealth = 0.75
+            piety = 10
+            opinion = {
+				modifier = opinion_satisfied
+				who = ROOT
+				years = 5
+			}
+        }
+
+        random = { 
+		    chance = 15
+            add_trait = bank_sponsor 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.61 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.45
+            modifier = {
+				factor = 1.5
+				trait = reformer
+			}
+            modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0
+				trait = conservative
+			}
+		}
+	}
+}
+
+#Templar invited to take part in a secret mission to recover a relic
+character_event = {
+	id = templars.4
+	picture = "GFX_evt_templars_assassins"
+	desc = "EVTDESCtemplars.4"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "I'll leave at once"
+        piety = 10
+        prestige = 25
+        wealth = 75
+                
+		random = { 
+		    chance = 20
+            add_trait = brave 
+			hidden_tooltip = {
+				character_event = { id = 38270 }
+			}
+		}
+
+        random = { 
+		    chance = 15
+            death = { death_reason = death_murder_unknown } 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = brave
+			}
+            modifier = {
+				factor = 1.75
+				trait = proud
+			}
+            modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}
+
+    option = {
+		name = "I best direct the operations"
+        trigger = { intrigue = 14 }
+        prestige = 20
+        piety = 5
+        wealth = 50
+                
+        random = { 
+		    chance = 10
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = craven
+			}
+            modifier = {
+				factor = 1.6
+				trait = diligent
+			}
+            modifier = {
+				factor = 0
+				trait = brave
+			}
+		}
+	}	
+
+    option = {
+		name = "I will lead the expedition!"
+        trigger = { martial = 14 }
+        prestige = 50
+        wealth = 150
+        piety = 25
+
+        random = { 
+		    chance = 15
+            add_trait = relic_hunter 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.81 }
+			}
+		}
+        random = { 
+		    chance = 20
+            add_trait = pious_man 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.79 }
+			}
+		}
+        random = { 
+		    chance = 40
+            add_trait = brave 
+			hidden_tooltip = {
+				character_event = { id = 38270 }
+			}
+		}
+        random = { 
+			chance = 25
+            death = { death_reason = death_murder_unknown } 
+		}
+
+        ai_chance = {
+		    factor = 0.45
+            modifier = {
+				factor = 1.5
+				trait = brave
+			}
+            modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}
+}
+
+#Templar invited to take part in a perilous mission against the Hashashins
+character_event = {
+	id = templars.5
+	picture = "GFX_evt_templars_assassins"
+	desc = "EVTDESCtemplars.5"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+        OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "Count me in"
+        piety = 10
+        prestige = 25
+        wealth = 75
+                
+		random = { 
+		    chance = 20
+            add_trait = brave 
+			hidden_tooltip = {
+				character_event = { id = 38270 }
+			}
+		}
+
+        random = { 
+		    chance = 25
+            death = { death_reason = death_murder_unknown } 
+    	}
+
+        ai_chance = {
+		    factor = 0.35
+                modifier = {
+				factor = 1.5
+				trait = brave
+			}
+            modifier = {
+				factor = 1.75
+				trait = proud
+			}
+            modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}
+
+    option = {
+		name = "I know someone who can do a better job"
+        trigger = { intrigue = 14 }
+        prestige = 10
+        piety = 5
+        wealth = 50
+                
+        random = { 
+		    chance = 10
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = craven
+			}
+            modifier = {
+				factor = 1.6
+				trait = diligent
+			}
+            modifier = {
+				factor = 0
+				trait = brave
+			}
+		}
+	}	
+
+    option = {
+		name = "I will lead the mission!"
+        trigger = { martial = 14 }
+        prestige = 50
+        wealth = 150
+        piety = 25
+
+        random = { 
+		    chance = 5
+            add_trait = war_hero 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.94 }
+			}
+		}
+        random = { 
+		    chance = 40
+            add_trait = brave 
+			hidden_tooltip = {
+				character_event = { id = 38270 }
+			}
+		}
+
+        random = { 
+		    chance = 30
+            death = { death_reason = death_murder_unknown } 
+		}
+
+        ai_chance = {
+		    factor = 0.45
+            modifier = {
+				factor = 1.5
+				trait = brave
+			}
+            modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}
+}
+
+#Templar deals with possible rumors about his bad conduct spread by sergeant
+character_event = {
+	id = templars.6
+	picture = "GFX_evt_helen"
+	desc = "EVTDESCtemplars.6"
+	border = GFX_event_normal_frame_religion
+	
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	is_triggered_only = yes
+	
+    trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        trait = lustful
+        NOT = { has_character_flag = retired_templar } 
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "Everyone likes Gold"
+        piety = 10
+        prestige = 25
+        wealth = -75
+                
+		random = {
+    		chance = 20
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = humble
+			}
+            modifier = {
+				factor = 1.75
+				trait = charitable
+			}
+            modifier = {
+				factor = 0
+				trait = greedy
+			}
+		}
+	}
+
+    option = {
+		name = "The new sergeant won't complain as much"
+        trigger = { intrigue = 14 }
+        prestige = 20
+        random = { 
+		    chance = 20
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.3
+                modifier = {
+				factor = 1.5
+				trait = craven
+			}
+            modifier = {
+				factor = 1.6
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = brave
+			}
+		}
+	}	
+
+    option = {
+		name = "I'll shorten him a head"
+        prestige = 20
+        piety = -15
+
+        random = { 
+		    chance = 30
+            add_trait = wroth 
+			hidden_tooltip = {
+				character_event = { id = 38254 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+	}
+}
+
+#Templar deals with a captured enemy soldier
+character_event = {
+	id = templars.7
+	picture = "GFX_evt_templars_assassins"
+	desc = "EVTDESCtemplars.7"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "Only God can judge him"
+        piety = 20
+        prestige = -5
+                
+		random = {
+    		chance = 20
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.35
+                modifier = {
+				factor = 1.5
+				trait = humble
+			}
+                modifier = {
+				factor = 1.75
+				trait = zealous
+			}
+                modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}
+
+    option = {
+		name = "I know of ways to make him talk"
+        trigger = { intrigue = 14 }
+        prestige = 25
+        piety = -10
+        random = { 
+		    chance = 10
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.6
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}	
+
+    option = {
+		name = "He will die a soldier's death"
+        prestige = 20
+        piety = 5
+
+        random = { 
+		    chance = 10
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = just
+			}
+            modifier = {
+				factor = 1.5
+				trait = honest
+			}
+            modifier = {
+				factor = 0
+				trait = arbitrary
+			}
+		}
+	}
+}
+
+#Templar deals with idiot grand master
+character_event = {
+	id = templars.9
+	picture = "GFX_evt_crusader_siege"
+	desc = "EVTDESCtemplars.9"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader
+		}
+        NOT = { has_landed_title = d_knights_templar }
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "God is on his side"
+        piety = 20
+        prestige = -15
+                
+		random = {
+		    chance = 20
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}
+		
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = humble
+			}
+            modifier = {
+				factor = 1.75
+				trait = zealous
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}
+
+    option = {
+		name = "I will talk him into effectiveness"
+        trigger = { diplomacy = 14 }
+        prestige = 20
+        piety = 10
+        random = { 
+		    chance = 10
+            add_trait = machiavellian 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.73 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}	
+
+    option = {
+		name = "I think we need a new Grand Master"
+        trigger = { intrigue = 14 }
+        prestige = 20
+        piety = -10
+
+        random = { 
+		    chance = 10
+            add_trait = deceitful 
+			hidden_tooltip = {
+				character_event = { id = 38255 }
+			}
+		}
+
+        random_list = { 
+		    25 = { death = { death_reason = death_murder_unknown } }
+            75 = { 
+			    random_independent_ruler = { 
+				    limit = { has_landed_title = d_knights_templar }
+                    death = { death_reason = death_murder_unknown } 
+				} 
+			} 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}
+}
+
+# Grand Master gets templar trait
+character_event = {
+	id = templars.8
+	desc = "I'm a Templar"
+	picture = "GFX_evt_templar_knight"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { 
+	    has_landed_title = d_knights_templar 
+        NOT = { has_character_flag = templar_title_assigned } 
+	}
+	
+	
+	mean_time_to_happen = {
+		years = 100
+	}	
+	
+	option = {
+		name = "Yes I am"
+        set_character_flag = templar_trait_added
+        piety = 150
+        prestige = 300
+        remove_trait = templar
+        add_trait = templar_leader
+        set_character_flag = templar_title_assigned
+	}
+}
+
+#Templar deals with hashashin plot to kill the grand master
+character_event = {
+	id = templars.10
+	picture = "GFX_evt_templars_assassins"
+	border = GFX_event_normal_frame_war
+	desc = "EVTDESCtemplars.10"
+	is_triggered_only = yes
+
+    prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+    trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_landed_title = d_knights_templar }
+	}
+	
+    mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "God is on his side, he shouldn't fear"
+        piety = 20
+        prestige = -15
+
+        random_list = { 
+		    75 = { }
+            35 = { 
+			    random_independent_ruler = { 
+			        limit = { has_landed_title = d_knights_templar }
+                    death = { death_reason = death_hashshashin } 
+				} 
+			} 
+		}                
+
+		random = { 
+		    chance = 20
+            add_trait = craven 
+			hidden_tooltip = {
+				character_event = { id = 38257 }
+			}
+		}
+
+        ai_chance = {
+		    factor = 0.35
+                modifier = {
+				factor = 1.5
+				trait = humble
+			}
+            modifier = {
+				factor = 1.75
+				trait = zealous
+			}
+            modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
+	}
+
+    option = {
+		name = "I'm capable of defending him from their plots"
+        trigger = { intrigue = 14 }
+        prestige = 20
+        piety = 10
+        random = { 
+		    chance = 20
+            add_trait = just 
+			hidden_tooltip = {
+				character_event = { id = 38267 }
+			}
+		}
+        random = { chance = 30 death = { death_reason = death_hashshashin } }
+
+        ai_chance = {
+		    factor = 0.3
+            modifier = {
+				factor = 1.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.6
+				trait = deceitful
+			}
+            modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}	
+
+    option = {
+		name = "I won't raise a finger against it"
+        piety = -20
+		prestige = -10
+        random = { 
+		    chance = 10
+            add_trait = arbitrary
+			hidden_tooltip = {
+				character_event = { id = 38266 }
+			} 
+		}
+        random_list = { 
+		    35 = { }
+            65 = { 
+			    random_independent_ruler = { 
+				    limit = { has_landed_title = d_knights_templar }
+                    death = { death_reason = death_hashshashin } 
+				} 
+			} 
+		}
+
+        ai_chance = {
+		    factor = 0.35
+            modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+            modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 0
+				trait = just
+			}
+		}
+	}
+}
+
+#Templar scouts dealing with bandits
+character_event = {
+	id = templars.11
+	desc = "EVTDESCtemplars.11"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    max_age = 40
+    only_men = yes
+	
+	trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+
+    mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "EVTOPTAtemplars.11"
+		random = {
+			chance = 50
+			character_event = { id = templars.12 tooltip = EVTTOOLTIPtemplars.12 }
+		}
+	}	
+	
+	option = {
+		name = "EVTOPTBtemplars.11"
+		character_event = { id = templars.12  tooltip = EVTTOOLTIPtemplars.12 }
+		prestige = 10
+	}
+}
+
+#Bandits catch us
+character_event = {
+	id = templars.12
+	desc = "EVTDESCtemplars.12"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtemplars.12"
+		tooltip_info = martial
+		trigger = {
+			martial = 16
+		}
+		prestige = 30
+		random = {
+			chance = 40
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+		}		
+        random = { chance = 20 death = { death_reason = death_battle } }
+	}
+	
+	option = {
+		name = "EVTOPTBtemplars.12" 
+		random = {
+			chance = 20
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+            random = { chance = 5 death = { death_reason = death_battle } }
+		}		
+	}	
+}
+
+#Spotting an hashashin camp while scouting - possible ambush
+character_event = {
+	id = templars.13
+	desc = "EVTDESCtemplars.13"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    max_age = 50
+    only_men = yes
+	
+	trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+
+    mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.13" #Attack them!
+        random = { 
+		    chance = 20
+		    add_trait = brave 
+			hidden_tooltip = {
+				character_event = { id = 38270 }
+			}
+		}
+		prestige = 25
+		random_list = { 
+		    75 = { character_event = { id = templars.15 tooltip = "EVTTOOLTIPtemplars.11" } }
+            25 = { character_event = { id = templars.14 tooltip = "EVTTOOLTIPtemplars.11" } } 
+		}   
+	}
+	
+	option = {
+		name = "EVTOPTCtemplars.13"
+		prestige = -50
+        add_trait = craven
+		hidden_tooltip = {
+			character_event = { id = 38257 }
+		}
+	}
+}
+
+
+#We hurt
+character_event = {
+	id = templars.14
+	desc = "EVTDESCtemplars.14"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtemplars.14"
+		add_trait = wounded
+        random = { chance = 35 death = { death_reason = death_battle } }
+	}
+}
+
+#Success!
+character_event = {
+	id = templars.15
+	desc = "EVTDESCtemplars.15"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtemplars.15"
+		prestige = 20
+        random = { 
+		    chance = 10
+		    add_trait = war_hero 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.94 }
+			}
+		}
+	}
+}
+
+#Templar scouting party gets lost in the desert
+character_event = {
+	id = templars.16
+	desc = "EVTDESCtemplars.16"
+	picture = GFX_evt_desert
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+	trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+
+    mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.16"
+		health = -1
+		prestige = 25
+	}
+	
+	option = {
+		name = "EVTOPTBtemplars.16"
+		random = {
+			chance = 33
+			add_trait = trusting
+			hidden_tooltip = {
+				character_event = {
+					id = 38250 #Notify Trusting
+				}
+			}
+		}		
+	}
+}
+
+#Templar scouting party encounters stranded pilgrims
+character_event = {
+	id = templars.17
+	desc = "EVTDESCtemplars.17"
+	picture = GFX_evt_desert
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+	trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "EVTOPTAtemplars.17"
+		piety = 15
+		wealth = -100
+	}
+	option = {
+		name = "EVTOPTB86860"
+		piety = -25
+	}
+}
+
+#Templars ambushed by hashashins
+character_event = {
+	id = templars.18
+	desc = "EVTDESCtemplars.18"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	prisoner = no
+    capable_only = yes
+    min_age = 14
+    only_men = yes
+	
+	trigger = {
+		OR = {
+		    trait = templar
+            trait = templar_leader 
+		}
+        NOT = { has_character_flag = retired_templar } 
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "EVTOPTAtemplars.18"
+                random = { chance = 15
+                death = { death_reason = death_hashshashin } }
+		character_event = { id = templars.19 tooltip = EVTTOOLTIPtemplars.19 }
+	}
+}
+
+#The battle hardens
+character_event = {
+	id = templars.19
+	desc = "EVTDESCtemplars.19"
+	picture = GFX_evt_templars_assassins
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAtemplars.19"
+		prestige = 50
+        random_list = { 
+		    65 = { death = { death_reason = death_hashshashin } }
+            35 = { 
+			    add_trait = war_hero
+				hidden_tooltip = {
+					character_event = { id = tptt_traits.94 }
+				}
+		        prestige = 100 random = { chance = 35 add_trait = wounded } 
+		    } 
+		}
+	}
+}
+
+#Going to Templar court
+character_event = {
+	id = templars.21
+	desc = "I'm going to the Templars"
+	picture = GFX_evt_templar_knight
+	border = GFX_event_normal_frame_war
+        
+    max_age = 50
+    only_men = yes
+	is_triggered_only = yes
+	
+	trigger = {
+        trait = templar
+        is_ruler = no
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+	
+	option = {
+		name = "Let's go"
+        d_knights_templar = { 
+		    holder_scope = {
+                set_defacto_vassal = ROOT 
+			} 
+		}	
+        remove_trait = templar
+        add_trait = templar_leader
+	}
+}
+
+# Going home after Templar service
+character_event = {
+	id = templars.22
+	desc = "EVTDESCtemplars.2"
+	picture = GFX_evt_knights_banner
+	border = GFX_event_normal_frame_war
+        
+    min_age = 30
+    capable_only = yes
+    only_rulers = yes
+    only_men = yes
+	is_triggered_only = yes
+	
+	trigger = {
+        trait = templar
+				
+		NOT = { 
+			OR = {
+                has_character_flag = retired_templar  
+                has_character_flag = going_home 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.2"
+        piety = -25
+        set_character_flag = retired_templar  
+        set_character_flag = going_home 
+        hidden_tooltip = { character_event = { id = templars.31 days = 1825 } }               
+	}
+	
+    option = {
+		name = "This is my place"
+        piety = 50
+        random_list = {
+            33 = { 
+			    add_trait = zealous 
+				hidden_tooltip = {
+					character_event = { id = 38269 }
+				}
+			}
+            33 = { 
+			    add_trait = humble 
+				hidden_tooltip = {
+					character_event = { id = 38260 }
+				}
+			}
+            33 = { 
+			    add_trait = brave 
+				hidden_tooltip = {
+					character_event = { id = 38270 }
+				}
+			} 
+		}
+	}
+}
+
+# Templar going home events - Shipwrecked
+character_event = {
+	id = templars.23
+	desc = "EVTDESC86810"
+	picture = GFX_evt_medieval_ship
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+    only_men = yes
+	min_age = 30
+	
+	trigger = {
+        trait = templar
+        has_character_flag = going_home
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = { # Shares food
+		name = "EVTOPTA86810"
+		character_event = { id = templars.24 tooltip = EVTTOOLTIP86811 }
+	}
+	option = { # Does not share
+		name = "EVTOPTB86810"
+		character_event = { id = templars.25 tooltip = EVTTOOLTIP86812 }
+	}
+}
+
+# Shipwrecked: Shared Food
+character_event = {
+	id = templars.24
+	desc = "EVTDESCtemplars.4"
+	picture = GFX_evt_medieval_ship
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = templar
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.4"
+		piety = 15
+		health = -1
+	}
+}
+
+# Shipwrecked: Did NOT Share Food
+character_event = {
+	id = templars.25
+	desc = "EVTDESCtemplars.5"
+	picture = GFX_evt_medieval_ship
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = templar
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.5"
+		piety = -15
+	}
+}
+
+# Mutiny
+character_event = {
+	id = templars.26
+	desc = "EVTDESCtemplars.6"
+	picture = GFX_evt_medieval_ship
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+	
+	min_age = 30
+    capable_only = yes
+    only_rulers = yes
+    only_men = yes
+	
+	trigger = {
+        trait = templar
+        has_character_flag = going_home
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "EVTOPTAtemplars.6"
+		character_event = { id = templars.27 tooltip = EVTTOOLTIP86816 }
+		random = {
+			chance = 35
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+		}
+        random = {
+			chance = 10
+			death = { death_reason = death_battle }
+		}
+	}
+	option = {
+		name = "EVTOPTBtemplars.6"
+		character_event = { id = templars.28 tooltip = EVTTOOLTIP86817 }
+	}
+}
+
+# Mutiny: Fights Crew
+character_event = {
+	id = templars.27
+	desc = "EVTDESCtemplars.7"
+	picture = GFX_evt_templar_knight
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = templar
+	}
+	
+	option = {
+		name = "EVTOPTA86816"
+		prestige = 15
+        add_trait = brave
+		hidden_tooltip = {
+		    character_event = { id = 38270 }
+		}
+	}
+}
+
+# Mutiny: Sneaks Off Ship
+character_event = {
+	id = templars.28
+	desc = "EVTDESC86817"
+	picture = GFX_evt_medieval_ship
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+
+    is_triggered_only = yes	
+
+	trigger = {
+		trait = templar
+	}
+	
+	option = {
+		name = "EVTOPTA86817"
+		prestige = -15
+	}
+}
+
+#Muslim pirates
+character_event = {
+	id = templars.30
+	desc = "EVTDESCtemplars.10"
+	picture = GFX_evt_medieval_ship
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+	
+	min_age = 30
+        capable_only = yes
+        only_rulers = yes
+        only_men = yes
+	
+	trigger = {
+        trait = templar
+        has_character_flag = going_home
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "EVTOPTA86110"
+		prestige = -25
+	}
+	option = {
+		name = "EVTOPTB86110"
+		piety = 25
+		random = {
+			chance = 35
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+		}
+        random = {
+			chance = 10
+			death = { death_reason = death_battle }
+		}
+	}
+}
+
+
+#Getting home
+character_event = {
+	id = templars.31
+	desc = "I'm finally home"
+	picture = GFX_evt_knights_banner
+	border = GFX_event_normal_frame_war
+	
+	trigger = {
+        trait = templar
+        has_character_flag = going_home
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "May God be praised"
+		prestige = 25
+        hidden_tooltip = {
+            remove_trait = templar
+            add_trait = templar_leader 
+		}
+        clr_character_flag = going_home
+	}
+}

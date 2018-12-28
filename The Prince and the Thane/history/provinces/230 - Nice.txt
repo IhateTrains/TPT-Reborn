@@ -1,0 +1,24 @@
+# 230 - Nice
+
+# County Title
+title = c_nice
+
+# Settlements
+max_settlements = 4
+b_vence = castle
+b_nizza = city
+b_antibes = temple
+
+#b_cannes = city
+#b_roquebrune = castle
+#b_glandeves = castle
+
+# Misc
+culture = ligurian
+religion = catholic
+
+
+# History
+
+1066.1.1 = { trade_post = b_spinola }
+1121.1.1 = { capital = b_antibes }

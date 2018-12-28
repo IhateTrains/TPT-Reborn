@@ -1,0 +1,24 @@
+# 47 - Clydesdale
+
+# County Title
+title = c_clydesdale
+
+# Settlements
+max_settlements = 4
+b_lanark = castle
+b_st_kentigern = temple
+b_glasgow = city
+
+#b_dumbarton = castle
+#b_cadzow = castle
+#b_bothwell = castle
+#b_lesmahagow = castle
+#b_renfrew = castle
+
+# Misc
+culture = norsegaelic
+religion = catholic
+
+#History
+1235.9.25 = { culture = scottish }
+

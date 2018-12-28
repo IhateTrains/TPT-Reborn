@@ -1,0 +1,23 @@
+# 467 - Split
+
+# County Title
+title = c_split
+
+# Settlements
+max_settlements = 5
+
+b_klis = castle
+b_split = city
+b_hvar = temple
+b_trogir = city # Tragur in Dalamatian
+#b_solin = city
+#b_makarska = castle
+#b_sinj = castle
+#b_imotski = castle
+
+# Misc
+culture = croatian
+religion = catholic
+
+# History
+1066.1.1 = { trade_post = b_dandolo }

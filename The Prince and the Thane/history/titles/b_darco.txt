@@ -1,0 +1,21 @@
+954.1.1={
+	holder=2220019 #Marino D'Arco
+	holding_dynasty = 8001001 # D'Arco
+	liege="d_amalfi"
+}
+
+1000.1.1={
+	holder=2220020 #Landolfo D'Arco
+}
+
+1030.1.1={
+	holder=2220021 #Niccolò D'Arco
+}
+
+1065.1.1={
+	holder=2220022 #Giovanni D'Arco
+}
+
+1073.1.1={
+	holder=0
+}

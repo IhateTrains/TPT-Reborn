@@ -1,0 +1,10 @@
+1066.1.1={
+	holder=73492
+    law = succ_patrician_elective
+}
+1079.1.1={
+	holder=73493
+}
+1095.1.1={
+	holder=0
+}

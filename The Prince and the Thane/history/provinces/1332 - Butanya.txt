@@ -1,0 +1,17 @@
+# 1332 - Butanya
+
+# County Title
+title = c_butanya
+
+# Settlements
+max_settlements = 3
+b_butanya = castle
+b_samannud = city
+
+#b_saa = temple
+
+# Misc
+culture = egyptian_arabic
+religion = sunni
+
+# History

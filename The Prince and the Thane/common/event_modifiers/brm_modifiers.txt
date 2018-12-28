@@ -1,0 +1,47 @@
+###################################################################
+#
+# The Prince and the Thane brm mod modifiers - rewritten by idib816
+#
+###################################################################
+
+brm_recent_revolt = {
+	local_revolt_risk = -1
+	icon = 13
+}
+
+brm_revolt = {
+	city_tax_modifier = -0.5
+	castle_tax_modifier = -0.5
+	temple_tax_modifier = -0.5
+	city_levy_size = -0.25
+	castle_levy_size = -0.25
+	temple_levy_size = -0.25
+	local_revolt_risk = -2.5
+	icon = 31
+}
+
+brm_revolt_suppressed = {
+	local_revolt_risk = -0.05
+	icon = 13
+}
+
+brm_reduced_tax = {
+	city_tax_modifier = -0.25
+	castle_tax_modifier = -0.25
+	temple_tax_modifier = -0.25
+	local_revolt_risk = -1
+	icon = 24
+}
+
+brm_rebel_offer_rejected = {
+	local_revolt_risk = 0.025
+	icon = 32
+}
+
+brm_isolated_province = {
+	city_tax_modifier = -0.3
+	castle_tax_modifier = -0.3
+	temple_tax_modifier = -0.3
+	local_revolt_risk = 0.05
+	icon = 24
+}

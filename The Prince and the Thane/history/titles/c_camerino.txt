@@ -1,0 +1,29 @@
+980.1.1={
+	holder=1191184 #Adalberto Azzo di Canossa
+	liege="d_toscana"
+}
+988.1.1={
+	holder=7756 #Bonifacio di Canossa
+}
+1052.5.6={
+	holder=7758 #Federigo di Canossa
+}
+1055.7.1={
+	holder=7757 #Matilda di Canossa
+}
+1077.1.1={
+	liege=k_papal_state
+	holder=0
+}
+1282.1.1={
+	holder=1191214 #Gentile I Varano
+}
+1284.1.1={
+	holder=1191215 #Rodolfo I Varano
+}
+1310.1.1={
+	holder=1191216 #Berardo I Varano
+}
+1322.1.1={
+	holder=1191217 #Gentile II Varano
+}

@@ -1,0 +1,1457 @@
+#################### 
+#
+# ADDITIONAL MERCS
+#
+####################	
+
+d_the_legendary_longbowmen = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 64 # Gwynedd
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_the_legendary_longbowmen_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_the_lost_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 483 # Rhodos
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_the_lost_company_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_genovese_crossbow_contingent = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 234 # Genoa
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_genovese_crossbow_contingent_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_ventura_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 357 # Venezia
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "Condottiero"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_ventura_company_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_free_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 496 # Byzantion
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "Condottiero"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_free_company_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_novgorod_guard = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 414 # Novgorod
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_novgorod_guard_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_the_messengers_of_loki = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 280 # Vasterbotten
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_the_messengers_of_loki_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_the_weeping_blade = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 292 # Sodermanland
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_the_weeping_blade_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_the_howling_wind = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 303 # Skane
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_the_howling_wind_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_trusty_swords = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 421 # Zhmud
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = baltic_pagan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_trusty_swords_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_polish_cavalrymen = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 529 # Plock
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+                        religion_group = jewish_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_polish_cavalrymen_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_mountain_band = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 523 # Heves
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_mountain_band_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_company_of_the_bear = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 568 # Smolensk
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_company_of_the_bear_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_pikes_of_geneve = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 239 # Geneve
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_pikes_of_geneve_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_dutch_freemen = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 80 # Holland
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_dutch_freemen_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_mercantile_guard = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 262 # Lubeck
+	
+	# Hire Trigger
+	allow = {
+		is_republic = yes
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_mercantile_guard_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_highland_band = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 44 # Atholl
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_highland_band_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_neapolitan_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 334 # Napoli
+	
+	# Hire Trigger
+	allow = {
+		is_republic = yes
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_neapolitan_company_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_sicilian_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 340 # Palermo
+	
+	# Hire Trigger
+	allow = {
+		is_republic = yes
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_sicilian_company_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_iberian_knights = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 181 # Cordoba
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_iberian_knights_modifier
+	strength_growth_per_century = 0.5
+}
+
+
+d_berber_camel_riders = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 843 # Marrakech
+	
+	# Hire Trigger
+	allow = {
+		religion_group = muslim
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_berber_camel_riders_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_norman_armoured_horse_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 345 # Lecce
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_norman_armoured_horse_company_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_retainers = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 73 # Kent
+	
+	# Hire Trigger
+	allow = {
+		culture_group = anglo_saxon
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_retainers_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_armenian_band = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 762 # Adana
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_armenian_band_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_georgian_knights = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 601 # Imeretia
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_georgian_knights_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_wandering_horsemen = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 684 # Nisibin
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_wandering_horsemen_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_gallowglass_of_the_hebrides = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 14 # Desmond
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_gallowglass_of_the_hebrides_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_clan_macdonnell = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 49 # Carrick
+	
+	# Hire Trigger
+	allow = {
+		culture_group = celtic
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_clan_macdonnell_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_knights_of_honour = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 221 # Provence
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_horsemen_of_the_nile_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_black_shirts = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 344 # Taranto
+	
+	# Hire Trigger
+	allow = {
+			religion_group = christian
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_black_shirts_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_guards_of_aleppo = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 733 # Aleppo
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_guards_of_aleppo_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_guards_of_baghdad = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 693 # Baghdad
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = muslim
+		}
+	}
+	
+	# Parent Religion 
+	religion = shiite
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_guards_of_baghdad_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_golden_bow = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 623 # Khwarizm
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = muslim
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_golden_bow_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_chosen = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 649 # Basra
+	
+	# Hire Trigger
+	allow = {
+           religion_group = jewish_group
+	}
+	
+	# Parent Religion 
+	religion = jewish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_chosen_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_ancient_cataphract_alliance = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 693 # Baghdad
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_ancient_cataphract_alliance_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_sweeping_scythe = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 817 # Tunis
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = muslim
+		}
+	}
+	
+	# Parent Religion 
+	religion = shiite
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_sweeping_scythe_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_brave_ones = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 840 # Fes
+	
+	# Hire Trigger
+	allow = {
+			religion_group = muslim
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_brave_ones_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_brothers_of_islam = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 772 # Acre
+	
+	# Hire Trigger
+	allow = {
+			religion_group = muslim
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_brothers_of_islam_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_wroth_of_tengri = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 566 # Sugrov
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+                        religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_wroth_of_tengri_modifier
+	strength_growth_per_century = 0.5
+}
+
+d_coming_storm = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 564 # Desht
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion = orthodox
+			religion_group = muslim
+            religion_group = jewish_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	modifier = d_coming_storm_modifier
+	strength_growth_per_century = 0.5
+}

@@ -1,0 +1,26 @@
+# 958 - Trieste
+
+# County Title
+title = c_trieste
+
+# Settlements
+max_settlements = 3
+
+b_trieste = city
+b_fiume = temple
+
+#b_duino = castle
+
+
+# Misc
+culture = venetian
+religion = catholic
+
+# History
+
+948.1.1 = {
+	capital = b_fiume
+}
+1295.1.1 = {
+	capital = b_trieste
+}

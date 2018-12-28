@@ -1,0 +1,21 @@
+# 273 - Oppland
+
+# County Title
+title = c_oppland
+
+# Settlements
+max_settlements = 2
+b_dovre = castle
+#b_favang = temple
+#b_lom = castle
+#b_oyer = city
+#b_slidre = castle
+#b_flesberg = temple
+#b_garmo = temple
+
+# Misc
+culture = norwegian
+religion = catholic
+
+# History
+

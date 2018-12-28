@@ -1,0 +1,34 @@
+# 463 - Usora
+
+# County Title
+title = c_usora
+
+# Settlements
+max_settlements = 4
+
+b_dobojgrad = castle
+#b_srebrenik = castle
+#b_maglaj = castle
+#b_gradacac = castle
+#b_tisnica = castle
+ 
+b_soli = city
+#b_gracanica = city
+#b_zepce = city
+#b_dobropolje = city
+#b_tolisa = city
+#b_kovac = city
+ 
+#b_tesanj = temple
+#b_modrica = temple
+#b_grad = temple
+#b_dubnica = temple
+ 
+
+# Misc
+culture = bosnian
+religion = catholic
+
+# History
+
+1232.1.1= { religion = bogomilist } 

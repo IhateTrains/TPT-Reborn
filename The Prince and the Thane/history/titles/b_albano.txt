@@ -1,0 +1,28 @@
+800.1.1={
+	liege="c_tusculum"
+}
+964.1.1={
+	holder=1191189 #Virginio Savelli
+}
+993.1.1={
+	holder=1191190 #Giacomo Savelli
+}
+1048.1.1={
+	holder=1191191 #Licinio Savelli
+}
+1104.1.1={
+	holder=1191192 #Aimerico Savelli
+}
+1170.1.1={
+	holder=1191193 #Giovanni Savelli
+}
+1205.1.1={
+	holder=1191194 #Luca Savelli
+}
+1279.1.1={
+	holder=1191196 #Pandolfo Savelli
+}
+1310.1.1={
+	holder=1191197 #Jacopo Savelli
+}
+

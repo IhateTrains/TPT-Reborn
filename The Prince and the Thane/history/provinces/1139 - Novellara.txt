@@ -1,0 +1,27 @@
+# 1139 - Novellara
+
+# County Title
+title = c_novellara
+
+# Settlements
+max_settlements = 3
+
+b_novellara = city
+b_guastalla = temple
+#b_gonzaga = castle
+#b_luzzara = city
+#b_marianamantovana =temple
+#b_suzzara = castle
+
+
+
+# Misc
+culture = italian
+religion = catholic
+
+# History
+
+1319.1.1 = { 
+    b_gonzaga = castle
+    capital = b_gonzaga 
+}

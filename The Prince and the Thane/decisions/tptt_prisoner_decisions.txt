@@ -1,0 +1,77 @@
+decisions = {
+
+	demand_trial_by_combat = {
+		is_high_prio = yes
+		potential = {	
+			prisoner = yes	
+			OR = {
+				NOT = { has_character_flag = demmanded_trial_by_combat }
+				had_character_flag = { flag = demmanded_trial_by_combat days = 730 } 
+			}	
+			host = {
+				NOT = { has_character_flag = trial_by_combat }
+			}	
+			OR = {
+				trait = poor_warrior
+				trait = trained_warrior
+				trait = skilled_warrior
+				trait = master_warrior
+                                trait = knight
+                                martial = 12
+			}	
+			is_ill = no
+			is_female = no
+		    NOT = { has_character_flag = war_prisoner }
+			NOT = { trait = dwarf }
+			NOT = { trait = clubfooted }
+			NOT = { trait = hunchback }
+			OR = { 
+			    religion_group = pagan_group
+                religion_group = baltic_pagan_group
+                religion_group = other_pagan_group
+                culture_group = mittle_european
+                culture_group = north_germanic
+                culture_group = anglo_saxon
+                culture_group = celtic 
+                culture_group = baltic 
+                culture_group = finno_ugric
+                culture = norman
+			}
+			host = { 
+                is_female = no
+				age = 14
+		    	OR = { 
+		    	    religion_group = pagan_group
+                    religion_group = baltic_pagan_group
+                    religion_group = other_pagan_group
+                    culture_group = mittle_european
+                    culture_group = north_germanic
+                    culture_group = anglo_saxon
+                    culture_group = celtic 
+                    culture_group = baltic 
+                    culture_group = finno_ugric
+                    culture = norman
+		    	} 
+			}
+		}
+		allow = {	
+			prisoner = yes
+			age = 14		
+			NOT = { trait = incapable }
+		}
+		effect = {
+			custom_tooltip = TOOLTIPTRIALBYCOMBAT2
+			hidden_tooltip = {
+				host = {
+					character_event = {
+						id = trial_by_combat.4
+						days = 2
+					}
+				}
+			}	
+		}
+		ai_will_do = {
+			factor = 0.85
+		}
+	}
+}

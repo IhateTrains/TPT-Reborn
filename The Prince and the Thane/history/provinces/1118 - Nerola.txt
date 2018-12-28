@@ -1,0 +1,26 @@
+# 1118 - Nerola
+
+# County Title
+title = c_nerola
+
+# Settlements
+max_settlements = 5
+
+
+b_nerola = castle
+b_palombarasabina = castle
+b_rieti = city
+
+#b_marcellina = temple
+#b_montesangiovannicampano = castle
+#b_roccaguglielma = castle
+#b_roccadicampolato = castle
+#b_arsoli = temple
+#b_sanpolodeicavalieri = castle
+
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History

@@ -1,0 +1,64 @@
+From;To;Type;Through;Comment
+5;45;sea;1633;Ulaid-Argyll
+5;50;sea;1633;Ulaid-Galloway
+35;40;sea;1602;Western Isles-Moray
+36;37;sea;1603;Orkney-Caithness
+50;54;sea;1633;Galloway-Isle of Man
+72;73;sea;1555;Essex-Kent
+78;79;sea;1563;Brugge-Zeeland
+79;80;sea;1563;Zeeland-Holland
+79;93;sea;1563;Zeeland-Gent
+81;84;sea;1563;Westfriesland-Frisia
+166;839;sea;1544;Algeciras-Ceuta
+166;841;sea;1544;Algeciras-Tangiers
+264;265;sea;1608;Slesvig-Fyn
+265;1027;sea;1608;Fyn-Sjaelland
+266;303;sea;1608;Sjaelland-Skåne
+1073;291;sea;1614;Attundaland-Åland
+1073;292;sea;1568;Attundaland-Södermanland
+291;382;sea;1614;Åland-Suomi
+293;1071;sea;1571;Östergötland-Skara
+1067;300;sea;1612;Kalmar-Öland
+303;305;sea;1608;Skåne-Bornholm
+324;1103;sea;1642;Corsica-Gallura
+338;339;sea;1540;Reggio-Messina
+356;357;sea;1544;Venezia-Treviso
+373;376;sea;1613;Kurzeme-Saaremaa
+376;377;sea;1613;Saaremaa-Liivimaa
+473;474;sea;1541;Arta-Corfu
+474;476;sea;1541;Corfu-Achaia
+475;476;sea;1541;Hellas-Achaia
+483;747;sea;1546;Rhodos-Lykia
+484;485;sea;1545;Naxos-Euboia
+486;746;sea;1545;Samos-Ephesos
+487;744;sea;1545;Lesbos-Abydos
+495;744;sea;1556;Kaliopolis-Abydos
+562;598;sea;1559;Korchev-Tmutarakan
+826;827;sea;1635;Menorca-Mallorca
+967;827;sea;1635;Eivissa-Mallorca
+472;1014;sea;1541;Epeiros-Corfu
+1304;1043;sea;1656;Sydsjælland-Lolland
+64;1183;sea;1633;Gweynd-Anglesey
+848;263;sea;1609;Bremen-Eselsfleth
+1267;366;sea;1608;Szvuine-Stettin
+1267;308;sea;1608;Szvuine-Wolgast
+858;874;;;Aden-Tadjoura
+859;874;;;Taizz-Tadjoura
+854;870;;;Jask-Dhu Zabi
+651;653;;;Damman-Bahrein
+652;653;;;Al Hasa-Bahrein
+730;713;;;Palmyra-Qasralhayralsharqi
+713;729;;;Qasralhayralsharqi-Alqaim
+730;726;;;Palmyra-Qasralhayralgharbi
+726;728;;;Qasralhayralgharbi-Damacus
+722;785;;;Elim-Nekhel
+722;786;;;Elim-Stcathrine
+724;716;;;Amman-Dumat al-Jundal
+864;716;;;Hail-Dumat al-Jundal
+864;865;;;Hail-Talabija
+865;654;;;Talabija-Subala
+654;649;;;Subala-Basra
+865;717;;;Talabija-Mawijan
+863;717;;;Harer-Mawijan
+199;201;;;Burgos-Nájera
+-1;-1;;-1;-1

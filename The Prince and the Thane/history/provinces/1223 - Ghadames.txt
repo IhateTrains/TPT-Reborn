@@ -1,0 +1,15 @@
+# 1223 - Ghadames
+
+# County Title
+title = c_ghadames
+
+# Settlements
+max_settlements = 1
+
+b_ghadames = city
+
+# Misc
+religion = ibadi
+culture = zanata
+
+# History

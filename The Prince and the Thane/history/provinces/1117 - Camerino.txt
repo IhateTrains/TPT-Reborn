@@ -1,0 +1,31 @@
+# 1117 - Camerino
+
+# County Title
+title = c_camerino
+
+# Settlements
+max_settlements = 4
+
+b_camerino = city
+b_matelica = castle
+b_norcia = city
+#b_varano = castle
+#b_caldarola = castle
+#b_preci = temple
+#b_gualdotadino = city
+#b_vallecastellana = castle
+#b_roccadeiborgia = castle
+#b_fabriano = city
+#b_castelraimondo = tempel
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History
+1050.1.1 = { capital = b_matelica } 
+1077.1.1 = { capital = b_camerino } 
+1282.1.1 = { 
+    b_varano = castle
+    capital = b_varano 
+} 

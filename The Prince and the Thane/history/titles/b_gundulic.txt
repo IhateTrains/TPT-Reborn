@@ -1,0 +1,33 @@
+1000.1.1={
+	holder=2220060 #Igor Gundulic
+	holding_dynasty = 8001004 # Gundulic
+	liege="d_ragusa"
+}
+
+1040.1.1={
+	holder=2220061 #Petar Gundulic
+}
+
+1100.1.1={
+	holder=2220062 #Ivan Gundulic
+}
+
+1140.1.1={
+	holder=2220063 #Ladislav Gundulic
+}
+
+1180.1.1={
+	holder=2220064 #Petar Gundulic
+}
+
+1220.1.1={
+	holder=2220065 #Ivan Gundulic
+}
+
+1260.1.1={
+	holder=2220066 #Ladislav Gundulic
+}
+
+1300.1.1={
+	holder=2220067 #Igor Gundulic
+}

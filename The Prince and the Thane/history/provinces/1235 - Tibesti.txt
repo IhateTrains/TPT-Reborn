@@ -1,0 +1,15 @@
+# 1235 - Tibesti
+
+# County Title
+title = c_tibesti
+
+# Settlements
+max_settlements = 1
+
+b_sherda = city
+
+# Misc
+religion = sunni
+culture = tuareg
+
+# History

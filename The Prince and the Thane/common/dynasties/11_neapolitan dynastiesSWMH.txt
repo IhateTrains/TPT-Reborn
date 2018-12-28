@@ -1,0 +1,474 @@
+######################################
+#New neapolitan dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035641-1000035690
+######################################
+
+1000035641 = {
+name="Acquaviva"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  } 
+}
+
+1000035643 = {
+name="Caracciolo"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  } 
+}
+
+1000035644 = {
+name="Carafa"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 196
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  } 
+}
+
+1000035645 = {
+name="Sanseverino"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 187
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  } 
+}
+
+1000035646 = {
+name="Sergi"
+ culture = neapolitan
+}
+1000035647 = {
+name="Tocco"
+ culture = neapolitan 
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 39
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+#(already present in the big list, signed as southern, but they were neapolitan)
+1000035648 = {
+name="Abbate de Castello"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 238
+          emblem = 0
+          color = 1
+          color = 4
+          color = 0
+      }
+  } 
+}
+1000035649 = {
+name="Acciapaccia"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 11
+          color = 2
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035650 = {
+name="Antinori"
+ culture =neapolitan
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 174
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+      layer = {
+          texture = 1
+          texture_internal = 0
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035651 = {
+name="Alagna"
+ culture = neapolitan # Amalfi
+# d'or à la croix de gueules (Alagni)
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 120
+          emblem = 0
+          color = 2
+          color = 0
+          color = 3
+      }
+  } 
+}
+
+1000035652 = {
+name="Cantelmo"
+ culture = neapolitan # They are actually from Provence (Gantelme)
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 31
+          color = 2
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035653 = {
+name="Capano"
+ culture = neapolitan
+# solo : d'argent à la bande de gueules, chargée de trois fleurs de lis d'or
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 5
+          texture_internal = 96
+          emblem = 0
+          color = 0
+          color = 2
+          color = 1
+      }
+  }
+}
+
+1000035654 = {
+name="Capasso"
+ culture = neapolitan
+# solo : d'azur au sautoir d'or, cantonné de quatre têtes de lions de même
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 5
+          texture_internal = 75
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  }
+}
+
+1000035655 = {
+name="Capece"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 0
+          color = 3
+          color = 0
+      }
+  } 
+}
+
+1000035656 = {
+name="d'Afflitto"
+# solo : vairé d'or et d'azur
+ culture = neapolitan # Amalfi
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 179
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035657 = {
+name="Dentice"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 50
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035658 = {
+name="Filangieri"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 120
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+
+1000035659 = {
+name="Pignatelli"
+ culture = neapolitan
+# solo : d'or à trois chaudrons de sable
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 233
+          emblem = 0
+          color = 3
+          color = 0
+          color = 0
+      }
+  }
+}
+
+1000035660 = {
+name="Pironti"
+ culture = neapolitan
+}
+1000035661 = {
+name="Rizzo"
+ culture = neapolitan
+}
+1000035662 = {
+name="Ruggi"
+ culture = neapolitan
+# de gueules à la bande d'argent, chargé d'un lion passant de gueules
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 5
+          texture_internal = 99
+          emblem = 0
+          color = 2
+          color = 1
+          color = 2
+      }
+  }
+}
+1000035663 = {
+name="Guarna" # Avarna
+ culture = neapolitan # Salerno
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 180
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035664 = {
+name="della Marra"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 134
+          emblem = 0
+          color = 1
+          color = 4
+          color = 0
+      }
+  } 
+}
+1000035665 = {
+name="di Sangro"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 230
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035666 = {
+name="Fontanarosa"
+ culture = neapolitan
+}
+
+1000035667 = {
+name="Gesualdo"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 3
+          color = 1
+          color = 0
+      }
+  } 
+}
+
+1000035668 = {
+name="Lancellotti"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 194
+          emblem = 30
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035669 = {
+name="Nuzzo"
+ culture = neapolitan
+}
+1000035670 = {
+name="Pagano"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 5
+      layer = {
+          texture = 2
+          texture_internal = 0
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 230
+          emblem = 3
+          color = 0
+          color = 4
+          color = 2
+      }
+  } 
+}
+
+1000035671 = {
+name="Sanfelice"
+ culture = neapolitan
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 38
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 38
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  } 
+}
+
+1000035672 = {
+name="Zurlo"
+ culture = neapolitan
+# de gueules à la bande endentée d'or et d'azur *
+}
+
+
+
+
+
+
+######################################
+#Generic dynasites
+#Range 1000035691-1000035710
+######################################
+
+
+
+
+

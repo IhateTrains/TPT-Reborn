@@ -1,0 +1,16 @@
+# 1293 - Rilsk
+
+# County Title
+title = c_rilsk
+
+# Settlements
+max_settlements = 3
+b_rylsk = castle
+b_lgov = city
+#b_starivyrky = city
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History

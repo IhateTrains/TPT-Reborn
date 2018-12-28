@@ -1,0 +1,555 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+serbian_building_1;Small Husar Cavalry Bands;;;;;;;;;;;;;x
+serbian_building_2;Small Husar Cavalry Grounds;;;;;;;;;;;;;x
+serbian_building_3;Organized Husar Cavalry Grounds;;;;;;;;;;;;;x
+serbian_building_4;Massed Husar Training Grounds;;;;;;;;;;;;;x
+ca_culture_hungarian_1;Magyar Light Cavalry Grounds;;;;;;;;;;;;;x
+ca_culture_hungarian_2;Settled Nomad Host Lands;;;;;;;;;;;;;x
+ca_culture_hungarian_3;Settled Cuman Lands;;;;;;;;;;;;;x
+ca_culture_hungarian_4;Settled Szekely Lands;;;;;;;;;;;;;x
+sicilian_building_1;Local Saracen Bowmen Recruitment;;;;;;;;;;;;;x
+sicilian_building_2;Rural Saracen Archery Range;;;;;;;;;;;;;x
+sicilian_building_3;Urban Saracen Archery Range;;;;;;;;;;;;;x
+sicilian_building_4;Permanent Saracen Archer Detachment;;;;;;;;;;;;;x
+dutch_building_1;Flemish Pike Levy;;;;;;;;;;;;;x
+dutch_building_2;Flemish Pike Grounds;;;;;;;;;;;;;x
+dutch_building_3;Urban Flemish Pike Grounds;;;;;;;;;;;;;x
+dutch_building_4;Flemish Pikeman Barracks;;;;;;;;;;;;;x
+bulgarian_building_1;Small Bulgarian Horseman Grounds;;;;;;;;;;;;;x
+bulgarian_building_2;Medium Bulgarian Horseman Grounds;;;;;;;;;;;;;x
+bulgarian_building_3;Reformed Bulgarian Cavalry Grounds;;;;;;;;;;;;;x
+bulgarian_building_4;Grand Bulgarian Cavalry Grounds;;;;;;;;;;;;;x
+polish_building_1;Petty Lords Gathering;;;;;;;;;;;;;x
+polish_building_2;Minor Lords Gathering;;;;;;;;;;;;;x
+polish_building_3;Vassal Lords Gathering Grounds;;;;;;;;;;;;;x
+polish_building_4;King's Personal Retinue;;;;;;;;;;;;;x
+caucasus_building_1;Caucasian Warrior Camp;;;;;;;;;;;;;x
+caucasus_building_2;Caucasian Infantry Grounds;;;;;;;;;;;;;x
+caucasus_building_3;Caucasian Armoury;;;;;;;;;;;;;x
+caucasus_building_4;Great Caucasian Warrior Host;;;;;;;;;;;;;x
+irish_building_1;Ceithern Recruitment Center;;;;;;;;;;;;;x
+irish_building_2;Gallóglaigh Support;;;;;;;;;;;;;x
+irish_building_3;Heavy Gallóglaigh Training;;;;;;;;;;;;;x
+irish_building_4;Royal Gallóglaigh Barracks;;;;;;;;;;;;;x
+greek_building_1;Castle Study;;;;;;;;;;;;;x
+greek_building_2;Castle Library;;;;;;;;;;;;;x
+greek_building_3;Castle Archives;;;;;;;;;;;;;x
+greek_building_4;Royal Archives;;;;;;;;;;;;;x
+north_german_building_1;Small Húskarlar Training Ground;;;;;;;;;;;;;x
+north_german_building_2;Medium Húskarlar Training Ground;;;;;;;;;;;;;x
+north_german_building_3;Large Húskarlar Training Ground;;;;;;;;;;;;;x
+north_german_building_4;Royal Húskarlar Training Ground;;;;;;;;;;;;;x
+ca_culture_group_maghreb_1;Small Riding Grounds;;;;;;;;;;;;;x
+ca_culture_group_maghreb_2;Medium Riding Grounds;;;;;;;;;;;;;x
+ca_culture_group_maghreb_3;Large Riding Grounds;;;;;;;;;;;;;x
+ca_culture_group_maghreb_4;Great Riding Grounds;;;;;;;;;;;;;x
+ca_keep_1;Timber Motte & Bailey;;;;;;;;;;;;;x
+ca_keep_2;Rag-Stone Keep & Bailey;;;;;;;;;;;;;x
+ca_keep_3;Rag-Stone Donjon;;;;;;;;;;;;;x
+ca_keep_4;Large Rag-Stone Keep;;;;;;;;;;;;;x
+ca_keep_5;Vaulted Ashlar Keep;;;;;;;;;;;;;x
+ca_keep_6;Great Vaulted Ashlar Keep;;;;;;;;;;;;;x
+ca_keep_7;Quadrangular Castle Keep;;;;;;;;;;;;;x
+ca_town_1;Serf Hamlet;;;;;;;;;;;;;x
+ca_town_2;Peasant Commune;;;;;;;;;;;;;x
+ca_town_3;Baronial Village;;;;;;;;;;;;;x
+ca_town_4;Market Town;;;;;;;;;;;;;x
+ca_town_5;Chartered Borough;;;;;;;;;;;;;x
+ca_town_6;Free City;;;;;;;;;;;;;x
+ca_wall_1;Timber Palisade;;;;;;;;;;;;;x
+ca_wall_2;Drystone Enclosure;;;;;;;;;;;;;x
+ca_wall_3;Rag-Stone Masonry Walls;;;;;;;;;;;;;x
+ca_wall_4;Rag-Stone Curtain Walls;;;;;;;;;;;;;x
+ca_wall_5;Ashlar Shield Walls;;;;;;;;;;;;;x
+ca_wall_6;Towered Ashlar Walls;;;;;;;;;;;;;x
+ca_wall_7;Concentric Ashlar Walls;;;;;;;;;;;;;x
+ca_wall_q_1;Neck Ditch;;;;;;;;;;;;;x
+ca_wall_q_2;Stone Gatehouse;;;;;;;;;;;;;x
+ca_wall_q_3;Moat & Drawbridge;;;;;;;;;;;;;x
+ca_wall_q_4;Crenellated Battlements;;;;;;;;;;;;;x
+ca_wall_q_5;Embattled Parapet;;;;;;;;;;;;;x
+ca_wall_q_6;Enclosed Killing Fields;;;;;;;;;;;;;x
+ca_wall_q_7;Machicolations;;;;;;;;;;;;;x
+ca_wall_q_8;Great Towered Barbicans;;;;;;;;;;;;;x
+ca_heavy_barracks_1;Guard Quarters;;;;;;;;;;;;;x
+ca_heavy_barracks_2;Muster Hall;;;;;;;;;;;;;x
+ca_heavy_barracks_3;Garrison Tower;;;;;;;;;;;;;x
+ca_heavy_barracks_4;Drill Courtyard;;;;;;;;;;;;;x
+ca_heavy_barracks_5;Large Garrison Quarters;;;;;;;;;;;;;x
+ca_heavy_barracks_6;Large Barracks;;;;;;;;;;;;;x
+ca_heavy_barracks_7;Fortified Barracks;;;;;;;;;;;;;x
+ca_light_barracks_1;Militia Muster Grounds;;;;;;;;;;;;;x
+ca_light_barracks_2;Militia Training Grounds;;;;;;;;;;;;;x
+ca_light_barracks_3;Militia Muster Hall;;;;;;;;;;;;;x
+ca_light_barracks_4;Militia Drill Courtyard;;;;;;;;;;;;;x
+ca_light_barracks_5;Militia Barracks;;;;;;;;;;;;;x
+ca_stable_1;Equine Pasture;;;;;;;;;;;;;x
+ca_stable_2;Equine Paddock;;;;;;;;;;;;;x
+ca_stable_3;Large Stables;;;;;;;;;;;;;x
+ca_stable_4;Livery Yard;;;;;;;;;;;;;x
+ca_stable_5;Manage Militaire;;;;;;;;;;;;;x
+ca_smith_1;Blacksmith's Kiln;;;;;;;;;;;;;x
+ca_smith_2;Farrier's Forge;;;;;;;;;;;;;x
+ca_smith_3;Mailsmith's Furnace;;;;;;;;;;;;;x
+ca_smith_4;Armourer's Smithy;;;;;;;;;;;;;x
+ca_smith_5;Arsenal Foundry;;;;;;;;;;;;;x
+ca_justice_1;Village Green;;;;;;;;;;;;;x
+ca_justice_2;Bailiff's Office;;;;;;;;;;;;;x
+ca_justice_3;Manorial Courthall;;;;;;;;;;;;;x
+ca_justice_4;Comital Courthouse;;;;;;;;;;;;;x
+ca_justice_5;Royal Court Gallery;;;;;;;;;;;;;x
+ct_jewish_district;Jewish District;;;;;;;;;;;;;x
+ct_marketplace_1;Farmers Annual Market;;;;;;;;;;;;;x
+ct_marketplace_2;Local Seasonal Market;;;;;;;;;;;;;x
+ct_marketplace_3;Town Square;;;;;;;;;;;;;x
+ct_marketplace_4;Market Porticos;;;;;;;;;;;;;x
+ct_marketplace_5;Merchants Guildhall;;;;;;;;;;;;;x
+ct_marketplace_7;Mercantile Emporium;;;;;;;;;;;;;x
+ct_administration_1;Toll Booth;;;;;;;;;;;;;x
+ct_administration_2;Steward's Chambers;;;;;;;;;;;;;x
+ct_administration_3;Customs Office;;;;;;;;;;;;;x
+ct_administration_4;Assey Court;;;;;;;;;;;;;x
+ct_administration_5;Chancery Hall;;;;;;;;;;;;;x
+ct_wall_1;Timber Palisade;;;;;;;;;;;;;x
+ct_wall_2;Drystone Enclosure;;;;;;;;;;;;;x
+ct_wall_3;Rag-Stone Masonry Walls;;;;;;;;;;;;;x
+ct_wall_4;Rag-Stone Curtain Walls;;;;;;;;;;;;;x
+ct_wall_5;Ashlar Enceinte;;;;;;;;;;;;;x
+ct_wall_6;Tiered Ashlar Ramparts;;;;;;;;;;;;;x
+ct_wall_q_1;Neck Ditch;;;;;;;;;;;;;x
+ct_wall_q_2;Stone Gatehouse;;;;;;;;;;;;;x
+ct_wall_q_3;Moat & Drawbridge;;;;;;;;;;;;;x
+ct_wall_q_4;Crenellated Battlements;;;;;;;;;;;;;x
+ct_wall_q_5;Reinforced City Gates;;;;;;;;;;;;;x
+ct_wall_q_6;Fortified Stone Barbicans;;;;;;;;;;;;;x
+ct_militia_barracks_1;Militia Muster Square;;;;;;;;;;;;;x
+ct_militia_barracks_2;Militia Drill Courtyard;;;;;;;;;;;;;x
+ct_militia_barracks_3;Militia Barracks;;;;;;;;;;;;;x
+ct_militia_barracks_4;City Watch Quarters;;;;;;;;;;;;;x
+ct_militia_barracks_5;City Guard's Armoury;;;;;;;;;;;;;x
+ct_militia_barracks_6;City Guard's Barracks;;;;;;;;;;;;;x
+ct_port_1;Small Ferry Dock;;;;;;;;;;;;;x
+ct_port_2;Local Harbour;;;;;;;;;;;;;x
+ct_port_3;Civilian Harbour;;;;;;;;;;;;;x
+ct_port_4;Trading Port;;;;;;;;;;;;;x
+ct_port_5;Large Regional Port;;;;;;;;;;;;;x
+ct_port_6;Naval District;;;;;;;;;;;;;x
+tp_christian_church_1;Small Oratory;;;;;;;;;;;;;x
+tp_christian_church_2;Parish Chapel;;;;;;;;;;;;;x
+tp_christian_church_3;Large Parish Church;;;;;;;;;;;;;x
+tp_christian_church_4;Sainted Church;;;;;;;;;;;;;x
+tp_christian_church_5;Sainted Cathedral;;;;;;;;;;;;;x
+tp_christian_church_6;Basilica;;;;;;;;;;;;;x
+tp_settlement_1;Peasant Hamlet;;;;;;;;;;;;;x
+tp_settlement_2;Large Commune;;;;;;;;;;;;;x
+tp_settlement_3;County Town;;;;;;;;;;;;;x
+tp_settlement_4;Provincial City;;;;;;;;;;;;;x
+tp_settlement_5;Metropolitan Center;;;;;;;;;;;;;x
+tp_settlement_6;Holy City;;;;;;;;;;;;;x
+tp_charity_1;Herber;;;;;;;;;;;;;x
+tp_charity_2;Apothecary;;;;;;;;;;;;;x
+tp_charity_3;Almshouse;;;;;;;;;;;;;x
+tp_charity_4;Infirmary;;;;;;;;;;;;;x
+tp_charity_5;Hospice;;;;;;;;;;;;;x
+tp_christian_school_1;Priory;;;;;;;;;;;;;x
+tp_christian_school_2;Monastery;;;;;;;;;;;;;x
+tp_christian_school_3;Abbey;;;;;;;;;;;;;x
+tp_wall_1;Timber Palisade;;;;;;;;;;;;;x
+tp_wall_2;Drystone Enclosure;;;;;;;;;;;;;x
+tp_wall_3;Rag-Stone Masonry Walls;;;;;;;;;;;;;x
+tp_wall_4;Rag-Stone Curtain Walls;;;;;;;;;;;;;x
+tp_wall_5;Ashlar Enceinte;;;;;;;;;;;;;x
+tp_wall_6;Tiered Ashlar Ramparts;;;;;;;;;;;;;x
+tp_wall_q_1;Neck Ditch;;;;;;;;;;;;;x
+tp_wall_q_2;Stone Gatehouse;;;;;;;;;;;;;x
+tp_wall_q_3;Moat & Drawbridge;;;;;;;;;;;;;x
+tp_wall_q_4;Crenellated Battlements;;;;;;;;;;;;;x
+tp_wall_q_5;Reinforced Gates;;;;;;;;;;;;;x
+tp_wall_q_6;Fortified Stone Barbicans;;;;;;;;;;;;;x
+tp_barracks_pope_1;Corsican Guard Quarters;;;;;;;;;;;;;x
+tp_barracks_pope_2;Swiss Guard Barracks;;;;;;;;;;;;;x
+tp_barracks_pope_3;Palatine Guard Compound;;;;;;;;;;;;;x
+tp_pagan_church_1;Altar Shrine;;;;;;;;;;;;;x
+tp_pagan_church_2;Sanctuary Grove;;;;;;;;;;;;;x
+tp_pagan_church_3;Tribal Stonehenge;;;;;;;;;;;;;x
+tp_pagan_church_4;Great Sacred Grove;;;;;;;;;;;;;x
+tp_pagan_church_5;Holy Temple;;;;;;;;;;;;;x
+tp_pagan_church_6;Thunderdome;;;;;;;;;;;;;x
+tp_islamic_masjid_1;Outlying Musallah Masjid;;;;;;;;;;;;;x
+tp_islamic_masjid_2;Hypostyle Musallah Masjid;;;;;;;;;;;;;x
+tp_islamic_masjid_3;Iwan Musallah Masjid;;;;;;;;;;;;;x
+tp_islamic_masjid_4;Iwan Masjid;;;;;;;;;;;;;x
+tp_islamic_masjid_5;Great Iwan Masjid;;;;;;;;;;;;;x
+tp_islamic_masjid_6;Domed Masjid;;;;;;;;;;;;;x
+tp_islamic_school_1;Shayks Majilis;;;;;;;;;;;;;x
+tp_islamic_school_2;Small Madrasah;;;;;;;;;;;;;x
+tp_islamic_school_3;Large Madrasah;;;;;;;;;;;;;x
+tp_barracks_1;Militia Muster Hall;;;;;;;;;;;;;x
+tp_barracks_2;Militia Drill Square;;;;;;;;;;;;;x
+tp_barracks_3;Militia Drill courtyard;;;;;;;;;;;;;x
+tp_barracks_4;Militia Drill Grounds;;;;;;;;;;;;;x
+tp_barracks_5;Militia Barracks;;;;;;;;;;;;;x
+tp_barracks_6;Fortified Militia Barracks;;;;;;;;;;;;;x
+ct_university_1;Small University;;;;;;;;;;;;;x
+ct_university_2;Regional University;;;;;;;;;;;;;x
+ct_jewellers_1;Jewelsmith;;;;;;;;;;;;;x
+ct_jewellers_2;Jewellers Guild;;;;;;;;;;;;;x
+ct_library;Central Library;;;;;;;;;;;;;x
+tp_saint_basilica;Saint's Basilica;;;;;;;;;;;;;x
+ct_alchemists_1;Alchemists Workshop;;;;;;;;;;;;;x
+ct_alchemists_2;Alchemists Tower;;;;;;;;;;;;;x
+ct_alchemists_3;Alchemists Guild;;;;;;;;;;;;;x
+ct_winery_1;Wine Press;;;;;;;;;;;;;x
+ct_winery_2;Winery;;;;;;;;;;;;;x
+ct_winery_3;Large Winery;;;;;;;;;;;;;x
+ct_weaponsmith_1;Blacksmith's Workshop;;;;;;;;;;;;;x
+ct_weaponsmith_2;Weaponsmith's Workshop;;;;;;;;;;;;;x
+ct_fishing_1;Fishing Dock;;;;;;;;;;;;;x
+ct_fishing_2;Fishing Harbour;;;;;;;;;;;;;x
+ct_fishing_3;Large Fishing Harbour;;;;;;;;;;;;;x
+ct_carpet_workshops_1;Carpet Emporium;;;;;;;;;;;;;x
+ct_carpet_workshops_2;Carpet Workshop;;;;;;;;;;;;;x
+ct_carpet_workshops_3;Carpet Manufactury;;;;;;;;;;;;;x
+ca_farm_1;Communal Tenure;;;;;;;;;;;;;x
+ca_farm_2;Farming Cottages;;;;;;;;;;;;;x
+ca_farm_3;Small Irrigated Farms;;;;;;;;;;;;;x
+ca_farm_4;Large Irrigated Farms;;;;;;;;;;;;;x
+ca_timber_1;Lumberjacks Camp;;;;;;;;;;;;;x
+ca_timber_2;Lumber Yard;;;;;;;;;;;;;x
+ca_timber_3;Logging Mill;;;;;;;;;;;;;x
+ca_hunting_lodges_1;Hunters Camp;;;;;;;;;;;;;x
+ca_hunting_lodges_2;Hunting Lodge;;;;;;;;;;;;;x
+ca_cattle_1;Cattle Pastures;;;;;;;;;;;;;x
+ca_cattle_2;Cattle Barn;;;;;;;;;;;;;x
+ca_cattle_3;Cattle Stables;;;;;;;;;;;;;x
+ca_goat_1;Goat Pastures;;;;;;;;;;;;;x
+ca_goat_2;Goat Barn;;;;;;;;;;;;;x
+ca_goat_3;Goat Stable;;;;;;;;;;;;;x
+ca_swine_1;Swine Pen;;;;;;;;;;;;;x
+ca_swine_2;Swine Pastures;;;;;;;;;;;;;x
+ca_swine_3;Hog Barn;;;;;;;;;;;;;x
+ca_mines_marble_1;Small Marble Quarry;;;;;;;;;;;;;x
+ca_mines_marble_2;Large Marble Quarry;;;;;;;;;;;;;x
+ca_mines_silver_1;Small Silver Mine;;;;;;;;;;;;;x
+ca_mines_silver_2;Large Silver Mine;;;;;;;;;;;;;x
+ca_mines_gold_1;Open Pit Gold Mine;;;;;;;;;;;;;x
+ca_mines_gold_2;Large Gold Mine;;;;;;;;;;;;;x
+ca_mines_clay_1;Small Clay Quarry;;;;;;;;;;;;;x
+ca_mines_clay_2;Large Clay Quarry;;;;;;;;;;;;;x
+tp_horse_1;Horse Pastures;;;;;;;;;;;;;x
+tp_horse_2;Small Stables;;;;;;;;;;;;;x
+tp_horse_3;Large Stables;;;;;;;;;;;;;x
+tp_fruit_grove_1;Fruit Grove;;;;;;;;;;;;;x
+tp_fruit_grove_2;Small Fruit Orchard;;;;;;;;;;;;;x
+tp_fruit_grove_3;Large Fruit Orchard;;;;;;;;;;;;;x
+tp_apiary_1;Beekeeper's Yard;;;;;;;;;;;;;x
+tp_apiary_2;Small Apiary;;;;;;;;;;;;;x
+tp_apiary_3;Large Apiary;;;;;;;;;;;;;x
+tp_mines_chalk_1;Small Chalk Quarry;;;;;;;;;;;;;x
+tp_mines_chalk_2;Large Chalk Quarry;;;;;;;;;;;;;x
+tp_mines_stone_1;Small Stone Quarry;;;;;;;;;;;;;x
+tp_mines_stone_2;Large Quarry;;;;;;;;;;;;;x
+tp_brewers_1;Priory Ale Cellar;;;;;;;;;;;;;x
+tp_brewers_2;Monastic Brewery;;;;;;;;;;;;;x
+tp_brewers_3;Large Abbey Brewery;;;;;;;;;;;;;x
+tp_elite_barracks_1;Small Elite Barracks;;;;;;;;;;;;;x
+tp_elite_barracks_2;Medium Elite Barracks;;;;;;;;;;;;;x
+tp_elite_barracks_3;Large Elite Barracks;;;;;;;;;;;;;x
+ca_marketplace_1;Small Annual Fair;;;;;;;;;;;;;x
+ca_marketplace_2;Large Annual Fair;;;;;;;;;;;;;x
+ca_marketplace_3;Permanent Local Market;;;;;;;;;;;;;x
+ca_pub_1;Public House;;;;;;;;;;;;;x
+ca_pub_2;Common House;;;;;;;;;;;;;x
+ca_pub_3;Inn;;;;;;;;;;;;;x
+ca_engineers_1;Small Military Engineers Workshop;;;;;;;;;;;;;x
+ca_engineers_2;Large Military Engineers Workshop;;;;;;;;;;;;;x
+ct_civics_1;Local Court;;;;;;;;;;;;;x
+ct_civics_2;Constable House;;;;;;;;;;;;;x
+ct_civics_3;Regional Court;;;;;;;;;;;;;x
+ct_spice_1;Spice Caravan Trade Stop;;;;;;;;;;;;;x
+ct_spice_2;Spice Market;;;;;;;;;;;;;x
+ct_spice_3;Regional Spice Market;;;;;;;;;;;;;x
+ct_cloth_1;Small Clothweavers;;;;;;;;;;;;;x
+ct_cloth_2;Large Clothweavers;;;;;;;;;;;;;x
+ca_shroud_temple;Mandylion Cathedral;;;;;;;;;;;;;x
+ca_grail_temple;Holy Grail Cathedral;;;;;;;;;;;;;x
+tp_jewish_synagogue_1;Small Shtiebel;;;;;;;;;;;;;x
+tp_jewish_synagogue_2;Large Shtiebel;;;;;;;;;;;;;x
+tp_jewish_synagogue_3;Small Synagogue;;;;;;;;;;;;;x
+tp_jewish_synagogue_4;Community Synagogue;;;;;;;;;;;;;x
+tp_jewish_synagogue_5;Large Synagogue;;;;;;;;;;;;;x
+tp_jewish_synagogue_6;Great Synagogue;;;;;;;;;;;;;x
+tp_jewish_school_1;Yeshiva;;;;;;;;;;;;;x
+tp_jewish_school_2;Mesivta;;;;;;;;;;;;;x
+tp_jewish_school_3;Smiecha;;;;;;;;;;;;;x
+tp_third_temple;Beit haMikdash haShlishi;;;;;;;;;;;;;x
+ct_jewish_community_1;Small Jewish Community;Petite communauté juive;Kleine Jüdische Gemeinde;;;;;;;;;;;x
+ct_jewish_community_2;Jewish Community;Communauté juive;Jüdische Gemeinde;;;;;;;;;;;x
+ct_jewish_community_3;Large Jewish Community;Grande communauté juive;Große Jüdische Gemeinde;;;;;;;;;;;x
+ca_order_house;Holy Order Barracks;;;;;;;;;;;;;x
+ca_militia_barracks_4_desc;This is the second last stage of the militia barracks chains, where the local castle militia can get most of the latest advancements in combat techniques and bowmanship.;;;;;;;;;;;;;x
+ca_militia_barracks_5_desc;This is the last stage of the militia barracks chains, where the local castle militia can get all the latest advancements in combat techniques and bowmanship.;;;;;;;;;;;;;x
+ca_town_6_desc;This is the last stage of the militia barracks chains, where the local castle militia can get all the latest advancements in combat techniques and bowmanship.;;;;;;;;;;;;;x
+ca_marketplace_1_desc;This is the first stage of the castle marketplace. A very small market with a narrow area of influence and accessibility, and mostly local goods.;;;;;;;;;;;;;x
+ca_marketplace_2_desc;This is the second stage of the castle marketplace. A small market with an average area of influence and accessibility, and a good number foreign goods.;;;;;;;;;;;;;x
+ca_marketplace_3_desc;This is the third and last stage of the castle marketplace. A well sized market with a large area of influence and accessibility, and a great number foreign goods.;;;;;;;;;;;;;x
+ca_pub_1_desc;This is the first stage of the castle public house. A very small common house where soldiers and citizens alike can relax after their feudal duties.;;;;;;;;;;;;;x
+ca_pub_2_desc;This is the second stage of the castle public house. A big common house where soldiers and citizens alike can relax after their feudal duties.;;;;;;;;;;;;;x
+ca_pub_3_desc;This is the third and last stage of the castle public house. A large inn where soldiers and citizens alike can relax after their feudal duties.;;;;;;;;;;;;;x
+ca_smith_1_desc;The blacksmith's kiln is the first stage of the casle smiths. It provides a very small kiln with a single blacksmith operating it.;;;;;;;;;;;;;x
+ca_smith_2_desc;The farrier's forge is the second stage of the casle smiths. It provides a small forge with a blacksmith and a farrier operating it.;;;;;;;;;;;;;x
+ca_smith_3_desc;The mailsmith's furnace is the second third of the casle smiths. It provides an average sized furnace with a blacksmith, a farrier and a mailsmith operating it.;;;;;;;;;;;;;x
+ca_smith_4_desc;The armourer's smithy is the fourth stage of the casle smiths. It provides an well sized smithy with an armourer, a farrier, a blacksmith and a mailsmith operating it.;;;;;;;;;;;;;x
+ca_smith_5_desc;The arsenal foundry is the fifth stage of the casle smiths. It provides a large sized foundry with an armourer, a farrier, a blacksmith and a mailsmith operating it.;;;;;;;;;;;;;x
+ca_engineers_1_desc;The castle engineers are the masterminds of the defense of the realm. Their workshop can only be built in a capital province, and this is its first, small stage.;;;;;;;;;;;;;x
+ca_engineers_2_desc;The castle engineers are the masterminds of the defense of the realm. Their workshop can only be built in a capital province, and this is its last, large stage.;;;;;;;;;;;;;x
+ca_justice_1_desc;The village green is the first stage of the castle justicial buildings. It allows for village disputes to be solved by the hands of the green.;;;;;;;;;;;;;x
+ca_justice_2_desc;The bailiff's office is the second stage of the castle justicial buildings. It allows for local disputes to be solved by the hands of a bailiff.;;;;;;;;;;;;;x
+ca_justice_3_desc;The manorial courthall is the third stage of the castle justicial buildings. It allows for manorial disputes to be solved in a court hall, by the hands of a judge.;;;;;;;;;;;;;x
+ca_justice_4_desc;The comital courthouse is the fourth stage of the castle justicial buildings. It allows for regional disputes to be solved in a court house, by the hands of a judge and a comitate (jury).;;;;;;;;;;;;;x
+ca_justice_5_desc;The royal court gallery is the fifth and last stage of the castle justicial buildings. It allows for realm disputes to be solved in a royal court house, by the hands of a judge and a jury sworn to protect and serve the laws of the realm.;;;;;;;;;;;;;x
+ca_order_house_desc;The order house is the building hosting the quarters and barracks of a holy order.;;;;;;;;;;;;;x
+ca_alchemists_1_desc;The alchemists' workshop constitutes the local alchemists' point of aggregation, under the supervision of their ruler. It can only be built in a capital province.;;;;;;;;;;;;;x
+ca_alchemists_2_desc;The alchemists' tower constitutes the regional alchemists' point of aggregation and experimentation, under the supervision of their ruler. It can only be built in a capital province.;;;;;;;;;;;;;x
+ca_alchemists_3_desc;The alchemists' guild constitutes the national alchemists' point of aggregation and thriving, under the supervision of their ruler. It can only be constituted in a capital province.;;;;;;;;;;;;;x
+ca_farm_desc;The communal farms provide a decent source of income for the local castle, but they can only be built in agriculturally fertile provinces.;;;;;;;;;;;;;x
+ca_cattle_desc;Cattle pastures provide a somewhat limited source of income for the local castle, and they can only be built in agriculturally fertile provinces.;;;;;;;;;;;;;x
+ca_goat_desc;Goat pastures provide a somewhat limited source of income for the local castle, and they can only be built in mountanous provinces, where goats find their habitat.;;;;;;;;;;;;;x
+ca_swine_desc;Swine pastures provide a somewhat limited source of income for the local castle, and they can only be built in agriculturally fertile provinces.;;;;;;;;;;;;;x
+ca_timber_desc;Lumberjacks provide a basic source of income for the local castle, but they can only be lodged in provinces that are situated close to or inside a forest.;;;;;;;;;;;;;x
+ca_hunters_desc;Hunters provide a basic source of income for the local castle, but they can only be lodged in provinces that are situated close to or inside a forest.;;;;;;;;;;;;;x
+ca_marble_mines_desc;Marble mines provide a decent source of income for the local castle, but they can be built only in determined mountanous provinces.;;;;;;;;;;;;;x
+ca_clay_mines_desc;Clay mines provide a decent source of income for the local castle, but they can be built only in provinces with a marshes or coastal desert terrain.;;;;;;;;;;;;;x
+ca_gold_mines_desc;Gold mines provide a great source of income and stability for the local castle, but they can be built only in determinate provinces where the ore is present.;;;;;;;;;;;;;x
+ca_silver_mines_desc;Silver mines provide a great source of income and stability for the local castle, but they can be built only in determinate provinces where the ore is present.;;;;;;;;;;;;;x
+ca_shroud_temple_desc;This Cathedral is hosting the Holy Shroud, or Mandylion, after its successful retrieval by the hands of the local ruler. It is now one of the Christian religious centers of the world.;;;;;;;;;;;;;x
+ca_grail_temple_desc;This Cathedral is hosting the Holy Grail, after its successful retrieval by the hands of the local ruler. It is now one of the Christian religious centers of the world.;;;;;;;;;;;;;x
+ca_culture_bulgarian_1_desc;The Bulgarian horsemen constitute the backbone and main strength of Bulgarian armies. Their charges are still a feared memory for the Eastern Roman legions, and their strength and horsemanship is rivaled only by few elite units.;;;;;;;;;;;;;x
+ca_culture_polish_1_desc;The Polish lords constitute the backbone and main strength of Polish armies. Their ability with a lance and a blade, and their strength and courage is rivaled only by few elite units.;;;;;;;;;;;;;x
+ca_culture_sicilian_1_desc;The Saracen bowmen constitute the backbone and main strength of Sicilian armies. Their bowmanship and discipline, together with their devotion and courage is rivaled only by their Saxon counterpart.;;;;;;;;;;;;;x
+ca_culture_caucasian_1_desc;The Caucasian warriors constitute the backbone and main strength of Caucasian armies. Their ability with handweapons, together with strength and fearless courage is rivaled only by few elite units.;;;;;;;;;;;;;x
+tp_islamic_school_desc;The Sharia school is the local center of Islamic law teaching. ;;;;;;;;;;;;;x
+tp_pope_barracks_desc;Papal barracks provide the Pope with his personal levy for his own protection, but also for offensive matters if need be.;;;;;;;;;;;;;x
+tp_town_6_desc;The Holy City is the last stage of the temple town building chain, and it provides the holding with a Holy City status among its religion, with the consequent benefits for both the locals and their overlord.;;;;;;;;;;;;;x
+tp_brewers_desc;The temple brewers constitute an important source of both income and welfare for the local ecclesiastical holding.;;;;;;;;;;;;;x
+tp_apiary_desc;Apiaries provide a decent source of income for the local temple, but they can only be built in climatically favourable provinces.;;;;;;;;;;;;;x
+tp_fruit_desc;Fruit orchards provide a decent source of income for the local temple, but they can only be built in agriculturally fertile provinces.;;;;;;;;;;;;;x
+tp_chalk_mines_desc;Chalk mines provide a decent source of income for the local castle, but they can be built only in determined mountanous provinces.;;;;;;;;;;;;;x
+tp_stone_mines_desc;Stone mines provide a decent source of income for the local castle, but they can be built only in determined mountanous provinces.;;;;;;;;;;;;;x
+tp_third_temple_desc;This is the Third Temple of Judaism, rebuilt by a pious Jewish ruler to host the Cohen Gadol and give a central authority to Judaism.;;;;;;;;;;;;;x
+tp_church_desc;The church constitutes the local (and possibly regional) religious center of aggregation, built on the orders of the local ruler to follow the one true faith, Christendom.;;;;;;;;;;;;;x
+tp_shrine_desc;The shrine constitutes the local (and possibly regional) religious center of aggregation, built on the orders of the local ruler to follow the one true faith, Paganism.;;;;;;;;;;;;;x
+tp_mosque_desc;The mosque constitutes the local (and possibly regional) religious center of aggregation, built on the orders of the local ruler to follow the one true faith, Islam.;;;;;;;;;;;;;x
+tp_synagogue_desc;The synagogue constitutes the local (and possibly regional) religious center of aggregation, built on the orders of the local ruler to follow the one true faith, Judaism.;;;;;;;;;;;;;x
+ct_weaponsmith_desc;The city weaponsmiths provide the local city militia with a greater amount of better quality weapons and armour, as well as a better manteinance for the ones already at the militia's disposal.;;;;;;;;;;;;;x
+ct_civics_desc;This is the city justicial branch. It allows for local to national disputes to be solved by a judge of the realm.;;;;;;;;;;;;;x
+ct_admin_desc;This is the city's administrative branch. It allows for local to national bureaucracy and administration processes to be taken care of by the realm's appointed officials.;;;;;;;;;;;;;x
+ct_jewish_community_desc;A Jewish community is a local enclave of jewish people quartered in a city. ;;;;;;;;;;;;;x
+ct_jewish_district_desc;The Jewish district is a small municipal district where jewish money-lenders and jewellers are located and can freely exercise their activities, with a substantial tributary benefit to the local ruler.;;;;;;;;;;;;;x
+ct_jewish_jewelers_desc;The Jewish jewellers constitute a point of aggregation for the local jewelsmiths of Jewish religion, that are hence allowed to excercise their activities under mayoral supervision.;;;;;;;;;;;;;x
+ct_carpet_workshop_desc;The carpeters costitute a substantial source of income for the local city, which they greatly enrich with their importance and inclusion in major trade routes. They can only be built in determined provinces.;;;;;;;;;;;;;x
+ct_fishing_dock_desc;The fishermen docks and ports costitute a decent source of income and a good mean of subsistence for the local city. They can only be built in maritime provinces.;;;;;;;;;;;;;x
+ct_winery_desc;Wineries costitute a good source of income and a greatly contribute to the welfare of the local city. They can only be built in determined provinces where the right agricultural conditions are met.;;;;;;;;;;;;;x
+ct_spice_desc;The spice traders a substantial source of income for the local city, which they greatly enrich with their importance and inclusion in major trade routes. They can only be built in determined provinces.;;;;;;;;;;;;;x
+ct_cloth_desc;Cloth weavers costitute a good source of income and a great contribute to the subsistence of the local city, of which they enrich the economic possibilities through trade. They can only be built in determined provinces.;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;x

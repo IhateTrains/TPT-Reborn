@@ -1,0 +1,32 @@
+# 959 - Bihac
+
+# County Title
+title = c_bihac
+
+# Settlements
+max_settlements = 3
+
+
+b_bihac = castle
+#b_krupa = castle
+#b_unac = castle
+#b_blagajgrad = castle
+#b_buzim = castle
+#b_kamengrad = castle
+b_petrovac = city
+#b_dubica = temple
+
+# Misc
+culture = croatian
+religion = catholic
+
+
+# History
+
+1232.1.1= { religion = bogomilist } 
+
+ 
+
+ 
+
+ 

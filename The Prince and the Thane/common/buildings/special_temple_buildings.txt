@@ -1,0 +1,567 @@
+temple = {
+## Elite Mosque Barracks ##
+##Initial Elite Mosque Barracks
+tp_elite_barracks_1_mus = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			FROM = { religion_group = muslim }
+		}
+		build_cost = 100
+		build_time = 365
+		heavy_infantry = 45
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1066
+		}
+	}
+##Small Elite Mosque Barracks
+	tp_elite_barracks_2_mus = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			FROM = { religion_group = muslim }
+		}
+		prerequisites = { tp_wall_1 }
+		upgrades_from = tp_elite_barracks_1_mus
+		build_cost = 120
+		build_time = 730
+		heavy_infantry = 55
+		ai_creation_factor = 94
+
+		start = {
+		    year = 1090
+		}
+	}
+##Medium Elite Mosque Barracks
+	tp_elite_barracks_3_mus = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			FROM = { religion_group = muslim }
+		}
+		prerequisites = { tp_wall_2 }
+		upgrades_from = tp_elite_barracks_2_mus
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 65
+		ai_creation_factor = 93
+
+		start = {
+		    year = 1150
+		}
+	}
+##Large Elite Mosque Barracks
+	tp_elite_barracks_4_mus = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			FROM = { religion_group = muslim }
+		}
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
+		upgrades_from = tp_elite_barracks_3_mus
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 75
+		ai_creation_factor = 92
+
+		start = {
+		    year = 1190
+		}
+	}
+##Great Elite Mosque Barracks
+	tp_elite_barracks_5_mus = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			FROM = { religion_group = muslim }
+		}
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
+		upgrades_from = tp_elite_barracks_4_mus
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 85
+		ai_creation_factor = 91
+
+		start = {
+		    year = 1220
+		}
+	}
+##Huge Elite Mosque Barracks
+	tp_elite_barracks_6_mus = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			FROM = { religion_group = muslim }
+		}
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
+		upgrades_from = tp_elite_barracks_5_mus
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 95
+		ai_creation_factor = 90
+
+		start = {
+		    year = 1270
+		}
+	}
+## Elite Barracks ##
+## Small Elite Barracks
+tp_elite_barracks_1 = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			NOT = {
+				FROM = { religion_group = muslim }
+			}
+		}
+		build_cost = 100
+		build_time = 365
+		heavy_infantry = 45
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1066
+		}
+	}
+## Medium Elite Barracks
+	tp_elite_barracks_2 = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			NOT = {
+				FROM = { religion_group = muslim }
+			}
+		}
+		prerequisites = { tp_wall_1 }
+		upgrades_from = tp_elite_barracks_1
+		build_cost = 120
+		build_time = 730
+		heavy_infantry = 55
+		ai_creation_factor = 94
+
+		start = {
+		    year = 1090
+		}
+	}
+## Large Elite Barracks
+	tp_elite_barracks_3 = {
+		desc = tp_elite_barracks_1_desc
+		potential = {
+			NOT = {
+				FROM = { religion_group = muslim }
+			}
+		}
+		prerequisites = { tp_wall_2 }
+		upgrades_from = tp_elite_barracks_2
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 65
+		ai_creation_factor = 93
+
+		start = {
+		    year = 1120
+		}
+	}
+### The Pope's personal guard
+### Corsican Guard Quarters ###	
+	tp_barracks_pope_1 = {
+		desc = tp_pope_barracks_desc
+	    potential = {
+			FROM = { primary_title = { title = k_papal_state } }
+			is_capital = yes
+		}
+		prerequisites = { tp_wall_2 }
+		build_cost = 150
+		build_time = 365
+		heavy_infantry = 100
+		light_infantry = 50
+		garrison_size = 0.75
+		tax_income = -0.10
+		ai_creation_factor = 86
+
+		start = {
+			AND = {
+				FROM = { primary_title = { title = k_papal_state } } 
+				year = 1066
+			}
+		}
+	}
+
+### Swiss Guard Barracks ###
+	tp_barracks_pope_2 = {
+		desc = tp_pope_barracks_desc
+	    potential = {
+			FROM = { primary_title = { title = k_papal_state } }
+			is_capital = yes
+		}
+		prerequisites = { tp_wall_3 }
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
+		upgrades_from = tp_barracks_pope_1
+		build_cost = 200
+		build_time = 547
+		heavy_infantry = 100
+		light_infantry = 50
+		garrison_size = 0.75
+		tax_income = -0.10
+		ai_creation_factor = 85
+
+		start = {
+		}
+	}
+### Palatine Guard Compound ### 	
+	tp_barracks_pope_3 = { 
+		desc = tp_pope_barracks_desc
+	    potential = {
+			FROM = { primary_title = { title = k_papal_state } }
+			is_capital = yes 
+		}
+		prerequisites = { tp_wall_4 }
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
+		upgrades_from = tp_barracks_pope_2
+		build_cost = 250
+		build_time = 730
+		heavy_infantry = 100
+		light_infantry = 50
+		garrison_size = 0.75
+		tax_income = -0.10
+		ai_creation_factor = 80
+
+		start = {
+		}
+	}
+### Breweries ###   
+### Prior's Ale Cellar ###
+	tp_brewers_1 = {
+		desc = tp_brewers_desc
+	    potential = { 
+	        FROM = { religion_group = christian }
+		}
+		prerequisites = { tp_monastery_1 } # Priory
+		build_cost = 100
+		build_time = 295
+		local_tax_modifier = 0.05
+		ai_creation_factor = 95
+
+		start = {
+		    year = 1066
+		}
+	}
+### Monastic Brewery ###
+	tp_brewers_2 = {
+		desc = tp_brewers_desc
+	    potential = { 
+	        FROM = { religion_group = christian }
+		}
+		prerequisites = { tp_monastery_2 } # Monastery
+		upgrades_from = tp_brewers_1
+	        build_cost = 120
+		build_time = 440
+		local_tax_modifier = 0.05
+		ai_creation_factor = 85
+
+		start = {
+		    year = 1100
+		}
+	}
+### Abbot's Brewery ###
+	tp_brewers_3 = {
+		desc = tp_brewers_desc
+	    potential = { 
+	        FROM = { religion_group = christian }
+		}
+		prerequisites = { tp_monastery_3 } # Abbey
+		upgrades_from = tp_brewers_2
+	        build_cost = 150
+		build_time = 480
+		local_tax_modifier = 0.05
+		ai_creation_factor = 80
+
+		start = {
+		    year = 1175
+		}
+	}	
+### Horse Pastures
+### Horse Pastures ###
+	tp_horse_1 = {
+	desc = ca_stable_1_desc
+	   potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = farmlands
+                    terrain = steppe
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                }
+		prerequisites = { tp_settlement_1 }
+	        build_cost = 75
+		build_time = 155
+		tax_income = 0.5
+		ai_creation_factor = 72
+
+		start = {
+		    year = 1066
+		}
+	}
+### Horse Stable  ###	
+	tp_horse_2 = {
+	desc = ca_stable_1_desc
+		potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = farmlands
+                    terrain = steppe
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                }
+		prerequisites = { tp_settlement_2 }
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		upgrades_from = tp_horse_1
+		build_cost = 100
+		build_time = 290
+		tax_income = 0.5
+		ai_creation_factor = 71
+
+		start = {
+		    year = 1100
+		}
+	}
+### Large Horse Stable ###	
+	tp_horse_3 = {
+	desc = ca_stable_1_desc
+		potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = farmlands
+                    terrain = steppe
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                }
+		prerequisites = { tp_settlement_3 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = tp_horse_2
+		build_cost = 150
+		build_time = 365
+		tax_income = 0.5
+		ai_creation_factor = 70
+
+		start = {
+		    year = 1150
+		}
+	}	
+### Apiary
+### Beekeeper's Yard ###
+	tp_apiary_1 = {
+	desc = tp_apiary_desc
+		potential = { 
+	        FROM = { religion_group = christian }
+		}
+		prerequisites = { tp_settlement_1 }
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		build_cost = 50
+		build_time = 225
+		tax_income = 0.5
+		ai_creation_factor = 90
+
+		start = {
+		    year = 1066
+		}
+		
+	}
+### Small Apiary ###
+	tp_apiary_2 = {
+	desc = tp_apiary_desc
+		potential = { 
+	        FROM = { religion_group = christian }
+		}
+		prerequisites = { tp_settlement_2 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = tp_apiary_1
+		build_cost = 75
+		build_time = 365
+		tax_income = 0.5
+		ai_creation_factor = 89
+
+		start = {
+		    year = 1100
+		}
+	}	
+### Large Apiary ###
+	tp_apiary_3 = {
+	desc = tp_apiary_desc
+		potential = { 
+	        FROM = { religion_group = christian }
+		}
+		prerequisites = { tp_settlement_3 }
+		trigger = { TECH_CASTLE_TAXES = 3 }
+		upgrades_from = tp_apiary_2
+		build_cost = 100
+		build_time = 405
+		tax_income = 0.5
+		ai_creation_factor = 88
+
+		start = {
+		    year = 1150
+		}
+	}	
+### Fruit Groves & Orchards
+### Fruit Grove ###
+	tp_fruit_grove_1 = {
+	desc = tp_fruit_desc
+	    potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = farmlands
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                }
+		prerequisites = { tp_settlement_1 }
+	        build_cost = 50
+		build_time = 365
+		tax_income = 0.35
+		ai_creation_factor = 72
+
+		start = {
+		    year = 1066
+		}
+	}
+### Small Fruit Orchard ###	
+	tp_fruit_grove_2 = {
+	desc = tp_fruit_desc
+		potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = farmlands
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                }
+		prerequisites = { tp_settlement_2 }
+		upgrades_from = tp_fruit_grove_1
+		trigger = { TECH_CASTLE_TAXES = 1 }
+		build_cost = 75
+		build_time = 365
+		tax_income = 0.35
+		ai_creation_factor = 71
+
+		start = {
+		    year = 1100
+		}
+	}
+### Large Fruit Orchard ###	
+	tp_fruit_grove_3 = {
+	desc = tp_fruit_desc
+		potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = farmlands
+                    terrain = plains
+                    terrain = coastal_desert
+                         }                     
+                }
+		prerequisites = { tp_settlement_3 }
+		trigger = { TECH_CASTLE_TAXES = 2 }
+		upgrades_from = tp_fruit_grove_2
+		build_cost = 100
+		build_time = 365
+		tax_income = 0.35
+		ai_creation_factor = 70
+
+		start = {
+		    year = 1150
+		}
+	}	
+### Small Chalk Quarry ###
+	tp_mines_chalk_1 = {
+	desc = tp_chalk_mines_desc
+	    potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = mountain
+                    terrain = impassable_mountains
+                         }                     
+                }	
+		prerequisites = { tp_settlement_1 }	
+		build_cost = 50 
+		build_time = 765
+		tax_income = 0.5
+		ai_creation_factor = 88
+
+		start = {
+		    year = 1066
+		}
+	}
+### Large Chalk Quarry ### 
+	tp_mines_chalk_2 = {
+	desc = tp_chalk_mines_desc
+	    potential = { 
+                Or = {
+                    terrain = hills
+                    terrain = mountain
+                    terrain = impassable_mountains
+                         }                     
+                }	
+		prerequisites = { tp_settlement_3 }
+		trigger = { TECH_CONSTRUCTION = 1 }
+		upgrades_from = tp_mines_chalk_1
+	   	build_cost = 75
+		build_time = 1395
+		tax_income = 0.75
+		ai_creation_factor = 87
+
+		start = {
+		    year = 1150
+		}
+	}		
+### Small Stone Quarry ###
+	tp_mines_stone_1 = {
+	desc = tp_stone_mines_desc
+	    potential = { 
+                Or = {
+                    terrain = mountain
+                    terrain = impassable_mountains
+                         }                     
+                }	
+		prerequisites = { tp_settlement_1 }
+		build_cost = 50 
+		build_time = 730
+		tax_income = 0.5
+		ai_creation_factor = 88
+
+		start = {
+		    year = 1066
+		}
+	}
+### Large Stone Quarry ### 
+	tp_mines_stone_2 = {
+	desc = tp_stone_mines_desc
+	    potential = { 
+                Or = {
+                    terrain = mountain
+                    terrain = impassable_mountains
+                         }                     
+                }	
+		prerequisites = { tp_settlement_3 }
+		trigger = { TECH_CONSTRUCTION = 1 }
+		upgrades_from = tp_mines_stone_1
+	   	build_cost = 100
+		build_time = 1065
+		tax_income = 1
+
+		start = {
+		    year = 1150
+		}
+	}	
+tp_third_temple = {
+	desc = tp_third_temple_desc
+	    potential = { province_id = 692
+                FROM = { religion_group = jewish_group
+		     } 
+                }
+                trigger = {
+			always = no
+		}
+		tax_income = 2.5
+		build_cost = 0
+		build_time = 0
+                monthly_character_piety = 1.5
+		ai_creation_factor = 1
+	}
+}

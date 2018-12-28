@@ -1,0 +1,30 @@
+933.1.1={
+	holder=2220044 #Landulf di Aquino
+	holding_dynasty = 12243 # di Aquino
+	liege="d_gaeta"
+}
+
+970.1.1={
+	holder=2220045 #Otto di Aquino
+}
+
+1020.1.1={
+	holder=2220046 #Pandulf di Aquino
+}
+
+1039.1.1={
+	holder=0
+}
+
+1045.1.1={
+	holder=1000167111 #Atenulf di Aquino
+}
+1062.1.1={
+	holder = 73347 #Atenulf VI
+}
+1068.1.1={
+	holder = 2220041 #Atenulf di Aquino
+}
+1091.1.1={
+	holder=0
+}

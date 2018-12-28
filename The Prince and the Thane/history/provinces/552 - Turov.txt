@@ -1,0 +1,23 @@
+# 552 - Turov
+
+# County Title
+title = c_turov
+
+# Settlements
+max_settlements = 5
+
+b_turov = castle
+b_mazyr = city
+b_petrykaw = temple
+
+#b_zhytkavichy = city
+#b_hlusk = castle
+#b_lelchytsy = city
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+1160.1.1 = { b_hlusk = castle }

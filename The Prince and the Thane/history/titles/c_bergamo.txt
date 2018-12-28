@@ -1,0 +1,14 @@
+860.1.1={
+	liege="e_hre" #Bisphoric
+}
+1098.1.1={
+	holder = 0 #Free Commune
+	liege = 0
+}
+1322.6.28={
+	holder=463141
+	liege="d_lombardia"
+}
+1327.7.5={
+	holder=463140
+}

@@ -1,0 +1,43 @@
+######################################################
+#
+# The Prince and the Thane timers - written by idib816
+#
+######################################################
+
+loan_timer = { icon = 24 }
+
+indulgence_timer = { icon = 1 }
+
+ball_timer = { icon = 1 }
+
+ramadan_timer = { icon = 1 }
+
+convert_province_timer = { icon = 1 }
+
+heresy_in_province_timer = { icon = 1 }
+
+victory_timer = { icon = 1 }
+
+famous_muslim_timer = { icon = 1 }
+
+employment_timer = { icon = 1 }
+
+sanction_timer = { icon = 1 }
+
+sanctioned_holy_war = { icon = 8 }
+
+ghibelline_cb = { icon = 8 }
+ 
+guelph_cb = { icon = 8 }
+
+holy_truce_timer = { icon = 8 }
+
+crusade_timer = { icon = 1 }
+
+ransom_timer = { icon = 1 }
+
+loan_timer = { icon = 1 }
+
+holding_epic_tournament = {
+	icon = 7
+}

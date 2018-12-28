@@ -1,0 +1,34 @@
+1042.1.1={
+	liege="d_apulia"
+	holder = 1122 #William I de Hauteville
+}
+1057.1.1={
+	holder = 1191124 #Turgis di Sanseverino
+}
+1081.1.1={
+	holder = 1191125 #Roger di Sanseverino
+}
+1125.1.1={
+	holder = 1191126 #Henry di Sanseverino
+}
+1150.1.1={
+	holder=1191127 #William di Sanseverino
+}
+1190.1.1={
+	holder = 1191128 #Thomas di Sanseverino
+}
+1246.1.1={
+	holder = 1191129 #Roger di Sanseverino
+}
+1285.1.1={
+	holder = 1191130 #Thomas II di Sanseverino
+}
+1300.1.1={
+	holder = 1191131 #Henry di Sanseverino
+}
+1314.1.1={
+	holder = 1191130 #Thomas II di Sanseverino
+}
+1324.1.1={
+	holder = 1191132 #Thomas III di Sanseverino
+}

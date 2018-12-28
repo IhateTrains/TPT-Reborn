@@ -1,0 +1,25 @@
+# 1267 - Szvuine
+# County Title
+
+title = c_szvuine
+
+# Settlements
+max_settlements = 3
+
+b_szvuinecastle = castle
+b_wolin = city
+#b_grobemonestary = temple
+#b_usedom = city
+#b_kaseburg = temple
+#b_pryztor = city
+#b_koserow = city
+
+# Misc
+culture = pommeranian
+religion = slavic_pagan
+
+# History
+# Christianity only arrived with the Danish king Valdemar I
+1155.1.1 = { b_grobemonestary = temple }
+1168.1.1 = { religion = catholic }
+

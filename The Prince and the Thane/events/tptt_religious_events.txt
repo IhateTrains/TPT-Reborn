@@ -1,0 +1,2123 @@
+########################################################################
+#
+# The Prince and the Thane religious events - written by idib816 and Wiz
+#
+########################################################################
+
+namespace = religious
+
+#Libertas Ecclesiae
+character_event = {
+	id = religious.1
+	desc = "EVTDESCreligious.1"
+    title = "EVTNAMEreligious.1"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+
+    is_triggered_only = yes
+    only_rulers = yes
+    min_age = 14
+	
+	trigger = {
+        primary_title = { higher_tier_than = COUNT }
+		year = 1079
+        religion = catholic
+        NOT = { has_character_modifier = libertas_ecclesiae }
+        NOT = { has_character_modifier = refused_libertas_ecclesiae } 
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTAreligious.1"
+        prestige = 15
+        piety = 75
+        scaled_wealth = -1
+        remove_trait = cynical
+        random = { 
+	        chance = 15
+            add_trait = clerical_envoy 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.53 }
+			}
+		}
+		add_character_modifier = { name = libertas_ecclesiae duration = -1 }
+        religion_authority = 0.01
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.25
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 2.5
+				trait = mastermind_theologian
+			}
+		}
+	}	
+    option = {
+		name = "EVTOPTBreligious.1"
+        prestige = 35
+        piety = -100
+        scaled_wealth = 0.3
+        random = { 
+		    chance = 65
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+        random = { chance = 5 add_trait = excommunicated }
+        add_character_modifier = { name = refused_libertas_ecclesiae duration = -1 } 
+        religion_authority = -0.01
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = proud
+			}
+            modifier = {
+				factor = 1.25
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = greedy
+			}
+		}
+    } 	
+}
+
+#Ad Abolendam
+character_event = {
+	id = religious.2
+	desc = "EVTDESCreligious.2"
+    title = "EVTNAMEreligious.2"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+    only_rulers = yes
+    min_age = 14
+    is_triggered_only = yes
+
+	trigger = {
+        primary_title = { higher_tier_than = COUNT }
+		year = 1184
+        religion = catholic
+        NOT = { has_character_modifier = ad_abolendam }
+        NOT = { has_character_modifier = refused_ad_abolendam } 
+	} 
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTAreligious.2"
+        prestige = -100
+        piety = 150
+        random = { 
+		    chance = 15
+            add_trait = clerical_envoy 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.53 }
+			}
+		}
+        random = { 
+		    chance = 35
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+			}
+		}
+        random = {
+    		chance = 25
+            add_trait = antisemite 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.65 }
+			}
+		}
+        add_trait = zealous
+		hidden_tooltip = {
+			character_event = { id = 38269 }
+		}
+		add_character_modifier = { name = ad_abolendam duration = -1 } 
+        religion_authority = 0.01
+        ai_chance = {
+		  	factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.25
+				trait = uneducated
+			}
+            modifier = {
+				factor = 1.25
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 0.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.01
+				trait = tolerant
+			}
+            modifier = {
+				factor = 2.5
+				trait = zealous
+			}
+		}
+	}	
+	
+    option = {
+		name = "EVTOPTBreligious.2"
+        prestige = 35
+        piety = -50
+        random = { 
+		    chance = 55
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+        random = { chance = 5 add_trait = excommunicated }
+        add_character_modifier = { name = refused_ad_abolendam duration = -1 } 
+        religion_authority = -0.01
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.25
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+            modifier = {
+				factor = 0.5
+				trait = humble
+			}
+            modifier = {
+				factor = 1.25
+				trait = kind
+			}
+            modifier = {
+				factor = 1.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.01
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = tolerant
+			}
+		}
+	}	
+}
+
+#Ad Extirpanda
+character_event = {
+	id = religious.3
+	desc = "EVTDESCreligious.3"
+    title = "EVTNAMEreligious.3"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+    only_rulers = yes
+    min_age = 14
+    is_triggered_only = yes
+
+	trigger = {
+		year = 1252
+        primary_title = { higher_tier_than = COUNT }
+        religion = catholic
+        NOT = { has_character_modifier = ad_extirpanda }
+        NOT = { has_character_modifier = refused_ad_extirpanda }
+	}
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTAreligious.3"
+        prestige = -100
+        piety = 150
+        random = {
+    		chance = 10
+            add_trait = clerical_envoy 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.53 }
+			}
+		}
+        random = { 
+		    chance = 35
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+			}
+		}
+        random = { 
+			chance = 25
+            add_trait = antisemite 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.65 }
+			}
+		}
+        random = { 
+		    chance = 65
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}
+		add_character_modifier = { name = ad_extirpanda duration = -1 }
+        religion_authority = 0.01
+		
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.25
+				trait = uneducated
+			}
+            modifier = {
+				factor = 1.25
+				trait = arbitrary
+			}
+            modifier = {
+				factor = 0.5
+				trait = kind
+			}
+            modifier = {
+				factor = 1.25
+				trait = cruel
+			}
+            modifier = {
+				factor = 1.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.01
+				trait = tolerant
+			}
+            modifier = {
+				factor = 2.5
+				trait = zealous
+			}
+		}
+	}	
+	
+    option = {
+		name = "EVTOPTBreligious.3"
+        prestige = 45
+        piety = -50
+        random = {
+	        chance = 50
+            add_trait = just 
+			hidden_tooltip = {
+					character_event = { id = 38267 }
+			}
+		}
+        random = {
+    		chance = 35
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+        random = { chance = 5 add_trait = excommunicated }
+        add_character_modifier = { name = refused_ad_extirpanda duration = -1 }
+        religion_authority = -0.01
+		
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = cynical
+			}
+            modifier = {
+				factor = 1.25
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+            modifier = {
+				factor = 0.5
+				trait = humble
+			}
+            modifier = {
+				factor = 1.25
+				trait = kind
+			}
+            modifier = {
+				factor = 1.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.01
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = tolerant
+			}
+		}
+	}	
+}
+
+#Unam Sanctam
+character_event = {
+	id = religious.4
+	desc = "EVTDESCreligious.4"
+    title = "EVTNAMEreligious.4"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+    only_rulers = yes
+    min_age = 14
+    is_triggered_only = yes
+
+	trigger = {
+        primary_title = { higher_tier_than = COUNT }
+		year = 1302
+        religion = catholic
+        NOT = { has_character_modifier = unam_sanctam }
+        NOT = { has_character_modifier = refused_unam_sanctam } 
+	}
+
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTAreligious.4"
+        prestige = -100
+        piety = 100
+        random = { 
+		    chance = 15
+            add_trait = clerical_envoy 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.53 }
+			}
+		}
+        random = { 
+		    chance = 45
+            add_trait = cruel 
+			hidden_tooltip = {
+				character_event = { id = 38259 }
+			}
+		}
+        random = { 
+		    chance = 35
+            add_trait = antisemite 
+			hidden_tooltip = {
+				character_event = { id = tptt_traits.65 }
+			}
+		}
+        random = { 
+		    chance = 75
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}
+		add_character_modifier = { name = unam_sanctam duration = -1 }
+        religion_authority = 0.01
+		
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.25
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 2.5
+				trait = mastermind_theologian
+			}
+		}
+	}	
+	
+    option = {
+		name = "EVTOPTBreligious.4"
+        prestige = 35
+        piety = -50
+        add_trait = proud
+		hidden_tooltip = {
+			character_event = { id = 38261 }
+		}
+        random = { 
+		    chance = 75
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+        random = { chance = 10 add_trait = excommunicated }
+        add_character_modifier = { name = refused_unam_sanctam duration = -1 }
+        religion_authority = -0.01
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+            modifier = {
+				factor = 1.25
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = proud
+			}
+		}
+	}	
+}
+
+#Pope demands return of Rome
+character_event = {
+	id = religious.5
+	picture = "GFX_evt_rome"
+	is_triggered_only = yes
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_landed_title = c_roma
+		religion = catholic
+		rightful_religious_head_scope = { has_landed_title = k_papal_state }
+		religion_head = { NOT = { opinion = { who = ROOT value = 50 } } }
+		NOT = { trait = excommunicated }
+		NOT = { has_global_flag = excommunicated_rome }
+	}
+		
+	desc = "EVTDESCreligious.5"
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 1.25
+			religion_head = { NOT = { opinion = { who = ROOT value = 25 } } }
+		}		
+		modifier = {
+			factor = 1.25
+			religion_head = { NOT = { opinion = { who = ROOT value = 0 } } }
+		}
+		modifier = {
+			factor = 1.25
+			religion_head = { NOT = { opinion = { who = ROOT value = -25 } } }
+		}
+		modifier = {
+			factor = 1.25
+			religion_head = { NOT = { opinion = { who = ROOT value = -50 } } }
+		}
+		modifier = {
+			factor = 1.25
+			religion_head = { NOT = { opinion = { who = ROOT value = -75 } } }
+		}
+		modifier = {
+			factor = 1.25
+			religion_head = { NOT = { opinion = { who = ROOT value = -100 } } }
+		}		
+		modifier = {
+			factor = 0.75
+			piety = 200
+		}
+		modifier = {
+			factor = 0.75
+			piety = 100
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = { piety = 0 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -100 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -200 }
+		}
+		modifier = {
+			factor = 100.0
+			religion_head = { NOT = { demesne_size = 1 } }
+		}		
+	}
+	
+
+	option = {
+		name = "EVTOPTAreligious.5"
+		ai_chance = { factor = 75 }
+		piety = 50	
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = c_roma
+					any_realm_lord = { has_landed_title = c_roma }
+				}
+			}
+			religion_head = {
+				c_roma = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_roma
+					any_realm_lord = { has_landed_title = b_roma }
+				}
+			}
+			religion_head = {
+				b_roma = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_tivoli
+					any_realm_lord = { has_landed_title = b_tivoli }
+				}
+			}
+			religion_head = {
+				b_tivoli = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_palo
+					any_realm_lord = { has_landed_title = b_palo }
+				}
+			}
+			religion_head = {
+				b_palo = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_castelsantangelo
+					any_realm_lord = { has_landed_title = b_castelsantangelo }
+				}
+			}
+			religion_head = {
+				b_castelsantangelo = {
+					gain_title = PREV
+				}			
+			}			
+		}		
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_ostia
+					any_realm_lord = { has_landed_title = b_ostia }
+				}
+			}
+			religion_head = {
+				b_ostia = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_palo
+					any_realm_lord = { has_landed_title = b_palo }
+				}
+			}
+			religion_head = {
+				b_palo = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_mentana
+					any_realm_lord = { has_landed_title = b_mentana }
+				}
+			}
+			religion_head = {
+				b_mentana = {
+					gain_title = PREV
+				}			
+			}			
+		}	
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = b_trevignanoromano
+					any_realm_lord = { has_landed_title = b_trevignanoromano }
+				}
+			}
+			religion_head = {
+				b_trevignanoromano = {
+					gain_title = PREV
+				}			
+			}			
+		}
+		opinion = {
+			modifier = opinion_happy
+			who = ROOT
+			years = 10
+		}		
+	}
+	option = {
+		name = "EVTOPTBreligious.5"
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 2.0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2.0
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 2.0
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 2.0
+				trait = envious
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}			
+		}
+		piety = -50
+		add_trait = excommunicated
+		set_global_flag = excommunicated_rome
+		religion_head = {
+			opinion = {
+				modifier = opinion_hate
+				who = ROOT
+				years = 100
+			}			
+		}	
+	}	
+}
+
+
+#Jubilee
+character_event = {
+	id = religious.6
+	desc = "EVTDESCreligious.6"
+    title = "EVTNAMEreligious.6"
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+    only_rulers = yes
+    min_age = 14
+		
+	is_triggered_only = yes
+		
+	trigger = {
+		year = 1300
+        religion = catholic
+        NOT = { has_character_modifier = attending_jubilee }
+        NOT = { has_character_modifier = not_attending_jubilee } 
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTAreligious.6"
+        prestige = 15
+        piety = 20
+        scaled_wealth = -0.75
+        remove_trait = cynical
+        random = { 
+		    chance = 35
+            add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}
+		add_character_modifier = { name = attending_jubilee duration = 365 }
+        religion_authority = 0.01
+		
+        ai_chance = {
+			factor = 0.65
+            modifier = {
+				factor = 1.25
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 1.25
+				trait = zealous
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 1.25
+				trait = antisemite
+			}
+            modifier = {
+				factor = 1.25
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				trait = tolerant
+			}
+            modifier = {
+				factor = 2.5
+				trait = mastermind_theologian
+			}
+		}
+	}	
+	
+    option = {
+		name = "EVTOPTBreligious.6"
+        prestige = -50
+        piety = -25
+        random = { 
+		    chance = 35
+            add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+        random = {
+    		chance = 55
+            add_trait = greedy 
+			hidden_tooltip = {
+				character_event = { id = 38252 }
+			}
+		}
+        random = { chance = 5 add_trait = excommunicated }
+        add_character_modifier = { name = not_attending_jubilee  duration = 365 } 
+        religion_authority = -0.005
+		
+        ai_chance = {
+			factor = 0.35
+            modifier = {
+				factor = 1.25
+				trait = proud
+			}
+            modifier = {
+				factor = 1.25
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = content
+			}
+            modifier = {
+				factor = 1.25
+				trait = tolerant
+			}
+            modifier = {
+				factor = 1.25
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = greedy
+			}
+		}
+    } 	
+}
+
+#Send mission to neighbour pagan
+character_event = {
+	id = religious.7
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	only_rulers = yes
+	capable_only = yes
+	min_age = 14
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war = no
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+		NOT = { trait = cynical }
+		piety = 100
+		wealth = 100
+		OR = {
+			NOT = { has_character_flag = missionary_expedition }
+			had_character_flag = {
+				flag = missionary_expedition
+				days = 3650
+			}
+		}
+		any_independent_ruler = {
+			war = no
+			OR = {
+			religion_group = pagan_group
+			religion_group = other_pagan_group
+			religion_group = baltic_pagan_group
+			religion_group = african_pagan_group
+			}
+			opinion = {
+				who = ROOT
+				value = -25
+			}			
+			NOT = { trait = zealous }
+			NOT = { piety = 100 }
+			age = 14
+			NOT = { age = 35 }
+			NOT = { has_character_flag = missionary_expedition }
+			lower_tier_than = ROOT
+			any_realm_province = {
+				any_neighbor_province = {
+					owner = {
+						OR = {
+							same_realm = ROOT
+							character = ROOT
+						}
+					}
+				}
+			}		
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
+	desc = "EVTDESCreligious.7"
+	
+	option = {
+		name = "EVTOPTAreligious.7"
+		ai_chance = {
+			factor = 100
+		}
+		wealth = -100
+		if = {
+			limit = { NOT = { trait = zealous } }
+			random = {
+				chance = 33
+				add_trait = zealous
+				hidden_tooltip = {
+					character_event = {
+						id = 38269 #Notify Zealous
+					}
+				}
+			}
+		}		
+		random_independent_ruler = {	
+			limit = {
+				war = no
+				religion_group = pagan_group
+				opinion = {
+					who = ROOT
+					value = -25
+				}	
+				NOT = { trait = zealous }
+				NOT = { piety = 100 }
+				age = 14
+				NOT = { age = 35 }
+				NOT = { has_character_flag = missionary_expedition }
+				lower_tier_than = ROOT
+				any_realm_province = {
+					any_neighbor_province = {
+						owner = {
+							OR = {
+								same_realm = ROOT
+								character = ROOT
+							}
+						}
+					}
+				}	
+			}
+			set_character_flag = missionary_expedition
+			character_event = { id = religious.8 days = 14 tooltip = EVTTOOLTIPreligious.8 }
+		}
+		set_character_flag = missionary_expedition
+	}
+	option = {
+		name = "EVTOPTBreligious.7"	
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				NOT = { wealth = 200 }
+			}
+		}
+		piety = -50
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+		set_character_flag = missionary_expedition
+	}	
+}
+
+#Pagan ruler receives mission
+character_event = {
+	id = religious.8
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+		
+	desc = "EVTDESCreligious.8"
+	
+	option = {
+		name = "EVTOPTAreligious.8"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = { age = 20 }
+			}			
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { piety = 0 }
+			}		
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 0
+				}
+			}		
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}	
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 75
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 100
+				}
+			}			
+		}
+		wealth = 100
+		religion = FROM
+		reverse_opinion = {
+			who = FROM
+			modifier = zealous_pos
+			years = 10
+		}
+		hidden_tooltip = { FROM = { character_event = { id = religious.9 } } }
+	}
+	option = {
+		name = "EVTOPTBreligious.7"	
+		trigger = {
+			NOT = { trait = charitable }
+		}
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1.33
+				trait = greedy
+			}			
+		}		
+		wealth = 100
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_unchristian
+			years = 10
+		}		
+		hidden_tooltip = { FROM = { character_event = { id = religious.10 } } }
+	}		
+	option = {
+		name = "Throw out those false priests!"	
+		trigger = {
+			NOT = { trait = greedy }
+		}		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 4.0
+				trait = charitable
+			}						
+		}		
+		piety = 50
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_unchristian
+			years = 10
+		}		
+		hidden_tooltip = { FROM = { character_event = { id = religious.11 } } }
+	}	
+}
+
+#Pagan ruler converts
+character_event = {
+	id = religious.9
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+		
+	desc = "EVTDESCreligious.9"
+	
+	option = {
+		name = "EVTOPTAreligious.9"
+		trigger = {
+			religion_group = christian
+		}
+		piety = 100
+		tooltip = {
+			FROM = { religion = ROOT }
+			opinion = {
+				who = FROM
+				modifier = ambitious_pos
+				years = 10
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBreligious.9"
+		trigger = {
+			religion_group = muslim
+		}		
+		piety = 100
+		tooltip = {
+			FROM = { religion = ROOT }
+			opinion = {
+				who = FROM
+				modifier = ambitious_pos
+				years = 10
+			}
+		}
+	}	
+}
+
+#Pagan ruler takes gifts but does not convert
+character_event = {
+	id = religious.10
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+		
+	desc = "EVTDESCreligious.10"
+	
+	option = {
+		name = "EVTOPTAreligious.10"
+		piety = 25
+		tooltip = {
+			opinion = {
+				who = FROM
+				modifier = ambitious_neg
+				years = 10
+			}
+		}
+	}	
+}
+
+#Pagan ruler throws out missionaries!
+character_event = {
+	id = religious.11
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+		
+	desc = "EVTDESCreligious.11"
+	
+	option = {
+		name = "EVTOPTAreligious.11"
+		wealth = 100
+		tooltip = {
+			opinion = {
+				who = FROM
+				modifier = ambitious_neg
+				years = 10
+			}
+		}
+	}	
+}
+
+character_event = {
+	id = religious.12
+	desc = "AI_EVENT"	
+	picture = GFX_evt_pope
+	is_triggered_only = yes
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_landed_title = k_papal_state
+		has_landed_title = c_roma
+		has_global_flag = excommunicated_rome
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "OK"
+		clr_global_flag = excommunicated_rome
+	}
+}
+
+#Religious authority strengthened
+character_event = {
+	id = religious.13
+	picture = "GFX_evt_pope"
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			learning = 10
+			diplomacy = 10
+			piety = 500
+		}
+	}
+		
+	desc = "EVTDESCreligious.13"
+	
+	mean_time_to_happen = {
+		days = 1	
+		modifier = {
+			factor = 0.5
+			religion_authority = 0.6
+		}		
+		modifier = {
+			factor = 0.5
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 0.5
+			religion_authority = 0.8
+		}	
+		modifier = {
+			factor = 0.5
+			religion_authority = 0.9
+		}
+		modifier = {
+			factor = 0.5
+			religion_authority = 1.0
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = { religion_authority = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religion_authority = 0.3 }
+		}	
+		modifier = {
+			factor = 1.5
+			NOT = { religion_authority = 0.2 }
+		}	
+		modifier = {
+			factor = 1.5
+			NOT = { religion_authority = 0.1 }
+		}		
+		modifier = {
+			factor = 0.5
+			has_character_flag = authority_change
+		}	
+		modifier = {
+			factor = 1.75
+			diplomacy = 15
+		}
+		modifier = {
+			factor = 1.75
+			diplomacy = 20
+		}
+		modifier = {
+			factor = 1.75
+			diplomacy = 25
+		}	
+		modifier = {
+			factor = 1.75
+			diplomacy = 30
+		}		
+		modifier = {
+			factor = 1.75
+			learning = 15
+		}
+		modifier = {
+			factor = 0.75
+			learning = 20
+		}
+		modifier = {
+			factor = 1.75
+			learning = 25
+		}	
+		modifier = {
+			factor = 1.75
+			learning = 30
+		}	
+		modifier = {
+			factor = 1.9
+			piety = 250
+		}	
+		modifier = {
+			factor = 1.9
+			piety = 500
+		}	
+		modifier = {
+			factor = 1.9
+			piety = 750
+		}		
+		modifier = {
+			factor = 1.9
+			piety = 1000
+		}
+	}
+
+	option = {
+		name = "OK"
+		religion_authority = 0.05
+		set_character_flag = authority_change
+	}
+}
+
+#Religious authority weakened
+character_event = {
+	id = religious.14
+	picture = "GFX_evt_pope"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		controls_religion = yes
+		NOT = { diplomacy = 10 }
+		NOT = { learning = 10 }
+		NOT = { piety = 500 }
+	}
+		
+	desc = "EVTDESCreligious.14"
+	
+	mean_time_to_happen = {
+		days = 1		
+		modifier = {
+			factor = 1.5
+			religion_authority = 0.6
+		}		
+		modifier = {
+			factor = 1.5
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 1.5
+			religion_authority = 0.8
+		}	
+		modifier = {
+			factor = 1.5
+			religion_authority = 0.9
+		}
+		modifier = {
+			factor = 1.5
+			religion_authority = 1.0
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { religion_authority = 0.5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion_authority = 0.3 }
+		}	
+		modifier = {
+			factor = 0.5
+			NOT = { religion_authority = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			NOT = { religion_authority = 0.1 }
+		}		
+		modifier = {
+			factor = 0.5
+			has_character_flag = authority_change
+		}	
+		modifier = {
+			factor = 1.75
+			NOT = { diplomacy = 5 }
+		}		
+		modifier = {
+			factor = 1.75
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { piety = 100 }
+		}			
+		modifier = {
+			factor = 0.5
+			piety = 250
+		}		
+	}
+
+	option = {
+		name = "OK"
+		religion_authority = -0.05
+		set_character_flag = authority_change
+	}
+}
+
+#Child isn't your same religion
+character_event = {
+	id = religious.15
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+        
+	desc = "My child follows the wrong faith.."	
+	
+	is_triggered_only = yes
+	
+	capable_only = yes
+	min_age = 14
+    only_men = yes
+	
+	trigger = {
+        NOT = { has_character_flag = refused_child_conversion }
+		any_child = {  
+	        NOT = { religion = ROOT } 
+            NOT = { age = 14 } 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+		
+	
+	option = {
+		name = "This cannot go on anymore"
+        random_child = { 
+		    limit = { NOT = { religion = ROOT }  NOT = { age = 14 } } 
+            religion = ROOT  
+		}
+        piety = 50
+        prestige = -15
+        random = { 
+		    chance = 75
+			add_trait = zealous 
+			hidden_tooltip = {
+				character_event = { id = 38269 }
+			}
+		}
+    }
+	
+    option = {
+		name = "Let it be"
+        piety = -50
+        prestige = 15
+        set_character_flag = refused_child_conversion
+        random = { 
+		    chance = 75 
+			add_trait = cynical 
+			hidden_tooltip = {
+				character_event = { id = 38258 }
+			}
+		}
+    }
+}
+
+#Estabilish Bogomilist Patriarch
+narrative_event = {
+	id = religious.16
+	picture = GFX_evt_heretic
+    title = "The Bogomilist Patriarchy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.16"	
+	
+	is_triggered_only = yes
+		  
+    immediate = {
+	    activate_title = { title = d_bogomilist status = yes }	
+		create_random_priest = {
+		    random_traits = no
+	        dynasty = random
+          	female = no
+         	min_age = 35
+	        religion = bogomilist
+	        culture = ROOT
+	        trait = mastermind_theologian
+	        trait = scholar
+		}
+        new_character = {
+	        opinion = {
+		        modifier = opinion_grateful
+		       	who = ROOT
+	           	months = 1200
+           	}
+           	d_bogomilist = {
+              	grant_title = PREV
+           	}
+			random_demesne_province = {
+			    random_province_lord = {
+				    limit = {
+					    tier = BARON
+						is_theocracy = yes
+					}
+			        primary_title = {
+					    grant_title = PREVPREVPREV
+					}
+				}
+			}
+           	if = {
+              	limit = {
+				    ROOT = { higher_tier_than = DUKE }
+				}
+				set_defacto_liege = ROOT
+           	}
+		}
+	}
+	
+	option = {
+		name = "A Holy day!"        
+		set_global_flag = bogomilist_patriarch
+		piety = 250
+		prestige = 500
+		wealth = -500
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    narrative_event = {
+				    id = religious.17
+			    }
+			}
+		}
+		rightful_religious_head_scope = {
+			opinion = {
+				who = FROM
+				modifier = opinion_grateful
+				years = 25
+			}
+		}
+    }
+}
+
+#Bogomilist Patriarch estabilished notification
+narrative_event = {
+	id = religious.17
+	picture = GFX_evt_heretic
+    title = "The Bogomilist Patriarchy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.17"	
+	
+	is_triggered_only = yes
+	
+	option = {
+	    trigger = {
+		    religion = bogomilist
+        }
+		name = "A Holy day!"        
+		piety = 25
+		prestige = 50
+    }
+	
+	option = {
+	    trigger = {
+		    NOT = { religion = bogomilist }
+        }
+		name = "Worrying news.."        
+		piety = -10
+		prestige = -5
+    }
+}
+
+#Estabilish Cathar Papacy
+narrative_event = {
+	id = religious.18
+	picture = GFX_evt_heretic
+    title = "The Cathar Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.18"	
+	
+	is_triggered_only = yes
+		  
+    immediate = {
+	    activate_title = { title = k_cathar_papal_state status = yes }	
+		create_random_priest = {
+		    random_traits = no
+	        dynasty = random
+          	female = no
+         	min_age = 35
+	        religion = cathar
+	        culture = ROOT
+	        trait = mastermind_theologian
+	        trait = scholar
+		}
+        new_character = {
+	        opinion = {
+		        modifier = opinion_grateful
+		       	who = ROOT
+	           	months = 1200
+           	}
+           	k_cathar_papal_state = {
+              	grant_title = PREV
+           	}
+			random_demesne_province = {
+			    random_province_lord = {
+				    limit = {
+					    tier = BARON
+						is_theocracy = yes
+					}
+			        primary_title = {
+					    grant_title = PREVPREVPREV
+					}
+				}
+			}
+           	if = {
+              	limit = {
+				    ROOT = { higher_tier_than = KING }
+				}
+				set_defacto_liege = ROOT
+           	}
+		}
+	}
+	
+	option = {
+		name = "A Holy day!"        
+		set_global_flag = cathar_patriarch
+		piety = 250
+		prestige = 500
+		wealth = -500
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    narrative_event = {
+				    id = religious.19
+			    }
+			}
+		}
+		rightful_religious_head_scope = {
+			opinion = {
+				who = FROM
+				modifier = opinion_grateful
+				years = 25
+			}
+		}
+    }
+}
+
+#Cathar Pope estabilished notification
+narrative_event = {
+	id = religious.19
+	picture = GFX_evt_heretic
+    title = "The Cathar Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.19"	
+	
+	is_triggered_only = yes
+	
+	option = {
+	    trigger = {
+		    religion = cathar
+        }
+		name = "A Holy day!"        
+		piety = 25
+		prestige = 50
+    }
+	
+	option = {
+	    trigger = {
+		    NOT = { religion = cathar }
+        }
+		name = "Worrying news.."        
+		piety = -10
+		prestige = -5
+    }
+}
+
+#Estabilish Fraticelli Papacy
+narrative_event = {
+	id = religious.20
+	picture = GFX_evt_heretic
+    title = "The Fraticelli Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.20"	
+	
+	is_triggered_only = yes
+		  
+    immediate = {
+	    activate_title = { title = k_fraticelli_papal_state status = yes }	
+		create_random_priest = {
+		    random_traits = no
+	        dynasty = random
+          	female = no
+         	min_age = 35
+	        religion = fraticelli
+	        culture = ROOT
+	        trait = mastermind_theologian
+	        trait = scholar
+		}
+        new_character = {
+	        opinion = {
+		        modifier = opinion_grateful
+		       	who = ROOT
+	           	months = 1200
+           	}
+           	k_fraticelli_papal_state = {
+              	grant_title = PREV
+           	}
+			random_demesne_province = {
+			    random_province_lord = {
+				    limit = {
+					    tier = BARON
+						is_theocracy = yes
+					}
+			        primary_title = {
+					    grant_title = PREVPREVPREV
+					}
+				}
+			}
+           	if = {
+              	limit = {
+				    ROOT = { higher_tier_than = KING }
+				}
+				set_defacto_liege = ROOT
+           	}
+		}
+	}
+	
+	option = {
+		name = "A Holy day!"        
+		set_global_flag = fraticelli_patriarch
+		piety = 250
+		prestige = 500
+		wealth = -500
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    narrative_event = {
+				    id = religious.21
+			    }
+			}
+		}
+		rightful_religious_head_scope = {
+			opinion = {
+				who = FROM
+				modifier = opinion_grateful
+				years = 25
+			}
+		}
+    }
+}
+
+#Fraticelli Pope estabilished notification
+narrative_event = {
+	id = religious.21
+	picture = GFX_evt_heretic
+    title = "The Fraticelli Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.21"	
+	
+	is_triggered_only = yes
+	
+	option = {
+	    trigger = {
+		    religion = fraticelli
+        }
+		name = "A Holy day!"        
+		piety = 25
+		prestige = 50
+    }
+	
+	option = {
+	    trigger = {
+		    NOT = { religion = fraticelli }
+        }
+		name = "Worrying news.."        
+		piety = -10
+		prestige = -5
+    }
+}
+
+#Estabilish Waldensian Papacy
+narrative_event = {
+	id = religious.22
+	picture = GFX_evt_heretic
+    title = "The Waldensian Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.22"	
+	
+	is_triggered_only = yes
+		  
+    immediate = {
+	    activate_title = { title = k_waldensian_papal_state status = yes }	
+		create_random_priest = {
+		    random_traits = no
+	        dynasty = random
+          	female = no
+         	min_age = 35
+	        religion = waldensian
+	        culture = ROOT
+	        trait = mastermind_theologian
+	        trait = scholar
+		}
+        new_character = {
+	        opinion = {
+		        modifier = opinion_grateful
+		       	who = ROOT
+	           	months = 1200
+           	}
+           	k_waldensian_papal_state = {
+              	grant_title = PREV
+           	}
+			random_demesne_province = {
+			    random_province_lord = {
+				    limit = {
+					    tier = BARON
+						is_theocracy = yes
+					}
+			        primary_title = {
+					    grant_title = PREVPREVPREV
+					}
+				}
+			}
+           	if = {
+              	limit = {
+				    ROOT = { higher_tier_than = KING }
+				}
+				set_defacto_liege = ROOT
+           	}
+		}
+	}
+	
+	option = {
+		name = "A Holy day!"        
+		set_global_flag = waldensian_patriarch
+		piety = 250
+		prestige = 500
+		wealth = -500
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    narrative_event = {
+				    id = religious.23
+			    }
+			}
+		}
+		rightful_religious_head_scope = {
+			opinion = {
+				who = FROM
+				modifier = opinion_grateful
+				years = 25
+			}
+		}
+    }
+}
+
+#Waldensian Pope estabilished notification
+narrative_event = {
+	id = religious.23
+	picture = GFX_evt_heretic
+    title = "The Waldensian Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.23"	
+	
+	is_triggered_only = yes
+	
+	option = {
+	    trigger = {
+		    religion = waldensian
+        }
+		name = "A Holy day!"        
+		piety = 25
+		prestige = 50
+    }
+	
+	option = {
+	    trigger = {
+		    NOT = { religion = waldensian }
+        }
+		name = "Worrying news.."        
+		piety = -10
+		prestige = -5
+    }
+}
+
+#Estabilish Lollard Papacy
+narrative_event = {
+	id = religious.24
+	picture = GFX_evt_heretic
+    title = "The Lollard Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.24"	
+	
+	is_triggered_only = yes
+		  
+    immediate = {
+	    activate_title = { title = k_lollard_papal_state status = yes }	
+		create_random_priest = {
+		    random_traits = no
+	        dynasty = random
+          	female = no
+         	min_age = 35
+	        religion = lollard
+	        culture = ROOT
+	        trait = mastermind_theologian
+	        trait = scholar
+		}
+        new_character = {
+	        opinion = {
+		        modifier = opinion_grateful
+		       	who = ROOT
+	           	months = 1200
+           	}
+           	k_lollard_papal_state = {
+              	grant_title = PREV
+           	}
+			random_demesne_province = {
+			    random_province_lord = {
+				    limit = {
+					    tier = BARON
+						is_theocracy = yes
+					}
+			        primary_title = {
+					    grant_title = PREVPREVPREV
+					}
+				}
+			}
+           	if = {
+              	limit = {
+				    ROOT = { higher_tier_than = KING }
+				}
+				set_defacto_liege = ROOT
+           	}
+		}
+	}
+	
+	option = {
+		name = "A Holy day!"        
+		set_global_flag = lollard_patriarch
+		piety = 250
+		prestige = 500
+		wealth = -500
+		hidden_tooltip = {
+		    any_playable_ruler = {
+			    narrative_event = {
+				    id = religious.25
+			    }
+			}
+		}
+		rightful_religious_head_scope = {
+			opinion = {
+				who = FROM
+				modifier = opinion_grateful
+				years = 25
+			}
+		}
+    }
+}
+
+#Lollard Pope estabilished notification
+narrative_event = {
+	id = religious.25
+	picture = GFX_evt_heretic
+    title = "The Lollard Papacy"
+	border = "GFX_event_narrative_frame_religion"
+        
+	desc = "EVTDESCreligious.25"	
+	
+	is_triggered_only = yes
+	
+	option = {
+	    trigger = {
+		    religion = lollard
+        }
+		name = "A Holy day!"        
+		piety = 25
+		prestige = 50
+    }
+	
+	option = {
+	    trigger = {
+		    NOT = { religion = lollard }
+        }
+		name = "Worrying news.."        
+		piety = -10
+		prestige = -5
+    }
+}

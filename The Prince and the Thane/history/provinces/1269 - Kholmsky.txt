@@ -1,0 +1,29 @@
+# 1269 - Kholmsky
+
+# County Title
+title = c_kholm
+
+# Settlements
+max_settlements = 4
+
+b_demjanskkholmsky = castle
+b_kholmkholmsky = city
+#b_velilkholmsky = castle
+#b_morevakholmsky = city
+#b_molvoticykholmsky = temple
+#b_berezoveckholmsky = city
+#b_sterzkholmsky = castle
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+
+
+
+
+
+
+

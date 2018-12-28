@@ -1,0 +1,31 @@
+# 461 - Fejer
+
+# County Title
+title = c_fejer
+
+# Settlements
+max_settlements = 4
+
+b_szejesfehervar = castle
+b_adony = temple
+#b_sarbogard = city
+b_dunafoldvar = city
+#b_mor = castle
+#b_val = temple
+#b_jasd = city
+#b_ercsi = city
+#b_solt = temple
+#b_kalocsa = castle
+#b_kiskhunalas = castle
+#b_varpalota = castle
+#b_rackeve = castle
+
+
+
+# Misc
+culture = hungarian
+religion = catholic
+
+# History
+
+

@@ -1,0 +1,12 @@
+800.1.1={
+	liege="c_forli"
+}
+1313.1.1={
+	holder=1191333 #Francesco I Manfredi
+}
+1330.1.1={
+	holder=1191335 #Ricciardo Manfredi
+}
+1340.1.1={
+	holder=1191336 #Giovanni Manfredi
+}

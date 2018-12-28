@@ -1,0 +1,23 @@
+# 1010 - Sunmore
+
+# County Title
+title = c_sunmore
+
+# Settlements
+max_settlements = 3
+
+b_husastadir = castle
+b_borgundmore = city
+#b_blindheimr = castle
+#b_halkjellsvik = temple
+
+
+
+
+
+# Misc
+culture = norwegian
+religion = catholic
+
+# History
+

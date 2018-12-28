@@ -1,0 +1,12 @@
+1024.1.1={
+    liege="e_hre"
+}
+1284.1.1=
+{
+holder=1191026 #Federico I Malaspina
+liege=0
+}
+1320.1.1=
+{
+holder=1191027 #Federico II Malaspina
+}

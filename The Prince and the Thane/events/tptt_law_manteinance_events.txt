@@ -1,0 +1,1216 @@
+######################################################################
+#
+# The Prince and the Thane law manteinance events - written by idib816
+#
+######################################################################
+
+namespace = pagans
+
+character_event = {
+	id = pagans.15
+	desc = "EVTDESCpagans.15"
+	picture = GFX_evt_court
+	
+	hide_window = yes
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+            religion_group = pagan_group 
+            religion_group = baltic_pagan_group
+            religion_group = other_pagan_group
+            culture = mongol
+            religion_group = african_pagan_group
+            culture_group = celtic
+		}
+		OR = {
+			tier = king
+			tier = emperor
+		}
+		OR = {
+			primary_title = { has_law = centralization_0 }
+			primary_title = { has_law = centralization_1 }
+			primary_title = { has_law = centralization_2 }
+			primary_title = { has_law = centralization_3 }
+			primary_title = { has_law = centralization_4 }
+			primary_title = { has_law = feudal_contract_0 }
+			primary_title = { has_law = feudal_contract_1 }
+			primary_title = { has_law = feudal_contract_2 }
+			primary_title = { has_law = feudal_contract_3 }
+			primary_title = { has_law = feudal_contract_4 }
+			primary_title = { has_law = feudal_tax_0 }
+			primary_title = { has_law = feudal_tax_1 }
+			primary_title = { has_law = feudal_tax_2 }
+			primary_title = { has_law = feudal_tax_3 }
+			primary_title = { has_law = feudal_tax_4 }
+			primary_title = { has_law = city_contract_0 }
+			primary_title = { has_law = city_contract_1 }
+			primary_title = { has_law = city_contract_2 }
+			primary_title = { has_law = city_contract_3 }
+			primary_title = { has_law = city_contract_4 }
+			primary_title = { has_law = city_tax_0 }
+			primary_title = { has_law = city_tax_1 }
+			primary_title = { has_law = city_tax_2 }
+			primary_title = { has_law = city_tax_3 }
+			primary_title = { has_law = city_tax_4 }
+			primary_title = { has_law = temple_contract_0 }
+			primary_title = { has_law = temple_contract_1 }
+			primary_title = { has_law = temple_contract_2 }
+			primary_title = { has_law = temple_contract_3 }
+			primary_title = { has_law = temple_contract_4 }
+			primary_title = { has_law = temple_tax_0 }
+			primary_title = { has_law = temple_tax_1 }
+			primary_title = { has_law = temple_tax_2 }
+			primary_title = { has_law = temple_tax_3 }
+			primary_title = { has_law = temple_tax_4 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "EVTOPTApagans.15"
+		primary_title = { 
+            revoke_law = centralization_0
+			revoke_law = centralization_1
+			revoke_law = centralization_2
+			revoke_law = centralization_3
+			revoke_law = centralization_4
+            revoke_law = feudal_contract_0
+			revoke_law = feudal_contract_1
+			revoke_law = feudal_contract_2
+			revoke_law = feudal_contract_3
+			revoke_law = feudal_contract_4
+            revoke_law = feudal_tax_0
+			revoke_law = feudal_tax_1
+			revoke_law = feudal_tax_2
+			revoke_law = feudal_tax_3
+			revoke_law = feudal_tax_4
+            revoke_law = city_contract_0
+			revoke_law = city_contract_1
+			revoke_law = city_contract_2
+			revoke_law = city_contract_3
+			revoke_law = city_contract_4
+            revoke_law = city_tax_0
+			revoke_law = city_tax_1
+			revoke_law = city_tax_2
+			revoke_law = city_tax_3
+			revoke_law = city_tax_4
+            revoke_law = temple_contract_0
+			revoke_law = temple_contract_1
+			revoke_law = temple_contract_2
+			revoke_law = temple_contract_3
+			revoke_law = temple_contract_4
+            revoke_law = temple_tax_0
+			revoke_law = temple_tax_1
+			revoke_law = temple_tax_2
+			revoke_law = temple_tax_3
+			revoke_law = temple_tax_4
+		}
+	}
+}
+
+character_event = {
+	id = pagans.12
+	desc = "EVTDESCpagans.12"
+	picture = GFX_evt_viking2
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = pagan_group
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = nm_temple_control_0 } }
+		NOT = { primary_title = { has_law = nm_temple_control_1 } }
+		NOT = { primary_title = { has_law = nm_temple_control_2 } }
+		NOT = { primary_title = { has_law = nm_temple_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "EVTOPTApagans.12"
+		primary_title = { add_law_w_cooldown = nm_temple_control_0 }
+	}
+}
+
+character_event = {
+	id = pagans.13
+	desc = "EVTDESCpagans.13"
+	picture = GFX_evt_viking2
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = pagan_group
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = nm_city_control_0 } }
+		NOT = { primary_title = { has_law = nm_city_control_1 } }
+		NOT = { primary_title = { has_law = nm_city_control_2 } }
+		NOT = { primary_title = { has_law = nm_city_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "EVTOPTApagans.11"
+		primary_title = { add_law_w_cooldown = nm_city_control_0 }
+	}
+}
+
+character_event = {
+	id = pagans.11
+	desc = "EVTDESCpagans.11"
+	picture = GFX_evt_viking
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = pagan_group
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = nm_castle_control_0 } }
+		NOT = { primary_title = { has_law = nm_castle_control_1 } }
+		NOT = { primary_title = { has_law = nm_castle_control_2 } }
+		NOT = { primary_title = { has_law = nm_castle_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "EVTOPTApagans.11"
+		primary_title = { add_law_w_cooldown = nm_castle_control_0 }
+	}
+}
+
+namespace = law_manteinance
+
+character_event = {
+	id = law_manteinance.0
+	desc = "We can now set the degree of control over our subject chieftains!"
+	picture = GFX_evt_ting
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    OR = {
+		religion_group = baltic_pagan_group
+		religion_group = african_pagan_group
+		}
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = baltic_castle_control_0 } }
+		NOT = { primary_title = { has_law = baltic_castle_control_1 } }
+		NOT = { primary_title = { has_law = baltic_castle_control_2 } }
+		NOT = { primary_title = { has_law = baltic_castle_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = baltic_castle_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.1
+	desc = "We can now set the level of religious control we have on our subjects!"
+	picture = GFX_evt_ting
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    OR = {
+		religion_group = baltic_pagan_group
+		religion_group = african_pagan_group
+		}
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = baltic_temple_control_0 } }
+		NOT = { primary_title = { has_law = baltic_temple_control_1 } }
+		NOT = { primary_title = { has_law = baltic_temple_control_2 } }
+		NOT = { primary_title = { has_law = baltic_temple_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = baltic_temple_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.2
+	desc = "We can now set the degree of control over our subject cities"
+	picture = GFX_evt_ting
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    OR = {
+		religion_group = baltic_pagan_group
+		religion_group = african_pagan_group
+		}
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = baltic_city_control_0 } }
+		NOT = { primary_title = { has_law = baltic_city_control_1 } }
+		NOT = { primary_title = { has_law = baltic_city_control_2 } }
+		NOT = { primary_title = { has_law = baltic_city_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = baltic_city_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.3
+	desc = "We can now centralize!"
+	picture = GFX_evt_ting
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    OR = {
+		religion_group = baltic_pagan_group
+		religion_group = african_pagan_group
+		}
+		OR = {
+			tier = king
+			tier = emperor
+		}
+		NOT = { primary_title = { has_law = baltic_centralization_0 } }
+		NOT = { primary_title = { has_law = baltic_centralization_1 } }
+		NOT = { primary_title = { has_law = baltic_centralization_2 } }
+		NOT = { primary_title = { has_law = baltic_centralization_3 } }
+		NOT = { primary_title = { has_law = baltic_centralization_4 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = baltic_centralization_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.4
+	desc = "We can now set the degree of control over our subject chieftains!"
+	picture = GFX_evt_mongol2
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = other_pagan_group
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = tengri_castle_control_0 } }
+		NOT = { primary_title = { has_law = tengri_castle_control_1 } }
+		NOT = { primary_title = { has_law = tengri_castle_control_2 } }
+		NOT = { primary_title = { has_law = tengri_castle_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = tengri_castle_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.5
+	desc = "We can now set the level of religious control we have on our subjects!"
+	picture = GFX_evt_mongol_soldier
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = other_pagan_group
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = tengri_temple_control_0 } }
+		NOT = { primary_title = { has_law = tengri_temple_control_1 } }
+		NOT = { primary_title = { has_law = tengri_temple_control_2 } }
+		NOT = { primary_title = { has_law = tengri_temple_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = tengri_temple_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.6
+	desc = "We can now set the degree of control over our subject cities"
+	picture = GFX_evt_mongol2
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = other_pagan_group
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = tengri_city_control_0 } }
+		NOT = { primary_title = { has_law = tengri_city_control_1 } }
+		NOT = { primary_title = { has_law = tengri_city_control_2 } }
+		NOT = { primary_title = { has_law = tengri_city_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = tengri_city_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.7
+	desc = "We can now centralize!"
+	picture = GFX_evt_mongol2
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = other_pagan_group
+		OR = {
+			tier = king
+			tier = emperor
+		}
+		NOT = { primary_title = { has_law = tengri_centralization_0 } }
+		NOT = { primary_title = { has_law = tengri_centralization_1 } }
+		NOT = { primary_title = { has_law = tengri_centralization_2 } }
+		NOT = { primary_title = { has_law = tengri_centralization_3 } }
+		NOT = { primary_title = { has_law = tengri_centralization_4 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = tengri_centralization_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.8
+	desc = "We can now set the degree of control over our subject chieftains!"
+	picture = GFX_evt_mongol_soldier
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture = mongol
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = mongol_castle_control_0 } }
+		NOT = { primary_title = { has_law = mongol_castle_control_1 } }
+		NOT = { primary_title = { has_law = mongol_castle_control_2 } }
+		NOT = { primary_title = { has_law = mongol_castle_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = mongol_castle_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.9
+	desc = "We can now set the level of religious control we have on our subjects!"
+	picture = GFX_evt_mongol
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture = mongol
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = mongol_temple_control_0 } }
+		NOT = { primary_title = { has_law = mongol_temple_control_1 } }
+		NOT = { primary_title = { has_law = mongol_temple_control_2 } }
+		NOT = { primary_title = { has_law = mongol_temple_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = mongol_temple_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.10
+	desc = "We can now set the degree of control over our subject cities"
+	picture = GFX_evt_mongol2
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture = mongol
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = mongol_city_control_0 } }
+		NOT = { primary_title = { has_law = mongol_city_control_1 } }
+		NOT = { primary_title = { has_law = mongol_city_control_2 } }
+		NOT = { primary_title = { has_law = mongol_city_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = mongol_city_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.11
+	desc = "We can now centralize!"
+	picture = GFX_evt_mongol_soldier
+	
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	trigger = {
+		culture = mongol
+		OR = {
+			tier = king
+			tier = emperor
+		}
+		NOT = { primary_title = { has_law = mongol_centralization_0 } }
+		NOT = { primary_title = { has_law = mongol_centralization_1 } }
+		NOT = { primary_title = { has_law = mongol_centralization_2 } }
+		NOT = { primary_title = { has_law = mongol_centralization_3 } }
+		NOT = { primary_title = { has_law = mongol_centralization_4 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = mongol_centralization_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.12
+	desc = "We can now set the degree of control over our subject clansmen!"
+	picture = GFX_evt_gaelic_warrior
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture_group = celtic
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = gaelic_castle_control_0 } }
+		NOT = { primary_title = { has_law = gaelic_castle_control_1 } }
+		NOT = { primary_title = { has_law = gaelic_castle_control_2 } }
+		NOT = { primary_title = { has_law = gaelic_castle_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = gaelic_castle_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.13
+	desc = "We can now set the level of religious control we have on our subjects!"
+	picture = GFX_evt_gaelic_warrior
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture_group = celtic
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = gaelic_temple_control_0 } }
+		NOT = { primary_title = { has_law = gaelic_temple_control_1 } }
+		NOT = { primary_title = { has_law = gaelic_temple_control_2 } }
+		NOT = { primary_title = { has_law = gaelic_temple_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = gaelic_temple_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.14
+	desc = "We can now set the degree of control over our subject cities"
+	picture = GFX_evt_gaelic_warrior
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture_group = celtic
+		NOT = { tier = baron }
+		NOT = { primary_title = { has_law = gaelic_city_control_0 } }
+		NOT = { primary_title = { has_law = gaelic_city_control_1 } }
+		NOT = { primary_title = { has_law = gaelic_city_control_2 } }
+		NOT = { primary_title = { has_law = gaelic_city_control_3 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = gaelic_city_control_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.15
+	desc = "We can now centralize!"
+	picture = GFX_evt_gaelic_warrior
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		culture_group = celtic
+		OR = {
+			tier = king
+			tier = emperor
+		}
+		NOT = { primary_title = { has_law = gaelic_centralization_0 } }
+		NOT = { primary_title = { has_law = gaelic_centralization_1 } }
+		NOT = { primary_title = { has_law = gaelic_centralization_2 } }
+		NOT = { primary_title = { has_law = gaelic_centralization_3 } }
+		NOT = { primary_title = { has_law = gaelic_centralization_4 } }
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "OK"
+		primary_title = { add_law_w_cooldown = gaelic_centralization_0 }
+	}
+}
+
+character_event = {
+	id = law_manteinance.16
+	desc = "AI_EVENT"
+	picture = GFX_evt_throne_room
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_rebels
+		any_playable_ruler = {
+		    higher_tier_than = DUKE
+		    OR = {
+			    AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = frankalmoin_0 
+					        has_law = frankalmoin_1 
+					        has_law = military_tenure_0
+					        has_law = military_tenure_1
+					        has_law = tenure_protection_0
+					        has_law = tenure_protection_1
+					        has_law = tenure_protection_2
+						} 
+					}
+                    OR = { 
+                        NOT = { religion_group = christian }
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = knight_service_0 
+					        has_law = knight_service_1 
+						} 
+					}
+                    OR = { 
+                        NOT = { religion_group = christian }
+                        NOT = { 
+						    OR = {
+                                culture_group = mittle_european
+                                culture = english
+                                culture_group = iberian
+                                culture = scottish 
+							} 
+						}
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = druzhina_0 
+					        has_law = druzhina_1 
+						} 
+					}
+                    NOT = { 
+					    OR = {
+                            culture_group = south_slavic
+                            culture_group = east_slavic
+                            culture_group = west_slavic
+						} 
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = druzhina_0 
+					        has_law = druzhina_1 
+						} 
+					}
+                    NOT = { 
+					    OR = {
+                            culture_group = south_slavic
+                            culture_group = east_slavic
+                            culture_group = west_slavic
+						} 
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = tithing_0 
+					        has_law = tithing_1 
+						} 
+					}
+                    NOT = { 
+					    OR = {
+                            religion_group = baltic_pagan_group
+                            religion_group = pagan_group
+                            culture = saxon
+						} 
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = housecarls_0 
+					        has_law = housecarls_1 
+						} 
+					}
+                    NOT = { 
+					    culture_group = north_germanic
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = leidang_0 
+					        has_law = leidang_1 
+						} 
+					}
+                    NOT = { 
+					    culture_group = north_germanic
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = comhdhail_0 
+					        has_law = comhdhail_1 
+						} 
+					}
+                    NOT = { 
+					    culture_group = celtic
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = clientship_0 
+					        has_law = clientship_1 
+						} 
+					}
+                    NOT = { 
+					    culture_group = celtic
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = army_decimation_0
+					        has_law = army_decimation_1
+						} 
+					}
+                    NOT = { 
+					    culture_group = altaic
+					} 
+				}
+				
+				AND = {
+		            primary_title = { 
+					    OR = { 
+					        has_law = frankpledge_0 
+					        has_law = frankpledge_1 
+						} 
+					}
+                    OR = { 
+                        NOT = { religion_group = christian }
+					    culture_group = celtic
+					    culture_group = byzantine 
+						culture_group = eastern_byzantine
+                        culture_group = east_african
+                        culture_group = west_african  
+					} 
+				}
+		    }
+		}
+	}
+	
+	immediate = {
+		any_playable_ruler = {
+		    if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = frankalmoin_0 
+	             			    has_law = frankalmoin_1 
+		             	        has_law = military_tenure_0
+		           		        has_law = military_tenure_1
+		          		        has_law = tenure_protection_0
+		           		        has_law = tenure_protection_1
+		           		        has_law = tenure_protection_2
+			                } 
+			           	}
+                        OR = { 
+                            NOT = { religion_group = christian }
+	           				culture_group = byzantine 
+                			culture_group = eastern_byzantine
+                            culture_group = east_african
+                            culture_group = west_african  
+		             	}
+					}
+				}
+				primary_title = { 
+				    revoke_law = frankalmoin_0 
+	             	revoke_law = frankalmoin_1 
+		            revoke_law = military_tenure_0
+		            revoke_law = military_tenure_1
+		          	revoke_law = tenure_protection_0
+		           	revoke_law = tenure_protection_1
+		           	revoke_law = tenure_protection_2
+			    } 
+			} 
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = frankpledge_0 
+	             			    has_law = frankpledge_1 
+			                } 
+			           	}
+                        OR = { 
+                            NOT = { religion_group = christian }
+	           				culture_group = byzantine 
+                			culture_group = eastern_byzantine
+                            culture_group = east_african
+                            culture_group = west_african  
+                            culture_group = celtic 
+		             	}
+					}
+				}
+				primary_title = { 
+				    revoke_law = frankpledge_0 
+	             	revoke_law = frankpledge_1 
+			    } 
+			} 
+				
+		    if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = knight_service_0 
+	             			    has_law = knight_service_1 
+			                } 
+			           	}
+                        OR = { 
+                            NOT = { religion_group = christian }
+                            NOT = { 
+						        OR = {
+                                    culture_group = mittle_european
+                                    culture = english
+                                    culture_group = iberian
+                                    culture = scottish 
+							    } 
+						    }
+					    }
+					}
+				}
+				primary_title = { 
+				    revoke_law = knight_service_0 
+	             	revoke_law = knight_service_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = druzhina_0 
+	             			    has_law = druzhina_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    OR = {
+                                culture_group = south_slavic
+                                culture_group = east_slavic
+                                culture_group = west_slavic
+				    		} 
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = druzhina_0 
+	             	revoke_law = druzhina_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = tithing_0 
+	             			    has_law = tithing_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    OR = {
+                                religion_group = baltic_pagan_group
+                                religion_group = pagan_group
+                                culture = saxon
+				    		} 
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = tithing_0 
+	             	revoke_law = tithing_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = housecarls_0 
+	             			    has_law = housecarls_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    culture_group = north_germanic
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = housecarls_0 
+	             	revoke_law = housecarls_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = leidang_0 
+	             			    has_law = leidang_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    culture_group = north_germanic
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = leidang_0 
+	             	revoke_law = leidang_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = comhdhail_0 
+	             			    has_law = comhdhail_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    culture_group = celtic
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = comhdhail_0 
+	             	revoke_law = comhdhail_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = clientship_0 
+	             			    has_law = clientship_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    culture_group = celtic
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = clientship_0 
+	             	revoke_law = clientship_1 
+			    } 
+			}
+			
+			if = {
+		        limit = {
+		            higher_tier_than = DUKE
+	               	AND = {
+               		    primary_title = { 
+	            			OR = { 
+	           				    has_law = army_decimation_0 
+	             			    has_law = army_decimation_1
+			                } 
+			           	}
+                        NOT = { 
+			    		    culture_group = altaic
+						}
+					}
+				}
+				primary_title = { 
+				    revoke_law = army_decimation_0 
+	             	revoke_law = army_decimation_1 
+			    } 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+character_event = {
+	id = law_manteinance.17
+	desc = "AI_EVENT"
+	picture = GFX_evt_throne_room
+	
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_rebels
+		any_playable_ruler = {
+		    primary_title = { 
+			    OR = { 
+			        has_law = merchet_0 
+			        has_law = merchet_1 
+			        has_law = quit_rent_0 
+			        has_law = quit_rent_1
+			        has_law = tenure_0
+			        has_law = tenure_1
+			        has_law = tenure_2
+				} 
+			}
+            OR = { 
+                NOT = { religion_group = christian }
+			    culture_group = byzantine 
+				culture_group = eastern_byzantine
+                culture_group = east_african
+                culture_group = west_african  
+				is_feudal = no
+			} 
+		}
+	}
+	
+	immediate = {
+		any_playable_ruler = {
+		    limit = {
+		        primary_title = { 
+			        OR = { 
+			            has_law = merchet_0 
+			            has_law = merchet_1 
+			            has_law = quit_rent_0 
+			            has_law = quit_rent_1
+			            has_law = tenure_0
+			            has_law = tenure_1
+			            has_law = tenure_2
+				    }
+			    }
+                OR = { 
+                    NOT = { religion_group = christian }
+			        culture_group = byzantine 
+				    culture_group = eastern_byzantine
+                    culture_group = east_african
+                    culture_group = west_african
+				    is_feudal = no
+			    }
+			}
+			primary_title = { 
+				revoke_law = merchet_0 
+	            revoke_law = merchet_1 
+		        revoke_law = quit_rent_0
+		        revoke_law = quit_rent_1
+		        revoke_law = tenure_0
+		        revoke_law = tenure_1
+		        revoke_law = tenure_2
+			} 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+
+	option = {
+		name = "OK"
+	}
+}

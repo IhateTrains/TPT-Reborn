@@ -1,0 +1,27 @@
+# 806 - Cyrenaica
+
+# County Title
+title = c_cyrenaica
+
+# Settlements
+max_settlements = 2
+
+b_derna = castle
+
+#b_martuba = temple
+#b_alqubbah = city
+
+#b_marsasusah = city
+#b_altamimi = castle
+#b_athrun = castle
+#b_mukhayta = castle
+#b_khadra = castle
+
+# Misc
+culture = maghreb_arabic
+religion = shiite
+
+# History
+
+1171.1.1 = { religion = sunni }
+

@@ -1,0 +1,1047 @@
+character_event = {
+	id = 310001
+	desc = "EVTDESC310001"
+	picture = GFX_evt_valhalla
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310001"
+		scaled_wealth = -0.1
+		piety = 10
+		prestige = -10
+	}
+	
+	option = {
+		name = "EVTOPTB310001"
+		scaled_wealth = -0.05
+		random = {
+			chance = 5
+			add_trait = ill
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310001"
+		piety = -10
+		prestige = 25
+		random = {
+			chance = 15
+			add_trait = ill
+		}
+	}
+	option = {
+		name = "EVTOPTD310001"
+		tooltip_info = nm_seidmann
+		trigger = {
+			trait = nm_seidmann
+		}
+		scaled_wealth = -0.1
+		piety = 10
+		random = {
+			chance = 50
+			change_learning = 1
+		}
+	}
+}
+
+character_event = {
+	id = 310002
+	desc = "EVTDESC310002"
+	picture = GFX_evt_odin
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA310002"
+		scaled_wealth = -1.5
+		piety = 25
+		prestige = 15
+		random = {
+			chance = 33
+			add_trait = zealous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310002"
+		scaled_wealth = -0.5
+		piety = 10
+		prestige = 5
+	}
+	
+	option = {
+		name = "EVTOPTC310002"
+		scaled_wealth = -0.1
+		random = {
+			chance = 10
+			add_trait = greedy
+		}
+	}
+}
+
+character_event = {
+	id = 310003
+	desc = "EVTDESC310003"
+	picture = GFX_evt_loki
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310003"
+		piety = 10
+	}
+	
+	option = {
+		name = "EVTOPTB310003"
+		tooltip_info = cruel
+		trigger = {
+			trait = cruel
+			NOT = {
+				trait = kind
+			}
+		}
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 67
+			
+			add_trait = wroth
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310003"
+		piety = -20
+		random = {
+			chance = 50
+			add_trait = kind
+		}
+	}
+}
+
+character_event = {
+	id = 310004
+	desc = "EVTDESC310004"
+	picture = GFX_evt_loki
+	border = GFX_event_normal_frame_diplomacy
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310004"
+		random = {
+			chance = 60	
+			scaled_wealth = -0.5
+			piety = 10
+		}
+		random = {
+			chance = 40	
+			piety = -20
+			prestige = -10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310004"
+		piety = 10
+		prestige = 10
+		add_character_modifier = {
+			name = mod_bloodlust
+			duration = 720
+		}
+		random = {
+			chance = 10
+			add_trait = wounded
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310004"
+		piety = 10
+		location = {
+			add_province_modifier = {
+				name = nm_peasant_resistance
+				duration = 30
+			}
+		}
+		random = {
+			chance = 25
+			add_trait = arbitrary
+		}
+	}
+	option = {
+		name = "EVTOPTD310004"
+		tooltip_info = lunatic
+		trigger = {
+			trait = lunatic
+		}
+		random = {
+			chance = 25
+			
+			add_trait = cruel
+		}
+	}
+}
+
+character_event = {
+	id = 310005
+	desc = "EVTDESC310005"
+	picture = "GFX_evt_valhalla"
+	border = GFX_event_normal_frame_diplomacy
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310005"
+		scaled_wealth = -1.0
+		piety = 10
+	}
+	
+	option = {
+		name = "EVTOPTB310005"
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 15
+
+			prestige = -25
+			piety = -10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310005"
+		add_trait = wroth
+		random = {
+			chance = 75
+		prestige = 10
+		piety = 10
+		scaled_wealth = 1.2
+		}
+		random = {
+			chance = 10
+			
+			add_trait = maimed
+		}
+	}
+	option = {
+		name = "EVTOPTD310005"
+		random = {
+			chance = 40
+			
+			prestige = -10
+		}
+	}
+}
+
+character_event = {
+	id = 310006
+	desc = "EVTDESC310006"
+	picture = GFX_evt_viking_tavern
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA310006"
+		any_vassal = {
+			limit = {
+				prisoner = no
+				war = no
+				in_command = no
+				age = 16
+			}
+			letter_event = {
+				id = 310007
+				days = 10
+				random = 2
+				tooltip = "EVTTOOLTIP310007"
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB310006"
+		any_courtier = {
+			limit = {
+				prisoner = no
+				war = no
+				in_command = no
+				age = 16
+				is_female = no
+				martial = 8
+			}
+			letter_event = {
+				id = 310007
+				days = 10
+				random = 2
+				tooltip = "EVTTOOLTIP310007"
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC310006"
+		any_vassal = {
+			limit = {
+				prisoner = no
+				war = no
+				in_command = no
+				age = 16
+				is_female = no
+			}
+			letter_event = {
+				id = 310007
+				days = 10
+				random = 2
+				tooltip = "EVTTOOLTIP310007"
+			}
+		}
+		any_courtier = {
+			limit = {
+				prisoner = no
+				war = no
+				in_command = no
+				age = 16
+				is_female = no
+				martial = 8
+			}
+			letter_event = {
+				id = 310007
+				days = 10
+				random = 2
+				tooltip = "EVTTOOLTIP310007"
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = 310007
+	desc = "EVTDESC310007"
+	picture = GFX_evt_loki
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA310007"
+		ai_chance = {
+			factor = 2
+			modifier  = {
+				factor = 2
+				opinion = { who = from value = -10 }
+			}
+			modifier  = {
+				factor = 5
+				opinion = { who = from value = 10 }
+			}
+			modifier  = {
+				factor = 5
+				opinion = { who = from value = 20 }
+			}
+		}
+		set_character_flag = nm_coming_to_blot
+	}
+	option = {
+		name = "EVTOPTB310007"
+		ai_chance = {
+			factor = 1
+			modifier  = {
+				factor = 0
+				opinion = { who = from value = 25 }
+			}
+		}
+		FROM = {
+			letter_event = {
+				id = 310008
+				days = 10
+				random = 2
+				tooltip = "EVTTOOLTIP310008"
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = 310008
+	desc = "EVTDESC310008"
+	picture = GFX_evt_viking_tavern
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA310008" 
+		opinion = {
+			modifier = opinion_dislike
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+character_event = {
+	id = 310009
+	desc = "EVTDESC310009"
+	picture = GFX_evt_loki
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310009"
+		scaled_wealth = -0.2
+		piety = 25
+		prestige = 10
+		random = {
+			chance = 25
+			add_trait = charitable
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310009"
+		scaled_wealth = 0.05
+		piety = 10
+	}
+	
+	option = {
+		name = "EVTOPTC310009"
+		piety = -10
+		random = {
+			chance = 10
+			add_trait = shy
+		}
+	}
+}
+
+character_event = {
+	id = 310010
+	desc = "EVTDESC310010"
+	picture = GFX_evt_loki
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310010"
+		scaled_wealth = -0.1
+		piety = 25
+		prestige = 15
+		random = {
+			chance = 15
+			scaled_wealth = -0.9
+			prestige = -50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310010"
+		tooltip_info = paranoid
+		trigger = {
+			trait = paranoid
+		}
+		scaled_wealth = -0.1
+		piety = 25
+		prestige = 15
+	}
+	
+	option = {
+		name = "EVTOPTC310010"
+		piety = -10
+		random = {
+			chance = 10
+			add_trait = shy
+		}
+	}
+}
+
+
+character_event = {
+	id = 310011
+	desc = "EVTDESC310011"
+	picture = GFX_evt_valhalla
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+		NOT = { has_character_flag = nm_honoured_god_blot }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310011"
+		set_character_flag = nm_honoured_god_blot
+		scaled_wealth = -0.2
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 10
+			add_trait = ambitious
+			change_learning = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310011"
+		set_character_flag = nm_honoured_god_blot
+		scaled_wealth = -0.2
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 20
+			add_trait = gregarious
+			change_martial = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310011"
+		set_character_flag = nm_honoured_god_blot
+		scaled_wealth = -0.2
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 20
+			add_trait = deceitful
+			change_intrigue = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTD310011"
+		set_character_flag = nm_honoured_god_blot
+		scaled_wealth = -0.2
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 20
+			add_trait = lustful
+			change_diplomacy = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTE310011"
+		set_character_flag = nm_honoured_god_blot
+		scaled_wealth = -0.2
+		piety = 10
+		prestige = 10
+		random = {
+			chance = 20
+			add_trait = brave
+			change_martial = 1
+		}
+	}
+}
+
+character_event = {
+	id = 310012
+	desc = "EVTDESC310012"
+	picture = GFX_evt_tolerant2
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310012"
+		scaled_wealth = -0.5
+		piety = 20
+		religion_authority = 0.01
+		random = {
+			chance = 20
+			add_trait = trusting
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310012"
+		tooltip_info = cynical
+		trigger = {
+			trait = cynical
+		}
+		piety = -10
+		religion_authority = -0.01
+	}
+	
+	option = {
+		name = "EVTOPTC310012"
+		scaled_wealth = -0.5
+		prestige = 10
+		piety = 10
+		religion_authority = 0.01
+		random = {
+			chance = 5
+			add_trait = stressed
+		}
+	}
+
+	option = {
+		name = "EVTOPTD310012"
+		scaled_wealth = -0.25
+		prestige = 10
+		random = {
+			chance = 5
+			add_trait = stressed
+		}
+	}
+}
+
+
+character_event = {
+	id = 310013
+	desc = "EVTDESC310013"
+	picture = GFX_evt_tolerant2
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310013"
+		scaled_wealth = -0.1
+		random_vassal = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			opinion = {
+				modifier = opinion_irritated
+				who = ROOT
+				years = 2
+			}
+		}
+		random_vassal = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			opinion = {
+				modifier = opinion_irritated
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310013"
+		location = {
+			add_province_modifier = {
+				name = nm_peasant_resistance
+				duration = 30
+			}
+		}
+		random = {
+			chance = 50
+			add_trait = arbitrary
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310013"
+		random_vassal = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 5
+			}
+		}
+		random_vassal = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTD310013"
+		scaled_wealth = -1.5
+	}
+}
+
+character_event = {
+	id = 310014
+	desc = "EVTDESC310014"
+	picture = GFX_evt_tolerant2
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310014"
+		scaled_wealth = -0.2
+		piety = 10
+		random = {
+			chance = 10
+			add_trait = trusting
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310014"
+		scaled_wealth = -0.8
+		piety = 50
+		random = {
+			chance = 40
+			add_trait = trusting
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310014"
+		trigger = {
+			OR = { 
+				trait = paranoid
+				trait = deceitful
+				trait = cynical
+			}
+		}
+		prestige = 10
+	}
+	option = {
+		name = "EVTOPTD310014"
+		piety = -10
+	}
+}
+
+character_event = {
+	id = 310015
+	desc = "EVTDESC310015"
+	picture = GFX_evt_tolerant2
+	border = GFX_event_normal_frame_diplomacy
+	
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_modifier = nm_holding_blot
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTA310015"
+		scaled_wealth = -0.3
+		prestige = 10
+		piety = 10
+		random = {
+			chance = 5
+			add_trait = wounded
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB310015"
+		scaled_wealth = -0.1
+		piety = 5
+		random = {
+			chance = 15
+			add_trait = wounded
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC310015"
+		trigger = {
+			NOT = { trait = craven }
+			NOT = { trait = weak }
+		}
+		prestige = 100
+		piety = 10
+		random_list = {
+			10 = {
+				prestige = 50
+			}
+			20 = {
+				prestige = 25
+				add_trait = wounded
+			}
+			50 = {
+				add_trait = wounded
+			}
+			15 = {
+				add_trait = maimed
+			}
+			5 = {
+				death = { death_reason = death_battle }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTD310015"
+		prestige = 20
+		piety = -10
+		random_list = {
+			70 = {
+			}
+			25 = {
+				add_trait = wounded
+			}
+			5 = {
+				add_trait = maimed
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 310029
+	desc = "EVTDESC310029"
+	picture = GFX_evt_tolerant2
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA310029"
+		set_character_flag = nm_blot_started
+		any_vassal = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			character_event = {
+				id = 310030
+				tooltip = "EVTTOOLTIP310030"
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 310030
+	desc = "EVTDESC310030"
+	picture = GFX_evt_tolerant2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA310030"
+		piety = 10
+		prestige = 5
+	}
+}
+
+#The Blot is over
+character_event = {
+	id = 310031
+	desc = "EVTDESC310031"
+	picture = GFX_evt_viking_tavern
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = nm_blot_timer
+				duration = 365
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA310031"
+		religion_authority = 0.01
+		remove_character_modifier = nm_holding_blot
+		clr_character_flag = nm_coming_to_blot
+		any_vassal = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			character_event = {
+				id = 310032
+				tooltip = "EVTTOOLTIP310032"
+			}
+			clr_character_flag = nm_honoured_god_blot
+		}
+		any_courtier = {
+			limit = {
+				has_character_flag = nm_coming_to_blot
+			}
+			character_event = {
+				id = 310032
+				tooltip = "EVTTOOLTIP310032"
+			}
+			clr_character_flag = nm_coming_to_blot
+		}
+		if = {
+			limit = {
+				tier = emperor
+			}
+			prestige = 25
+			piety = 5
+		}
+		if = {
+			limit = {
+				tier = king
+			}
+			prestige = 25
+			piety = 5
+		}
+		if = {
+			limit = {
+				tier = duke
+			}
+			prestige = 25
+			piety = 10
+		}
+		if = {
+			limit = {
+				tier = count
+			}
+			prestige = 25
+			piety = 15
+		}
+		if = {
+			limit = {
+				tier = baron
+			}
+			prestige = 25
+			piety = 20
+		}
+	}
+}
+
+character_event = {
+	id = 310032
+	desc = "EVTDESC310032"
+	picture = GFX_evt_tolerant2
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA310032"
+	}
+}

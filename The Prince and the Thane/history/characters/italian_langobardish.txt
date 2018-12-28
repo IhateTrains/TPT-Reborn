@@ -1,0 +1,1122 @@
+###############################################################
+#  Langobardish
+###############################################################
+# id 2220000-
+##############################################################################################
+#di Aquino
+
+73346 = {
+	name="Lando"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	1018.1.1 = {
+		birth="1018.1.1"
+	}
+	1041.1.1 = {
+		add_spouse=73345
+	}
+	1068.1.1 = {
+		death="1068.1.1"
+	}
+}
+
+73347 = {
+	name="Atenulf"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73346
+	mother=73345
+	1042.1.1 = {
+		birth="1042.1.1"
+	}
+	1105.1.1 = {
+		death="1105.1.1"
+	}
+}
+
+73348 = {
+	name="Landulf"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73346
+	mother=73345
+	1043.1.1 = {
+		birth="1043.1.1"
+	}
+	1107.1.1 = {
+		death="1107.1.1"
+	}
+}
+
+73349 = {
+	name="Pandulf"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73346
+	mother=73345
+	1045.1.1 = {
+		birth="1045.1.1"
+	}
+	1108.1.1 = {
+		death="1108.1.1"
+	}
+}
+
+73350 = {
+	name="Lando"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73346
+	mother=73345
+	1046.1.1 = {
+		birth="1046.1.1"
+	}
+	1098.1.1 = {
+		death="1098.1.1"
+	}
+}
+
+73351 = {
+	name="Atenulf"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73347
+	1066.1.1 = {
+		birth="1066.1.1"
+	}
+	1118.1.1 = {
+		death="1118.1.1"
+	}
+}
+
+73352 = {
+	name="Sichelgaita"
+	female=yes
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73347
+	1068.1.1 = {
+		birth="1068.1.1"
+	}
+	1125.1.1 = {
+		death="1125.1.1"
+	}
+}
+
+73353 = {
+	name="Peter"
+	dynasty=12243
+	religion="catholic"
+	culture="langobardisch"
+	father=73350
+	1070.1.1 = {
+		birth="1070.1.1"
+	}
+	1127.1.1 = {
+		death="1127.1.1"
+	}
+}
+
+##############################################################################################
+#di Capua
+
+30854 = {
+	name="Gemma"
+	female=yes
+	dynasty=7184
+	father=73354
+	religion="catholic"
+	culture="langobardisch"
+	1018.1.1 = {
+		birth="1018.1.1"
+	}
+	1070.12.1 = {
+		death="1070.12.1"
+	}
+}
+73317 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73318
+	mother=73320
+	1040.1.1 = {
+		birth="1040.1.1"
+	}
+	1068.1.1 = {
+		add_spouse=73319
+	}
+	1073.2.1 = {
+		death="1073.2.1"
+	}
+}
+73318 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73321
+	mother=73322
+	1017.1.1 = {
+		birth="1017.1.1"
+	}
+	1038.1.1 = {
+		add_spouse=73320
+	}
+	1077.12.18 = {
+		death="1077.12.18"
+	}
+}
+73319 = {
+	name="Altruda"
+	female=yes
+	religion="catholic"
+	culture="langobardisch"
+	1050.1.1 = {
+		birth="1050.1.1"
+	}
+	1119.7.7 = {
+		death="1119.7.7"
+	}
+}
+73320 = {
+	name="Maria"
+	dynasty=7184
+	female=yes
+	religion="catholic"
+	culture="langobardisch"
+	990.1.1 = {
+		birth="990.1.1"
+	}
+	1069.5.20 = {
+		death="1069.5.20"
+	}
+}
+73321 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73323
+	995.1.1 = {
+		birth="995.1.1"
+	}
+	1016.1.1 = {
+		add_spouse=73322
+	}
+	1059.1.1 = {
+		death="1059.1.1"
+	}
+}
+73322 = {
+	name="Altruda"
+	female=yes
+	religion="catholic"
+	culture="langobardisch"
+	1000.1.1 = {
+		birth="1000.1.1"
+	}
+	1069.5.20 = {
+		death="1069.5.20"
+	}
+}
+73323 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73324
+	978.1.1 = {
+		birth="978.1.1"
+	}
+	1034.9.1 = {
+		death="1034.9.1"
+	}
+}
+73324 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73325
+	953.1.1 = {
+		birth="953.1.1"
+	}
+	1014.8.1 = {
+		death="1014.8.1"
+	}
+}
+73325 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73328
+	930.1.1 = {
+		birth="930.1.1"
+	}
+	968.1.1 = {
+		death="968.1.1"
+	}
+}
+73326 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73327
+	950.1.1 = {
+		birth="950.1.1"
+	}
+	982.7.13 = {
+		death="982.7.13"
+	}
+}
+73327 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73328
+	927.1.1 = {
+		birth="927.1.1"
+	}
+	981.3.1 = {
+		death="981.3.1"
+	}
+}
+73328 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73330
+	902.1.1 = {
+		birth="902.1.1"
+	}
+	961.1.1 = {
+		death="961.1.1"
+	}
+}
+73329 = {
+	name="Atenulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73330
+	900.1.1 = {
+		birth="900.1.1"
+	}
+	943.1.1 = {
+		death="943.1.1"
+	}
+}
+73330 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73331
+	872.1.1 = {
+		birth="872.1.1"
+	}
+	943.1.1 = {
+		death="943.1.1"
+	}
+}
+73331 = {
+	name="Atenulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=163076#Lando I of Capua
+	847.1.1 = {
+		birth="847.1.1"
+	}
+	912.1.1 = {
+		death="912.1.1"
+	}
+}
+73332 = {
+	name="Atenulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73331
+	874.1.1 = {
+		birth="874.1.1"
+	}
+	941.1.1 = {
+		death="941.1.1"
+	}
+}
+73333 = {
+	name="Landenulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73327
+	956.1.1 = {
+		birth="956.1.1"
+	}
+	993.4.21 = {
+		death="993.4.21"
+	}
+}
+73334 = {
+	name="Laidulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73327
+	957.1.1 = {
+		birth="957.1.1"
+	}
+	1015.1.1 = {
+		death="1015.1.1"
+	}
+}
+73335 = {
+	name="Adhemar"
+	dynasty=12244
+	religion="catholic"
+	culture="langobardisch"
+	956.1.1 = {
+		birth="956.1.1"
+	}
+	1009.3.1 = {
+		death="1009.3.1"
+	}
+}
+73336 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73325
+	952.1.1 = {
+		birth="952.1.1"
+	}
+	1007.1.1 = {
+		death="1007.1.1"
+	}
+}
+73337 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73336
+	976.1.1 = {
+		birth="976.1.1"
+	}
+	1022.1.1 = {
+		death="1022.1.1"
+	}
+}
+73338 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73324
+	977.1.1 = {
+		birth="977.1.1"
+	}
+	1049.2.20 = {
+		death="1049.2.20"
+	}
+}
+73339 = {
+	name="Gisulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73327
+	959.1.1 = {
+		birth="959.1.1"
+	}
+	996.8.1 = {
+		death="996.8.1"
+	}
+}
+73340 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73339
+	982.1.1 = {
+		birth="982.1.1"
+	}
+	1026.1.1 = {
+		death="1026.1.1"
+	}
+}
+73341 = {
+	name="Ioann"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73340
+	1005.1.1 = {
+		birth="1005.1.1"
+	}
+	1047.1.1 = {
+		death="1047.1.1"
+	}
+}
+73342 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73338
+	1000.1.1 = {
+		birth="1000.1.1"
+	}
+	1057.1.1 = {
+		death="1057.1.1"
+	}
+}
+73343 = {
+	name="Landulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73342
+	1022.1.1 = {
+		birth="1022.1.1"
+	}
+	1078.1.1 = {
+		death="1078.1.1"
+	}
+}
+73344 = {
+	name="Sichelgaita"
+	female=yes
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73343
+	1041.1.1 = {
+		birth="1041.1.1"
+	}
+	1098.1.1 = {
+		death="1098.1.1"
+	}
+}
+73345 = {
+	name="Adelgrima"
+	female=yes
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73342
+	1023.1.1 = {
+		birth="1023.1.1"
+	}
+	1105.1.1 = {
+		death="1105.1.1"
+	}
+}
+73354 = {
+	name="Laidulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73338
+	1002.1.1 = {
+		birth="1002.1.1"
+	}
+	1046.2.1 = {
+		death="1046.2.1"
+	}
+}
+73355 = {
+	name="Pandulf"
+	dynasty=7184
+	religion="catholic"
+	culture="langobardisch"
+	father=73354
+	1022.1.1 = {
+		birth="1022.1.1"
+	}
+	1052.8.1 = {
+		death="1052.8.1"
+	}
+}
+2012 = {
+	name="Daufer"
+	dynasty=7184
+	martial=4
+	diplomacy=5
+	intrigue=5
+	stewardship=4
+	religion="catholic"
+	culture="langobardisch"
+	father=73323
+	add_trait="humble"
+	add_trait="zealous"
+	add_trait="scholarly_theologian"
+	1026.1.1 = {
+		birth="1026.1.1"
+	}
+	1085.5.25 = {
+		name = "Victor"
+	}
+	1087.9.16 = {
+		death="1087.9.16"
+	}
+}
+
+##############################################################################################
+#di Sorrento
+30851 = {
+	name="Gaitelgrima"
+	female=yes
+	dynasty=7183 #di Sorrento
+	religion="catholic"
+	culture="langobardisch"
+	1080.1.1 = {
+		birth="1080.1.1"
+	}
+	1127.1.1 = {
+		death="1127.1.1"
+	}
+}
+##############################################################################################
+#d'Amalfi
+2220000 = {
+	name="Marino"
+	dynasty=7185
+	religion="catholic"
+	culture="langobardisch"
+	810.1.1 = {
+		birth="810.1.1"
+	}
+	870.1.1 = {
+		death="870.1.1"
+	}
+}
+
+2220001 = {
+	name="Pulcario"
+	dynasty=7185
+	father=2220000#Speculated
+	religion="catholic"
+	culture="langobardisch"
+	840.1.1 = {
+		birth="840.1.1"
+	}
+	879.1.1 = {
+		death="879.1.1"
+	}
+}
+
+2220002 = {
+	name="Stefano"
+	dynasty=7185
+	father=2220000#Speculated
+	religion="catholic"
+	culture="langobardisch"
+	835.1.1 = {
+		birth="835.1.1"
+	}
+	898.1.1 = {
+		death="898.1.1"
+	}
+}
+
+2220003 = {
+	name="Mansone" #Mansone I
+	dynasty=7185
+	father=2220002#Speculated
+	religion="catholic"
+	culture="langobardisch"
+	855.1.1 = {
+		birth="855.1.1"
+	}
+	914.1.1 = {
+		death="914.1.1"
+	}
+}
+
+2220004 = {
+	name="Mastalo" #Mastalo I
+	dynasty=7185
+	father=2220003#Speculated
+	religion="catholic"
+	culture="langobardisch"
+	880.1.1 = {
+		birth="880.1.1"
+	}
+	953.1.1 = {
+		death="953.1.1"
+	}
+}
+
+2220005 = {
+	name="Leone"
+	dynasty=7185
+	father=2220003#Speculated
+	religion="catholic"
+	culture="langobardisch"
+	875.1.1 = {
+		birth="875.1.1"
+	}
+	931.1.1 = {
+		death="931.1.1"
+	}
+}
+
+2220006 = {
+	name="Giovanni"
+	dynasty=7185
+	father=2220003#Speculated
+	religion="catholic"
+	culture="langobardisch"
+	887.1.1 = {
+		birth="887.1.1"
+	}
+	947.1.1 = {
+		death="947.1.1"
+	}
+}
+
+2220007 = {
+	name="Mastalo" #Mastalo II
+	dynasty=7185
+	father=2220004#Speculated-Mastalo I
+	religion="catholic"
+	culture="langobardisch"
+	910.1.1 = {
+		birth="910.1.1"
+	}
+	958.1.1 = {
+		death="958.1.1"
+	}
+}
+
+2220008 = {
+	name="Sergio" # Sergio I
+	dynasty=7185
+	father=2220004#Speculated-Mastalo I
+	religion="catholic"
+	culture="langobardisch"
+	920.1.1 = {
+		birth="920.1.1"
+	}
+	966.1.1 = {
+		death="966.1.1"
+	}
+}
+
+2220009 = {
+	name="Mansone" # Mansone I
+	dynasty=7185
+	father=2220007#Speculated-Mastalo II
+	religion="catholic"
+	culture="langobardisch"
+	940.1.1 = {
+		birth="940.1.1"
+	}
+	1004.1.1 = {
+		death="1004.1.1"
+	}
+}
+
+2220010 = {
+	name="Giovanni" # Son of Mansone I - Overthrown
+	dynasty=7185
+	father=2220009#Mansone I
+	religion="catholic"
+	culture="langobardisch"
+	970.1.1 = {
+		birth="970.1.1"
+	}
+	1020.1.1 = {
+		death="1020.1.1"
+	}
+}
+
+2220011 = {
+	name="Sergio" # Sergio II
+	dynasty=7185
+	father=2220008#Sergio I
+	religion="catholic"
+	culture="langobardisch"
+	965.1.1 = {
+		birth="965.1.1"
+	}
+	1010.1.1={
+		add_spouse=73320 #Maria di Capua
+	}
+	1028.1.1 = {
+		death="1028.1.1"
+	}
+}
+
+2220012 = {
+	name="Mansone" # Mansone II
+	dynasty=7185
+	father=2220011#Sergio II
+	mother=73320#Maria di Capua
+	religion="catholic"
+	culture="langobardisch"
+	1012.1.1 = {
+		birth="1012.1.1"
+	}
+	1052.1.1 = {
+		death="1052.1.1"
+	}
+}
+
+2220013 = {
+	name="Giovanni" # Giovanni II
+	dynasty=7185
+	father=2220011#Sergio II
+	mother=73320#Maria di Capua
+	religion="catholic"
+	culture="langobardisch"
+	1014.1.1 = {
+		birth="1014.1.1"
+	}
+	1069.1.1 = {
+		death="1069.1.1"
+	}
+}
+
+2220014 = {
+	name="Sergio" # Sergio III
+	dynasty=7185
+	father=2220013#Giovanni II
+	religion="catholic"
+	culture="langobardisch"
+	1034.1.1 = {
+		birth="1034.1.1"
+	}
+	1080.1.1 = {
+		death="1080.1.1"
+	}
+}
+
+1117 = {
+	name="Porpora"
+	female=yes
+	dynasty=7185
+	martial=6
+	diplomacy=4
+	intrigue=6
+	stewardship=4
+	religion="catholic"
+	culture="langobardisch"
+	1010.1.1 = {
+		birth="1010.1.1"
+	}
+	1032.1.1 = {
+		death="1032.1.1"
+	}
+}
+##############################################################################################
+#di Morra  
+71812 = {
+	name="Alberto"
+	dynasty=13044
+	martial=5
+	diplomacy=7
+	intrigue=6
+	stewardship=6
+	religion="catholic"
+	culture="italian"
+	add_trait="trusting"
+	add_trait="scholar"
+	add_trait="detached_priest"
+	
+	1105.1.1 = {
+		birth="1105.1.1"
+	}
+	1187.10.20 = {
+	name="Gregory"
+	# AKA: Alberto
+	}
+	1187.12.17 = {
+		death="1187.12.17"
+	}
+}
+##############################################################################################
+#di Salerno
+
+1116 = {
+	name="Waimar"
+	dynasty=100336
+	martial=6
+	diplomacy=4
+	intrigue=4
+	stewardship=4
+	religion="catholic"
+	culture="langobardisch"
+	add_trait="deceitful"
+	add_trait="lustful"
+	add_trait="zealous"
+	add_trait="thrifty_clerk"
+	father=30857
+	1010.1.1 = {
+		birth="1010.1.1"
+	}
+	1026.1.1 = {
+		add_spouse=1117
+	}
+	1032.5.1 = {
+		add_spouse=30854
+	}
+	1052.6.3 = {
+		death="1052.6.3"
+	}
+}
+1119 = {
+	name="Gisulf"
+	dynasty=100336
+	martial=6
+	diplomacy=4
+	intrigue=6
+	stewardship=4
+	religion="catholic"
+	culture="langobardisch"
+	add_trait="envious"
+	add_trait="cynical"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	father=1116
+	mother=30854
+	1035.1.1 = {
+		birth="1035.1.1"
+	}
+	1091.1.2 = {
+		death="1091.1.2"
+	}
+}
+
+1123 = {
+	name="Sigelgaita"
+	female=yes
+	dynasty=100336
+	martial=8
+	diplomacy=5
+	intrigue=8
+	stewardship=6
+	religion="catholic"
+	culture="langobardisch"
+	add_trait="brave"
+	add_trait="tough_soldier"
+	father=1116
+	mother=30854
+	1040.1.1 = {
+		birth="1040.1.1"
+	}
+	1090.7.27 = {
+		death="1090.7.27"
+	}
+}
+
+1129 = {
+	name="Gaitelgrima"
+	female=yes
+	dynasty=100336
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=6
+	religion="catholic"
+	culture="langobardisch"
+	add_trait="honest"
+	add_trait="amateurish_plotter"
+	father=1116
+	mother=1117
+	1032.1.1 = {
+		birth="1032.1.1"
+	}
+	1087.1.1 = {
+		death="1087.1.1"
+	}
+}
+
+1137 = {
+	name="Maria"
+	female=yes
+	dynasty=100336
+	martial=4
+	diplomacy=5
+	intrigue=8
+	stewardship=5
+	religion="catholic"
+	culture="langobardisch"
+	add_trait="flamboyant_schemer"
+	father=30856
+	1034.1.1 = {
+		birth="1034.1.1"
+	}
+	1085.1.1 = {
+		death="1085.1.1"
+	}
+}
+30861 = {
+	name="Waimar"
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=1116
+	mother=30854
+	1039.1.1 = {
+		birth="1039.1.1"
+	}
+	1076.1.1 = {
+		death="1076.1.1"
+	}
+}
+30860 = {
+	name="Ioann"
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=1116
+	mother=30854
+	1038.1.1 = {
+		birth="1038.1.1"
+	}
+	1095.1.1 = {
+		death="1095.1.1"
+	}
+}
+30859 = {
+	name="Wido"
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=1116
+	mother=30854
+	1037.1.1 = {
+		birth="1037.1.1"
+	}
+	1075.1.1 = {
+		death="1075.1.1"
+	}
+}
+30855 = {
+	name="Gatteclina"
+	female=yes
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=1116
+	mother=30854
+	1050.1.1 = {
+		birth="1050.1.1"
+	}
+	1108.12.9 = {
+		death="1108.12.9"
+	}
+}
+
+30856 = {
+	name="Wido"
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=30857
+	1012.1.1 = {
+		birth="1012.1.1"
+	}
+	1077.1.1 = {
+		death="1077.1.1"
+	}
+}
+
+30857 = {
+	name="Waimar"
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=1191168 #John II
+	970.1.1 = {
+		birth="970.1.1"
+	}
+	1027.2.1 = {
+		death="1027.2.1"
+	}
+}
+
+30858 = {
+	name="Landulf"
+	dynasty=100336
+	religion="catholic"
+	culture="langobardisch"
+	father=1116
+	mother=30854
+	1036.1.1 = {
+		birth="1036.1.1"
+	}
+	1075.1.1 = {
+		death="1075.1.1"
+	}
+}
+##############################################################################################
+#di Benevento=100335
+73470 = {
+	name="Pandulf"
+	dynasty=100335
+	religion="catholic"
+	culture="langobardisch"
+	1137.1.1={
+		birth="1137.1.1"
+	}
+	1195.1.1={
+		death="1195.1.1"
+	}
+}
+
+##############################################################################################
+#di Molise
+30863 = {
+	name="Sichelgaita"
+	female=yes
+	dynasty=7186
+	religion="catholic"
+	culture="langobardisch"
+	1044.1.1 = {
+		birth="1044.1.1"
+	}
+	1101.9.1 = {
+		death="1101.9.1"
+	}
+}
+##############################################################################################
+#di Loritello #not langobardisch familiy
+30898 = {
+	name="Sichelgarda"
+	female=yes
+	dynasty=7191
+	religion="catholic"
+	culture="langobardisch"
+	1077.1.1 = {
+		birth="1077.1.1"
+	}
+	1167.1.1 = {
+		death="1167.1.1"
+	}
+}
+##############################################################################################
+#Dauferio dynasty=20060
+##############################################################################################
+#Guideschi dynasty=7389
+##############################################################################################
+# di Gaeta dynasty=12244
+##############################################################################################

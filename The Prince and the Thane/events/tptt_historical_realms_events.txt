@@ -1,0 +1,2061 @@
+########################################################################
+#
+# The Prince and the Thane historical realms events - written by idib816
+#
+########################################################################
+
+namespace = historical_realms
+
+# The Swiss Confederacy
+character_event = {
+	id = historical_realms.1
+	picture = "GFX_evt_holy_emperor"
+	desc = EVTDESChistorical_realms.1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    culture = german
+		is_feudal = yes
+		lower_tier_than = KING
+		war = no
+		d_zahringen = {
+		    OR = {
+			    has_holder = no
+				holder = ROOT
+			}
+		}
+		NOT = { has_character_flag = refused_switzerland }
+		NOT = { has_global_flag = switzerland_formed }
+		d_swiss = { has_holder = no }
+		OR = {
+		    AND = {
+		        completely_controls = c_schwyz
+		        completely_controls = c_aargau
+		        completely_controls = c_st_gallen
+			}
+		    AND = {
+		        completely_controls = c_bern
+		        completely_controls = c_st_gallen
+		        completely_controls = c_schwyz
+			}
+		    AND = {
+		        completely_controls = c_schwyz
+		        completely_controls = c_bern
+		        completely_controls = c_aargau
+			}
+		    AND = {
+		        completely_controls = c_st_gallen
+		        completely_controls = c_bern
+		        completely_controls = c_aargau
+			}
+		}
+		OR = {
+			independent = yes
+		    liege = {
+		        has_landed_title = e_hre
+			    primary_title = {
+			        OR = {
+				        has_law = centralization_0
+					    has_law = centralization_1
+					    has_law = centralization_2
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+	    years = 1
+	    modifier = {
+			factor = 0.1
+			tier = COUNT
+		}
+	    modifier = {
+			factor = 5
+			trait = ambitious
+		}
+	    modifier = {
+			factor = 0.5
+			trait = humble
+		}
+        modifier = {
+			factor = 3
+			trait = reformer
+		}
+	    modifier = {
+			factor = 0.25
+			trait = content
+		}
+	    modifier = {
+			factor = 0.5
+			NOT = { stewardship = 10 }
+		}
+	    modifier = {
+			factor = 0.5
+			NOT = { diplomacy = 10 }
+		}
+	    modifier = {
+			factor = 2
+			liege = {
+			    has_law = centralization_0
+			}
+		}
+	    modifier = {
+			factor = 1.5
+			liege = {
+			    has_law = centralization_1
+			}
+		}
+	    modifier = {
+			factor = 2.5
+			independent = yes
+		}
+	    modifier = {
+			factor = 0.5
+			liege = {
+			    has_law = centralization_2
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+			    trait = strong
+			}
+		}
+		modifier = {
+			factor = 2
+			diplomacy = 10
+		}
+		modifier = {
+			factor = 2
+			diplomacy = 15
+		}
+		modifier = {
+			factor = 2
+			intrigue = 10
+		}
+		modifier = {
+			factor = 2
+			intrigue = 15
+		}
+		modifier = {
+			factor = 2
+			martial = 10
+		}
+		modifier = {
+			factor = 2
+			martial = 15
+		}
+		modifier = {
+			factor = 2
+			stewardship = 10
+		}
+		modifier = {
+			factor = 2
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.15
+			liege = {
+			    trait = conservative
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAhistorical_realms.1 #Form it
+		ai_chance = {
+            factor = 0.75
+            modifier = {
+				factor = 2
+				trait = ambitious
+			}
+            modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0.25
+				trait = craven
+			}
+            modifier = {
+				factor = 0.25
+				trait = content
+			}
+            modifier = {
+				factor = 0.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.5
+				prestige = 500
+			}
+            modifier = {
+				factor = 3
+				trait = reformer
+			}
+	    }
+		set_global_flag = switzerland_formed
+		prestige = 200
+		piety = 100
+		hidden_tooltip = {
+		    random = {
+			    chance = 65
+				create_character = {
+				    name = Wilhelm
+					religion = ROOT
+					culture = ROOT
+					dynasty = random
+					employer = d_swiss
+					random_traits = no
+					min_age = 20
+					max_age = 30
+					female = no
+					trait = brave
+					trait = ambitious
+			        trait = zealous
+					trait = skilled_tactician
+					trait = master_warrior
+					trait = war_hero
+					health = 12
+			        attributes = {
+				        martial = 8
+					}
+			    }
+			}
+			d_swiss = {
+			    grant_title = ROOT
+				succession = feudal_elective
+			}
+		    if = {
+			    limit = {
+			        c_grisons = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+				                higher_tier_than = COUNT
+								AND = { 
+        		                    independent = no
+									liege = { NOT = { has_landed_title = e_hre } }
+								}
+								NOT = { culture_group = ROOT }
+							}
+						}
+					}
+				}
+				c_grisons = {
+				    add_claim = ROOT
+				}
+			}
+		    if = {
+			    limit = {
+			        c_cheese = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+				                higher_tier_than = COUNT
+								AND = { 
+        		                    independent = no
+									liege = { NOT = { has_landed_title = e_hre } }
+								}
+								NOT = { culture_group = ROOT }
+							}
+						}
+					}
+				}
+				c_cheese = {
+				    add_claim = ROOT
+				}
+			}
+		    if = {
+			    limit = {
+			        c_chur = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+				                higher_tier_than = COUNT
+								AND = { 
+        		                    independent = no
+									liege = { NOT = { has_landed_title = e_hre } }
+								}
+								NOT = { culture_group = ROOT }
+							}
+						}
+					}
+				}
+				c_chur = {
+				    add_claim = ROOT
+				}
+			}
+		    if = {
+			    limit = {
+			        c_neuchatel = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+				                higher_tier_than = COUNT
+								AND = { 
+        		                    independent = no
+									liege = { NOT = { has_landed_title = e_hre } }
+								}
+								NOT = { culture_group = ROOT }
+							}
+						}
+					}
+				}
+				c_neuchatel = {
+				    add_claim = ROOT
+				}
+			}
+	    	d_zahringen = {
+		    	destroy_landed_title = THIS
+     		}
+			c_st_gallen = {
+				de_jure_liege = d_swiss
+			}
+			c_schwyz = {
+				de_jure_liege = d_swiss
+			}
+			c_bern = {
+				de_jure_liege = d_swiss
+			}
+			c_aargau = {
+				de_jure_liege = d_swiss
+			}
+			e_hre = {
+			    holder_scope = {
+				    ROOT = {
+					    set_defacto_liege = PREV
+					}
+			        character_event  = {
+				        id = historical_realms.5
+					    days = 5
+			        	tooltip = "will be asked to join the confederacy"
+					}
+				}
+			}
+		}
+		any_playable_ruler = {
+		    limit = { 
+		        OR = {
+		            has_landed_title = c_schwyz
+		            has_landed_title = c_basel
+		            has_landed_title = c_aargau
+		            has_landed_title = c_bern
+		            has_landed_title = c_grisons
+		            has_landed_title = c_st_gallen
+		            has_landed_title = c_geneve
+		            has_landed_title = c_neuchatel
+		            has_landed_title = c_cheese
+		            has_landed_title = c_chur
+		            has_landed_title = c_valais
+	         	}
+				NOT = { character = ROOT }
+				NOT = { higher_tier_than = COUNT }
+				OR = {
+        		    independent = yes
+					AND = {
+					    liege = { has_landed_title = e_hre }
+						ROOT = {
+						    liege = { has_landed_title = e_hre }
+						}
+					}
+	        	}
+				culture_group = ROOT
+			}
+			letter_event = {
+			    id = historical_realms.2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBhistorical_realms.1 #Pussy out
+		ai_chance = {
+            factor = 0.25
+            modifier = {
+				factor = 2.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 3.25
+				trait = craven
+			}
+            modifier = {
+				factor = 3.25
+				trait = content
+			}
+            modifier = {
+				factor = 3.25
+				trait = humble
+			}
+            modifier = {
+				factor = 0.5
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				prestige = 500
+			}
+	    }
+		set_character_flag = refused_switzerland
+		prestige = -150
+		piety = -50
+	    add_trait = craven
+   		hidden_tooltip = {
+    		character_event = {
+			    id = 38257
+			}
+		}
+	}
+}
+
+# Joining in the Confederacy?
+letter_event = {
+	id = historical_realms.2
+	desc = EVTDESChistorical_realms.2
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's a dream we share!" #Yes
+		prestige = 75
+		piety = 25
+		hidden_tooltip = {
+			d_swiss = {
+			    holder_scope = {
+				    ROOT = {
+					    set_defacto_liege = PREV
+					}
+				}
+	     	}
+		    if = {
+			    limit = {
+				    has_landed_title = c_grisons
+				}
+			    c_grisons = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_basel
+				}
+			    c_basel = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_geneve
+				}
+			    c_geneve = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_neuchatel
+				}
+			    c_neuchatel = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_cheese
+				}
+			    c_cheese = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_chur
+				}
+			    c_chur = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_valais
+				}
+			    c_valais = {
+				    de_jure_liege = d_swiss
+				}
+			}
+		}
+		
+		FROM = {
+			letter_event = {
+				id = historical_realms.3
+				tooltip = "[From.GetTitledName] will hear of our acceptance"
+			}
+		}
+		
+		ai_chance = {
+            factor = 0.75
+            modifier = {
+				factor = 2
+				trait = ambitious
+			}
+            modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0.25
+				trait = craven
+			}
+            modifier = {
+				factor = 5
+				FROM = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 4
+				FROM = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 3
+				FROM = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 99
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -25
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -50
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -75
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -99
+		                }
+				    }
+			    }
+			}
+		}
+	}
+	
+	option = {
+		name = "I don't think so" 
+		prestige = -50
+		FROM = { 
+		    letter_event = {
+			    id = historical_realms.4
+				tooltip = "[From.GetTitledName] will hear of our refusal"
+			}
+		}
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    has_landed_title = c_grisons
+				}
+			    c_grisons = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_basel
+				}
+			    c_basel = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_geneve
+				}
+			    c_geneve = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_neuchatel
+				}
+			    c_neuchatel = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_cheese
+				}
+			    c_cheese = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = c_chur
+				}
+			    c_chur = {
+				    add_pressed_claim = FROM
+				}
+			}
+		}
+		ai_chance = {
+            factor = 0.25
+            modifier = {
+				factor = 2.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 3.25
+				trait = craven
+			}
+            modifier = {
+				factor = 3
+				trait = conservative
+			}
+            modifier = {
+				factor = 3
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+			modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 0
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 10
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 20
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 30
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 40
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 50
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 60
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 70
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 80
+				    }
+			    }
+			}
+		}
+	}
+}
+
+# FROM has joined in the confederacy
+letter_event = {
+	id = historical_realms.3
+	desc = "EVTDESChistorical_realms.3"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent"
+        prestige = 25
+	}
+}
+
+# FROM has refused to join in!
+letter_event = {
+	id = historical_realms.4
+	desc = "EVTDESChistorical_realms.4"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "I will get that land!"
+        prestige = -10
+	}
+}
+
+# The Swiss Confederacy is formed!
+character_event = {
+	id = historical_realms.5
+	desc = "EVTDESChistorical_realms.5"
+	title = "The Swiss Confederacy"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	immediate = {
+	    any_playable_ruler = {
+		    limit = {
+			    ai = no
+				NOT = { has_landed_title = e_hre }
+			}
+		    character_event = { 
+			    id = historical_realms.5
+			}
+		}
+	}
+	
+	option = {
+	    trigger = { 
+		    has_landed_title = e_hre
+		}
+		name = "I hope this doesn't turn against me"
+	}
+	
+	option = {
+	    trigger = { 
+		    NOT = { has_landed_title = e_hre }
+		}
+		name = "Interesting"
+	}
+}
+	
+# The Sultanate of Rum
+character_event = {
+	id = historical_realms.6
+	picture = "GFX_evt_emissary_muslim"
+	desc = EVTDESChistorical_realms.6
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    culture = turkish
+		religion_group = muslim
+		lower_tier_than = KING
+		war = no
+		k_anatolia = {
+			has_holder = no
+		}
+		NOT = { has_character_flag = refused_rum }
+		NOT = { has_global_flag = rum_formed }
+		k_rum = { has_holder = no }
+		has_landed_title = d_anatolia
+		OR = {
+			independent = yes
+		    liege = {
+		        has_landed_title = e_persia
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+	    years = 1
+	    modifier = {
+			factor = 5
+			trait = ambitious
+		}
+	    modifier = {
+			factor = 0.5
+			trait = humble
+		}
+        modifier = {
+			factor = 3
+			trait = reformer
+		}
+	    modifier = {
+			factor = 0.25
+			trait = content
+		}
+	    modifier = {
+			factor = 0.5
+			NOT = { stewardship = 10 }
+		}
+	    modifier = {
+			factor = 0.5
+			NOT = { diplomacy = 10 }
+		}
+	    modifier = {
+			factor = 2
+			liege = {
+			    has_law = centralization_0
+			}
+		}
+	    modifier = {
+			factor = 1.5
+			liege = {
+			    has_law = centralization_1
+			}
+		}
+	    modifier = {
+			factor = 2.5
+			independent = yes
+		}
+	    modifier = {
+			factor = 0.75
+			liege = {
+			    has_law = centralization_2
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+			    trait = strong
+			}
+		}
+		modifier = {
+			factor = 2
+			diplomacy = 10
+		}
+		modifier = {
+			factor = 2
+			diplomacy = 15
+		}
+		modifier = {
+			factor = 2
+			intrigue = 10
+		}
+		modifier = {
+			factor = 2
+			intrigue = 15
+		}
+		modifier = {
+			factor = 2
+			martial = 10
+		}
+		modifier = {
+			factor = 2
+			martial = 15
+		}
+		modifier = {
+			factor = 2
+			stewardship = 10
+		}
+		modifier = {
+			factor = 2
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.15
+			liege = {
+			    trait = conservative
+			}
+		}
+		modifier = {
+			factor = 10
+			liege = {
+			    dynasty = ROOT
+			}
+		}
+		modifier = {
+			factor = 5
+			liege = {
+			    is_close_relative = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAhistorical_realms.6 #Form it
+		ai_chance = {
+            factor = 0.75
+            modifier = {
+				factor = 2
+				trait = ambitious
+			}
+            modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0.25
+				trait = craven
+			}
+            modifier = {
+				factor = 0.25
+				trait = content
+			}
+            modifier = {
+				factor = 0.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 1.5
+				prestige = 500
+			}
+            modifier = {
+				factor = 3
+				trait = reformer
+			}
+	    }
+		set_global_flag = rum_formed
+		prestige = 200
+		piety = 100
+		hidden_tooltip = {
+			k_rum = {
+			    grant_title = ROOT
+				succession = turkish_succession
+			}
+		    if = {
+			    limit = {
+			        d_charsianon = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+								AND = { 
+        		                    independent = no
+									any_liege = { NOT = { has_landed_title = e_persia } }
+								}
+								NOT = { culture = ROOT }
+							}
+						}
+					}
+				}
+				d_charsianon = {
+				    add_pressed_claim = ROOT
+				}
+			}
+		    if = {
+			    limit = {
+			        d_coloneia = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+								AND = { 
+        		                    independent = no
+									any_liege = { NOT = { has_landed_title = e_persia } }
+								}
+								NOT = { culture = ROOT }
+							}
+						}
+					}
+				}
+				d_coloneia = {
+				    add_pressed_claim = ROOT
+				}
+			}
+		    if = {
+			    limit = {
+			        d_cibyrrhaeot = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+								AND = { 
+        		                    independent = no
+									any_liege = { NOT = { has_landed_title = e_persia } }
+								}
+								NOT = { culture = ROOT }
+							}
+						}
+					}
+				}
+				d_cibyrrhaeot = {
+				    add_pressed_claim = ROOT
+				}
+			}
+		    if = {
+			    limit = {
+			        d_thracesia = {
+				        holder_scope = {
+						    NOT = { character = ROOT }
+						    OR = {
+								AND = { 
+        		                    independent = no
+									any_liege = { NOT = { has_landed_title = e_persia } }
+								}
+								NOT = { culture = ROOT }
+							}
+						}
+					}
+				}
+				d_thracesia = {
+				    add_pressed_claim = ROOT
+				}
+			}
+			e_persia = {
+			    if = {
+				    limit = {
+					    ROOT = { 
+						    liege = {
+							    has_landed_title = e_persia
+							}
+						}
+					}
+			        holder_scope = {
+				        ROOT = {
+					        set_defacto_liege = PREV
+					    }
+			            character_event  = {
+				            id = historical_realms.10
+					        days = 5
+						}
+					}
+				}
+			}
+		}
+		any_playable_ruler = {
+		    limit = { 
+		        OR = {
+		            has_landed_title = d_thracesia
+		            has_landed_title = d_cibyrrhaeot
+		            has_landed_title = d_charsianon
+		            has_landed_title = d_coloneia
+	         	}
+				NOT = { character = ROOT }
+				OR = {
+				    independent = yes
+					AND = {
+					    any_liege = { has_landed_title = e_persia }
+						ROOT = {
+						    liege = { has_landed_title = e_persia }
+						}
+					}
+	        	}
+				culture = ROOT
+			}
+			letter_event = {
+			    id = historical_realms.7
+				tooltip = "will be asked to join the sultanate"
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBhistorical_realms.6 #Pussy out
+		ai_chance = {
+            factor = 0.25
+            modifier = {
+				factor = 2.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 3.25
+				trait = craven
+			}
+            modifier = {
+				factor = 3.25
+				trait = content
+			}
+            modifier = {
+				factor = 3.25
+				trait = humble
+			}
+            modifier = {
+				factor = 0.5
+				trait = clerical_envoy
+			}
+            modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+            modifier = {
+				factor = 2.5
+				trait = conservative
+			}
+            modifier = {
+				factor = 0.5
+				prestige = 500
+			}
+	    }
+		set_character_flag = refused_rum
+		prestige = -150
+		piety = -50
+	    add_trait = craven
+   		hidden_tooltip = {
+    		character_event = {
+			    id = 38257
+			}
+		}
+	}
+}	
+
+# Joining in the sultanate?
+letter_event = {
+	id = historical_realms.7
+	desc = "EVTDESChistorical_realms.7"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "I'll join in immediatly!" #Yes
+		prestige = 75
+		piety = 25
+		hidden_tooltip = {
+			k_rum = {
+			    holder_scope = {
+				    ROOT = {
+					    set_defacto_liege = PREV
+					}
+				}
+	     	}
+		}
+
+		FROM = {
+			letter_event = {
+				id = historical_realms.8
+				tooltip = "[From.GetTitledName] will hear of our acceptance"
+			}
+		}
+		
+		ai_chance = {
+            factor = 0.75
+            modifier = {
+				factor = 2
+				trait = ambitious
+			}
+            modifier = {
+				factor = 2
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 0.25
+				trait = craven
+			}
+            modifier = {
+				factor = 5
+				FROM = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 4
+				FROM = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 3
+				FROM = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 1.5
+				FROM = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 99
+				    }
+			    }
+		    }
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -25
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -50
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -75
+		                }
+				    }
+			    }
+			}
+		    modifier = {
+			    factor = 5
+			    liege = {
+			        NOT = {
+			            reverse_opinion = {
+			                who = ROOT
+			                value = -99
+		                }
+				    }
+			    }
+			}
+		}
+	}
+	
+	option = {
+		name = "I don't think so" 
+		prestige = -50
+		FROM = { 
+		    letter_event = {
+			    id = historical_realms.9
+				tooltip = "[From.GetTitledName] will hear of our refusal"
+			}
+		}
+		hidden_tooltip = {
+		    if = {
+			    limit = {
+				    has_landed_title = d_thracesia
+				}
+			    d_thracesia = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = d_cibyrrhaeot
+				}
+			    d_cibyrrhaeot = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = d_charsianon
+				}
+			    d_charsianon = {
+				    add_pressed_claim = FROM
+				}
+			}
+		    if = {
+			    limit = {
+				    has_landed_title = d_coloneia
+				}
+			    d_coloneia = {
+				    add_pressed_claim = FROM
+				}
+			}
+		}
+		ai_chance = {
+            factor = 0.25
+            modifier = {
+				factor = 2.35
+				trait = cynical
+			}
+            modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+            modifier = {
+				factor = 0.5
+				trait = machiavellian
+			}
+            modifier = {
+				factor = 3.25
+				trait = craven
+			}
+            modifier = {
+				factor = 3
+				trait = conservative
+			}
+            modifier = {
+				factor = 3
+				trait = reformer
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { reverse_opinion = { who = ROOT value = 100 } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { reverse_opinion = { who = ROOT value = 75 } }
+			}
+            modifier = {
+				factor = 0.35
+				FROM = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { reverse_opinion = { who = ROOT value = 25 } }
+			}
+            modifier = {
+				factor = 0.5
+				FROM = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -25 } } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -50 } } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -75 } } }
+			}
+            modifier = {
+				factor = 2.35
+				FROM = { NOT = { reverse_opinion = { who = ROOT value = -99 } } }
+			}
+			modifier = {
+			    factor = 0.25
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 75
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 0
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 10
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 20
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 30
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 40
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 50
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 60
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 70
+				    }
+			    }
+			}
+			modifier = {
+			    factor = 1.5
+			    liege = {
+			        reverse_opinion = {
+			            who = ROOT
+			            value = 80
+				    }
+			    }
+			}
+		}
+	}
+}
+
+# FROM has joined in the sultanate
+letter_event = {
+	id = historical_realms.8
+	desc = "EVTDESChistorical_realms.8"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent"
+        prestige = 25
+	}
+}
+
+# FROM has refused to join in!
+letter_event = {
+	id = historical_realms.9
+	desc = "EVTDESChistorical_realms.9"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "I will get that land!"
+        prestige = -10
+	}
+}
+
+# The Sultanate of Rum is formed!
+character_event = {
+	id = historical_realms.10
+	desc = "EVTDESChistorical_realms.10"
+	title = "The Sultanate of Rum"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	immediate = {
+	    any_playable_ruler = {
+		    limit = {
+			    ai = no
+				NOT = { has_landed_title = e_persia }
+			}
+		    character_event = { 
+			    id = historical_realms.10
+			}
+		}
+	}
+	
+	option = {
+	    trigger = { 
+		    has_landed_title = e_persia
+		}
+		name = "I hope this doesn't turn against me"
+	}
+	
+	option = {
+	    trigger = { 
+		    NOT = { has_landed_title = e_persia }
+		}
+		name = "Interesting"
+	}
+}
+
+# Who to give Rum to (after tribal invasion)
+character_event = {
+	id = historical_realms.11
+	desc = "EVTDESChistorical_realms.11"
+	title = "The Sultanate of Rum"
+	
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    k_rum = {
+		    has_holder = no
+		}
+	}
+	
+	immediate = {
+	    k_anatolia = {
+		    destroy_landed_title = THIS
+		}
+	}
+	
+	# A son
+	option = {
+		name = "EVTOPTA1008900"
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			any_child = {
+				NOT = { trait = incapable }
+				piety = 0
+				NOT = { spouse = { is_ruler = yes } }				
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}	
+		}
+		prestige = 250
+		random_child = {
+			limit = {
+				NOT = { trait = incapable }
+				piety = 0
+				NOT = { spouse = { is_ruler = yes } }
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no	
+				religion = ROOT
+				is_alive = yes
+			}		
+			hidden_tooltip = {
+				set_character_flag = centralize_without_penalties	
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+							    kingdom = { title = k_anatolia }
+								ROOT = { religion_group = muslim }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								revoke_law = investiture_law_0
+								revoke_law = investiture_law_1
+								add_law = centralization_3
+								add_law = city_tax_0
+								add_law = temple_tax_0
+								gain_title = PREVPREVPREV
+								add_law = iqta_tax_0
+								add_law = succ_turkish_succession
+								add_law = agnatic_succession							
+							}							
+						}									
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}
+				}	
+				treasury = 500
+				prestige = 500
+				piety = 100
+				add_character_modifier = { name = "crusade_timer" duration = 3650 hidden = yes }
+				clr_character_flag = centralize_without_penalties
+				set_defacto_liege = ROOT
+			}			
+		}
+		any_demesne_title = {
+			location = { clr_province_flag = previous_holding }
+		}		
+	}
+	# A landless brother
+	option = {
+		name = "EVTOPTE1008900"
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			any_sibling = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				NOT = { spouse = { is_ruler = yes } }
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}
+		}
+		prestige = 150		
+		random_sibling = {
+			limit = {
+				age = 14
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				NOT = { spouse = { is_ruler = yes } }
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no	
+				religion = ROOT
+				is_alive = yes
+			}		
+			hidden_tooltip = {
+				set_character_flag = centralize_without_penalties	
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+							    kingdom = { title = k_anatolia }
+								ROOT = { religion_group = muslim }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								revoke_law = investiture_law_0
+								revoke_law = investiture_law_1
+								add_law = centralization_3
+								add_law = city_tax_0
+								add_law = temple_tax_0
+								gain_title = PREVPREVPREV
+								add_law = iqta_tax_0
+								add_law = succ_turkish_succession
+								add_law = agnatic_succession							
+							}							
+						}									
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}
+				}	
+				treasury = 500
+				prestige = 500
+				piety = 100
+				add_character_modifier = { name = "crusade_timer" duration = 3650 hidden = yes }
+				clr_character_flag = centralize_without_penalties
+				set_defacto_liege = ROOT
+			}			
+		}
+	}
+	# A distant relative
+	option = {
+		name = "EVTOPTC1008900"
+		ai_chance = {
+			factor = 10		
+		}	
+		trigger = {
+			any_realm_character = {
+				age = 14
+				dynasty = ROOT
+				NOT = { is_close_relative = ROOT }
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				NOT = { spouse = { is_ruler = yes } }
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}
+		}
+		prestige = 100
+		random_realm_character = {
+			limit = {
+				age = 14
+				dynasty = ROOT
+				NOT = { is_close_relative = ROOT }
+				OR = {
+					NOT = { age = 45 }
+					any_child = { is_female = no is_ruler = no is_primary_heir = no }
+				}
+				NOT = { trait = incapable }
+				piety = 0
+				NOT = { spouse = { is_ruler = yes } }
+				is_ruler = no
+				is_female = no
+				is_primary_heir = no
+				religion = ROOT
+				is_alive = yes
+			}		
+			hidden_tooltip = {
+				set_character_flag = centralize_without_penalties	
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+							    kingdom = { title = k_anatolia }
+								ROOT = { religion_group = muslim }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								revoke_law = investiture_law_0
+								revoke_law = investiture_law_1
+								add_law = centralization_3
+								add_law = city_tax_0
+								add_law = temple_tax_0
+								gain_title = PREVPREVPREV
+								add_law = iqta_tax_0
+								add_law = succ_turkish_succession
+								add_law = agnatic_succession							
+							}							
+						}									
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}
+				}	
+				treasury = 500
+				prestige = 500
+				piety = 100
+				add_character_modifier = { name = "crusade_timer" duration = 3650 hidden = yes }
+				clr_character_flag = centralize_without_penalties
+				set_defacto_liege = ROOT
+			}			
+		}
+	}
+	# A valiant retainer
+	option = {
+		name = "EVTOPTF1008900"
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = {
+				any_realm_character = {
+					age = 14
+					dynasty = ROOT
+					NOT = { is_close_relative = ROOT }
+					OR = {
+						NOT = { age = 45 }
+						any_child = { is_female = no is_ruler = no is_primary_heir = no }
+					}
+					NOT = { trait = incapable }
+					piety = 0
+					NOT = { spouse = { is_ruler = yes } }
+					is_ruler = no
+					is_female = no
+					is_primary_heir = no
+					religion = ROOT
+					is_alive = yes
+				}
+			}
+		}
+		prestige = 300
+		hidden_tooltip = {
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 25
+				attributes = {
+					martial = 10
+				}
+			}		
+			new_character = {
+				set_character_flag = centralize_without_penalties
+				fertility = 0.5
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						if = {
+							limit = {
+								kingdom = { title = k_anatolia }
+								ROOT = { religion_group = muslim }
+								k_rum = { has_holder = no }
+							}
+							k_rum = { 
+								revoke_law = investiture_law_0
+								revoke_law = investiture_law_1
+								add_law = centralization_3
+								add_law = city_tax_0
+								add_law = temple_tax_0	
+								add_law = iqta_tax_0
+								add_law = succ_turkish_succession
+								add_law = agnatic_succession	
+								gain_title = PREVPREVPREV					
+							}							
+						}											
+					}				
+					any_demesne_title = {
+						limit = {
+							OR = {
+								tier = COUNT
+								tier = BARON
+							}
+							location = { NOT = { has_province_flag = previous_holding } }
+						}
+						gain_title = PREVPREV
+					}				
+				}
+				treasury = 500
+				prestige = 500
+				piety = 100
+				add_character_modifier = { name = "crusade_timer" duration = 3650 hidden = yes }	
+				clr_character_flag = centralize_without_penalties
+				set_defacto_liege = ROOT
+			}
+		}
+		any_demesne_title = {
+			location = { clr_province_flag = previous_holding }
+		}		
+	}
+}

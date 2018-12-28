@@ -1,0 +1,65 @@
+600.1.1={
+	liege="d_cluny"
+	succession=catholic_bishopric
+    law="succ_catholic_bishopric"
+}
+919.1.1={
+	holder=2001031 #Berno
+}
+927.1.1={
+	holder=2001032 #Odo
+}
+942.1.1={
+	holder=2001033 #Aymer
+}
+964.1.1={
+	holder=2001034 #Maiolus
+}
+994.1.1={
+	holder=2001035 #Odilo
+}
+1049.1.1={
+	holder=2001016 #Saint Hugh
+}
+1109.1.1={
+	holder=2001017 #Pontius de Melgueil
+}
+1126.1.1={
+	holder=2001018 #Peter the Venerable
+}
+1156.1.1={
+	holder=2001019 #Hugh II-III
+}
+1173.1.1={
+	holder=2001020 #Thibaud de Vermandois
+}
+1188.1.1={
+	holder=2001021 #Hugh de Clermont
+}
+1200.1.1={
+	holder=2001022 #Hugh d'Anjou
+}
+1215.1.1={
+	holder=2001023 #Roland de Hainaut
+}
+1228.1.1={
+	holder=2001024 #Hugh de Courtenay
+}
+1244.1.1={
+	holder=2001025 #William
+}
+1257.1.1={
+	holder=2001026 #Yves I
+}
+1270.1.1={
+	holder=2001027 #Yves II
+}
+1295.1.1={
+	holder=2001028 #Bertrand
+}
+1310.1.1={
+	holder=2001029 #Henry
+}
+1320.1.1={
+	holder=2001030 #Peter
+}

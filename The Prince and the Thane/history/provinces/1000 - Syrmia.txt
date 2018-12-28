@@ -1,0 +1,23 @@
+# 1000 - Syrmia
+
+# County Title
+title = c_syrmia
+
+# Settlements
+max_settlements = 3
+
+b_zvecan = castle
+b_mitrovia = city
+
+#b_ilok = castle
+#b_zemlen = city
+
+# Misc
+culture = bulgarian
+religion = catholic
+
+# History
+
+
+1150.1.1 = { culture = hungarian }
+

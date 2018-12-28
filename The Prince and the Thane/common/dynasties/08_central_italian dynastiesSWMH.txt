@@ -1,0 +1,279 @@
+######################################
+#New central_italian dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035361-1000035410
+######################################
+
+1000035361 = {
+name="Boncompagni"
+ culture = central_italian
+# solo : de gueules au dragon d'or
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 59
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035362 = {
+name="Ruspoli"
+ culture = central_italian
+}
+1000035365 = {
+name="Barberini"
+ culture = central_italian
+#TP 32 15
+}
+1000035367 = {
+name="Cesarini" #Late XIV Century
+ culture = central_italian
+}
+1000035368 = {
+name="Pamphili" #Late XVI Century
+ culture = central_italian
+# solo : de gueules à la colombe d'argent 
+#TP 32 20
+}
+1000035370 = {
+name="Luci" #Mancini
+ culture = central_italian
+#TP 32 21
+}
+1000035371 = {
+name="Mazzetti di Pietralata"
+ culture = central_italian
+}
+1000035375 = {
+name="Trinci"
+ culture = central_italian
+# solo : d'or à la tête (ou deux têtes adossées) de cheval de sable (la construction est très variable) 
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 12
+          emblem = 0
+          color = 3
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035376 = {
+name="Acquaviva"
+ culture = central_italian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  }  
+}
+1000035379 = {
+name="del Cassero"
+ culture = central_italian
+}
+1000035381 = {
+name="Leopardi"
+ culture = central_italian
+}
+1000035382 = {
+name="Gabrielli"
+ culture = central_italian
+}
+1000035383 = {
+name="Massimo" #Late XIV Century
+ culture = central_italian
+}
+1000035384 = {
+name="Cantelmo" # Family Gantelme from Provence, came to Italy with the angevine kings like the Baux family
+ culture = central_italian
+# solo : d'or au lion de gueules, au lambel d'azur (Gantelme) 
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 31
+          color = 2
+          color = 0
+          color = 0
+      }
+  }  
+}
+1000035385 = {
+    name="dei Marsi"
+    culture = central_italian
+}
+1000035386 = {
+name="degli Anguillara"
+ culture = central_italian
+# solo : d'argent à deux anguilles (souvent représentées comme des serpents) de sable (disposées de manière très variable)
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 21
+          emblem = 0
+          color = 3
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035387 = {
+name="di Ceccano"
+ culture = central_italian
+# solo : de gueules à l'aigle d'argent (sans doute la construction la plus ancienne), ou coupé (ou parti, ou tranché) de gueules et d'argent à l'aigle de l'un en l'autre 
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 30
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 30
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  }
+}
+1000035388 = {
+name="Castelli" #di Vico
+ culture = central_italian
+}
+1000035389 = {
+name="Ottaviani"
+ culture = central_italian
+}
+1000035390 = {
+name="Serlupi" #Late XIV Century
+ culture = central_italian 
+# solo : coupé emmanché d'azur et d'argent, à quatre fleurs de lis d'argent en chef
+}
+1000035391 = {
+name="Valderetti" 
+ culture = central_italian
+}
+1000035392 = {
+name="Altieri" #Late XV Century
+ culture = central_italian
+}
+1000035393 = {
+name="Annibaldi"
+ culture = central_italian
+# solo : de gueules à six besants d'argent, au chef de même chargé d'une fasce de gueules
+  coat_of_arms = {
+      template = 5
+      layer = {
+          texture = 0
+          texture_internal = 155
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+      layer = {
+          texture = 1
+          texture_internal = 3
+          emblem = 0
+          color = 0
+          color = 1
+          color = 2
+      }
+  } 
+}
+1000035394 = {
+name="Crescenzi"
+ culture = central_italian
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 3
+          texture_internal = 17
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035395 = {
+    name="Frangipane"
+    culture = central_italian
+}
+1000035396 = {
+    name="Mattei"
+    culture = central_italian
+}
+1000035397 = {
+name="da Buscareto"
+ culture = central_italian
+}
+1000035398 = {
+name="della Genga"
+ culture = central_italian
+}
+1000035399 = {
+name="Guiderocchi"
+ culture = central_italian
+}
+1000035400 = {
+name="Ottoni"
+ culture = central_italian
+}
+1000035401 = {
+name="Saladini"
+ culture = central_italian
+}
+1000035402 = {
+name="Sgariglia"
+ culture = central_italian
+}
+1000035403 = {
+name="Varano"
+ culture = central_italian
+# solo : de vair plain
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 179
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  }
+}
+1000035404 = {
+name="Baschi"
+ culture = central_italian
+}
+######################################
+#Generic dynasites
+#Range 1000035411-1000035430
+######################################
+
+

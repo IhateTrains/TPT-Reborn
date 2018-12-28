@@ -1,0 +1,1511 @@
+###############################################################################
+#
+# The Prince and the Thane romance events - written by idib816 and the GOT team
+#
+###############################################################################
+
+namespace = gay
+
+#Potential courtier lover - younger
+character_event = {
+	id = gay.1
+	desc = "EVTDESCgay.1"
+	picture = GFX_evt_gaycouple
+	
+	capable_only = yes
+	only_men = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		has_epidemic = no
+		is_ill = no
+		has_lover = no
+		trait = homosexual
+		NOT = {
+			has_character_flag = never_lover
+			has_character_flag = gay_lover
+			has_character_flag = gay_loverbard
+		}
+		age = 14
+		NOT = {
+			age = 30
+		}
+		any_courtier = {
+			is_female = no
+			trait = homosexual
+			age = 14
+			NOT = {
+				age = 30
+			}
+			has_epidemic = no
+			is_ill = no
+			has_lover = no
+			}			
+	}
+	
+	mean_time_to_happen = {
+		years = 6
+
+		modifier = {
+			factor = 2.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 1.5
+			trait = shy
+		}
+		modifier = {
+			factor = 1.5
+			is_married = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = gay_avoid
+		}
+		modifier = {
+			factor = 0.8
+			is_father = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAgay.1" #Give it a shot
+		piety = -10
+		random_courtier = {
+			limit = {
+				is_female = no
+				trait = homosexual
+				age = 14
+				NOT = {
+					age = 30
+				}
+				has_epidemic = no
+				is_ill = no
+				has_lover = no
+			}
+			character_event = {
+				id = gay.3
+				tooltip = "Give it a shot"
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBgay.1" #No, it's a sin
+		piety = 10
+		random_list = {
+			50 = {
+			}
+			20 = {
+				add_trait = chaste
+				hidden_tooltip = {
+					character_event = {
+						id = 38274 #Notify Chaste
+					}
+				}
+			}
+			25 = {
+				add_trait = zealous
+				hidden_tooltip = {
+					character_event = {
+						id = 38269 #Notify Zealous
+					}
+				}
+			}
+			5 = {
+				add_trait = celibate
+				hidden_tooltip = {
+					character_event = {
+						id = 38285 #Notify Celibate
+					}
+				}
+			}
+		}
+	}
+}
+
+#Potential courtier lover - older
+character_event = {
+	id = gay.2
+	desc = "EVTDESCgay.1"
+	picture = GFX_evt_gaycouple
+	
+	capable_only = yes
+	only_men = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		has_epidemic = no
+		is_ill = no
+		has_lover = no
+		trait = homosexual
+		NOT = {
+			has_character_flag = never_lover
+			has_character_flag = gay_lover
+			has_character_flag = gay_loverbard
+		}
+		age = 31
+		NOT = {
+			age = 50
+		}
+		any_courtier = {
+			is_female = no
+			trait = homosexual
+			age = 31
+			NOT = {
+				age = 51
+			}
+			has_epidemic = no
+			is_ill = no
+			has_lover = no
+			}			
+	}
+	
+	mean_time_to_happen = {
+		years = 6
+
+		modifier = {
+			factor = 2.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 1.5
+			trait = shy
+		}
+		modifier = {
+			factor = 1.5
+			is_married = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = gay_avoid
+		}
+		modifier = {
+			factor = 0.8
+			is_father = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAgay.1" #Give it a shot
+		piety = -10
+		random_courtier = {
+			limit = {
+				is_female = no
+				trait = homosexual
+				age = 31
+				NOT = {
+					age = 51
+				}
+				has_epidemic = no
+				is_ill = no
+				has_lover = no
+			}
+			character_event = {
+				id = gay.3
+				tooltip = "Give it a shot"
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBgay.1" #No, it's a sin
+		piety = 10
+		random_list = {
+			50 = {
+			}
+			20 = {
+				add_trait = chaste
+				hidden_tooltip = {
+					character_event = {
+						id = 38274 #Notify Chaste
+					}
+				}
+			}
+			25 = {
+				add_trait = zealous
+				hidden_tooltip = {
+					character_event = {
+						id = 38269 #Notify Zealous
+					}
+				}
+			}
+			5 = {
+				add_trait = celibate
+				hidden_tooltip = {
+					character_event = {
+						id = 38285 #Notify Celibate
+					}
+				}
+			}
+		}
+	}
+}
+
+#Courtier accepts or scorn liege's advances
+character_event = {
+	id = gay.3
+	desc = "EVTDESCgay.3"
+	picture = GFX_evt_gaycouple
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAgay.3"
+		FROM = {
+			character_event = {
+				id = gay.4
+				tooltip = "EVTTOOLTIPgay.4"
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBgay.3"
+		FROM = {
+			character_event = {
+				id = gay.5
+				tooltip = "EVTTOOLTIPgay.5"
+			}
+		}
+	}
+}
+
+#Liege gets courtier's answer: Accepts
+character_event = {
+	id = gay.4
+	desc = "EVTDESCgay.4"
+	picture = GFX_evt_gaycouple
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAgay.4"
+		add_lover = FROM
+	}
+}
+
+#Liege gets courtier's answer: Scorns
+character_event = {
+	id = gay.5
+	desc = "EVTDESCgay.5"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAgay.5"
+		set_character_flag = never_lover
+		prestige = -50
+		opinion = {
+			modifier = opinion_dislike
+			who = FROM
+			years = 5
+		}
+	}
+}
+
+#Favorite backlash
+character_event = {
+	id = gay.6
+	desc = "EVTDESCgay.6"
+	picture = "GFX_evt_council"
+	
+	capable_only = yes
+	only_men = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		has_lover = yes
+		is_abroad = no
+		trait = homosexual
+			any_courtier = {
+				is_councillor = yes
+				lover = { character = prev }
+			}
+	}
+	
+	mean_time_to_happen = {
+		years = 5
+		
+	}
+	
+	option = {
+		name = "EVTOPTAgay.6"
+		random_courtier = {
+			limit = {
+				is_councillor = yes
+				lover = { character = prev }
+			}
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_treasurer
+			remove_title = job_chancellor
+			remove_title = job_marshal
+			remove_title = job_spymaster
+			remove_title = job_spiritual
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBgay.6"
+		random_courtier = {
+			limit = {
+				is_councillor = yes
+				lover = { character = prev }
+			}
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_lover  = yes
+			remove_title = job_treasurer
+			remove_title = job_chancellor
+			remove_title = job_marshal
+			remove_title = job_spymaster
+			remove_title = job_spiritual
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCgay.6"
+			any_vassal = {
+				limit = {
+					OR = {
+						piety = 25
+						trait = zealous
+						is_theocracy = yes
+					}
+				}
+				opinion = {
+					modifier = opinion_angry
+					who = ROOT
+					years = 2
+				}
+			}
+	}
+}
+
+namespace = romance
+
+#romance.1 - Councillor seduces ruler's spouse chain
+character_event = {
+	id = romance.1
+	desc = "EVTDESCromance.1"
+	picture = "GFX_evt_helen"
+
+	min_age = 14
+	max_age = 40
+	capable_only = yes 
+		
+    is_triggered_only = yes
+
+	trigger = {
+		liege = { is_married = yes }
+		is_councillor = yes
+		OR = {
+			AND = {
+				is_female = no
+				liege = { spouse = { is_female = yes } }
+				NOT = { trait = homosexual }
+			}
+			AND = {
+				is_female = yes
+				liege = { spouse = { is_female = no } }
+				NOT = { trait = homosexual }
+			}
+			AND = {
+				is_female = no
+				liege = { spouse = { is_female = no } }
+				trait = homosexual
+			}
+			AND = {
+				is_female = yes
+				liege = { spouse = { is_female = yes } }
+				trait = homosexual
+			}
+		}
+		NOT = { has_character_flag = flag_seduced_liege_spouse }
+		
+		liege = {
+			spouse = {
+				NOT = { age = 40 }
+				NOT = { trait = syphilitic }
+				NOT = { trait = leper }
+				NOT = { trait = has_tuberculosis }
+				NOT = { trait = has_typhus }
+				NOT = { trait = has_bubonic_plague }
+				NOT = { trait = has_measles }
+				NOT = { trait = has_small_pox }
+				NOT = { trait = infirm }
+				NOT = { trait = incapable }
+			}
+		}
+		trait = lustful
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "EVTOPTAromance.1"
+		set_character_flag = flag_seduced_liege_spouse
+		liege = { spouse = { character_event = { id = romance.2 days = 1 tooltip = "EVTTOOLTIPromance.2" } } }
+	}
+}
+
+character_event = {
+	id = romance.2
+	desc = "EVTDESCromance.2"
+	picture = GFX_evt_helen
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			age = 14
+			NOT = { trait = celibate }
+			NOT = { has_lover = yes }
+			
+			OR = {
+				AND = {
+					is_female = no
+					FROM = { is_female = yes }
+					NOT = { trait = homosexual }
+				}
+				AND = {
+					is_female = yes
+					FROM = { is_female = no }
+					NOT = { trait = homosexual }
+				}
+				AND = {
+					is_female = no
+					FROM = { is_female = no }
+					trait = homosexual
+				}
+				AND = {
+					is_female = yes
+					FROM = { is_female = yes }
+					trait = homosexual
+				}
+			}
+		}
+		
+		name = "EVTOPTAromance.2"
+		
+		if = {
+			limit = { trait = lustful }
+			add_character_modifier = {
+				name = lustful_affair_timer
+				duration = 365
+				hidden = yes
+			}	
+		}
+		
+		if = {
+			limit = { NOT = { trait = lustful } }
+			random = {
+				chance = 33
+				add_trait = lustful
+				hidden_tooltip = {
+					character_event = { id = 38272 }
+				}
+			}
+		}
+		
+		add_lover = FROM
+		if = {
+			limit = {
+				is_female = yes
+				FROM = { is_female = no}
+			}
+			random = {
+				chance = 50
+				FROM = { impregnate = ROOT }
+			}
+		}
+		if = {
+			limit = {
+				is_female = no
+				FROM = { is_female = yes }
+			}
+			random = {
+				chance = 50
+				impregnate = FROM
+			}
+		}
+		spouse = { character_event = { id = romance.3 days = 1 tooltip = "EVTTOOLTIPromance.3" } }
+		FROM = { character_event = { id = romance.5 days = 1 tooltip = "EVTTOOLTIPromance.5" } }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				trait = lustful
+			}
+			modifier = {
+				factor = 2
+				trait = hedonist
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -9 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -19 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -29 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -39 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -49 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -59 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -69 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -79 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -89 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = spouse value = -99 } }
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				AND = {
+					is_female = no
+					FROM = { is_female = yes }
+					NOT = { trait = homosexual }
+				}
+				AND = {
+					is_female = yes
+					FROM = { is_female = no }
+					NOT = { trait = homosexual }
+				}
+				AND = {
+					is_female = no
+					FROM = { is_female = no }
+					trait = homosexual
+				}
+				AND = {
+					is_female = yes
+					FROM = { is_female = yes }
+					trait = homosexual
+				}
+			}
+		}
+		
+		name = "EVTOPTBromance.2"
+		
+		if = {
+			limit = { NOT = { trait = chaste } }
+			random = {
+				chance = 33
+				add_trait = chaste
+				hidden_tooltip = {
+					character_event = { id = 38274 }
+				}
+			}
+		}
+		
+		spouse = { character_event = { id = romance.4 days = 1 tooltip = "EVTTOOLTIPromance.4" } }
+		FROM = { character_event = { id = romance.6 days = 1 tooltip = "EVTTOOLTIPromance.6" } }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				trait = chaste
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 10 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 20 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 30 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 40 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 50 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 60 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 70 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 80 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 90 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = spouse value = 100 }
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						is_female = no
+						FROM = { is_female = yes }
+						NOT = { trait = homosexual }
+					}
+					AND = {
+						is_female = yes
+						FROM = { is_female = no }
+						NOT = { trait = homosexual }
+					}
+					AND = {
+						is_female = no
+						FROM = { is_female = no }
+						trait = homosexual
+					}
+					AND = {
+						is_female = yes
+						FROM = { is_female = yes }
+						trait = homosexual
+					}
+				}
+			}
+		}
+		name = "EVTOPTCromance.2"
+		spouse = { character_event = { id = romance.4 days = 1 tooltip = "EVTTOOLTIPromance.4" } }
+		FROM = { character_event = { id = romance.6 days = 1 tooltip = "EVTTOOLTIPromance.6" } }
+	}
+}
+
+character_event = {
+	id = romance.3
+	desc = "EVTDESCromance.3"
+	picture = "GFX_evt_wench"
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTAromance.3" # Confront spouse
+		spouse = {
+			character_event = {
+				id = 64001
+				days = 2
+				tooltip = "EVTTOOLTIP64001"
+			}
+		}
+		hidden_tooltip = {
+			spouse = { character_event = {id = romance.7 days = 1 } }
+			FROM = { FROM = { character_event = { id = romance.9 days = 1 } } }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 10 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 20 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 30 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 40 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 50 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 60 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 70 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 80 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 90 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = spouse value = 100 }
+			}
+		}
+	}
+	
+	option = { # Confront him
+		name = "EVTOPTBromance.3"
+		spouse = {
+			lover = {
+				character_event = {
+					id = 64002
+					tooltip = "EVTTOOLTIP64002"
+					days = 2
+				}
+			}
+		}
+		hidden_tooltip = {
+			spouse = { character_event = {id = romance.8 days = 1 } }
+			FROM = { FROM = { character_event = { id = romance.10 days = 1 } } }
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -9 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -19 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -29 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -39 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -49 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -59 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -69 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -79 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -89 } }
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { opinion = { who = spouse value = -99 } }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCromance.3" #Ignore it.
+		spouse = {
+			reverse_opinion = {
+				modifier = opinion_irritated
+				who = ROOT
+				years = 6
+			}
+		}
+		hidden_tooltip = {
+			spouse = { character_event = {id = romance.11 days = 1 } }
+			FROM = { FROM = { character_event = { id = romance.12 days = 1 } } }
+		}
+		prestige = -20
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = envious
+			}
+			modifier = {
+				factor = 0.5
+				trait = lustful
+			}
+			modifier = {
+				factor = 0.5
+				trait = brave
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = conservative
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = homosexual
+			}
+		}
+	}
+}
+
+character_event = {
+	id = romance.4
+	desc = "EVTDESCromance.4"
+	picture = "GFX_evt_lovers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.4"
+		opinion = { who = FROM modifier = opinion_very_grateful months = 240 }
+		FROM = { FROM = { reverse_opinion = { who = ROOT modifier = opinion_rival years = 50 } } }
+		hidden_tooltip = { FROM = { character_event = { id = romance.13 days = 1 } } }
+	}
+}
+
+character_event = {
+	id = romance.5
+	desc = "EVTDESCromance.5"
+	picture = "GFX_evt_helen"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.5"
+	}
+}
+
+character_event = {
+	id = romance.6
+	desc = "EVTDESCromance.6"
+	picture = "GFX_evt_helen"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.6"
+		opinion = { who = FROM modifier = opinion_rival years = 50 }
+	}
+}
+
+character_event = {
+	id = romance.7
+	desc = "EVTDESCromance.7"
+	picture = "GFX_evt_quarrel"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.7"
+	}
+}
+
+character_event = {
+	id = romance.8
+	desc = "EVTDESCromance.8"
+	picture = "GFX_evt_quarrel"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.8"
+	}
+}
+
+character_event = {
+	id = romance.9
+	desc = "EVTDESCromance.9"
+	picture = "GFX_evt_quarrel"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.9"
+	}
+}
+
+character_event = {
+	id = romance.10
+	desc = "EVTDESCromance.10"
+	picture = "GFX_evt_quarrel"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.10"
+	}
+}
+
+character_event = {
+	id = romance.11
+	desc = "EVTDESCromance.11"
+	picture = "GFX_evt_scandal"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.11"
+	}
+}
+
+character_event = {
+	id = romance.12
+	desc = "EVTDESCromance.12"
+	picture = "GFX_evt_scandal"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.7"
+	}
+}
+
+character_event = {
+	id = romance.13
+	desc = "EVTDESCromance.13"
+	picture = "GFX_evt_lovers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAromance.13"
+	}
+}
+
+# Lustful turning to hedonist
+character_event = {
+	id = romance.14
+	desc = "Pleasure is all I'm looking for in life.."
+	picture = "GFX_evt_brothel"
+	
+	only_women = yes
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+        NOT = { trait = hedonist }
+		trait = lustful
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "Oh, pleasure!"
+		ai_chance = { factor = 40 }
+		add_trait = hedonist
+	}
+	
+	option = {
+		name = "It gets boring after a while"
+		ai_chance = { factor = 60 }
+		piety = 15
+        random = { chance = 35  remove_trait = lustful }
+	}
+}
+
+# Lustful turning to chaste
+character_event = {
+	id = romance.15
+	desc = "All this loving and romancing will kill me.."
+	picture = "GFX_evt_brothel"
+	
+
+	only_women = yes
+	min_age = 30
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+        NOT = { trait = hedonist }
+		trait = lustful
+        is_married = yes
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "It's time to settle down!"
+		ai_chance = { factor = 20 }
+		piety = 50
+		add_trait = chaste
+		hidden_tooltip = {
+			character_event = { id = 38274 }
+		}
+	}
+	
+	option = {
+		name = "Shall we dance mylady?"
+		ai_chance = { factor = 80 }
+        piety = 10
+        prestige = 5
+        random = { chance = 25 remove_trait = lustful }
+	}
+}
+
+# Chaste turning to celibate
+character_event = {
+	id = romance.16
+	desc = "I don't find the pleasures of life rewarding any longer.."
+	picture = "GFX_evt_wench"
+
+	only_women = yes
+	min_age = 30
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	trigger = {
+        NOT = { trait = celibate }
+		trait = chaste
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "Celibacy is the way"
+		ai_chance = { factor = 35 }
+		piety = 50
+		add_trait = celibate
+		hidden_tooltip = {
+			character_event = { id = 38285 }
+		}
+	}
+	
+	option = {
+		name = "I shall give it another try"
+		ai_chance = { factor = 65 }
+        piety = -15
+        random = { 
+		    chance = 25
+            add_trait = lustful 
+			hidden_tooltip = {
+				character_event = { id = 38272 }
+			}
+		}
+	}
+}
+
+#Lost lover feeling if lover is too old
+
+character_event = {
+	id = romance.17
+	desc = "EVTDESCromance.17"
+	picture = GFX_evt_lovers
+
+    is_triggered_only = yes
+
+    trigger = { 
+	    has_lover = yes
+        lover = { age = 35 } 
+	}
+        
+	
+	mean_time_to_happen = { days = 25 }
+	
+	option = {
+		name = "EVTOPTAromance.17"
+		ai_chance = {
+			factor = 85
+		}
+        piety = 15
+        prestige = -5
+        remove_lover = yes
+        random = { 
+		    chance = 25
+            add_trait = chaste 
+			hidden_tooltip = {
+				character_event = { id = 38274 }
+			}
+		}
+    }         
+        
+	option = {
+		name = "EVTOPTBromance.17"
+		ai_chance = {
+			factor = 15
+		}  
+        piety = -15
+        prestige = 5      
+    }
+}
+
+#Lonely whilst campaigning
+character_event = {
+	id = romance.18
+	desc = "EVTDESCromance.18"
+	picture = GFX_evt_lovers
+	
+	min_age = 14
+	only_men = yes
+	only_rulers = yes
+	capable_only = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war = yes
+		in_command = yes
+		NOT = {
+			trait = chaste
+		}
+		NOT = {
+			trait = celibate
+		}
+		NOT = {
+			trait = homosexual
+		}
+		fertility = 0.4
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "EVTOPTAromance.18" #give her gold to shut her up
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 1.3
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.3
+				trait = honest
+			}
+		}	
+		piety = 35
+		scaled_wealth = -0.4
+	}
+	option = {
+		name = "EVTOPTBromance.18" #I name you a liar!
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 1.3
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.3
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.3
+				trait = deceitful
+			}
+		}
+		prestige = -25
+		random = {
+			chance = 25
+			
+			add_trait = wroth
+			hidden_tooltip = {
+				character_event = {
+					id = 38254 #Notify wroth
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCromance.18" #so what?
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 1.3
+				trait = lustful
+			}
+			modifier = {
+				factor = 1.3
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.3
+				trait = greedy
+			}
+		}	
+		piety = -35
+		if = {
+			limit = {
+				NOT = {
+					trait = lustful
+				}
+			}
+			random = {
+				chance = 25
+				
+				add_trait = lustful
+				hidden_tooltip = {
+					character_event = {
+						id = 38272 #Notify Lustful
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTDromance.18" #adopt the child
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 1.3
+				trait = just
+			}
+			modifier = {
+				factor = 1.3
+				trait = kind
+			}
+		}
+		piety = 40
+		create_character = {
+			age = 0
+			trait = bastard
+		}
+		new_character = {
+			set_father = PREV	
+		}	
+		spouse = {
+			character_event = { id = romance.19 tooltip = "EVTTOOLTIP308" } # The wife is angered
+		}
+	}
+}
+# The wife is angered
+character_event = {
+	id = romance.19
+	picture = "GFX_evt_quarrel"
+	
+	is_triggered_only = yes 
+		
+	desc = "EVTDESC308"
+
+	option = {
+		name = "EVTOPTA308"	
+		spouse = {
+			reverse_opinion = {
+				who = root
+				modifier = acknowledged_bastard
+				years = 5
+			}
+		}
+	}
+}
+# Peasant presents a baby
+character_event = {
+	id = romance.20
+	desc = "EVTDESCromance.20"
+	picture = GFX_evt_lovers
+        min_age = 14
+        only_men = yes
+        only_rulers = yes
+		
+		is_triggered_only = yes
+	
+        mean_time_to_happen = {
+		days = 10          
+	    }
+
+        trigger = {
+		trait = lustful
+		NOT = {
+			trait = chaste
+		}
+		NOT = {
+			trait = celibate
+		}
+		NOT = {
+			trait = homosexual
+		}
+		fertility = 0.4
+	}
+		
+	option = {
+		name = "EVTOPTAromance.18" #give her gold to shut her up
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 1.3
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.3
+				trait = honest
+			}
+		}	
+		piety = 35
+		scaled_wealth = -0.4
+	}
+	option = {
+		name = "EVTOPTBromance.20" #hang her for bothering you
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 1.3
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.3
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.3
+				trait = deceitful
+			}
+		}
+		prestige = 25
+		piety = -50
+		random = {
+			chance = 25
+			
+			add_trait = wroth
+			hidden_tooltip = {
+				character_event = {
+					id = 38254 #Notify wroth
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCromance.18" #so what?
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 1.3
+				trait = lustful
+			}
+			modifier = {
+				factor = 1.3
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.3
+				trait = greedy
+			}
+		}	
+		piety = -35
+	}
+	option = {
+		name = "EVTOPTDromance.18" #adopt the child
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 1.3
+				trait = just
+			}
+			modifier = {
+				factor = 1.3
+				trait = kind
+			}
+		}
+		piety = 40
+		create_character = {
+			age = 5
+			trait = bastard
+		}
+		new_character = {
+			set_father = PREV
+			change_stewardship = 2
+			change_intrigue = 2
+			change_martial = 2
+			change_diplomacy = 2
+			change_learning = 2
+			random = {
+				chance = 15
+				add_trait = lunatic
+			}	
+		}	
+		spouse = {
+			character_event = { id = romance.19 tooltip = "EVTTOOLTIP308" } # The wife is angered
+		}
+	}
+}	

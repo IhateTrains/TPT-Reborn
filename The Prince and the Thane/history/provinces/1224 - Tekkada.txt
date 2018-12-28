@@ -1,0 +1,15 @@
+# 1224 - Tekkada
+
+# County Title
+title = c_tekkada
+
+# Settlements
+max_settlements = 1
+
+b_takkeda = city
+
+# Misc
+culture = tuareg
+religion = ibadi
+
+# History

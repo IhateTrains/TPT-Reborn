@@ -1,0 +1,12 @@
+# 279 - Lappland
+
+# County Title
+title = c_lappland
+
+# Settlements
+max_settlements = 0
+
+# Misc
+
+# History
+

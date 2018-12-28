@@ -1,0 +1,23 @@
+# 147 - Limousin
+
+# County Title
+title = c_limousin
+
+# Settlements
+max_settlements = 4
+b_limotges = castle
+b_chalus = city
+b_rochechouart = castle
+
+#b_stleonard = temple
+#b_thiviers = castle
+
+#Misc
+religion = catholic
+culture = occitan
+
+# History
+
+1000.1.1 = { 
+	b_chalus = ct_jewish_community_1
+}

@@ -1,0 +1,623 @@
+######################################
+#New tuscan dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1000035001-1000035050
+######################################
+
+1000035001 = {
+name="Guidi"
+ culture = tuscan
+  #TP 32 13
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 2
+          texture_internal = 94
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  }	
+}
+1000035002 = {
+name="Aldobrandeschi"
+ culture = tuscan
+#TP 32 14
+# solo : d'or au lion de gueules
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 1
+          emblem = 0
+          color = 2
+          color = 0
+          color = 0
+      }
+  }	
+}
+1000035003 = {
+name="Accolti"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 78
+          emblem = 0
+          color = 1
+          color = 2
+          color = 4
+      }
+  } 
+}
+1000035004 = {
+name="Albergotti"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 163
+          emblem = 0
+          color = 0
+          color = 3
+          color = 0
+      }
+  } 
+}
+
+1000035005 = {
+name="Ubertini"
+ culture = tuscan
+}
+
+1000035007 = {
+name="Amidei"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 150
+          emblem = 0
+          color = 2
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035008 = {
+name="Barberini"
+ culture = tuscan
+#TP
+#32
+#15
+}
+1000035009 = {
+name="del Pugliese"
+ culture = tuscan
+}
+1000035010 = {
+name="Guicciardini"
+ culture = tuscan
+#TP 32 16
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 89
+          emblem = 0
+          color = 1
+          color = 4
+          color = 0
+      }
+  }
+}
+1000035011 = {
+name="Pazzi"
+ culture = tuscan
+# solo : d'azur semé de croisettes d'or, à deux dauphins adossés de même *
+}
+1000035012 = {
+name="Pucci"
+ culture = tuscan
+# solo : d'or à une tête de maure sable
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 2
+          texture_internal = 135
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  }
+}
+1000035013 = {
+name="Salviati"
+ culture = tuscan
+# solo : de gueules à trois bandes crenelées d'argent
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 236
+          emblem = 0
+          color = 1
+          color = 2
+          color = 0
+      }
+  }
+}
+1000035014 = {
+name="Torrigiani"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 75
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035016 = {
+name="Busdraghi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 59
+          emblem = 0
+          color = 5
+          color = 0
+          color = 0
+      }
+  }
+}
+1000035017 = {
+name="Diodati"
+ culture = tuscan
+}
+1000035019 = {
+name="Obizzi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 231
+          emblem = 0
+          color = 4
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035023 = {
+name="Cancellieri"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 179
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035024 = {
+name="Cellesi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 5
+      layer = {
+          texture = 0
+          texture_internal = 16
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+      layer = {
+          texture = 0
+          texture_internal = 166
+          emblem = 0
+          color = 4
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035025 = {
+name="Rospigliosi"
+ culture = tuscan
+# solo : écartelé d'or et d'azur, un losange de l'un en l'autre à chaque quartier
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 2
+          texture_internal = 133
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  }
+}
+1000035026 = {
+name="Setticelli"
+ culture = tuscan
+}
+1000035027 = {
+name="Pannocchieschi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 30
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035028 = {
+name="Adimari"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 127
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035029 = {
+name="Alamanni"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 4
+          texture_internal = 170
+          emblem = 0
+          color = 1
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035030 = {
+name="Albizi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 4
+          texture_internal = 94
+          emblem = 0
+          color = 0
+          color = 3
+          color = 0
+      }
+  } 
+}
+
+1000035031 = {
+name="Alessandri"
+ culture = tuscan
+# d'azur au mouton bicéphale d'argent 
+}
+1000035032 = {
+name="Altoviti"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 45
+          emblem = 0
+          color = 1
+          color = 3
+          color = 0
+      }
+  } 
+}
+1000035033 = {
+name="Antinori"
+ culture = tuscan
+#TP 32 17
+  coat_of_arms = {
+      template = 1
+      layer = {
+          texture = 0
+          texture_internal = 174
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+      layer = {
+          texture = 1
+          texture_internal = 0
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035034 = {
+name="Bardi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 225
+          emblem = 0
+          color = 2
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035035 = {
+name="Becchi"
+ culture = tuscan
+# de gueules à trois têtes d'aigle d'or 
+}
+1000035036 = {
+name="Catellini da Castiglione"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 12
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035037 = {
+name="Cerretani"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 179
+          emblem = 0
+          color = 5
+          color = 0
+          color = 0
+      }
+  }
+}
+1000035038 = {
+name="Corsi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 21
+          emblem = 13
+          color = 5
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035039 = {
+name="da Casavecchia"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 70
+          emblem = 0
+          color = 0
+          color = 4
+          color = 0
+      }
+  } 
+}
+
+1000035040 = {
+name="Tebaldi della Vitella"
+ culture = tuscan
+}
+1000035041 = {
+name="Fifanti"
+ culture = tuscan
+}
+1000035043 = {
+name="Gherardini"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 2
+          texture_internal = 2
+          emblem = 0
+          color = 0
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035044 = {
+name="Guadagni"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 136
+          emblem = 0
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035045 = {
+name="Lamberti"
+ culture = tuscan
+# d'argent au lion d'or, à la bande de sinople brochant sur le tout 
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 235
+          emblem = 0
+          color = 1
+          color = 0
+          color = 5
+      }
+  }
+}
+1000035046 = {
+name="Lucardesi"
+ culture = tuscan
+}
+1000035047 = {
+name="Nerli"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 1
+          texture_internal = 68
+          emblem = 0
+          color = 2
+          color = 1
+          color = 0
+      }
+  } 
+}
+1000035048 = {
+name="Ricasoli"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 150
+          emblem = 21
+          color = 0
+          color = 2
+          color = 0
+      }
+  } 
+}
+1000035049 = {
+name="Tornaquinci"
+ culture = tuscan
+}
+1000035050 = {
+name="Upezzinghi"
+ culture = tuscan
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 0
+          texture_internal = 30
+          emblem = 0
+          color = 3
+          color = 0
+          color = 0
+      }
+  } 
+}
+1000035051 = {
+name="Ardengheschi"
+ culture = tuscan
+}
+1000035052 = {
+name="Bertoldi"
+ culture = tuscan
+}
+1000035053 = {
+name="Linari"
+ culture = tuscan
+}
+1000035054 = {
+name="Bonsignori"
+ culture = tuscan
+}
+1000035055 = {
+name="Angiolieri"
+ culture = tuscan
+}
+1000035056 = {
+name="Tolomei"
+ culture = tuscan
+# d'azur à la fasce d'argent, accompagnée de trois croissants de même, 2 et 1
+  coat_of_arms = {
+      template = 0
+      layer = {
+          texture = 5
+          texture_internal = 88
+          emblem = 0
+          color = 1
+          color = 4
+          color = 1
+      }
+  }
+}
+1000035057 = {
+name="Abati"
+ culture = tuscan
+}
+1000035058 = {
+name="Barbolani di Montauto"
+ culture = tuscan
+}
+
+
+
+
+
+
+
+######################################
+#Generic dynasites
+#Range 1000035060-1000035080
+######################################
+
+#1000035060 = {
+#name="Cinta senese"
+# culture = tuscan
+#} # so tasty! 
+
+
+

@@ -1,0 +1,20 @@
+# 309 - Altmark
+
+# County Title
+title = c_altmark
+
+# Settlements
+max_settlements = 4
+b_stendal = castle
+b_werben = city
+b_walbeck = city
+#b_salzwedel = castle
+#b_osterburg = castle
+#b_tangermunde = castle
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+1181.1.1 = { b_salzwedel = castle }

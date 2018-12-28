@@ -1,0 +1,43 @@
+# 199 - Burgos
+
+# County Title
+title = c_burgos
+
+# Settlements
+max_settlements = 6
+b_burgos = castle
+b_mirandadeebro = city
+b_onya = temple
+b_lara = castle
+b_castrojeriz = castle
+#b_arandadeduero = city
+#b_frias = castle
+#b_silos = temple
+
+culture = castillan
+religion = catholic
+
+# History
+
+800.1.1 = {
+	b_burgos = ca_town_1
+	b_burgos = ca_keep_1
+	b_burgos = ca_stable_1
+	b_burgos = ca_light_barracks_1
+	b_burgos = ca_wall_1
+	b_burgos = ca_wall_2
+	b_lara = ca_town_1
+	b_lara = ca_keep_1
+	b_lara = ca_stable_1
+	b_lara = ca_light_barracks_1
+	b_lara = ca_wall_1
+	b_lara = ca_wall_2
+	b_castrojeriz = ca_town_1
+	b_castrojeriz = ca_keep_1
+	b_castrojeriz = ca_stable_1
+	b_castrojeriz = ca_light_barracks_1
+	b_castrojeriz = ca_wall_1
+	b_castrojeriz = ca_wall_2
+	b_mirandadeebro = ct_jewish_community_1
+	b_mirandadeebro = ct_jewish_community_2
+}

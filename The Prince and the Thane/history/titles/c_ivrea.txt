@@ -1,0 +1,5 @@
+961.1.1={
+	#CJL78 - Bishops of Vercelli after disintegration of M. of Ivrea; contested between Monferrato and Savoy until Amadeus VI of Savoy in 1356
+	liege="e_hre"
+	holder=0
+}

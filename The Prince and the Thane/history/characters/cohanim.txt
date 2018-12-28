@@ -1,0 +1,431 @@
+#Jewish Cohanim 
+1000052001 = {
+        name="Joazar"
+        dynasty=9001004
+        religion="karaite"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052002 = {
+        name="Ananus"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052003 = {
+        name="Ishmael"
+        dynasty=9001004
+        martial=2
+        diplomacy=15
+        intrigue=10
+        stewardship=13
+        learning=20
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052004 = {
+        name="Eleazar"
+        dynasty=9001004
+        father=1000052002
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052005 = {
+        name="Simon"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052006 = {
+        name="Yosef bar Caiaphas"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052007 = {
+        name="Jonathan"
+        dynasty=9001004
+        father=1000052002
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052008 = {
+        name="Theophilus"
+        dynasty=9001004
+        father=1000052002
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052009 = {
+        name="Simon Cantatheras"
+        dynasty=9001004
+        religion="karaite"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        50.1.1={
+                death="50.1.1"
+        }
+}
+1000052010 = {
+        name="Matthias"
+        dynasty=9001004
+        father=1000052002
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052011 = {
+        name="Elioneus Cantatheras"
+        dynasty=9001004
+        father=1000052009
+        religion="karaite"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052013 = {
+        name="Josephus"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052014 = {
+        name="Ananias"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052015 = {
+        name="Jonathan"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052017 = {
+        name="Joseph Cabi"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052018 = {
+        name="Ananus"
+        dynasty=9001004
+        father=1000052002
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        68.1.1={
+                death="68.1.1"
+        }
+}
+1000052019 = {
+        name="Joshua"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052020 = {
+        name="Joshua"
+        dynasty=9001004
+        religion="karaite"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052021 = {
+        name="Mattathias"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "scholarly_theologian"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+1000052022 = {
+        name="Phannias"
+        dynasty=9001004
+        religion="jewish"
+        culture="mizrahi"
+        add_trait = "skilled_tactician"
+        add_trait="maimed"
+        1.1.1={
+                birth="1.1.1"
+        }
+        70.1.1={
+                death="70.1.1"
+        }
+}
+
+#Karaite Exilarchs
+1000052051 = {
+        name="Anan"
+        religion="karaite"
+        culture="mizrahi"
+        dynasty=9001019
+        add_trait = "scholarly_theologian"
+        715.1.1={
+                birth="715.1.1"
+        }
+        795.1.1={
+                death="795.1.1"
+        }
+}
+1000052052 = {
+        name="Saul"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052051
+        dynasty=9001019
+        725.1.1={
+                birth="725.1.1"
+        }
+        780.1.1={
+                death="780.1.1"
+        }
+}
+1000052053 = {
+        name="Josiah"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052051
+        dynasty=9001019
+        725.1.1={
+                birth="725.1.1"
+        }
+        825.1.1={
+                death="825.1.1"
+        }
+}
+1000052054 = {
+        name="Jehoshaphat"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052053
+        dynasty=9001019
+        770.1.1={
+                birth="770.1.1"
+        }
+        860.1.1={
+                death="860.1.1"
+        }
+}
+1000052055 = {
+        name="Boaz"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052054
+        dynasty=9001019
+        810.1.1={
+                birth="810.1.1"
+        }
+        900.1.1={
+                death="900.1.1"
+        }
+}
+1000052056 = {
+        name="David"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052055
+        dynasty=9001019
+        850.1.1={
+                birth="850.1.1"
+        }
+        960.1.1={
+                death="960.1.1"
+        }
+}
+1000052057 = {
+        name="Solomon"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052056
+        dynasty=9001019
+        900.1.1={
+                birth="900.1.1"
+        }
+        1020.1.1={
+                death="1020.1.1"
+        }
+}
+1000052058 = {
+        name="Hezekiah"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052057
+        dynasty=9001019
+        950.1.1={
+                birth="970.1.1"
+        }
+        1070.1.1={
+                death="1070.1.1"
+        }
+}
+1000052059 = {
+        name="Hasdai"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052058
+        dynasty=9001019
+        990.1.1={
+                birth="990.1.1"
+        }
+        1120.1.1={
+                death="1120.1.1"
+        }
+}
+1000052060 = {
+        name="Solomon"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052059
+        dynasty=9001019
+        1030.1.1={
+                birth="1030.1.1"
+        }
+        1140.1.1={
+                death="1140.1.1"
+        }
+}
+1000052061 = {
+        name="Daniel"
+        religion="karaite"
+        culture="mizrahi"
+        father=1000052060
+        dynasty=9001019
+        1100.1.1={
+                birth="1100.1.1"
+        }
+        1200.1.1={
+                death="1200.1.1"
+        }
+}
+#Line dies out now, this is a nephew
+1000052062 = {
+        name="Daniel"
+        religion="karaite"
+        culture="mizrahi"
+        dynasty=9001019
+        1150.1.1={
+                birth="1150.1.1"
+        }
+        1220.1.1={
+                death="1220.1.1"
+        }
+}

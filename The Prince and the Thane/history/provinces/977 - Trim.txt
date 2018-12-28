@@ -1,0 +1,17 @@
+# 977 - Trim
+
+# County Title
+title = c_trim
+
+# Settlements
+max_settlements = 2
+b_trim = castle
+#b_navan = temple
+
+# Misc
+culture = irish
+religion = catholic
+
+# History
+
+ 

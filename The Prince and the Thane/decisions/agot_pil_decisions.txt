@@ -1,0 +1,521 @@
+# Legitimacy Investigation Decisions
+
+plot_decisions = {
+	# Ultimatum - Confront Father
+	pil_confront_father = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { has_character_flag = flag_pil_confront_father }
+			plot_target_char = {
+				father = {
+					is_alive = yes
+					is_ruler = yes
+				}
+			}
+		}
+		allow = {
+			custom_tooltip = "HASEVIDENCE"
+			hidden_tooltip = { check_variable = { which = "pil_evidence_count" value = 0 } }
+		}
+		effect = {
+			activate_plot = yes
+			set_character_flag = flag_pil_confront_father
+			character_event = { id = pil.100 tooltip = "EVTTOOLTIPPIL100" }
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { check_variable = { which = "pil_evidence_count" value = 1 } }
+				NOT = {
+					OR = {
+						trait = wroth
+						AND = {
+							trait = paranoid
+							OR = {
+								trait = honest
+								trait = just
+								trait = pious_man
+							}
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = { check_variable = { which = "pil_evidence_count" value = 2 } }
+				OR = {
+					trait = patient
+					AND = {
+						trait = trusting
+						OR = {
+							trait = honest
+							trait = just
+							trait = pious_man
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = { has_character_flag = flag_pil_evidence_trait_present }
+				NOT = { has_character_flag = flag_pil_evidence_trait_missing }
+				NOT = { has_character_flag = flag_pil_evidence_appearance }
+				NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+				NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+				NOT = { has_character_flag = flag_pil_evidence_mother_lover }
+			}
+			
+			modifier = {
+				factor = 0
+				random = 1
+			}
+		}
+	}
+	
+	# Send Messages to Vassals and Relatives
+	pil_send_ravens = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { has_character_flag = flag_pil_send_ravens }
+			plot_target_char = {
+				father = {
+					NOT = {
+						is_alive = yes
+						is_ruler = yes
+					}
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = "HASEVIDENCE"
+			hidden_tooltip = { check_variable = { which = "pil_evidence_count" value = 0 } }
+		}
+		
+		effect = {
+			activate_plot = yes
+			set_character_flag = flag_pil_send_ravens
+			character_event = { id = pil.117 tooltip = "EVTTOOLTIPPIL117" }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { check_variable = { which = "pil_evidence_count" value = 1 } }
+				NOT = {
+					OR = {
+						trait = wroth
+						AND = {
+							trait = paranoid
+							OR = {
+								trait = honest
+								trait = just
+								trait = pious_man
+							}
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = { check_variable = { which = "pil_evidence_count" value = 2 } }
+				OR = {
+					trait = patient
+					AND = {
+						trait = trusting
+						OR = {
+							trait = honest
+							trait = just
+							trait = pious_man
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = { has_character_flag = flag_pil_evidence_trait_present }
+				NOT = { has_character_flag = flag_pil_evidence_trait_missing }
+				NOT = { has_character_flag = flag_pil_evidence_appearance }
+				NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+				NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+				NOT = { has_character_flag = flag_pil_evidence_mother_lover }
+			}
+			
+			modifier = {
+				factor = 0
+				random = 1
+			}
+		}
+	}
+
+	# Fabricate Evidence - Mysterious Conception
+	pil_fabricate_conception_decision_1 = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { plot_target_char = { father = { character = ROOT } } } # Cannot fabricate evidence to fool self
+			NOT = { plot_power = 0.5 }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+			NOT = { has_character_flag = flag_pil_fabricate_conception_decision }
+			NOT = { trait = just }
+			NOT = { trait = honest }
+			NOT = { trait = pious_man }
+		}
+		allow = { always = yes }
+		effect = {
+			set_character_flag = flag_pil_fabricate_conception_decision
+			random_list = {
+				10 = { character_event = { id = pil.12 tooltip = "ACTIONSUCCEED" } }
+				90 = { character_event = { id = pil.13 tooltip = "ACTIONFAIL" } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = paranoid }
+				NOT = {
+					plot_target_char = {
+						ROOT = {
+							OR = {
+								any_pretender_title = { current_heir = { character = PREVPREVPREV } }
+								any_pretender_title = { holder = PREVPREV }
+								any_heir_title = { holder = PREVPREV }
+							}
+						}
+					}
+					OR = {
+						trait = ambitious
+						trait = envious
+						trait = greedy
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = deceitful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = machiavellian }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = wroth }
+			}
+			modifier = {
+				factor = 0
+				trait = patient
+			}
+			modifier = {
+				factor = 0
+				random = 1
+			}
+		}
+	}
+	pil_fabricate_conception_decision_2 = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { plot_target_char = { father = { character = ROOT } } } # Cannot fabricate evidence to fool self
+			NOT = { plot_power = 1 }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+			NOT = { has_character_flag = flag_pil_fabricate_conception_decision }
+			NOT = { trait = just }
+			NOT = { trait = honest }
+			NOT = { trait = pious_man }
+		}
+		allow = { plot_power = 0.5 }
+		effect = {
+			set_character_flag = flag_pil_fabricate_conception_decision
+			random_list = {
+				25 = { character_event = { id = pil.12 tooltip = "ACTIONSUCCEED" } }
+				75 = { character_event = { id = pil.13 tooltip = "ACTIONFAIL" } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = paranoid }
+				NOT = {
+					plot_target_char = {
+						ROOT = {
+							OR = {
+								any_pretender_title = { current_heir = { character = PREVPREVPREV } }
+								any_pretender_title = { holder = PREVPREV }
+								any_heir_title = { holder = PREVPREV }
+							}
+						}
+					}
+					OR = {
+						trait = ambitious
+						trait = envious
+						trait = greedy
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = deceitful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = machiavellian }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				trait = patient
+			}
+			modifier = {
+				factor = 0
+				trait = wroth
+				random = 5
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = wroth }
+				random = 1
+			}
+		}
+	}
+	pil_fabricate_conception_decision_3 = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { plot_target_char = { father = { character = ROOT } } } # Cannot fabricate evidence to fool self
+			plot_power = 0.5
+			NOT = { plot_power = 1.5 }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+			NOT = { has_character_flag = flag_pil_fabricate_conception_decision }
+			NOT = { trait = just }
+			NOT = { trait = honest }
+			NOT = { trait = pious_man }
+		}
+		allow = { plot_power = 1 }
+		effect = {
+			set_character_flag = flag_pil_fabricate_conception_decision
+			random_list = {
+				50 = { character_event = { id = pil.12 tooltip = "ACTIONSUCCEED" } }
+				50 = { character_event = { id = pil.13 tooltip = "ACTIONFAIL" } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = paranoid }
+				NOT = {
+					plot_target_char = {
+						ROOT = {
+							OR = {
+								any_pretender_title = { current_heir = { character = PREVPREVPREV } }
+								any_pretender_title = { holder = PREVPREV }
+								any_heir_title = { holder = PREVPREV }
+							}
+						}
+					}
+					OR = {
+						trait = ambitious
+						trait = envious
+						trait = greedy
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = deceitful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = machiavellian }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				trait = wroth
+				random = 10
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = wroth }
+				NOT = { trait = patient }
+				random = 5
+			}
+			modifier = {
+				factor = 0
+				trait = patient
+				random = 1
+			}
+		}
+	}
+	pil_fabricate_conception_decision_4 = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { plot_target_char = { father = { character = ROOT } } } # Cannot fabricate evidence to fool self
+			plot_power = 1
+			NOT = { plot_power = 2 }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+			NOT = { has_character_flag = flag_pil_fabricate_conception_decision }
+			NOT = { trait = just }
+			NOT = { trait = honest }
+			NOT = { trait = pious_man }
+		}
+		allow = { plot_power = 1.5 }
+		effect = {
+			set_character_flag = flag_pil_fabricate_conception_decision
+			random_list = {
+				75 = { character_event = { id = pil.12 tooltip = "ACTIONSUCCEED" } }
+				25 = { character_event = { id = pil.13 tooltip = "ACTIONFAIL" } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = paranoid }
+				NOT = {
+					plot_target_char = {
+						ROOT = {
+							OR = {
+								any_pretender_title = { current_heir = { character = PREVPREVPREV } }
+								any_pretender_title = { holder = PREVPREV }
+								any_heir_title = { holder = PREVPREV }
+							}
+						}
+					}
+					OR = {
+						trait = ambitious
+						trait = envious
+						trait = greedy
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = deceitful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = machiavellian }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = wroth }
+				NOT = { trait = patient }
+				random = 10
+			}
+			modifier = {
+				factor = 0
+				trait = patient
+				random = 5
+			}
+		}
+	}
+	pil_fabricate_conception_decision_5 = {
+		is_high_prio = yes
+		potential = {
+			has_plot = plot_investigate_legitimacy
+			NOT = { plot_target_char = { father = { character = ROOT } } } # Cannot fabricate evidence to fool self
+			plot_power = 1.5
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception }
+			NOT = { has_character_flag = flag_pil_evidence_mysterious_conception_fake }
+			NOT = { has_character_flag = flag_pil_fabricate_conception_decision }
+			NOT = { trait = just }
+			NOT = { trait = honest }
+			NOT = { trait = pious_man }
+		}
+		allow = { plot_power = 2 }
+		effect = {
+			set_character_flag = flag_pil_fabricate_conception_decision
+			random_list = {
+				90 = { character_event = { id = pil.12 tooltip = "ACTIONSUCCEED" } }
+				10 = { character_event = { id = pil.13 tooltip = "ACTIONFAIL" } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = paranoid }
+				NOT = {
+					plot_target_char = {
+						ROOT = {
+							OR = {
+								any_pretender_title = { current_heir = { character = PREVPREVPREV } }
+								any_pretender_title = { holder = PREVPREV }
+								any_heir_title = { holder = PREVPREV }
+							}
+						}
+					}
+					OR = {
+						trait = ambitious
+						trait = envious
+						trait = greedy
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = deceitful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = machiavellian }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+			modifier = {
+				factor = 0
+				trait = patient
+				random = 10
+			}
+		}
+	}
+}
+	
+	

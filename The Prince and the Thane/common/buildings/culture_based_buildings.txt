@@ -1,0 +1,2484 @@
+castle = {
+#Saxon and English Longbow archery range
+	ca_culture_saxon_english_1 = {
+		desc = ca_culture_saxon_english_1_desc
+		potential = {
+			OR = {
+				culture = saxon
+				culture = english
+				culture = welsh
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = saxon
+					culture = english
+					culture = welsh
+			    }
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		archers_offensive = 0.1
+		archers = 40
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1120
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_saxon_english_2 = {
+		desc = ca_culture_saxon_english_1_desc
+		potential = {
+			OR = {
+				culture = saxon
+				culture = english
+				culture = welsh
+			}
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+			FROM = {
+				OR = {
+					culture = saxon
+					culture = english
+					culture = welsh
+				}
+			}		
+		}		
+		upgrades_from = ca_culture_saxon_english_1
+		build_cost = 300
+		build_time = 1095
+		archers_offensive = 0.1
+		archers = 60
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1160
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_saxon_english_3 = {
+		desc = ca_culture_saxon_english_1_desc
+		potential = {
+			OR = {
+				culture = saxon
+				culture = english
+				culture = welsh
+			}
+		}		
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
+			FROM = {
+				OR = {
+					culture = saxon
+					culture = english
+					culture = welsh
+				}
+			}			
+		}
+		upgrades_from = ca_culture_saxon_english_2
+		build_cost = 400
+		build_time = 2190
+		archers_offensive = 0.1
+		archers = 80
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1200
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_saxon_english_4 = {
+		desc = ca_culture_saxon_english_1_desc
+		potential = {
+			OR = {
+				culture = saxon
+				culture = english
+				culture = welsh
+			}
+		}		
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
+			FROM = {
+				OR = {
+					culture = saxon
+					culture = english
+					culture = welsh
+				}
+			}			
+		}
+		upgrades_from = ca_culture_saxon_english_3
+		build_cost = 500
+		build_time = 2190
+		archers_offensive = 0.1
+		archers = 100
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1260
+				has_building = ca_keep_1
+			}
+		}
+	}
+
+	#Scottish Schiltron
+	ca_culture_scottish_1 = {
+		desc = ca_culture_scottish_1_desc
+		potential = {
+			culture = scottish
+		}
+		trigger = {
+			FROM = {
+				culture = scottish
+			}		
+		}		
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		pikemen = 30
+		pikemen_defensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1085
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_scottish_2 = {
+		desc = ca_culture_scottish_1_desc
+		potential = {
+			culture = scottish
+		}
+		trigger = {
+			FROM = {
+				culture = scottish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_scottish_1
+		build_cost = 300
+		build_time = 1095
+		pikemen = 40
+		pikemen_defensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1165
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_scottish_3 = {
+		desc = ca_culture_scottish_1_desc
+		potential = {
+			culture = scottish
+		}
+		trigger = {
+			FROM = {
+				culture = scottish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_scottish_2
+		build_cost = 400
+		build_time = 2190
+		pikemen = 50
+		pikemen_defensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1210
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_scottish_4 = {
+		desc = ca_culture_scottish_1_desc
+		potential = {
+			culture = scottish
+		}
+		trigger = {
+			FROM = {
+				culture = scottish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_scottish_3
+		build_cost = 500
+		build_time = 2190
+		pikemen = 60
+		pikemen_defensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1260
+				has_building = ca_keep_1
+			}
+		}
+	}
+	
+	#Special baltic tribes building
+	
+	#Baltic tribes Heavy Infantry camps
+	ca_culture_group_baltic_1 = {
+		desc = ca_culture_group_baltic_1_desc
+		potential = {
+			OR = {
+				culture_group = baltic
+				culture = pommeranian
+				culture_group = finno_ugric
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = baltic
+					culture = pommeranian
+					culture_group = finno_ugric
+				}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_offensive = 0.1
+		ai_creation_factor = 101
+
+		start = {
+			AND = {
+				FROM = { top_liege = { religion_group = pagan_group } religion_group = pagan_group }
+				year = 1066
+			}
+		}
+	}
+	ca_culture_group_baltic_2 = {
+		desc = ca_culture_group_baltic_1_desc
+		potential = {
+			OR = {
+				culture_group = baltic
+				culture = pommeranian
+				culture_group = finno_ugric
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = baltic
+					culture = pommeranian
+					culture_group = finno_ugric
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_group_baltic_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_offensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = pagan_group }
+				year = 1230
+			}
+		}
+	}
+	ca_culture_group_baltic_3 = {
+		desc = ca_culture_group_baltic_1_desc
+		potential = {
+			OR = {
+				culture_group = baltic
+				culture = pommeranian
+				culture_group = finno_ugric
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = baltic
+					culture = pommeranian
+					culture_group = finno_ugric
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_group_baltic_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_offensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = pagan_group }
+				year = 1260
+			}
+		}
+	}
+	ca_culture_group_baltic_4 = {
+		desc = ca_culture_group_baltic_1_desc
+		potential = {
+			OR = {
+				culture_group = baltic
+				culture = pommeranian
+				culture_group = finno_ugric
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = baltic
+					culture = pommeranian
+					culture_group = finno_ugric
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_group_baltic_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_offensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = pagan_group }
+				year = 1300
+			}
+		}
+	}
+	
+	#Altaic horse breeders
+	ca_culture_group_altaic_1 = {
+		desc = ca_culture_group_altaic_1_desc
+		potential = {
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = iranian
+				}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		horse_archers = 20
+		horse_archers_offensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1066
+				has_building = ca_wall_1
+			}
+		}
+	}
+	ca_culture_group_altaic_2 = {
+		desc = ca_culture_group_altaic_1_desc
+		potential = {
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = iranian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_group_altaic_1
+		build_cost = 300
+		build_time = 1095
+		horse_archers = 20
+		horse_archers_offensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				year = 1150
+				has_building = ca_wall_1
+			}
+		}
+	}
+	ca_culture_group_altaic_3 = {
+		desc = ca_culture_group_altaic_1_desc
+		potential = {
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = iranian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_group_altaic_2
+		build_cost = 400
+		build_time = 2190
+		horse_archers = 30
+		horse_archers_offensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				year = 1230
+				has_building = ca_wall_1
+			}
+		}
+	}
+	ca_culture_group_altaic_4 = {
+		desc = ca_culture_group_altaic_1_desc
+		potential = {
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = iranian
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_group_altaic_3
+		build_cost = 500
+		build_time = 2190
+		horse_archers = 40
+		horse_archers_offensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				year = 1290
+				has_building = ca_wall_1
+			}
+		}
+	}
+	
+	#Frankish, Occitan, Norman and German Lists
+	ca_culture_frank_norman_german_1 = {
+		desc = ca_culture_frank_norman_german_1_desc
+		potential = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				culture = bohemian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+					culture = bohemian
+				}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		knights = 15
+		knights_offensive = 0.05
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1125
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_frank_norman_german_2 = {
+		desc = ca_culture_frank_norman_german_1_desc
+		potential = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				culture = bohemian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+					culture = bohemian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_frank_norman_german_1
+		build_cost = 300
+		build_time = 1095
+		knights = 20
+		knights_offensive = 0.05
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1140
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_frank_norman_german_3 = {
+		desc = ca_culture_frank_norman_german_1_desc
+		potential = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				culture = bohemian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+					culture = bohemian
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_frank_norman_german_2
+		build_cost = 400
+		build_time = 2190
+		knights = 25
+		knights_offensive = 0.05
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1180
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_frank_norman_german_4 = {
+		desc = ca_culture_frank_norman_german_1_desc
+		potential = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				culture = bohemian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+					culture = bohemian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_frank_norman_german_3
+		build_cost = 500
+		build_time = 2190
+		knights = 30
+		knights_offensive = 0.05
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1250
+				has_building = ca_stable_1
+			}
+		}
+	}
+
+	#Arabian horse breeders
+	ca_culture_group_maghreb_1 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			culture_group = maghreb_african
+		}
+		trigger = {
+			FROM = {
+				culture_group = maghreb_african
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 101
+		
+		start = {
+			FROM = { religion_group = muslim }
+			year = 1125
+		}
+	}
+	ca_culture_group_maghreb_2 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			culture_group = maghreb_african
+		}
+		trigger = {
+			FROM = {
+				culture_group = maghreb_african
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_group_maghreb_1
+		build_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 100
+		
+		start = {
+			FROM = { religion_group = muslim }
+			year = 1140
+		}
+	}
+	ca_culture_group_maghreb_3 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			culture_group = maghreb_african
+		}
+		trigger = {
+			FROM = {
+				culture_group = maghreb_african
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_group_maghreb_2
+		build_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 99
+		
+		start = {
+			FROM = { religion_group = muslim }
+			year = 1180
+		}
+	}
+	ca_culture_group_maghreb_4 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			culture_group = maghreb_african
+		}
+		trigger = {
+			FROM = {
+				culture_group = maghreb_african
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_group_maghreb_3
+		build_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 98
+		
+		start = {
+			FROM = { religion_group = muslim }
+			year = 1250
+		}
+	}	
+	
+	# Arabian Camel Cavalry
+	ca_culture_group_arabic_1 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+		    OR = {
+			culture_group = arabic
+			culture_group = bedouin_group
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+			    culture_group = arabic
+			    culture_group = bedouin_group
+			    }
+			}		
+		}
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = muslim }
+				year = 1066
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_arabic_2 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+		    OR = {
+			culture_group = arabic
+			culture_group = bedouin_group
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+			    culture_group = arabic
+			    culture_group = bedouin_group
+			    }
+			}		
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		upgrades_from = ca_culture_group_arabic_1
+		build_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = muslim }
+				year = 1120
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_arabic_3 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+		    OR = {
+			culture_group = arabic
+			culture_group = bedouin_group
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+			    culture_group = arabic
+			    culture_group = bedouin_group
+			    }
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_group_arabic_2
+		build_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = muslim }
+				year = 1183
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_arabic_4 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+		    OR = {
+			culture_group = arabic
+			culture_group = bedouin_group
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+			    culture_group = arabic
+			    culture_group = bedouin_group
+			    }
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_group_arabic_3
+		build_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = muslim }
+				year = 1219
+				has_building = ca_stable_1
+			}
+		}
+	}
+	
+	#Iberian Fast horse breeders
+	ca_culture_group_iberian_1 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			FROM = {
+				culture_group = iberian
+			}		
+		}		
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1125
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_iberian_2 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			FROM = {
+				culture_group = iberian
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_group_iberian_1
+		build_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1140
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_iberian_3 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			FROM = {
+				culture_group = iberian
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_group_iberian_2
+		build_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1180
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_iberian_4 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			FROM = {
+				culture_group = iberian
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_group_iberian_3
+		build_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1250
+				has_building = ca_stable_1
+			}
+		}
+	}
+	
+	#Italian Pike formations
+	ca_culture_italian_1 = {
+		desc = ca_culture_italian_1_desc
+		potential = {
+			culture_group = italian_group
+		}
+		trigger = {
+			FROM = {
+				culture_group = italian_group
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		pikemen = 30
+		pikemen_offensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1085
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_italian_2 = {
+		desc = ca_culture_italian_1_desc
+		potential = {
+			culture_group = italian_group
+		}
+		trigger = {
+			FROM = {
+				culture_group = italian_group
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_italian_1
+		build_cost = 300
+		build_time = 1095
+		pikemen = 40
+		pikemen_offensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1145
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_italian_3 = {
+		desc = ca_culture_italian_1_desc
+		potential = {
+			culture_group = italian_group
+		}
+		trigger = {
+			FROM = {
+				culture_group = italian_group
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_italian_2
+		build_cost = 400
+		build_time = 2190
+		pikemen = 50
+		pikemen_offensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1190
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_italian_4 = {
+		desc = ca_culture_italian_1_desc
+		potential = {
+			culture_group = italian_group
+		}
+		trigger = {
+			FROM = {
+				culture_group = italian_group
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_italian_3
+		build_cost = 500
+		build_time = 2190
+		pikemen = 60
+		pikemen_offensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1240
+				has_building = ca_keep_1
+			}
+		}
+	}
+	
+	#Russian Armories
+	ca_culture_russian_1 = {
+		desc = ca_culture_russian_1_desc
+		potential = {
+			culture = russian
+		}
+		trigger = {
+			FROM = {
+				culture = russian
+			}		
+		}		
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1085
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_russian_2 = {
+		desc = ca_culture_russian_1_desc
+		potential = {
+			culture = russian
+		}
+		trigger = {
+			FROM = {
+				culture = russian
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_russian_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1140
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_russian_3 = {
+		desc = ca_culture_russian_1_desc
+		potential = {
+			culture = russian
+		}
+		trigger = {
+			FROM = {
+				culture = russian
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_russian_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1195
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_russian_4 = {
+		desc = ca_culture_russian_1_desc
+		potential = {
+			culture = russian
+		}
+		trigger = {
+			FROM = {
+				culture = russian
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_russian_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_defensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1240
+				has_building = ca_keep_1
+			}
+		}
+	}
+	#Irish Gallowglass
+	irish_building_1 = {
+		desc = ca_culture_irish_1_desc
+		potential = {
+			culture = irish
+		}
+		trigger = {
+			FROM = {
+				culture = irish
+			}		
+		}		
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			FROM = { religion_group = christian }
+			year = 1085
+		}
+	}
+	irish_building_2 = {
+		desc = ca_culture_irish_1_desc
+		potential = {
+			culture = irish
+		}
+		trigger = {
+			FROM = {
+				culture = irish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = irish_building_1
+		build_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			FROM = { religion_group = christian }
+			year = 1145
+		}
+	}
+	irish_building_3 = {
+		desc = ca_culture_irish_1_desc
+		potential = {
+			culture = irish
+		}
+		trigger = {
+			FROM = {
+				culture = irish
+			}	
+			TECH_CASTLE_CONSTRUCTION = 3
+		}		
+		upgrades_from = irish_building_2
+		build_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			FROM = { religion_group = christian }
+			year = 1190
+		}
+	}
+	irish_building_4 = {
+		desc = ca_culture_irish_1_desc
+		potential = {
+			culture = irish
+		}
+		trigger = {
+			FROM = {
+				culture = irish
+			}
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = irish_building_3
+		build_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			FROM = { religion_group = christian }
+			year = 1240
+		}
+	}
+
+	# Byzantine Cataphracts
+	ca_culture_group_byzantine_1 = {
+		desc = ca_culture_group_byzantine_1_desc
+		potential = {
+			FROM = { culture_group = byzantine }
+		}
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		knights = 10
+		horse_archers = 10
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1125
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_byzantine_2 = {
+		desc = ca_culture_group_byzantine_1_desc
+		potential = {
+			FROM = { culture_group = byzantine }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_group_byzantine_1
+		build_cost = 300
+		build_time = 1095
+		knights = 15
+		horse_archers = 10
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1140
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_byzantine_3 = {
+		desc = ca_culture_group_byzantine_1_desc
+		potential = {
+			FROM = { culture_group = byzantine }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_group_byzantine_2
+		build_cost = 400
+		build_time = 2190
+		knights = 15
+		horse_archers = 20
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1180
+				has_building = ca_stable_1
+			}
+		}
+	}
+	ca_culture_group_byzantine_4 = {
+		desc = ca_culture_group_byzantine_1_desc
+		potential = {
+			FROM = { culture_group = byzantine }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_group_byzantine_3
+		build_cost = 500
+		build_time = 2190
+		knights = 20
+		horse_archers = 20
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1250
+				has_building = ca_stable_1
+			}
+		}
+	}
+
+	#Gusar Cavalry
+	serbian_building_1 = {
+		desc = ca_culture_group_south_slavic_1_desc
+		potential = {
+			OR = {
+				culture = serbian
+				culture = croatian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = serbian
+					culture = croatian
+					
+				}
+			}		
+		}		
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1085
+				has_building = ca_keep_1
+			}
+		}
+	}
+
+	serbian_building_2 = {
+		desc = ca_culture_group_south_slavic_1_desc
+		potential = {
+			OR = {
+				culture = serbian
+				culture = croatian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = serbian
+					culture = croatian
+					
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = serbian_building_1
+		build_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1145
+				has_building = ca_keep_1
+			}
+		}
+	}
+	serbian_building_3 = {
+		desc = ca_culture_group_south_slavic_1_desc
+		potential = {
+			OR = {
+				culture = serbian
+				culture = croatian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = serbian
+					culture = croatian
+					
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 3
+		}		
+		upgrades_from = serbian_building_2
+		build_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1190
+				has_building = ca_keep_1
+			}
+		}
+	}
+	serbian_building_4 = {
+		desc = ca_culture_group_south_slavic_1_desc
+		potential = {
+			OR = {
+					culture = serbian
+					culture = croatian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = serbian
+					culture = croatian
+					
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = serbian_building_3
+		build_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1240
+				has_building = ca_keep_1
+			}
+		}
+	}
+
+	#Magyar Horse Archers
+	ca_culture_hungarian_1 = {
+		desc = ca_culture_hungarian_1_desc
+		potential = {
+			culture = hungarian
+		}
+		trigger = {
+			FROM = {
+				culture = hungarian
+			}
+		}		
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		horse_archers = 20
+		horse_archers_defensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1066
+				has_building = ca_wall_1
+			}
+		}
+	}
+	ca_culture_hungarian_2 = {
+		desc = ca_culture_hungarian_1_desc
+		potential = {
+			culture = hungarian
+		}
+		trigger = {
+			FROM = {
+				culture = hungarian
+			}
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_hungarian_1
+		build_cost = 300
+		build_time = 1095
+		horse_archers = 20
+		horse_archers_defensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				year = 1150
+				has_building = ca_wall_1
+			}
+		}
+	}
+	ca_culture_hungarian_3 = {
+		desc = ca_culture_hungarian_1_desc
+		potential = {
+			culture = hungarian
+		}
+		trigger = {
+			FROM = {
+				culture = hungarian
+			}
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_hungarian_2
+		build_cost = 400
+		build_time = 2190
+		horse_archers = 30
+		horse_archers_defensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				year = 1230
+				has_building = ca_wall_1
+			}
+		}
+	}
+	ca_culture_hungarian_4 = {
+		desc = ca_culture_hungarian_1_desc
+		potential = {
+			culture = hungarian
+		}
+		trigger = {
+			FROM = {
+				culture = hungarian
+			}
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_hungarian_3
+		build_cost = 500
+		build_time = 2190
+		horse_archers = 40
+		horse_archers_defensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				year = 1290
+				has_building = ca_wall_1
+			}
+		}
+	}
+	
+	# Dutch Urban Militia
+	ca_culture_dutch_1 = {
+		desc = ca_culture_dutch_1_desc
+		potential = {
+			FROM = { culture = dutch }
+		}
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		pikemen = 15
+		light_infantry = 30
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1085
+				has_building = ca_light_barracks_1
+			}
+		}
+	}
+	ca_culture_dutch_2 = {
+		desc = ca_culture_dutch_1_desc
+		potential = {
+			FROM = { culture = dutch }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_dutch_1
+		build_cost = 300
+		build_time = 1095
+		pikemen = 20
+		light_infantry = 40
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1145
+				has_building = ca_light_barracks_1
+			}
+		}
+	}
+	ca_culture_dutch_3 = {
+		desc = ca_culture_dutch_1_desc
+		potential = {
+			FROM = { culture = dutch }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_dutch_2
+		build_cost = 400
+		build_time = 2190
+		pikemen = 25
+		light_infantry = 50
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1190
+				has_building = ca_light_barracks_1
+			}
+		}
+	}
+	ca_culture_dutch_4 = {
+		desc = ca_culture_dutch_1_desc
+		potential = {
+			FROM = { culture = dutch }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_dutch_3
+		build_cost = 500
+		build_time = 2190
+		pikemen = 30
+		light_infantry = 60
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1240
+				has_building = ca_light_barracks_1
+			}
+		}
+	}
+
+	#Bulgar Cavalry + Vlach placeholder
+	bulgarian_building_1 = {
+		desc = ca_culture_bulgarian_1_desc
+		potential = {
+			OR = {
+				culture = bulgarian
+				culture = romanian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = bulgarian
+					culture = romanian
+				}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1125
+				has_building = ca_stable_1
+			}
+		}
+	}
+	bulgarian_building_2 = {
+		desc = ca_culture_bulgarian_1_desc
+		potential = {
+			OR = {
+				culture = bulgarian
+				culture = romanian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = bulgarian
+					culture = romanian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = bulgarian_building_1
+		build_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1140
+				has_building = ca_stable_1
+			}
+		}
+	}
+	bulgarian_building_3 = {
+		desc = ca_culture_bulgarian_1_desc
+		potential = {
+			OR = {
+				culture = bulgarian
+				culture = romanian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = bulgarian
+					culture = romanian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = bulgarian_building_2
+		build_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1180
+				has_building = ca_stable_1
+			}
+		}
+	}
+	bulgarian_building_4 = {
+		desc = ca_culture_bulgarian_1_desc
+		potential = {
+			OR = {
+				culture = bulgarian
+				culture = romanian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = bulgarian
+					culture = romanian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = bulgarian_building_3
+		build_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1250
+				has_building = ca_stable_1
+			}
+		}
+	}
+
+	#Polish Knights
+	polish_building_1 = {
+		desc = ca_culture_polish_1_desc
+		potential = {
+			culture = polish
+		}
+		trigger = {
+			FROM = {
+				culture = polish
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		knights = 15
+		knights_offensive = 0.05
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1125
+				has_building = ca_stable_1
+			}
+		}
+	}
+	polish_building_2 = {
+		desc = ca_culture_polish_1_desc
+		potential = {
+			culture = polish
+		}
+		trigger = {
+			FROM = {
+				culture = polish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = polish_building_1
+		build_cost = 300
+		build_time = 1095
+		knights = 20
+		knights_offensive = 0.05
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1140
+				has_building = ca_stable_1
+			}
+		}
+	}
+	polish_building_3 = {
+		desc = ca_culture_polish_1_desc
+		potential = {
+			culture = polish
+		}
+		trigger = {
+			FROM = {
+				culture = polish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = polish_building_2
+		build_cost = 400
+		build_time = 2190
+		knights = 25
+		knights_offensive = 0.05
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1180
+				has_building = ca_stable_1
+			}
+		}
+	}
+	polish_building_4 = {
+		desc = ca_culture_polish_1_desc
+		potential = {
+			culture = polish
+		}
+		trigger = {
+			FROM = {
+				culture = polish
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = polish_building_3
+		build_cost = 500
+		build_time = 2190
+		knights = 30
+		knights_offensive = 0.05
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1250
+				has_building = ca_stable_1
+			}
+		}
+	}
+
+	#Sicilian Muslim Archers
+	sicilian_building_1 = {
+		desc = ca_culture_sicilian_1_desc
+		potential = {
+			OR = {
+				culture = sicilian
+				culture = sicilian_arabic
+				culture = sicilian_greek
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = sicilian
+					culture = sicilian_arabic
+					culture = sicilian_greek
+				}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		archers_defensive = 0.1
+		archers = 40
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1120
+				has_building = ca_keep_1
+			}
+		}
+	}
+	sicilian_building_2 = {
+		desc = ca_culture_sicilian_1_desc
+		potential = {
+			OR = {
+				culture = sicilian
+				culture = sicilian_arabic
+				culture = sicilian_greek
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = sicilian
+					culture = sicilian_arabic
+					culture = sicilian_greek
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = sicilian_building_1
+		build_cost = 300
+		build_time = 1095
+		archers_defensive = 0.1
+		archers = 60
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1160
+				has_building = ca_keep_1
+			}
+		}
+	}
+	sicilian_building_3 = {
+		desc = ca_culture_sicilian_1_desc
+		potential = {
+			OR = {
+				culture = sicilian
+				culture = sicilian_arabic
+				culture = sicilian_greek
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = sicilian
+					culture = sicilian_arabic
+					culture = sicilian_greek
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = sicilian_building_2
+		build_cost = 400
+		build_time = 2190
+		archers_defensive = 0.1
+		archers = 80
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1200
+				has_building = ca_keep_1
+			}
+		}
+	}
+	sicilian_building_4 = {
+		desc = ca_culture_sicilian_1_desc
+		potential = {
+			OR = {
+				culture = sicilian
+				culture = sicilian_arabic
+				culture = sicilian_greek
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = sicilian
+					culture = sicilian_arabic
+					culture = sicilian_greek
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = sicilian_building_3
+		build_cost = 500
+		build_time = 2190
+		archers_defensive = 0.1
+		archers = 100
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1260
+				has_building = ca_keep_1
+			}
+		}
+	}	
+
+	#Caucasian Heavy Infantry
+	caucasus_building_1 = {
+		desc = ca_culture_caucasian_1_desc
+		potential = {
+			OR = {
+				culture = alan
+				culture = georgian
+				culture = armenian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = alan
+					culture = georgian
+				    culture = armenian
+				}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.10
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1085
+				has_building = ca_keep_1
+			}
+		}
+	}
+	caucasus_building_2 = {
+		desc = ca_culture_caucasian_1_desc
+		potential = {
+			OR = {
+				culture = alan
+				culture = georgian
+				culture = armenian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = alan
+					culture = georgian
+				    culture = armenian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = caucasus_building_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.10
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1145
+				has_building = ca_keep_1
+			}
+		}
+	}
+	caucasus_building_3 = {
+		desc = ca_culture_caucasian_1_desc
+		potential = {
+			OR = {
+				culture = alan
+				culture = georgian
+				culture = armenian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = alan
+					culture = georgian
+				    culture = armenian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = caucasus_building_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.10
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1190
+				has_building = ca_keep_1
+			}
+		}
+	}
+	caucasus_building_4 = {
+		desc = ca_culture_caucasian_1_desc
+		potential = {
+			OR = {
+				culture = alan
+				culture = georgian
+				culture = armenian
+			}
+		}
+		trigger = {
+			FROM = {
+				OR = {
+					culture = alan
+					culture = georgian
+				    culture = armenian
+				}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = caucasus_building_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_defensive = 0.10
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1240
+				has_building = ca_keep_1
+			}
+		}
+	}
+
+	#Scandiniavian Housecarls
+	north_german_building_1 = {
+		desc = ca_culture_group_north_germanic_1_desc
+		potential = {
+		    OR = {
+			    culture_group = north_germanic
+				culture = norsegaelic
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+		    	    culture_group = north_germanic
+				    culture = norsegaelic
+		    	}
+			}		
+		}
+		prerequisites = { ca_keep_1 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.05
+		heavy_infantry_offensive = 0.05
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1085
+				has_building = ca_keep_1
+			}
+		}
+	}
+	north_german_building_2 = {
+		desc = ca_culture_group_north_germanic_1_desc
+		potential = {
+		    OR = {
+			    culture_group = north_germanic
+				culture = norsegaelic
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+		    	    culture_group = north_germanic
+				    culture = norsegaelic
+		    	}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = north_german_building_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.05
+		heavy_infantry_offensive = 0.05
+		ai_creation_factor = 100
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1145
+				has_building = ca_keep_1
+			}
+		}
+	}
+	north_german_building_3 = {
+		desc = ca_culture_group_north_germanic_1_desc
+		potential = {
+		    OR = {
+			    culture_group = north_germanic
+				culture = norsegaelic
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+		    	    culture_group = north_germanic
+				    culture = norsegaelic
+		    	}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = north_german_building_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.05
+		heavy_infantry_offensive = 0.05
+		ai_creation_factor = 99
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1190
+				has_building = ca_keep_1
+			}
+		}
+	}
+	north_german_building_4 = {
+		desc = ca_culture_group_north_germanic_1_desc
+		potential = {
+		    OR = {
+			    culture_group = north_germanic
+				culture = norsegaelic
+			}
+		}
+		trigger = {
+			FROM = {
+		        OR = {
+		    	    culture_group = north_germanic
+				    culture = norsegaelic
+		    	}
+			}		
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = north_german_building_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_defensive = 0.05
+		heavy_infantry_offensive = 0.05
+		ai_creation_factor = 98
+		
+		start = {
+			AND = {
+				FROM = { religion_group = christian }
+				year = 1240
+				has_building = ca_keep_1
+			}
+		}
+	}
+	
+	# West African Free Warrior Lodge
+	ca_culture_west_african_1 = {
+		desc = ca_culture_west_african_1_desc
+		potential = {
+			OR = {
+				culture_group = east_african
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+				}
+			}
+		}		
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		light_infantry = 55
+		archers = 30
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1066
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_west_african_2 = {
+		desc = ca_culture_west_african_1_desc
+		potential = {
+			OR = {
+				culture_group = east_african
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		upgrades_from = ca_culture_west_african_1
+		build_cost = 300
+		build_time = 1095
+		light_infantry = 75
+		archers = 50
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1120
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_west_african_3 = {
+		desc = ca_culture_west_african_1_desc
+		potential = {
+			OR = {
+				culture_group = east_african
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		upgrades_from = ca_culture_west_african_2
+		build_cost = 400
+		build_time = 2190
+		light_infantry = 95
+		archers = 70
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1183
+				has_building = ca_keep_1
+			}
+		}
+	}
+	ca_culture_west_african_4 = {
+		desc = ca_culture_west_african_1_desc
+		potential = {
+			OR = {
+				culture_group = east_african
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+				}
+			}
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		upgrades_from = ca_culture_west_african_3
+		build_cost = 500
+		build_time = 2190
+		light_infantry = 115
+		archers = 90
+		ai_creation_factor = 101
+		
+		start = {
+			AND = {
+				year = 1219
+				has_building = ca_keep_1
+			}
+		}
+	}	
+}

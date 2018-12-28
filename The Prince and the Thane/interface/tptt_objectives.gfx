@@ -1,0 +1,415 @@
+spriteTypes = {
+     
+spriteType = {
+		name = "GFX_obj_win_a_war"
+		texturefile = "gfx/ambitions/obj_win_war.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+spriteType = {
+		name = "GFX_faction_liege_loyalist"
+		texturefile = "gfx/ambitions/plot_gain_title.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = "GFX_faction_guelphs"
+		texturefile = "gfx/ambitions/plot_gain_title.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = "GFX_faction_ghibellines"
+		texturefile = "gfx/ambitions/plot_gain_title.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+
+	spriteType = {
+		name = "GFX_obj_amass_wealth_1"
+		texturefile = "gfx/ambitions/obj_amass_wealth.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+      spriteType = {
+		name = "GFX_obj_amass_wealth_2"
+		texturefile = "gfx/ambitions/obj_amass_wealth.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+      spriteType = {
+		name = "GFX_obj_amass_wealth_3"
+		texturefile = "gfx/ambitions/obj_amass_wealth.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+      spriteType = {
+		name = "GFX_obj_amass_wealth_4"
+		texturefile = "gfx/ambitions/obj_amass_wealth.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = "GFX_obj_become_exalted_2"
+		texturefile = "gfx/ambitions/obj_become_exalted.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_become_exalted_3"
+		texturefile = "gfx/ambitions/obj_become_exalted.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_become_exalted_4"
+		texturefile = "gfx/ambitions/obj_become_exalted.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_obj_bloodline_byzantine"
+		texturefile = "gfx/ambitions/obj_marry_ruler.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_bloodline_hre"
+		texturefile = "gfx/ambitions/obj_marry_ruler.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	
+	spriteType = {
+		name = "GFX_obj_landed_kids"
+		texturefile = "gfx/ambitions/obj_have_a_son.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+     spriteType = {
+		name = "GFX_obj_marital_bliss"
+		texturefile = "gfx/ambitions/obj_get_married.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+      spriteType = {
+		name = "GFX_obj_ten_children"
+		texturefile = "gfx/ambitions/obj_have_ten_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+      spriteType = {
+		name = "GFX_obj_fifteen_children"
+		texturefile = "gfx/objectives/obj_have_fifteen_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_twenty_children"
+		texturefile = "gfx/objectives/obj_have_twenty_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+      spriteType = {
+		name = "GFX_obj_increase_demesne_1"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_increase_demesne_2"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_increase_demesne_3"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_increase_demesne_4"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_increase_demesne_5"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_increase_demesne_6"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_increase_demesne_7"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_increase_demesne_8"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_increase_demesne_9"
+		texturefile = "gfx/ambitions/obj_expand_demesne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_become_duke"
+		texturefile = "gfx/ambitions/obj_get_duchy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_go_jihad"
+		texturefile = "gfx/objectives/obj_take_cross.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_find_lover"
+		texturefile = "gfx/objectives/obj_get_lover.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_become_independent"
+		texturefile = "gfx/objectives/obj_independance.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_break_out_of_prison"
+		texturefile = "gfx/objectives/obj_escape.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+      spriteType = {
+		name = "GFX_obj_become_king"
+		texturefile = "gfx/objectives/obj_be_king.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}		
+	spriteType = {
+		name = "GFX_obj_become_emperor"
+		texturefile = "gfx/objectives/obj_be_emperor.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}		
+	
+	spriteType = {
+		name = "GFX_obj_convert_province"
+		texturefile = "gfx/objectives/obj_convert_province.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_break_out_of_prison"
+		texturefile = "gfx/objectives/obj_break_out_of_prison.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = "GFX_obj_five_children"
+		texturefile = "gfx/objectives/obj_have_five_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_ten_children"
+		texturefile = "gfx/objectives/obj_have_ten_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_fifteen_children"
+		texturefile = "gfx/objectives/obj_have_fifteen_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_twenty_children"
+		texturefile = "gfx/objectives/obj_have_twenty_kids.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_go_crusade"
+		texturefile = "gfx/objectives/obj_take_cross.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_go_jihad"
+		texturefile = "gfx/objectives/obj_jihad.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_become_king"
+		texturefile = "gfx/objectives/obj_be_king.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}		
+      spriteType = {
+		name = "GFX_obj_become_old_60"
+		texturefile = "gfx/objectives/obj_become_old.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_become_old_70"
+		texturefile = "gfx/objectives/obj_become_old.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_become_old_80"
+		texturefile = "gfx/objectives/obj_become_old.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_obj_become_old_90"
+		texturefile = "gfx/objectives/obj_become_old.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}		
+	spriteType = {
+		name = "GFX_obj_become_old_100"
+		texturefile = "gfx/objectives/obj_become_old.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}		
+	spriteType = {
+		name = "GFX_obj_survive_illness"
+		texturefile = "gfx/objectives/obj_survive_illness.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = "GFX_plot_liege_conspiracy"
+		texturefile = "gfx/ambitions/plot_gain_title.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+spriteType = {
+		name = "GFX_plot_take_revenge"
+		texturefile = "gfx/ambitions/plot_discredit.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+
+	spriteType = {
+		name = "GFX_plot_discredit_councillor"
+		texturefile = "gfx/ambitions/plot_discredit.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_plot_embezzle_from_liege"
+		texturefile = "gfx/ambitions/plot_embezzle.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_plot_kidnap_character"
+		texturefile = "gfx/ambitions/plot_kidnap.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_plot_instigate_revolt"
+		texturefile = "gfx/ambitions/plot_incite_revolt.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_plot_fabricate_treason"
+		texturefile = "gfx/ambitions/plot_treason.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_plot_fabricate_heresy"
+		texturefile = "gfx/ambitions/plot_heresy_accuse.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+}
+

@@ -1,0 +1,20 @@
+# 1276 - Tarusa
+
+# County Title
+title = c_tarusa
+
+# Settlements
+max_settlements = 3
+
+b_tarusa = castle
+b_aleksin = city
+#b_serpukhov = castle
+#b_kaluga = castle
+#b_kremyonki = temple
+
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History

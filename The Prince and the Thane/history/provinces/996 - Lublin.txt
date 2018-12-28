@@ -1,0 +1,20 @@
+# 996 - Lublin
+
+# County Title
+title = c_lublin
+
+# Settlements
+max_settlements = 4
+
+b_lublin = castle
+#b_parczew = castle
+b_lukow = castle
+b_cock = city
+#b_goraj = castle
+
+# Misc
+culture = polish
+religion = orthodox
+
+# History
+

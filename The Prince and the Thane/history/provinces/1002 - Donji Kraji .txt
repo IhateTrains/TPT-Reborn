@@ -1,0 +1,28 @@
+# 1002 - Donji Kraji
+
+# County Title
+title = c_donjikraji
+
+# Settlements
+max_settlements = 3
+
+b_jajce = castle 
+
+b_kljucnasani = city
+#b_zvecaj = castle
+#b_vrbaskigrad = castle
+#b_sokograd = castle
+#b_bocac = temple
+#b_jezero = temple
+#b_peci = city
+#b_lusci = city
+#b_sanica = city
+ 
+# Misc
+culture = bosnian
+religion = catholic
+
+
+# History
+
+1232.1.1= { religion = bogomilist } 

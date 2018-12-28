@@ -1,0 +1,1072 @@
+##########################################################################
+#
+# The Prince and the Thane peasants resistance events - written by idib816
+#
+##########################################################################
+
+namespace = peasant_resistance
+
+province_event = {
+	id = peasant_resistance.0
+	desc = "EVTDESCpeasant_resistance.0"
+	picture = GFX_evt_ting
+	
+	trigger = {
+		religion_group = pagan_group
+		owner = {
+			primary_title = {
+				OR = {
+					has_law = nm_centralization_1
+					has_law = nm_centralization_2
+					has_law = nm_centralization_3
+					has_law = nm_centralization_4
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.2
+			owner = {
+				primary_title = {
+					has_law = nm_centralization_4
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			owner = {
+				primary_title = {
+					has_law = nm_centralization_3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				primary_title = {
+					has_law = nm_centralization_2
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				primary_title = {
+					has_law = nm_centralization_1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = brave }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = charitable }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { NOT = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { NOT = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { prestige = 100 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { prestige = 750 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1500 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 2000 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTApeasant_resistance.0"
+		owner = {
+		    prestige = -100
+			primary_title = {
+				if = {
+					limit = { has_law = nm_centralization_1 }
+					add_law_w_cooldown = nm_centralization_0
+				}
+				if = {
+					limit = { has_law = nm_centralization_2 }
+					add_law_w_cooldown = nm_centralization_1
+				}
+				if = {
+					limit = { has_law = nm_centralization_3 }
+					add_law_w_cooldown = nm_centralization_2
+				}
+				if = {
+					limit = { has_law = nm_centralization_4 }
+					add_law_w_cooldown = nm_centralization_3
+				}
+			}
+		}
+
+	}
+	option = {
+		name = "EVTOPTBpeasant_resistance.0"
+		owner = {
+			prestige = -50
+		}
+		add_province_modifier = {
+			name = nm_peasant_resistance
+			duration = -1
+		}
+	}
+}
+
+#Establishment of peasant_resistance in a province, if high taxes
+province_event = {
+	id = peasant_resistance.1
+	desc = "EVTDESCpeasant_resistance.1"
+	
+	picture = "GFX_evt_peasants"
+	
+	trigger = {
+		NOT = { has_province_modifier = nm_peasant_resistance }
+		owner = {
+			primary_title = {
+				OR = {
+					has_law = nm_city_control_2
+					has_law = nm_city_control_3
+					has_law = nm_castle_control_2
+					has_law = nm_castle_control_3
+					has_law = nm_temple_control_2
+					has_law = nm_temple_control_3
+					has_law = baltic_city_control_2
+					has_law = baltic_city_control_3
+					has_law = baltic_castle_control_2
+					has_law = baltic_castle_control_3
+					has_law = baltic_temple_control_2
+					has_law = baltic_temple_control_3
+					has_law = tengri_city_control_2
+					has_law = tengri_city_control_3
+					has_law = tengri_castle_control_2
+					has_law = tengri_castle_control_3
+					has_law = tengri_temple_control_2
+					has_law = tengri_temple_control_3
+					has_law = mongol_city_control_2
+					has_law = mongol_city_control_3
+					has_law = mongol_castle_control_2
+					has_law = mongol_castle_control_3
+					has_law = mongol_temple_control_2
+					has_law = mongol_temple_control_3
+					has_law = gaelic_city_control_2
+					has_law = gaelic_city_control_3
+					has_law = gaelic_castle_control_2
+					has_law = gaelic_castle_control_3
+					has_law = gaelic_temple_control_2
+					has_law = gaelic_temple_control_3
+				}
+			}
+		}
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_martial = 25 }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { realm_martial = 30 }
+		}
+
+		#traits affect this		
+		modifier = {
+			factor = 2.5
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 5.0
+			owner = { trait = charitable }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { NOT = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { NOT = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { prestige = 100 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { prestige = 750 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1500 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 2000 }
+		}
+	}
+	option = {
+		name = "EVTOPTApeasant_resistance.1"
+		owner = {
+			prestige = -25
+		}
+		add_province_modifier = {
+			name = nm_peasant_resistance
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = peasant_resistance.2
+	desc = "EVTDESCpeasant_resistance.2"
+	
+	picture = "GFX_evt_peasants"
+	
+	trigger = {
+        OR = {
+            religion_group = other_pagan_group
+            religion_group = baltic_pagan_group
+            religion_group = african_pagan_group
+		    religion_group = pagan_group 
+		}
+		NOT = { has_province_modifier = nm_peasant_resistance }
+		owner = {
+			NOT = { religion_group = ROOT }
+		}
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_martial = 25 }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { realm_martial = 30 }
+		}
+
+		#traits affect this		
+		modifier = {
+			factor = 2.0
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = charitable}
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { trait = cruel}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { owner = { prestige = 100 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { prestige = 750 } 
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1500 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 2000 }
+		}
+	}
+	option = {
+		name = "EVTOPTApeasant_resistance.2"
+		owner = {
+			prestige = -25
+			piety = -10
+		}
+		add_province_modifier = {
+			name = nm_peasant_resistance
+			duration = -1
+		}
+	}
+}
+province_event = {
+	id = peasant_resistance.3
+	desc = "EVTDESCpeasant_resistance.3"
+	
+	picture = "GFX_evt_peasants"
+	
+	trigger = {
+        OR = {
+            religion_group = other_pagan_group
+            religion_group = baltic_pagan_group
+            religion_group = african_pagan_group
+		    religion_group = pagan_group 
+		}
+		NOT = { has_province_modifier = nm_peasant_resistance }
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+
+		#traits affect this		
+		modifier = {
+			factor = 3.0
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 3.0
+			owner = { trait = charitable}
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { trait = cruel}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { owner = { prestige = 100 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { prestige = 750 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1500 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 2000 }
+		}
+	}
+	option = {
+		name = "EVTOPTApeasant_resistance.3"
+		owner = {
+			prestige = -25
+		}
+		add_province_modifier = {
+			name = nm_peasant_resistance
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTBpeasant_resistance.3"
+		owner = {
+			scaled_wealth = -0.4
+		}
+	}
+	option = {
+		name = "EVTOPTCpeasant_resistance.3"
+		owner = {
+			prestige = 25
+			opinion = {
+				modifier = opinion_rival
+				who = ROOT
+				years = 100
+			}
+			random_courtier = {
+				limit = {
+					is_abroad = no
+					prisoner = no
+					age = 18
+				}
+				reverse_opinion = {
+					modifier = opinion_rival
+					who = ROOT
+					years = 100
+				}
+				character_event = {
+					id = 1303030
+					days = 1
+					random = 2
+					tooltip = "EVTTOOLTIP100001"
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 1303030
+	desc = "EVTDESC301003"
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA301003"
+		opinion = {
+			modifier = opinion_rival
+			who = FROM
+			years = 100
+		}
+	}
+}
+
+#destruction of peasant_resistance in a province, if high martial.
+province_event = {
+	id = peasant_resistance.4
+	desc = "EVTDESCpeasant_resistance.2"
+	picture = "GFX_evt_ting"
+	
+	trigger = {
+		owner = { 
+			prisoner = no
+			is_abroad = no
+		}
+		has_province_modifier = nm_peasant_resistance
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { realm_martial = 25 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { realm_martial = 30 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				owner = { realm_martial = 15 }
+			}
+		}	
+		modifier = {
+			factor = 0.9
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.5
+			NOT = { owner = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { owner = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { owner = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { owner = { prestige = 250 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { prestige = 600 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { prestige = 800 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { prestige = 1000 }
+		}			
+	}
+
+	option = {
+		name = "EVTOPTApeasant_resistance.2"
+		owner = {
+			prestige = 10
+		}
+		remove_province_modifier = nm_peasant_resistance
+	}
+}
+
+province_event = {
+	id = peasant_resistance.5
+	desc = "EVTDESCpeasant_resistance.0"
+	picture = GFX_evt_ting
+	
+	trigger = {
+	    OR = {
+		    religion_group = baltic_pagan_group
+            religion_group = african_pagan_group
+		}
+		owner = {
+			primary_title = {
+				OR = {
+					has_law = baltic_centralization_1
+					has_law = baltic_centralization_2
+					has_law = baltic_centralization_3
+					has_law = baltic_centralization_4
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.2
+			owner = {
+				primary_title = {
+					has_law = baltic_centralization_4
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			owner = {
+				primary_title = {
+					has_law = baltic_centralization_3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				primary_title = {
+					has_law = baltic_centralization_2
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				primary_title = {
+					has_law = baltic_centralization_1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = brave }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = charitable }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { NOT = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { NOT = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { prestige = 100 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { prestige = 750 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1500 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 2000 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTApeasant_resistance.0"
+		owner = {
+		    prestige = -100
+			primary_title = {
+				if = {
+					limit = { has_law = baltic_centralization_1 }
+					add_law_w_cooldown = baltic_centralization_0
+				}
+				if = {
+					limit = { has_law = baltic_centralization_2 }
+					add_law_w_cooldown = baltic_centralization_1
+				}
+				if = {
+					limit = { has_law = baltic_centralization_3 }
+					add_law_w_cooldown = baltic_centralization_2
+				}
+				if = {
+					limit = { has_law = baltic_centralization_4 }
+					add_law_w_cooldown = baltic_centralization_3
+				}
+			}
+		}
+
+	}
+	option = {
+		name = "EVTOPTBpeasant_resistance.0"
+		owner = {
+			prestige = -50
+		}
+		add_province_modifier = {
+			name = nm_peasant_resistance
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = peasant_resistance.6
+	desc = "EVTDESCpeasant_resistance.0"
+	picture = GFX_evt_ting
+	
+	trigger = {
+		religion_group = other_pagan_group
+		owner = {
+			primary_title = {
+				OR = {
+					has_law = tengri_centralization_1
+					has_law = tengri_centralization_2
+					has_law = tengri_centralization_3
+					has_law = tengri_centralization_4
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.2
+			owner = {
+				primary_title = {
+					has_law = tengri_centralization_4
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			owner = {
+				primary_title = {
+					has_law = tengri_centralization_3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				primary_title = {
+					has_law = tengri_centralization_2
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				primary_title = {
+					has_law = tengri_centralization_1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = brave }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = just }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = charitable }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { NOT = { prestige = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { prestige = 0 } }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { NOT = { prestige = 50 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { prestige = 100 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { prestige = 150 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 200 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 300 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 400 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { prestige = 500 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { prestige = 750 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 1500 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { prestige = 2000 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTApeasant_resistance.0"
+		owner = {
+		    prestige = -100
+			primary_title = {
+				if = {
+					limit = { has_law = tengri_centralization_1 }
+					add_law_w_cooldown = tengri_centralization_0
+				}
+				if = {
+					limit = { has_law = tengri_centralization_2 }
+					add_law_w_cooldown = tengri_centralization_1
+				}
+				if = {
+					limit = { has_law = tengri_centralization_3 }
+					add_law_w_cooldown = tengri_centralization_2
+				}
+				if = {
+					limit = { has_law = tengri_centralization_4 }
+					add_law_w_cooldown = tengri_centralization_3
+				}
+			}
+		}
+
+	}
+	option = {
+		name = "EVTOPTBpeasant_resistance.0"
+		owner = {
+			prestige = -50
+		}
+		add_province_modifier = {
+			name = nm_peasant_resistance
+			duration = -1
+		}
+	}
+}

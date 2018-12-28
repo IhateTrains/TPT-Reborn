@@ -1,0 +1,223 @@
+###############################################################
+#
+# The Prince and the Thane event modifiers - written by idib816
+#
+###############################################################
+
+long_rain = {
+	disease_defence = -0.25
+	local_build_time_modifier = 1
+	local_build_cost_modifier = 0.25
+	icon = 24
+}
+
+drunken_tournament = {
+	general_opinion = -10
+	icon = 36
+}
+
+holding_large_feast = {
+	icon = 7
+}
+
+holding_grand_hunt = {
+	icon = 7
+}
+
+holding_summer_fair = {
+	icon = 7
+}
+
+cold_weather = {
+	disease_defence = -0.25
+	supply_limit = -1
+	castle_levy_size = -0.2
+	city_levy_size = -0.2
+	temple_levy_size = -0.2
+	icon = 24
+}
+
+bad_crops = {
+	city_tax_modifier = -0.4
+	castle_tax_modifier = -0.8
+	temple_tax_modifier = -0.6
+	icon = 24
+}
+
+serious_famine = {
+	disease_defence = -1
+	supply_limit = -2
+	castle_levy_size = -0.3
+	city_levy_size = -0.3
+	temple_levy_size = -0.3
+	local_revolt_risk = 0.05
+	icon = 24
+}
+
+good_crops = {
+	city_tax_modifier = 0.4
+	castle_tax_modifier = 0.8
+	temple_tax_modifier = 0.6
+	icon = 6
+}
+
+plagued_by_wolfs = {
+	castle_tax_modifier = -0.05
+	city_tax_modifier = -0.05
+	temple_tax_modifier = -0.05
+	icon = 24
+}
+
+tax_reduction = {
+	local_tax_modifier = -0.33
+	icon = 24
+}
+
+tax_privileges = {
+	local_tax_modifier = 0.33
+	icon = 6
+}
+
+found_a_piece_of_the_holy_cross = {
+	learning = 2
+	church_opinion = 20
+	general_opinion = 10
+	monthly_character_prestige = 1
+	icon = 8
+}
+
+found_saint_relic = {
+	learning = 1
+	church_opinion = 15
+	general_opinion = 5
+	monthly_character_prestige = 0.5
+	icon = 8
+}
+
+demotivated_troops = {
+        land_morale = -0.2
+	icon = 19
+} 
+
+drunken_tournament = {
+	general_opinion = -10
+	icon = 36
+}
+
+secretly_inbred = {
+	fertility = -0.3
+	health = -1.5
+	diplomacy = -3
+	intrigue = -3
+	stewardship = -3
+	martial = -3
+	learning = -3
+	ai_rationality = -50
+	icon = 36
+}
+
+suspected_bastard = {
+	general_opinion = -50
+	same_opinion = 50
+	icon = 36
+}  
+      
+tax_levied = { 
+        monthly_character_piety = -0.5
+        monthly_character_prestige = -0.5
+        icon = 1 
+}
+
+clergy_tax = {
+	temple_tax_modifier = -0.10
+	icon = 6
+}
+
+burger_tax = {
+	city_tax_modifier = -0.10
+	icon = 6
+}
+
+took_part_in_conflict = { 
+        icon = 1 
+}
+
+on_his_guard = {
+	intrigue = 2
+	icon = 5
+}
+
+extensive_vetting = {
+	intrigue = 4
+	diplomacy = -1
+	icon = 5
+}
+
+safe_room = {
+	intrigue = 6
+	diplomacy = -2
+	stewardship = -1
+	learning = -1
+	martial = -1
+	icon = 5
+}
+
+looted_1 = {
+	local_revolt_risk = 0.1
+	tech_growth_modifier_culture = -1
+        local_tax_modifier = -0.75
+	icon = 26
+}
+
+squiering_refused = {
+	monthly_character_prestige = -0.1
+	same_opinion = 50
+	icon = 31
+}
+
+recent_assassination_attempt = {
+	monthly_character_piety = -1
+        assassinate_chance_modifier = -1.0
+	icon = 25
+}
+
+vulnerable_to_attempts = {
+        intrigue = -2
+	icon = 25
+}
+
+province_poverty_2 = {
+	city_tax_modifier = -0.2
+	castle_tax_modifier = -0.2
+	temple_tax_modifier = -0.2
+	levy_size = -0.1
+	local_revolt_risk = 0.02
+	icon = 45
+}
+
+province_poverty_1 = {
+	city_tax_modifier = -0.1
+	castle_tax_modifier = -0.1
+	temple_tax_modifier = -0.1
+	levy_size = -0.05
+	local_revolt_risk = 0.01
+	icon = 44	
+}
+
+province_prosperity_1 = {
+	city_tax_modifier = 0.1
+	castle_tax_modifier = 0.1
+	temple_tax_modifier = 0.1
+	levy_size = 0.05
+	local_revolt_risk = -0.01
+	icon = 43	
+}
+
+province_prosperity_2 = {
+	city_tax_modifier = 0.2
+	castle_tax_modifier = 0.2
+	temple_tax_modifier = 0.2
+	levy_size = 0.1
+	local_revolt_risk = -0.02
+	icon = 42	
+}

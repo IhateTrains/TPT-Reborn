@@ -1,0 +1,27 @@
+# 860 - Sanaa
+
+# County Title
+title = c_sanaa
+
+# Settlements
+max_settlements = 5
+b_marib = castle
+b_sanaa = temple
+b_dhamar = city
+
+#b_qataba = city
+#b_jabalannabishuayb = temple
+#b_jabaltiyal = castle
+b_hodeida = castle
+#b_harib = city
+
+# Misc
+culture = bedouin_arabic
+religion = sunni
+
+#Jewish Community
+1000.1.1 = { 
+	b_dhamar = ct_jewish_community_1
+}
+
+# History

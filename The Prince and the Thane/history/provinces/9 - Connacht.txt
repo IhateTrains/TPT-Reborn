@@ -1,0 +1,23 @@
+# 9 - Connacht
+
+# County Title
+title = c_connacht
+
+# Settlements
+max_settlements = 3
+
+b_mayo = castle
+#b_tuam = temple
+
+#b_clonfert = castle
+b_galway = city
+#b_killala = castle
+#b_anchory = castle
+
+# Misc
+culture = irish
+religion = catholic
+terrain = hills
+
+# History
+

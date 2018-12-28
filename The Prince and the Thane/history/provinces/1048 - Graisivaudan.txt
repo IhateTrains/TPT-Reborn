@@ -1,0 +1,20 @@
+# 1048 - Graisivaudan
+
+# County Title
+title = c_graisivaudan
+
+# Settlements
+max_settlements = 4
+b_grenoble = city
+b_domene  = castle
+b_chartreuse  = temple
+#b_sassenage  = castle
+#b_theys  = castle
+#b_entremonts  = city
+
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History

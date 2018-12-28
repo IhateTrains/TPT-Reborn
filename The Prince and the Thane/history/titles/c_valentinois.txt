@@ -1,0 +1,37 @@
+876.1.1={
+	holder = 7981
+}
+965.1.1={
+	holder = 25990000 #Lambert d'Adhémar 
+	liege="e_hre"
+}
+1000.1.1={
+	holder = 25990001 #Adhémar d'Adhémar 
+}
+1040.1.1={
+	holder = 25990002 #Hugues d'Adhémar 
+}
+1080.4.22={
+	holder = 0 #Unspecific Bishops
+}
+1107.1.1={
+	holder = 25990006 #Eustache de Poitiers
+}
+1141.1.1={
+	holder = 212781 #Aymar I de Poitiers
+}
+1149.1.1={
+	holder = 212780 #Guillaume de Poitiers
+}
+1189.1.1={
+	holder = 212782 #Aymar II de Poitiers
+}
+1250.1.1={
+	holder = 455471 #Aymar III de Poitiers
+}
+1277.1.1={
+	holder = 455455 #Aymar IV de Poitiers
+}
+1329.1.1={
+	holder = 455457 #Aymar V de Poitiers
+}

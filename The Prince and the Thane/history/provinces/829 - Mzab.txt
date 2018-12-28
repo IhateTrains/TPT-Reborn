@@ -1,0 +1,28 @@
+# 829 - Mzab
+
+# County Title
+title = c_mzab
+
+# Settlements
+max_settlements = 1
+
+b_mzab = castle
+
+#b_noumerat = city
+#b_sebseb = temple
+
+#b_elalia = castle
+#b_zelfana = castle
+#b_bermane = castle
+#b_elbour = castle
+
+# Misc
+culture = zanata
+religion = ibadi
+
+# History
+
+
+1187.1.1 = { b_noumerat = city }
+
+

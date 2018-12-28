@@ -1,0 +1,100 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+swarm_volley_tactic_very_bad;Failed Swarm & Volley;;;;;;;;;;;;;x
+swarm_tactic_very_bad;Failed Swarm;;;;;;;;;;;;;x
+harras_swarm_tactic_very_bad;Failed Harassment & Swarm;;;;;;;;;;;;;x
+shieldwall_tactic_very_bad;Failed Shieldwall;;;;;;;;;;;;;x
+feint_tactic_very_bad;Failed Feint;;;;;;;;;;;;;x
+prepare_tactic_very_bad;Failed Preparation;;;;;;;;;;;;;x
+charge_of_opportunity_tactic_very_bad;Failed Charge of Opportunity;;;;;;;;;;;;;x
+charge_tactic_very_bad;Failed Charge;;;;;;;;;;;;;x
+wait_tactic_very_bad;Failed Caution;;;;;;;;;;;;;x
+advance_tactic_very_bad;Failed Infantry Advance;;;;;;;;;;;;;x
+awesome_advance_tactic_very_bad;Failed Cavalry Advance;;;;;;;;;;;;;x
+stand_fast_tactic_very_bad;Failed Last Stand;;;;;;;;;;;;;x
+slow_advance_tactic_very_bad;Failed Slow Advance;;;;;;;;;;;;;x
+awesome_charge_tactic_very_bad;Failed Cavalry Charge;;;;;;;;;;;;;x
+awesomer_charge_tactic_very_bad;Failed Full Charge;;;;;;;;;;;;;x
+barrage_tactic_very_bad;Failed Barrage;;;;;;;;;;;;;x
+raid_tactic_very_bad;Failed Raid;;;;;;;;;;;;;x
+volly_harass_tactic_very_bad;Botched Harassment & Volley;;;;;;;;;;;;;x
+volly_tactic_very_bad;Botched Volley;;;;;;;;;;;;;x
+harass_tactic_bad;Botched Harassment;;;;;;;;;;;;;x
+volly_harass_tactic_bad;Botched Harassment & Volley;;;;;;;;;;;;;x
+volly_tactic_bad;Botched Volley;;;;;;;;;;;;;x
+swarm_volley_tactic_bad;Botched Swarm & Volley;;;;;;;;;;;;;x
+swarm_tactic_bad;Botched Swarm;;;;;;;;;;;;;x
+harras_swarm_tactic_bad;Botched Harassment & Swarm;;;;;;;;;;;;;x
+shieldwall_tactic_bad;Botched Shieldwall;;;;;;;;;;;;;x
+feint_tactic_bad;Botched Feint;;;;;;;;;;;;;x
+prepare_tactic_bad;Botched Preparation;;;;;;;;;;;;;x
+charge_of_opportunity_tactic_bad;Botched Charge of Opportunity;;;;;;;;;;;;;x
+charge_tactic_bad;Botched Charge;;;;;;;;;;;;;x
+wait_tactic_bad;Botched Caution;;;;;;;;;;;;;x
+advance_tactic_bad;Botched Infantry Advance;;;;;;;;;;;;;x
+awesome_advance_tactic_bad;Botched Cavalry Advance;;;;;;;;;;;;;x
+stand_fast_tactic_bad;Botched Last Stand;;;;;;;;;;;;;x
+slow_advance_tactic_bad;Botched Slow Advance;;;;;;;;;;;;;x
+awesome_charge_tactic_bad;Botched Cavalry Charge;;;;;;;;;;;;;x
+awesomer_charge_tactic_bad;Botched Full Charge;;;;;;;;;;;;;x
+barrage_tactic_bad;Botched Barrage;;;;;;;;;;;;;x
+raid_tactic_bad;Botched Raid;;;;;;;;;;;;;x
+harass_tactic_normal;Classic Harassment;;;;;;;;;;;;;x
+volly_harass_tactic_normal;Classic Harassment & Volley;;;;;;;;;;;;;x
+volly_tactic_normal;Classic Volley;;;;;;;;;;;;;x
+swarm_volley_tactic_normal;Classic Swarm & Volley;;;;;;;;;;;;;x
+swarm_tactic_normal;Classic Swarm;;;;;;;;;;;;;x
+harras_swarm_tactic_normal;Classic Harassment & Swarm;;;;;;;;;;;;;x
+shieldwall_tactic_normal;Classic Shieldwall;;;;;;;;;;;;;x
+feint_tactic_normal;Classic Feint;;;;;;;;;;;;;x
+prepare_tactic_normal;Classic Preparation;;;;;;;;;;;;;x
+charge_of_opportunity_tactic_normal;Classic Charge of Opportunity;;;;;;;;;;;;;x
+charge_tactic_normal;Classic Charge;;;;;;;;;;;;;x
+wait_tactic_normal;Classic Caution;;;;;;;;;;;;;x
+advance_tactic_normal;Classic Infantry Advance;;;;;;;;;;;;;x
+awesome_advance_tactic_normal;Classic Cavalry Advance;;;;;;;;;;;;;x
+stand_fast_tactic_normal;Classic Last Stand;;;;;;;;;;;;;x
+slow_advance_tactic_normal;Classic Slow Advance;;;;;;;;;;;;;x
+awesome_charge_tactic_normal;Classic Cavalry Charge;;;;;;;;;;;;;x
+awesomer_charge_tactic_normal;Classic Full Charge;;;;;;;;;;;;;x
+barrage_tactic_normal;Classic Barrage;;;;;;;;;;;;;x
+raid_tactic_normal;Classic Raid;;;;;;;;;;;;;x
+harass_tactic_good;Impressive Harassment;;;;;;;;;;;;;x
+volly_harass_tactic_good;Impressive Harassment & Volley;;;;;;;;;;;;;x
+volly_tactic_good;Impressive Volley;;;;;;;;;;;;;x
+swarm_volley_tactic_good;Impressive Swarm & Volley;;;;;;;;;;;;;x
+swarm_tactic_good;Impressive Swarm;;;;;;;;;;;;;x
+harras_swarm_tactic_good;Impressive Harassment & Swarm;;;;;;;;;;;;;x
+shieldwall_tactic_good;Impressive Shieldwall;;;;;;;;;;;;;x
+feint_tactic_good;Impressive Feint;;;;;;;;;;;;;x
+prepare_tactic_good;Impressive Preparation;;;;;;;;;;;;;x
+charge_of_opportunity_tactic_good;Impressive Charge of Opportunity;;;;;;;;;;;;;x
+charge_tactic_good;Impressive Charge;;;;;;;;;;;;;x
+wait_tactic_good;Impressive Caution;;;;;;;;;;;;;x
+advance_tactic_good;Impressive Infantry Advance;;;;;;;;;;;;;x
+awesome_advance_tactic_good;Impressive Cavalry Advance;;;;;;;;;;;;;x
+stand_fast_tactic_good;Impressive Last Stand;;;;;;;;;;;;;x
+slow_advance_tactic_good;Impressive Slow Advance;;;;;;;;;;;;;x
+awesome_charge_tactic_good;Impressive Cavalry Charge;;;;;;;;;;;;;x
+awesomer_charge_tactic_good;Impressive Full Charge;;;;;;;;;;;;;x
+barrage_tactic_good;Impressive Barrage;;;;;;;;;;;;;x
+raid_tactic_good;Impressive Raid;;;;;;;;;;;;;x
+harass_tactic_very_good;Legendary Harassment;;;;;;;;;;;;;x
+volly_harass_tactic_very_good;Legendary Harassment & Volley;;;;;;;;;;;;;x
+volly_tactic_very_good;Legendary Volley;;;;;;;;;;;;;x
+swarm_volley_tactic_very_good;Legendary Swarm & Volley;;;;;;;;;;;;;x
+swarm_tactic_very_good;Legendary Swarm;;;;;;;;;;;;;x
+harras_swarm_tactic_very_good;Legendary Harassment & Swarm;;;;;;;;;;;;;x
+shieldwall_tactic_very_good;Legendary Shieldwall;;;;;;;;;;;;;x
+feint_tactic_very_good;Legendary Feint;;;;;;;;;;;;;x
+prepare_tactic_very_good;Legendary Preparation;;;;;;;;;;;;;x
+charge_of_opportunity_tactic_very_good;Legendary Charge of Opportunity;;;;;;;;;;;;;x
+charge_tactic_very_good;Legendary Charge;;;;;;;;;;;;;x
+wait_tactic_very_good;Legendary Caution;;;;;;;;;;;;;x
+advance_tactic_very_good;Legendary Infantry Advance;;;;;;;;;;;;;x
+awesome_advance_tactic_very_good;Legendary Cavalry Advance;;;;;;;;;;;;;x
+stand_fast_tactic_very_good;Legendary Last Stand;;;;;;;;;;;;;x
+slow_advance_tactic_very_good;Legendary Slow Advance;;;;;;;;;;;;;x
+awesome_charge_tactic_very_good;Legendary Cavalry Charge;;;;;;;;;;;;;x
+awesomer_charge_tactic_very_good;Legendary Full Charge;;;;;;;;;;;;;x
+barrage_tactic_very_good;Legendary Barrage;;;;;;;;;;;;;x
+raid_tactic_very_good;Legendary Raid;;;;;;;;;;;;;x

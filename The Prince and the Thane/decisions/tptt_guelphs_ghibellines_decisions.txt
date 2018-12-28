@@ -1,0 +1,45 @@
+decisions = {
+
+    switch_allegiance = {
+        potential = { 
+		    trait = ghibelline
+        }
+        
+		allow = {
+            age = 14
+			ai = no
+            piety = 100
+            prestige = 100
+        }
+  
+        effect = {
+            piety = 25
+            prestige = -75
+            remove_trait = ghibelline
+            add_trait = guelph
+        }
+        
+		ai_will_do = {  factor = 0.5 }
+    }
+
+    switch_allegiance2 = {
+        potential = { 
+		    trait = guelph
+        }
+        allow = {
+            age = 14
+			ai = no
+            piety = 25
+            prestige = 150
+        }
+		
+        effect = {
+            piety = -25
+            prestige = 75
+            remove_trait = guelph
+            add_trait = ghibelline
+        }
+		 
+        ai_will_do = { factor = 0.5 }
+    }
+}

@@ -1,0 +1,17 @@
+# 935 - Aquino
+
+# County Title
+title = c_sangermano
+
+# Settlements
+max_settlements = 3
+
+b_aquino = castle 
+b_montecassino = temple
+b_pontecorvo = castle
+
+# Misc
+culture = central_italian
+religion = catholic
+
+# History

@@ -1,0 +1,22 @@
+# 249 - Schwaben
+
+# County Title
+title = c_schwaben
+
+# Settlements
+max_settlements = 4
+
+b_ravensburg = castle
+b_bregenz = city
+b_lindau = temple
+#b_schaltenburg = castle
+#b_langaren = city
+#b_feldkirch = city
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+
+

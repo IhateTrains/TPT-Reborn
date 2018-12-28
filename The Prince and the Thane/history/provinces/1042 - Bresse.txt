@@ -1,0 +1,22 @@
+# 1042 - Bresse
+
+# County Title
+title = c_bugey
+
+# Settlements
+max_settlements = 5
+b_bellegarde = castle
+b_brou = city
+b_belley = temple
+
+#b_amberieu = castle
+#b_thoire
+#b_coligny
+#b_groslee
+
+
+# Misc
+culture = francoprovençal
+religion = catholic
+
+# History
