@@ -7,9 +7,9 @@ city = {
 		trigger = { TECH_CITY_CONSTRUCTION = 1 } 
 		gold_cost = 100
 		build_time = 365
-		HEAVY_INFANTRY_DEFENSIVE = 0.02
-		LIGHT_INFANTRY_DEFENSIVE = 0.02
-		ARCHERS_DEFENSIVE = 0.02
+		heavy_infantry_defensive = 0.02
+		light_cavalry_defensive = 0.02
+		archers_defensive = 0.02
 		ai_creation_factor = 85
 		
 		start = {
@@ -23,9 +23,9 @@ city = {
 		upgrades_from = ct_weaponsmith_1
 	    gold_cost = 200
 		build_time = 730
-		HEAVY_INFANTRY_DEFENSIVE = 0.02
-		LIGHT_INFANTRY_DEFENSIVE = 0.02
-		ARCHERS_DEFENSIVE = 0.02
+		heavy_infantry_defensive = 0.02
+		light_cavalry_defensive = 0.02
+		archers_defensive = 0.02
 		ai_creation_factor = 84
 
 		start = {

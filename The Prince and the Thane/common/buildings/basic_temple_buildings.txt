@@ -4,7 +4,7 @@ temple = {
 	tp_christian_church_1 = {
 		desc = tp_church_desc
 	    potential = { religion_group = christian }
-		build_cost = 45
+		gold_cost = 45
 		build_time = 365
 		tax_income = 0.50
 		ai_creation_factor = 91
@@ -21,7 +21,7 @@ temple = {
 		desc = tp_church_desc
 	    potential = { religion_group = christian }
 		upgrades_from = tp_christian_church_1
-		build_cost = 105
+		gold_cost = 105
 		build_time = 730
 		tax_income = 0.50
 		ai_creation_factor = 90
@@ -39,7 +39,7 @@ temple = {
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		upgrades_from = tp_christian_church_2
-		build_cost = 185
+		gold_cost = 185
 		build_time = 1095
 		tax_income = 1.0
 		ai_creation_factor = 89
@@ -57,7 +57,7 @@ temple = {
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_christian_church_3
-		build_cost = 345
+		gold_cost = 345
 		build_time = 1460
 		tax_income = 1.25
 		ai_creation_factor = 88
@@ -75,7 +75,7 @@ temple = {
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_christian_church_4
-		build_cost = 545
+		gold_cost = 545
 		build_time = 2190
 		tax_income = 1.75
 		fort_level = 0.5
@@ -94,7 +94,7 @@ temple = {
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_christian_church_5
-		build_cost = 785
+		gold_cost = 785
 		build_time = 3650
 		tax_income = 2.75
 		fort_level = 0.5
@@ -109,7 +109,7 @@ temple = {
 	tp_pagan_church_1 = {
 		desc = tp_shrine_desc
 	    potential = { religion_group = pagan_group }
-		build_cost = 45
+		gold_cost = 45
 		build_time = 290
 		tax_income = 0.25
 		ai_creation_factor = 88
@@ -124,7 +124,7 @@ temple = {
 	    potential = { FROM = { religion_group = pagan_group } }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		upgrades_from = tp_pagan_church_1
-		build_cost = 97
+		gold_cost = 97
 		build_time = 365
 		tax_income = 0.25
 		ai_creation_factor = 87
@@ -138,7 +138,7 @@ temple = {
 	    potential = { FROM = { religion_group = pagan_group } }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_pagan_church_2
-		build_cost = 165
+		gold_cost = 165
 		build_time = 730
 		tax_income = 0.25
 		ai_creation_factor = 86
@@ -153,7 +153,7 @@ temple = {
 	    potential = { FROM = { religion_group = pagan_group } }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_pagan_church_3
-		build_cost = 215
+		gold_cost = 215
 		build_time = 1095
 		tax_income = 0.25
 		ai_creation_factor = 85
@@ -168,7 +168,7 @@ temple = {
 	    potential = { FROM = { religion_group = pagan_group } }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_pagan_church_4
-		build_cost = 315
+		gold_cost = 315
 		build_time = 1495
 		tax_income = 0.50
 		ai_creation_factor = 83
@@ -182,7 +182,7 @@ temple = {
 	    potential = { FROM = { religion_group = pagan_group } }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
 		upgrades_from = tp_pagan_church_5
-		build_cost = 505
+		gold_cost = 505
 		build_time = 1895
 		tax_income = 0.75
 		ai_creation_factor = 79
@@ -196,7 +196,7 @@ temple = {
 	tp_islamic_masjid_1 = {
 		desc = tp_mosque_desc
 	    potential = { religion_group = muslim }
-		build_cost = 45
+		gold_cost = 45
 		build_time = 290
 		tax_income = 0.25
 		ai_creation_factor = 91
@@ -210,7 +210,7 @@ temple = {
 		desc = tp_mosque_desc
 	    potential = { religion_group = muslim }
 		upgrades_from = tp_islamic_masjid_1
-		build_cost = 105
+		gold_cost = 105
 		build_time = 730
 		tax_income = 0.25
 		ai_creation_factor = 89
@@ -228,7 +228,7 @@ temple = {
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		upgrades_from = tp_islamic_masjid_2
-		build_cost = 185
+		gold_cost = 185
 		build_time = 1095
 		tax_income = 0.50
 		ai_creation_factor = 88
@@ -246,7 +246,7 @@ temple = {
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_islamic_masjid_3
-		build_cost = 345
+		gold_cost = 345
 		build_time = 1460
 		tax_income = 1.0
 		ai_creation_factor = 87
@@ -260,7 +260,7 @@ temple = {
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_islamic_masjid_4
-		build_cost = 545
+		gold_cost = 545
 		build_time = 2190
 		tax_income = 1.50
 		fort_level = 1.0
@@ -279,7 +279,7 @@ temple = {
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_islamic_masjid_5
-		build_cost = 785
+		gold_cost = 785
 		build_time = 3940
 		tax_income = 2.0
 		fort_level = 1.0
@@ -297,7 +297,7 @@ temple = {
 ### Peasant Hamlet ###	
 	tp_settlement_1 = {
 		desc = tp_town_1_desc
-	    build_cost = 30
+	    gold_cost = 30
 		build_time = 365
 		tax_income = 0.5
 		ai_creation_factor = 86 # compared to church 91
@@ -310,7 +310,7 @@ temple = {
 		desc = tp_town_2_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 	    upgrades_from = tp_settlement_1
-		build_cost = 90
+		gold_cost = 90
 		build_time = 547
 		tax_income = 0.5
 		ai_creation_factor = 85 # compared to church 89
@@ -324,7 +324,7 @@ temple = {
 		desc = tp_town_3_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 	    upgrades_from = tp_settlement_2
-		build_cost = 145
+		gold_cost = 145
 		build_time = 730
 		tax_income = 0.75
                 disease_defence = -0.01
@@ -339,7 +339,7 @@ temple = {
 		desc = tp_town_4_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 	    upgrades_from = tp_settlement_3
-		build_cost = 200
+		gold_cost = 200
 		build_time = 1095
 		tax_income = 1.0
 		disease_defence = -0.01
@@ -354,7 +354,7 @@ temple = {
 		desc = tp_town_5_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 	    upgrades_from = tp_settlement_4
-		build_cost = 350
+		gold_cost = 350
 		build_time = 2190
 		tax_income = 1.0
 		disease_defence = -0.01
@@ -368,7 +368,7 @@ temple = {
 		desc = tp_town_6_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
 	    upgrades_from = tp_settlement_5
-		build_cost = 550
+		gold_cost = 550
 		build_time = 2490
 		tax_income = 1.0
 		disease_defence = -0.01
@@ -381,7 +381,7 @@ temple = {
 tp_wall_q_1 = {	
 		desc = tp_wall_q_1_desc
 		prerequisites = { tp_wall_1 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 182
 		fort_level = 0.5
 		ai_creation_factor = 82
@@ -394,7 +394,7 @@ tp_wall_q_1 = {
 		desc = tp_wall_q_2_desc
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_wall_q_1
-		build_cost = 50
+		gold_cost = 50
 		build_time = 182
 		fort_level = 0.5
 		ai_creation_factor = 81
@@ -407,7 +407,7 @@ tp_wall_q_1 = {
 		desc = ca_wall_q_3_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
 		upgrades_from = tp_wall_q_2
-		build_cost = 50
+		gold_cost = 50
 		build_time = 182
 		fort_level = 0.5
 		ai_creation_factor = 80
@@ -420,7 +420,7 @@ tp_wall_q_1 = {
 		desc = ca_wall_q_4_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
 		upgrades_from = tp_wall_q_3
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		fort_level = 1
 		ai_creation_factor = 79
@@ -432,7 +432,7 @@ tp_wall_q_1 = {
 		desc = ca_wall_q_5_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
 		upgrades_from = tp_wall_q_4
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		fort_level = 1
 		ai_creation_factor = 78
@@ -443,7 +443,7 @@ tp_wall_q_1 = {
 
 	tp_wall_1 = {
 		desc = ca_wall_1_desc
-		build_cost = 50
+		gold_cost = 50
 		build_time = 365
 		fort_level = 0.5
 		levy_size = 0.025
@@ -456,7 +456,7 @@ tp_wall_q_1 = {
 	tp_wall_2 = {
 		desc = ca_wall_2_desc
 		upgrades_from = tp_wall_1
-		build_cost = 50
+		gold_cost = 50
 		build_time = 547
 		fort_level = 0.5
 		levy_size = 0.025
@@ -470,7 +470,7 @@ tp_wall_q_1 = {
 	tp_wall_3 = {
 		desc = tp_wall_3_desc
 		upgrades_from = tp_wall_2
-		build_cost = 100
+		gold_cost = 100
 		build_time = 730
 		fort_level = 1.0
 		levy_size = 0.05
@@ -485,7 +485,7 @@ tp_wall_q_1 = {
 		desc = tp_wall_4_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
 		upgrades_from = tp_wall_3
-		build_cost = 100
+		gold_cost = 100
 		build_time = 1095
 		fort_level = 1.0
 		levy_size = 0.05
@@ -500,7 +500,7 @@ tp_wall_q_1 = {
 		desc = tp_wall_5_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 4 }
 		upgrades_from = tp_wall_4
-		build_cost = 150
+		gold_cost = 150
 		build_time = 1460
 		fort_level = 1.5
 		levy_size = 0.075
@@ -517,7 +517,7 @@ tp_wall_q_1 = {
 		desc = tp_monastery_1_desc
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 365
 		tax_income = -0.25
 		tech_growth_modifier_culture = 0.05
@@ -537,7 +537,7 @@ tp_wall_q_1 = {
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_monastery_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 730
 		tax_income = -0.25
 		tech_growth_modifier_culture = 0.05
@@ -557,7 +557,7 @@ tp_wall_q_1 = {
 	    potential = { religion_group = christian }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_monastery_2
-		build_cost = 395
+		gold_cost = 395
 		build_time = 960
 		tax_income = -0.50
 		tech_growth_modifier_culture = 0.05
@@ -578,7 +578,7 @@ tp_wall_q_1 = {
 		desc = tp_islamic_school_desc
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 547
 		tax_income = -0.25
 		tech_growth_modifier_culture = 0.05
@@ -598,7 +598,7 @@ tp_wall_q_1 = {
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_islamic_school_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 590
 		tax_income = -0.25
 		tech_growth_modifier_culture = 0.05
@@ -618,7 +618,7 @@ tp_wall_q_1 = {
 	    potential = { religion_group = muslim }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_islamic_school_2
-		build_cost = 395
+		gold_cost = 395
 		build_time = 547
 		tax_income = -0.25
 		tech_growth_modifier_culture = 0.05
@@ -636,7 +636,7 @@ tp_wall_q_1 = {
 ### Militia Muster Hall ###	
 	tp_barracks_1 = {
 		desc = tp_barracks_1_desc
-		build_cost = 95
+		gold_cost = 95
 		build_time = 365
 		light_infantry = 15
 		archers = 10
@@ -666,7 +666,7 @@ tp_wall_q_1 = {
 		prerequisites = { tp_wall_1 }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		upgrades_from = tp_barracks_1
-		build_cost = 145
+		gold_cost = 145
 		build_time = 547
 		light_infantry = 20
 		archers = 15
@@ -696,7 +696,7 @@ tp_wall_q_1 = {
 		prerequisites = { tp_wall_2 }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		upgrades_from = tp_barracks_2
-		build_cost = 205
+		gold_cost = 205
 		build_time = 730
 		light_infantry = 25
 		archers = 20
@@ -712,7 +712,7 @@ tp_wall_q_1 = {
 		prerequisites = { tp_wall_3 }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_barracks_3
-		build_cost = 355
+		gold_cost = 355
 		build_time = 1095
 		heavy_infantry = 20
 		light_infantry = 30
@@ -729,7 +729,7 @@ tp_wall_q_1 = {
 	    prerequisites = { tp_wall_4 }
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_barracks_4
-		build_cost = 495
+		gold_cost = 495
 		build_time = 2190
 		heavy_infantry = 25
 		light_infantry = 35
@@ -745,7 +745,7 @@ tp_wall_q_1 = {
 		desc = tp_barracks_1_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
 		upgrades_from = tp_barracks_5
-		build_cost = 605
+		gold_cost = 605
 		build_time = 2190
 		heavy_infantry = 30
 		light_infantry = 40
@@ -764,7 +764,7 @@ tp_wall_q_1 = {
 		desc = tp_synagogue_desc
             potential = { 
             FROM = { religion_group = jewish_group } }
-                build_cost = 45
+                gold_cost = 45
                 build_time = 290
                 tax_income = 0.25
                 ai_creation_factor = 91
@@ -779,7 +779,7 @@ tp_wall_q_1 = {
             potential = { 
             FROM = { religion_group = jewish_group } }
                 upgrades_from = tp_jewish_synagogue_1
-                build_cost = 105
+                gold_cost = 105
                 build_time = 730
                 tax_income = 0.25
                 ai_creation_factor = 89
@@ -798,7 +798,7 @@ tp_wall_q_1 = {
             FROM = { religion_group = jewish_group } }
                 trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
                 upgrades_from = tp_jewish_synagogue_2
-                build_cost = 185
+                gold_cost = 185
                 build_time = 1095
                 tax_income = 0.50
                 ai_creation_factor = 88
@@ -817,7 +817,7 @@ tp_wall_q_1 = {
             FROM = { religion_group = jewish_group } }
                 trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
                 upgrades_from = tp_jewish_synagogue_3
-                build_cost = 345
+                gold_cost = 345
                 build_time = 1460
                 tax_income = 1.0
                 ai_creation_factor = 87
@@ -832,7 +832,7 @@ tp_wall_q_1 = {
             FROM = { religion_group = jewish_group } }
                 trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
                 upgrades_from = tp_jewish_synagogue_4
-                build_cost = 545
+                gold_cost = 545
                 build_time = 2190
                 tax_income = 1.50
                 fort_level = 1.0
@@ -851,7 +851,7 @@ tp_wall_q_1 = {
             potential = { 
             FROM = { religion_group = jewish_group } }
                 upgrades_from = tp_jewish_synagogue_5
-                build_cost = 785
+                gold_cost = 785
                 build_time = 3940
                 tax_income = 2.0
                 fort_level = 1.0
@@ -871,7 +871,7 @@ tp_wall_q_1 = {
 		desc = tp_school_1_desc
             potential = { 
             FROM = { religion_group = jewish_group } }
-                build_cost = 50
+                gold_cost = 50
                 build_time = 547
                 tax_income = -0.25
                 tech_growth_modifier_culture = 0.05
@@ -892,7 +892,7 @@ tp_wall_q_1 = {
             FROM = { religion_group = jewish_group } }
                 trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
                 upgrades_from = tp_jewish_school_1
-                build_cost = 120
+                gold_cost = 120
                 build_time = 590
                 tax_income = -0.25
                 tech_growth_modifier_culture = 0.05
@@ -913,7 +913,7 @@ tp_wall_q_1 = {
             FROM = { religion_group = jewish_group } }
                 trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
                 upgrades_from = tp_jewish_school_2
-                build_cost = 395
+                gold_cost = 395
                 build_time = 547
                 tax_income = -0.25
                 tech_growth_modifier_culture = 0.05
