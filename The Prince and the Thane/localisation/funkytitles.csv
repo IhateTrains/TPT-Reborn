@@ -1928,7 +1928,6 @@ b_andrano;Andrano;Andrano;Andrano;;Andrano;;;;;;;;;x
 b_aradeo;Aradeo;Aradeo;Aradeo;;Aradeo;;;;;;;;;x
 b_brindisi;Brindisi;Brindisi;Brindisi;;Brindisi;;;;;;;;;x
 b_conversano;Conversano;Conversano;Conversano;;Conversano;;;;;;;;;x
-b_oria;Oria;Oria;Oria;;Oria;;;;;;;;;x
 b_polignano;Polignano;Polignano;Polignano;;Polignano;;;;;;;;;x
 #Apulia;;;;;;;;;;;;;;x
 b_avigliano;Avigliano;Avigliano;Avigliano;;Avigliano;;;;;;;;;x
@@ -1993,7 +1992,6 @@ b_chieti;Teate;Teate;Teate;;Teate;;;;;;;;;x
 b_pescara;Pescara;Pescara;Pescara;;Pescara;;;;;;;;;x
 b_atri;Atri;Atri;Atri;;Atri;;;;;;;;;x
 #Salerno;;;;;;;;;;;;;;x
-b_salerno;Salerno;Salerno;Salerno;;Salerno;;;;;;;;;x
 b_caggiano;Caggiano;Caggiano;Caggiano;;Caggiano;;;;;;;;;x
 b_castellogerione;Castello Gerione;Castello Gerione;Castello Gerione;;Castello Gerione;;;;;;;;;x
 b_castellodealegisio;Castello di Alegisio;Castello di Alegisio;Castello di Alegisio;;Castello di Alegisio;;;;;;;;;x
@@ -2483,7 +2481,6 @@ b_rivargo;Rivargo;Rivargo;Rivargo;;Rivargo;;;;;;;;;x
 b_castellodisarmato;Castello di Sarmato;Castello di Sarmato;Castello di Sarmato;;Castello di Sarmato;;;;;;;;;x
 b_castellodistatto ;Castello di Statto;Castello di Statto;Castello di Statto;;Castello di Statto;;;;;;;;;x
 b_castellodivigoleno;Castello di Vigoleno;Castello di Vigoleno;Castello di Vigoleno;;Castello di Vigoleno;;;;;;;;;x
-b_parma;Parma;Parma;Parma;;Parma;;;;;;;;;x
 b_fontanellato;Fontanellato;Fontanellato;Fontanellato;;Fontanellato;;;;;;;;;x
 b_noceto;Noceto;Noceto;Noceto;;Noceto;;;;;;;;;x
 b_piacenza;Piacenza;Piacenza;Piacenza;;Piacenza;;;;;;;;;x
@@ -4648,7 +4645,6 @@ b_ancona;Ancona;Ancona;Ancona;;Ancona;;;;;;;;;x
 b_sanmarino;San Marino;San Marino;San Marino;;San Marino;;;;;;;;;x
 b_sanseverino;San Severino;San Severino;San Severino;;San Severino;;;;;;;;;x
 b_forli;Forli;Forli;Forli;;Forli;;;;;;;;;x
-b_bologna;Bologna;Bologna;Bologna;;Bologna;;;;;;;;;x
 b_lugoitaly;Lugh;Lugh;Lugh;;Lugh;;;;;;;;;x
 b_siena;Siena;Siena;Siena;;Siena;;;;;;;;;x
 b_suvereto;Suvereto;Suvereto;Suvereto;;Suvereto;;;;;;;;;x
@@ -6919,7 +6915,6 @@ b_tasgimut;Tasgimut;Tasgimut;Tasgimut;;Tasgimut;;;;;;;;;x
 b_asni;Asni;Asni;Asni;;Asni;;;;;;;;;x
 b_demnat;Demnat;Demnat;Demnat;;Demnat;;;;;;;;;x
 b_taroudaut;Tarudant;Tarudant;Tarudant;;Tarudant;;;;;;;;;x
-b_massa;Massa;Massa;Massa;;Massa;;;;;;;;;x
 b_igilliz;Igiliz;Igiliz;Igiliz;;Igiliz;;;;;;;;;x
 b_agadir;Agadir;Agadir;Agadir;;Agadir;;;;;;;;;x
 b_tinmallal;Tinmallal;Tinmallal;Tinmallal;;Tinmallal;;;;;;;;;x

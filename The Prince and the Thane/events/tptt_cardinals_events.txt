@@ -1334,6 +1334,7 @@ narrative_event = {
 character_event = {
 	id = holy_see.36
 	desc = "You've been appointed protodeacon"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
     min_age = 40
 	
@@ -1362,6 +1363,7 @@ character_event = {
 character_event = {
 	id = holy_see.37
 	desc = "You've been appointed deacon"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {
@@ -1400,6 +1402,7 @@ character_event = {
 character_event = {
 	id = holy_see.38
 	desc = "You've been appointed cardinal of Ostia"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {
@@ -1450,6 +1453,7 @@ character_event = {
 character_event = {
 	id = holy_see.39
 	desc = "You've been appointed cardinal of Tusculum"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {
@@ -1498,6 +1502,7 @@ character_event = {
 character_event = {
 	id = holy_see.40
 	desc = "You've been appointed cardinal of Porto"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {
@@ -1546,6 +1551,7 @@ character_event = {
 character_event = {
 	id = holy_see.41
 	desc = "You've been appointed cardinal of Palestrina"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {
@@ -1594,6 +1600,7 @@ character_event = {
 character_event = {
 	id = holy_see.42
 	desc = "You've been appointed cardinal of Velletri"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {
@@ -1642,6 +1649,7 @@ character_event = {
 character_event = {
 	id = holy_see.43
 	desc = "You've been appointed cardinal of Albano"
+	picture = GFX_evt_bishop_byzantine
 	only_men = yes
 	
 	trigger = {

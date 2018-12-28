@@ -731,7 +731,7 @@ narrative_event = {	# mandylion.4 - Mandylion/Shroud - 1205/1355 - start search 
 	id = mandylion.4
 	desc = "EVTDESCmandylion.4"
 	picture = "GFX_evt_icon"
-	title = "The Mandylion Search"
+	title = mandylion.4.title
 	border = "GFX_event_narrative_frame_religious"
 
 	trigger = {	
@@ -1147,7 +1147,7 @@ character_event = {	# mandylion.29 - Mandylion/Shroud - NOT found
 narrative_event = {	# mandylion.22 - Mandylion/Shroud - found!!!
 	id = mandylion.22
 	picture = "GFX_evt_icon"
-	title = "The Mandylion is ours!"
+	title = mandylion.22.title
 	border = "GFX_event_narrative_frame_religious"
 	desc = "EVTDESCmandylion.22"
 

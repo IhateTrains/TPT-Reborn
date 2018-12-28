@@ -622,7 +622,7 @@ character_event = {
 			    check_variable = { which = "birth_order" value = 1 }
 			    NOT = { higher_tier_than = COUNT }
 			}
-		    custom_tooltip = TOOLTIPDUKENORFOLK
+		    custom_tooltip = { text = TOOLTIPDUKENORFOLK }
 			hidden_tooltip = {
 			    d_norfolk = {
 			        grant_title = PREV
@@ -656,7 +656,7 @@ character_event = {
 			    check_variable = { which = "birth_order" value = 2 }
 			    NOT = { higher_tier_than = COUNT }
 			}
-		    custom_tooltip = TOOLTIPDUKENORFOLK
+		    custom_tooltip = { text = TOOLTIPDUKENORFOLK }
 			hidden_tooltip = {
 			    d_norfolk = {
 			        grant_title = PREV
@@ -690,7 +690,7 @@ character_event = {
 			    check_variable = { which = "birth_order" value = 3 }
 			    NOT = { higher_tier_than = COUNT }
 			}
-		    custom_tooltip = TOOLTIPDUKENORFOLK
+			custom_tooltip = { text = TOOLTIPDUKENORFOLK }
 			hidden_tooltip = {
 			    d_norfolk = {
 			        grant_title = PREV
@@ -724,7 +724,7 @@ character_event = {
 			    check_variable = { which = "birth_order" value = 4 }
 			    NOT = { higher_tier_than = COUNT }
 			}
-		    custom_tooltip = TOOLTIPDUKENORFOLK
+		    custom_tooltip = { text = TOOLTIPDUKENORFOLK }
 			hidden_tooltip = {
 			    d_norfolk = {
 			        grant_title = PREV
